@@ -150,7 +150,7 @@ def generate_summary(model, filename, content, is_new=False):
     # Fallback to single summary only if meaningful retry failed
     return [{"header": "Overview", "summary": f"{filename} 문서가 업데이트되었습니다."}]
 
-BLOG_FILE = ROOT_DIR / 'pages' / 'index.html'
+BLOG_FILE = ROOT_DIR / 'index.html'
 CHANGELOG_JSON = ROOT_DIR / 'pages' / 'changelog.json'
 
 def load_changelog():
