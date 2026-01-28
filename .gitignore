@@ -32,3 +32,4 @@ test_*.txt
 test_*.md
 *.test
 *.tmp
+.env
