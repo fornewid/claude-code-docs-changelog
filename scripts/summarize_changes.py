@@ -223,6 +223,42 @@ def format_date_kst(iso_date_str):
         logger.warning(f"Date parsing failed for {iso_date_str}: {e}")
         return iso_date_str
 
+def format_git_diff(diff_text):
+    """Parse git diff text and return HTML with syntax highlighting."""
+    if not diff_text:
+        return ""
+        
+    html_lines = []
+    
+    # Helper to escape HTML safely without 'html' module
+    def escape_html(s):
+        return s.replace('&', '&amp;').replace('<', '&lt;').replace('>', '&gt;')
+        
+    for line in diff_text.splitlines():
+        # Filter out git metadata headers
+        if (line.startswith('diff --git') or 
+            line.startswith('index ') or 
+            line.startswith('--- ') or 
+            line.startswith('+++ ')):
+            continue
+            
+        safe_line = escape_html(line)
+        
+        if line.startswith('@@'):
+            # Chunk header
+            html_lines.append(f'<span class="diff-header">{safe_line}</span>')
+        elif line.startswith('+') and not line.startswith('+++'):
+            # Addition
+            html_lines.append(f'<span class="diff-add">{safe_line}</span>')
+        elif line.startswith('-') and not line.startswith('---'):
+            # Deletion
+            html_lines.append(f'<span class="diff-del">{safe_line}</span>')
+        else:
+            # Context or metadata
+            html_lines.append(f'<span class="diff-line">{safe_line}</span>')
+            
+    return "".join(html_lines)
+
 def render_blog_from_json(history):
     """
     Regenerate index.html fully from JSON history
@@ -255,11 +291,21 @@ def render_blog_from_json(history):
         .tag.update { background-color: #1976d2; } /* Blue */
         .tag.delete { background-color: #c62828; } /* Red */
         
-        .diff-view { margin-top: 10px; border: 1px solid #eee; border-radius: 6px; background: #282c34; color: #abb2bf; font-family: monospace; font-size: 0.85em; overflow-x: auto; }
+        /* New Diff Styles */
+        .diff-view { margin-top: 10px; border: 1px solid #d1d5da; border-radius: 6px; background: #f6f8fa; font-family: monospace; font-size: 0.85em; overflow-x: auto; }
         .diff-view details { padding: 0; }
-        .diff-view summary { padding: 8px 12px; cursor: pointer; color: #dcdfe4; background: #3e4451; user-select: none; }
-        .diff-view summary:hover { background: #4b5363; }
-        .diff-view pre { margin: 0; padding: 12px; line-height: 1.4; white-space: pre-wrap; }
+        .diff-view summary { padding: 8px 12px; cursor: pointer; color: #24292e; background: #e1e4e8; font-weight: 600; list-style: none; user-select: none; }
+        .diff-view summary:hover { background: #d1d5da; }
+        .diff-view summary::-webkit-details-marker { display: none; }
+        .diff-view summary::before { content: '▶'; display: inline-block; margin-right: 6px; font-size: 0.8em; transition: transform 0.2s; }
+        .diff-view details[open] summary::before { transform: rotate(90deg); }
+        
+        .diff-content { padding: 10px; margin: 0; background-color: #fff; border-top: 1px solid #e1e4e8; white-space: pre-wrap; word-wrap: break-word; line-height: 1.5; color: #24292e; }
+        
+        .diff-line { display: block; position: relative; padding-left: 10px; }
+        .diff-header { color: #6f42c1; background-color: #f1f8ff; font-weight: bold; border-top: 1px solid #dbedff; border-bottom: 1px solid #dbedff; margin: 5px 0; display: block; padding-left: 10px; }
+        .diff-add { background-color: #e6ffec; display: block; padding-left: 10px; }
+        .diff-del { background-color: #ffebe9; display: block; padding-left: 10px; }
         
         .footer { margin-top: 50px; font-size: 0.8em; color: #888; text-align: center; }
     </style>
@@ -310,13 +356,12 @@ def render_blog_from_json(history):
         for update in entries:
             diff_html = ""
             if update.get('diff'):
-                # Simple HTML escaping for diff content
-                safe_diff = update['diff'].replace('&', '&amp;').replace('<', '&lt;').replace('>', '&gt;')
+                formatted_diff = format_git_diff(update['diff'])
                 diff_html = f"""
                 <div class="diff-view">
                     <details>
                         <summary>변경사항 보기 (Show Diff)</summary>
-                        <pre><code>{safe_diff}</code></pre>
+                        <div class="diff-content">{formatted_diff}</div>
                     </details>
                 </div>
                 """
