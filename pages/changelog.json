@@ -1,5 +1,18 @@
 [
   {
+    "date": "2026-01-29T21:07:44Z",
+    "commit_hash": "bb892c4",
+    "entries": [
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/analytics\" target=\"_blank\">Analytics</a>",
+        "summary": "분석 대시보드 접근 방법, 지표 및 GitHub 통합을 통한 기여도 측정을 포함한 주요 내용이 업데이트되었습니다. 팀 생산성 및 Claude Code 사용량 분석을 제공합니다. (146자)",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/bb892c4_analytics.txt"
+      }
+    ]
+  },
+  {
     "date": "2026-01-29T03:57:53Z",
     "commit_hash": "4852fcc",
     "entries": [
