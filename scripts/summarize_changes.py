@@ -348,7 +348,7 @@ def main():
         
         # 3. Generate Release Body
         release_body_path = ROOT_DIR / 'release_body.md'
-        release_content = "## Documentation Updates\\n\\n"
+        release_content = "## Documentation Updates\n\n"
         
         for update in updates:
             tag = f"[{update['tag_text']}]"
@@ -360,8 +360,8 @@ def main():
             
             summary = update['summary']
             
-            release_content += f"### {tag} {title}\\n"
-            release_content += f"{summary}\\n\\n"
+            release_content += f"### {tag} {title}\n"
+            release_content += f"{summary}\n\n"
             
         release_body_path.write_text(release_content, encoding='utf-8')
         logger.info(f"Generated release body at {release_body_path}")
