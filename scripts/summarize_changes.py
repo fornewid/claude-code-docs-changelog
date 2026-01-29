@@ -220,29 +220,143 @@ def format_date_kst(iso_date_str):
         return dt_kst.strftime('%Y-%m-%d %H:%M')
     except Exception as e:
         logger.warning(f"Date parsing failed for {iso_date_str}: {e}")
+        return iso_date_str
+
+import time
+
+def main():
+    parser = argparse.ArgumentParser()
+    parser.add_argument('--files', nargs='+', required=True, help='List of changed files')
+    parser.add_argument('--commit-hash', help='Short commit hash', default=None)
+    args = parser.parse_args()
+    
+    if not args.files:
+        logger.info("No files provided.")
+        return
+
+    model = setup_gemini()
+    updates = []
+    base_url = "https://code.claude.com/docs/en"
+    
+    for file_arg in args.files:
+        # Rate limit safety
+        time.sleep(1)
+        
+        # Parse "STATUS:FILENAME" or just "FILENAME"
+        if ':' in file_arg:
+            status, file_path = file_arg.split(':', 1)
+        else:
+            status, file_path = 'M', file_arg # Default to modify
+            
+        filename = os.path.basename(file_path)
+        if not filename.endswith('.md'):
+            continue
+            
+        logger.info(f"Processing {filename} (Status: {status})...")
+        
+        # Determine tag and style
+        tag_text = "UPDATE"
+        tag_class = "update"
+        
+        if status == 'A':
+            tag_text = "NEW"
+            tag_class = "new"
+        elif status == 'D':
+            tag_text = "DELETE"
+            tag_class = "delete"
+        
+        # Determine content source
+        is_new = (status == 'A')
+        content = ""
+        
+        if status == 'D':
+            # Deleted file: Simple single entry
+            updates.append({
+                'title': filename.replace('.md', '').title(), # No link
+                'summary': "문서가 삭제되었습니다.",
+                'tag_text': tag_text,
+                'tag_class': tag_class
+            })
+            continue
+        elif status == 'A':
+            content = get_git_diff(file_path, args.commit_hash)
+            if not content:
+                 try:
+                    if args.commit_hash:
+                         content = subprocess.check_output(['git', 'show', f'{args.commit_hash}:{file_path}'], text=True)
+                    else:
+                        content = Path(file_path).read_text(encoding='utf-8')
+                 except: 
+                    content = ""
+        else:
+             content = get_git_diff(file_path, args.commit_hash)
+             
+        if not content:
+            logger.warning(f"No content found for {filename}")
+            continue
+
+        # Generate granular summaries
+        summaries = generate_summary(model, filename, content, is_new)
+        
+        for item in summaries:
+            header = item.get('header', 'Overview')
+            summary_text = item.get('summary', '')
+            
+            file_basename = filename.replace('.md', '')
+            
+            if header.lower() in ['overview', file_basename.lower(), filename.lower(), '']:
+                url = f"{base_url}/{file_basename}"
+                display_title = f"{file_basename.title().replace('-', ' ')}"
+            else:
+                slug = slugify(header)
+                url = f"{base_url}/{file_basename}#{slug}"
+                display_title = f"{file_basename.title().replace('-', ' ')} > {header}"
+                
+            entry = {
+                'title': f'<a href="{url}" target="_blank">{display_title}</a>',
+                'summary': summary_text,
+                'tag_text': tag_text,
+                'tag_class': tag_class
+            }
+            
+            # Include diff only if it's an UPDATE (Modified)
+            if tag_class == 'update' and content:
+                # Save diff to separate file to keep changelog.json light
+                diffs_dir = ROOT_DIR / 'pages' / 'diffs'
+                diffs_dir.mkdir(parents=True, exist_ok=True)
+                
+                # Create safe filename: commit_hash (or generic) + filename
+                safe_hash = args.commit_hash if args.commit_hash else 'local'
+                diff_filename = f"{safe_hash}_{file_basename}.txt"
+                diff_path = diffs_dir / diff_filename
+                
+                diff_path.write_text(content, encoding='utf-8')
+                
+                # Store relative path for frontend to fetch
+                entry['diff_file'] = f"pages/diffs/{diff_filename}"
+                
+            updates.append(entry)
+            
+    if updates:
         # 2. Update JSON Data (No HTML rendering)
         history = update_json_data(updates, args.commit_hash)
         
         # 3. Generate Release Body
         release_body_path = ROOT_DIR / 'release_body.md'
-        release_content = "## Documentation Updates\n\n"
+        release_content = "## Documentation Updates\\n\\n"
         
         for update in updates:
-            # Extract plain text status
             tag = f"[{update['tag_text']}]"
-            
-            # Extract plain text title (remove HTML link)
             title = update['title']
             if '<a' in title:
-                # Simple regex to get text inside <a>
                 match = re.search(r'>([^<]+)<', title)
                 if match:
                     title = match.group(1)
             
             summary = update['summary']
             
-            release_content += f"### {tag} {title}\n"
-            release_content += f"{summary}\n\n"
+            release_content += f"### {tag} {title}\\n"
+            release_content += f"{summary}\\n\\n"
             
         release_body_path.write_text(release_content, encoding='utf-8')
         logger.info(f"Generated release body at {release_body_path}")

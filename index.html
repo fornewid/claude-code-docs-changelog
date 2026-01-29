@@ -172,6 +172,7 @@
             white-space: pre;
             line-height: 1.5;
             color: #24292e;
+            min-height: 40px;
         }
 
         .diff-line {
@@ -250,12 +251,6 @@
             if (!isoDate) return '';
             try {
                 const date = new Date(isoDate);
-                // Convert URL to KST (UTC+9) manually if needed, but browser usually handles local time
-                // Let's force KST/KST-like display or just use local string
-                // Ideally, existing logic formatted it as 'YYYY-MM-DD HH:MM' in KST
-                // We'll mimic that.
-
-                // Add 9 hours to UTC time
                 const utc = date.getTime() + (date.getTimezoneOffset() * 60000);
                 const kstOffset = 9 * 60 * 60 * 1000;
                 const kstDate = new Date(utc + kstOffset);
@@ -312,6 +307,29 @@
             return html;
         }
 
+        async function loadDiff(detailsElement, diffPath) {
+            const contentDiv = detailsElement.querySelector('.diff-content');
+            // If already loaded or loading, do nothing
+            if (contentDiv.dataset.loaded === 'true') return;
+
+            // If currently empty, show loading
+            if (!contentDiv.innerHTML) {
+                contentDiv.innerHTML = '<div style="padding:10px; color:#666;">Loading diff...</div>';
+            }
+
+            try {
+                // Determine path relative to current location
+                const response = await fetch(diffPath);
+                if (!response.ok) throw new Error('Diff file not found');
+                const text = await response.text();
+                contentDiv.innerHTML = formatDiff(text);
+                contentDiv.dataset.loaded = 'true';
+            } catch (error) {
+                console.error(error);
+                contentDiv.innerHTML = `<div style="padding:10px; color:#c62828;">Failed to load diff: ${error.message}</div>`;
+            }
+        }
+
         function renderChangelog(history) {
             const app = document.getElementById('app');
             let html = '';
@@ -326,8 +344,7 @@
                 let commitLink = '';
 
                 if (group.commit_hash) {
-                    // Try to construct URL (assuming GitHub host for now based on context)
-                    const repoBase = "https://github.com/fornewid/claude-code-docs-changelog"; // Hardcoded for simplicity or could be deduced
+                    const repoBase = "https://github.com/fornewid/claude-code-docs-changelog";
                     commitLink = ` <a href="${repoBase}/commit/${group.commit_hash}" target="_blank" class="commit-hash">${group.commit_hash}</a>`;
                 }
 
@@ -339,7 +356,9 @@
 
                 group.entries.forEach(entry => {
                     let diffHtml = '';
+
                     if (entry.diff) {
+                        // Legacy support (embedded diff)
                         const formattedDiff = formatDiff(entry.diff);
                         diffHtml = `
                         <div class="diff-view">
@@ -348,12 +367,16 @@
                                 <div class="diff-content">${formattedDiff}</div>
                             </details>
                         </div>`;
+                    } else if (entry.diff_file) {
+                        // Lazy load support
+                        diffHtml = `
+                        <div class="diff-view">
+                            <details ontoggle="if(this.open) loadDiff(this, '${entry.diff_file}')">
+                                <summary>변경사항 보기 (Show Diff)</summary>
+                                <div class="diff-content" data-loaded="false"></div>
+                            </details>
+                        </div>`;
                     }
-
-                    // Title usually contains HTML link already from backend script, 
-                    // but if rewritten fully, script should pass raw data. 
-                    // HOWEVER, currently the JSON contains 'title': '<a href...>'
-                    // We will trust the JSON 'title' field for now as it contains the anchor tag.
 
                     html += `
                         <div class="entry">

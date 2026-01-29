@@ -128,7 +128,8 @@ jobs:
           
           # 3. Commit the blog update (index.html) and JSON data (pages/)
           # Remove root index.html if it exists (migration)
-          git add pages/changelog.json
+          # 3. Commit the blog update (index.html is static, only data updates)
+          git add pages/
           git commit -m "Update blog for $COMMIT_HASH"
         else
           echo "No documentation changes detected in the latest commit."
