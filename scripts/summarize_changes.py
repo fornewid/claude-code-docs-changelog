@@ -92,8 +92,9 @@ def generate_summary(model, filename, content, is_new=False):
        - Ignore internal meta-data updates or comment changes.
        - If the changes are trivial as described above: **RETURN AN EMPTY LIST []**.
     2. If the changes are meaningful:
-       - If broad/many changes: Return ONE summary with header "Overview".
-       - If specific changes: Return a list of summaries for each changed section (header).
+       - **Return EXACTLY ONE summary** that consolidates all changes in the file.
+       - Use "Overview" as the header.
+       - Do not split into multiple items based on sections.
     """
 
     if is_new:
