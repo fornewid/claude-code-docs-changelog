@@ -6,7 +6,8 @@ Summarize changes in documentation using Gemini API and update the blog.
 import os
 import sys
 import argparse
-import google.generativeai as genai
+import argparse
+from google import genai
 from pathlib import Path
 from datetime import datetime, timedelta, timezone
 import json
@@ -35,8 +36,7 @@ def setup_gemini():
         logger.error("GEMINI_API_KEY environment variable not set.")
         sys.exit(1)
     
-    genai.configure(api_key=api_key)
-    return genai.GenerativeModel('gemini-2.0-flash-lite')
+    return genai.Client(api_key=api_key)
 
 import subprocess
 import re
@@ -80,7 +80,7 @@ def slugify(text):
     text = re.sub(r'[\s_-]+', '-', text)
     return text
 
-def generate_summary(model, filename, content, is_new=False):
+def generate_summary(client, filename, content, is_new=False):
     """Generate a summary using Gemini."""
     
     prompt_context = "This is a new file." if is_new else "Here is the git diff of the changes."
@@ -135,7 +135,11 @@ def generate_summary(model, filename, content, is_new=False):
     
     for attempt in range(max_retries):
         try:
-            response = model.generate_content(prompt, generation_config={"response_mime_type": "application/json"})
+            response = client.models.generate_content(
+                model='gemini-2.0-flash-lite',
+                contents=prompt,
+                config={'response_mime_type': 'application/json'}
+            )
             return json.loads(response.text)
         except Exception as e:
             error_str = str(e)
@@ -235,7 +239,7 @@ def main():
         logger.info("No files provided.")
         return
 
-    model = setup_gemini()
+    client = setup_gemini()
     updates = []
     base_url = "https://code.claude.com/docs/en"
     
@@ -297,7 +301,7 @@ def main():
             continue
 
         # Generate granular summaries
-        summaries = generate_summary(model, filename, content, is_new)
+        summaries = generate_summary(client, filename, content, is_new)
         
         for item in summaries:
             header = item.get('header', 'Overview')
