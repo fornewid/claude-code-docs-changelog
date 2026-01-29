@@ -255,6 +255,12 @@ def render_blog_from_json(history):
         .tag.update { background-color: #1976d2; } /* Blue */
         .tag.delete { background-color: #c62828; } /* Red */
         
+        .diff-view { margin-top: 10px; border: 1px solid #eee; border-radius: 6px; background: #282c34; color: #abb2bf; font-family: monospace; font-size: 0.85em; overflow-x: auto; }
+        .diff-view details { padding: 0; }
+        .diff-view summary { padding: 8px 12px; cursor: pointer; color: #dcdfe4; background: #3e4451; user-select: none; }
+        .diff-view summary:hover { background: #4b5363; }
+        .diff-view pre { margin: 0; padding: 12px; line-height: 1.4; white-space: pre-wrap; }
+        
         .footer { margin-top: 50px; font-size: 0.8em; color: #888; text-align: center; }
     </style>
 </head>
@@ -302,6 +308,19 @@ def render_blog_from_json(history):
         """
         
         for update in entries:
+            diff_html = ""
+            if update.get('diff'):
+                # Simple HTML escaping for diff content
+                safe_diff = update['diff'].replace('&', '&amp;').replace('<', '&lt;').replace('>', '&gt;')
+                diff_html = f"""
+                <div class="diff-view">
+                    <details>
+                        <summary>변경사항 보기 (Show Diff)</summary>
+                        <pre><code>{safe_diff}</code></pre>
+                    </details>
+                </div>
+                """
+
             entries_html += f"""
                 <div class="entry">
                     <div class="title">
@@ -309,6 +328,7 @@ def render_blog_from_json(history):
                         {update['title']}
                     </div>
                     <div class="summary">{update['summary']}</div>
+                    {diff_html}
                 </div>
             """
             
@@ -417,12 +437,18 @@ def main():
                 url = f"{base_url}/{file_basename}#{slug}"
                 display_title = f"{file_basename.title().replace('-', ' ')} > {header}"
                 
-            updates.append({
+            entry = {
                 'title': f'<a href="{url}" target="_blank">{display_title}</a>',
                 'summary': summary_text,
                 'tag_text': tag_text,
                 'tag_class': tag_class
-            })
+            }
+            
+            # Include diff only if it's an UPDATE (Modified)
+            if tag_class == 'update':
+                entry['diff'] = content
+                
+            updates.append(entry)
             
     if updates:
         # 1. Update JSON Data
