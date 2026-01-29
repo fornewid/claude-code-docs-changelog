@@ -429,6 +429,30 @@ def main():
         history = update_json_data(updates, args.commit_hash)
         # 2. Render HTML from new Data
         render_blog_from_json(history)
+        
+        # 3. Generate Release Body
+        release_body_path = ROOT_DIR / 'release_body.md'
+        release_content = "## Documentation Updates\n\n"
+        
+        for update in updates:
+            # Extract plain text status
+            tag = f"[{update['tag_text']}]"
+            
+            # Extract plain text title (remove HTML link)
+            title = update['title']
+            if '<a' in title:
+                # Simple regex to get text inside <a>
+                match = re.search(r'>([^<]+)<', title)
+                if match:
+                    title = match.group(1)
+            
+            summary = update['summary']
+            
+            release_content += f"### {tag} {title}\n"
+            release_content += f"{summary}\n\n"
+            
+        release_body_path.write_text(release_content, encoding='utf-8')
+        logger.info(f"Generated release body at {release_body_path}")
 
 
 if __name__ == '__main__':
