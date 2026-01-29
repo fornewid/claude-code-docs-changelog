@@ -1,5 +1,31 @@
 [
   {
+    "date": "2026-01-29T03:57:53Z",
+    "commit_hash": "4852fcc",
+    "entries": [
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/changelog\" target=\"_blank\">Changelog</a>",
+        "summary": "맞춤형 스피너 설정 추가, mTLS/프록시 연결 문제 해결, 임시 디렉토리 격리, 캐싱 관련 오류 수정 등 다양한 버그 수정 및 성능 개선이 이루어졌습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/4852fcc_changelog.txt"
+      }
+    ]
+  },
+  {
+    "date": "2026-01-29T03:57:51.473017+00:00",
+    "commit_hash": null,
+    "entries": [
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/changelog\" target=\"_blank\">Changelog</a>",
+        "summary": "2.1.23 업데이트: 스피너 설정, mTLS/프록시 연결, 권한 문제 해결, 캐싱, 탭 자동 완성, 검색 시간 초과, 터미널 성능 향상, Bash 명령 시간 표시, 풀 요청 상태 표시.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/local_changelog.txt"
+      }
+    ]
+  },
+  {
     "date": "2026-01-28T15:04:31Z",
     "commit_hash": "e4172dcb2e60ae24d4fba2a3bb896737483b983b",
     "entries": [
