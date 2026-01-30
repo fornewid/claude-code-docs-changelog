@@ -1,5 +1,25 @@
 [
   {
+    "date": "2026-01-30T18:10:55Z",
+    "commit_hash": "41630c8",
+    "entries": [
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/analytics\" target=\"_blank\">Analytics</a>",
+        "summary": "기여 지표에 대한 정보가 업데이트되었습니다. claude.ai 조직 내 사용자만 포함되며, Claude Code의 실제 영향을 보수적으로 추정합니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/41630c8_analytics.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/headless\" target=\"_blank\">Headless</a>",
+        "summary": "스트리밍 응답 기능이 추가되었습니다. `--output-format stream-json` 옵션을 사용하여 실시간으로 토큰을 수신하고 처리할 수 있습니다. ",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/41630c8_headless.txt"
+      }
+    ]
+  },
+  {
     "date": "2026-01-30T00:17:15Z",
     "commit_hash": "f4cb403",
     "entries": [

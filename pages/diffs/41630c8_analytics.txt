@@ -1,0 +1,24 @@
+diff --git a/docs/analytics.md b/docs/analytics.md
+index 96cb58c..f74ed50 100644
+--- a/docs/analytics.md
++++ b/docs/analytics.md
+@@ -27,7 +27,7 @@ The Teams and Enterprise dashboard includes:
+ ### Enable contribution metrics
+ 
+ <Note>
+-  Contribution metrics are in public beta and available on Claude for Teams and Claude for Enterprise plans.
++  Contribution metrics are in public beta and available on Claude for Teams and Claude for Enterprise plans. These metrics only cover users within your claude.ai organization. Usage through the Claude Console API or third-party integrations is not included.
+ </Note>
+ 
+ Usage and adoption data is available for all Claude for Teams and Claude for Enterprise accounts. Contribution metrics require additional setup to connect your GitHub organization.
+@@ -61,6 +61,10 @@ Contribution metrics support GitHub Cloud and GitHub Enterprise Server.
+ 
+ ### Review summary metrics
+ 
++<Note>
++  These metrics are deliberately conservative and represent an underestimate of Claude Code's actual impact. Only lines and PRs where there is high confidence in Claude Code's involvement are counted.
++</Note>
++
+ The dashboard displays these summary metrics at the top:
+ 
+ * **PRs with CC**: total count of merged pull requests that contain at least one line of code written with Claude Code
