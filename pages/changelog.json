@@ -1,5 +1,18 @@
 [
   {
+    "date": "2026-01-30T21:07:16Z",
+    "commit_hash": "9fcabee",
+    "entries": [
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/changelog\" target=\"_blank\">Changelog</a>",
+        "summary": "2.1.27 버전에서 도구 호출 실패, PR 연동, VSCode 통합, 권한 개선 및 윈도우 버그 수정 등 다양한 기능과 버그 수정이 이루어졌습니다. 전반적인 안정성 및 사용성 향상.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/9fcabee_changelog.txt"
+      }
+    ]
+  },
+  {
     "date": "2026-01-30T18:10:55Z",
     "commit_hash": "41630c8",
     "entries": [
