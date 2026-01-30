@@ -1,5 +1,32 @@
 [
   {
+    "date": "2026-01-30T00:17:15Z",
+    "commit_hash": "f4cb403",
+    "entries": [
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/changelog\" target=\"_blank\">Changelog</a>",
+        "summary": "베타 헤더 검증 오류 수정으로 Bedrock 및 Vertex 사용자의 게이트웨이 오류를 방지하고, 스피너 동사 설정 추가.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/f4cb403_changelog.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/settings\" target=\"_blank\">Settings</a>",
+        "summary": "스피너 동사 설정 옵션이 추가되어 사용자가 스피너 및 응답 시간 메시지에 표시되는 동사를 사용자 정의할 수 있습니다. 사용자 정의 옵션 제공합니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/f4cb403_settings.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/setup\" target=\"_blank\">Setup</a>",
+        "summary": "Windows 요구사항이 10 1809+ / Server 2019+로 변경되었습니다. 이는 Claude Code가 지원하는 Windows 버전의 범위를 명확히 합니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/f4cb403_setup.txt"
+      }
+    ]
+  },
+  {
     "date": "2026-01-29T21:07:44Z",
     "commit_hash": "bb892c4",
     "entries": [
