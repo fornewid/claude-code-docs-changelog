@@ -1,5 +1,25 @@
 [
   {
+    "date": "2026-01-31T00:17:14Z",
+    "commit_hash": "867daee",
+    "entries": [
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/changelog\" target=\"_blank\">Changelog</a>",
+        "summary": "PR 연결 자동화, 컬러 출력 수정, 권한 개선 및 윈도우 환경 문제 해결. 기능 향상으로 사용자 경험 개선.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/867daee_changelog.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/settings\" target=\"_blank\">Settings</a>",
+        "summary": "ANTHROPIC_CUSTOM_HEADERS 환경 변수 설명이 개선되었습니다. 여러 헤더를 줄 바꿈으로 구분하도록 수정되어 사용성이 향상되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/867daee_settings.txt"
+      }
+    ]
+  },
+  {
     "date": "2026-01-30T21:07:16Z",
     "commit_hash": "9fcabee",
     "entries": [
