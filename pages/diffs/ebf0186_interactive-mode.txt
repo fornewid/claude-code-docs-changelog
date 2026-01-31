@@ -1,0 +1,12 @@
+diff --git a/docs/interactive-mode.md b/docs/interactive-mode.md
+index a523c37..c31fb31 100644
+--- a/docs/interactive-mode.md
++++ b/docs/interactive-mode.md
+@@ -288,6 +288,7 @@ When working on a branch with an open pull request, Claude Code displays a click
+ * Yellow: pending review
+ * Red: changes requested
+ * Gray: draft
++* Purple: merged
+ 
+ `Cmd+click` (Mac) or `Ctrl+click` (Windows/Linux) the link to open the pull request in your browser. The status updates automatically every 60 seconds.
+ 

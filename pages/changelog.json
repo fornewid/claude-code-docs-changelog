@@ -1,5 +1,102 @@
 [
   {
+    "date": "2026-01-31T03:45:14Z",
+    "commit_hash": "ebf0186",
+    "entries": [
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/changelog\" target=\"_blank\">Changelog</a>",
+        "summary": "PR 생성 시 세션 자동 연결, 색상 출력 버그 수정, 권한 문제 해결, Windows 환경에서 Bash 실행 및 자식 프로세스 버그 수정, VSCode 토큰 만료 문제 해결.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/ebf0186_changelog.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/cli-reference\" target=\"_blank\">Cli Reference</a>",
+        "summary": "GitHub PR 연동 기능 추가: 특정 PR과 관련된 세션을 `--from-pr` 플래그로 시작 가능하게 되어, PR 기반 작업 흐름을 개선했습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/ebf0186_cli-reference.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/common-workflows\" target=\"_blank\">Common Workflows</a>",
+        "summary": "PR 연동 기능 추가: gh pr create로 생성된 PR과 세션을 자동 연결하고, --from-pr 옵션으로 PR 관련 세션을 재개합니다. 협업 효율성 증대.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/ebf0186_common-workflows.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/features-overview\" target=\"_blank\">Features Overview</a>",
+        "summary": "훅의 실행 시점에 대한 설명이 구체화되었고, 훅 가이드 링크가 업데이트되어 워크플로우 자동화 기능 강조.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/ebf0186_features-overview.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/hooks-guide\" target=\"_blank\">Hooks Guide</a>",
+        "summary": "훅 가이드가 업데이트되어, 훅을 사용한 자동화 예시와 설정 방법이 추가되었습니다.  데스크탑 알림, 코드 자동 서식, 파일 보호 등 다양한 활용법을 안내합니다. ",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/ebf0186_hooks-guide.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/hooks\" target=\"_blank\">Hooks</a>",
+        "summary": "훅 관련 문서가 업데이트되었습니다. 훅의 작동 방식, 설정 방법, 그리고 블로킹 및 실행 흐름에 대한 추가 설명이 제공됩니다. (예: rm -rf 차단).",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/ebf0186_hooks.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/interactive-mode\" target=\"_blank\">Interactive Mode</a>",
+        "summary": "Pull Request 상태를 나타내는 색상에 '병합됨(Purple)' 상태가 추가되어 PR의 최종 상태를 쉽게 알 수 있게 되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/ebf0186_interactive-mode.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/plugins-reference\" target=\"_blank\">Plugins Reference</a>",
+        "summary": "플러그인 이벤트 핸들러 목록이 업데이트되었습니다. `Setup` 이벤트가 제거되어 플러그인 작동 방식에 미세한 변경이 발생했습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/ebf0186_plugins-reference.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/plugins\" target=\"_blank\">Plugins</a>",
+        "summary": "플러그인 훅 설정 예시에서 파일 경로를 추출하는 jq 명령어가 추가되어, 훅 실행 시 파일 처리가 개선되었습니다.  더욱 유연하게 훅을 사용할 수 있습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/ebf0186_plugins.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/settings\" target=\"_blank\">Settings</a>",
+        "summary": "훅 설정 관련 내용이 변경되었습니다. hooks 필드의 설명과 예시가 개선되었습니다.  샌드박스 설정의 내용이 약간 수정되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/ebf0186_settings.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/skills\" target=\"_blank\">Skills</a>",
+        "summary": "기술 문서의 Hooks 관련 링크가 업데이트되어, '스킬 및 에이전트의 훅' 섹션으로 연결됩니다. 변경 사항은 관련 정보 접근성을 개선합니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/ebf0186_skills.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/sub-agents\" target=\"_blank\">Sub Agents</a>",
+        "summary": "훅과 관련된 문서의 내용이 업데이트되었습니다. exit code와 hook input에 대한 링크가 수정되었고, subagent stop hook에 대한 설명이 개선되었습니다. ",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/ebf0186_sub-agents.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/troubleshooting\" target=\"_blank\">Troubleshooting</a>",
+        "summary": "코드 블록 자동 형식 지침이 업데이트되었습니다. 후크 사용 예시가 변경되어 코드 형식 관련 내용이 개선되었습니다. (자동 서식)",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/ebf0186_troubleshooting.txt"
+      }
+    ]
+  },
+  {
     "date": "2026-01-31T00:17:14Z",
     "commit_hash": "867daee",
     "entries": [
