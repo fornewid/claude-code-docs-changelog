@@ -1,5 +1,18 @@
 [
   {
+    "date": "2026-02-01T00:20:10Z",
+    "commit_hash": "28372f7",
+    "entries": [
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/changelog\" target=\"_blank\">Changelog</a>",
+        "summary": "세션 재개 시 시작 성능 문제가 해결되었습니다. 'saved_hook_context'가 있는 세션의 성능이 개선되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/28372f7_changelog.txt"
+      }
+    ]
+  },
+  {
     "date": "2026-01-31T03:45:14Z",
     "commit_hash": "ebf0186",
     "entries": [

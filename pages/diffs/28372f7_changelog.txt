@@ -1,0 +1,15 @@
+diff --git a/docs/changelog.md b/docs/changelog.md
+index b5196f3..fc53157 100644
+--- a/docs/changelog.md
++++ b/docs/changelog.md
+@@ -8,6 +8,10 @@
+ 
+ # Changelog
+ 
++## 2.1.29
++
++- Fixed startup performance issues when resuming sessions that have `saved_hook_context`
++
+ ## 2.1.27
+ 
+ - Added tool call failures and denials to debug logs
