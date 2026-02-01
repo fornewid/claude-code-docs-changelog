@@ -1,5 +1,32 @@
 [
   {
+    "date": "2026-02-01T18:06:24Z",
+    "commit_hash": "606a36f",
+    "entries": [
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/data-usage\" target=\"_blank\">Data Usage</a>",
+        "summary": "세션 설문 끄기 옵션 추가, 서드파티 사용 시 설문 자동 비활성화, Foundry API 지원 추가. 사용자 데이터 보호 및 설문 제어 향상.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/606a36f_data-usage.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/interactive-mode\" target=\"_blank\">Interactive Mode</a>",
+        "summary": "프롬프트 제안 기능이 추가되어 대화 시작 시 예시 명령어와 후속 단계를 제시하여 작업 흐름을 개선합니다. Tab/Enter로 사용 가능합니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/606a36f_interactive-mode.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/settings\" target=\"_blank\">Settings</a>",
+        "summary": "설정 관련 환경 변수가 추가되어 기능 비활성화 옵션이 늘었습니다. 사용자 경험과 관련된 기능 제어 기능 추가. (피드백, 프롬프트 제안)",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/606a36f_settings.txt"
+      }
+    ]
+  },
+  {
     "date": "2026-02-01T00:20:10Z",
     "commit_hash": "28372f7",
     "entries": [
