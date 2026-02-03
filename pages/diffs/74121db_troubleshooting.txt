@@ -1,0 +1,13 @@
+diff --git a/docs/troubleshooting.md b/docs/troubleshooting.md
+index 6800fe6..e648750 100644
+--- a/docs/troubleshooting.md
++++ b/docs/troubleshooting.md
+@@ -167,7 +167,7 @@ claude doctor # Check installation health
+ ### Repeated permission prompts
+ 
+ If you find yourself repeatedly approving the same commands, you can allow specific tools
+-to run without approval using the `/permissions` command. See [Permissions docs](/en/iam#configuring-permissions).
++to run without approval using the `/permissions` command. See [Permissions docs](/en/permissions#manage-permissions).
+ 
+ ### Authentication issues
+ 

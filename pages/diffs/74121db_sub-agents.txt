@@ -1,0 +1,13 @@
+diff --git a/docs/sub-agents.md b/docs/sub-agents.md
+index a883402..7a9e246 100644
+--- a/docs/sub-agents.md
++++ b/docs/sub-agents.md
+@@ -336,7 +336,7 @@ This works for both built-in and custom subagents. You can also use the `--disal
+ claude --disallowedTools "Task(Explore)"
+ ```
+ 
+-See [IAM documentation](/en/iam#tool-specific-permission-rules) for more details on permission rules.
++See [Permissions documentation](/en/permissions#tool-specific-permission-rules) for more details on permission rules.
+ 
+ ### Define hooks for subagents
+ 

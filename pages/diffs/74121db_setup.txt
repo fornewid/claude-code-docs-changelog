@@ -1,0 +1,13 @@
+diff --git a/docs/setup.md b/docs/setup.md
+index b1443c9..dacfe76 100644
+--- a/docs/setup.md
++++ b/docs/setup.md
+@@ -238,7 +238,7 @@ Configure this via `/config` → **Auto-update channel**, or add it to your [set
+ }
+ ```
+ 
+-For enterprise deployments, you can enforce a consistent release channel across your organization using [managed settings](/en/iam#managed-settings).
++For enterprise deployments, you can enforce a consistent release channel across your organization using [managed settings](/en/permissions#managed-settings).
+ 
+ ### Disable auto-updates
+ 

@@ -1,5 +1,134 @@
 [
   {
+    "date": "2026-02-03T03:48:44Z",
+    "commit_hash": "74121db",
+    "entries": [
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/analytics\" target=\"_blank\">Analytics</a>",
+        "summary": "IAM 관련 내용이 'Permissions'로 변경되었으며, 권한 설정 관련 안내가 업데이트되었습니다. 접근 권한 관리가 더 명확해졌습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/74121db_analytics.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/authentication\" target=\"_blank\">Authentication</a>",
+        "summary": "새로운 파일 추가됨. Claude Code의 사용자 인증 및 자격 증명 관리에 대한 가이드 제공. 설정 방법, 보안, 권한 등 설명.",
+        "tag_text": "NEW",
+        "tag_class": "new"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/cli-reference\" target=\"_blank\">Cli Reference</a>",
+        "summary": "cli-reference.md 문서가 업데이트되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/74121db_cli-reference.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/desktop\" target=\"_blank\">Desktop</a>",
+        "summary": "원격 세션 지원 모드 관련 문서 링크가 변경되었습니다. 사용자들이 관련 내용을 더 쉽게 접근하고 이해할 수 있도록 개선되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/74121db_desktop.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/hooks\" target=\"_blank\">Hooks</a>",
+        "summary": "permission mode에 대한 문서 링크가 업데이트되었고, 더 정확한 정보를 제공합니다. 사용자 권한 관련 내용을 개선했습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/74121db_hooks.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/how-claude-code-works\" target=\"_blank\">How Claude Code Works</a>",
+        "summary": "문서 내 링크가 변경되었습니다. 'Permissions'에서 'permissions'로 수정되어, 문서 내 일관성이 향상되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/74121db_how-claude-code-works.txt"
+      },
+      {
+        "title": "Iam",
+        "summary": "문서가 삭제되었습니다.",
+        "tag_text": "DELETE",
+        "tag_class": "delete"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/interactive-mode\" target=\"_blank\">Interactive Mode</a>",
+        "summary": "`/permissions` 명령어의 링크가 IAM에서 권한 관리 페이지로 변경되었습니다. 권한 관리에 대한 접근성이 향상되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/74121db_interactive-mode.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/permissions\" target=\"_blank\">Permissions</a>",
+        "summary": "새로운 파일 추가됨. Claude Code의 권한 설정을 위한 안내 및 규칙, 모드, 관리형 정책 등이 포함되어, 에이전트의 접근 권한을 세밀하게 제어할 수 있게 됨. (변경사항: 권한 관리 시스템 도입, 중요성: 보안 및 접근 제어 강화)",
+        "tag_text": "NEW",
+        "tag_class": "new"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/quickstart\" target=\"_blank\">Quickstart</a>",
+        "summary": "자격 증명 관련 링크가 IAM에서 Authentication 페이지로 업데이트되어, 보다 정확한 정보 접근을 돕습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/74121db_quickstart.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/sandboxing\" target=\"_blank\">Sandboxing</a>",
+        "summary": "샌드박싱과 권한의 관계를 명확히 설명하는 새로운 섹션이 추가되었습니다. 파일 시스템 및 네트워크 접근 제어를 위한 권한 규칙 사용법을 안내합니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/74121db_sandboxing.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/security\" target=\"_blank\">Security</a>",
+        "summary": "IAM 관련 링크가 Permissions, Authentication으로 변경되었고, WebDAV 관련 보안 위험에 대한 내용이 추가되었습니다. 보안 관련 내용이 업데이트되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/74121db_security.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/settings\" target=\"_blank\">Settings</a>",
+        "summary": "링크가 업데이트되었고, 몇 가지 설정 옵션이 추가/제거되었습니다. 특히, MCP 서버 관련 설정에 변화가 있습니다. ",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/74121db_settings.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/setup\" target=\"_blank\">Setup</a>",
+        "summary": "엔터프라이즈 배포 시, 자동 업데이트 설정을 위한 링크가 /en/iam에서 /en/permissions로 변경되었습니다. 권한 관련 설정으로 업데이트 경로가 수정되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/74121db_setup.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/skills\" target=\"_blank\">Skills</a>",
+        "summary": "링크가 업데이트되어 권한 설정 및 접근 방식에 대한 최신 정보를 반영합니다. 접근성 및 관리 측면 개선.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/74121db_skills.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/sub-agents\" target=\"_blank\">Sub Agents</a>",
+        "summary": "IAM 문서 링크가 권한 문서 링크로 업데이트되어, 권한 규칙 관련 정보를 더 정확하게 안내합니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/74121db_sub-agents.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/third-party-integrations\" target=\"_blank\">Third Party Integrations</a>",
+        "summary": "Claude 및 Anthropic Console 링크가 `/en/iam`에서 `/en/authentication`으로 업데이트되어 인증 관련 설정 안내에 대한 접근성이 향상되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/74121db_third-party-integrations.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/troubleshooting\" target=\"_blank\">Troubleshooting</a>",
+        "summary": "권한 관련 링크가 업데이트되었습니다.  사용자의 권한 관리 문서 위치가 변경되어, 더 정확한 정보를 제공합니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/74121db_troubleshooting.txt"
+      }
+    ]
+  },
+  {
     "date": "2026-02-01T21:06:00Z",
     "commit_hash": "3039b46",
     "entries": [
