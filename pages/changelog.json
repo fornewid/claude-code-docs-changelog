@@ -1,5 +1,18 @@
 [
   {
+    "date": "2026-02-03T21:10:46Z",
+    "commit_hash": "fe58750",
+    "entries": [
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/setup\" target=\"_blank\">Setup</a>",
+        "summary": "지원 운영체제가 확장되었고, Alpine Linux를 위한 설치 안내가 추가되었습니다. Windows 설치에 대한 설명이 개선되었습니다. (Alpine 설치 안내 추가 및 윈도우 지원 개선)",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/fe58750_setup.txt"
+      }
+    ]
+  },
+  {
     "date": "2026-02-03T18:18:36Z",
     "commit_hash": "afe27f2",
     "entries": [
