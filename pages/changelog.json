@@ -1,5 +1,18 @@
 [
   {
+    "date": "2026-02-03T09:13:16Z",
+    "commit_hash": "16371f1",
+    "entries": [
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/monitoring-usage\" target=\"_blank\">Monitoring Usage</a>",
+        "summary": "텔레메트리 관련 설정 및 이벤트에 대한 내용이 업데이트되었습니다. 새로운 설정 추가 및 기존 설정에 대한 설명이 개선되었으며, 이벤트에 시퀀스 정보가 추가되었습니다. 툴 이름 및 기술 정보를 로깅하는 설정도 추가되었습니다. ",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/16371f1_monitoring-usage.txt"
+      }
+    ]
+  },
+  {
     "date": "2026-02-03T03:48:44Z",
     "commit_hash": "74121db",
     "entries": [
