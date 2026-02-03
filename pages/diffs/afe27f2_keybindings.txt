@@ -1,0 +1,13 @@
+diff --git a/docs/keybindings.md b/docs/keybindings.md
+index 451db58..539b677 100644
+--- a/docs/keybindings.md
++++ b/docs/keybindings.md
+@@ -24,7 +24,7 @@ This example binds `Ctrl+E` to open an external editor in the chat context, and
+ 
+ ```json  theme={null}
+ {
+-  "$schema": "https://platform.claude.com/docs/schemas/claude-code/keybindings.json",
++  "$schema": "https://www.schemastore.org/claude-code-keybindings.json",
+   "$docs": "https://code.claude.com/docs/en/keybindings",
+   "bindings": [
+     {
