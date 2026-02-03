@@ -189,8 +189,8 @@
     "monitoring-usage.md": {
       "original_url": "https://code.claude.com/docs/en/monitoring-usage",
       "original_md_url": "https://code.claude.com/docs/en/monitoring-usage.md",
-      "hash": "0ad9be34223032eb3da093e8fb17f7bc223e2707a051c17a3605c355ab28669f",
-      "last_updated": "2026-01-24T03:29:15.927354"
+      "hash": "60a09b8e54b081c457b593dc9e4ff19faaf13452078677a742b99e8fa732ea46",
+      "last_updated": "2026-02-03T09:13:04.875359"
     },
     "network-config.md": {
       "original_url": "https://code.claude.com/docs/en/network-config",
@@ -321,8 +321,8 @@
     }
   },
   "fetch_metadata": {
-    "last_fetch_completed": "2026-02-03T03:48:44.309885",
-    "fetch_duration_seconds": 29.616651,
+    "last_fetch_completed": "2026-02-03T09:13:16.815972",
+    "fetch_duration_seconds": 30.361634,
     "total_pages_discovered": 52,
     "pages_fetched_successfully": 53,
     "pages_failed": 0,
@@ -332,7 +332,7 @@
     "total_files": 53,
     "fetch_tool_version": "3.0"
   },
-  "last_updated": "2026-02-03T03:48:44.309904",
+  "last_updated": "2026-02-03T09:13:16.816002",
   "base_url": "https://raw.githubusercontent.com/fornewid/claude-code-docs-changelog/main/docs/",
   "github_repository": "fornewid/claude-code-docs-changelog",
   "github_ref": "main",
