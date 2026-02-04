@@ -273,8 +273,8 @@
     "slack.md": {
       "original_url": "https://code.claude.com/docs/en/slack",
       "original_md_url": "https://code.claude.com/docs/en/slack.md",
-      "hash": "f3029fbc38c35444d31a12b645cf56bd7c390125d64cbe828097a504d9a82368",
-      "last_updated": "2026-02-03T18:18:32.919172"
+      "hash": "c24966cbf71e93478f82ee22ac46f2aa247ad5b6d3a9115a2ac95868ee60ca7d",
+      "last_updated": "2026-02-04T00:20:10.820257"
     },
     "statusline.md": {
       "original_url": "https://code.claude.com/docs/en/statusline",
@@ -321,8 +321,8 @@
     }
   },
   "fetch_metadata": {
-    "last_fetch_completed": "2026-02-03T21:10:46.414918",
-    "fetch_duration_seconds": 30.208985,
+    "last_fetch_completed": "2026-02-04T00:20:14.626243",
+    "fetch_duration_seconds": 31.320782,
     "total_pages_discovered": 52,
     "pages_fetched_successfully": 53,
     "pages_failed": 0,
@@ -332,7 +332,7 @@
     "total_files": 53,
     "fetch_tool_version": "3.0"
   },
-  "last_updated": "2026-02-03T21:10:46.414948",
+  "last_updated": "2026-02-04T00:20:14.626279",
   "base_url": "https://raw.githubusercontent.com/fornewid/claude-code-docs-changelog/main/docs/",
   "github_repository": "fornewid/claude-code-docs-changelog",
   "github_ref": "main",
