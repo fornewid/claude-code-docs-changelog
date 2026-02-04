@@ -1,5 +1,81 @@
 [
   {
+    "date": "2026-02-04T03:48:28Z",
+    "commit_hash": "e91de9d",
+    "entries": [
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/amazon-bedrock\" target=\"_blank\">Amazon Bedrock</a>",
+        "summary": "프롬프트 캐싱 관련 링크가 업데이트되었습니다.  사용자 편의성을 위해 관련 문서 링크를 수정했습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/e91de9d_amazon-bedrock.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/changelog\" target=\"_blank\">Changelog</a>",
+        "summary": "세션 재개 힌트 추가, 일본어 IME 지원, PDF 오류 수정, bash 오류 수정, plan 모드 충돌 수정, temperatureOverride 버그 수정, LSP 호환성 개선, 도구 사용 유도, 오류 메시지 개선.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/e91de9d_changelog.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/claude-code-on-the-web\" target=\"_blank\">Claude Code On The Web</a>",
+        "summary": "웹 접근 가능한 도메인 목록이 업데이트되었습니다. docs.claude.com이 platform.claude.com으로 변경되어 접근성이 향상되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/e91de9d_claude-code-on-the-web.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/cli-reference\" target=\"_blank\">Cli Reference</a>",
+        "summary": "CLI 참조 문서의 링크가 업데이트되었습니다. 'SDK documentation' 링크가 Agent SDK 문서로 변경되어 최신 정보를 제공합니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/e91de9d_cli-reference.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/common-workflows\" target=\"_blank\">Common Workflows</a>",
+        "summary": "확장된 사고 기능 관련 링크가 업데이트되었습니다. 더 자세한 정보에 쉽게 접근할 수 있도록 돕습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/e91de9d_common-workflows.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/github-actions\" target=\"_blank\">Github Actions</a>",
+        "summary": "GitHub Actions 문서가 업데이트되었습니다. SDK 링크가 변경되었고, Claude Agent SDK로의 접근성이 개선되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/e91de9d_github-actions.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/gitlab-ci-cd\" target=\"_blank\">Gitlab Ci Cd</a>",
+        "summary": "Claude Code CLI 및 Agent SDK 문서 링크가 업데이트되었고, Anthropic 가격 정보 링크가 변경되었습니다. CI/CD 사용 비용 관련 내용도 수정되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/e91de9d_gitlab-ci-cd.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/google-vertex-ai\" target=\"_blank\">Google Vertex Ai</a>",
+        "summary": "프롬프트 캐싱 및 1M 토큰 컨텍스트 윈도우 관련 링크가 업데이트되었습니다. 더 정확한 정보를 제공하기 위해 링크가 변경되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/e91de9d_google-vertex-ai.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/permissions\" target=\"_blank\">Permissions</a>",
+        "summary": "Verify subagent 대신 커스텀 subagent를 허용하도록 변경. 특정 에이전트의 접근 제어를 유연하게 할 수 있습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/e91de9d_permissions.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/settings\" target=\"_blank\">Settings</a>",
+        "summary": "환경 변수 목록이 업데이트되어, 새로운 기능 지원 및 기존 설정 개선 사항을 반영합니다. 사용자 편의성을 높였습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/e91de9d_settings.txt"
+      }
+    ]
+  },
+  {
     "date": "2026-02-04T00:20:14Z",
     "commit_hash": "d01c12d",
     "entries": [

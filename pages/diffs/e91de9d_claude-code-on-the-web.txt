@@ -1,0 +1,13 @@
+diff --git a/docs/claude-code-on-the-web.md b/docs/claude-code-on-the-web.md
+index f351ced..9221eed 100644
+--- a/docs/claude-code-on-the-web.md
++++ b/docs/claude-code-on-the-web.md
+@@ -330,7 +330,7 @@ When using "Limited" network access, the following domains are allowed by defaul
+ 
+ * api.anthropic.com
+ * statsig.anthropic.com
+-* docs.claude.com
++* platform.claude.com
+ * code.claude.com
+ * claude.ai
+ 
