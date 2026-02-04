@@ -1,5 +1,46 @@
 [
   {
+    "date": "2026-02-04T21:09:54Z",
+    "commit_hash": "8b61896",
+    "entries": [
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/best-practices\" target=\"_blank\">Best Practices</a>",
+        "summary": "UI 검증 관련 내용이 일부 수정되었습니다. 크롬 확장 프로그램 사용 설명에서 '새 탭' 기능이 추가되어 UI 테스트의 효율성을 높입니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/8b61896_best-practices.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/chrome\" target=\"_blank\">Chrome</a>",
+        "summary": "Chrome 통합 기능이 개선되어 브라우저 자동화 기능이 강화되었습니다. 사용법과 예시가 추가되었으며, 주요 기능과 사용자가 알아야 할 사항이 명시되었습니다. ",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/8b61896_chrome.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/mcp\" target=\"_blank\">Mcp</a>",
+        "summary": "mcp.md 문서가 업데이트되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/8b61896_mcp.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/overview\" target=\"_blank\">Overview</a>",
+        "summary": "Claude Code의 사용 가능 환경이 터미널에서 IDE, 데스크탑 앱, 웹, Slack으로 확장되어 개발 편의성을 높였습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/8b61896_overview.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/vs-code\" target=\"_blank\">Vs Code</a>",
+        "summary": "vs-code.md 문서가 업데이트되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/8b61896_vs-code.txt"
+      }
+    ]
+  },
+  {
     "date": "2026-02-04T18:15:49Z",
     "commit_hash": "79ef787",
     "entries": [
