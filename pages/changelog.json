@@ -1,5 +1,129 @@
 [
   {
+    "date": "2026-02-05T18:17:23Z",
+    "commit_hash": "bf0657f",
+    "entries": [
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/agent-teams\" target=\"_blank\">Agent Teams</a>",
+        "summary": "새로운 'agent-teams.md' 파일이 추가되었습니다. 이 문서는 여러 Claude Code 인스턴스를 팀으로 구성하여 공동 작업을 수행하는 방법을 안내합니다. '에이전트 팀' 사용법을 설명합니다.",
+        "tag_text": "NEW",
+        "tag_class": "new"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/best-practices\" target=\"_blank\">Best Practices</a>",
+        "summary": "병렬 세션 실행 방법이 2개에서 3개로 늘고, '에이전트 팀' 기능이 추가되어 협업과 워크플로우 효율성을 높입니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/bf0657f_best-practices.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/changelog\" target=\"_blank\">Changelog</a>",
+        "summary": "changelog.md 문서가 업데이트되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/bf0657f_changelog.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/cli-reference\" target=\"_blank\">Cli Reference</a>",
+        "summary": "새로운 '--teammate-mode' 플래그가 추가되어 에이전트 팀의 표시 방식을 제어하여 팀 협업 기능을 향상시켰습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/bf0657f_cli-reference.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/common-workflows\" target=\"_blank\">Common Workflows</a>",
+        "summary": "확장된 사고 기능에 적응형 추론이 추가되어 모델의 사고 깊이를 조절 가능해졌습니다. 또한 에이전트 팀 관련 내용이 추가되었습니다. ",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/bf0657f_common-workflows.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/costs\" target=\"_blank\">Costs</a>",
+        "summary": "에이전트 팀 관련 비용 관리 가이드가 추가되었습니다. 팀 크기를 줄이고, Sonnet 모델을 사용하며, 팀 작업을 작게 유지하여 토큰 사용량을 최적화합니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/bf0657f_costs.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/features-overview\" target=\"_blank\">Features Overview</a>",
+        "summary": "Agent teams 기능 추가 및 Subagent와 비교 설명, 추가적인 탭 및 카드 UI 요소 추가. 병렬 작업, 복잡한 문제 해결에 활용 가능하며, agent team은 독립적인 세션으로 작동합니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/bf0657f_features-overview.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/github-actions\" target=\"_blank\">Github Actions</a>",
+        "summary": "Claude Opus 4.6 지원, 모델 파라미터 업데이트. 최신 모델 사용으로 더 나은 성능과 기능 향상을 기대할 수 있습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/bf0657f_github-actions.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/google-vertex-ai\" target=\"_blank\">Google Vertex Ai</a>",
+        "summary": "Anthropic 모델 버전이 업데이트되었습니다. 최신 모델을 사용하여 성능을 개선하고 기능을 향상시킵니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/bf0657f_google-vertex-ai.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/how-claude-code-works\" target=\"_blank\">How Claude Code Works</a>",
+        "summary": "Claude의 실행 모드에 Delegate 모드가 추가되어, 에이전트 팀을 통한 작업 조율 기능을 소개합니다. 팀 협업 방식 개선.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/bf0657f_how-claude-code-works.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/interactive-mode\" target=\"_blank\">Interactive Mode</a>",
+        "summary": "단축키 목록에 Ctrl+T로 작업 목록 토글 기능 추가, 설명 보완. 에이전트 팀 활성 시 권한 모드 설명에 위임 모드 추가. 사용자 편의성 향상.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/bf0657f_interactive-mode.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/microsoft-foundry\" target=\"_blank\">Microsoft Foundry</a>",
+        "summary": "Anthropic Opus 모델 버전이 4-1에서 4-6으로 업데이트되었습니다. 모델 성능 개선을 반영합니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/bf0657f_microsoft-foundry.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/model-config\" target=\"_blank\">Model Config</a>",
+        "summary": "모델 별칭 및 동작 방식, default 모델 동작, 1M 토큰 컨텍스트 관련 내용이 업데이트되었습니다. Opus 4.6의 노력 수준 설정 관련 내용이 추가되었습니다. ",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/bf0657f_model-config.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/permissions\" target=\"_blank\">Permissions</a>",
+        "summary": "새로운 권한 모드 'delegate'가 추가되어, 팀 리더가 팀 관리 도구만 사용할 수 있도록 제한합니다. 팀워크 효율성을 높이기 위함입니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/bf0657f_permissions.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/settings\" target=\"_blank\">Settings</a>",
+        "summary": "teammateMode 설정 추가로, 에이전트 팀의 표시 방식을 `auto`, `in-process`, `tmux` 중에서 선택할 수 있게 되었습니다. 팀 협업 기능 개선.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/bf0657f_settings.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/statusline\" target=\"_blank\">Statusline</a>",
+        "summary": "모델 ID가 변경되었습니다. claude-opus-4-1에서 claude-opus-4-6으로 업데이트되어 모델 성능이 향상되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/bf0657f_statusline.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/sub-agents\" target=\"_blank\">Sub Agents</a>",
+        "summary": "sub-agents.md 문서가 업데이트되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/bf0657f_sub-agents.txt"
+      }
+    ]
+  },
+  {
     "date": "2026-02-05T03:48:44Z",
     "commit_hash": "3506792",
     "entries": [

@@ -1,0 +1,13 @@
+diff --git a/docs/microsoft-foundry.md b/docs/microsoft-foundry.md
+index be29b40..6fe02b7 100644
+--- a/docs/microsoft-foundry.md
++++ b/docs/microsoft-foundry.md
+@@ -73,7 +73,7 @@ export ANTHROPIC_FOUNDRY_RESOURCE={resource}
+ # Set models to your resource's deployment names
+ export ANTHROPIC_DEFAULT_SONNET_MODEL='claude-sonnet-4-5'
+ export ANTHROPIC_DEFAULT_HAIKU_MODEL='claude-haiku-4-5'
+-export ANTHROPIC_DEFAULT_OPUS_MODEL='claude-opus-4-1'
++export ANTHROPIC_DEFAULT_OPUS_MODEL='claude-opus-4-6'
+ ```
+ 
+ For more details on model configuration options, see [Model configuration](/en/model-config).

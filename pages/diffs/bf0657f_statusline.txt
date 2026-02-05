@@ -1,0 +1,13 @@
+diff --git a/docs/statusline.md b/docs/statusline.md
+index 63ca0f4..a0c256f 100644
+--- a/docs/statusline.md
++++ b/docs/statusline.md
+@@ -45,7 +45,7 @@ Your status line command receives structured data via stdin in JSON format:
+   "transcript_path": "/path/to/transcript.json",
+   "cwd": "/current/working/directory",
+   "model": {
+-    "id": "claude-opus-4-1",
++    "id": "claude-opus-4-6",
+     "display_name": "Opus"
+   },
+   "workspace": {
