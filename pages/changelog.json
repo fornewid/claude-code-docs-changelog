@@ -1,5 +1,25 @@
 [
   {
+    "date": "2026-02-05T00:18:57Z",
+    "commit_hash": "1a92f5e",
+    "entries": [
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/mcp\" target=\"_blank\">Mcp</a>",
+        "summary": "사전 구성된 OAuth 자격 증명을 사용하여 MCP 서버를 추가하는 방법을 설명하는 새로운 섹션이 추가되었습니다. 보안 설정 및 CI 환경 설정도 다룹니다. (MCP OAuth 구성)",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/1a92f5e_mcp.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/settings\" target=\"_blank\">Settings</a>",
+        "summary": "MCP 서버에 사전 구성된 자격 증명을 사용할 수 있도록 새로운 환경 변수 (`MCP_CLIENT_SECRET`, `MCP_OAUTH_CALLBACK_PORT`)가 추가되었습니다. 보안 및 사용성 향상.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/1a92f5e_settings.txt"
+      }
+    ]
+  },
+  {
     "date": "2026-02-04T21:09:54Z",
     "commit_hash": "8b61896",
     "entries": [
