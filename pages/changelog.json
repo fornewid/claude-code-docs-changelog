@@ -1,5 +1,32 @@
 [
   {
+    "date": "2026-02-05T21:08:52Z",
+    "commit_hash": "6553fe8",
+    "entries": [
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/common-workflows\" target=\"_blank\">Common Workflows</a>",
+        "summary": "Opus 4.6의 노력 수준 설정 옵션이 변경되었습니다. 'max' 옵션이 제거되어, 모델의 추론 깊이 조절 방식이 업데이트되었습니다. ",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/6553fe8_common-workflows.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/model-config\" target=\"_blank\">Model Config</a>",
+        "summary": "model-config.md 문서가 업데이트되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/6553fe8_model-config.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/settings\" target=\"_blank\">Settings</a>",
+        "summary": "Opus 4.6의 노력 수준 설정 옵션에서 'max'가 제거되었습니다. 이는 모델의 성능을 조정하는 데 영향을 미칩니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/6553fe8_settings.txt"
+      }
+    ]
+  },
+  {
     "date": "2026-02-05T18:17:23Z",
     "commit_hash": "bf0657f",
     "entries": [
