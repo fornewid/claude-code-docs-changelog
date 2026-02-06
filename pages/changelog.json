@@ -1,5 +1,46 @@
 [
   {
+    "date": "2026-02-06T21:08:43Z",
+    "commit_hash": "fcbc49e",
+    "entries": [
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/amazon-bedrock\" target=\"_blank\">Amazon Bedrock</a>",
+        "summary": "IAM 설정 관련 내용이 추가되었고, 토큰 설정 관련 안내가 삭제되어 IAM 권한 설정에 대한 정보가 업데이트 되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/fcbc49e_amazon-bedrock.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/best-practices\" target=\"_blank\">Best Practices</a>",
+        "summary": "대화 요약 기능 개선: 특정 지점부터 요약 가능, 체크포인트 메뉴 개선 및 관련 문서 링크 추가로 사용성 향상.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/fcbc49e_best-practices.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/checkpointing\" target=\"_blank\">Checkpointing</a>",
+        "summary": "체크포인트 기능 설명이 확장되어 대화 요약 기능이 추가되었습니다. 맥락 유지를 위해 특정 시점부터 요약하는 방법을 소개합니다. (상태 복원 vs 요약)",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/fcbc49e_checkpointing.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/interactive-mode\" target=\"_blank\">Interactive Mode</a>",
+        "summary": "Esc+Esc 기능이 대화 내용 요약 기능을 포함하도록 변경되었고, /rewind 명령어에 요약 기능이 추가되어 대화 관리가 개선되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/fcbc49e_interactive-mode.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/keybindings\" target=\"_blank\">Keybindings</a>",
+        "summary": "MessageSelector 컨텍스트 설명이 업데이트되어 리와인드 및 요약 대화 상자 메시지 선택 기능을 포함합니다. 사용자 경험 향상.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/fcbc49e_keybindings.txt"
+      }
+    ]
+  },
+  {
     "date": "2026-02-06T15:14:55Z",
     "commit_hash": "e9da267",
     "entries": [
