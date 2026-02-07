@@ -1,5 +1,24 @@
 [
   {
+    "date": "2026-02-07T18:06:58Z",
+    "commit_hash": "30872c9",
+    "entries": [
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/changelog\" target=\"_blank\">Changelog</a>",
+        "summary": "Opus 4.6에 빠른 모드가 추가되어 성능이 향상되었습니다. 자세한 내용은 관련 문서를 참조하세요.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/30872c9_changelog.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/fast-mode\" target=\"_blank\">Fast Mode</a>",
+        "summary": "새로운 'fast-mode.md' 파일은 Opus 4.6의 빠른 응답을 위한 기능 설명, 사용 방법, 가격, 사용 시점 등을 안내합니다. (속도 우선)",
+        "tag_text": "NEW",
+        "tag_class": "new"
+      }
+    ]
+  },
+  {
     "date": "2026-02-07T00:17:48Z",
     "commit_hash": "03290fa",
     "entries": [
