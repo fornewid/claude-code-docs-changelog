@@ -1,5 +1,25 @@
 [
   {
+    "date": "2026-02-07T21:07:10Z",
+    "commit_hash": "76b4dba",
+    "entries": [
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/changelog\" target=\"_blank\">Changelog</a>",
+        "summary": "2.1.37 버전에서 /extra-usage 활성화 후 /fast가 즉시 사용 불가했던 문제 해결. 서비스 안정성 향상.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/76b4dba_changelog.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/fast-mode\" target=\"_blank\">Fast Mode</a>",
+        "summary": "Fast mode 관련 설명이 업데이트되었습니다. Claude Console 지원 추가 및 설명 위치 변경.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/76b4dba_fast-mode.txt"
+      }
+    ]
+  },
+  {
     "date": "2026-02-07T18:06:58Z",
     "commit_hash": "30872c9",
     "entries": [
