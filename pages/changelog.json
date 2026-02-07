@@ -1,5 +1,88 @@
 [
   {
+    "date": "2026-02-07T00:17:48Z",
+    "commit_hash": "03290fa",
+    "entries": [
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/agent-teams\" target=\"_blank\">Agent Teams</a>",
+        "summary": "팀원 작업 완료 시 훅을 사용하여 품질 게이트를 적용하는 방법과 각 훅의 역할에 대한 새로운 정보가 추가되었습니다. 팀 작업 효율성을 높입니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/03290fa_agent-teams.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/checkpointing\" target=\"_blank\">Checkpointing</a>",
+        "summary": "세션 분기를 위한 'fork' 사용법 안내 추가. 기존 세션 유지하며 다른 시도 가능하게 하여 워크플로우 유연성 증대.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/03290fa_checkpointing.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/cli-reference\" target=\"_blank\">Cli Reference</a>",
+        "summary": "서브 에이전트 설정에 새로운 기능(disallowedTools, skills, mcpServers, maxTurns)이 추가되었습니다. 에이전트 동작을 더 세밀하게 제어할 수 있게 되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/03290fa_cli-reference.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/hooks-guide\" target=\"_blank\">Hooks Guide</a>",
+        "summary": "훅 이벤트 테이블에 'TeammateIdle' 및 'TaskCompleted' 이벤트가 추가되었고, 'SessionEnd' 이벤트의 옵션이 확장되었습니다.  에이전트 팀 및 태스크 관리 관련 기능 개선.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/03290fa_hooks-guide.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/hooks\" target=\"_blank\">Hooks</a>",
+        "summary": "훅 이벤트 테이블에 `TeammateIdle` 및 `TaskCompleted` 이벤트가 추가되었습니다. 훅의 기능과 사용성을 개선했습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/03290fa_hooks.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/how-claude-code-works\" target=\"_blank\">How Claude Code Works</a>",
+        "summary": "세션 관련 내용이 수정되었습니다. '임시적'에서 '독립적'으로 변경되어 세션 간 기억 유지 방법을 설명합니다. auto memory와 CLAUDE.md를 활용해 기억을 유지할 수 있습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/03290fa_how-claude-code-works.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/memory\" target=\"_blank\">Memory</a>",
+        "summary": "자동 메모리 기능이 추가되어, Claude가 학습한 내용을 저장하고 활용할 수 있게 되었습니다. 사용법 및 관리 방법도 안내합니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/03290fa_memory.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/plugins-reference\" target=\"_blank\">Plugins Reference</a>",
+        "summary": "플러그인 이벤트 핸들러에 새로운 이벤트가 추가되었습니다: TeammateIdle, TaskCompleted. 팀 활동 관리 및 작업 완료에 중요한 기능입니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/03290fa_plugins-reference.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/settings\" target=\"_blank\">Settings</a>",
+        "summary": "Claude Code의 환경 변수 설정에 'CLAUDE_CODE_DISABLE_AUTO_MEMORY'가 추가되어 자동 메모리 기능을 비활성화할 수 있습니다. 사용자 정의 옵션 제공.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/03290fa_settings.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/skills\" target=\"_blank\">Skills</a>",
+        "summary": "새로운 디렉토리에서 스킬을 로드하는 방법과 스킬 설명 문자 예산에 대한 세부 정보가 추가 및 업데이트되었습니다. 스킬 사용성 향상.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/03290fa_skills.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/sub-agents\" target=\"_blank\">Sub Agents</a>",
+        "summary": "sub-agents.md 문서가 업데이트되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/03290fa_sub-agents.txt"
+      }
+    ]
+  },
+  {
     "date": "2026-02-06T21:08:43Z",
     "commit_hash": "fcbc49e",
     "entries": [
