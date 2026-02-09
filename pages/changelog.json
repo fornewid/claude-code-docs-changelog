@@ -1,5 +1,18 @@
 [
   {
+    "date": "2026-02-09T15:20:50Z",
+    "commit_hash": "dc7806a",
+    "entries": [
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/claude-code-on-the-web\" target=\"_blank\">Claude Code On The Web</a>",
+        "summary": "의존성 관리 관련 내용이 변경되었습니다.  SessionStart 훅을 사용해 패키지를 설치하고, 환경 변수 지속 방법, 제약사항 정보가 추가되었습니다. ",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/dc7806a_claude-code-on-the-web.txt"
+      }
+    ]
+  },
+  {
     "date": "2026-02-09T00:19:09Z",
     "commit_hash": "c425bb6",
     "entries": [
