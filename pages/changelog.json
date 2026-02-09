@@ -1,5 +1,18 @@
 [
   {
+    "date": "2026-02-09T00:19:09Z",
+    "commit_hash": "c425bb6",
+    "entries": [
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/model-config\" target=\"_blank\">Model Config</a>",
+        "summary": "모델 버전을 고정하기 위한 지침이 업데이트되었습니다. 이제 전체 모델 이름(예: claude-opus-4-6)을 사용하거나 환경 변수를 설정해야 합니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/c425bb6_model-config.txt"
+      }
+    ]
+  },
+  {
     "date": "2026-02-07T21:07:10Z",
     "commit_hash": "76b4dba",
     "entries": [
