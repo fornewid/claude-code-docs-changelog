@@ -1,0 +1,15 @@
+diff --git a/docs/claude-code-on-the-web.md b/docs/claude-code-on-the-web.md
+index db03f64..36b3d3f 100644
+--- a/docs/claude-code-on-the-web.md
++++ b/docs/claude-code-on-the-web.md
+@@ -30,8 +30,8 @@ Claude Code on the web is available in research preview to:
+ 
+ * **Pro users**
+ * **Max users**
+-* **Team premium seat users**
+-* **Enterprise premium seat users**
++* **Team users**
++* **Enterprise users** with premium seats or Chat + Claude Code seats
+ 
+ ## Getting started
+ 

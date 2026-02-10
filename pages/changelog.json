@@ -1,5 +1,25 @@
 [
   {
+    "date": "2026-02-10T00:23:25Z",
+    "commit_hash": "f7fa8aa",
+    "entries": [
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/claude-code-on-the-web\" target=\"_blank\">Claude Code On The Web</a>",
+        "summary": "웹 기반 Claude Code 접근 권한 조건이 변경되었습니다. Team, Enterprise 사용자의 접근 조건이 명확해져 서비스 이용에 혼란을 줄였습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/f7fa8aa_claude-code-on-the-web.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/overview\" target=\"_blank\">Overview</a>",
+        "summary": "클로드 코드 소개가 간결하게 변경되었고, 다양한 환경에서의 설치 방법과 사용법이 추가되었습니다. MCP 및 커스터마이징 관련 내용도 포함되었습니다. (코드/설명 변경)",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/f7fa8aa_overview.txt"
+      }
+    ]
+  },
+  {
     "date": "2026-02-09T15:20:50Z",
     "commit_hash": "dc7806a",
     "entries": [
