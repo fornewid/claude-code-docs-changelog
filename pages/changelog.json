@@ -1,5 +1,18 @@
 [
   {
+    "date": "2026-02-10T21:16:26Z",
+    "commit_hash": "55e1d9e",
+    "entries": [
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/fast-mode\" target=\"_blank\">Fast Mode</a>",
+        "summary": "Fast mode 설명이 업데이트되어 2.5배 빠른 속도와 토큰당 더 높은 비용을 명시합니다. 인터랙티브 작업에 유용.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/55e1d9e_fast-mode.txt"
+      }
+    ]
+  },
+  {
     "date": "2026-02-10T03:58:46Z",
     "commit_hash": "708f71d",
     "entries": [
