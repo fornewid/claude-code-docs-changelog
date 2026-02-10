@@ -1,5 +1,25 @@
 [
   {
+    "date": "2026-02-10T03:58:46Z",
+    "commit_hash": "708f71d",
+    "entries": [
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/changelog\" target=\"_blank\">Changelog</a>",
+        "summary": "2.1.38 버전 업데이트: VS Code 터미널 스크롤 문제, 탭 키 자동 완성 오류, bash 권한 문제 등 여러 버그 수정. 보안 강화 및 성능 개선.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/708f71d_changelog.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/desktop\" target=\"_blank\">Desktop</a>",
+        "summary": "desktop.md 문서가 업데이트되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/708f71d_desktop.txt"
+      }
+    ]
+  },
+  {
     "date": "2026-02-10T00:23:25Z",
     "commit_hash": "f7fa8aa",
     "entries": [
