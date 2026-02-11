@@ -1,5 +1,18 @@
 [
   {
+    "date": "2026-02-11T18:20:25Z",
+    "commit_hash": "3cd427b",
+    "entries": [
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/changelog\" target=\"_blank\">Changelog</a>",
+        "summary": "플러그인 힌트 수정, 훅 오류 stderr 표시, OTel 이벤트에 속도 속성 추가. 빠른 모드 가시성 개선 및 오류 메시지 개선.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/3cd427b_changelog.txt"
+      }
+    ]
+  },
+  {
     "date": "2026-02-11T12:15:29Z",
     "commit_hash": "221be7b",
     "entries": [
