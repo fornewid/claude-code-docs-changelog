@@ -1,5 +1,38 @@
 [
   {
+    "date": "2026-02-11T00:23:17Z",
+    "commit_hash": "b1b581c",
+    "entries": [
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/changelog\" target=\"_blank\">Changelog</a>",
+        "summary": "터미널 렌더링 성능 향상, 치명적 오류 표시, 세션 종료 후 프로세스 중단 문제 수정 등 터미널 관련 다수의 버그 수정 및 개선 사항 적용.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/b1b581c_changelog.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/permissions\" target=\"_blank\">Permissions</a>",
+        "summary": "관리 설정에 대한 설명이 업데이트되었으며, 서버 관리 설정을 사용하여 장치 관리 인프라가 없는 조직에 대한 대안을 제시합니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/b1b581c_permissions.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/server-managed-settings\" target=\"_blank\">Server Managed Settings</a>",
+        "summary": "새로운 파일은 서버 관리 설정을 소개합니다. 조직에서 중앙 집중식으로 Claude Code를 구성하고 관리할 수 있도록 해줍니다. MDM이 없는 환경에 적합하며, 보안 설정, 기능, 제한 사항을 설명합니다.",
+        "tag_text": "NEW",
+        "tag_class": "new"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/settings\" target=\"_blank\">Settings</a>",
+        "summary": "관리 설정에 서버 관리 설정을 추가하여, IT 인프라가 없는 조직에서도 설정을 관리할 수 있도록 개선되었습니다. 이는 접근성을 향상시킵니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/b1b581c_settings.txt"
+      }
+    ]
+  },
+  {
     "date": "2026-02-10T21:16:26Z",
     "commit_hash": "55e1d9e",
     "entries": [
