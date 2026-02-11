@@ -1,5 +1,18 @@
 [
   {
+    "date": "2026-02-11T21:12:57Z",
+    "commit_hash": "8ad0bcb",
+    "entries": [
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/chrome\" target=\"_blank\">Chrome</a>",
+        "summary": "Chrome 통합 기능이 Google Chrome 및 Microsoft Edge 브라우저를 지원하도록 확장되었습니다. 설치 경로 정보가 업데이트되었습니다.  사용성 향상.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/8ad0bcb_chrome.txt"
+      }
+    ]
+  },
+  {
     "date": "2026-02-11T18:20:25Z",
     "commit_hash": "3cd427b",
     "entries": [
