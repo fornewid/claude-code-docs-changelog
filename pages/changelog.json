@@ -1,5 +1,18 @@
 [
   {
+    "date": "2026-02-12T06:24:04Z",
+    "commit_hash": "3eb33e5",
+    "entries": [
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/changelog\" target=\"_blank\">Changelog</a>",
+        "summary": "Opus 4.6 출시 발표 오류가 수정되어 Bedrock/Vertex/Foundry 사용자에게 더 이상 표시되지 않습니다. (중요 변경)",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/3eb33e5_changelog.txt"
+      }
+    ]
+  },
+  {
     "date": "2026-02-12T03:54:28Z",
     "commit_hash": "f28ba4a",
     "entries": [
