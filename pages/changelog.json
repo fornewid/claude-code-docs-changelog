@@ -1,5 +1,18 @@
 [
   {
+    "date": "2026-02-12T12:13:49Z",
+    "commit_hash": "8c8a00e",
+    "entries": [
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/changelog\" target=\"_blank\">Changelog</a>",
+        "summary": "/compact 사용 시 다중 이미지 차원 제한 오류에 대한 오류 메시지가 개선되어 사용자 경험을 향상시켰습니다. 문제 해결에 도움을 줍니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/8c8a00e_changelog.txt"
+      }
+    ]
+  },
+  {
     "date": "2026-02-12T06:24:04Z",
     "commit_hash": "3eb33e5",
     "entries": [
