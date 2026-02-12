@@ -1,5 +1,18 @@
 [
   {
+    "date": "2026-02-12T18:19:27Z",
+    "commit_hash": "fb83de8",
+    "entries": [
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/changelog\" target=\"_blank\">Changelog</a>",
+        "summary": "Vertex/Bedrock 환경에서 조건 없이 전송되던 structured-outputs 베타 헤더 문제를 수정했습니다. 사용자 경험 개선에 기여합니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/fb83de8_changelog.txt"
+      }
+    ]
+  },
+  {
     "date": "2026-02-12T12:13:49Z",
     "commit_hash": "8c8a00e",
     "entries": [
