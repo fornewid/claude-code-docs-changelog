@@ -1,5 +1,18 @@
 [
   {
+    "date": "2026-02-12T00:18:15Z",
+    "commit_hash": "4694d50",
+    "entries": [
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/server-managed-settings\" target=\"_blank\">Server Managed Settings</a>",
+        "summary": "서버 관리 설정 관련 요구사항이 업데이트되었습니다. Claude Code 버전 요구사항이 명확해졌으며, 팀 및 엔터프라이즈 플랜에 따라 다릅니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/4694d50_server-managed-settings.txt"
+      }
+    ]
+  },
+  {
     "date": "2026-02-11T21:12:57Z",
     "commit_hash": "8ad0bcb",
     "entries": [
