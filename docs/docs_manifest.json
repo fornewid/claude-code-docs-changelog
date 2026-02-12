@@ -267,8 +267,8 @@
     "server-managed-settings.md": {
       "original_url": "https://code.claude.com/docs/en/server-managed-settings",
       "original_md_url": "https://code.claude.com/docs/en/server-managed-settings.md",
-      "hash": "f88f501469ee683dbd3afda68271807233d8ef45a59844ddd746196c87f973d8",
-      "last_updated": "2026-02-11T00:23:10.901320"
+      "hash": "ed1e4ea53eb3044345411a2256efc637a6e71d60a683e6c51cfcdd887f9fc06a",
+      "last_updated": "2026-02-12T00:18:09.115171"
     },
     "settings.md": {
       "original_url": "https://code.claude.com/docs/en/settings",
@@ -339,8 +339,8 @@
     }
   },
   "fetch_metadata": {
-    "last_fetch_completed": "2026-02-11T21:12:57.449654",
-    "fetch_duration_seconds": 32.620791,
+    "last_fetch_completed": "2026-02-12T00:18:15.260603",
+    "fetch_duration_seconds": 32.950908,
     "total_pages_discovered": 55,
     "pages_fetched_successfully": 56,
     "pages_failed": 0,
@@ -350,7 +350,7 @@
     "total_files": 56,
     "fetch_tool_version": "3.0"
   },
-  "last_updated": "2026-02-11T21:12:57.449684",
+  "last_updated": "2026-02-12T00:18:15.260629",
   "base_url": "https://raw.githubusercontent.com/fornewid/claude-code-docs-changelog/main/docs/",
   "github_repository": "fornewid/claude-code-docs-changelog",
   "github_ref": "main",
