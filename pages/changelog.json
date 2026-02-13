@@ -1,5 +1,32 @@
 [
   {
+    "date": "2026-02-13T21:11:43Z",
+    "commit_hash": "7c3106e",
+    "entries": [
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/agent-teams\" target=\"_blank\">Agent Teams</a>",
+        "summary": "서브 에이전트와 에이전트 팀의 아키텍처를 비교하는 다이어그램과 표가 추가되었습니다. 에이전트 팀의 작업 방식에 대한 이해를 돕습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/7c3106e_agent-teams.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/changelog\" target=\"_blank\">Changelog</a>",
+        "summary": "시작 성능 개선 및 프롬프트 캐시 효율성 향상, Opus 4.6 지원, /resume 오류 수정 등 여러 기능 개선 및 버그 수정이 이루어졌습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/7c3106e_changelog.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/network-config\" target=\"_blank\">Network Config</a>",
+        "summary": "Claude Code의 URL 접근 권한 변경. `platform.claude.com` 추가로 Console 계정 인증 지원, 네트워크 설정 업데이트.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/7c3106e_network-config.txt"
+      }
+    ]
+  },
+  {
     "date": "2026-02-13T18:13:25Z",
     "commit_hash": "f096e15",
     "entries": [
