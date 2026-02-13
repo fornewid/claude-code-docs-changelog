@@ -1,5 +1,18 @@
 [
   {
+    "date": "2026-02-13T00:20:32Z",
+    "commit_hash": "8747332",
+    "entries": [
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/changelog\" target=\"_blank\">Changelog</a>",
+        "summary": "`.claude/agents/` 디렉토리 내의 에이전트가 아닌 마크다운 파일에 대한 불필요한 경고가 수정되었습니다. 에이전트 사용성 향상.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/8747332_changelog.txt"
+      }
+    ]
+  },
+  {
     "date": "2026-02-12T18:19:27Z",
     "commit_hash": "fb83de8",
     "entries": [
