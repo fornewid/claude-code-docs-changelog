@@ -1,5 +1,73 @@
 [
   {
+    "date": "2026-02-14T03:47:16Z",
+    "commit_hash": "d717ef0",
+    "entries": [
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/best-practices\" target=\"_blank\">Best Practices</a>",
+        "summary": "데스크탑 앱 링크가 업데이트되어 'Claude Code'로 변경되었으며, 세션 관련 안내가 추가되었습니다. 병렬 작업 방식 개선.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/d717ef0_best-practices.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/chrome\" target=\"_blank\">Chrome</a>",
+        "summary": "Anthropic의 플랜 명칭(Teams)이 수정되었습니다. 팀 플랜 사용자가 Claude Chrome 확장을 사용할 수 있도록 변경되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/d717ef0_chrome.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/desktop-quickstart\" target=\"_blank\">Desktop Quickstart</a>",
+        "summary": "새로운 파일 추가됨. Claude Desktop 앱 사용법 안내. 설치, 기능 소개, 사용 팁 등 포함. 더 나은 코딩 경험을 위한 안내.",
+        "tag_text": "NEW",
+        "tag_class": "new"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/desktop\" target=\"_blank\">Desktop</a>",
+        "summary": "Claude Code Desktop 소개 및 사용법이 재구성되었습니다. 주요 기능 강조 및 새로운 기능 소개와 함께 사용 편의성을 개선했습니다. 특히, 권한 모드, 세션 관리, 외부 도구 연결 기능이 추가되었습니다. (새로운 사용자를 위한 안내 강화)",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/d717ef0_desktop.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/interactive-mode\" target=\"_blank\">Interactive Mode</a>",
+        "summary": "`/desktop` 명령어가 추가되어 CLI 세션을 Claude Code 데스크톱 앱으로 전송하여 사용성을 확장했습니다. (macOS/Windows)",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/d717ef0_interactive-mode.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/model-config\" target=\"_blank\">Model Config</a>",
+        "summary": "모델 선택 제한 기능 추가: availableModels를 사용하여 사용자가 선택할 수 있는 모델을 제한하고, 기본 모델 동작과 설정 병합 방식을 설명합니다. 이는 관리자가 모델 사용을 제어하는 데 중요합니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/d717ef0_model-config.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/overview\" target=\"_blank\">Overview</a>",
+        "summary": "데스크톱 앱에 Windows ARM64 지원이 추가되었고, 워크플로우를 개선하기 위해 '어디서나 작업' 섹션이 업데이트되었습니다. 컨텍스트 전환에 유용합니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/d717ef0_overview.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/settings\" target=\"_blank\">Settings</a>",
+        "summary": "모델 선택 제한 설정 추가, 사용자가 선택할 수 있는 모델을 제어하여 사용성을 향상시켰습니다. (/model, --model)",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/d717ef0_settings.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/slack\" target=\"_blank\">Slack</a>",
+        "summary": "Slack 문서에서 'Teams' 플랜 지원이 추가되었고, 오타가 수정되었습니다. 더 정확한 플랜 지원 정보를 제공합니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/d717ef0_slack.txt"
+      }
+    ]
+  },
+  {
     "date": "2026-02-13T21:11:43Z",
     "commit_hash": "7c3106e",
     "entries": [

@@ -1,0 +1,12 @@
+diff --git a/docs/interactive-mode.md b/docs/interactive-mode.md
+index 926527c..ef0b819 100644
+--- a/docs/interactive-mode.md
++++ b/docs/interactive-mode.md
+@@ -116,6 +116,7 @@ To create your own commands you can invoke with `/`, see [skills](/en/skills).
+ | `/copy`                   | Copy the last assistant response to clipboard                                                                                                                                                                              |
+ | `/tasks`                  | List and manage background tasks                                                                                                                                                                                           |
+ | `/teleport`               | Resume a remote session from claude.ai (subscribers only)                                                                                                                                                                  |
++| `/desktop`                | Hand off the current CLI session to the Claude Code Desktop app (macOS and Windows only)                                                                                                                                   |
+ | `/theme`                  | Change the color theme                                                                                                                                                                                                     |
+ | `/todos`                  | List current TODO items                                                                                                                                                                                                    |
+ | `/usage`                  | For subscription plans only: show plan usage limits and rate limit status                                                                                                                                                  |
