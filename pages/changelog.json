@@ -1,5 +1,18 @@
 [
   {
+    "date": "2026-02-16T21:07:22Z",
+    "commit_hash": "a6ce4ce",
+    "entries": [
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/overview\" target=\"_blank\">Overview</a>",
+        "summary": "overview.md 문서가 업데이트되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/a6ce4ce_overview.txt"
+      }
+    ]
+  },
+  {
     "date": "2026-02-16T18:11:49Z",
     "commit_hash": "b52746e",
     "entries": [
