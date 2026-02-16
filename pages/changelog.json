@@ -1,5 +1,18 @@
 [
   {
+    "date": "2026-02-16T18:11:49Z",
+    "commit_hash": "b52746e",
+    "entries": [
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/overview\" target=\"_blank\">Overview</a>",
+        "summary": "Claude Code의 정의가 AI 기반 코딩 보조로 변경되었으며, 기능 구축, 버그 수정, 개발 작업 자동화에 초점을 맞춤으로써 사용성을 개선했습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/b52746e_overview.txt"
+      }
+    ]
+  },
+  {
     "date": "2026-02-14T03:47:16Z",
     "commit_hash": "d717ef0",
     "entries": [
