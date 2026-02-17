@@ -1,5 +1,102 @@
 [
   {
+    "date": "2026-02-17T21:11:17Z",
+    "commit_hash": "ca7b8b4",
+    "entries": [
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/amazon-bedrock\" target=\"_blank\">Amazon Bedrock</a>",
+        "summary": "Claude 모델 버전 업데이트 및 기본 모델 변경 사항 반영. Claude Sonnet 4.6 및 관련 환경 변수 설정 안내.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/ca7b8b4_amazon-bedrock.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/changelog\" target=\"_blank\">Changelog</a>",
+        "summary": "Claude Sonnet 4.6 지원, `--add-dir` 디렉토리에서 플러그인 설정 읽기 추가. 스피너 팁 설정, SDK rate limit 정보 추가. Bedrock 등에서 팀원 오류 수정, macOS 임시 파일 쓰기 오류 해결 등.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/ca7b8b4_changelog.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/cli-reference\" target=\"_blank\">Cli Reference</a>",
+        "summary": "모델 설정 옵션이 업데이트되었습니다. 이제 `--model` 플래그를 사용하여 최신 모델 별칭 또는 전체 모델 이름을 지정할 수 있습니다. ",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/ca7b8b4_cli-reference.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/costs\" target=\"_blank\">Costs</a>",
+        "summary": "Sonnet 모델 버전 업데이트로 인한 가격 변동 가능성을 반영하여, 팀 사용 시 월별 평균 비용 정보를 업데이트했습니다. (4.5 -> 4.6)",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/ca7b8b4_costs.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/github-actions\" target=\"_blank\">Github Actions</a>",
+        "summary": "Claude 모델 버전 업데이트로 인해, 사용 예시와 설명에서 모델 ID가 변경되었습니다. Bedrock 모델 ID 형식에 대한 설명이 추가되었습니다. ",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/ca7b8b4_github-actions.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/gitlab-ci-cd\" target=\"_blank\">Gitlab Ci Cd</a>",
+        "summary": "Bedrock 모델 ID 형식에 대한 설명이 간소화되었습니다. 지역 접두사만 포함하도록 변경되어 사용자가 모델 ID를 더 쉽게 이해할 수 있습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/ca7b8b4_gitlab-ci-cd.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/google-vertex-ai\" target=\"_blank\">Google Vertex Ai</a>",
+        "summary": "Claude Sonnet 모델 버전이 4.5에서 4.6으로 업데이트되었습니다. 관련 내용과 1M 토큰 컨텍스트 윈도우 지원 모델이 변경되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/ca7b8b4_google-vertex-ai.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/hooks\" target=\"_blank\">Hooks</a>",
+        "summary": "세션 시작 훅의 모델 버전이 업데이트되어 Claude-sonnet-4-6 모델을 사용하도록 변경되었습니다. 성능 개선이 기대됩니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/ca7b8b4_hooks.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/mcp\" target=\"_blank\">Mcp</a>",
+        "summary": "Claude.ai 계정으로 MCP 서버를 설정하고 Claude Code에서 사용할 수 있도록 하는 방법에 대한 내용이 추가되었습니다. 사용자 편의성을 높입니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/ca7b8b4_mcp.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/microsoft-foundry\" target=\"_blank\">Microsoft Foundry</a>",
+        "summary": "Claude Sonnet 모델 버전이 4-5에서 4-6으로 업데이트되었습니다. 모델 개선 사항 반영 및 최신 버전 사용 권장.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/ca7b8b4_microsoft-foundry.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/model-config\" target=\"_blank\">Model Config</a>",
+        "summary": "Sonnet과 Opus 모델 버전이 업데이트 되었고, 'default' 모델 동작이 계정 유형에 따라 변경되었습니다. 새로운 Team Premium, Team Standard 지원.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/ca7b8b4_model-config.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/monitoring-usage\" target=\"_blank\">Monitoring Usage</a>",
+        "summary": "모델 식별자 예시가 변경되었습니다. 4-5 버전에서 4-6 버전으로 업데이트되어 최신 모델 정보를 반영합니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/ca7b8b4_monitoring-usage.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/settings\" target=\"_blank\">Settings</a>",
+        "summary": "settings.md 문서가 업데이트되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/ca7b8b4_settings.txt"
+      }
+    ]
+  },
+  {
     "date": "2026-02-17T15:18:05Z",
     "commit_hash": "f4796fb",
     "entries": [
