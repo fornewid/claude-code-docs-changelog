@@ -237,8 +237,8 @@
     "plugin-marketplaces.md": {
       "original_url": "https://code.claude.com/docs/en/plugin-marketplaces",
       "original_md_url": "https://code.claude.com/docs/en/plugin-marketplaces.md",
-      "hash": "a9972100997f098ab25d24c10ac61ba7b37814a998b615c427f76cec56da1d50",
-      "last_updated": "2026-02-06T00:16:34.467764"
+      "hash": "94fb2a5dfb4ec30419b7d06b64a1c70e0fa5a0fc791e8cbf99ad476877792664",
+      "last_updated": "2026-02-17T00:19:46.109951"
     },
     "plugins.md": {
       "original_url": "https://code.claude.com/docs/en/plugins",
@@ -249,8 +249,8 @@
     "plugins-reference.md": {
       "original_url": "https://code.claude.com/docs/en/plugins-reference",
       "original_md_url": "https://code.claude.com/docs/en/plugins-reference.md",
-      "hash": "9c2af45068dc9df0f182b1fdbc9600ef4b7661e6f76aa5d5881c156da8becfc8",
-      "last_updated": "2026-02-07T00:17:40.351797"
+      "hash": "5e5da4891fdba69b775ed83c647687bb3df5535cfd794c9dffb02729e330f2d6",
+      "last_updated": "2026-02-17T00:19:47.267690"
     },
     "quickstart.md": {
       "original_url": "https://code.claude.com/docs/en/quickstart",
@@ -339,14 +339,14 @@
     "changelog.md": {
       "original_url": "https://github.com/anthropics/claude-code/blob/main/CHANGELOG.md",
       "original_raw_url": "https://raw.githubusercontent.com/anthropics/claude-code/main/CHANGELOG.md",
-      "hash": "102121cc94c573baa45ae164e3f6214a2216844d22f0ebb030adefd29c78299e",
-      "last_updated": "2026-02-13T21:11:43.876316",
+      "hash": "d860f7cf0be54012260e16f147e2d7db403c38ce0b95d68c3442ca14d489a57d",
+      "last_updated": "2026-02-17T00:19:55.337118",
       "source": "claude-code-repository"
     }
   },
   "fetch_metadata": {
-    "last_fetch_completed": "2026-02-16T21:07:22.619671",
-    "fetch_duration_seconds": 34.162876,
+    "last_fetch_completed": "2026-02-17T00:19:55.337140",
+    "fetch_duration_seconds": 31.773301,
     "total_pages_discovered": 56,
     "pages_fetched_successfully": 57,
     "pages_failed": 0,
@@ -356,7 +356,7 @@
     "total_files": 57,
     "fetch_tool_version": "3.0"
   },
-  "last_updated": "2026-02-16T21:07:22.619701",
+  "last_updated": "2026-02-17T00:19:55.337159",
   "base_url": "https://raw.githubusercontent.com/fornewid/claude-code-docs-changelog/main/docs/",
   "github_repository": "fornewid/claude-code-docs-changelog",
   "github_ref": "main",
