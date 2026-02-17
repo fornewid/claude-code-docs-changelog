@@ -1,5 +1,32 @@
 [
   {
+    "date": "2026-02-17T00:19:55Z",
+    "commit_hash": "9706421",
+    "entries": [
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/changelog\" target=\"_blank\">Changelog</a>",
+        "summary": "인증 갱신 오류가 수정되었고, AWS 인증 갱신 시 3분 타임아웃이 추가되었습니다. 구조화된 출력 베타 헤더 전송 관련 문제도 해결되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/9706421_changelog.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/plugin-marketplaces\" target=\"_blank\">Plugin Marketplaces</a>",
+        "summary": "plugin-marketplaces.md 문서가 업데이트되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/9706421_plugin-marketplaces.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/plugins-reference\" target=\"_blank\">Plugins Reference</a>",
+        "summary": "plugins-reference.md 문서가 업데이트되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/9706421_plugins-reference.txt"
+      }
+    ]
+  },
+  {
     "date": "2026-02-16T21:07:22Z",
     "commit_hash": "a6ce4ce",
     "entries": [
