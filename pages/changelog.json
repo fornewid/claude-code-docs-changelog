@@ -1,5 +1,18 @@
 [
   {
+    "date": "2026-02-18T03:50:47Z",
+    "commit_hash": "1be0532",
+    "entries": [
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/legal-and-compliance\" target=\"_blank\">Legal And Compliance</a>",
+        "summary": "사용 정책, 인증, 자격 증명 사용에 대한 새로운 가이드라인이 추가되었습니다. 특히 API 키 사용에 대한 명확한 지침이 제공됩니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/1be0532_legal-and-compliance.txt"
+      }
+    ]
+  },
+  {
     "date": "2026-02-17T21:11:17Z",
     "commit_hash": "ca7b8b4",
     "entries": [
