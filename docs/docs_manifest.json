@@ -171,8 +171,8 @@
     "legal-and-compliance.md": {
       "original_url": "https://code.claude.com/docs/en/legal-and-compliance",
       "original_md_url": "https://code.claude.com/docs/en/legal-and-compliance.md",
-      "hash": "773c24daa75cf3853f754f36125add8df53b9d00cafd8f188ebaba6161878a7e",
-      "last_updated": "2026-01-24T03:29:12.099164"
+      "hash": "255e31b55475481c4969dadad71392b896bd82937879daa831f1d25a3ebdc655",
+      "last_updated": "2026-02-18T03:50:32.001178"
     },
     "llm-gateway.md": {
       "original_url": "https://code.claude.com/docs/en/llm-gateway",
@@ -345,8 +345,8 @@
     }
   },
   "fetch_metadata": {
-    "last_fetch_completed": "2026-02-17T21:11:16.934476",
-    "fetch_duration_seconds": 34.193233,
+    "last_fetch_completed": "2026-02-18T03:50:47.396430",
+    "fetch_duration_seconds": 31.576751,
     "total_pages_discovered": 56,
     "pages_fetched_successfully": 57,
     "pages_failed": 0,
@@ -356,7 +356,7 @@
     "total_files": 57,
     "fetch_tool_version": "3.0"
   },
-  "last_updated": "2026-02-17T21:11:16.934490",
+  "last_updated": "2026-02-18T03:50:47.396459",
   "base_url": "https://raw.githubusercontent.com/fornewid/claude-code-docs-changelog/main/docs/",
   "github_repository": "fornewid/claude-code-docs-changelog",
   "github_ref": "main",
