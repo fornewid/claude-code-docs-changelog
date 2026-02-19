@@ -1,5 +1,116 @@
 [
   {
+    "date": "2026-02-19T00:19:23Z",
+    "commit_hash": "4ebb861",
+    "entries": [
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/agent-teams\" target=\"_blank\">Agent Teams</a>",
+        "summary": "팀원 선택 단축키가 Shift+Down으로 변경, 델리게이트 모드 관련 내용 삭제, 그리고 몇몇 UI 안내가 수정되었습니다. 사용자 경험 개선에 초점을 맞춤.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/4ebb861_agent-teams.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/amazon-bedrock\" target=\"_blank\">Amazon Bedrock</a>",
+        "summary": "모델 버전 고정을 위한 안내와 예시가 추가되었습니다. 사용자에게 안정적인 모델 사용을 보장하기 위함입니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/4ebb861_amazon-bedrock.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/changelog\" target=\"_blank\">Changelog</a>",
+        "summary": "2.1.47 업데이트는 다양한 버그 수정 및 개선 사항을 포함합니다. 파일 쓰기, Windows 렌더링, VS Code 미리 보기, 메모리 사용량 최적화 등 성능 및 안정성을 향상시켰습니다. 또한 사용자 경험 개선을 위한 여러 기능이 추가되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/4ebb861_changelog.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/common-workflows\" target=\"_blank\">Common Workflows</a>",
+        "summary": "Plan 모드 진입 시 Shift+Tab 순환 과정에서 Agent 팀 활성화 시 Delegate 모드 언급 삭제. 내용 간소화 및 오해 소지 제거.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/4ebb861_common-workflows.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/desktop\" target=\"_blank\">Desktop</a>",
+        "summary": "데스크톱 앱의 권한 모드 및 기능 비교가 업데이트되었습니다. `delegate` 모드 제거, Agent 팀 기능 설명 변경 및 데스크톱 앱의 제약 사항을 명확히 했습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/4ebb861_desktop.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/google-vertex-ai\" target=\"_blank\">Google Vertex Ai</a>",
+        "summary": "Vertex AI 관련 내용이 업데이트되었습니다. 모델 버전 고정 방법과 설정, 그리고 Vertex AI 사용 시의 주의사항이 추가되었습니다. 비용 관리와 접근 제어 관련 권장사항도 포함되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/4ebb861_google-vertex-ai.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/hooks\" target=\"_blank\">Hooks</a>",
+        "summary": "SubagentStop 및 Stop 훅에 last_assistant_message 필드가 추가되어, 트랜스크립트 파싱 없이 마지막 응답에 접근 가능하게 되어 편의성이 향상되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/4ebb861_hooks.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/how-claude-code-works\" target=\"_blank\">How Claude Code Works</a>",
+        "summary": "권한 모드 설명이 업데이트되었습니다. 'Delegate mode' 관련 내용이 삭제되어 팀 기능 사용법에 대한 안내가 간결해졌습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/4ebb861_how-claude-code-works.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/microsoft-foundry\" target=\"_blank\">Microsoft Foundry</a>",
+        "summary": "Microsoft Foundry 설정 가이드에 모델 버전 고정 방법이 추가되었습니다.  예기치 않은 모델 업데이트로 인한 중단을 방지합니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/4ebb861_microsoft-foundry.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/model-config\" target=\"_blank\">Model Config</a>",
+        "summary": "1M 컨텍스트 관련 내용이 확장되고, 서드파티 배포 시 모델 버전을 고정하는 방법이 추가되어 안정적인 서비스 운영을 돕습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/4ebb861_model-config.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/monitoring-usage\" target=\"_blank\">Monitoring Usage</a>",
+        "summary": "OTel을 사용한 Claude Code 사용량 및 비용 추적 안내. 엔드포인트 및 헤더 예시 수정 및 환경 변수 설명 개선, temporality preference 추가. ",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/4ebb861_monitoring-usage.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/permissions\" target=\"_blank\">Permissions</a>",
+        "summary": "권한 모드 설명이 간결하게 변경되었고, 표 형식이 간소화되었습니다. 더 명확하고 쉽게 이해할 수 있도록 개선되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/4ebb861_permissions.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/settings\" target=\"_blank\">Settings</a>",
+        "summary": "새로운 `spinnerTipsOverride` 설정을 통해 스피너 팁을 사용자 정의할 수 있으며, 팀원 모드 설정 옵션도 추가되었습니다. ",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/4ebb861_settings.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/sub-agents\" target=\"_blank\">Sub Agents</a>",
+        "summary": "permissionMode 옵션에서 delegate가 제거되었습니다. 이는 팀 관리 기능 사용에 대한 접근 방식을 단순화합니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/4ebb861_sub-agents.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/third-party-integrations\" target=\"_blank\">Third Party Integrations</a>",
+        "summary": "클라우드 제공업체에서 모델 버전을 고정하는 방법이 추가되었습니다. Bedrock, Vertex AI, Foundry 사용 시, 최신 버전으로 인한 문제 방지. 보안을 위한 정책 설정 안내도 추가.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/4ebb861_third-party-integrations.txt"
+      }
+    ]
+  },
+  {
     "date": "2026-02-18T03:50:47Z",
     "commit_hash": "1be0532",
     "entries": [
