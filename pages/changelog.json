@@ -1,5 +1,18 @@
 [
   {
+    "date": "2026-02-19T03:50:17Z",
+    "commit_hash": "fc3504a",
+    "entries": [
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/monitoring-usage\" target=\"_blank\">Monitoring Usage</a>",
+        "summary": "사용자 식별자 설명을 명확히 수정 및 추가했습니다. 익명 사용자 ID가 설치당 생성되도록 변경되어 사용자 추적이 개선되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/fc3504a_monitoring-usage.txt"
+      }
+    ]
+  },
+  {
     "date": "2026-02-19T00:19:23Z",
     "commit_hash": "4ebb861",
     "entries": [
