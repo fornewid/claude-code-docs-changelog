@@ -1,5 +1,18 @@
 [
   {
+    "date": "2026-02-19T21:08:37Z",
+    "commit_hash": "ea15d49",
+    "entries": [
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/plugins\" target=\"_blank\">Plugins</a>",
+        "summary": "플러그인 관련 용어 및 안내가 수정되었습니다. 'command'를 'skill'로 변경하여 더 명확하게 기능을 설명합니다. 또한, 실행 방법 및 사용 방법이 개선되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/ea15d49_plugins.txt"
+      }
+    ]
+  },
+  {
     "date": "2026-02-19T03:50:17Z",
     "commit_hash": "fc3504a",
     "entries": [
