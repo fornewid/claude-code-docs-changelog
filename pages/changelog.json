@@ -1,5 +1,25 @@
 [
   {
+    "date": "2026-02-20T21:05:37Z",
+    "commit_hash": "aefabfd",
+    "entries": [
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/desktop-quickstart\" target=\"_blank\">Desktop Quickstart</a>",
+        "summary": "데스크톱 앱 설명이 업데이트되고, GitHub PR 모니터링 기능이 추가되었습니다. ARM64 관련 내용이 수정되었습니다. 더 나은 개발 환경을 제공합니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/aefabfd_desktop-quickstart.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/desktop\" target=\"_blank\">Desktop</a>",
+        "summary": "데스크톱 앱 기능이 확장되어 앱 미리보기, PR 모니터링, 자동 수정, 통합 기능 등 새로운 기능들이 추가되었습니다. 전반적인 사용성과 효율성이 향상되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/aefabfd_desktop.txt"
+      }
+    ]
+  },
+  {
     "date": "2026-02-20T18:12:36Z",
     "commit_hash": "83178ec",
     "entries": [
