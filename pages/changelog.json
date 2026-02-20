@@ -1,5 +1,102 @@
 [
   {
+    "date": "2026-02-20T06:19:03Z",
+    "commit_hash": "f3c0f38",
+    "entries": [
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/cli-reference\" target=\"_blank\">Cli Reference</a>",
+        "summary": "CLI에 `--worktree` 플래그가 추가되어 Git worktree에서 Claude를 시작하여 코드 격리를 지원하고, 새로운 기능 개발에 도움을 줍니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/f3c0f38_cli-reference.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/common-workflows\" target=\"_blank\">Common Workflows</a>",
+        "summary": "Git worktree를 사용한 병렬 Claude Code 세션 실행 방법이 변경되었습니다. 개선된 설명과 자동 정리 기능, 수동 관리 가이드가 추가되었습니다. (코드 격리 및 작업 효율성 향상)",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/f3c0f38_common-workflows.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/desktop\" target=\"_blank\">Desktop</a>",
+        "summary": "세션 격리 기능이 CLI에서 `--worktree` 플래그로 변경되었고, 데스크톱 버전은 자동 워크트리를 지원합니다. 작업 흐름을 개선합니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/f3c0f38_desktop.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/hooks-guide\" target=\"_blank\">Hooks Guide</a>",
+        "summary": "설정 파일 변경을 감사하는 새로운 훅이 추가되었습니다. 보안 및 규정 준수를 위해 설정 변경 사항을 기록합니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/f3c0f38_hooks-guide.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/hooks\" target=\"_blank\">Hooks</a>",
+        "summary": "새로운 ConfigChange 훅이 추가되어 설정 파일 변경 시 실행됩니다. disableAllHooks 설정에 대한 추가 정보가 제공됩니다. (설정 계층 구조).",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/f3c0f38_hooks.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/interactive-mode\" target=\"_blank\">Interactive Mode</a>",
+        "summary": "Ctrl+F 단축키가 추가되어 백그라운드 에이전트를 종료하는 기능이 추가되었습니다. 이는 사용자 제어를 강화하기 위함입니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/f3c0f38_interactive-mode.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/plugins-reference\" target=\"_blank\">Plugins Reference</a>",
+        "summary": "플러그인 설정 파일의 위치가 추가되어 플러그인 초기 설정을 간편하게 관리할 수 있게 되었습니다. 에이전트 설정 지원.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/f3c0f38_plugins-reference.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/plugins\" target=\"_blank\">Plugins</a>",
+        "summary": "플러그인에 기본 설정을 포함할 수 있도록 settings.json 파일 지원이 추가되었습니다. agent 설정을 통해 플러그인 활성화 시 기본 동작을 변경 가능합니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/f3c0f38_plugins.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/security\" target=\"_blank\">Security</a>",
+        "summary": "세션 중 설정 변경을 감사하거나 차단하는 ConfigChange 훅 추가. 보안 설정 관리를 강화하여 잠재적 위험을 줄임.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/f3c0f38_security.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/server-managed-settings\" target=\"_blank\">Server Managed Settings</a>",
+        "summary": "런타임 설정 변경 감지를 위해 ConfigChange 훅 사용 안내 추가. 무단 변경을 막고, 설정을 로깅하는 방법 제시.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/f3c0f38_server-managed-settings.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/settings\" target=\"_blank\">Settings</a>",
+        "summary": "새로운 환경 변수 `CLAUDE_CODE_SIMPLE`이 추가되어, 최소한의 도구만 사용하여 실행할 수 있도록 설정할 수 있습니다. 이는 시스템 프롬프트 및 사용 가능한 도구를 제한합니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/f3c0f38_settings.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/sub-agents\" target=\"_blank\">Sub Agents</a>",
+        "summary": "서브 에이전트 YAML frontmatter에 `background` 및 `isolation` 속성이 추가되어 백그라운드 작업 및 격리된 git worktree 실행 지원.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/f3c0f38_sub-agents.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/vs-code\" target=\"_blank\">Vs Code</a>",
+        "summary": "git worktree 사용법이 변경되었으며, 명령어와 추가 정보가 제공되어 병렬 작업 관리가 용이해졌습니다. 이는 개발 효율성을 향상시킵니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/f3c0f38_vs-code.txt"
+      }
+    ]
+  },
+  {
     "date": "2026-02-20T00:17:40Z",
     "commit_hash": "8ee0917",
     "entries": [
