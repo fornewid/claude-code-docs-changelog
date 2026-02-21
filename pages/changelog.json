@@ -1,5 +1,25 @@
 [
   {
+    "date": "2026-02-21T06:12:53Z",
+    "commit_hash": "b48a5f1",
+    "entries": [
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/common-workflows\" target=\"_blank\">Common Workflows</a>",
+        "summary": "--worktree 플래그 사용법이 업데이트되었습니다. 더 간결한 옵션 `-w`가 추가되었으며, 이름 생성을 자동화하는 기능이 개선되었습니다. ",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/b48a5f1_common-workflows.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/vs-code\" target=\"_blank\">Vs Code</a>",
+        "summary": "git worktree 사용법이 변경되어, --worktree 플래그를 -w로 축약하고, 사용 예시가 업데이트 되었습니다.  병렬 작업 효율성을 높임.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/b48a5f1_vs-code.txt"
+      }
+    ]
+  },
+  {
     "date": "2026-02-21T00:18:08Z",
     "commit_hash": "9c533c5",
     "entries": [
