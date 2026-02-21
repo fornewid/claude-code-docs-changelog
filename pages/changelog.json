@@ -1,5 +1,60 @@
 [
   {
+    "date": "2026-02-21T18:06:48Z",
+    "commit_hash": "a19ee63",
+    "entries": [
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/cli-reference\" target=\"_blank\">Cli Reference</a>",
+        "summary": "`claude agents` 명령어가 추가되어 서브 에이전트 목록을 볼 수 있게 되었고, 설명 및 flag 설명이 개선되었습니다. 사용 편의성 향상.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/a19ee63_cli-reference.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/common-workflows\" target=\"_blank\">Common Workflows</a>",
+        "summary": "서브 에이전트 워크트리 지원 추가 및 비 git 버전 관리 시스템을 위한 커스터마이징 옵션이 추가되어 유연성을 높였습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/a19ee63_common-workflows.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/hooks-guide\" target=\"_blank\">Hooks Guide</a>",
+        "summary": "새로운 Hook 이벤트인 `WorktreeCreate`, `WorktreeRemove` 및 `ConfigChange`가 추가되었습니다. 세션 관리 및 구성 변경에 대한 확장된 제어 제공.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/a19ee63_hooks-guide.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/hooks\" target=\"_blank\">Hooks</a>",
+        "summary": "훅 이벤트에 WorktreeCreate 및 WorktreeRemove 이벤트가 추가되어 워크트리 생성 및 제거를 제어합니다.  이로써 세션 관리 기능이 향상되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/a19ee63_hooks.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/model-config\" target=\"_blank\">Model Config</a>",
+        "summary": "기본 모델 동작 설명이 업데이트되었고, 1M 컨텍스트 비활성화 방법과 관련된 내용이 추가되어 사용자 제어가 강화되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/a19ee63_model-config.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/settings\" target=\"_blank\">Settings</a>",
+        "summary": "설정 관련 환경 변수 설명이 추가 및 수정되었습니다. 1M context, 실험적 기능, 서베이 관련 옵션이 추가되어 Claude의 동작을 더욱 세밀하게 제어할 수 있습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/a19ee63_settings.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/sub-agents\" target=\"_blank\">Sub Agents</a>",
+        "summary": "명령줄에서 모든 하위 에이전트를 나열하는 기능이 추가되어, 보다 효율적인 에이전트 관리가 가능해졌습니다. ",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/a19ee63_sub-agents.txt"
+      }
+    ]
+  },
+  {
     "date": "2026-02-21T06:12:53Z",
     "commit_hash": "b48a5f1",
     "entries": [
