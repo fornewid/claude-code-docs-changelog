@@ -1,5 +1,18 @@
 [
   {
+    "date": "2026-02-21T00:18:08Z",
+    "commit_hash": "9c533c5",
+    "entries": [
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/changelog\" target=\"_blank\">Changelog</a>",
+        "summary": "LSP 서버, 워크트리, 메모리 누수 수정, 1M 컨텍스트 지원 등 다양한 기능 개선 및 버그 수정이 이루어졌습니다. 전반적인 안정성 향상.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/9c533c5_changelog.txt"
+      }
+    ]
+  },
+  {
     "date": "2026-02-20T21:05:37Z",
     "commit_hash": "aefabfd",
     "entries": [
