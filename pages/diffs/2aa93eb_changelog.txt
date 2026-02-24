@@ -1,0 +1,15 @@
+diff --git a/docs/changelog.md b/docs/changelog.md
+index f0ff2d9..43aae4c 100644
+--- a/docs/changelog.md
++++ b/docs/changelog.md
+@@ -8,6 +8,10 @@
+ 
+ # Changelog
+ 
++## 2.1.52
++
++- VS Code: Fixed extension crash on Windows ("command 'claude-vscode.editor.openLast' not found")
++
+ ## 2.1.51
+ 
+ - Added `claude remote-control` subcommand for external builds, enabling local environment serving for all users.
