@@ -1,0 +1,38 @@
+diff --git a/docs/how-claude-code-works.md b/docs/how-claude-code-works.md
+index c133a1c..6e703eb 100644
+--- a/docs/how-claude-code-works.md
++++ b/docs/how-claude-code-works.md
+@@ -61,8 +61,6 @@ Each tool use gives Claude new information that informs the next step. This is t
+ 
+ ## What Claude can access
+ 
+-This guide focuses on the terminal. Claude Code also runs in [VS Code, JetBrains IDEs, and other environments](/en/ide-integrations).
+-
+ When you run `claude` in a directory, Claude Code gains access to:
+ 
+ * **Your project.** Files in your directory and subdirectories, plus files elsewhere with your permission.
+@@ -73,6 +71,24 @@ When you run `claude` in a directory, Claude Code gains access to:
+ 
+ Because Claude sees your whole project, it can work across it. When you ask Claude to "fix the authentication bug," it searches for relevant files, reads multiple files to understand context, makes coordinated edits across them, runs tests to verify the fix, and commits the changes if you ask. This is different from inline code assistants that only see the current file.
+ 
++## Environments and interfaces
++
++The agentic loop, tools, and capabilities described above are the same everywhere you use Claude Code. What changes is where the code executes and how you interact with it.
++
++### Execution environments
++
++Claude Code runs in three environments, each with different tradeoffs for where your code executes.
++
++| Environment        | Where code runs                         | Use case                                                   |
++| ------------------ | --------------------------------------- | ---------------------------------------------------------- |
++| **Local**          | Your machine                            | Default. Full access to your files, tools, and environment |
++| **Cloud**          | Anthropic-managed VMs                   | Offload tasks, work on repos you don't have locally        |
++| **Remote Control** | Your machine, controlled from a browser | Use the web UI while keeping everything local              |
++
++### Interfaces
++
++You can access Claude Code through the terminal, the [desktop app](/en/desktop), [IDE extensions](/en/ide-integrations), [claude.ai/code](https://claude.ai/code), [Remote Control](/en/remote-control), [Slack](/en/slack), and [CI/CD pipelines](/en/github-actions). The interface determines how you see and interact with Claude, but the underlying agentic loop is identical. See [Use Claude Code everywhere](/en/overview#use-claude-code-everywhere) for the full list.
++
+ ## Work with sessions
+ 
+ Claude Code saves your conversation locally as you work. Each message, tool use, and result is stored, which enables [rewinding](#undo-changes-with-checkpoints), [resuming, and forking](#resume-or-fork-sessions) sessions. Before Claude makes code changes, it also snapshots the affected files so you can revert if needed.
