@@ -1,5 +1,102 @@
 [
   {
+    "date": "2026-02-24T21:10:54Z",
+    "commit_hash": "f18fe0a",
+    "entries": [
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/changelog\" target=\"_blank\">Changelog</a>",
+        "summary": "changelog.md 문서가 업데이트되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/f18fe0a_changelog.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/cli-reference\" target=\"_blank\">Cli Reference</a>",
+        "summary": "cli-reference.md 문서가 업데이트되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/f18fe0a_cli-reference.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/desktop\" target=\"_blank\">Desktop</a>",
+        "summary": "desktop.md 문서가 업데이트되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/f18fe0a_desktop.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/how-claude-code-works\" target=\"_blank\">How Claude Code Works</a>",
+        "summary": "how-claude-code-works.md 문서가 업데이트되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/f18fe0a_how-claude-code-works.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/permissions\" target=\"_blank\">Permissions</a>",
+        "summary": "경로 관련 설명이 수정되었고, 관리 설정 관련 내용이 간소화 및 확장되었습니다. 설정의 우선순위도 추가되었습니다. 변경 사항은 보안과 관리 효율성을 높입니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/f18fe0a_permissions.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/plugins-reference\" target=\"_blank\">Plugins Reference</a>",
+        "summary": "플러그인 'managed' scope의 설정 파일 위치가 변경되었습니다. 이제 설정 파일에 대한 링크가 추가되었습니다. 사용자 편의성 향상.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/f18fe0a_plugins-reference.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/security\" target=\"_blank\">Security</a>",
+        "summary": "팀 보안 관련 문서에서 'managed settings'의 링크가 업데이트되었습니다. 설정 파일 사용에 대한 정보로 변경되어 중요합니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/f18fe0a_security.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/server-managed-settings\" target=\"_blank\">Server Managed Settings</a>",
+        "summary": "endpoint-managed settings 관련 링크 및 설명을 permissions에서 settings로 수정. 보안 강화 위해 endpoint-managed 설정 권장 사항 추가 (MDM 환경). ",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/f18fe0a_server-managed-settings.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/settings\" target=\"_blank\">Settings</a>",
+        "summary": "설정 파일의 위치, 관리 설정, 사용 가능한 모델 관련 내용이 업데이트되었습니다. 서버 관리 설정에 대한 설명이 개선되었습니다. (설정, 보안 강화)",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/f18fe0a_settings.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/setup\" target=\"_blank\">Setup</a>",
+        "summary": "엔터프라이즈 배포 시 자동 업데이트 채널 설정 방법이 변경되었습니다. 설정 파일 사용 방법 안내로 업데이트되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/f18fe0a_setup.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/skills\" target=\"_blank\">Skills</a>",
+        "summary": "기술 위치에 대한 문서가 업데이트되었습니다. 'managed settings' 링크가 변경되어 조직 설정에 대한 접근성이 개선되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/f18fe0a_skills.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/sub-agents\" target=\"_blank\">Sub Agents</a>",
+        "summary": "배경 subagent 기능에서 MCP 도구에 대한 언급이 삭제되었습니다. 배경 subagent는 더 이상 MCP 도구를 사용할 수 없습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/f18fe0a_sub-agents.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/troubleshooting\" target=\"_blank\">Troubleshooting</a>",
+        "summary": "설정 파일 위치 정보가 업데이트 되었습니다.  관리되는 설정 파일 위치에 대한 내용이 추가되어 사용자에게 더 정확한 정보를 제공합니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/f18fe0a_troubleshooting.txt"
+      }
+    ]
+  },
+  {
     "date": "2026-02-24T18:20:11Z",
     "commit_hash": "b3db8d6",
     "entries": [
