@@ -1,5 +1,60 @@
 [
   {
+    "date": "2026-02-25T00:20:45Z",
+    "commit_hash": "fb9c989",
+    "entries": [
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/authentication\" target=\"_blank\">Authentication</a>",
+        "summary": "로그인 및 인증 방법이 업데이트되었으며, 팀 인증 설정 방법도 추가되었습니다. 클라우드 제공업체 인증 관련 내용도 개선되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/fb9c989_authentication.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/changelog\" target=\"_blank\">Changelog</a>",
+        "summary": "UI 깜빡임, 에이전트 대량 종료 알림 개선, 원격 제어 종료, --worktree 무시, Windows에서 발생할 수 있는 여러 충돌 수정",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/fb9c989_changelog.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/cli-reference\" target=\"_blank\">Cli Reference</a>",
+        "summary": "CLI 명령어 사용법에 대한 몇 가지 옵션이 추가 및 개선되었습니다.  로그인 시 이메일, SSO 옵션 추가, auth status 출력 형식 변경이 있었습니다.  사용 편의성 향상.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/fb9c989_cli-reference.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/overview\" target=\"_blank\">Overview</a>",
+        "summary": "Windows 설치 안내가 추가되어, Git for Windows 설치 필요성을 명시했습니다. 사용자 편의성을 높였습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/fb9c989_overview.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/quickstart\" target=\"_blank\">Quickstart</a>",
+        "summary": "터미널 사용자를 위한 가이드 링크가 추가되었고, 윈도우 설치 시 Git 설치 안내가 추가되어 접근성이 향상되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/fb9c989_quickstart.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/setup\" target=\"_blank\">Setup</a>",
+        "summary": "설치, 인증, 업데이트 및 제거와 관련된 내용이 추가되었습니다.  Windows Git Bash 설치 및 Alpine Linux 설정, 자동 업데이트 기능에 대한 내용이 포함되었습니다. (변경 사항 요약)",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/fb9c989_setup.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/troubleshooting\" target=\"_blank\">Troubleshooting</a>",
+        "summary": "설치 문제 해결 가이드가 추가되었습니다. 네트워크 문제, PATH 설정, 권한 문제 등 다양한 설치 문제를 진단하고 해결하는 방법을 안내합니다. (설치 오류 해결)",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/fb9c989_troubleshooting.txt"
+      }
+    ]
+  },
+  {
     "date": "2026-02-24T21:10:54Z",
     "commit_hash": "f18fe0a",
     "entries": [
