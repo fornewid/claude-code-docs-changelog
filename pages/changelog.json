@@ -1,5 +1,32 @@
 [
   {
+    "date": "2026-02-25T03:49:35Z",
+    "commit_hash": "06f960f",
+    "entries": [
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/changelog\" target=\"_blank\">Changelog</a>",
+        "summary": "BashTool의 Windows EINVAL 오류 수정. Windows 환경에서 도구의 안정성 향상.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/06f960f_changelog.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/plugin-marketplaces\" target=\"_blank\">Plugin Marketplaces</a>",
+        "summary": "npm 패키지를 사용한 플러그인 설치 방법과 개인 레지스트리 설정이 추가되었습니다. Git 타임아웃 해결 방법도 안내합니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/06f960f_plugin-marketplaces.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/settings\" target=\"_blank\">Settings</a>",
+        "summary": "새로운 환경 변수 추가: 계정 관련 UUID 및 플러그인 Git 타임아웃 설정 추가. SDK 연동 및 플러그인 성능 개선을 위한 변경사항입니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/06f960f_settings.txt"
+      }
+    ]
+  },
+  {
     "date": "2026-02-25T00:20:45Z",
     "commit_hash": "fb9c989",
     "entries": [
