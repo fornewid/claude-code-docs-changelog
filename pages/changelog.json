@@ -1,5 +1,18 @@
 [
   {
+    "date": "2026-02-25T21:10:50Z",
+    "commit_hash": "d5eff34",
+    "entries": [
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/changelog\" target=\"_blank\">Changelog</a>",
+        "summary": "원격 제어 기능이 더 많은 사용자에게 확장되었습니다. 더 많은 사용자가 해당 기능을 사용할 수 있게 되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/d5eff34_changelog.txt"
+      }
+    ]
+  },
+  {
     "date": "2026-02-25T09:18:41Z",
     "commit_hash": "fb5a1a4",
     "entries": [
