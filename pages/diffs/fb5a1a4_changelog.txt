@@ -1,0 +1,15 @@
+diff --git a/docs/changelog.md b/docs/changelog.md
+index 0323282..ed1fbf8 100644
+--- a/docs/changelog.md
++++ b/docs/changelog.md
+@@ -8,6 +8,10 @@
+ 
+ # Changelog
+ 
++## 2.1.56
++
++- VS Code: Fixed another cause of "command 'claude-vscode.editor.openLast' not found" crashes
++
+ ## 2.1.55
+ 
+ - Fixed BashTool failing on Windows with EINVAL error
