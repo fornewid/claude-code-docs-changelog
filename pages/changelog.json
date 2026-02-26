@@ -1,5 +1,18 @@
 [
   {
+    "date": "2026-02-26T09:17:38Z",
+    "commit_hash": "a097022",
+    "entries": [
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/claude-code-on-the-web\" target=\"_blank\">Claude Code On The Web</a>",
+        "summary": "claude-code-on-the-web.md 문서가 업데이트되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/a097022_claude-code-on-the-web.txt"
+      }
+    ]
+  },
+  {
     "date": "2026-02-26T06:21:30Z",
     "commit_hash": "e32b12f",
     "entries": [
