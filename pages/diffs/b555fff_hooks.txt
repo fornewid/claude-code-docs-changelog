@@ -1,0 +1,13 @@
+diff --git a/docs/hooks.md b/docs/hooks.md
+index b1193bf..da7591e 100644
+--- a/docs/hooks.md
++++ b/docs/hooks.md
+@@ -1731,7 +1731,7 @@ Keep these practices in mind when writing hooks:
+ 
+ Run `claude --debug` to see hook execution details, including which hooks matched, their exit codes, and output. Toggle verbose mode with `Ctrl+O` to see hook progress in the transcript.
+ 
+-```
++```text  theme={null}
+ [DEBUG] Executing hooks for PostToolUse:Write
+ [DEBUG] Getting matching hook commands for PostToolUse with query: Write
+ [DEBUG] Found 1 hook matchers in settings

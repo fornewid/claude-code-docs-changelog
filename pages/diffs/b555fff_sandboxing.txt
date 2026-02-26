@@ -1,0 +1,13 @@
+diff --git a/docs/sandboxing.md b/docs/sandboxing.md
+index de5d23d..2766a6d 100644
+--- a/docs/sandboxing.md
++++ b/docs/sandboxing.md
+@@ -89,7 +89,7 @@ On **Linux and WSL2**, install the required packages first:
+ 
+ You can enable sandboxing by running the `/sandbox` command:
+ 
+-```
++```text  theme={null}
+ > /sandbox
+ ```
+ 

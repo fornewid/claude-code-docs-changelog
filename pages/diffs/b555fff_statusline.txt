@@ -1,0 +1,13 @@
+diff --git a/docs/statusline.md b/docs/statusline.md
+index 9d58e23..18818b6 100644
+--- a/docs/statusline.md
++++ b/docs/statusline.md
+@@ -31,7 +31,7 @@ Use the [`/statusline` command](#use-the-statusline-command) to have Claude Code
+ 
+ The `/statusline` command accepts natural language instructions describing what you want displayed. Claude Code generates a script file in `~/.claude/` and updates your settings automatically:
+ 
+-```
++```text  theme={null}
+ /statusline show model name and context percentage with a progress bar
+ ```
+ 

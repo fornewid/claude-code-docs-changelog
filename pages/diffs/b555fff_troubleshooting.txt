@@ -1,0 +1,22 @@
+diff --git a/docs/troubleshooting.md b/docs/troubleshooting.md
+index 6937fea..3ff10ca 100644
+--- a/docs/troubleshooting.md
++++ b/docs/troubleshooting.md
+@@ -833,7 +833,7 @@ If you notice code blocks like this in generated markdown:
+ function example() {
+   return "hello";
+ }
+-```
++```text
+ ````
+ 
+ Instead of properly tagged blocks like:
+@@ -843,7 +843,7 @@ Instead of properly tagged blocks like:
+ function example() {
+   return "hello";
+ }
+-```
++```text
+ ````
+ 
+ **Solutions:**

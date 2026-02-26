@@ -1,0 +1,13 @@
+diff --git a/docs/model-config.md b/docs/model-config.md
+index fcbedd7..4267c34 100644
+--- a/docs/model-config.md
++++ b/docs/model-config.md
+@@ -55,7 +55,7 @@ claude --model opus
+ 
+ Example settings file:
+ 
+-```
++```json  theme={null}
+ {
+     "permissions": {
+         ...
