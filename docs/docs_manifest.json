@@ -45,8 +45,8 @@
     "claude-code-on-the-web.md": {
       "original_url": "https://code.claude.com/docs/en/claude-code-on-the-web",
       "original_md_url": "https://code.claude.com/docs/en/claude-code-on-the-web.md",
-      "hash": "da80f1d22c02c774554ce871e559d3d32f15f5eb759235a70b61db9973faadd2",
-      "last_updated": "2026-02-24T18:19:41.160839"
+      "hash": "fc6519defe5743b7fafb94f9f37b080363dfb0b1411f84a9b8035d658713475b",
+      "last_updated": "2026-02-26T09:17:09.633203"
     },
     "cli-reference.md": {
       "original_url": "https://code.claude.com/docs/en/cli-reference",
@@ -351,8 +351,8 @@
     }
   },
   "fetch_metadata": {
-    "last_fetch_completed": "2026-02-26T06:21:30.263913",
-    "fetch_duration_seconds": 32.447716,
+    "last_fetch_completed": "2026-02-26T09:17:38.273687",
+    "fetch_duration_seconds": 33.100766,
     "total_pages_discovered": 57,
     "pages_fetched_successfully": 58,
     "pages_failed": 0,
@@ -362,7 +362,7 @@
     "total_files": 58,
     "fetch_tool_version": "3.0"
   },
-  "last_updated": "2026-02-26T06:21:30.263931",
+  "last_updated": "2026-02-26T09:17:38.273714",
   "base_url": "https://raw.githubusercontent.com/fornewid/claude-code-docs-changelog/main/docs/",
   "github_repository": "fornewid/claude-code-docs-changelog",
   "github_ref": "main",
