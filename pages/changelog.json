@@ -1,5 +1,32 @@
 [
   {
+    "date": "2026-02-26T06:21:30Z",
+    "commit_hash": "e32b12f",
+    "entries": [
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/changelog\" target=\"_blank\">Changelog</a>",
+        "summary": "config 파일 동시 실행 시 인증 정보 손상 문제 해결. 여러 인스턴스에서 안전하게 실행 가능하게 됨.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/e32b12f_changelog.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/interactive-mode\" target=\"_blank\">Interactive Mode</a>",
+        "summary": "/copy 명령어 기능이 개선되어 코드 블록 선택 기능이 추가되었습니다. 코드 복사 시 편의성이 향상되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/e32b12f_interactive-mode.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/memory\" target=\"_blank\">Memory</a>",
+        "summary": "자동 메모리 기능 활성화/비활성화 방법이 추가되었고, 설정 및 환경 변수를 통한 제어가 가능해졌습니다. 사용자 편의성이 향상되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/e32b12f_memory.txt"
+      }
+    ]
+  },
+  {
     "date": "2026-02-26T03:49:10Z",
     "commit_hash": "4181a92",
     "entries": [
