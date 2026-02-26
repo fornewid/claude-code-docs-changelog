@@ -1,5 +1,18 @@
 [
   {
+    "date": "2026-02-26T18:15:39Z",
+    "commit_hash": "f509591",
+    "entries": [
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/remote-control\" target=\"_blank\">Remote Control</a>",
+        "summary": "remote-control.md 문서가 업데이트되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/f509591_remote-control.txt"
+      }
+    ]
+  },
+  {
     "date": "2026-02-26T09:17:38Z",
     "commit_hash": "a097022",
     "entries": [
