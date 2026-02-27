@@ -1,5 +1,53 @@
 [
   {
+    "date": "2026-02-27T00:19:34Z",
+    "commit_hash": "6ff4d66",
+    "entries": [
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/changelog\" target=\"_blank\">Changelog</a>",
+        "summary": "changelog.md 문서가 업데이트되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/6ff4d66_changelog.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/common-workflows\" target=\"_blank\">Common Workflows</a>",
+        "summary": "common-workflows.md 문서가 업데이트되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/6ff4d66_common-workflows.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/discover-plugins\" target=\"_blank\">Discover Plugins</a>",
+        "summary": "플러그인 제출 방법이 업데이트되었습니다. Claude.ai 및 Console을 통한 제출 링크가 추가되어 플러그인 개발자에게 편의성을 제공합니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/6ff4d66_discover-plugins.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/model-config\" target=\"_blank\">Model Config</a>",
+        "summary": "Opus 4.6 및 Sonnet 4.6에서 적응적 추론 비활성화 설정이 추가되어 이전 고정 사고 예산을 사용할 수 있도록 함.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/6ff4d66_model-config.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/plugins\" target=\"_blank\">Plugins</a>",
+        "summary": "공식 마켓플레이스에 플러그인 제출 방법을 안내하는 섹션이 추가되어 플러그인 배포 절차가 개선되었습니다. ",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/6ff4d66_plugins.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/settings\" target=\"_blank\">Settings</a>",
+        "summary": "settings.md 문서가 업데이트되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/6ff4d66_settings.txt"
+      }
+    ]
+  },
+  {
     "date": "2026-02-26T21:11:29Z",
     "commit_hash": "b555fff",
     "entries": [

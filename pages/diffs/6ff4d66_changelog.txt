@@ -1,0 +1,15 @@
+diff --git a/docs/changelog.md b/docs/changelog.md
+index 3b4d4df..1587b0c 100644
+--- a/docs/changelog.md
++++ b/docs/changelog.md
+@@ -8,6 +8,10 @@
+ 
+ # Changelog
+ 
++## 2.1.61
++
++- Fixed concurrent writes corrupting config file on Windows
++
+ ## 2.1.59
+ 
+ - Claude automatically saves useful context to auto-memory. Manage with /memory
