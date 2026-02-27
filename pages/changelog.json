@@ -1,5 +1,18 @@
 [
   {
+    "date": "2026-02-27T09:21:40Z",
+    "commit_hash": "66e050b",
+    "entries": [
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/quickstart\" target=\"_blank\">Quickstart</a>",
+        "summary": "quickstart.md 문서가 업데이트되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/66e050b_quickstart.txt"
+      }
+    ]
+  },
+  {
     "date": "2026-02-27T06:17:51Z",
     "commit_hash": "5812384",
     "entries": [
