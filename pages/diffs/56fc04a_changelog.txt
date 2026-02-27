@@ -1,0 +1,15 @@
+diff --git a/docs/changelog.md b/docs/changelog.md
+index 1587b0c..dddbe20 100644
+--- a/docs/changelog.md
++++ b/docs/changelog.md
+@@ -8,6 +8,10 @@
+ 
+ # Changelog
+ 
++## 2.1.62
++
++- Fixed prompt suggestion cache regression that reduced cache hit rates
++
+ ## 2.1.61
+ 
+ - Fixed concurrent writes corrupting config file on Windows

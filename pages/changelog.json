@@ -1,5 +1,18 @@
 [
   {
+    "date": "2026-02-27T03:48:00Z",
+    "commit_hash": "56fc04a",
+    "entries": [
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/changelog\" target=\"_blank\">Changelog</a>",
+        "summary": "프롬프트 제안 캐시 회귀를 수정하여 캐시 적중률이 감소한 문제를 해결했습니다. 더 나은 성능을 기대할 수 있습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/56fc04a_changelog.txt"
+      }
+    ]
+  },
+  {
     "date": "2026-02-27T00:19:34Z",
     "commit_hash": "6ff4d66",
     "entries": [
