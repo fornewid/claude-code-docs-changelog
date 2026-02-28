@@ -1,5 +1,18 @@
 [
   {
+    "date": "2026-02-28T18:05:46Z",
+    "commit_hash": "abc3cec",
+    "entries": [
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/remote-control\" target=\"_blank\">Remote Control</a>",
+        "summary": "원격 제어 기능의 지원 계획이 업데이트되었습니다. Max 및 Pro 플랜에서 사용 가능하며, Team 및 Enterprise 플랜에서는 지원되지 않습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/abc3cec_remote-control.txt"
+      }
+    ]
+  },
+  {
     "date": "2026-02-28T06:07:55Z",
     "commit_hash": "55afa16",
     "entries": [
