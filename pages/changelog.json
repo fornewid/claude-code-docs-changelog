@@ -1,5 +1,109 @@
 [
   {
+    "date": "2026-02-28T21:04:33Z",
+    "commit_hash": "e8d03a5",
+    "entries": [
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/cli-reference\" target=\"_blank\">Cli Reference</a>",
+        "summary": "CLI 참조 문서에서 `--agents` 플래그 사용 시 `tools` 속성에서 지원되는 구문이 `Task(agent_type)`에서 `Agent(agent_type)`으로 변경되었습니다. 에이전트 타입 지정을 명확히 했습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/e8d03a5_cli-reference.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/features-overview\" target=\"_blank\">Features Overview</a>",
+        "summary": "CLAUDE.md, 규칙, 스킬 비교 및 사용 가이드 추가. CLAUDE.md 라인 수 제한 및 메모리 로딩 방식 변경, 기능별 우선순위 설명.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/e8d03a5_features-overview.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/hooks-guide\" target=\"_blank\">Hooks Guide</a>",
+        "summary": "HTTP 훅 타입이 추가되어, 외부 웹 서비스로 이벤트 데이터를 전송하고 처리할 수 있게 되었습니다. 팀 내 감사 서비스 등 확장성이 향상되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/e8d03a5_hooks-guide.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/hooks\" target=\"_blank\">Hooks</a>",
+        "summary": "도구 이름과 이벤트 타입 설명이 수정되었습니다. 'Task'가 'Agent'로 변경되고, 훅 타입 지원 내용이 업데이트되었습니다. 변경으로 기능 이해가 용이해짐.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/e8d03a5_hooks.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/how-claude-code-works\" target=\"_blank\">How Claude Code Works</a>",
+        "summary": "Claude Code가 접근할 수 있는 환경에 대한 설명이 추가되어, VS Code, JetBrains IDE 등 다양한 환경을 지원함을 알립니다. 자동 메모 기능에 대한 설명도 추가되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/e8d03a5_how-claude-code-works.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/interactive-mode\" target=\"_blank\">Interactive Mode</a>",
+        "summary": "명령어 표의 목적 열이 업데이트되어 더 자세한 설명을 제공합니다. 사용자 가이드의 명확성을 높였습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/e8d03a5_interactive-mode.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/mcp\" target=\"_blank\">Mcp</a>",
+        "summary": "MCP 인증 실패 시 문제 해결 가이드 추가, claude.ai 서버 비활성화 설정 안내. 사용자 편의성 및 설정 유연성 향상.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/e8d03a5_mcp.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/memory\" target=\"_blank\">Memory</a>",
+        "summary": "Claude의 메모리 관리 가이드가 개선되었습니다. CLAUDE.md 파일과 자동 메모리 개념을 소개하고, 파일 위치와 사용법을 설명합니다. 사용자 지침과 자동 학습 간의 차이점을 명확히 합니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/e8d03a5_memory.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/overview\" target=\"_blank\">Overview</a>",
+        "summary": "CLAUDE.md 파일의 설명이 변경되었고, 자동 메모리 기능과 관련 문서 링크가 추가되어 코드 작업 효율성을 높입니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/e8d03a5_overview.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/permissions\" target=\"_blank\">Permissions</a>",
+        "summary": "하위 에이전트 제어 규칙에서 'Task'를 'Agent'로 변경하여 에이전트 설정을 명확하게 했습니다.  이는 에이전트 관리를 위한 용어 개선입니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/e8d03a5_permissions.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/settings\" target=\"_blank\">Settings</a>",
+        "summary": "Agent 룰이 Task 룰로 변경되었고, Claude AI MCP 서버 사용 설정을 추가했습니다. 이는 보안 및 기능 관련 변경입니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/e8d03a5_settings.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/skills\" target=\"_blank\">Skills</a>",
+        "summary": "내장된 2가지 스킬(/simplify, /batch)에 대한 설명이 추가되었습니다. 코드 정리 및 대규모 변경 작업을 효율적으로 수행 가능해졌습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/e8d03a5_skills.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/sub-agents\" target=\"_blank\">Sub Agents</a>",
+        "summary": "Task 도구가 Agent로 이름이 변경되었고, 관련된 모든 사용법이 업데이트되었습니다. 서브 에이전트 제어 방식에 대한 설명이 개선되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/e8d03a5_sub-agents.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/vs-code\" target=\"_blank\">Vs Code</a>",
+        "summary": "대화 기록에서 세션 이름 변경 및 삭제 기능이 추가되어, 보다 효율적으로 대화를 관리할 수 있습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/e8d03a5_vs-code.txt"
+      }
+    ]
+  },
+  {
     "date": "2026-02-28T18:05:46Z",
     "commit_hash": "abc3cec",
     "entries": [
