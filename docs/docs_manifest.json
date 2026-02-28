@@ -261,8 +261,8 @@
     "remote-control.md": {
       "original_url": "https://code.claude.com/docs/en/remote-control",
       "original_md_url": "https://code.claude.com/docs/en/remote-control.md",
-      "hash": "ccab0957eee049f4fb6e988cb099d32ee74ca92aca1890589cedbc59629d0814",
-      "last_updated": "2026-02-26T18:15:31.765994"
+      "hash": "4c17738ef91dbf37b77c9cf001dce303f553a2b173783ce05c2e163344826856",
+      "last_updated": "2026-02-28T18:05:37.858868"
     },
     "sandboxing.md": {
       "original_url": "https://code.claude.com/docs/en/sandboxing",
@@ -357,8 +357,8 @@
     }
   },
   "fetch_metadata": {
-    "last_fetch_completed": "2026-02-28T06:07:55.401889",
-    "fetch_duration_seconds": 32.939971,
+    "last_fetch_completed": "2026-02-28T18:05:45.985889",
+    "fetch_duration_seconds": 33.68189,
     "total_pages_discovered": 58,
     "pages_fetched_successfully": 59,
     "pages_failed": 0,
@@ -368,7 +368,7 @@
     "total_files": 59,
     "fetch_tool_version": "3.0"
   },
-  "last_updated": "2026-02-28T06:07:55.401915",
+  "last_updated": "2026-02-28T18:05:45.985915",
   "base_url": "https://raw.githubusercontent.com/fornewid/claude-code-docs-changelog/main/docs/",
   "github_repository": "fornewid/claude-code-docs-changelog",
   "github_ref": "main",
