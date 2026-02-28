@@ -1,5 +1,25 @@
 [
   {
+    "date": "2026-02-28T00:16:02Z",
+    "commit_hash": "92b1e06",
+    "entries": [
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/sandboxing\" target=\"_blank\">Sandboxing</a>",
+        "summary": "샌드박스 설정에 쓰기 권한 설정을 추가하여 특정 경로에 대한 하위 프로세스 접근을 허용하고, 설정 병합 방식을 명확히 했습니다. 샌드박스와 권한 설정을 비교 설명합니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/92b1e06_sandboxing.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/settings\" target=\"_blank\">Settings</a>",
+        "summary": "샌드박스 설정에 filesystem.allowWrite, denyWrite, denyRead 옵션 추가 및 sandbox path prefix 안내. 파일 시스템 제어 방식이 개선되었습니다. (보안 강화)",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/92b1e06_settings.txt"
+      }
+    ]
+  },
+  {
     "date": "2026-02-27T21:07:25Z",
     "commit_hash": "497611f",
     "entries": [
