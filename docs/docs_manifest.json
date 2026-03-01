@@ -225,8 +225,8 @@
     "overview.md": {
       "original_url": "https://code.claude.com/docs/en/overview",
       "original_md_url": "https://code.claude.com/docs/en/overview.md",
-      "hash": "b050524226210d2e16afb28daaa981abd071826a26f7390d019cb8959d290adf",
-      "last_updated": "2026-03-01T03:51:55.609029"
+      "hash": "f12a366f9590dfe01a548130246e6468d862bf5fe14a50e8cfcf5026cea5debd",
+      "last_updated": "2026-03-01T09:11:07.203677"
     },
     "permissions.md": {
       "original_url": "https://code.claude.com/docs/en/permissions",
@@ -357,8 +357,8 @@
     }
   },
   "fetch_metadata": {
-    "last_fetch_completed": "2026-03-01T03:52:07.627847",
-    "fetch_duration_seconds": 34.348408,
+    "last_fetch_completed": "2026-03-01T09:11:18.766833",
+    "fetch_duration_seconds": 33.239817,
     "total_pages_discovered": 58,
     "pages_fetched_successfully": 59,
     "pages_failed": 0,
@@ -368,7 +368,7 @@
     "total_files": 59,
     "fetch_tool_version": "3.0"
   },
-  "last_updated": "2026-03-01T03:52:07.627870",
+  "last_updated": "2026-03-01T09:11:18.766861",
   "base_url": "https://raw.githubusercontent.com/fornewid/claude-code-docs-changelog/main/docs/",
   "github_repository": "fornewid/claude-code-docs-changelog",
   "github_ref": "main",
