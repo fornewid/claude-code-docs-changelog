@@ -116,7 +116,11 @@ jobs:
           # Remove root index.html if it exists (migration)
           # 3. Commit the blog update (index.html is static, only data updates)
           git add pages/
-          git commit -m "Update blog for $COMMIT_HASH"
+          if git diff --staged --quiet pages/; then
+            echo "No blog data changes to commit."
+          else
+            git commit -m "Update blog for $COMMIT_HASH"
+          fi
         else
           echo "No documentation changes detected in the latest commit."
         fi
