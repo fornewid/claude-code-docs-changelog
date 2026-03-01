@@ -1,5 +1,53 @@
 [
   {
+    "date": "2026-03-01T03:52:07Z",
+    "commit_hash": "f9af8a1",
+    "entries": [
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/cli-reference\" target=\"_blank\">Cli Reference</a>",
+        "summary": "명령어 사용 설명에서 슬래시 명령어 관련 문구가 'skills and commands'로 수정되었습니다. 기능의 범위를 명확히 했습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/f9af8a1_cli-reference.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/features-overview\" target=\"_blank\">Features Overview</a>",
+        "summary": "Skills에 대한 설명이 업데이트되었으며, 내장된 `/simplify`, `/batch`, `/debug` 스킬에 대한 정보가 추가되었습니다. 사용자 편의성을 높임.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/f9af8a1_features-overview.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/hooks-guide\" target=\"_blank\">Hooks Guide</a>",
+        "summary": "명령 훅 제한 사항이 수정되었습니다. 더 정확한 설명으로 변경되어 훅의 동작 방식을 명확하게 이해할 수 있습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/f9af8a1_hooks-guide.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/interactive-mode\" target=\"_blank\">Interactive Mode</a>",
+        "summary": "대화형 모드 내장 명령어 목록이 업데이트되었고, `/copy` 명령에 대한 설명이 개선되어 사용 편의성이 향상되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/f9af8a1_interactive-mode.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/overview\" target=\"_blank\">Overview</a>",
+        "summary": "명령어 관련 용어 변경 및 코드 블록 스타일 변경이 있었습니다. 사용자 정의 기능 개선 및 명령어 사용성을 향상시켰습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/f9af8a1_overview.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/skills\" target=\"_blank\">Skills</a>",
+        "summary": "기술 확장 관련 내용이 업데이트되었습니다. 명령어 통합, 번들 기술 도입, 디버깅 기능 추가, 개발 플랫폼 기술 자동 활성화 등이 포함되어 사용자 편의성이 향상되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/f9af8a1_skills.txt"
+      }
+    ]
+  },
+  {
     "date": "2026-02-28T21:04:33Z",
     "commit_hash": "e8d03a5",
     "entries": [
