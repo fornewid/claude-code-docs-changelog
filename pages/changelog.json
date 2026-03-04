@@ -1,5 +1,39 @@
 [
   {
+    "date": "2026-03-04T15:14:50Z",
+    "commit_hash": "930e47d",
+    "entries": [
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/changelog\" target=\"_blank\">Changelog</a>",
+        "summary": "Opus 4.6의 기본 노력 수준이 중간으로 변경되었고, ultrathink 키워드가 다시 추가되었습니다. 이전 모델은 Opus 4.6으로 자동 전환되었습니다. (성능 개선 및 기능 추가)",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/930e47d_changelog.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/common-workflows\" target=\"_blank\">Common Workflows</a>",
+        "summary": "Opus 및 Sonnet 모델의 사고 깊이 조절 옵션이 추가되었습니다.  사용자는 환경 변수 설정을 통해 사고 깊이를 조정할 수 있습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/930e47d_common-workflows.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/model-config\" target=\"_blank\">Model Config</a>",
+        "summary": "Opus 및 Sonnet 모델의 노력 수준 지원 범위가 확장되었고, 사용 가능한 옵션 및 환경 변수 설정에 대한 내용이 업데이트되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/930e47d_model-config.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/settings\" target=\"_blank\">Settings</a>",
+        "summary": "모델 설정에서 노력 수준을 조정할 때 Sonnet 4.6 모델도 지원하도록 변경되었습니다. 이는 더 다양한 모델에서 깊이 있는 추론을 가능하게 합니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/930e47d_settings.txt"
+      }
+    ]
+  },
+  {
     "date": "2026-03-01T03:52:07Z",
     "commit_hash": "f9af8a1",
     "entries": [
