@@ -1,5 +1,74 @@
 [
   {
+    "date": "2026-03-06T15:13:40Z",
+    "commit_hash": "b116d09",
+    "entries": [
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/changelog\" target=\"_blank\">Changelog</a>",
+        "summary": "2.1.70 버전에서 버그 수정 및 성능 개선이 이루어졌습니다. API 오류, 사용자 인터페이스, VSCode 통합 등 다양한 부분에서 개선이 있었습니다. (버그 수정, 성능 향상)",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/b116d09_changelog.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/common-workflows\" target=\"_blank\">Common Workflows</a>",
+        "summary": "문서 내 코드 블록 스타일이 'text'로 변경되었고, 일부 명령 예시가 추가되었습니다. 사용자 편의성 향상을 위한 변경입니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/b116d09_common-workflows.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/how-claude-code-works\" target=\"_blank\">How Claude Code Works</a>",
+        "summary": "프롬프트 예시가 개선되어, 더 구체적인 프롬프트 작성을 권장합니다. 이는 Claude의 작업 정확도를 높여줍니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/b116d09_how-claude-code-works.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/jetbrains\" target=\"_blank\">Jetbrains</a>",
+        "summary": "IDE 연결 명령어 형식이 변경되었습니다. 터미널 명령어를 사용해 IDE와 쉽게 연동하여 코드를 분석할 수 있습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/b116d09_jetbrains.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/mcp\" target=\"_blank\">Mcp</a>",
+        "summary": "예제 코드와 설명이 추가되어 MCP 서버 사용법이 개선되었습니다. 사용자가 쉽게 기능을 이해하고 활용할 수 있도록 돕습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/b116d09_mcp.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/remote-control\" target=\"_blank\">Remote Control</a>",
+        "summary": "원격 제어 기능의 지원 계획이 업데이트되었습니다. 모든 요금제로 확대되었으며, 팀 및 엔터프라이즈는 관리자 설정에서 활성화해야 합니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/b116d09_remote-control.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/sandboxing\" target=\"_blank\">Sandboxing</a>",
+        "summary": "Linux 샌드박스 실행 방법이 변경되었습니다. 메뉴를 통해 샌드박스 모드를 선택하고, 의존성 설치 안내를 제공합니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/b116d09_sandboxing.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/troubleshooting\" target=\"_blank\">Troubleshooting</a>",
+        "summary": "설치 오류 예시에 대한 설명을 개선하고, 명령어 실행 시 발생할 수 있는 문제에 대한 추가적인 정보를 제공합니다. 사용자 경험 개선.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/b116d09_troubleshooting.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/vs-code\" target=\"_blank\">Vs Code</a>",
+        "summary": "VS Code 확장 기능에서 Spark 아이콘 및 MCP 서버 관리 기능에 대한 설명이 추가 및 업데이트되었습니다. 사용자 경험 개선을 위한 변경 사항입니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/b116d09_vs-code.txt"
+      }
+    ]
+  },
+  {
     "date": "2026-03-05T15:19:43Z",
     "commit_hash": "1ee4064",
     "entries": [
