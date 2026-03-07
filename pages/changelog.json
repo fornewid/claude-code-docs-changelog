@@ -1,5 +1,66 @@
 [
   {
+    "date": "2026-03-07T15:06:04Z",
+    "commit_hash": "db5b600",
+    "entries": [
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/changelog\" target=\"_blank\">Changelog</a>",
+        "summary": "2.1.71 업데이트: 반복 명령(/loop), 크론 스케줄링, 음성 키 바인딩, Bash 자동 승인 추가. 버그 수정 및 성능 개선, 플러그인 관리 개선. ",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/db5b600_changelog.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/claude-code-on-the-web\" target=\"_blank\">Claude Code On The Web</a>",
+        "summary": "클라우드 환경 설정 스크립트 기능 추가 및 의존성 관리 가이드 업데이트. 새로운 스크립트 기능으로 초기 환경 설정을 자동화하여 사용자 편의성을 향상시켰습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/db5b600_claude-code-on-the-web.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/desktop-quickstart\" target=\"_blank\">Desktop Quickstart</a>",
+        "summary": "데스크톱 앱 기능에 '스케줄링된 작업' 기능이 추가되어, 코드 리뷰, 종속성 감사 등을 자동화할 수 있게 되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/db5b600_desktop-quickstart.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/desktop\" target=\"_blank\">Desktop</a>",
+        "summary": "데스크톱 앱에 '반복 작업' 기능이 추가되었습니다. 이 기능은 정기적인 코드 검토 및 작업 자동화를 가능하게 합니다. (새로운 섹션 추가)",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/db5b600_desktop.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/overview\" target=\"_blank\">Overview</a>",
+        "summary": "데스크톱 앱 기능이 확장되었습니다. 정기적인 작업 예약 기능이 추가되어, 사용자의 생산성을 향상시킵니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/db5b600_overview.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/scheduled-tasks\" target=\"_blank\">Scheduled Tasks</a>",
+        "summary": "새로운 파일이 추가되어, /loop 명령어를 사용하여 프롬프트를 예약하거나, 단일성 알림을 설정하는 방법을 설명합니다. 세션 종료 시 작업이 사라지는 제약 사항이 있습니다.",
+        "tag_text": "NEW",
+        "tag_class": "new"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/settings\" target=\"_blank\">Settings</a>",
+        "summary": "Cron 작업 비활성화 환경 변수가 추가되어, 예약된 작업 기능을 완전히 끌 수 있습니다. 안정성 향상 목적.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/db5b600_settings.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/skills\" target=\"_blank\">Skills</a>",
+        "summary": "/loop 명령 추가로, 세션 내에서 반복적인 프롬프트 실행 기능 도입. 배포 상태 확인 등 다양한 상황에 활용 가능.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/db5b600_skills.txt"
+      }
+    ]
+  },
+  {
     "date": "2026-03-06T15:13:40Z",
     "commit_hash": "b116d09",
     "entries": [
