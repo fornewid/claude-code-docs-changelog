@@ -1,5 +1,101 @@
 [
   {
+    "date": "2026-03-10T15:21:04Z",
+    "commit_hash": "615a0eb",
+    "entries": [
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/best-practices\" target=\"_blank\">Best Practices</a>",
+        "summary": "프로젝트 루트 CLAUDE.md 사용 가이드라인 변경: .gitignore 제거 및 팀 공유 권장.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/615a0eb_best-practices.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/changelog\" target=\"_blank\">Changelog</a>",
+        "summary": "2.1.72 버전 업데이트: 다양한 버그 수정, 새로운 기능 추가(lsof, pgrep, w키), 성능 개선 및 UI/UX 향상 (작업 트리, 모델, VSCode 지원). 무엇보다 많은 버그를 수정했습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/615a0eb_changelog.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/code-review\" target=\"_blank\">Code Review</a>",
+        "summary": "새로운 코드 검토 기능에 대한 안내 문서가 추가되었습니다. 기능 작동 방식, 설정 방법, 사용자 정의 방법, 요금 및 관련 리소스에 대한 내용을 담고 있습니다.",
+        "tag_text": "NEW",
+        "tag_class": "new"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/desktop\" target=\"_blank\">Desktop</a>",
+        "summary": "데스크톱 앱과 CLI 간의 설정 공유 방식에 대한 문서가 업데이트되었습니다. CLAUDE.local.md 파일 관련 내용이 삭제되었습니다. 일관성을 위한 변경입니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/615a0eb_desktop.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/features-overview\" target=\"_blank\">Features Overview</a>",
+        "summary": "Skill 예시가 /review에서 /deploy로 변경되었고, subagent 예시가 /review에서 /audit로 변경되었습니다. 기능 사용 예시가 업데이트되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/615a0eb_features-overview.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/github-actions\" target=\"_blank\">Github Actions</a>",
+        "summary": "GitHub Actions 사용법이 개선되었습니다. /review 명령 대신 skill을 사용하도록 변경되었고, 파라미터 설명도 업데이트되어 사용성이 향상되었습니다. ",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/615a0eb_github-actions.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/interactive-mode\" target=\"_blank\">Interactive Mode</a>",
+        "summary": "/review 명령어 사용 중단 및 code-review 플러그인 설치 안내. 보안 검토 기능은 유지됩니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/615a0eb_interactive-mode.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/memory\" target=\"_blank\">Memory</a>",
+        "summary": "개인 설정 파일 사용 방식이 변경되었습니다. CLAUDE.local.md 사용 중단, 홈 디렉토리에서 파일을 가져오는 방식으로 변경하여 여러 git worktree 간의 일관성을 유지합니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/615a0eb_memory.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/overview\" target=\"_blank\">Overview</a>",
+        "summary": "GitHub Code Review 기능이 추가되어 PR에 대한 자동 코드 리뷰가 가능해졌습니다. 협업 효율성을 높입니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/615a0eb_overview.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/plugin-marketplaces\" target=\"_blank\">Plugin Marketplaces</a>",
+        "summary": "예시 플러그인 이름과 스킬 이름이 `/review`에서 `/quality-review`로 변경되었습니다. 코드 검토 관련 플러그인의 명확성을 높였습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/615a0eb_plugin-marketplaces.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/plugins\" target=\"_blank\">Plugins</a>",
+        "summary": "플러그인 사용 시나리오가 업데이트되었습니다.  단축된 기술 이름 예시가 `/review`에서 `/deploy`로 변경되어, 더 정확한 예시를 제공합니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/615a0eb_plugins.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/settings\" target=\"_blank\">Settings</a>",
+        "summary": "Local 설정 파일 형식이 settings.local.json으로 변경되었고, CLAUDE.md에 대한 로컬 설정 옵션이 제거되었습니다. 파일 구조 및 접근 방식의 단순화가 있습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/615a0eb_settings.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/skills\" target=\"_blank\">Skills</a>",
+        "summary": "커스텀 명령어 통합 관련 예시가 변경되었습니다. 'review'에서 'deploy'로 바뀌어, 기술 문서의 예시를 업데이트했습니다. ",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/615a0eb_skills.txt"
+      }
+    ]
+  },
+  {
     "date": "2026-03-07T15:06:04Z",
     "commit_hash": "db5b600",
     "entries": [
