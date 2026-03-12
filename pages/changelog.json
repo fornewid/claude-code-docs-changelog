@@ -1,5 +1,53 @@
 [
   {
+    "date": "2026-03-12T15:21:25Z",
+    "commit_hash": "92b1c34",
+    "entries": [
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/amazon-bedrock\" target=\"_blank\">Amazon Bedrock</a>",
+        "summary": "모델 버전별 추론 프로필 매핑 기능 추가. `/model`에서 여러 버전을 선택하고 각기 다른 ARN으로 라우팅할 수 있게 하여 유연성을 높임.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/92b1c34_amazon-bedrock.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/changelog\" target=\"_blank\">Changelog</a>",
+        "summary": "2.1.73 및 2.1.74 버전에서 다양한 버그 수정 및 개선 사항이 적용되었습니다. 모델 설정, 음성 모드, 그리고 VSCode 통합 관련 문제들이 해결되었고, 사용자 경험이 향상되었습니다.  (/context, /loop 등 기능 개선).",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/92b1c34_changelog.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/interactive-mode\" target=\"_blank\">Interactive Mode</a>",
+        "summary": "대화형 모드 명령어 목록이 업데이트되었으며, 새로운 기능과 사용법에 대한 설명이 추가되었습니다. 사용자 편의성을 개선했습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/92b1c34_interactive-mode.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/model-config\" target=\"_blank\">Model Config</a>",
+        "summary": "모델 ID를 버전별로 재정의하는 `modelOverrides` 설정이 추가되어, 기업 관리자가 특정 모델 버전을 다른 API 엔드포인트로 라우팅할 수 있게 되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/92b1c34_model-config.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/output-styles\" target=\"_blank\">Output Styles</a>",
+        "summary": "출력 스타일 설정 방법이 변경되었습니다. `/config` 메뉴에서 선택하거나, 설정을 직접 수정하여 스타일을 지정할 수 있습니다. ",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/92b1c34_output-styles.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/settings\" target=\"_blank\">Settings</a>",
+        "summary": "모델 설정에 `modelOverrides` 옵션 추가. 특정 모델 ID를 공급자별 ID로 매핑하여 API 호출 시 사용. 모델 선택 기능 개선.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/92b1c34_settings.txt"
+      }
+    ]
+  },
+  {
     "date": "2026-03-11T15:18:51Z",
     "commit_hash": "dc36db0",
     "entries": [
