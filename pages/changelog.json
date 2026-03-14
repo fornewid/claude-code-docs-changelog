@@ -1,5 +1,260 @@
 [
   {
+    "date": "2026-03-14T15:08:09Z",
+    "commit_hash": "05dd191",
+    "entries": [
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/authentication\" target=\"_blank\">Authentication</a>",
+        "summary": "구독 링크에 UTM 파라미터가 추가되어, 팀 및 엔터프라이즈 플랜 가입 경로를 추적할 수 있게 되었습니다. 사용성 개선.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/05dd191_authentication.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/best-practices\" target=\"_blank\">Best Practices</a>",
+        "summary": "훅 설정 방법 안내가 변경되었습니다. `/hooks` 실행 후 설정 탐색 기능이 추가되어 사용자 편의성이 향상되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/05dd191_best-practices.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/changelog\" target=\"_blank\">Changelog</a>",
+        "summary": "최신 버전의 변경 사항 요약: 향상된 기능, 버그 수정 및 성능 개선. OAuth 및 모델 관련 문제, 도구 검색, 음성 모드 및 기타 기능이 개선되었습니다. (기능 향상, 버그 수정)",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/05dd191_changelog.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/checkpointing\" target=\"_blank\">Checkpointing</a>",
+        "summary": "체크포인트 관련 명령어 접근 방식이 변경되었습니다. `/rewind` 사용 방법 안내 페이지 링크가 수정되었습니다. (중요 업데이트)",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/05dd191_checkpointing.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/cli-reference\" target=\"_blank\">Cli Reference</a>",
+        "summary": "remote-control 명령어의 사용법이 업데이트되어, 서버 모드 실행 시 `--name` 플래그를 사용하여 프로젝트 이름을 지정할 수 있도록 변경되었습니다. (리모트 컨트롤 기능 개선)",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/05dd191_cli-reference.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/commands\" target=\"_blank\">Commands</a>",
+        "summary": "새로운 commands.md 파일이 추가되었습니다. 이 파일은 Claude Code의 내장 명령어를 상세히 안내하고, 사용법, 목적, 플랫폼별 사용 가능 여부 등을 설명합니다. 사용자에게 유용한 명령어 레퍼런스.",
+        "tag_text": "NEW",
+        "tag_class": "new"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/common-workflows\" target=\"_blank\">Common Workflows</a>",
+        "summary": "Plan 모드에서 참조 링크가 변경되었고, Opus 4.6 및 Sonnet 4.6의 적응형 사고 지원이 추가되었습니다. 세션 이름 지정 방법과 환경 변수 설명도 개선되었습니다. ",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/05dd191_common-workflows.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/costs\" target=\"_blank\">Costs</a>",
+        "summary": "확장 사고 기능 비용 절감 안내가 수정되었습니다. `/effort` 설정을 통해 사고 비용을 줄이는 방법이 추가되었습니다. ",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/05dd191_costs.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/desktop-quickstart\" target=\"_blank\">Desktop Quickstart</a>",
+        "summary": "구독 링크에 UTM 파라미터가 추가되었고, 슬래시 명령어 링크가 업데이트 되었습니다. 사용자 추적 및 기능 개선을 위한 변경입니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/05dd191_desktop-quickstart.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/desktop\" target=\"_blank\">Desktop</a>",
+        "summary": "Slash commands의 링크가 변경되었고, task prompt 편집 파일 경로, 환경 변수 참조 링크가 업데이트되었습니다. 전반적인 사용 설명이 개선되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/05dd191_desktop.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/env-vars\" target=\"_blank\">Env Vars</a>",
+        "summary": "Claude Code의 환경 변수 설정 방법을 안내하는 새로운 문서가 추가되었습니다. API 키, 모델 설정 등 다양한 변수들을 설정할 수 있습니다.",
+        "tag_text": "NEW",
+        "tag_class": "new"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/fast-mode\" target=\"_blank\">Fast Mode</a>",
+        "summary": "빠른 모드 비활성화를 위한 환경 변수 링크가 수정되었고, 팀 및 엔터프라이즈 플랜 관련 링크에 UTM 파라미터가 추가되었습니다. ",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/05dd191_fast-mode.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/google-vertex-ai\" target=\"_blank\">Google Vertex Ai</a>",
+        "summary": "1M 토큰 컨텍스트 윈도우 지원 모델이 확장되었고, 활성화 방법이 변경되었습니다. 더 다양한 모델을 지원하며 사용 편의성이 향상되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/05dd191_google-vertex-ai.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/headless\" target=\"_blank\">Headless</a>",
+        "summary": "내부 명령어 관련 안내가 업데이트되었습니다.  사용자 호출 기능과 관련하여 `-p` 모드 사용법을 개선했습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/05dd191_headless.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/hooks-guide\" target=\"_blank\">Hooks Guide</a>",
+        "summary": "훅 설정 방식이 변경되었고, 인터랙티브 메뉴 사용 대신 settings.json 직접 편집을 권장합니다. 새로운 훅 이벤트 및 훅 관련 정보가 추가되었습니다. (훅 설정 간소화 및 기능 확장)",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/05dd191_hooks-guide.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/hooks\" target=\"_blank\">Hooks</a>",
+        "summary": "훅 이벤트와 `/hooks` 메뉴에 대한 내용이 업데이트되었습니다. 새로운 이벤트가 추가되었고, 메뉴는 읽기 전용으로 변경되었습니다. 훅 제어 방식에 대한 세부 정보도 추가되었습니다. (훅, 메뉴, 이벤트 변화)",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/05dd191_hooks.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/how-claude-code-works\" target=\"_blank\">How Claude Code Works</a>",
+        "summary": "Claude의 도구 목록에 대한 링크가 변경되었습니다. 최신 정보가 포함된 도구 참조 페이지로 연결됩니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/05dd191_how-claude-code-works.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/interactive-mode\" target=\"_blank\">Interactive Mode</a>",
+        "summary": "명령어 목록이 업데이트되고, 일부 설명이 개선되었습니다. 사용 편의성을 높이고, 새로운 기능에 대한 정보를 제공합니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/05dd191_interactive-mode.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/legal-and-compliance\" target=\"_blank\">Legal And Compliance</a>",
+        "summary": "문의처 URL에 UTM 파라미터가 추가되어, 문서에서 유입된 사용자를 추적할 수 있게 되었습니다. 데이터 분석에 활용됩니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/05dd191_legal-and-compliance.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/mcp\" target=\"_blank\">Mcp</a>",
+        "summary": "MCP 서버의 요청에 응답하는 기능이 추가되었습니다. 대화형 다이얼로그와 URL 모드 지원, Elicitation 훅 사용법 안내.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/05dd191_mcp.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/memory\" target=\"_blank\">Memory</a>",
+        "summary": "CLAUDE.md 내용이 시스템 프롬프트가 아닌 사용자 메시지로 전달됨을 명확히 하고, `--append-system-prompt` 사용법을 추가하여 시스템 프롬프트 수준의 지침 설정을 안내합니다. ",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/05dd191_memory.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/model-config\" target=\"_blank\">Model Config</a>",
+        "summary": "모델 목록에 opus[1m]이 추가되었고, effort 수준이 max로 확장되었습니다. 1M 컨텍스트 사용 정보가 업데이트 되었으며 환경 변수 설정에 대한 설명이 추가되었습니다. 변경 사항은 기능 향상과 사용자 편의성을 높입니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/05dd191_model-config.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/network-config\" target=\"_blank\">Network Config</a>",
+        "summary": "GitHub 앱 IP 허용 목록 설정 관련 내용이 추가되었습니다.  IP 제한 환경에서 Claude Code 사용성을 개선합니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/05dd191_network-config.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/overview\" target=\"_blank\">Overview</a>",
+        "summary": "가격 페이지 링크에 UTM 파라미터가 추가되어, 문서에서 트래킹 가능하도록 업데이트되었습니다. 사용자 행동 분석에 도움을 줍니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/05dd191_overview.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/quickstart\" target=\"_blank\">Quickstart</a>",
+        "summary": "Claude 구독 및 로그인 링크에 utm 파라미터가 추가되어, 사용자 추적 및 분석을 개선합니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/05dd191_quickstart.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/remote-control\" target=\"_blank\">Remote Control</a>",
+        "summary": "원격 제어 시작 방법이 확장되었고, 서버 모드와 대화형 세션 시작 옵션을 제공합니다. --spawn 옵션으로 동시 세션 관리를 추가하여 유연성을 높였습니다. (원격 제어 기능 개선)",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/05dd191_remote-control.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/scheduled-tasks\" target=\"_blank\">Scheduled Tasks</a>",
+        "summary": "환경 변수 링크가 업데이트되어, 스케줄러 비활성화 관련 정보에 접근하는 방식이 변경되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/05dd191_scheduled-tasks.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/server-managed-settings\" target=\"_blank\">Server Managed Settings</a>",
+        "summary": "서버 관리 설정의 베타 버전이 팀 및 엔터프라이즈 플랜에 적용되며, 링크에 UTM 파라미터가 추가되었습니다. 기능 변경 가능.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/05dd191_server-managed-settings.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/settings\" target=\"_blank\">Settings</a>",
+        "summary": "설정 파일의 내용이 업데이트되었고, 새로운 `effortLevel` 설정을 추가했습니다. Windows managed settings 경로가 변경되었습니다. 새 worktree 설정도 추가되어 효율성을 높입니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/05dd191_settings.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/setup\" target=\"_blank\">Setup</a>",
+        "summary": "설정 파일 (`settings.json`)의 환경 변수 설정 경로가 업데이트되었으며, 관련 섹션 링크가 변경되었습니다. 사용자 편의성을 높였습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/05dd191_setup.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/skills\" target=\"_blank\">Skills</a>",
+        "summary": "내장 명령 관련 링크가 변경되었고, 번들 스킬 목록이 표 형식으로 재구성되었습니다. 더 나은 가독성을 위해 제공.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/05dd191_skills.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/sub-agents\" target=\"_blank\">Sub Agents</a>",
+        "summary": "CLI에서 여러 subagent 정의 예시가 추가되고, 내부 도구 및 환경 변수 링크가 업데이트되었습니다. 전반적인 사용 설명이 개선되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/05dd191_sub-agents.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/third-party-integrations\" target=\"_blank\">Third Party Integrations</a>",
+        "summary": "Enterprise 문의 링크에 UTM 파라미터가 추가되어, 트래픽 소스 추적이 용이해졌습니다. 이는 마케팅 분석에 도움을 줍니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/05dd191_third-party-integrations.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/tools-reference\" target=\"_blank\">Tools Reference</a>",
+        "summary": "Claude Code가 사용할 수 있는 도구에 대한 전체 참조 문서가 추가되었습니다. 권한 요구 사항과 함께 각 도구의 기능 설명.",
+        "tag_text": "NEW",
+        "tag_class": "new"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/troubleshooting\" target=\"_blank\">Troubleshooting</a>",
+        "summary": "ripgrep 설정 관련 안내가 업데이트되었습니다. 환경 변수 설정 경로가 변경되어 검색 성능 개선에 도움이 됩니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/05dd191_troubleshooting.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/vs-code\" target=\"_blank\">Vs Code</a>",
+        "summary": "VS Code 확장 기능과 CLI 기능 비교 표의 링크와 내용을 수정하여 더 정확한 정보 제공합니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/05dd191_vs-code.txt"
+      }
+    ]
+  },
+  {
     "date": "2026-03-13T15:17:14Z",
     "commit_hash": "6ac53ce",
     "entries": [

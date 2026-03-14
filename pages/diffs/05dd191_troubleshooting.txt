@@ -1,0 +1,13 @@
+diff --git a/docs/troubleshooting.md b/docs/troubleshooting.md
+index 1d17aaf..ff5a440 100644
+--- a/docs/troubleshooting.md
++++ b/docs/troubleshooting.md
+@@ -733,7 +733,7 @@ apk add ripgrep
+ pacman -S ripgrep
+ ```
+ 
+-Then set `USE_BUILTIN_RIPGREP=0` in your [environment](/en/settings#environment-variables).
++Then set `USE_BUILTIN_RIPGREP=0` in your [environment](/en/env-vars).
+ 
+ ### Slow or incomplete search results on WSL
+ 
