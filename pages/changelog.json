@@ -1,5 +1,18 @@
 [
   {
+    "date": "2026-03-15T15:09:10Z",
+    "commit_hash": "f642015",
+    "entries": [
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/changelog\" target=\"_blank\">Changelog</a>",
+        "summary": "MCP 지원 추가, 음성 모드 개선, 버그 수정 및 성능 향상, 특히 메모리 누수, 권한 문제, 텍스트 렌더링 문제를 해결했습니다.  또한 다양한 설정 및 명령에 대한 개선 사항이 적용되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/f642015_changelog.txt"
+      }
+    ]
+  },
+  {
     "date": "2026-03-14T15:08:09Z",
     "commit_hash": "05dd191",
     "entries": [
