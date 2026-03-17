@@ -1,5 +1,116 @@
 [
   {
+    "date": "2026-03-17T15:25:43Z",
+    "commit_hash": "130f341",
+    "entries": [
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/changelog\" target=\"_blank\">Changelog</a>",
+        "summary": "클로드 코드의 변경 사항이 업데이트되었습니다. 새로운 기능 추가 및 버그 수정이 이루어졌으며, 사용자 경험과 성능 개선에 초점을 맞췄습니다. 특히 맥락 관리, 모델 설정, 그리고 VSCode 통합 관련 개선 사항이 포함되었습니다. (What changed: Added new features, bug fixes, and improved user experience, especially regarding context management, model settings, and VSCode integration. Why it matters: 향상된 기능과 안정성으로 더 나은 클로드 코드 사용 환경을 제공합니다.)",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/130f341_changelog.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/commands\" target=\"_blank\">Commands</a>",
+        "summary": "/reload-plugins 명령어의 출력 내용이 개선되어 각 구성 요소의 로드 횟수와 오류를 표시합니다. 플러그인 로드 상태를 더 자세히 파악할 수 있습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/130f341_commands.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/data-usage\" target=\"_blank\">Data Usage</a>",
+        "summary": "서베이 비활성화 조건이 변경되었고, API 제공업체별 기본 동작이 명확해졌습니다. 사용자 데이터 처리 방식에 대한 중요한 정보입니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/130f341_data-usage.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/discover-plugins\" target=\"_blank\">Discover Plugins</a>",
+        "summary": "플러그인 활성화를 위한 `/reload-plugins` 명령어 사용법이 변경되었습니다. 플러그인 변경 사항 적용 및 LSP 서버 관련 내용이 업데이트되었습니다. ",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/130f341_discover-plugins.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/env-vars\" target=\"_blank\">Env Vars</a>",
+        "summary": "Claude Code 셸 환경에서 실행 중임을 감지하기 위한 CLAUDECODE 환경 변수가 추가되었고, 피드백 설문 조사가 DISABLE_TELEMETRY와 DISABLE_NONESSENTIAL_TRAFFIC 설정 시 비활성화되도록 변경되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/130f341_env-vars.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/fast-mode\" target=\"_blank\">Fast Mode</a>",
+        "summary": "빠른 모드 가격 정보가 업데이트되었습니다. 1M 토큰 컨텍스트 창에서 고정 가격으로 변경되어 사용 편의성이 향상되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/130f341_fast-mode.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/hooks-guide\" target=\"_blank\">Hooks Guide</a>",
+        "summary": "새로운 기능으로 특정 권한 프롬프트를 자동 승인하는 기능이 추가되었습니다. 사용자는 이제 ExitPlanMode에 대한 프롬프트를 자동으로 허용할 수 있습니다. 또한, 설정 파일 변경 감지 방식이 변경되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/130f341_hooks-guide.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/hooks\" target=\"_blank\">Hooks</a>",
+        "summary": "훅 변경 사항: 파일 감시자가 훅 편집 내용을 자동으로 감지합니다. 또한 permission_suggestions와 updatedPermissions 필드를 사용해 권한 관리 기능이 개선되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/130f341_hooks.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/mcp\" target=\"_blank\">Mcp</a>",
+        "summary": "플러그인 활성화/비활성화 시 MCP 서버 연결/해제를 위해 `/reload-plugins` 명령어를 사용하도록 변경되었습니다. 세션 중 변경 사항 적용이 용이해졌습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/130f341_mcp.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/plugin-marketplaces\" target=\"_blank\">Plugin Marketplaces</a>",
+        "summary": "Git URL 소스에 대한 필드 정의가 수정되었습니다. `url` 필드만 있었는데, `ref?`, `sha?` 필드가 추가되었습니다. Git URL에서 특정 버전을 지정할 수 있게 되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/130f341_plugin-marketplaces.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/plugins\" target=\"_blank\">Plugins</a>",
+        "summary": "플러그인 변경 후 재로드를 통해 업데이트를 적용하는 범위가 확장되었습니다. LSP 서버를 제외한 모든 구성 요소의 즉시 적용을 지원합니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/130f341_plugins.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/server-managed-settings\" target=\"_blank\">Server Managed Settings</a>",
+        "summary": "MDM 환경에서 서버 설정 접근 권한을 추가적으로 설정할 수 있도록 변경되었습니다. 보안 강화 및 유연성 향상.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/130f341_server-managed-settings.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/settings\" target=\"_blank\">Settings</a>",
+        "summary": "세션 품질 설문조사의 동작 방식이 변경되었습니다. Bedrock, Vertex, Foundry 사용 시 기본 샘플링 속도 적용을 위해 설문조사 빈도 조절 가능.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/130f341_settings.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/statusline\" target=\"_blank\">Statusline</a>",
+        "summary": "진행률 표시줄 생성 방식이 개선되었습니다. printf 대신 변수 할당과 문자 치환을 사용하여 시각적 표현을 향상시켰습니다. 가독성 및 효율성 증가.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/130f341_statusline.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/sub-agents\" target=\"_blank\">Sub Agents</a>",
+        "summary": "플러그인 하위 에이전트의 보안 제한 사항을 명시하며, 특정 필드 지원 중단 및 해결 방법 안내.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/130f341_sub-agents.txt"
+      }
+    ]
+  },
+  {
     "date": "2026-03-15T15:09:10Z",
     "commit_hash": "f642015",
     "entries": [
