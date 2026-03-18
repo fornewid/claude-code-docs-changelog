@@ -1,0 +1,34 @@
+diff --git a/docs/memory.md b/docs/memory.md
+index c6dad57..06ba110 100644
+--- a/docs/memory.md
++++ b/docs/memory.md
+@@ -58,6 +58,8 @@ A project CLAUDE.md can be stored in either `./CLAUDE.md` or `./.claude/CLAUDE.m
+ 
+ <Tip>
+   Run `/init` to generate a starting CLAUDE.md automatically. Claude analyzes your codebase and creates a file with build commands, test instructions, and project conventions it discovers. If a CLAUDE.md already exists, `/init` suggests improvements rather than overwriting it. Refine from there with instructions Claude wouldn't discover on its own.
++
++  Set `CLAUDE_CODE_NEW_INIT=true` to enable an interactive multi-phase flow. `/init` asks which artifacts to set up: CLAUDE.md files, skills, and hooks. It then explores your codebase with a subagent, fills in gaps via follow-up questions, and presents a reviewable proposal before writing any files.
+ </Tip>
+ 
+ ### Write effective instructions
+@@ -228,6 +230,20 @@ Organizations can deploy a centrally managed CLAUDE.md that applies to all users
+   </Step>
+ </Steps>
+ 
++A managed CLAUDE.md and [managed settings](/en/settings#settings-files) serve different purposes. Use settings for technical enforcement and CLAUDE.md for behavioral guidance:
++
++| Concern                                        | Configure in                                              |
++| :--------------------------------------------- | :-------------------------------------------------------- |
++| Block specific tools, commands, or file paths  | Managed settings: `permissions.deny`                      |
++| Enforce sandbox isolation                      | Managed settings: `sandbox.enabled`                       |
++| Environment variables and API provider routing | Managed settings: `env`                                   |
++| Authentication method and organization lock    | Managed settings: `forceLoginMethod`, `forceLoginOrgUUID` |
++| Code style and quality guidelines              | Managed CLAUDE.md                                         |
++| Data handling and compliance reminders         | Managed CLAUDE.md                                         |
++| Behavioral instructions for Claude             | Managed CLAUDE.md                                         |
++
++Settings rules are enforced by the client regardless of what Claude decides to do. CLAUDE.md instructions shape Claude's behavior but are not a hard enforcement layer.
++
+ #### Exclude specific CLAUDE.md files
+ 
+ In large monorepos, ancestor CLAUDE.md files may contain instructions that aren't relevant to your work. The `claudeMdExcludes` setting lets you skip specific files by path or glob pattern.

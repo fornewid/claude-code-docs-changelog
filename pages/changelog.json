@@ -1,5 +1,241 @@
 [
   {
+    "date": "2026-03-18T15:29:50Z",
+    "commit_hash": "d6311de",
+    "entries": [
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/amazon-bedrock\" target=\"_blank\">Amazon Bedrock</a>",
+        "summary": "모델 설정 관련 환경 변수 이름이 변경되었습니다. 더 명확한 모델 지정을 위해 업데이트되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/d6311de_amazon-bedrock.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/authentication\" target=\"_blank\">Authentication</a>",
+        "summary": "자격 증명 저장 위치, 인증 유형, 우선 순위, apiKeyHelper 관련 내용이 추가 및 수정되었습니다. 인증 방식과 관련된 중요한 변경 사항입니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/d6311de_authentication.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/best-practices\" target=\"_blank\">Best Practices</a>",
+        "summary": "안전하지 않은 작업에 대한 권한 우회 옵션 설명이 변경되었습니다. 잠재적 위험 및 모범 사례가 강조되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/d6311de_best-practices.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/changelog\" target=\"_blank\">Changelog</a>",
+        "summary": "API 오류 시 stop hook 추가, 플러그인 업데이트 시 데이터 유지, 에이전트 frontmatter 지원, 터미널 알림 개선 등 다양한 버그 수정 및 기능 개선이 이루어졌습니다. 전반적인 안정성과 편의성이 향상되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/d6311de_changelog.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/cli-reference\" target=\"_blank\">Cli Reference</a>",
+        "summary": "--dangerously-skip-permissions 플래그 설명이 업데이트되어, 허용 모드에 대한 링크가 추가되었습니다. 사용자 권한 관련 정보 개선.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/d6311de_cli-reference.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/code-review\" target=\"_blank\">Code Review</a>",
+        "summary": "코드 리뷰 비용 관련 문구가 수정되었습니다. 더 명확하게 비용 산정 방식과 추가 사용량에 대해 설명합니다. (중요성: 비용 관련 정보 명확화)",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/d6311de_code-review.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/commands\" target=\"_blank\">Commands</a>",
+        "summary": "`/copy` 명령어에 숫자 인자 추가, `/branch` 별칭 추가, `/init` 명령어 개선, 그리고 `/voice` 명령어 추가. 더 유연하고 편리한 기능 제공.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/d6311de_commands.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/common-workflows\" target=\"_blank\">Common Workflows</a>",
+        "summary": "세션 이름 설정 및 분기된 세션 그룹화 기능이 개선되었고, Opus 4.6 및 Sonnet 4.6 모델의 사고 과정 설명이 명확해졌습니다. ",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/d6311de_common-workflows.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/costs\" target=\"_blank\">Costs</a>",
+        "summary": "확장된 사고 기능에 대한 설명이 개선되었습니다. 불필요한 토큰 예산을 줄이는 방법에 대한 설명이 추가되었습니다. ",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/d6311de_costs.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/data-usage\" target=\"_blank\">Data Usage</a>",
+        "summary": "`/bug` 명령어가 `/feedback`으로 변경되었으며, 관련 환경 변수 및 표 내용도 업데이트되었습니다. 사용자 피드백 메커니즘 변경.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/d6311de_data-usage.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/desktop\" target=\"_blank\">Desktop</a>",
+        "summary": "Bypass 권한 모드에 대한 설명이 업데이트되었으며, CLI와 동일한 동작 방식을 강조하고 추가 정보 링크를 제공합니다. 보안 관련 내용 강조.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/d6311de_desktop.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/env-vars\" target=\"_blank\">Env Vars</a>",
+        "summary": "ANTHROPIC_API_KEY 사용법과 ANTHROPIC_BASE_URL 추가, 실험적 베타 기능 비활성화 옵션이 변경되어 API 설정을 유연하게 관리하고 프록시 사용을 지원합니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/d6311de_env-vars.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/google-vertex-ai\" target=\"_blank\">Google Vertex Ai</a>",
+        "summary": "모델 설정 관련 환경 변수 이름이 변경되었으며, 모델 접근 오류 해결 가이드가 업데이트되었습니다. 더 정확한 설정을 위해 변경되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/d6311de_google-vertex-ai.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/headless\" target=\"_blank\">Headless</a>",
+        "summary": "API 재시도 이벤트에 대한 정보가 추가되어 오류 처리 및 사용자 경험을 개선하는 데 도움이 됩니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/d6311de_headless.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/hooks-guide\" target=\"_blank\">Hooks Guide</a>",
+        "summary": "PreToolUse 훅의 동작 방식이 명확해졌고, deny 규칙이 allow를 우선한다는 설명이 추가되었습니다. 컴팩션 이벤트에 PostCompact가 추가되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/d6311de_hooks-guide.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/hooks\" target=\"_blank\">Hooks</a>",
+        "summary": "PreCompact, PostCompact 훅 추가 및 InstructionsLoaded 훅의 load_reason 변경. 플러그인 데이터 디렉토리 설명도 추가되어 기능 개선.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/d6311de_hooks.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/interactive-mode\" target=\"_blank\">Interactive Mode</a>",
+        "summary": "음성 입력 기능 추가, 백그라운드 작업의 최대 출력 크기 제한(5GB) 추가. 사용자 편의성 및 안정성 향상.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/d6311de_interactive-mode.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/keybindings\" target=\"_blank\">Keybindings</a>",
+        "summary": "음성 입력 관련 기능이 추가되었습니다. 음성 입력 활성화 시, 스페이스 키를 누르면 프롬프트를 입력할 수 있습니다. ",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/d6311de_keybindings.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/mcp\" target=\"_blank\">Mcp</a>",
+        "summary": "플러그인 환경 변수 사용법이 개선되었습니다. 이제 플러그인 파일은 CLAUDE_PLUGIN_ROOT, 영구 데이터는 CLAUDE_PLUGIN_DATA를 사용합니다. 데이터 보존 방식이 명시되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/d6311de_mcp.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/memory\" target=\"_blank\">Memory</a>",
+        "summary": "/init 명령어의 새로운 대화형 멀티페이즈 기능이 추가되었습니다.  CLAUDE.md와 설정 파일의 차이점을 설명하는 표가 추가되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/d6311de_memory.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/network-config\" target=\"_blank\">Network Config</a>",
+        "summary": "네이티브 설치 프로그램과 업데이트 확인을 위한 URL이 추가되어, Claude Code 설치 및 업데이트 관련 네트워크 요구사항이 명확해졌습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/d6311de_network-config.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/permissions\" target=\"_blank\">Permissions</a>",
+        "summary": "권한 모드 설명 변경 및 bypassPermissions 모드 동작 방식이 수정되었습니다. 파일 접근 규칙에 대한 예시와 훅 사용 시 권한 처리 방식에 대한 정보가 추가되었습니다. (중요 변경 사항)",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/d6311de_permissions.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/plugin-marketplaces\" target=\"_blank\">Plugin Marketplaces</a>",
+        "summary": "플러그인 설치 시 `${CLAUDE_PLUGIN_DATA}` 사용 안내 추가, 컨테이너 환경에서 플러그인 사전 로드 방법 및 유의사항 안내, 마켓플레이스 유효성 검사 오류에 대한 설명이 개선되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/d6311de_plugin-marketplaces.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/plugins-reference\" target=\"_blank\">Plugins Reference</a>",
+        "summary": "플러그인 환경 변수 관련 내용이 추가 및 수정되었습니다. 특히, 영구 데이터 디렉토리를 활용한 플러그인 업데이트 시의 데이터 관리 방법이 제시되었습니다. 또한, uninstall 시 데이터 보존 옵션이 추가되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/d6311de_plugins-reference.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/remote-control\" target=\"_blank\">Remote Control</a>",
+        "summary": "원격 제어 문제 해결 섹션이 추가되었습니다. 연결 실패 시 진단 방법과 일반적인 원인이 상세하게 설명되어 있습니다. 원격 제어 사용성을 향상시킵니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/d6311de_remote-control.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/sandboxing\" target=\"_blank\">Sandboxing</a>",
+        "summary": "allowRead를 추가하여 denyRead로 막힌 특정 경로를 다시 읽을 수 있도록 기능이 개선되었습니다. sandbox 설정의 유연성을 높였습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/d6311de_sandboxing.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/security\" target=\"_blank\">Security</a>",
+        "summary": "의심스러운 행동 보고 명령어 `/bug`에서 `/feedback`로 변경. 보안 관련 피드백 채널 개선.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/d6311de_security.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/settings\" target=\"_blank\">Settings</a>",
+        "summary": "설정 옵션에 'agent' 추가로 하위 에이전트 실행 기능, 'voiceEnabled' 추가로 음성 기능 활성화 설정, 그리고 'language' 옵션에 음성 인식 언어 설정 추가.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/d6311de_settings.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/sub-agents\" target=\"_blank\">Sub Agents</a>",
+        "summary": "서브 에이전트 생성 및 호출 방법이 개선되었으며, 세션 전체 에이전트 설정 기능이 추가되어 워크플로우를 개선했습니다. 메모리 설정을 통해 지속적인 학습도 가능해졌습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/d6311de_sub-agents.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/terminal-config\" target=\"_blank\">Terminal Config</a>",
+        "summary": "iTerm2 설정 안내가 간소화되고, VS Code 터미널 설정이 추가되어, 터미널 환경 설정을 위한 가이드라인이 명확해졌습니다. ",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/d6311de_terminal-config.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/troubleshooting\" target=\"_blank\">Troubleshooting</a>",
+        "summary": "구독 중에도 조직이 비활성화되는 문제 해결 가이드 추가. ANTHROPIC_API_KEY가 우선 적용되어 발생하는 문제와 해결 방법을 안내합니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/d6311de_troubleshooting.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/voice-dictation\" target=\"_blank\">Voice Dictation</a>",
+        "summary": "새로운 파일은 음성 받아쓰기 기능에 대한 문서를 제공합니다. Claude Code CLI에서 음성으로 프롬프트를 입력하는 방법과 설정 방법을 안내합니다. (음성 기능 추가 및 사용 방법 설명)",
+        "tag_text": "NEW",
+        "tag_class": "new"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/vs-code\" target=\"_blank\">Vs Code</a>",
+        "summary": "allowDangerouslySkipPermissions 설정에 대한 설명이 개선되었습니다. 사용 시 주의가 필요함을 강조하고, 권한 모드에 대한 링크를 추가했습니다. ",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/d6311de_vs-code.txt"
+      }
+    ]
+  },
+  {
     "date": "2026-03-17T15:25:43Z",
     "commit_hash": "130f341",
     "entries": [
