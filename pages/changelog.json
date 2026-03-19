@@ -1,5 +1,109 @@
 [
   {
+    "date": "2026-03-19T15:18:51Z",
+    "commit_hash": "8c4fc77",
+    "entries": [
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/changelog\" target=\"_blank\">Changelog</a>",
+        "summary": "Anthropic Console 인증, 콘솔 기능, 버그 수정, 메모리 개선, API 타임아웃, VSCode 기능 추가 및 개선 등 다양한 기능이 추가 및 수정되었습니다. ",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/8c4fc77_changelog.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/cli-reference\" target=\"_blank\">Cli Reference</a>",
+        "summary": "auth login 명령어에 --console 옵션이 추가되어 API 사용량 청구를 위해 Anthropic Console로 로그인할 수 있게 되었습니다. 이는 API 사용자에게 더 유연한 옵션을 제공합니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/8c4fc77_cli-reference.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/env-vars\" target=\"_blank\">Env Vars</a>",
+        "summary": "환경 변수 추가: `/model` 선택기에 사용자 정의 모델을 추가하는 데 필요한 옵션 3개가 추가되었습니다. 플러그인 시드 디렉토리 설정 방식이 변경되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/8c4fc77_env-vars.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/hooks-guide\" target=\"_blank\">Hooks Guide</a>",
+        "summary": "StopFailure 훅이 추가되어 API 오류 발생 시 알림을 받습니다. Stop 훅 동작 방식도 수정되었습니다. (API 오류 시 StopFailure).",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/8c4fc77_hooks-guide.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/hooks\" target=\"_blank\">Hooks</a>",
+        "summary": "훅 생명주기 다이어그램과 이벤트 테이블이 업데이트되었고, StopFailure 및 InstructionsLoaded의 매처 정보가 추가되었습니다. 훅의 동작 방식을 더 정확하게 설명합니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/8c4fc77_hooks.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/model-config\" target=\"_blank\">Model Config</a>",
+        "summary": "맞춤 모델 옵션 추가 기능이 도입되었습니다. 특정 게이트웨이 배포를 위한 모델을 설정하여 사용자 정의 모델 선택이 가능해졌습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/8c4fc77_model-config.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/overview\" target=\"_blank\">Overview</a>",
+        "summary": "설치 가이드에서 코드 블록 스타일이 업데이트되었습니다. 사용자 환경에 맞는 명령어를 더 쉽게 식별할 수 있습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/8c4fc77_overview.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/plugin-marketplaces\" target=\"_blank\">Plugin Marketplaces</a>",
+        "summary": "플러그인 시드 디렉토리 여러 개를 설정하는 방법이 추가되었습니다. 여러 경로를 지정하여 플러그인을 쉽게 로드할 수 있습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/8c4fc77_plugin-marketplaces.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/plugins-reference\" target=\"_blank\">Plugins Reference</a>",
+        "summary": "플러그인 훅 이벤트와 유형이 업데이트되었습니다. 새로운 이벤트가 추가되었고, 훅 유형에 'http'가 추가되어 유연성이 향상되었습니다. ",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/8c4fc77_plugins-reference.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/remote-control\" target=\"_blank\">Remote Control</a>",
+        "summary": "원격 제어 기능 관련 내용이 업데이트되었습니다. 팀/엔터프라이즈 환경에서의 활성화 방법이 명확해졌고, 세션 제목 설정 방식과 문제 해결 가이드가 개선되었습니다. ",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/8c4fc77_remote-control.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/sandboxing\" target=\"_blank\">Sandboxing</a>",
+        "summary": "allowWrite 설정에서 경로 접두사 `/`의 의미가 변경되었고,  `//path`가 절대 경로임을 명시했습니다. 기존 `/`를 사용하던 경우 `./`로 변경해야 합니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/8c4fc77_sandboxing.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/settings\" target=\"_blank\">Settings</a>",
+        "summary": "설정 파일 내 몇몇 경로 설정 변경: 절대 경로 지정 방식 변경 및 설명 추가, 그리고 배열 설정 병합 방식에 대한 명확한 설명 추가.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/8c4fc77_settings.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/sub-agents\" target=\"_blank\">Sub Agents</a>",
+        "summary": "서브 에이전트 메모리 사용 팁이 개선되었습니다. `project` scope의 권장 사항이 업데이트되고, 메모리 활용 방법에 대한 추가적인 안내가 제공됩니다. (중요성: 지식 공유와 효율성 향상)",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/8c4fc77_sub-agents.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/vs-code\" target=\"_blank\">Vs Code</a>",
+        "summary": "명령 메뉴에 리모트 컨트롤 세션 시작 옵션이 추가되었고, 대화 기록 제목이 AI 기반으로 자동 생성됩니다. 또한, IDE MCP 서버에 대한 상세 설명이 추가되었습니다. 변경 사항은 기능 향상 및 사용성 개선을 위한 것입니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/8c4fc77_vs-code.txt"
+      }
+    ]
+  },
+  {
     "date": "2026-03-18T15:29:50Z",
     "commit_hash": "d6311de",
     "entries": [
