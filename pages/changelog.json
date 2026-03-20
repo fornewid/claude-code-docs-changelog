@@ -1,5 +1,156 @@
 [
   {
+    "date": "2026-03-20T15:17:49Z",
+    "commit_hash": "f73f60a",
+    "entries": [
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/changelog\" target=\"_blank\">Changelog</a>",
+        "summary": "Claude.ai rate limit 정보 표시, 플러그인 소스 추가, CLI 툴 사용 감지, 모델 노력 레벨 오버라이드 기능, 채널 푸시, 버그 수정, 성능 개선.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/f73f60a_changelog.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/channels-reference\" target=\"_blank\">Channels Reference</a>",
+        "summary": "새로운 'channels-reference.md' 파일은 Claude Code에서 외부 이벤트를 처리하는 채널 구축에 대한 가이드입니다. 채널 작동 방식, 요구 사항 및 예시를 제공합니다. ",
+        "tag_text": "NEW",
+        "tag_class": "new"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/channels\" target=\"_blank\">Channels</a>",
+        "summary": "새로운 파일이 추가되어 채널을 통해 Claude Code 세션에 이벤트를 푸시하는 방법을 설명합니다. Telegram, Discord 등 지원 채널 설정 및 사용 방법을 안내합니다. 왜냐하면, 외부 알림을 받기 위해서입니다.",
+        "tag_text": "NEW",
+        "tag_class": "new"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/cli-reference\" target=\"_blank\">Cli Reference</a>",
+        "summary": "CLI 옵션 설명이 업데이트 및 확장되었습니다. 새로운 기능, 특히 권한 설정과 관련된 내용이 추가되어 사용자 제어가 강화되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/f73f60a_cli-reference.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/discover-plugins\" target=\"_blank\">Discover Plugins</a>",
+        "summary": "플러그인 설치 명령어 형식이 변경되었고, `/reload-plugins` 출력 내용이 업데이트 되었습니다. 플러그인 관리 효율성을 높임.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/f73f60a_discover-plugins.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/env-vars\" target=\"_blank\">Env Vars</a>",
+        "summary": "CLAUDE_CODE_SESSIONEND_HOOKS_TIMEOUT_MS 환경 변수 적용 범위가 세션 전환 `/resume`으로 확장되어, 세션 종료 관련 동작을 개선했습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/f73f60a_env-vars.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/features-overview\" target=\"_blank\">Features Overview</a>",
+        "summary": "CLAUDE.md 파일 로드 방식 관련 링크 텍스트 수정 및 참고 팁 추가. CLAUDE.md 파일 크기 권장사항 안내, 기능 설명 보완.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/f73f60a_features-overview.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/hooks-guide\" target=\"_blank\">Hooks Guide</a>",
+        "summary": "SessionEnd 이벤트의 'why the session ended' 옵션에 'resume'이 추가되어 세션 종료 원인에 대한 더 정확한 정보를 제공합니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/f73f60a_hooks-guide.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/hooks\" target=\"_blank\">Hooks</a>",
+        "summary": "SessionEnd 훅의 'resume' 사유가 추가되어, 세션 전환 시에도 훅이 작동하도록 변경되었습니다. 훅의 동작 범위를 확장합니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/f73f60a_hooks.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/mcp\" target=\"_blank\">Mcp</a>",
+        "summary": "MCP 서버가 외부 이벤트에 반응하도록 채널 기능이 추가되었습니다. CI 결과, 알림, 채팅 메시지에 대응하여 워크플로우를 자동화할 수 있습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/f73f60a_mcp.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/memory\" target=\"_blank\">Memory</a>",
+        "summary": "문서 내 소소한 수정, 오타 수정 및 몇몇 문구 변경이 있었습니다. 주요 내용은 유지되며, 가독성을 높이는 데 초점을 맞췄습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/f73f60a_memory.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/model-config\" target=\"_blank\">Model Config</a>",
+        "summary": "기술 및 하위 에이전트 frontmatter를 통해 노력 수준을 설정하는 기능이 추가되었습니다. 세션 수준보다 우선 적용되어 특정 작업에 대한 제어를 강화합니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/f73f60a_model-config.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/overview\" target=\"_blank\">Overview</a>",
+        "summary": "워크플로우를 개선하기 위해 'Channels' 섹션이 추가되었고, 표 내용이 업데이트되었습니다. 원활한 작업 흐름을 위한 옵션이 제공됩니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/f73f60a_overview.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/plugin-marketplaces\" target=\"_blank\">Plugin Marketplaces</a>",
+        "summary": "마켓플레이스에 예약된 이름 목록에 'knowledge-work-plugins'가 추가되었고, pip 설치 옵션이 삭제되었습니다. 변경 사항은 API 사용 관련 설정입니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/f73f60a_plugin-marketplaces.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/plugins\" target=\"_blank\">Plugins</a>",
+        "summary": "플러그인 업데이트 후 재시작 없이 `/reload-plugins`로 갱신되는 구성 요소 목록이 수정되었습니다. 플러그인 LSP 서버가 추가되었습니다. ",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/f73f60a_plugins.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/remote-control\" target=\"_blank\">Remote Control</a>",
+        "summary": "원격 제어 관련 문서에 새로운 리소스인 '채널'이 추가되어 Telegram 또는 Discord 메시지를 Claude 세션으로 전달하는 방법을 안내합니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/f73f60a_remote-control.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/scheduled-tasks\" target=\"_blank\">Scheduled Tasks</a>",
+        "summary": "반복적인 작업을 위한 스케줄링 기능에 대한 설명이 개선되었고, 채널 기능을 통해 실시간 이벤트에 대응하는 방법이 추가되었습니다. (중요성: 효율적인 CI/CD 통합)",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/f73f60a_scheduled-tasks.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/server-managed-settings\" target=\"_blank\">Server Managed Settings</a>",
+        "summary": "서버 관리 설정 문서에 훅과 환경 변수 지원이 추가되었습니다. 조직 전체의 파일 수정 후 감사 스크립트 실행 예시도 추가되었습니다. 이는 보안 및 유연성 향상에 기여합니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/f73f60a_server-managed-settings.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/settings\" target=\"_blank\">Settings</a>",
+        "summary": "설정 옵션에 채널 활성화(`channelsEnabled`) 여부를 추가하여 팀 및 엔터프라이즈 사용자의 채널 사용을 관리합니다. 이 설정을 통해 채널 사용을 효과적으로 제어할 수 있습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/f73f60a_settings.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/statusline\" target=\"_blank\">Statusline</a>",
+        "summary": "작업 공간 신뢰 설정 관련 내용이 추가되었습니다. 상태 표시줄 명령 실행에 필요한 신뢰 설정을 설명하며, 미설정 시 나타나는 알림을 안내합니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/f73f60a_statusline.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/sub-agents\" target=\"_blank\">Sub Agents</a>",
+        "summary": "Subagent 설정에 'effort' 및 'isolation' 필드가 추가되었습니다. 또한, 도구 제한에 대한 설명이 개선되었으며, 'disallowedTools'와 'tools'의 상호 작용에 대한 내용이 추가되었습니다. (새로운 기능과 개선된 설명)",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/f73f60a_sub-agents.txt"
+      }
+    ]
+  },
+  {
     "date": "2026-03-19T15:18:51Z",
     "commit_hash": "8c4fc77",
     "entries": [
