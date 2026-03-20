@@ -30,10 +30,10 @@ Think of it like adding an app store: adding the store gives you access to brows
 
 The official Anthropic marketplace (`claude-plugins-official`) is automatically available when you start Claude Code. Run `/plugin` and go to the **Discover** tab to browse what's available.
 
-To install a plugin from the official marketplace:
+To install a plugin from the official marketplace, use `/plugin install <name>@claude-plugins-official`. For example, to install the GitHub integration:
 
 ```shell  theme={null}
-/plugin install plugin-name@claude-plugins-official
+/plugin install github@claude-plugins-official
 ```
 
 <Note>
@@ -302,7 +302,7 @@ When you install, enable, or disable plugins during a session, run `/reload-plug
 /reload-plugins
 ```
 
-Claude Code reloads all active plugins and shows counts for reloaded commands, skills, agents, hooks, plugin MCP servers, and plugin LSP servers.
+Claude Code reloads all active plugins and shows counts for plugins, skills, agents, hooks, plugin MCP servers, and plugin LSP servers.
 
 ## Manage marketplaces
 
