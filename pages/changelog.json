@@ -1,5 +1,67 @@
 [
   {
+    "date": "2026-03-22T15:07:51Z",
+    "commit_hash": "68092f3",
+    "entries": [
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/changelog\" target=\"_blank\">Changelog</a>",
+        "summary": "문서 인덱스 추가, changelog 업데이트, 버그 수정 및 개선 사항, VSCode 관련 기능 및 개선 사항, 음성 모드 개선, 보안 관련 사항, 환경 변수 관련 개선.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/68092f3_changelog.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/channels\" target=\"_blank\">Channels</a>",
+        "summary": "플러그인 설치 오류 시, 마켓플레이스 업데이트 또는 추가 방법이 안내됩니다. 플러그인 활성화를 위한 `/reload-plugins` 명령어 추가.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/68092f3_channels.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/env-vars\" target=\"_blank\">Env Vars</a>",
+        "summary": "Git 관련 지침 비활성화 시 git 상태 스냅샷 제거 내용이 추가되었습니다. 사용자 정의 워크플로우를 위해 시스템 프롬프트가 개선되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/68092f3_env-vars.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/github-actions\" target=\"_blank\">Github Actions</a>",
+        "summary": "GitHub Actions 명령어 인자 `--allowed-tools`의 별칭 `--allowedTools`가 추가되었습니다. 사용자 편의성을 높였습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/68092f3_github-actions.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/monitoring-usage\" target=\"_blank\">Monitoring Usage</a>",
+        "summary": "계측 속성에 `user.account_id` 추가, 메트릭 세분화 개선. 이벤트에 `prompt.id` 및 `workspace.host_paths` 추가하여 분석 강화.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/68092f3_monitoring-usage.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/plugins-reference\" target=\"_blank\">Plugins Reference</a>",
+        "summary": "플러그인 에이전트가 지원하는 속성 설명 추가: model, effort, maxTurns, disallowedTools. 보안 이유로 hooks, mcpServers, permissionMode는 지원되지 않음.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/68092f3_plugins-reference.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/settings\" target=\"_blank\">Settings</a>",
+        "summary": "설정 옵션에 대한 설명과 예시가 업데이트되었습니다. 또한, 모델 설정 관련 기능이 추가되어 모델 선택과 관련된 설정을 더 유연하게 관리할 수 있게 되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/68092f3_settings.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/terminal-config\" target=\"_blank\">Terminal Config</a>",
+        "summary": "tmux 환경에서 알림 및 진행률 표시줄이 외부 터미널로 전달되도록 설정하는 방법과, Vim 모드 설정 방법이 상세 설명에 추가되었습니다. ",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/68092f3_terminal-config.txt"
+      }
+    ]
+  },
+  {
     "date": "2026-03-21T15:07:59Z",
     "commit_hash": "50b83f4",
     "entries": [
