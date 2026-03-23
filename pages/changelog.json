@@ -1,5 +1,81 @@
 [
   {
+    "date": "2026-03-23T15:24:42Z",
+    "commit_hash": "48e39f8",
+    "entries": [
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/channels-reference\" target=\"_blank\">Channels Reference</a>",
+        "summary": "채널 기능에 권한 릴레이 기능이 추가되었습니다. 서버 옵션에 새로운 experimental 필드가 추가되었으며, 완전한 webhook 예제 코드가 업데이트 되었습니다.  (권한, 도구 사용 개선).",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/48e39f8_channels-reference.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/channels\" target=\"_blank\">Channels</a>",
+        "summary": "채널 권한 릴레이 기능 관련 내용이 추가되었습니다. 원격 승인/거절을 위한 신뢰할 수 있는 발신자 허용 목록 설정을 권장합니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/48e39f8_channels.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/cli-reference\" target=\"_blank\">Cli Reference</a>",
+        "summary": "CLI 플래그 설명과 예시가 업데이트되었습니다. 새로운 기능과 사용법을 더 자세히 안내합니다. 더 나은 사용자 경험을 제공합니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/48e39f8_cli-reference.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/env-vars\" target=\"_blank\">Env Vars</a>",
+        "summary": "CLAUDE_CODE_SIMPLE 변수 설명이 수정되었습니다. hook, skill, plugin 등 자동 검색 비활성화 내용이 추가되어 기능 관련 내용이 명확해졌습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/48e39f8_env-vars.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/headless\" target=\"_blank\">Headless</a>",
+        "summary": "--bare 모드가 추가되어 시작 시간을 단축하고 CI/스크립트 환경에서 일관성을 보장합니다. '--bare' 옵션 사용을 권장합니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/48e39f8_headless.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/how-claude-code-works\" target=\"_blank\">How Claude Code Works</a>",
+        "summary": "컨텍스트 창 설명에 'auto memory'가 추가되어, 클로드의 메모리 관리 방식을 더욱 명확하게 설명합니다. 이는 사용자 경험을 향상시킬 수 있습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/48e39f8_how-claude-code-works.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/interactive-mode\" target=\"_blank\">Interactive Mode</a>",
+        "summary": "Ctrl+O 단축키 설명이 구체화되어, verbose output 외 MCP 읽기 및 검색 호출 확장 기능도 추가되었습니다. 사용자에게 더 자세한 정보 제공.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/48e39f8_interactive-mode.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/mcp\" target=\"_blank\">Mcp</a>",
+        "summary": "OAuth 설정 관련 내용이 업데이트되었습니다. 동적 클라이언트 등록 외 CIMD 지원 및 수동 설정 방법이 추가되어 더 유연한 설정이 가능해졌습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/48e39f8_mcp.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/permissions\" target=\"_blank\">Permissions</a>",
+        "summary": "훅 우선순위 변경으로 차단 훅이 허용 규칙보다 우선시됩니다. 특정 명령 차단을 위한 훅 설정 가이드가 추가되었습니다. 보안 강화.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/48e39f8_permissions.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/settings\" target=\"_blank\">Settings</a>",
+        "summary": "`showClearContextOnPlanAccept` 설정 추가. 계획 수락 시 컨텍스트 지우기 옵션 표시 여부 설정, 사용자 편의성 향상.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/48e39f8_settings.txt"
+      }
+    ]
+  },
+  {
     "date": "2026-03-22T15:07:51Z",
     "commit_hash": "68092f3",
     "entries": [
