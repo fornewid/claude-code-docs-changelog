@@ -1,5 +1,79 @@
 [
   {
+    "date": "2026-03-24T15:27:39Z",
+    "commit_hash": "a184c61",
+    "entries": [
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/claude-code-on-the-web\" target=\"_blank\">Claude Code On The Web</a>",
+        "summary": "반복 작업 예약 기능 추가: 매일 PR 검토, 종속성 감사, CI 실패 분석 등 자동화. 웹에서 작업 예약 가이드 참조.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/a184c61_claude-code-on-the-web.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/commands\" target=\"_blank\">Commands</a>",
+        "summary": "새로운 명령어 `/schedule` 추가. 클라우드 예약 작업 관리를 위한 기능으로, 사용자가 대화형으로 설정을 할 수 있습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/a184c61_commands.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/common-workflows\" target=\"_blank\">Common Workflows</a>",
+        "summary": "클로드의 자동화된 작업 실행을 위한 스케줄링 옵션이 추가되었습니다.  클라우드, 데스크톱, GitHub Actions 등 다양한 환경에서  반복 작업을 설정하는 방법을 안내합니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/a184c61_common-workflows.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/desktop\" target=\"_blank\">Desktop</a>",
+        "summary": "데스크톱 앱에 컴퓨터 사용 기능이 추가되어, 사용자가 앱을 직접 제어하고, 디스패치를 통해 세션을 시작할 수 있도록 개선되었습니다. 자세한 내용은 새로운 기능과 개선 사항을 참고하세요.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/a184c61_desktop.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/overview\" target=\"_blank\">Overview</a>",
+        "summary": "새로운 기능 소개: 작업 자동화를 위한 스케줄링 및 Dispatch를 통한 세션 시작 기능 추가. 더 향상된 워크플로우를 제공합니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/a184c61_overview.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/platforms\" target=\"_blank\">Platforms</a>",
+        "summary": "Claude Code의 플랫폼 및 통합 기능에 대한 새로운 문서입니다. CLI, 데스크톱, VS Code 등 다양한 환경과 도구 연결 방법을 안내합니다.",
+        "tag_text": "NEW",
+        "tag_class": "new"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/remote-control\" target=\"_blank\">Remote Control</a>",
+        "summary": "원격 제어 외에 다른 원격 작업 방식(Dispatch, Channels 등)을 추가하고, 각 방식의 특징과 사용 사례를 비교하여 사용자가 적합한 방식을 선택하도록 돕습니다. ",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/a184c61_remote-control.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/sandboxing\" target=\"_blank\">Sandboxing</a>",
+        "summary": "샌드박스가 다루지 않는 내용에 대한 정보가 추가되었습니다. 파일, 데스크톱 사용과 같은 샌드박스 외부의 작동 방식을 설명합니다. (중요)",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/a184c61_sandboxing.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/scheduled-tasks\" target=\"_blank\">Scheduled Tasks</a>",
+        "summary": "구현 옵션 비교, 클라우드/데스크톱/루프 작업 비교 표 추가, 만료 관련 설명 변경, 지속적인 자동화 옵션 안내 추가. 유연한 작업 관리를 지원합니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/a184c61_scheduled-tasks.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/web-scheduled-tasks\" target=\"_blank\">Web Scheduled Tasks</a>",
+        "summary": "새로운 파일 추가됨. 웹 기반 예약 작업 기능 사용 방법 설명. 일정, 환경 설정, 커넥터, 실행 관리 방법 등 포함.",
+        "tag_text": "NEW",
+        "tag_class": "new"
+      }
+    ]
+  },
+  {
     "date": "2026-03-23T15:24:42Z",
     "commit_hash": "48e39f8",
     "entries": [
