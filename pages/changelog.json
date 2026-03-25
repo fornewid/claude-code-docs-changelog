@@ -1,5 +1,157 @@
 [
   {
+    "date": "2026-03-25T15:28:23Z",
+    "commit_hash": "3dc6263",
+    "entries": [
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/best-practices\" target=\"_blank\">Best Practices</a>",
+        "summary": "권한 설정 관련 안내가 업데이트되었습니다. 자동 모드 추가로 승인 없이 실행 가능하며, 샌드박싱과 권한 허용 목록 옵션이 개선되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/3dc6263_best-practices.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/changelog\" target=\"_blank\">Changelog</a>",
+        "summary": "CHANGELOG.md 파일이 업데이트되었습니다. 새로운 기능, 개선 사항, 버그 수정 사항이 추가되었으며, 특히 VSCode 환경에서 Remote Control 기능과 세션 제목 자동 생성 기능이 추가되었습니다. 보안 관련 수정 사항도 포함되었습니다. (변경 사항 요약)",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/3dc6263_changelog.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/channels-reference\" target=\"_blank\">Channels Reference</a>",
+        "summary": "지원 채널에 iMessage가 추가되었고, iMessage 채널의 접근 방식에 대한 설명이 추가되었습니다. 사용자 채널 접근성이 향상되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/3dc6263_channels-reference.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/channels\" target=\"_blank\">Channels</a>",
+        "summary": "iMessage 채널 지원이 추가되었습니다. Mac 환경에서 iMessage 플러그인을 설치하고 설정하는 방법을 안내합니다. 보안 및 접근 권한 설정도 포함합니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/3dc6263_channels.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/cli-reference\" target=\"_blank\">Cli Reference</a>",
+        "summary": "CLI 명령어에 'auto-mode defaults' 추가 및 'enable-auto-mode' 플래그가 추가되어 자동 모드 기능을 활성화합니다. 'dangerously-skip-permissions' 설명이 수정되었습니다. 자동 모드 관련 내용이 추가되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/3dc6263_cli-reference.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/desktop\" target=\"_blank\">Desktop</a>",
+        "summary": "권한 모드에 'Auto'가 추가되어 사용자가 프롬프트 없이 작업을 실행할 수 있게 되었으며, managed setting에 대한 설명이 개선되었습니다. Auto 모드는 Team 플랜 이상에서 사용 가능합니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/3dc6263_desktop.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/hooks\" target=\"_blank\">Hooks</a>",
+        "summary": "permission_mode 옵션에 'auto'가 추가되어, 권한 모드 설정의 유연성이 향상되었습니다. 사용자의 워크플로우를 개선합니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/3dc6263_hooks.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/how-claude-code-works\" target=\"_blank\">How Claude Code Works</a>",
+        "summary": "새로운 'Auto mode'가 추가되어 Claude가 안전 검사를 통해 모든 작업을 자동으로 수행합니다. 연구 미리보기 기능입니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/3dc6263_how-claude-code-works.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/interactive-mode\" target=\"_blank\">Interactive Mode</a>",
+        "summary": "단축키 설명의 문맥 정보가 개선되었고, 권한 모드 순환에 대한 설명이 변경되었습니다. 더 정확한 안내를 제공합니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/3dc6263_interactive-mode.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/keybindings\" target=\"_blank\">Keybindings</a>",
+        "summary": "터미널에서 Ctrl+M 키 바인딩이 Enter와 동일하여 재설정할 수 없도록 변경되었습니다. 터미널 동작의 일관성을 위해 중요합니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/3dc6263_keybindings.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/llm-gateway\" target=\"_blank\">Llm Gateway</a>",
+        "summary": "LiteLLM 관련 보안 경고가 추가되었습니다. 1.82.7 및 1.82.8 버전의 악성코드 감염 위험과 대처 방법 안내. 중요 보안 정보.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/3dc6263_llm-gateway.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/mcp\" target=\"_blank\">Mcp</a>",
+        "summary": "MCP 서버 인증을 위한 동적 헤더 지원이 추가되었습니다. 사용자 정의 인증 방식(Kerberos 등) 사용을 가능하게 하여, 보안 및 유연성을 강화했습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/3dc6263_mcp.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/overview\" target=\"_blank\">Overview</a>",
+        "summary": "채널 관련 내용이 업데이트되어 Telegram, Discord 외 iMessage 지원이 추가되었습니다. 워크플로우 유연성이 향상되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/3dc6263_overview.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/permission-modes\" target=\"_blank\">Permission Modes</a>",
+        "summary": "새로운 파일이 추가되었으며, 권한 모드 설정을 설명합니다. CLI, VS Code, 웹, 데스크톱에서 설정 가능하며, 각 모드별 사용 방법과 장단점을 안내합니다.",
+        "tag_text": "NEW",
+        "tag_class": "new"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/permissions\" target=\"_blank\">Permissions</a>",
+        "summary": "권한 모드에 'auto' 모드 추가 및 'bypassPermissions' 모드 비활성화 설정 추가. 또한 자동 모드 분류자 설정 가이드가 추가되어 신뢰할 수 있는 인프라 설정을 안내합니다. (자동 승인 기능 개선 및 보안 설정 강화)",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/3dc6263_permissions.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/quickstart\" target=\"_blank\">Quickstart</a>",
+        "summary": "Claude Code 설치 가이드가 추가되었고, 터미널, 데스크톱, VS Code, JetBrains 등 다양한 환경을 지원합니다. 설치 방법과 팀 계정 관련 내용이 추가되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/3dc6263_quickstart.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/remote-control\" target=\"_blank\">Remote Control</a>",
+        "summary": "원격 제어 관련 문서에 iMessage 채널 지원이 추가되어, 사용자가 다양한 플랫폼에서 Claude와 상호작용할 수 있게 되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/3dc6263_remote-control.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/server-managed-settings\" target=\"_blank\">Server Managed Settings</a>",
+        "summary": "설정 예시에서 `allowManagedPermissionRulesOnly` 설정 추가, autoMode 구성 가이드 추가. 보안과 자동 모드 설정에 대한 안내 강화.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/3dc6263_server-managed-settings.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/settings\" target=\"_blank\">Settings</a>",
+        "summary": "설정 옵션에 대한 설명이 개선되었으며, 새로운 기능과 설정 관련 설명이 추가되어 사용자 편의성이 향상되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/3dc6263_settings.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/sub-agents\" target=\"_blank\">Sub Agents</a>",
+        "summary": "서브 에이전트 권한 처리 방식이 명확해졌으며, 상위 권한 설정이 우선됨을 강조. 'auto mode' 상속 관련 내용 추가.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/3dc6263_sub-agents.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/vs-code\" target=\"_blank\">Vs Code</a>",
+        "summary": "VS Code 확장 설정 설명이 업데이트되었으며, 'initialPermissionMode' 옵션에 대한 더 자세한 설명과 새로운 권한 모드에 대한 정보가 추가되었습니다. (수정, 설명 추가)",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/3dc6263_vs-code.txt"
+      }
+    ]
+  },
+  {
     "date": "2026-03-24T15:27:39Z",
     "commit_hash": "a184c61",
     "entries": [
