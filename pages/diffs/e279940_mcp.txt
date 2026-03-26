@@ -1,0 +1,22 @@
+diff --git a/docs/mcp.md b/docs/mcp.md
+index 91799c1..cba705a 100644
+--- a/docs/mcp.md
++++ b/docs/mcp.md
+@@ -498,6 +498,8 @@ Select your scope based on:
+ 
+ MCP server configurations follow a clear precedence hierarchy. When servers with the same name exist at multiple scopes, the system resolves conflicts by prioritizing local-scoped servers first, followed by project-scoped servers, and finally user-scoped servers. This design ensures that personal configurations can override shared ones when needed.
+ 
++If a server is configured both locally and through a [claude.ai connector](#use-mcp-servers-from-claude-ai), the local configuration takes precedence and the connector entry is skipped.
++
+ ### Environment variable expansion in `.mcp.json`
+ 
+ Claude Code supports environment variable expansion in `.mcp.json` files, allowing teams to share configurations while maintaining flexibility for machine-specific paths and sensitive values like API keys.
+@@ -1070,6 +1072,8 @@ Add clear, descriptive server instructions that explain:
+ * When Claude should search for your tools
+ * Key capabilities your server provides
+ 
++Claude Code truncates tool descriptions and server instructions at 2KB each. Keep them concise to avoid truncation, and put critical details near the start.
++
+ ### Configure tool search
+ 
+ Tool search is enabled by default: MCP tools are deferred and discovered on demand. When `ANTHROPIC_BASE_URL` points to a non-first-party host, tool search is disabled by default because most proxies do not forward `tool_reference` blocks. Set `ENABLE_TOOL_SEARCH` explicitly if your proxy does. This feature requires models that support `tool_reference` blocks: Sonnet 4 and later, or Opus 4 and later. Haiku models do not support tool search.
