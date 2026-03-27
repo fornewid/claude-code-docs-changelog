@@ -1,5 +1,135 @@
 [
   {
+    "date": "2026-03-27T15:19:52Z",
+    "commit_hash": "c2e6911",
+    "entries": [
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/best-practices\" target=\"_blank\">Best Practices</a>",
+        "summary": "컨텍스트 윈도우 관리에 대한 설명이 업데이트되었고, 튜토리얼 링크가 추가되어 실제 사용법을 보여줍니다. 이는 LLM 성능 저하를 방지합니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/c2e6911_best-practices.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/changelog\" target=\"_blank\">Changelog</a>",
+        "summary": "2.1.85 버전 업데이트: 환경 변수 추가, 훅 필터링 기능, 타임스탬프 마커, 긴 쿼리 지원, 버그 수정 및 성능 개선.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/c2e6911_changelog.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/claude-code-on-the-web\" target=\"_blank\">Claude Code On The Web</a>",
+        "summary": "Pull Request 자동 수정 기능 추가, CI 실패 및 리뷰 댓글에 Claude가 자동 응답하여 수정. 설치 및 사용 방법 안내.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/c2e6911_claude-code-on-the-web.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/claude-directory\" target=\"_blank\">Claude Directory</a>",
+        "summary": "새로운 파일이 추가되었으며, Claude 디렉토리(.claude) 내의 다양한 설정 파일(.mcp.json, settings.json 등)에 대한 자세한 안내와 사용법을 제공합니다. 프로젝트 설정 관리와 관련된 내용입니다. (프로젝트 수준 설정, 규칙 및 확장 기능 설명)",
+        "tag_text": "NEW",
+        "tag_class": "new"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/code-review\" target=\"_blank\">Code Review</a>",
+        "summary": "수동 리뷰 트리거 명령어 추가 및 중요도 표시 변경. `@claude review once`로 1회성 리뷰 가능하며, 버그 중요도 구분 강화.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/c2e6911_code-review.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/common-workflows\" target=\"_blank\">Common Workflows</a>",
+        "summary": "워크트리 생성 시 기본 브랜치 동기화 방법 및 gitignore 파일 복사 기능 추가. SVN 등 다른 VCS 사용시 후크 설정 안내.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/c2e6911_common-workflows.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/context-window\" target=\"_blank\">Context Window</a>",
+        "summary": "새로운 파일 추가. Claude Code의 컨텍스트 창이 채워지는 방식을 시뮬레이션하고, 자동 로드, 파일 읽기 비용, 규칙 및 후크 실행 시기를 보여줍니다. (컨텍스트 창 이해 도움).",
+        "tag_text": "NEW",
+        "tag_class": "new"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/costs\" target=\"_blank\">Costs</a>",
+        "summary": "MCP 툴 정의 지연 기능 기본 적용 및 CLI 툴 사용 권장사항 강조. 사용하지 않는 서버 비활성화 안내 추가 및 컨텍스트 효율성 개선.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/c2e6911_costs.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/desktop\" target=\"_blank\">Desktop</a>",
+        "summary": "워크트리에 .env와 같은 gitignore된 파일을 포함하는 방법이 추가되었습니다. 프로젝트 루트에 .worktreeinclude 파일을 생성하여 가능합니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/c2e6911_desktop.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/env-vars\" target=\"_blank\">Env Vars</a>",
+        "summary": "ENABLE_TOOL_SEARCH 환경 변수 설명이 업데이트되었습니다. MCP 도구 검색 동작에 대한 정확성과 사용성에 대한 명확성이 향상되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/c2e6911_env-vars.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/features-overview\" target=\"_blank\">Features Overview</a>",
+        "summary": "MCP 서버 로딩 방식 및 컨텍스트 비용에 대한 내용이 수정되었습니다. 더 효율적인 도구 사용을 위한 변화입니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/c2e6911_features-overview.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/hooks\" target=\"_blank\">Hooks</a>",
+        "summary": "Worktree hook 동작 방식 변경으로, .worktreeinclude 사용 불가 및 훅 내에서 로컬 설정 파일 복사 필요. SVN, Perforce 등 다른 VCS 사용 시 유의.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/c2e6911_hooks.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/how-claude-code-works\" target=\"_blank\">How Claude Code Works</a>",
+        "summary": "자동 메모리 로딩 조건 변경, context 사용량 확인 방법 개선, tool search를 통한 MCP context 관리 등 내용이 업데이트되었습니다. 효율적인 context 관리를 위한 가이드라인이 추가되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/c2e6911_how-claude-code-works.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/mcp\" target=\"_blank\">Mcp</a>",
+        "summary": "MCP 도구 검색 기능 개선. 컨텍스트 사용량 최소화 위해 도구 로딩 방식을 변경하고, 설정 옵션을 추가하여 유연성을 높임.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/c2e6911_mcp.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/memory\" target=\"_blank\">Memory</a>",
+        "summary": "메모리 시스템의 동작 방식이 업데이트되었습니다. MEMORY.md의 로딩 한도가 라인에서 바이트(25KB)로 변경되어 더 정확한 메모리 관리를 지원합니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/c2e6911_memory.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/monitoring-usage\" target=\"_blank\">Monitoring Usage</a>",
+        "summary": "OTEL_LOG_TOOL_DETAILS 환경 변수가 활성화될 때 tool_parameters에 도구 관련 정보가 추가되도록 설명이 업데이트되었습니다. 사용자에게 더 많은 디버깅 정보를 제공합니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/c2e6911_monitoring-usage.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/settings\" target=\"_blank\">Settings</a>",
+        "summary": "설정 옵션에 대한 설명이 개선되었고, 훅 관련 설정에 대한 세부 정보가 추가되었습니다. 사용자 정의 권한 규칙에 대한 새로운 제약도 추가되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/c2e6911_settings.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/sub-agents\" target=\"_blank\">Sub Agents</a>",
+        "summary": "서브 에이전트 설명에 컨텍스트 절약에 대한 설명과 메모리 크기 제한을 명확히 하는 내용이 추가되었습니다. 효율적인 작업 흐름을 위한 변경입니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/c2e6911_sub-agents.txt"
+      }
+    ]
+  },
+  {
     "date": "2026-03-26T15:31:04Z",
     "commit_hash": "e279940",
     "entries": [
