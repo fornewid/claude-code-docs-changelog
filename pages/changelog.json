@@ -1,5 +1,88 @@
 [
   {
+    "date": "2026-03-28T15:10:18Z",
+    "commit_hash": "2b6f3be",
+    "entries": [
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/agent-teams\" target=\"_blank\">Agent Teams</a>",
+        "summary": "설정 파일 경로가 변경되었습니다. `settings.json`에서 `~/.claude.json`로 변경되어 전역 설정을 위한 업데이트가 이루어졌습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/2b6f3be_agent-teams.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/changelog\" target=\"_blank\">Changelog</a>",
+        "summary": "2.1.86 버전 릴리스: API 헤더 추가, 디렉토리 제외, 버그 수정, 성능 개선, 기능 향상. 사용자 경험과 효율성 개선.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/2b6f3be_changelog.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/cli-reference\" target=\"_blank\">Cli Reference</a>",
+        "summary": "--tmux 옵션 추가로 worktree에서 tmux 세션을 생성하여 iTerm2 네이티브 페인 지원, 작업 효율성 향상.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/2b6f3be_cli-reference.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/data-usage\" target=\"_blank\">Data Usage</a>",
+        "summary": "피드백 명령어 사용 시 Anthropic에 전송되는 데이터에 대한 환경 변수 설정 방법이 변경되었습니다.  이제 '1'로 설정해야 합니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/2b6f3be_data-usage.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/env-vars\" target=\"_blank\">Env Vars</a>",
+        "summary": "CLAUDE_CODE_SIMPLE 환경 변수 설명에서 MCP 도구 관련 내용이 추가되어 bare mode에서도 MCP 도구를 사용할 수 있게 변경되었습니다. ",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/2b6f3be_env-vars.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/hooks-guide\" target=\"_blank\">Hooks Guide</a>",
+        "summary": "훅 설정에 `if` 필드를 추가하여 툴 이름과 인자를 기반으로 훅을 필터링하는 기능이 도입되었습니다. 특정 툴 호출에 대한 정밀한 제어가 가능해졌습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/2b6f3be_hooks-guide.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/hooks\" target=\"_blank\">Hooks</a>",
+        "summary": "PreToolUse 훅에 if 조건 추가, Bash 명령어 필터링 기능 강화. if 필드를 사용하여 특정 명령어에만 훅을 적용해 효율성을 높임.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/2b6f3be_hooks.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/keybindings\" target=\"_blank\">Keybindings</a>",
+        "summary": "첨부 파일 관련 키 바인딩 설명이 명확하게 변경되었고, 일부 키 바인딩 설명이 수정되었습니다. 사용자 편의성을 개선합니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/2b6f3be_keybindings.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/mcp\" target=\"_blank\">Mcp</a>",
+        "summary": "Oauth 메타데이터 설정 방법이 개선되었습니다. OIDC 엔드포인트 직접 지정 기능 추가, 헬퍼 환경변수 추가로 여러 서버 지원.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/2b6f3be_mcp.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/monitoring-usage\" target=\"_blank\">Monitoring Usage</a>",
+        "summary": "OTEL_METRICS_EXPORTER 및 OTEL_LOGS_EXPORTER에 'none' 옵션이 추가되어 텔레메트리 비활성화 기능을 제공하며, 설정 유연성이 향상되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/2b6f3be_monitoring-usage.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/settings\" target=\"_blank\">Settings</a>",
+        "summary": "설정 문서에 `teammateMode` 설정에 대한 설명이 추가되었고, 플러그인 설정에 `managed-settings.json`이 추가되어 조직 단위 설정을 지원합니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/2b6f3be_settings.txt"
+      }
+    ]
+  },
+  {
     "date": "2026-03-27T15:19:52Z",
     "commit_hash": "c2e6911",
     "entries": [
