@@ -1,5 +1,46 @@
 [
   {
+    "date": "2026-03-29T15:10:35+00:00",
+    "commit_hash": "4762e8b",
+    "entries": [
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/changelog\" target=\"_blank\">Changelog</a>",
+        "summary": "Cowork Dispatch 메시지 전송 문제 해결 및 API 요청에 세션 ID 헤더 추가. 세션별 요청 집계 가능하게 함.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/4762e8b_changelog.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/env-vars\" target=\"_blank\">Env Vars</a>",
+        "summary": "SLASH_COMMAND_TOOL_CHAR_BUDGET의 기본 문자 예산이 변경되었습니다. 스킬 도구에 표시되는 메타데이터의 문자 제한이 조정되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/4762e8b_env-vars.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/hooks-guide\" target=\"_blank\">Hooks Guide</a>",
+        "summary": "알림 권한 문제 해결 가이드 추가, macOS 환경에서 스크립트 편집기의 알림 권한 설정을 안내합니다. (알림 미표시 문제 해결)",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/4762e8b_hooks-guide.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/llm-gateway\" target=\"_blank\">Llm Gateway</a>",
+        "summary": "요청 헤더 정보가 추가되어 세션 식별자를 활용, API 요청 집계가 용이해졌습니다. 이는 프록시 기능 향상에 기여합니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/4762e8b_llm-gateway.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/skills\" target=\"_blank\">Skills</a>",
+        "summary": "기술 설명 텍스트가 250자로 제한되며, 핵심 사용 사례를 앞에 배치하도록 권장합니다. 컨텍스트 예산 관련 내용이 업데이트되었습니다. ",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/4762e8b_skills.txt"
+      }
+    ]
+  },
+  {
     "date": "2026-03-28T15:10:18Z",
     "commit_hash": "2b6f3be",
     "entries": [
