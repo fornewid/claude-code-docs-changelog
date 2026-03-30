@@ -1,5 +1,18 @@
 [
   {
+    "date": "2026-03-30T15:30:51+00:00",
+    "commit_hash": "b58edb7",
+    "entries": [
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/changelog\" target=\"_blank\">Changelog</a>",
+        "summary": "문서 색인 추가 및 변경 로그 업데이트.  사용자가 쉽게 접근하고 최신 정보를 얻을 수 있도록 개선되었습니다.  문서 접근성 및 편의성 향상.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/b58edb7_changelog.txt"
+      }
+    ]
+  },
+  {
     "date": "2026-03-29T15:10:35+00:00",
     "commit_hash": "4762e8b",
     "entries": [
