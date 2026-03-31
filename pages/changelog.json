@@ -1,5 +1,183 @@
 [
   {
+    "date": "2026-03-31T15:29:14+00:00",
+    "commit_hash": "507fb70",
+    "entries": [
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/agent-teams\" target=\"_blank\">Agent Teams</a>",
+        "summary": "팀원 정의에 subagent 사용법이 추가되어, 보안 검토자 등 역할 재사용이 가능해졌습니다. 프로젝트 레벨 설정 관련 내용도 추가되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/507fb70_agent-teams.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/changelog\" target=\"_blank\">Changelog</a>",
+        "summary": "2.1.88 및 2.1.87 버전에서 버그 수정, 새로운 기능 추가, 사용자 경험 개선이 이루어졌습니다. 특히, 오류 수정과 성능 향상에 중점을 뒀습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/507fb70_changelog.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/chrome\" target=\"_blank\">Chrome</a>",
+        "summary": "macOS 앱 제어를 위한 새로운 링크가 추가되었습니다. 브라우저 내에서 해결할 수 없는 작업을 처리할 수 있습니다. ",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/507fb70_chrome.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/claude-code-on-the-web\" target=\"_blank\">Claude Code On The Web</a>",
+        "summary": "터미널에서 Claude Code를 설정하는 방법이 추가되었고, GitHub Enterprise Server 지원이 추가되었습니다. 더 다양한 환경에서 활용 가능해졌습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/507fb70_claude-code-on-the-web.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/cli-reference\" target=\"_blank\">Cli Reference</a>",
+        "summary": "--allow-dangerously-skip-permissions에 대한 설명이 개선되었고, --dangerously-skip-permissions의 동작에 대한 추가 정보가 제공되었습니다. 자동 모드 활성화 조건이 명확해졌습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/507fb70_cli-reference.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/code-review\" target=\"_blank\">Code Review</a>",
+        "summary": "자가 호스팅 GitHub 인스턴스에 대한 정보 추가 및 문제 해결 섹션이 추가되었습니다. 리뷰 실패 시 재실행 방법과 추가적인 문제 해결 방법 안내.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/507fb70_code-review.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/computer-use\" target=\"_blank\">Computer Use</a>",
+        "summary": "새로운 파일이 추가되어, Claude CLI에서 컴퓨터 사용 기능을 소개합니다. macOS에서 앱 제어, UI 테스트, GUI 도구 자동화 방법 안내.",
+        "tag_text": "NEW",
+        "tag_class": "new"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/desktop\" target=\"_blank\">Desktop</a>",
+        "summary": "컴퓨터 사용 설정 가이드가 업데이트되어, 최신 버전 확인 및 macOS 권한 설정 단계를 명시합니다. 또한 CLI와 데스크탑 비교 테이블에서 컴퓨터 사용 관련 내용이 수정되었습니다. 변경사항은 사용자 경험을 개선합니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/507fb70_desktop.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/devcontainer\" target=\"_blank\">Devcontainer</a>",
+        "summary": "Dev Containers 확장 프로그램 링크와 명령 팔레트 텍스트가 업데이트되어 컨테이너 재개장 절차가 명확해졌습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/507fb70_devcontainer.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/env-vars\" target=\"_blank\">Env Vars</a>",
+        "summary": "`CLAUDE_CODE_DISABLE_MOUSE` 및 `CLAUDE_CODE_NO_FLICKER` 환경 변수가 추가되어 전체 화면 렌더링 관련 기능에 대한 설정을 제공합니다. 마우스 추적 및 깜박임을 비활성화할 수 있습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/507fb70_env-vars.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/fullscreen\" target=\"_blank\">Fullscreen</a>",
+        "summary": "새로운 'fullscreen.md' 파일은 풀스크린 렌더링 기능에 대한 문서를 제공합니다. 화면 깜빡임 없이 긴 대화에서 안정적인 메모리 사용과 마우스 지원을 제공합니다. (새로운 기능 소개)",
+        "tag_text": "NEW",
+        "tag_class": "new"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/github-enterprise-server\" target=\"_blank\">Github Enterprise Server</a>",
+        "summary": "GitHub Enterprise Server 지원에 대한 새로운 문서를 추가했습니다. Claude Code를 GHES에 연결하여 웹 세션, 코드 리뷰, 플러그인을 사용할 수 있습니다. 변경 사항은 GHES 사용성을 향상시킵니다.",
+        "tag_text": "NEW",
+        "tag_class": "new"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/hooks\" target=\"_blank\">Hooks</a>",
+        "summary": "\"TaskCreated\" 훅의 동작이 변경되어 작업 생성을 롤백하도록 수정되었습니다. 디버깅 정보와 추가 로깅 설정을 제공합니다. ",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/507fb70_hooks.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/model-config\" target=\"_blank\">Model Config</a>",
+        "summary": "모델 설정 가이드 업데이트. `model` 설정과 `availableModels` 사용 시, `ANTHROPIC_DEFAULT_SONNET_MODEL` 설정을 통해 디폴트 모델 버전을 고정할 수 있도록 변경되었습니다. 사용자 경험 개선.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/507fb70_model-config.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/network-config\" target=\"_blank\">Network Config</a>",
+        "summary": "GitHub Enterprise Server 사용자를 위해 Anthropic API IP 주소 허용 목록 지침을 추가하여, 자체 호스팅 환경에서 Claude의 접근성을 개선했습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/507fb70_network-config.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/permission-modes\" target=\"_blank\">Permission Modes</a>",
+        "summary": "자동 모드 관련 업데이트 및 bypassPermissions 모드의 안전성 강화. Team, Enterprise, API 지원 추가 및 위험성 개선. 안전한 사용을 위한 설명이 추가되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/507fb70_permission-modes.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/platforms\" target=\"_blank\">Platforms</a>",
+        "summary": "CLI 플랫폼에서 컴퓨터 사용 기능이 Pro/Max 플랜에 추가되었고, Chrome 및 컴퓨터 사용 통합이 문서에 추가되었습니다. 사용자 경험 향상.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/507fb70_platforms.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/plugin-marketplaces\" target=\"_blank\">Plugin Marketplaces</a>",
+        "summary": "내부 git 서버의 marketplace 접근 방식에 대한 권장 사항이 변경되었습니다. GitHub Enterprise Server 및 자체 호스팅 GitLab 인스턴스 지원이 추가되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/507fb70_plugin-marketplaces.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/sandboxing\" target=\"_blank\">Sandboxing</a>",
+        "summary": "컴퓨터 사용 관련 안내가 업데이트되었습니다. CLI와 데스크톱 환경에서의 컴퓨터 사용에 대한 안내를 분리하여 더 명확하게 설명합니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/507fb70_sandboxing.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/settings\" target=\"_blank\">Settings</a>",
+        "summary": "defaultMode에 허용되는 값들이 추가되었고, disableBypassPermissionsMode 설정에 대한 설명이 개선되었습니다. 보안 설정 강화.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/507fb70_settings.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/sub-agents\" target=\"_blank\">Sub Agents</a>",
+        "summary": "플러그인 하위 에이전트가 에이전트 팀에서도 사용 가능하도록 변경되어, 팀원들이 시스템 프롬프트 등을 상속받도록 기능이 추가되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/507fb70_sub-agents.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/terminal-config\" target=\"_blank\">Terminal Config</a>",
+        "summary": "깜빡임 및 메모리 사용량 감소를 위해 전체 화면 렌더링 옵션이 추가되었습니다. CLAUDE_CODE_NO_FLICKER 환경 변수를 통해 활성화할 수 있습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/507fb70_terminal-config.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/voice-dictation\" target=\"_blank\">Voice Dictation</a>",
+        "summary": "음성 받아쓰기 설명이 변경되어 오디오가 Anthropic 서버로 전송됨을 명시하고 데이터 사용 관련 링크가 추가되었습니다. 사용자 데이터 처리 방식에 대한 투명성을 제공합니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/507fb70_voice-dictation.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/vs-code\" target=\"_blank\">Vs Code</a>",
+        "summary": "확장 설정 표에서 텍스트 줄 바꿈이 개선되어 가독성이 향상되었습니다. 더 긴 설명이 깔끔하게 표시됩니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/507fb70_vs-code.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/web-scheduled-tasks\" target=\"_blank\">Web Scheduled Tasks</a>",
+        "summary": "사용자 지정 간격 설정 방식이 변경되었습니다. CLI를 사용하여 cron 표현식을 설정하고, 최소 간격이 1시간으로 제한됩니다. 더 정확한 작업 예약이 가능해졌습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/507fb70_web-scheduled-tasks.txt"
+      }
+    ]
+  },
+  {
     "date": "2026-03-30T15:30:51+00:00",
     "commit_hash": "b58edb7",
     "entries": [
