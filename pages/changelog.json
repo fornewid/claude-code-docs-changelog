@@ -1,5 +1,165 @@
 [
   {
+    "date": "2026-04-01T15:31:40+00:00",
+    "commit_hash": "91ec6e5",
+    "entries": [
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/amazon-bedrock\" target=\"_blank\">Amazon Bedrock</a>",
+        "summary": "SSO 및 프록시 환경에서의 인증 문제 해결 팁과 지역 설정 관련 문제 해결 가이드가 추가되었습니다. 사용자 경험 개선에 기여합니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/91ec6e5_amazon-bedrock.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/changelog\" target=\"_blank\">Changelog</a>",
+        "summary": "Claude Code의 변경 로그가 업데이트되었습니다. 새로운 기능 추가, 버그 수정, 그리고 성능 개선이 이루어졌습니다. 특히, MCP 관련 개선과 VSCode 확장 문제 수정이 중요합니다. (무엇이 변경되었고, 왜 중요한가?)",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/91ec6e5_changelog.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/claude-code-on-the-web\" target=\"_blank\">Claude Code On The Web</a>",
+        "summary": "GitHub 자동화 관련 경고 추가: Claude가 댓글을 통해 작업을 실행할 수 있어, 보안에 주의해야 함을 알립니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/91ec6e5_claude-code-on-the-web.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/cli-reference\" target=\"_blank\">Cli Reference</a>",
+        "summary": "CLI 참조 내용이 업데이트되었으며, 새로운 기능과 사용법에 대한 개선 사항이 반영되었습니다. 사용자 편의성을 위한 설정 옵션이 추가되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/91ec6e5_cli-reference.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/commands\" target=\"_blank\">Commands</a>",
+        "summary": "/add-dir 명령어 설명이 수정되어 파일 접근 방식에 대한 더 명확한 정보를 제공합니다. /init 명령어의 CLAUDE_CODE_NEW_INIT 값 변경.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/91ec6e5_commands.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/costs\" target=\"_blank\">Costs</a>",
+        "summary": "CLAUDE.md 파일의 권장 라인 수가 기존 500줄에서 200줄로 수정되어 기본 컨텍스트 크기를 줄이도록 권장합니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/91ec6e5_costs.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/discover-plugins\" target=\"_blank\">Discover Plugins</a>",
+        "summary": "플러그인 자동 업데이트 설정 변경: 환경 변수 값 변경 및 코드 블록 스타일 업데이트. 플러그인 업데이트 관리를 유연하게.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/91ec6e5_discover-plugins.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/env-vars\" target=\"_blank\">Env Vars</a>",
+        "summary": "환경 변수에 Bedrock 및 Vertex AI 관련 설정이 추가되었습니다. API 타임아웃 설정도 가능해졌습니다. API 사용의 유연성을 높였습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/91ec6e5_env-vars.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/features-overview\" target=\"_blank\">Features Overview</a>",
+        "summary": "CLAUDE.md 파일의 권장 라인 수를 500라인에서 200라인으로 변경하여 메모리 관리 효율성을 높였습니다. 중요 정보는 skills로 이동.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/91ec6e5_features-overview.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/google-vertex-ai\" target=\"_blank\">Google Vertex Ai</a>",
+        "summary": "모델별 지역 설정 변수와 Vertex AI 엔드포인트 설정, 프롬프트 캐싱 비활성화 옵션이 추가되었습니다. 더 유연한 설정을 지원합니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/91ec6e5_google-vertex-ai.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/hooks-guide\" target=\"_blank\">Hooks Guide</a>",
+        "summary": "훅 동작 방식, `PreToolUse` 훅의 우선순위, 권한 모드에서의 동작 방식 등 훅 관련 내용이 업데이트되어 훅 사용의 이해도를 높였습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/91ec6e5_hooks-guide.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/interactive-mode\" target=\"_blank\">Interactive Mode</a>",
+        "summary": "대화형 모드에서 제안을 수락하는 키보드 단축키가 변경되었습니다. 이제 오른쪽 화살표 키도 사용 가능합니다. 사용성이 개선되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/91ec6e5_interactive-mode.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/mcp\" target=\"_blank\">Mcp</a>",
+        "summary": "MCPSearch 툴 비활성화 설정 변경: deny 설정에서 MCPSearch를 ToolSearch로 변경하여 툴 설정을 명확하게 했습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/91ec6e5_mcp.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/memory\" target=\"_blank\">Memory</a>",
+        "summary": "/init 명령어의 새로운 초기화 흐름을 활성화하는 변수 설정이 변경되었습니다. 사용자 경험 개선 및 더 나은 설정 옵션을 제공합니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/91ec6e5_memory.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/permissions\" target=\"_blank\">Permissions</a>",
+        "summary": "추가 디렉토리 접근 권한과 설정 로딩 방식, 관리 설정에서만 적용되는 설정들이 명확하게 정리되었습니다. 팀 환경에서의 설정 관리 방법도 안내합니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/91ec6e5_permissions.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/sandboxing\" target=\"_blank\">Sandboxing</a>",
+        "summary": "denyRead 동작 방식이 수정되었습니다. 'allowManagedReadPathsOnly' 설정 시에도 denyRead는 모든 소스에서 병합됩니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/91ec6e5_sandboxing.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/server-managed-settings\" target=\"_blank\">Server Managed Settings</a>",
+        "summary": "서버 관리 설정 예시에 'allowManagedPermissionRulesOnly'가 추가되었고, 관리형 설정 우선순위 및 캐싱 동작에 대한 내용이 업데이트 되었습니다. 설정 변경 관리 및 동작 방식에 대한 이해도를 높였습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/91ec6e5_server-managed-settings.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/settings\" target=\"_blank\">Settings</a>",
+        "summary": "새로운 설정 옵션이 추가되어 에이전트, 채널, 권한 등 다양한 기능을 세부적으로 제어하고 관리할 수 있게 되었습니다. 보안 및 사용자 경험 향상에 기여합니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/91ec6e5_settings.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/skills\" target=\"_blank\">Skills</a>",
+        "summary": "--add-dir 사용 시 .claude/skills/ 디렉토리의 기술은 자동으로 로드되도록 변경, 다른 .claude 설정은 예외 처리 및 추가 디렉토리에서 로드하는 방법을 안내합니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/91ec6e5_skills.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/sub-agents\" target=\"_blank\">Sub Agents</a>",
+        "summary": "프로젝트 서브 에이전트 검색 경로 및 재개 기능 관련 내용이 수정되었습니다. 팀 협업 및 에이전트 재개 방식이 개선되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/91ec6e5_sub-agents.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/terminal-config\" target=\"_blank\">Terminal Config</a>",
+        "summary": "터미널에서 줄 바꿈을 위한 Ctrl+J 단축키 안내 추가. 다양한 터미널 환경에서 호환되는 줄 바꿈 방법 제공.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/91ec6e5_terminal-config.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/tools-reference\" target=\"_blank\">Tools Reference</a>",
+        "summary": "도구 목록에 PowerShell 도구가 추가되었고, MCP 관련 도구 설명이 추가/수정되었습니다. MCP 서버 관련 기능이 개선되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/91ec6e5_tools-reference.txt"
+      }
+    ]
+  },
+  {
     "date": "2026-03-31T15:29:14+00:00",
     "commit_hash": "507fb70",
     "entries": [

@@ -1,0 +1,19 @@
+diff --git a/docs/mcp.md b/docs/mcp.md
+index df4fbca..141e8d1 100644
+--- a/docs/mcp.md
++++ b/docs/mcp.md
+@@ -1104,12 +1104,12 @@ ENABLE_TOOL_SEARCH=false claude
+ 
+ Or set the value in your [settings.json `env` field](/en/settings#available-settings).
+ 
+-You can also disable the MCPSearch tool specifically using the `disallowedTools` setting:
++You can also disable the `ToolSearch` tool specifically:
+ 
+ ```json  theme={null}
+ {
+   "permissions": {
+-    "deny": ["MCPSearch"]
++    "deny": ["ToolSearch"]
+   }
+ }
+ ```
