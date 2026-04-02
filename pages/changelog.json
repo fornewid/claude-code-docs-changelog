@@ -1,5 +1,235 @@
 [
   {
+    "date": "2026-04-02T15:24:55+00:00",
+    "commit_hash": "0c495d1",
+    "entries": [
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/amazon-bedrock\" target=\"_blank\">Amazon Bedrock</a>",
+        "summary": "모델 버전 업데이트 및 1M 토큰 컨텍스트 윈도우 지원 추가. 새로운 모델 기능 및 설정을 반영하여 사용성 개선.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/0c495d1_amazon-bedrock.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/changelog\" target=\"_blank\">Changelog</a>",
+        "summary": "2.1.90 버전 업데이트:  `/powerup` 추가, 환경 변수 추가, 버그 수정, 성능 향상, `resume` 기능 개선 및 DNS 캐시 관련 기능 제거. 전반적인 안정성 및 사용성 향상.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/0c495d1_changelog.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/commands\" target=\"_blank\">Commands</a>",
+        "summary": "/permissions 명령어가 도구 권한 관리를 위한 대화형 인터페이스를 지원하도록 업데이트되었습니다. /tasks 명령어도 `/bashes` 별칭으로 사용 가능합니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/0c495d1_commands.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/common-workflows\" target=\"_blank\">Common Workflows</a>",
+        "summary": "Claude 모델의 사고 토큰 사용 관련 설명이 수정되었고, 출력 형식 관련 팁이 추가되었습니다. 요금 부과 방식과 구조화된 출력에 대한 내용이 업데이트되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/0c495d1_common-workflows.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/computer-use\" target=\"_blank\">Computer Use</a>",
+        "summary": "macOS에서 컴퓨터 사용 기능의 접근성 및 설정을 업데이트했습니다. 데스크톱 앱 내 설정 경로가 변경되었고, 컴퓨터 사용 기능의 계획 가용성 정보가 추가되었습니다. ",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/0c495d1_computer-use.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/discover-plugins\" target=\"_blank\">Discover Plugins</a>",
+        "summary": "플러그인 활성화 문제 해결 가이드가 업데이트되었습니다. 버전 확인 및 업데이트 방법이 명확하게 안내됩니다. ",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/0c495d1_discover-plugins.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/env-vars\" target=\"_blank\">Env Vars</a>",
+        "summary": "MCP 연결 설정 관련 새로운 환경 변수 `MCP_CONNECTION_NONBLOCKING`이 추가되어, 스크립트 파이프라인에서 MCP 대기 시간을 건너뛸 수 있게 되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/0c495d1_env-vars.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/fullscreen\" target=\"_blank\">Fullscreen</a>",
+        "summary": "전체 화면 렌더링 기능의 최소 요구 사항이 업데이트되었으며, 마우스 휠 스크롤 설정 가이드가 추가되었습니다. 휠 스크롤 동작 개선에 초점을 맞춤.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/0c495d1_fullscreen.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/github-actions\" target=\"_blank\">Github Actions</a>",
+        "summary": "Claude 모델과 Vertex 리전 정보가 업데이트되었습니다. 최신 모델 사용을 위한 설정 변경으로, 더 나은 성능을 기대할 수 있습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/0c495d1_github-actions.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/google-vertex-ai\" target=\"_blank\">Google Vertex Ai</a>",
+        "summary": "모델 변수 설명이 수정되었고, 기본 모델 버전이 업데이트되었습니다. 사용자는 최신 모델을 통해 더 나은 성능을 경험할 수 있습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/0c495d1_google-vertex-ai.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/hooks-guide\" target=\"_blank\">Hooks Guide</a>",
+        "summary": "`PermissionDenied` 훅 추가, `PreToolUse`의 `permissionDecision` 값, 그리고 훅 실행 조건 개선.  모델의 도구 사용 거부 시 재시도 기능이 추가되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/0c495d1_hooks-guide.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/hooks\" target=\"_blank\">Hooks</a>",
+        "summary": "PermissionDenied 훅 추가, 매처에 PermissionDenied 추가 및 내용 업데이트. 자동 모드 거부 시 재시도 안내 추가됨.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/0c495d1_hooks.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/how-claude-code-works\" target=\"_blank\">How Claude Code Works</a>",
+        "summary": "IDE 확장 관련 링크가 변경되었습니다. VS Code IDE에 대한 명확성을 높여 사용자 접근성을 향상시킵니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/0c495d1_how-claude-code-works.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/interactive-mode\" target=\"_blank\">Interactive Mode</a>",
+        "summary": "!로 시작하는 텍스트 붙여넣기 시 bash 모드로 자동 진입하도록 변경되었습니다. 이는 사용성을 향상시킵니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/0c495d1_interactive-mode.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/model-config\" target=\"_blank\">Model Config</a>",
+        "summary": "모델 별칭 변경: 'default' 정의가 명확해지고, 'best' 별칭이 추가되어 사용 가능한 모델을 쉽게 선택할 수 있게 되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/0c495d1_model-config.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/network-config\" target=\"_blank\">Network Config</a>",
+        "summary": "네트워크 구성 관련 URL 변경 사항이 반영되었습니다. 특히 설치 관련 URL이 업데이트되어, 접근 권한 설정이 변경되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/0c495d1_network-config.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/output-styles\" target=\"_blank\">Output Styles</a>",
+        "summary": "출력 스타일 관련 정보가 추가되었습니다. 토큰 사용량 및 출력 길이에 대한 내용이 포함되어, 스타일 선택 시 고려해야 할 사항을 제시합니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/0c495d1_output-styles.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/overview\" target=\"_blank\">Overview</a>",
+        "summary": "윈도우 설치 링크가 업데이트되었고, 텔레포트 명령어 사용법이 변경되었습니다. 데스크톱 앱과의 연동 설명이 개선되었습니다. ",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/0c495d1_overview.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/permission-modes\" target=\"_blank\">Permission Modes</a>",
+        "summary": "CLI 알림에 거부된 작업이 `/permissions`에 추가되어 자동 모드 사용성을 개선했습니다. 사용자가 작업 기록을 쉽게 확인할 수 있게 되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/0c495d1_permission-modes.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/permissions\" target=\"_blank\">Permissions</a>",
+        "summary": "관리 설정에서 `bypassPermissions` 모드 비활성화 설정 경로가 변경되었고, auto 모드 거부 내역을 검토하는 방법과 거부 시 알림 기능, 자동 모드 분류기 설정 방법이 추가되었습니다.  ",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/0c495d1_permissions.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/plugin-marketplaces\" target=\"_blank\">Plugin Marketplaces</a>",
+        "summary": "로컬 플러그인 경로 설정 시 주의사항이 추가되었습니다. 워크트리 환경에서 경로가 메인 저장소를 참조하고, 사용자별 마켓플레이스 상태를 저장합니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/0c495d1_plugin-marketplaces.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/plugins-reference\" target=\"_blank\">Plugins Reference</a>",
+        "summary": "허가 거부 훅이 추가되어 자동 모드에서 도구 호출 거부 시 재시도 로직을 구현할 수 있게 되었습니다. 툴 사용 실패 시 대응 개선.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/0c495d1_plugins-reference.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/quickstart\" target=\"_blank\">Quickstart</a>",
+        "summary": "구독 플랜 명칭 수정 및 CMD 오류 팁 추가, 윈도우 종료 명령어 변경, 쉘 스크립트 코드 블럭 스타일 변경 및 Homebrew, WinGet 설치 코드 스타일 변경.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/0c495d1_quickstart.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/scheduled-tasks\" target=\"_blank\">Scheduled Tasks</a>",
+        "summary": "반복 작업 만료 기간이 3일에서 7일로 변경되었습니다. 잊혀진 루프의 실행 시간을 제한하기 위함입니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/0c495d1_scheduled-tasks.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/settings\" target=\"_blank\">Settings</a>",
+        "summary": "settings.json의 설정 옵션 설명과 예시가 추가되었습니다. 사용자 정의, 보안 및 접근성 관련 설정 가이드가 개선되었습니다. (설정 옵션 설명 추가 및 보안 강화)",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/0c495d1_settings.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/setup\" target=\"_blank\">Setup</a>",
+        "summary": "데스크톱 앱 다운로드 링크가 변경되었고, 설치 방법과 버전 지정 방법이 업데이트되었습니다. 바이너리 무결성 검증 가이드가 추가되었습니다. (중요성: 업데이트된 보안 및 설치 지침)",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/0c495d1_setup.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/skills\" target=\"_blank\">Skills</a>",
+        "summary": "allowed-tools 필드 설명이 개선되었고, space-separated string 또는 YAML list를 지원하도록 변경되었습니다. 이는 유연성을 높입니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/0c495d1_skills.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/slack\" target=\"_blank\">Slack</a>",
+        "summary": "구독 플랜 명칭 'Team'으로 변경 및 Slack에서 생성된 세션의 조직 가시성 관련 설명이 수정되었습니다. 팀 계정 사용성 개선.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/0c495d1_slack.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/statusline\" target=\"_blank\">Statusline</a>",
+        "summary": "세션 이름과 추가 디렉토리 정보가 추가되었습니다. 사용자 정의 세션 이름과 추가된 디렉토리 정보를 알 수 있게 되어 사용성이 향상되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/0c495d1_statusline.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/sub-agents\" target=\"_blank\">Sub Agents</a>",
+        "summary": "관리되는 subagent 배포, `--agents` JSON 형식에 color 추가, YAML frontmatter 필드 업데이트 및 정렬. 조직 차원 설정 및 기능 개선.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/0c495d1_sub-agents.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/tools-reference\" target=\"_blank\">Tools Reference</a>",
+        "summary": "도구 목록 설명이 개선되고, `TaskUpdate` 도구에 대한 설명이 추가되었습니다. 도구 사용에 대한 이해도를 높였습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/0c495d1_tools-reference.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/troubleshooting\" target=\"_blank\">Troubleshooting</a>",
+        "summary": "데스크탑 앱 다운로드 링크가 업데이트되었고, WSL2 샌드박스 오류 메시지 설명이 개선되었습니다. 코드 블록 포맷팅 문제 해결.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/0c495d1_troubleshooting.txt"
+      }
+    ]
+  },
+  {
     "date": "2026-04-01T15:31:40+00:00",
     "commit_hash": "91ec6e5",
     "entries": [

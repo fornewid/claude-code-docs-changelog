@@ -1,0 +1,27 @@
+diff --git a/docs/output-styles.md b/docs/output-styles.md
+index c8483a9..ce2d69c 100644
+--- a/docs/output-styles.md
++++ b/docs/output-styles.md
+@@ -31,8 +31,6 @@ codebase and how Claude operates:
+ 
+ Output styles directly modify Claude Code's system prompt.
+ 
+-* All output styles exclude instructions for efficient output (such as
+-  responding concisely).
+ * Custom output styles exclude instructions for coding (such as verifying code
+   with tests), unless `keep-coding-instructions` is true.
+ * All output styles have their own custom instructions added to the end of the
+@@ -40,6 +38,13 @@ Output styles directly modify Claude Code's system prompt.
+ * All output styles trigger reminders for Claude to adhere to the output style
+   instructions during the conversation.
+ 
++Token usage depends on the style. Adding instructions to the system prompt
++increases input tokens, though prompt caching reduces this cost after the first
++request in a session. The built-in Explanatory and Learning styles produce
++longer responses than Default by design, which increases output tokens. For
++custom styles, output token usage depends on what your instructions tell Claude
++to produce.
++
+ ## Change your output style
+ 
+ Run `/config` and select **Output style** to pick a style from a menu. Your
