@@ -1,5 +1,235 @@
 [
   {
+    "date": "2026-04-03T15:17:49+00:00",
+    "commit_hash": "b840c42",
+    "entries": [
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/amazon-bedrock\" target=\"_blank\">Amazon Bedrock</a>",
+        "summary": "Bedrock 관련 링크에 'Bedrock token burndown and quotas' 문서가 추가되었습니다. 토큰 사용량 및 할당량 관련 정보 접근성이 향상되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/b840c42_amazon-bedrock.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/analytics\" target=\"_blank\">Analytics</a>",
+        "summary": "표, 제목, 오타가 수정되었습니다. 접근성 및 명확성을 개선하여 팀 및 엔터프라이즈 분석을 설명합니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/b840c42_analytics.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/best-practices\" target=\"_blank\">Best Practices</a>",
+        "summary": "개인 프로젝트 노트를 위한 CLAUDE.local.md 파일 추가, .gitignore에 추가하여 팀과 공유되지 않도록 변경.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/b840c42_best-practices.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/changelog\" target=\"_blank\">Changelog</a>",
+        "summary": "MCP 도구 결과 지속성, 쉘 실행 비활성화, 멀티라인 프롬프트 지원 등 다양한 기능이 추가되고, 버그 수정 및 성능 개선이 이루어졌습니다. 더 나은 사용자 경험을 제공합니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/b840c42_changelog.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/chrome\" target=\"_blank\">Chrome</a>",
+        "summary": "Anthropic 플랜 명칭 'Team'으로 변경 및 오타 수정. Chrome extension 사용에 필요한 정보가 업데이트되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/b840c42_chrome.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/claude-code-on-the-web\" target=\"_blank\">Claude Code On The Web</a>",
+        "summary": "엔터프라이즈/팀 계정 공유 옵션, 제약 사항, GitHub Enterprise Server 지원 및 Team/Enterprise 플랜에 대한 설명이 수정되었습니다. 명확성을 높임.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/b840c42_claude-code-on-the-web.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/claude-directory\" target=\"_blank\">Claude Directory</a>",
+        "summary": "기술 지원 파일 사용 시점 변경: SKILL.md에서 언급할 때에서 스킬 실행 시 필요에 따라 읽도록 변경되어,Claude가 더 유연하게 파일에 접근합니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/b840c42_claude-directory.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/code-review\" target=\"_blank\">Code Review</a>",
+        "summary": "구독 레벨에 대한 설명이 변경되었습니다. 'Teams'가 'Team'으로 수정되었으며, 작은 변경사항입니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/b840c42_code-review.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/commands\" target=\"_blank\">Commands</a>",
+        "summary": "새로운 명령어 /powerup이 추가되어 인터랙티브 튜토리얼을 통해 Claude Code 기능을 학습할 수 있습니다. 사용자 경험 개선.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/b840c42_commands.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/common-workflows\" target=\"_blank\">Common Workflows</a>",
+        "summary": "세션 복원 기능 개선: 인터랙티브 세션만 표시, 세션 ID로 복원 가능.  오래된 서브에이전트 워크트리 자동 삭제 기능 추가.  `/powerup`으로 대화형 데모 접근성 향상.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/b840c42_common-workflows.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/computer-use\" target=\"_blank\">Computer Use</a>",
+        "summary": "CLI 컴퓨터 사용 가능 플랫폼에 대한 명확성을 위해 macOS만 지원함을 강조하고, Windows 데스크탑 사용 안내를 추가했습니다. 사용자 경험 개선.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/b840c42_computer-use.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/desktop-quickstart\" target=\"_blank\">Desktop Quickstart</a>",
+        "summary": "구독 레벨 표기 오류 수정 및 Windows 설치 링크가 업데이트 되었습니다. 더 정확한 정보 제공 및 사용자 접근성 개선.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/b840c42_desktop-quickstart.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/desktop\" target=\"_blank\">Desktop</a>",
+        "summary": "컴퓨터 사용 기능의 Windows 지원 추가 및, Mac에서 필요한 권한 명시. 팁, 플러그인 등 문서 내용 수정.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/b840c42_desktop.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/env-vars\" target=\"_blank\">Env Vars</a>",
+        "summary": "플러그인 관련 환경 변수 추가: 실패 시 기존 마켓플레이스 캐시 유지 옵션과 관련된 설정 추가. 오프라인 환경에서 유용합니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/b840c42_env-vars.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/fast-mode\" target=\"_blank\">Fast Mode</a>",
+        "summary": "Team 및 Enterprise에 대한 설명이 수정되었습니다. 'Teams'가 'Team'으로 변경되었으며, 관련 링크가 업데이트되었습니다. 명확성을 높임.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/b840c42_fast-mode.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/fullscreen\" target=\"_blank\">Fullscreen</a>",
+        "summary": "MacBook 키보드 단축키 설명이 수정되었고, 사용자 정의 바인딩 관련 내용이 삭제되어 가독성이 향상되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/b840c42_fullscreen.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/github-enterprise-server\" target=\"_blank\">Github Enterprise Server</a>",
+        "summary": "GitHub Enterprise Server 지원 계획 명시 변경: 'Teams'로 수정. (오타 수정)",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/b840c42_github-enterprise-server.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/interactive-mode\" target=\"_blank\">Interactive Mode</a>",
+        "summary": "macOS 사용자를 위한 단축키 안내가 추가되었고, Ctrl+L의 기능과 텍스트 편집 관련 내용이 수정되었습니다. 스크린 다시 그리기로 기능 변경.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/b840c42_interactive-mode.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/keybindings\" target=\"_blank\">Keybindings</a>",
+        "summary": "전반적인 키 바인딩이 업데이트되었습니다. 새로운 단축키 추가 및 기존 단축키 변경으로 사용성 개선 및 기능 접근성을 향상시켰습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/b840c42_keybindings.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/mcp\" target=\"_blank\">Mcp</a>",
+        "summary": "MCP 도구 결과 크기 제어 관련 내용이 추가되었습니다. 개별 도구의 최대 결과 크기를 지정하여 더 큰 출력을 처리할 수 있도록 개선되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/b840c42_mcp.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/memory\" target=\"_blank\">Memory</a>",
+        "summary": "CLAUDE.local.md 파일 추가 및 관련 내용 업데이트. 개인별 프로젝트 설정을 버전 관리 없이 관리 가능하며, `/memory` 명령의 출력 내용이 개선되었습니다. ",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/b840c42_memory.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/monitoring-usage\" target=\"_blank\">Monitoring Usage</a>",
+        "summary": "OTel을 통한 추적 기능이 추가되어 API 요청 및 도구 실행을 추적할 수 있게 되었으며, 로그 및 추적 백엔드 선택 가이드가 추가되었습니다. 보안 관련 내용이 업데이트되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/b840c42_monitoring-usage.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/permission-modes\" target=\"_blank\">Permission Modes</a>",
+        "summary": "`acceptEdits` 모드에서 보호된 디렉토리에 대한 쓰기 권한이 제한되었고, `bypassPermissions` 모드에서 보호된 파일 목록이 확장되었습니다. 전반적인 안전성을 강화합니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/b840c42_permission-modes.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/permissions\" target=\"_blank\">Permissions</a>",
+        "summary": "bypassPermissions 모드에서 보호되는 디렉토리에 .husky 디렉토리가 추가되었습니다. 샌드박스 관련 내용이 추가되어 bash 실행 관련 내용이 추가되었습니다. 보안 강화 및 사용성 개선.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/b840c42_permissions.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/platforms\" target=\"_blank\">Platforms</a>",
+        "summary": "CLI 플랫폼의 '컴퓨터 사용' 기능의 플랫폼 제약이 macOS로 변경되었습니다. Pro 및 Max 버전에서만 사용 가능합니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/b840c42_platforms.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/plugin-marketplaces\" target=\"_blank\">Plugin Marketplaces</a>",
+        "summary": "플러그인 소스, 시드 디렉토리, CLI를 통한 마켓플레이스 관리 등 플러그인 기능 전반에 걸친 내용이 변경되었습니다. 더 정확한 경로, 효율적인 시드 디렉토리 구성, 자동화를 위한 CLI 지원이 추가되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/b840c42_plugin-marketplaces.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/plugins-reference\" target=\"_blank\">Plugins Reference</a>",
+        "summary": "플러그인 파일 위치에 실행 파일 추가를 위한 'bin/' 디렉토리와 관련 설명이 추가되었습니다. Bash 도구에서 명령어로 사용 가능해졌습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/b840c42_plugins-reference.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/plugins\" target=\"_blank\">Plugins</a>",
+        "summary": "플러그인 실행 파일 경로를 추가하여 Bash 도구의 PATH에 접근하도록 설정했습니다. 플러그인 기능 확장 및 활용성 향상.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/b840c42_plugins.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/sandboxing\" target=\"_blank\">Sandboxing</a>",
+        "summary": "샌드박스 모드 설명이 수정되었고, 샌드박스에서 실행 시 주의사항과 권장사항에 대한 내용이 추가되었습니다. docker 사용 관련 내용도 업데이트되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/b840c42_sandboxing.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/settings\" target=\"_blank\">Settings</a>",
+        "summary": "CLAUDE.md의 설정 파일 위치가 변경되었고, cleanupPeriodDays에 orphaned subagent worktrees에 대한 내용이 추가되었습니다. 사용자 편의성을 위한 변경입니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/b840c42_settings.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/setup\" target=\"_blank\">Setup</a>",
+        "summary": "설치 방법 설명이 수정되었고, Windows 환경에 대한 안내가 추가되었습니다. 사용자 편의성을 개선했습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/b840c42_setup.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/sub-agents\" target=\"_blank\">Sub Agents</a>",
+        "summary": "subagent의 permissionMode 동작 방식이 업데이트되었습니다. acceptEdits 모드에 대한 예외 디렉토리가 추가되었고, bypassPermissions에 대한 안전 경고에 .husky 디렉토리가 추가되었습니다. ",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/b840c42_sub-agents.txt"
+      }
+    ]
+  },
+  {
     "date": "2026-04-02T15:24:55+00:00",
     "commit_hash": "0c495d1",
     "entries": [
