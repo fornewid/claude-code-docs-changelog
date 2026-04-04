@@ -1,5 +1,174 @@
 [
   {
+    "date": "2026-04-04T15:10:16+00:00",
+    "commit_hash": "b87ba65",
+    "entries": [
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/agent-teams\" target=\"_blank\">Agent Teams</a>",
+        "summary": "팀원 생성 시 서브 에이전트 정의를 사용하도록 안내하고, 팀원 이름 지정 및 토큰 사용량에 대한 추가 정보를 제공합니다. 효율적인 팀 운영을 위한 내용이 추가되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/b87ba65_agent-teams.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/amazon-bedrock\" target=\"_blank\">Amazon Bedrock</a>",
+        "summary": "Bedrock 사용 사례 제출 안내가 업데이트되었습니다. AWS 계정, IAM 권한, 모델 선택 및 조직 계정 지원 관련 내용이 포함되었습니다. (최대 150자)",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/b87ba65_amazon-bedrock.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/changelog\" target=\"_blank\">Changelog</a>",
+        "summary": "새로운 기능 추가, 버그 수정, `/tag` 및 `/vim` 명령어 제거, 린스 샌드박스 개선 등 다양한 변경 사항이 적용되었습니다. 특히, 원격 설정 새로 고침 정책, 상호 작용 Bedrock 설정 마법사 등이 추가되었습니다. ",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/b87ba65_changelog.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/claude-code-on-the-web\" target=\"_blank\">Claude Code On The Web</a>",
+        "summary": "온라인 환경에서 작업 계획을 세우고 검토할 수 있도록 ultraplan 기능에 대한 정보가 추가되었습니다. 협업 및 원격 실행 기능 강화.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/b87ba65_claude-code-on-the-web.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/commands\" target=\"_blank\">Commands</a>",
+        "summary": "/ultraplan 명령어가 추가되어 ultraplan 세션을 시작하고, 브라우저에서 검토 후 원격 실행 또는 터미널로 전송할 수 있습니다. 사용성 향상.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/b87ba65_commands.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/common-workflows\" target=\"_blank\">Common Workflows</a>",
+        "summary": "데스크톱 스케줄링 태스크 링크가 수정되었고, 문서 내 오타가 수정되었습니다. 사용자 편의성을 위한 변경입니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/b87ba65_common-workflows.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/desktop-quickstart\" target=\"_blank\">Desktop Quickstart</a>",
+        "summary": "설치 과정이 개편되고, 설치 링크가 명확해졌습니다. 구독 안내가 추가되어, 데스크톱 앱 사용의 선행 조건을 제시합니다. ",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/b87ba65_desktop-quickstart.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/desktop-scheduled-tasks\" target=\"_blank\">Desktop Scheduled Tasks</a>",
+        "summary": "Claude Code Desktop에서 반복적인 작업을 예약하는 방법을 안내하는 새로운 문서입니다. 데스크톱, 클라우드, /loop 간의 예약 옵션 비교, 작업 생성 방법, 빈도 옵션, 실행 방법, 권한 관리, 작업 관리에 대한 자세한 내용을 담고 있습니다.  새로운 기능에 대한 문서입니다.",
+        "tag_text": "NEW",
+        "tag_class": "new"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/desktop\" target=\"_blank\">Desktop</a>",
+        "summary": "데스크탑 앱의 'Scheduled tasks' 섹션이 삭제되었습니다. 이제 데스크탑 앱에서 지원하지 않기 때문입니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/b87ba65_desktop.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/env-vars\" target=\"_blank\">Env Vars</a>",
+        "summary": "TMPDIR의 임시 디렉토리 경로가 변경되었습니다. 이제 UID가 포함되어 여러 인스턴스에서 격리된 임시 파일을 사용합니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/b87ba65_env-vars.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/headless\" target=\"_blank\">Headless</a>",
+        "summary": "CI/CD 환경에서 권한 제어를 위해 `permission-mode` 옵션과 `dontAsk`, `acceptEdits` 모드 사용법이 추가되어 보안 및 자동화 워크플로우를 개선합니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/b87ba65_headless.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/legal-and-compliance\" target=\"_blank\">Legal And Compliance</a>",
+        "summary": "OAuth 인증 사용 자격이 명확해졌습니다. 무료/유료 구독 사용자 및 개발자 사용 사례를 구분하여 서비스 약관 위반을 방지합니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/b87ba65_legal-and-compliance.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/overview\" target=\"_blank\">Overview</a>",
+        "summary": "데스크톱 스케줄링 작업에 대한 링크가 업데이트되었습니다. 더 정확한 문서 참조를 위해 링크가 변경되었습니다. 사용자 경험 향상.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/b87ba65_overview.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/permission-modes\" target=\"_blank\">Permission Modes</a>",
+        "summary": "권한 모드에 대한 설명이 개선되었으며, 사용 가능한 모드와 각 모드의 역할을 표로 명확하게 정리했습니다. CLI, VS Code, JetBrains 등 각 환경에서 모드를 설정하는 방법이 업데이트되었습니다. (권한 무시 모드 관련 내용 추가)",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/b87ba65_permission-modes.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/platforms\" target=\"_blank\">Platforms</a>",
+        "summary": "플랫폼 설명에서 'Scheduled tasks'의 링크가 수정되었습니다. 데스크톱 스케줄링 섹션의 링크가 업데이트되어 접근성이 향상되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/b87ba65_platforms.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/remote-control\" target=\"_blank\">Remote Control</a>",
+        "summary": "Ultraplan 세션 시작 시 원격 제어 세션이 연결 해제됨을 명시하여, 두 기능의 인터페이스 충돌 문제를 설명합니다. (원활한 사용을 위해)",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/b87ba65_remote-control.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/scheduled-tasks\" target=\"_blank\">Scheduled Tasks</a>",
+        "summary": "데스크톱 스케줄링 옵션의 링크가 업데이트되었습니다. (#schedule-recurring-tasks -> #desktop-scheduled-tasks) 더 정확한 문서를 참조합니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/b87ba65_scheduled-tasks.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/sub-agents\" target=\"_blank\">Sub Agents</a>",
+        "summary": "서브 에이전트 동작 방식에 대한 설명이 변경되었습니다. 팀 구성원이 도구와 모델을 사용하도록, 시스템 프롬프트에 정의 내용이 추가됩니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/b87ba65_sub-agents.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/ultraplan\" target=\"_blank\">Ultraplan</a>",
+        "summary": "Ultraplan 기능 소개 파일. CLI에서 시작, 웹에서 초안 작성, 터미널 또는 웹에서 실행 가능.  '무엇'이 변경되었고 '왜' 중요한지를 설명합니다.",
+        "tag_text": "NEW",
+        "tag_class": "new"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/vs-code\" target=\"_blank\">Vs Code</a>",
+        "summary": "extension 설정의 `initialPermissionMode` 옵션 설명이 변경되었습니다. `auto` 옵션이 제거되었고, 더 명확한 옵션을 제공합니다. 사용자 권한 설정 개선.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/b87ba65_vs-code.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/web-scheduled-tasks\" target=\"_blank\">Web Scheduled Tasks</a>",
+        "summary": "데스크톱 스케줄링 태스크 관련 링크와 데스크톱 앱 내 페이지 이름이 업데이트되었습니다. 사용자 경험 개선을 위한 변경입니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/b87ba65_web-scheduled-tasks.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/whats-new\" target=\"_blank\">Whats New</a>",
+        "summary": "새로운 'whats-new.md' 파일은 Claude Code의 주간 업데이트를 요약하여 코드 조각, 데모, 관련 문서를 제공합니다. 새로운 기능과 개선 사항을 빠르게 파악할 수 있습니다.",
+        "tag_text": "NEW",
+        "tag_class": "new"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/whats-new__2026-w13\" target=\"_blank\">Whats New__2026 W13</a>",
+        "summary": "2026년 13주차의 새로운 기능 업데이트를 소개하는 문서입니다. 자동 모드, 컴퓨터 사용, PR 자동 수정 등 다양한 기능 개선 사항을 포함합니다. (새로운 기능과 개선 사항을 설명합니다.)",
+        "tag_text": "NEW",
+        "tag_class": "new"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/whats-new__2026-w14\" target=\"_blank\">Whats New__2026 W14</a>",
+        "summary": "새로운 파일로, 2026년 14주차의 변경 사항을 담고 있습니다. CLI 컴퓨터 사용, /powerup, 깜빡임 없는 렌더링 등 다양한 기능 업데이트가 포함되었습니다. (What's New)",
+        "tag_text": "NEW",
+        "tag_class": "new"
+      }
+    ]
+  },
+  {
     "date": "2026-04-03T15:17:49+00:00",
     "commit_hash": "b840c42",
     "entries": [
