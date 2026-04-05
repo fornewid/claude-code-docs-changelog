@@ -1,0 +1,13 @@
+diff --git a/docs/interactive-mode.md b/docs/interactive-mode.md
+index d3b1e62..3a332bd 100644
+--- a/docs/interactive-mode.md
++++ b/docs/interactive-mode.md
+@@ -104,7 +104,7 @@ See the [commands reference](/en/commands) for the full list of built-in command
+ 
+ ## Vim editor mode
+ 
+-Enable vim-style editing with `/vim` command or configure permanently via `/config`.
++Enable vim-style editing via `/config` → Editor mode.
+ 
+ ### Mode switching
+ 

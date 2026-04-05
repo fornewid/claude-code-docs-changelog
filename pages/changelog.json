@@ -1,5 +1,123 @@
 [
   {
+    "date": "2026-04-05T15:11:16+00:00",
+    "commit_hash": "0cae4ec",
+    "entries": [
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/amazon-bedrock\" target=\"_blank\">Amazon Bedrock</a>",
+        "summary": "Amazon Bedrock 설정에 대한 대화형 마법사가 추가되었습니다. 사용자는 마법사를 통해 AWS 인증, 리전 선택 등을 설정할 수 있습니다. ",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/0cae4ec_amazon-bedrock.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/changelog\" target=\"_blank\">Changelog</a>",
+        "summary": "2.1.92, 91, 90, 89 버전 변경사항 요약: 기능 추가, 버그 수정, 성능 개선, 보안 강화, 사용자 경험 개선 등 다양한 업데이트가 이루어졌습니다. 전반적으로 코드의 안정성과 사용성을 향상시켰습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/0cae4ec_changelog.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/cli-reference\" target=\"_blank\">Cli Reference</a>",
+        "summary": "CLI 참조 문서가 업데이트되어 새로운 플래그와 기능이 추가되었고, 더 상세한 설명이 제공됩니다. 사용자 정의 및 제어가 향상되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/0cae4ec_cli-reference.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/commands\" target=\"_blank\">Commands</a>",
+        "summary": "/pr-comments 및 /vim 명령어 기능이 제거되었으며, /setup-bedrock 명령어 추가로 Amazon Bedrock 설정 지원.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/0cae4ec_commands.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/data-usage\" target=\"_blank\">Data Usage</a>",
+        "summary": "설정 파일 참조 링크가 업데이트되었습니다.  설정 문서 접근성이 개선되어 사용자가 더 쉽게 정보를 찾을 수 있습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/0cae4ec_data-usage.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/env-vars\" target=\"_blank\">Env Vars</a>",
+        "summary": "새로운 환경 변수 'CLAUDE_REMOTE_CONTROL_SESSION_NAME_PREFIX'가 추가되어 원격 제어 세션 이름 설정을 유연하게 할 수 있습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/0cae4ec_env-vars.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/interactive-mode\" target=\"_blank\">Interactive Mode</a>",
+        "summary": "Vim 편집 모드 활성화 방법이 변경되었습니다. 이제 `/config` 메뉴를 통해 영구적으로 설정할 수 있습니다. 사용자 편의성을 개선했습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/0cae4ec_interactive-mode.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/keybindings\" target=\"_blank\">Keybindings</a>",
+        "summary": "Vim 모드 활성화 경로가 변경되었습니다. 이제 `/config`에서 에디터 모드를 통해 Vim 모드를 활성화할 수 있습니다. 사용자 설정 접근성이 향상되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/0cae4ec_keybindings.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/mcp\" target=\"_blank\">Mcp</a>",
+        "summary": "도구의 반환 결과 크기 제한을 조절하는 설정과 관련된 내용이 변경되었습니다. 더 큰 출력을 처리하기 위한 임계값 조정 및 추가 설명이 포함되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/0cae4ec_mcp.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/permissions\" target=\"_blank\">Permissions</a>",
+        "summary": "서버 설정에서 원격 설정을 즉시 가져와 실패 시 종료하는 `forceRemoteSettingsRefresh` 설정이 추가되어 보안을 강화합니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/0cae4ec_permissions.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/remote-control\" target=\"_blank\">Remote Control</a>",
+        "summary": "원격 제어 플래그에 세션 이름 접두사 옵션이 추가되어, 세션 식별이 용이해졌습니다. 사용자 경험 개선에 기여합니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/0cae4ec_remote-control.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/server-managed-settings\" target=\"_blank\">Server Managed Settings</a>",
+        "summary": "서버 설정 실패 시 CLI 시작을 차단하는 'fail-closed startup' 기능 추가 및 설정 안내. 보안 강화 및 설정 일관성을 보장합니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/0cae4ec_server-managed-settings.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/settings\" target=\"_blank\">Settings</a>",
+        "summary": "설정 옵션에 `disableSkillShellExecution` 및 `forceRemoteSettingsRefresh`가 추가되어 보안 및 원격 설정 관리가 개선되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/0cae4ec_settings.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/skills\" target=\"_blank\">Skills</a>",
+        "summary": "skills.md 문서가 업데이트되어 여러 줄 명령에 대한 사용법과, 실행 비활성화 설정 기능이 추가되었습니다. 보안 및 사용성 개선.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/0cae4ec_skills.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/terminal-config\" target=\"_blank\">Terminal Config</a>",
+        "summary": "Vim 모드 활성화 방법이 변경되었습니다. 설정 경로가 명확해지고, 설정 파일 내 옵션 설명이 개선되어 사용자 편의성이 향상되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/0cae4ec_terminal-config.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/troubleshooting\" target=\"_blank\">Troubleshooting</a>",
+        "summary": "WSL1 샌드박스 미지원 정보 추가 및 샌드박스 내 윈도우 바이너리 실행 불가 설명. 샌드박스 설정 가이드도 제공합니다. (WSL1 사용자 주의)",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/0cae4ec_troubleshooting.txt"
+      }
+    ]
+  },
+  {
     "date": "2026-04-04T15:10:16+00:00",
     "commit_hash": "b87ba65",
     "entries": [
