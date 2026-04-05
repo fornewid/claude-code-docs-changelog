@@ -1,3 +1,4 @@
+{% raw %}
 > ## Documentation Index
 > Fetch the complete documentation index at: https://code.claude.com/docs/llms.txt
 > Use this file to discover all available pages before exploring further.
@@ -1594,3 +1595,4 @@ For deeper coverage of the features shown in the timeline, see these pages:
 * [Subagents](/en/sub-agents): delegate research to a separate context window
 * [Best practices](/en/best-practices): managing context as your primary constraint
 * [Reduce token usage](/en/costs#reduce-token-usage): strategies for keeping context usage low
+{% endraw %}

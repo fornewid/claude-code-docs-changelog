@@ -1,3 +1,4 @@
+{% raw %}
 > ## Documentation Index
 > Fetch the complete documentation index at: https://code.claude.com/docs/llms.txt
 > Use this file to discover all available pages before exploring further.
@@ -1461,3 +1462,4 @@ Run `/context` first for the overview, then the specific command for the area yo
 * [Configure settings](/en/settings): set permissions, hooks, environment variables, and model defaults
 * [Create skills](/en/skills): build reusable prompts and workflows
 * [Configure subagents](/en/sub-agents): define specialized agents with their own context
+{% endraw %}

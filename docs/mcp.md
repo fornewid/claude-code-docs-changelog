@@ -1,3 +1,4 @@
+{% raw %}
 > ## Documentation Index
 > Fetch the complete documentation index at: https://code.claude.com/docs/llms.txt
 > Use this file to discover all available pages before exploring further.
@@ -1395,3 +1396,4 @@ URL patterns support wildcards using `*` to match any sequence of characters. Th
 <Note>
   **When using `managed-mcp.json`**: Users cannot add MCP servers through `claude mcp add` or configuration files. The `allowedMcpServers` and `deniedMcpServers` settings still apply to filter which managed servers are actually loaded.
 </Note>
+{% endraw %}

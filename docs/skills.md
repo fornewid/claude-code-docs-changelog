@@ -1,3 +1,4 @@
+{% raw %}
 > ## Documentation Index
 > Fetch the complete documentation index at: https://code.claude.com/docs/llms.txt
 > Use this file to discover all available pages before exploring further.
@@ -696,3 +697,4 @@ To raise the limit, set the `SLASH_COMMAND_TOOL_CHAR_BUDGET` environment variabl
 * **[Memory](/en/memory)**: manage CLAUDE.md files for persistent context
 * **[Built-in commands](/en/commands)**: reference for built-in `/` commands
 * **[Permissions](/en/permissions)**: control tool and skill access
+{% endraw %}

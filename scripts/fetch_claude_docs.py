@@ -439,13 +439,28 @@ def fetch_changelog(session: requests.Session) -> Tuple[str, str]:
             raise
 
 
+def wrap_liquid_raw(content: str) -> str:
+    """Wrap content with {% raw %}/{% endraw %} if it contains Liquid-like syntax.
+
+    Jekyll's Liquid engine treats ``{{`` as variable markers. Documentation
+    files that embed JSX or inline styles (e.g. ``style={{ display: 'flex' }}``)
+    trigger fatal parse errors during the GitHub Pages build.  Wrapping the
+    entire file in raw tags tells Liquid to skip it.
+    """
+    if '{{' in content:
+        return '{% raw %}\n' + content.rstrip('\n') + '\n{% endraw %}\n'
+    return content
+
+
 def save_markdown_file(docs_dir: Path, filename: str, content: str) -> str:
     """Save markdown content and return its hash."""
     file_path = docs_dir / filename
-    
+
     try:
-        file_path.write_text(content, encoding='utf-8')
+        # Hash is computed on the original content so that re-fetches with
+        # identical upstream data are still detected as unchanged.
         content_hash = hashlib.sha256(content.encode('utf-8')).hexdigest()
+        file_path.write_text(wrap_liquid_raw(content), encoding='utf-8')
         logger.info(f"Saved: {filename}")
         return content_hash
     except Exception as e:
