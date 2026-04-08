@@ -1,5 +1,172 @@
 [
   {
+    "date": "2026-04-08T15:32:56+00:00",
+    "commit_hash": "53ebff5",
+    "entries": [
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/amazon-bedrock\" target=\"_blank\">Amazon Bedrock</a>",
+        "summary": "Mantle 엔드포인트 사용법 추가, 설정 방법, 활성화 방법, 문제 해결 가이드가 추가되었습니다. Bedrock API와 차이점 및 설정 관련 내용도 포함.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/53ebff5_amazon-bedrock.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/authentication\" target=\"_blank\">Authentication</a>",
+        "summary": "브라우저 로그인 후 리다이렉션이 안될 경우, 터미널에 로그인 코드를 붙여넣는 안내가 추가되어 사용자 편의성이 향상되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/53ebff5_authentication.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/changelog\" target=\"_blank\">Changelog</a>",
+        "summary": "Claude Code의 변경 사항 요약: 기능 추가, 버그 수정, 성능 개선. 사용자 편의성 및 안정성 향상에 중점을 둠.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/53ebff5_changelog.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/claude-directory\" target=\"_blank\">Claude Directory</a>",
+        "summary": "애플리케이션 데이터 섹션 추가, 파일 위치 및 삭제 관련 정보 제공. 세션 데이터 관리 및 개인정보 보호를 위한 권장사항 포함. (세션 데이터 삭제 방법 안내)",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/53ebff5_claude-directory.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/code-review\" target=\"_blank\">Code Review</a>",
+        "summary": "Claude 코드 리뷰의 반응 기능이 추가되어, 사용자가 쉽게 유용성 평가를 할 수 있게 되었고, 수정 후 재검토 요청 방법이 설명되었습니다. ",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/53ebff5_code-review.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/common-workflows\" target=\"_blank\">Common Workflows</a>",
+        "summary": "워크트리에서 세션을 선택하면 디렉토리 전환 없이 바로 재개됩니다. 워크플로우 효율성 개선.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/53ebff5_common-workflows.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/context-window\" target=\"_blank\">Context Window</a>",
+        "summary": "훅 동작 관련 설명이 수정됨: stdout은 디버그 로그에, 추가 context는 컨텍스트 윈도우에 포함됨. 맥락 이해에 더 정확한 정보를 제공합니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/53ebff5_context-window.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/data-usage\" target=\"_blank\">Data Usage</a>",
+        "summary": "로컬 캐싱 관련 내용이 업데이트되었습니다. 세션 기록 저장 위치와 삭제 방법이 명시되어 사용자 편의성을 높였습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/53ebff5_data-usage.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/env-vars\" target=\"_blank\">Env Vars</a>",
+        "summary": "Bedrock Mantle endpoint 관련 환경 변수가 추가되어, Bedrock 사용 시 유연성을 높였습니다. API 요청 타임아웃 최대값이 명시되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/53ebff5_env-vars.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/fast-mode\" target=\"_blank\">Fast Mode</a>",
+        "summary": "Fast 모드 사용량 초과 시, 일반 모드로 자동 전환 및 잔여 크레딧 부족 시 동작 방식이 수정되었습니다. 사용자 경험 개선.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/53ebff5_fast-mode.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/hooks-guide\" target=\"_blank\">Hooks Guide</a>",
+        "summary": "훅 실행 오류 시 표시되는 로그가 변경되었고, 디버깅을 위한 로그 파일 사용 방법을 안내합니다. 더 자세한 정보 확인 가능.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/53ebff5_hooks-guide.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/hooks\" target=\"_blank\">Hooks</a>",
+        "summary": "훅 동작 관련 설명이 수정되었으며, exit code 1을 비차단 오류로 처리하는 내용이 추가되었습니다. UserPromptSubmit 이벤트에 sessionTitle 설정을 통한 세션 제목 설정 기능이 추가되었습니다.  (훅 동작 및 설정 개선)",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/53ebff5_hooks.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/how-claude-code-works\" target=\"_blank\">How Claude Code Works</a>",
+        "summary": "세션 저장 방식이 변경되어, JSONL 파일에 기록됩니다. 데이터 경로와 삭제 방법은 별도 문서에서 확인 가능합니다. (보존, 경로)",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/53ebff5_how-claude-code-works.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/interactive-mode\" target=\"_blank\">Interactive Mode</a>",
+        "summary": "Ctrl+L의 기능이 화면 다시 그리기가 아닌 입력창 초기화로 변경되었습니다. 사용자 편의성을 위한 변경으로 보입니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/53ebff5_interactive-mode.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/keybindings\" target=\"_blank\">Keybindings</a>",
+        "summary": "app:redraw 바인딩이 변경되었고, chat:clearInput 액션이 추가되어 입력 초기화가 가능해졌습니다. 사용자 편의성을 개선했습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/53ebff5_keybindings.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/model-config\" target=\"_blank\">Model Config</a>",
+        "summary": "Mantle 모델 ID 관련 내용이 추가되었고, 기본 노력 수준 및 사용법이 명확하게 변경되었습니다. 더 정확한 모델 사용 가이드라인을 제공합니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/53ebff5_model-config.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/output-styles\" target=\"_blank\">Output Styles</a>",
+        "summary": "플러그인 지원을 위해 output styles 저장 위치가 확장되었습니다. 플러그인 디렉토리에서 output styles를 로드할 수 있습니다. ",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/53ebff5_output-styles.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/plugins-reference\" target=\"_blank\">Plugins Reference</a>",
+        "summary": "플러그인 경로 설정 시 SKILL.md 파일의 name 필드를 사용해 안정적인 호출 이름을 보장하고, 플러그인 캐시 관리 방식에 대한 설명이 추가되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/53ebff5_plugins-reference.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/setup\" target=\"_blank\">Setup</a>",
+        "summary": "설치 요구 사항에 ARM64 프로세서 지원이 추가되었습니다. 더 많은 아키텍처에서 Claude Code를 사용할 수 있습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/53ebff5_setup.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/statusline\" target=\"_blank\">Statusline</a>",
+        "summary": "캐시 파일 이름에 세션 ID를 추가하여 여러 세션 간의 캐시 충돌을 방지하도록 수정했습니다. 성능 및 안정성 향상.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/53ebff5_statusline.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/troubleshooting\" target=\"_blank\">Troubleshooting</a>",
+        "summary": "모델 접근 오류에 대한 문제 해결 가이드가 추가되었습니다. 모델 설정 확인 방법과 문제 해결 팁을 제공하여 사용성을 향상시켰습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/53ebff5_troubleshooting.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/ultraplan\" target=\"_blank\">Ultraplan</a>",
+        "summary": "Ultraplan 사용에 필요한 Claude Code 버전이 명시되었고, 지원하지 않는 클라우드 환경이 추가되었습니다. 기능 사용 조건 및 범위를 명확히 함.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/53ebff5_ultraplan.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/vs-code\" target=\"_blank\">Vs Code</a>",
+        "summary": "문제 해결 섹션이 추가되어 확장 설치 문제 해결 방법을 안내합니다. 사용자 경험 개선에 기여합니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/53ebff5_vs-code.txt"
+      }
+    ]
+  },
+  {
     "date": "2026-04-05T15:11:16+00:00",
     "commit_hash": "0cae4ec",
     "entries": [
