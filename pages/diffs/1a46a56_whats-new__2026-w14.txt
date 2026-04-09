@@ -1,0 +1,13 @@
+diff --git a/docs/whats-new__2026-w14.md b/docs/whats-new__2026-w14.md
+index de59f81..1de8076 100644
+--- a/docs/whats-new__2026-w14.md
++++ b/docs/whats-new__2026-w14.md
+@@ -95,7 +95,7 @@
+   }
+   ```
+ 
+-  <a className="digest-feature-link" href="/en/mcp#override-result-size-per-tool">MCP reference</a>
++  <a className="digest-feature-link" href="/en/mcp#raise-the-limit-for-a-specific-tool">MCP reference</a>
+ </div>
+ 
+ <div className="digest-feature">
