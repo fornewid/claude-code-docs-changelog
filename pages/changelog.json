@@ -1,5 +1,172 @@
 [
   {
+    "date": "2026-04-11T15:13:05+00:00",
+    "commit_hash": "13738e1",
+    "entries": [
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/amazon-bedrock\" target=\"_blank\">Amazon Bedrock</a>",
+        "summary": "영업팀과 연락하는 CTA 컴포넌트 추가 및 실험 기능이 추가되었습니다. Haiku 모델의 리전 설정 안내가 추가되었습니다. (중요 변경 사항)",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/13738e1_amazon-bedrock.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/changelog\" target=\"_blank\">Changelog</a>",
+        "summary": "2.1.101 버전에서 다양한 기능 개선, 버그 수정, 새로운 기능 추가가 이루어졌습니다. 특히, 팀 온보딩 기능 추가, OS 인증서 신뢰 개선, 다양한 문제 해결 및 사용자 경험 개선이 있었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/13738e1_changelog.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/commands\" target=\"_blank\">Commands</a>",
+        "summary": "/claude-api 명령어 설명에 Managed Agents 레퍼런스가 추가되었고, /loop 명령어 사용법이 개선되었습니다. (기능 개선 및 설명 명확화)",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/13738e1_commands.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/computer-use\" target=\"_blank\">Computer Use</a>",
+        "summary": "스크린샷 자동 다운스케일링 기능 추가로 고해상도 디스플레이 사용자의 편의성을 높였습니다. 텍스트 크기 조절 팁도 제공합니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/13738e1_computer-use.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/costs\" target=\"_blank\">Costs</a>",
+        "summary": "클로드 코드 비용 관련 설명이 업데이트되었습니다. 예상 비용 범위와 팀 운영 관련 정보가 변경되어, 비용 관리에 대한 안내가 추가되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/13738e1_costs.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/env-vars\" target=\"_blank\">Env Vars</a>",
+        "summary": "ANTHROPIC_SMALL_FAST_MODEL_AWS_REGION 변수 설명에 Bedrock Mantle 관련 내용이 추가되었습니다. Bash/PowerShell 명령어 관련 설명도 수정되었습니다. ",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/13738e1_env-vars.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/google-vertex-ai\" target=\"_blank\">Google Vertex Ai</a>",
+        "summary": "Vertex AI 문서에 배포 관련 새로운 CTA와 실험 컴포넌트가 추가되었습니다. 엔터프라이즈 플랜, SSO, 중앙 집중식 결제 등에 대한 정보를 제공합니다. ",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/13738e1_google-vertex-ai.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/hooks-guide\" target=\"_blank\">Hooks Guide</a>",
+        "summary": "훅 설정 병합 방식이 변경되었습니다. 기존 설정을 덮어쓰지 않고 새로운 항목을 추가하여 설정을 유지하는 방식으로 개선되었습니다. 이는 설정 충돌을 방지하고 유연성을 높입니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/13738e1_hooks-guide.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/hooks\" target=\"_blank\">Hooks</a>",
+        "summary": "플러그인 훅 예외 사항 설명 추가, 관리 설정에서 플러그인 훅 강제 활성화 시 동작 방식을 명확히 했습니다. (보안 개선)",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/13738e1_hooks.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/mcp\" target=\"_blank\">Mcp</a>",
+        "summary": "서버 우선순위가 변경되었습니다. 로컬, 프로젝트, 사용자, 플러그인, 커넥터 순으로 우선순위가 적용되어 설정 충돌 시 더 명확하게 처리됩니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/13738e1_mcp.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/memory\" target=\"_blank\">Memory</a>",
+        "summary": "세션 관리 관련 내용이 제거되고, 하위 에이전트의 영구 메모리 기능에 대한 안내가 추가되었습니다. 메모리 관리 기능 개선.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/13738e1_memory.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/microsoft-foundry\" target=\"_blank\">Microsoft Foundry</a>",
+        "summary": "Microsoft Foundry 관련 컴포넌트 추가 및 업데이트. 영업팀에 문의할 수 있는 새로운 CTA와 A/B 테스트 기능이 도입되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/13738e1_microsoft-foundry.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/monitoring-usage\" target=\"_blank\">Monitoring Usage</a>",
+        "summary": "Bash뿐만 아니라 PowerShell subprocess에서도 추적이 가능하도록 변경되었습니다. 분산 추적 기능이 향상되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/13738e1_monitoring-usage.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/network-config\" target=\"_blank\">Network Config</a>",
+        "summary": "CA 인증서 관련 내용이 추가되어, 기업 환경에서 HTTPS 연결 시 필요한 설정 방법을 안내합니다. 시스템 CA 및 환경 변수 설정 방법 포함.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/13738e1_network-config.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/permissions\" target=\"_blank\">Permissions</a>",
+        "summary": "허가 관련 문서가 업데이트되었습니다. `allowManagedHooksOnly` 설정에 대한 설명이 개선되어, 관리되는 hook, SDK hook 및 플러그인 hook에 대한 작동 방식을 명확히 합니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/13738e1_permissions.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/scheduled-tasks\" target=\"_blank\">Scheduled Tasks</a>",
+        "summary": "/loop 명령어 사용법이 개선되어, 간격 및 프롬프트 설정 유연성이 높아졌습니다. 이제 사용자 정의 가능한 `loop.md`를 통해 기본 동작을 변경할 수 있습니다. (사용자 정의, 간격 설정 개선)",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/13738e1_scheduled-tasks.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/server-managed-settings\" target=\"_blank\">Server Managed Settings</a>",
+        "summary": "문서가 업데이트되어 베타 상태 표시가 제거되었습니다. 서버 설정 기능이 팀 및 엔터프라이즈 사용자에게 제공됩니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/13738e1_server-managed-settings.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/settings\" target=\"_blank\">Settings</a>",
+        "summary": "`allowManagedHooksOnly` 설정의 동작이 변경되어, 관리자가 허용한 플러그인 훅만 허용하도록 개선되었습니다. 보안 강화 목적.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/13738e1_settings.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/statusline\" target=\"_blank\">Statusline</a>",
+        "summary": "알림 표시 방식 변경: 토큰 경고가 제거되고, context-low 경고가 추가되어 더 다양한 시스템 상태를 보여줍니다. (중요 알림 공간 확장)",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/13738e1_statusline.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/sub-agents\" target=\"_blank\">Sub Agents</a>",
+        "summary": "서브 에이전트의 작업 디렉토리 관련 내용이 추가되었습니다.  cd 명령어는 서브 에이전트 내에서만 유효하며, 독립된 작업 환경을 위해 'isolation: worktree' 옵션을 사용할 수 있습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/13738e1_sub-agents.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/third-party-integrations\" target=\"_blank\">Third Party Integrations</a>",
+        "summary": "배포 옵션을 비교하는 섹션이 추가되고, ContactSalesCard 및 Experiment 컴포넌트가 추가되어, 엔터프라이즈 플랜에 대한 정보 접근성을 향상시켰습니다. (배포 옵션, 연락처)",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/13738e1_third-party-integrations.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/tools-reference\" target=\"_blank\">Tools Reference</a>",
+        "summary": "Bash 및 PowerShell 도구의 디렉토리 유지 동작이 개선되었습니다. `CLAUDE_BASH_MAINTAIN_PROJECT_WORKING_DIR` 설정과 동작 방식에 대한 자세한 내용이 추가되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/13738e1_tools-reference.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/troubleshooting\" target=\"_blank\">Troubleshooting</a>",
+        "summary": "Windows 환경에서 인증서 검사 오류 발생 시 해결 방법이 업데이트되었습니다. `--ssl-revoke-best-effort` 옵션 사용으로 연결 문제를 해결합니다. ",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/13738e1_troubleshooting.txt"
+      }
+    ]
+  },
+  {
     "date": "2026-04-10T15:19:48+00:00",
     "commit_hash": "785b638",
     "entries": [
