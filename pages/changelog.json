@@ -1,5 +1,18 @@
 [
   {
+    "date": "2026-04-12T15:15:22+00:00",
+    "commit_hash": "126bbe6",
+    "entries": [
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/changelog\" target=\"_blank\">Changelog</a>",
+        "summary": "문서 색인 추가 및 피드백 제출 기능 개선. 코드 기반 변경 사항은 없으며, 사용자 편의성을 위한 기능 개선 및 추가 안내입니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/126bbe6_changelog.txt"
+      }
+    ]
+  },
+  {
     "date": "2026-04-11T15:13:05+00:00",
     "commit_hash": "13738e1",
     "entries": [
