@@ -1,5 +1,395 @@
 [
   {
+    "date": "2026-04-14T15:29:16Z",
+    "commit_hash": "355ef07",
+    "entries": [
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/agent-sdk__custom-tools\" target=\"_blank\">Agent Sdk__Custom Tools</a>",
+        "summary": "커스텀 도구 관련 문서가 업데이트 되었습니다. 에이전트 SDK를 사용하여 클로드의 기능을 확장하는 방법을 설명합니다. ",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/355ef07_agent-sdk__custom-tools.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/agent-sdk__migration-guide\" target=\"_blank\">Agent Sdk__Migration Guide</a>",
+        "summary": "에이전트 SDK 마이그레이션 가이드가 업데이트되었습니다. 이전 SDK에서 최신 SDK로의 마이그레이션 방법을 안내합니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/355ef07_agent-sdk__migration-guide.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/agent-sdk__python\" target=\"_blank\">Agent Sdk__Python</a>",
+        "summary": "에이전트 SDK Python 문서가 업데이트되어 API 참조를 제공합니다. 개발자가 SDK를 더 쉽게 사용할 수 있도록 돕습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/355ef07_agent-sdk__python.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/agent-sdk__secure-deployment\" target=\"_blank\">Agent Sdk__Secure Deployment</a>",
+        "summary": "문서가 업데이트되어 AI 에이전트 배포 보안에 대한 지침을 제공하며, 격리, 자격 증명 관리, 네트워크 제어를 포함합니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/355ef07_agent-sdk__secure-deployment.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/agent-sdk__slash-commands\" target=\"_blank\">Agent Sdk__Slash Commands</a>",
+        "summary": "Slash command 관련 문서가 업데이트되었습니다. SDK를 통해 Claude Code 세션을 제어하는 방법을 설명합니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/355ef07_agent-sdk__slash-commands.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/agent-sdk__todo-tracking\" target=\"_blank\">Agent Sdk__Todo Tracking</a>",
+        "summary": "문서 내 에이전트 지침 및 피드백 관련 내용이 삭제되었습니다. 불필요한 정보 제거로 문서 간결성을 높였습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/355ef07_agent-sdk__todo-tracking.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/agent-sdk__typescript\" target=\"_blank\">Agent Sdk__Typescript</a>",
+        "summary": "EnterWorktreeInput에 path 속성이 추가되어 기존 워크트리를 사용 가능하도록 수정되었습니다. 작업 흐름 유연성 향상.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/355ef07_agent-sdk__typescript.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/agent-sdk__user-input\" target=\"_blank\">Agent Sdk__User Input</a>",
+        "summary": "사용자 피드백 제출 안내가 삭제되었습니다. 문서의 유지 관리를 간소화하고 관련 없는 정보를 제거합니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/355ef07_agent-sdk__user-input.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/amazon-bedrock\" target=\"_blank\">Amazon Bedrock</a>",
+        "summary": "Amazon Bedrock에 대한 Claude Code 문서가 업데이트되었습니다.  사용자 피드백 제출 안내가 삭제되었습니다. ",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/355ef07_amazon-bedrock.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/changelog\" target=\"_blank\">Changelog</a>",
+        "summary": "Claude Code의 변경 로그가 업데이트되었습니다. 다양한 기능 개선, 버그 수정, 그리고 보안 강화가 이루어졌으며, 특히 Google Vertex AI 설정 마법사가 추가되었습니다. (새로운 기능 추가 및 전반적인 시스템 안정성 향상)",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/355ef07_changelog.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/channels-reference\" target=\"_blank\">Channels Reference</a>",
+        "summary": "문서에 에이전트 지침 및 피드백 절차가 제거되었습니다. 채널 참조 섹션이 재구성되었습니다. ",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/355ef07_channels-reference.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/claude-code-on-the-web\" target=\"_blank\">Claude Code On The Web</a>",
+        "summary": "웹에서 Claude Code 사용법 문서가 업데이트되었습니다. 문서 피드백 제출 안내가 삭제되었습니다. ",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/355ef07_claude-code-on-the-web.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/claude-directory\" target=\"_blank\">Claude Directory</a>",
+        "summary": "문서에서 에이전트 지침 및 피드백 관련 내용이 제거되어 문서의 간결성이 향상되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/355ef07_claude-directory.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/code-review\" target=\"_blank\">Code Review</a>",
+        "summary": "코드 검토 문서가 업데이트되어 자동 PR 검토 설정 방법과 전반적인 코드 품질 향상 방안을 안내합니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/355ef07_code-review.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/commands\" target=\"_blank\">Commands</a>",
+        "summary": "/doctor 명령어에 진단 결과 표시 및 문제 해결 기능 추가, /loop 명령어에 별칭 추가. 사용자 편의성 향상.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/355ef07_commands.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/common-workflows\" target=\"_blank\">Common Workflows</a>",
+        "summary": "세션 재개 기능 개선: 세션 ID 또는 사용자 정의 이름으로 세션을 재개할 수 있도록 변경되었습니다. 세션 관리가 더 유연해졌습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/355ef07_common-workflows.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/computer-use\" target=\"_blank\">Computer Use</a>",
+        "summary": "CLI 컴퓨터 사용 설정 안내가 업데이트되었습니다. 클로드 CLI를 통해 macOS에서 앱 실행, 클릭, 타이핑, 화면 확인이 가능해졌습니다. GUI 도구 자동화 개선.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/355ef07_computer-use.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/costs\" target=\"_blank\">Costs</a>",
+        "summary": "가격 관련 정보가 업데이트 되었습니다. 구독 플랜 가격 확인을 위해 claude.com/pricing 링크가 추가되었습니다. 비용 관련 정보 접근성이 향상되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/355ef07_costs.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/discover-plugins\" target=\"_blank\">Discover Plugins</a>",
+        "summary": "플러그인 설치 오류 시, 마켓플레이스 업데이트 및 추가 방법을 안내하여 플러그인 설치 문제를 해결하도록 돕습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/355ef07_discover-plugins.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/env-vars\" target=\"_blank\">Env Vars</a>",
+        "summary": "`ANTHROPIC_CUSTOM_MODEL_OPTION_SUPPORTED_CAPABILITIES` 변수 추가 및 `CLAUDE_CODE_ADDITIONAL_DIRECTORIES_CLAUDE_MD` 설명 업데이트. 사용자 정의 모델 기능 및 메모리 파일 로딩 관련 변경사항입니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/355ef07_env-vars.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/fast-mode\" target=\"_blank\">Fast Mode</a>",
+        "summary": "빠른 모드 사용 설명서가 업데이트되었습니다.  사용자 피드백 제출 안내가 제거되어 문서 간소화.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/355ef07_fast-mode.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/features-overview\" target=\"_blank\">Features Overview</a>",
+        "summary": "문서 내 에이전트 관련 안내 삭제 및 Extend Claude Code에 대한 내용으로 변경되었습니다. 기능 사용법을 쉽게 파악 가능.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/355ef07_features-overview.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/hooks\" target=\"_blank\">Hooks</a>",
+        "summary": "command hook에 asyncRewake 필드가 추가되어 백그라운드 작업 실패 시 Claude에 알림을 보낼 수 있습니다. PreCompact 이벤트가 이제 compaction을 막을 수 있습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/355ef07_hooks.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/interactive-mode\" target=\"_blank\">Interactive Mode</a>",
+        "summary": "대화형 모드 단축키, 입력 모드, 기능 관련 정보가 업데이트되었습니다.  사용 편의성과 접근성이 개선되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/355ef07_interactive-mode.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/keybindings\" target=\"_blank\">Keybindings</a>",
+        "summary": "키 바인딩 관련 내용이 업데이트되었습니다. /doctor context 추가 및 새로운 액션(doctor:fix)이 추가되어 진단 화면에서 문제 해결을 지원합니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/355ef07_keybindings.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/mcp\" target=\"_blank\">Mcp</a>",
+        "summary": "Claude Code command에서 streamable-http 전송이 http로 변경되어 명령 실행 방식이 개선되었습니다. 서버 연결 방식 관련 업데이트입니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/355ef07_mcp.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/memory\" target=\"_blank\">Memory</a>",
+        "summary": "추가 디렉토리에서 메모리 파일 로드 설정 방법이 변경되었습니다. CLAUDE.md, .claude/CLAUDE.md 등 파일 로드 관련 내용이 수정되었습니다. 이는 메모리 관리 방식에 영향을 줍니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/355ef07_memory.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/microsoft-foundry\" target=\"_blank\">Microsoft Foundry</a>",
+        "summary": "Microsoft Foundry 페이지 내용이 업데이트되어 Claude Code 설정, 구성 및 문제 해결 방법을 안내합니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/355ef07_microsoft-foundry.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/model-config\" target=\"_blank\">Model Config</a>",
+        "summary": "모델 설정 문서에 새로운 사용자 정의 모델 옵션 관련 내용이 추가되었습니다. Bedrock 또는 사용자 정의 모델의 지원 기능 설정 방법 안내.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/355ef07_model-config.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/monitoring-usage\" target=\"_blank\">Monitoring Usage</a>",
+        "summary": "텔레메트리 관련 환경 변수 설명이 수정되었고, 내용이 더 정확해졌습니다. 설정 옵션 이해를 돕고, 문제 해결에 기여합니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/355ef07_monitoring-usage.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/network-config\" target=\"_blank\">Network Config</a>",
+        "summary": "Chrome 통합 관련 내용이 추가되어 Chrome 사용 시 bridge.claudeusercontent.com을 허용해야 합니다. 네트워크 설정에 중요합니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/355ef07_network-config.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/overview\" target=\"_blank\">Overview</a>",
+        "summary": "Windows 환경에서 Git for Windows 설치 요구 사항을 명확하게 업데이트하여 사용자 환경에 대한 안내를 개선했습니다. WSL 사용자는 예외입니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/355ef07_overview.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/permissions\" target=\"_blank\">Permissions</a>",
+        "summary": "Bash 규칙의 와일드카드 및 복합 명령 처리 방식, 프로세스 래퍼 지원, 후크 동작 방식 및 `--add-dir` 동작 방식에 대한 내용이 추가 및 수정되었습니다. 권한 관리에 대한 이해를 돕습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/355ef07_permissions.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/plugin-marketplaces\" target=\"_blank\">Plugin Marketplaces</a>",
+        "summary": "플러그인 마켓플레이스 관련 문서가 업데이트되었습니다.  '피드백 제출' 섹션이 삭제되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/355ef07_plugin-marketplaces.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/plugins-reference\" target=\"_blank\">Plugins Reference</a>",
+        "summary": "플러그인 manifest의 `monitors` 필드가 추가되어, 플러그인 활성화 시 자동으로 실행되는 백그라운드 모니터 설정을 지원합니다. 이는 플러그인의 기능 확장성을 높입니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/355ef07_plugins-reference.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/plugins\" target=\"_blank\">Plugins</a>",
+        "summary": "플러그인 설정 파일에 `subagentStatusLine` 키 지원이 추가되어 플러그인 활성화 시 기본 설정을 적용할 수 있게 되었습니다. 에이전트 동작 설정이 가능해졌습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/355ef07_plugins.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/quickstart\" target=\"_blank\">Quickstart</a>",
+        "summary": "Windows 설치 관련 설명이 수정되었습니다. 'Native Windows' 환경에 Git 설치가 필요하며, WSL 환경에서는 불필요하다는 내용이 추가되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/355ef07_quickstart.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/remote-control\" target=\"_blank\">Remote Control</a>",
+        "summary": "원격 제어 기능에 대한 문서가 업데이트되어, 이제 휴대폰, 태블릿 등 모든 기기에서 로컬 세션을 이어서 사용할 수 있음을 알립니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/355ef07_remote-control.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/sandboxing\" target=\"_blank\">Sandboxing</a>",
+        "summary": "샌드박싱 관련 문서의 초반부 내용이 변경되었습니다. 보다 안전한 에이전트 실행을 위한 파일 시스템 및 네트워크 격리에 대한 내용이 포함되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/355ef07_sandboxing.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/scheduled-tasks\" target=\"_blank\">Scheduled Tasks</a>",
+        "summary": "예약 작업에 대한 문서가 업데이트되었습니다. 추가 지침과 링크가 제거되었습니다. 핵심 내용은 동일합니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/355ef07_scheduled-tasks.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/settings\" target=\"_blank\">Settings</a>",
+        "summary": "시작 시 기본 대본 보기 모드를 설정하는 `viewMode` 설정이 추가되어, 사용자가 선호하는 방식으로 대본을 볼 수 있게 되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/355ef07_settings.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/setup\" target=\"_blank\">Setup</a>",
+        "summary": "Windows 설정 방법이 변경되었습니다. 네이티브, WSL 2, WSL 1 옵션을 제공하며, 각 옵션에 따른 요구사항과 장단점을 안내합니다. WSL 2는 샌드박싱을 지원합니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/355ef07_setup.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/skills\" target=\"_blank\">Skills</a>",
+        "summary": "기술 디렉토리 변경 감지 및 자동 로드 기능이 추가되어, 개발자가 세션을 재시작하지 않고도 기술을 편집할 수 있게 되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/355ef07_skills.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/statusline\" target=\"_blank\">Statusline</a>",
+        "summary": "서브 에이전트 상태줄 설정이 추가되어, 각 서브 에이전트의 상태를 커스텀할 수 있도록 기능이 확장되었습니다. 보다 상세한 정보를 표시 가능.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/355ef07_statusline.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/sub-agents\" target=\"_blank\">Sub Agents</a>",
+        "summary": "서브 에이전트 생성 관련 문서가 업데이트되었습니다. `Note` 추가 및 후크 실행 시점 관련 내용이 보강되어, 에이전트 동작 방식에 대한 이해를 돕습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/355ef07_sub-agents.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/terminal-config\" target=\"_blank\">Terminal Config</a>",
+        "summary": "터미널 설정 안내가 업데이트되어 Shift+Enter 설정 방법 및 tmux 설정을 위한 지침이 추가되었습니다. macOS에서의 Option+Enter 설정 방법도 명확하게 정리되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/355ef07_terminal-config.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/tools-reference\" target=\"_blank\">Tools Reference</a>",
+        "summary": "EnterWorktree 툴 설명이 수정되었고, Monitor 툴의 사용 불가 조건이 추가되었습니다.  보다 정확한 정보 제공 및 사용 환경 제약 사항 반영.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/355ef07_tools-reference.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/troubleshooting\" target=\"_blank\">Troubleshooting</a>",
+        "summary": "문제 해결 가이드가 업데이트되었습니다. Windows 설치 관련 문제와 PowerShell 관련 명령어가 추가되었습니다. 문제 해결을 용이하게 합니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/355ef07_troubleshooting.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/ultraplan\" target=\"_blank\">Ultraplan</a>",
+        "summary": "Ultraplan 기능에 대한 세부 정보가 추가되고, 클라우드 환경 생성 관련 내용이 업데이트되었습니다. 사용자 경험 개선을 위한 변경입니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/355ef07_ultraplan.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/web-quickstart\" target=\"_blank\">Web Quickstart</a>",
+        "summary": "원격 세션 관련 오류 메시지 내용이 명확하게 변경되었고, 클라우드 환경 설정 관련 가이드가 업데이트되었습니다.  사용자 편의성 향상.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/355ef07_web-quickstart.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/web-scheduled-tasks\" target=\"_blank\">Web Scheduled Tasks</a>",
+        "summary": "문서 내 불필요한 내용 삭제 및 웹 기반 예약 작업 관련 내용으로 변경되었습니다. 자동화된 PR 검토, 종속성 감사, CI 트리지가 가능합니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/355ef07_web-scheduled-tasks.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/whats-new\" target=\"_blank\">Whats New</a>",
+        "summary": "Ultraplan 사전 공개, 모니터 도구 스트리밍, /loop 간격 자동 설정, /team-onboarding 가이드, /autofix-pr 기능 추가 및 Computer use CLI 기능 추가. 작업 효율성 향상.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/355ef07_whats-new.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/whats-new__2026-w13\" target=\"_blank\">Whats New__2026 W13</a>",
+        "summary": "AI 에이전트 자동 모드, 컴퓨터 사용 기능 통합, 클라우드 PR 자동 수정, 대화 내용 검색, Windows용 PowerShell 도구 추가.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/355ef07_whats-new__2026-w13.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/whats-new__2026-w14\" target=\"_blank\">Whats New__2026 W14</a>",
+        "summary": "CLI 환경에서의 컴퓨터 사용, 대화형 학습, 플리커 없는 렌더링, 도구별 MCP 결과 크기 재정의, PATH의 플러그인 실행 파일 등 기능이 추가되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/355ef07_whats-new__2026-w14.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/whats-new__2026-w15\" target=\"_blank\">Whats New__2026 W15</a>",
+        "summary": "새로운 파일로, 2026년 15주차의 새로운 기능과 업데이트를 요약합니다. Ultraplan, Monitor tool 등 소개.",
+        "tag_text": "NEW",
+        "tag_class": "new"
+      }
+    ]
+  },
+  {
     "date": "2026-04-12T15:15:22+00:00",
     "commit_hash": "126bbe6",
     "entries": [
