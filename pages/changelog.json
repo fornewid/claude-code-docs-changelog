@@ -1,5 +1,324 @@
 [
   {
+    "date": "2026-04-15T15:30:29Z",
+    "commit_hash": "dbca4bd",
+    "entries": [
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/agent-sdk__hooks\" target=\"_blank\">Agent Sdk__Hooks</a>",
+        "summary": "훅 사용 예시가 업데이트되었고, 파일 경로 필터링 방법이 추가되었습니다. 훅 출력 위치에 대한 설명이 개선되었습니다. (훅 동작 방식 개선)",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/dbca4bd_agent-sdk__hooks.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/agent-sdk__migration-guide\" target=\"_blank\">Agent Sdk__Migration Guide</a>",
+        "summary": "SDK 이름 변경에 따라 패키지 import와 의존성을 업데이트해야 합니다. 이전 SDK 사용자는 마이그레이션을 통해 새 SDK를 사용하세요.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/dbca4bd_agent-sdk__migration-guide.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/agent-sdk__overview\" target=\"_blank\">Agent Sdk__Overview</a>",
+        "summary": "예제 코드에서 auth.py가 auth.ts로 변경되어 파일 형식과 관련된 버그 수정 작업이 변경되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/dbca4bd_agent-sdk__overview.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/agent-sdk__python\" target=\"_blank\">Agent Sdk__Python</a>",
+        "summary": "문서에 코드 블록 스타일 변경, 기능 예시 추가, SDK 구성 옵션 설명 및 구조화된 출력 형식이 추가되었습니다. 사용자에게 더 나은 예시와 이해를 돕습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/dbca4bd_agent-sdk__python.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/agent-sdk__structured-outputs\" target=\"_blank\">Agent Sdk__Structured Outputs</a>",
+        "summary": "구조화된 출력 예시가 추가되어 에이전트가 레시피 정보를 더 잘 추출하도록 돕습니다. 레시피 앱의 성능을 향상시킵니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/dbca4bd_agent-sdk__structured-outputs.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/agent-sdk__typescript\" target=\"_blank\">Agent Sdk__Typescript</a>",
+        "summary": "문서 내 코드 블록의 `theme={null}` 속성이 추가/제거되었습니다. 이는 코드 스타일과 무관합니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/dbca4bd_agent-sdk__typescript.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/agent-teams\" target=\"_blank\">Agent Teams</a>",
+        "summary": "코드 블록 테마 변경과 약간의 문구 수정이 있었지만, 기능적인 변경은 없어 보입니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/dbca4bd_agent-teams.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/amazon-bedrock\" target=\"_blank\">Amazon Bedrock</a>",
+        "summary": "Mantle 엔드포인트 사용법과 설정을 추가하여 Bedrock 사용 옵션을 확장하고, 사용자 정의 모델 설정 예시를 개선했습니다. 더 유연한 모델 선택을 지원합니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/dbca4bd_amazon-bedrock.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/changelog\" target=\"_blank\">Changelog</a>",
+        "summary": "확장 사고 표시기 개선, 프롬프트 캐싱 및 세션 요약 기능 추가, 모델의 슬래시 명령어 지원, 버그 수정 및 터미널 사용성 향상 등 다양한 기능과 안정성 개선이 이루어졌습니다. ",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/dbca4bd_changelog.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/channels-reference\" target=\"_blank\">Channels Reference</a>",
+        "summary": "채널 기능 및 개발 관련 예제가 업데이트되었고, 권한 처리 및 승인 흐름에 대한 설명이 추가되었습니다. 새로운 코드 예시와 함께 보안 관련 내용이 강화되었습니다. (채널 개발 가이드 업데이트)",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/dbca4bd_channels-reference.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/claude-code-on-the-web\" target=\"_blank\">Claude Code On The Web</a>",
+        "summary": "`/schedule`을 `/routines`로 변경하여 자동화 기능의 이름을 변경하고 관련 문서 링크를 업데이트했습니다. 사용자가 더 쉽게 기능을 찾도록 돕습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/dbca4bd_claude-code-on-the-web.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/claude-directory\" target=\"_blank\">Claude Directory</a>",
+        "summary": "트랜스크립트 보존 방식 변경: 환경 변수 설정을 통해 모든 모드에서 트랜스크립트 및 프롬프트 기록 저장을 건너뛸 수 있도록 개선되었습니다. 보안 강화.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/dbca4bd_claude-directory.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/commands\" target=\"_blank\">Commands</a>",
+        "summary": "/branch 명령어 추가. 대화 내용을 분기하고, /resume으로 돌아갈 수 있게 되어 작업 흐름 개선.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/dbca4bd_commands.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/common-workflows\" target=\"_blank\">Common Workflows</a>",
+        "summary": "문서 내 모든 코드 블록에 theme 속성이 추가되었으며, 이미지 사용 및 파일 참조 방법 관련 내용이 추가되었습니다. 문서 전반에 걸쳐 코드 예시가 업데이트되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/dbca4bd_common-workflows.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/desktop-quickstart\" target=\"_blank\">Desktop Quickstart</a>",
+        "summary": "데스크톱 앱 설명이 개선되었고, 모델 변경, 워크스페이스 정리, 사이드 질문 등의 새로운 기능이 추가되었습니다. 더 나은 사용자 경험 제공.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/dbca4bd_desktop-quickstart.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/desktop-scheduled-tasks\" target=\"_blank\">Desktop Scheduled Tasks</a>",
+        "summary": "클라우드 및 원격 작업 관련 링크가 업데이트되었고, 몇몇 섹션의 내용이 개선되어 사용성을 높였습니다. 중요 변경 사항은 원격 작업의 대안 안내입니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/dbca4bd_desktop-scheduled-tasks.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/desktop\" target=\"_blank\">Desktop</a>",
+        "summary": "데스크톱 앱 기능이 확장되었고, 레이아웃, 터미널, 파일 편집, 사이드 채팅, 뷰 모드 등의 새로운 기능이 추가되었습니다. GitHub PR 모니터링 기능도 개선되었습니다. (데스크톱 v1.2581.0 이상 필요)",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/dbca4bd_desktop.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/env-vars\" target=\"_blank\">Env Vars</a>",
+        "summary": "가상 스크롤 비활성화 변수 추가, 최대 컨텍스트 토큰 설정 변수 추가. 렌더링 문제와 컨텍스트 창 크기 조정 관련 내용.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/dbca4bd_env-vars.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/github-enterprise-server\" target=\"_blank\">Github Enterprise Server</a>",
+        "summary": "원격 세션 워크플로우 설명이 '루틴'으로 변경되었고, 플러그인 마켓플레이스 예시에서 용어가 수정되었습니다. 전반적인 내용 수정.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/dbca4bd_github-enterprise-server.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/hooks-guide\" target=\"_blank\">Hooks Guide</a>",
+        "summary": "전반적인 코드 블록 내 theme 속성 변경, notification 예시 수정,  자동 Prettier 실행 예시 추가, 몇 가지 훅 예시 및 설명이 추가되었습니다. 전반적인 훅 사용에 대한 이해를 돕습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/dbca4bd_hooks-guide.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/hooks\" target=\"_blank\">Hooks</a>",
+        "summary": "hooks.md 문서가 업데이트되어, hook 동작 방식에 대한 상세한 설명과, SessionStart 및 UserPromptSubmit hook에 대한 정보가 추가되었습니다. hook 사용의 이해를 돕기 위한 예제와 가이드라인이 개선되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/dbca4bd_hooks.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/interactive-mode\" target=\"_blank\">Interactive Mode</a>",
+        "summary": "대화형 모드에서 `! 명령어` 실행 기능이 추가되어, 별도 Claude 호출 없이 쉘 명령을 직접 실행 가능하게 되었습니다. 작업 흐름을 간소화합니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/dbca4bd_interactive-mode.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/keybindings\" target=\"_blank\">Keybindings</a>",
+        "summary": "키 바인딩 예시와 설명이 업데이트되었습니다. 사용자의 편의를 위해 코드 블록 스타일이 개선되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/dbca4bd_keybindings.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/mcp\" target=\"_blank\">Mcp</a>",
+        "summary": "MCP 서버 추가, 관리, 인증 관련 예시 및 설정 방법이 업데이트되었습니다. OAuth 설정 가이드가 추가되어 서버 연결 방법이 개선되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/dbca4bd_mcp.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/model-config\" target=\"_blank\">Model Config</a>",
+        "summary": "모델 설정 문서의 단순한 서식 변경입니다. 코드 블록의 여백 및 관련 메타데이터가 업데이트되었지만, 기능 변경은 없습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/dbca4bd_model-config.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/monitoring-usage\" target=\"_blank\">Monitoring Usage</a>",
+        "summary": "OTEL 설정 관련 예시 및 안내가 추가되었습니다. 환경 변수를 사용하여 팀, 부서별 데이터를 구분하는 방법을 설명합니다. ",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/dbca4bd_monitoring-usage.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/overview\" target=\"_blank\">Overview</a>",
+        "summary": "자주 사용하는 기능 및 관련 문서 링크가 업데이트되었습니다. 'Cloud scheduled tasks'가 'Routines'로 변경되어 클라우드 기반 작업 자동화 기능이 개선되었습니다. ",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/dbca4bd_overview.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/platforms\" target=\"_blank\">Platforms</a>",
+        "summary": "플랫폼 표의 'Claude runs on' 열의 일부 내용이 수정되었습니다. 'Scheduled tasks'에 대한 클라우드 실행 위치가 변경되었습니다. (빈번한 자동화 작업 개선)",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/dbca4bd_platforms.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/plugin-marketplaces\" target=\"_blank\">Plugin Marketplaces</a>",
+        "summary": "마켓플레이스 구성 및 사용법이 업데이트되었습니다. 코드 블록의 테마 속성 제거 및 몇몇 예시 코드 수정이 이루어졌습니다. 전반적인 문서 구조는 유지되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/dbca4bd_plugin-marketplaces.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/plugins-reference\" target=\"_blank\">Plugins Reference</a>",
+        "summary": "플러그인 캐싱 관련 내용이 추가되었고, 플러그인 관리 명령어에 대한 예시가 보강되었습니다. 또한, 플러그인 구조와 버전 관리 관련 모범 사례가 제시되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/dbca4bd_plugins-reference.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/quickstart\" target=\"_blank\">Quickstart</a>",
+        "summary": "설치 관련 안내의 CMD 사용법 문구가 수정되었고, CMD/PowerShell 구분 방법이 추가되었습니다. 사용자에게 더 명확한 안내를 제공합니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/dbca4bd_quickstart.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/remote-control\" target=\"_blank\">Remote Control</a>",
+        "summary": "원격 제어 기능 관련 설명이 업데이트되었고, 몇 가지 설정 방식이 수정되었습니다. 또한, 테이블의 몇몇 링크가 수정되었습니다. ",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/dbca4bd_remote-control.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/routines\" target=\"_blank\">Routines</a>",
+        "summary": "새로운 파일로, 클로드 코드 자동화 기능인 루틴을 소개합니다. 루틴 생성, 트리거 설정, 사용량 제한 등 세부 정보를 포함합니다.",
+        "tag_text": "NEW",
+        "tag_class": "new"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/sandboxing\" target=\"_blank\">Sandboxing</a>",
+        "summary": "샌드박스 설정 가이드가 업데이트되었으며, 파일 시스템 및 네트워크 접근 제어 관련 설정 방법이 추가되었습니다. 보안 강화에 기여합니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/dbca4bd_sandboxing.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/scheduled-tasks\" target=\"_blank\">Scheduled Tasks</a>",
+        "summary": "Cloud 스케줄링 옵션이 /routines로 변경되었고, 만료에 대한 설명이 업데이트되었습니다. 지속적인 스케줄링 옵션이 개선되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/dbca4bd_scheduled-tasks.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/server-managed-settings\" target=\"_blank\">Server Managed Settings</a>",
+        "summary": "서버 관리 설정 문서가 업데이트되어, 권한 거부, 감사 스크립트 실행, 자동 모드 설정 및 원격 설정 강제 새로 고침에 대한 예시를 포함합니다. 보안 강화 및 설정 관리가 용이해집니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/dbca4bd_server-managed-settings.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/settings\" target=\"_blank\">Settings</a>",
+        "summary": "`cleanupPeriodDays` 설명이 개선되고, `minimumVersion` 설정이 추가되어 버전 관리를 강화했습니다. 사용자 경험 향상 기대.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/dbca4bd_settings.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/setup\" target=\"_blank\">Setup</a>",
+        "summary": "설치 명령어 안내 개선, 윈도우 환경 CMD와 PowerShell 구분 방법 추가, Alpine Linux 설치 안내 추가 및 업데이트 채널 설정 관련 내용이 수정되었습니다. (설치 관련 내용 보강 및 개선)",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/dbca4bd_setup.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/skills\" target=\"_blank\">Skills</a>",
+        "summary": "skills.md 문서가 업데이트되었습니다. 다양한 예시와 명령어 사용법, 기능 설명이 추가되었습니다.  코드 블록 사용법과 컨텍스트 설정 등 전반적인 사용 가이드가 개선되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/dbca4bd_skills.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/statusline\" target=\"_blank\">Statusline</a>",
+        "summary": "문서 내 코드 블록의 테마 속성 변경과 일부 코드 예시가 수정되었습니다. 사용자 정의 설정에 대한 정보가 업데이트되었습니다. ",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/dbca4bd_statusline.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/sub-agents\" target=\"_blank\">Sub Agents</a>",
+        "summary": "Sub-agent 사용 예시와 설정에 대한 전반적인 내용이 업데이트되었습니다. 특히, hook, 권한 설정, 그리고 sub-agent 실행 방식에 대한 예시가 추가되었습니다. (예: @-mention, --agent)",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/dbca4bd_sub-agents.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/troubleshooting\" target=\"_blank\">Troubleshooting</a>",
+        "summary": "설치 문제 해결 가이드가 업데이트되었습니다. TLS 1.2 활성화, 프록시 설정, 연결 문제 해결 방법 등이 추가되어 설치 오류를 개선했습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/dbca4bd_troubleshooting.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/vs-code\" target=\"_blank\">Vs Code</a>",
+        "summary": "VS Code 확장 기능의 이미지 URL이 업데이트되었습니다. 사용자 경험에 직접적인 영향은 없지만, 이미지 로딩 관련 문제를 해결할 수 있습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/dbca4bd_vs-code.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/web-quickstart\" target=\"_blank\">Web Quickstart</a>",
+        "summary": "웹 설정 단계 안내가 업데이트되었고, 예약 작업 관련 링크가 '루틴'으로 변경되었습니다. 사용자 편의성을 위한 변경입니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/dbca4bd_web-quickstart.txt"
+      },
+      {
+        "title": "Web-Scheduled-Tasks",
+        "summary": "문서가 삭제되었습니다.",
+        "tag_text": "DELETE",
+        "tag_class": "delete"
+      }
+    ]
+  },
+  {
     "date": "2026-04-14T15:29:16Z",
     "commit_hash": "355ef07",
     "entries": [
