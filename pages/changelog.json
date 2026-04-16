@@ -1,5 +1,290 @@
 [
   {
+    "date": "2026-04-16T15:35:22Z",
+    "commit_hash": "b66412d",
+    "entries": [
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/agent-sdk__agent-loop\" target=\"_blank\">Agent Sdk__Agent Loop</a>",
+        "summary": "effort 레벨에 'xhigh' 옵션이 추가되어 Claude Opus 4.7 모델에서 더 깊은 추론을 지원합니다. 코딩 및 에이전트 작업에 권장합니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/b66412d_agent-sdk__agent-loop.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/agent-sdk__cost-tracking\" target=\"_blank\">Agent Sdk__Cost Tracking</a>",
+        "summary": "비용 추적 가이드가 업데이트되어, 총 비용이 아닌 추정치를 사용하고, 실제 청구 데이터와 다를 수 있음을 명시합니다. API 사용 안내도 추가되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/b66412d_agent-sdk__cost-tracking.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/agent-sdk__migration-guide\" target=\"_blank\">Agent Sdk__Migration Guide</a>",
+        "summary": "ClaudeCodeOptions에서 ClaudeAgentOptions로 변경, 모델 버전 업데이트. SDK 명칭 일관성 및 최신 모델 지원.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/b66412d_agent-sdk__migration-guide.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/agent-sdk__modifying-system-prompts\" target=\"_blank\">Agent Sdk__Modifying System Prompts</a>",
+        "summary": "프롬프트 캐싱 개선을 위해 `excludeDynamicSections` 옵션이 추가되었습니다. 여러 사용자 및 머신에서 캐시를 공유하여 성능을 향상시킵니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/b66412d_agent-sdk__modifying-system-prompts.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/agent-sdk__overview\" target=\"_blank\">Agent Sdk__Overview</a>",
+        "summary": "Opus 4.7 지원을 위해 Agent SDK 최소 버전을 명시하고, 관련 문제 해결 가이드를 추가하여 사용성을 개선했습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/b66412d_agent-sdk__overview.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/agent-sdk__python\" target=\"_blank\">Agent Sdk__Python</a>",
+        "summary": "ClaudeAgentOptions의 'effort' 속성에 'xhigh' 옵션이 추가되었습니다. 이는 에이전트의 노력 수준을 세분화하여 제어할 수 있게 합니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/b66412d_agent-sdk__python.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/agent-sdk__quickstart\" target=\"_blank\">Agent Sdk__Quickstart</a>",
+        "summary": "Claude Opus 4.7 모델 사용 시 발생할 수 있는 API 오류 해결 안내 추가. Agent SDK v0.2.111 이상으로 업데이트 필요.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/b66412d_agent-sdk__quickstart.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/agent-sdk__secure-deployment\" target=\"_blank\">Agent Sdk__Secure Deployment</a>",
+        "summary": "모델 버전 업데이트로 인해 보안 관련 내용이 변경되었습니다. 최신 모델의 강력한 성능을 강조합니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/b66412d_agent-sdk__secure-deployment.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/agent-sdk__slash-commands\" target=\"_blank\">Agent Sdk__Slash Commands</a>",
+        "summary": "모델 버전이 claude-opus-4-6에서 claude-opus-4-7로 업데이트되었습니다. 보안 검사 기능의 성능 개선을 의미합니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/b66412d_agent-sdk__slash-commands.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/agent-sdk__typescript-v2-preview\" target=\"_blank\">Agent Sdk__Typescript V2 Preview</a>",
+        "summary": "예제 코드에서 모델이 claude-opus-4-6에서 claude-opus-4-7로 변경되었습니다. 최신 모델 사용을 반영합니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/b66412d_agent-sdk__typescript-v2-preview.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/agent-sdk__typescript\" target=\"_blank\">Agent Sdk__Typescript</a>",
+        "summary": "query() 함수 구성 객체의 속성, 유형, 기본값 및 설명을 업데이트하여 SDK의 사용성을 개선하고 정보 전달의 명확성을 높였습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/b66412d_agent-sdk__typescript.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/amazon-bedrock\" target=\"_blank\">Amazon Bedrock</a>",
+        "summary": "Opus 모델 버전 업데이트 및 환경 변수 설정 방법 변경. 1M 토큰 컨텍스트 윈도우 지원 모델에 Opus 4.7 추가. (모델 버전, 설정 관련 변화)",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/b66412d_amazon-bedrock.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/changelog\" target=\"_blank\">Changelog</a>",
+        "summary": "2.1.111 버전에서 Opus 4.7 xhigh 모델 지원, 다양한 기능 추가 및 개선, 버그 수정이 이루어졌습니다. 사용자 경험과 안정성을 향상시켰습니다. (Opus 4.7 xhigh 지원, 기능 추가, 버그 수정)",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/b66412d_changelog.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/claude-code-on-the-web\" target=\"_blank\">Claude Code On The Web</a>",
+        "summary": "웹 기반 Claude 코드 세션에서 아티팩트 링크를 세션에 연결하는 기능이 추가되어 리뷰어들이 쉽게 관련 세션을 확인할 수 있습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/b66412d_claude-code-on-the-web.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/cli-reference\" target=\"_blank\">Cli Reference</a>",
+        "summary": "--effort 플래그에 xhigh 레벨이 추가되었고, --enable-auto-mode 플래그가 제거되었습니다. 자동 모드 접근 방식이 변경되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/b66412d_cli-reference.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/code-review\" target=\"_blank\">Code Review</a>",
+        "summary": "REVIEW.md의 사용법과 예시가 개선되었습니다. 검토 규칙을 정의하여 검토 동작을 맞춤 설정하는 방법을 설명합니다. (새로운 기능 추가)",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/b66412d_code-review.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/commands\" target=\"_blank\">Commands</a>",
+        "summary": "명령어 목록에 새로운 항목이 추가되었고, 일부 명령어에 대한 설명이 개선되었습니다. /batch 명령어에 대한 자세한 내용이 추가되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/b66412d_commands.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/common-workflows\" target=\"_blank\">Common Workflows</a>",
+        "summary": "모델별 사고 방식 및 제어 방식에 대한 세부 정보가 업데이트되었습니다.  지원되는 모델에서 동적 사고 방식을 활용하여 효율성을 높입니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/b66412d_common-workflows.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/costs\" target=\"_blank\">Costs</a>",
+        "summary": "/cost 명령어의 비용 정보가 실제 청구와 다를 수 있다는 경고가 추가되었습니다. 실제 청구는 Claude Console에서 확인하세요. 왜냐하면 정확한 비용 정보를 제공하기 때문입니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/b66412d_costs.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/desktop\" target=\"_blank\">Desktop</a>",
+        "summary": "Auto 모드 설명 업데이트 및 모델별 지원 계획 명시. 사고 모드 설정 관련 내용이 변경되어, 적응형 사고 기능에 대한 설명이 추가되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/b66412d_desktop.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/env-vars\" target=\"_blank\">Env Vars</a>",
+        "summary": "환경 변수 문서가 업데이트되었습니다.  `CLAUDE_CODE_DISABLE_ADAPTIVE_THINKING` 설명이 개선되었고, `CLAUDE_CODE_EFFORT_LEVEL`에 'xhigh' 옵션이 추가되었습니다.  ",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/b66412d_env-vars.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/fast-mode\" target=\"_blank\">Fast Mode</a>",
+        "summary": "Fast 모드가 Opus 4.7 및 다른 모델에서 지원되지 않는다는 정보가 추가되었습니다. 해당 모드의 제약 사항을 명확히 했습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/b66412d_fast-mode.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/github-actions\" target=\"_blank\">Github Actions</a>",
+        "summary": "Claude Code GitHub Actions의 기본 모델이 Sonnet에서 Opus 4.7로 업데이트되었습니다. 모델 파라미터를 통해 변경 가능합니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/b66412d_github-actions.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/google-vertex-ai\" target=\"_blank\">Google Vertex Ai</a>",
+        "summary": "Opus 모델 버전 업데이트 및 관련 환경 변수 지침이 변경되었습니다. 1M 토큰 컨텍스트 윈도우 지원 모델이 갱신되었습니다. ",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/b66412d_google-vertex-ai.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/jetbrains\" target=\"_blank\">Jetbrains</a>",
+        "summary": "IDE 통합 설정 안내가 업데이트되어 터미널에서 diff를 볼 수 있는 옵션이 추가되었습니다. 사용자 편의성을 향상시켰습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/b66412d_jetbrains.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/microsoft-foundry\" target=\"_blank\">Microsoft Foundry</a>",
+        "summary": "Foundry 모델 버전 고정 권장 사항이 추가되었고, opus 모델의 기본 버전 설정이 4.7로 업데이트되었습니다. 모델 사용 안정성을 높임.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/b66412d_microsoft-foundry.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/model-config\" target=\"_blank\">Model Config</a>",
+        "summary": "모델 별 기본 설정 및 API 제공업체 관련 정보가 업데이트되었습니다. 또한 노력 수준 설정에 대한 자세한 안내가 추가되어, 사용자가 더욱 효과적으로 설정을 제어할 수 있습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/b66412d_model-config.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/overview\" target=\"_blank\">Overview</a>",
+        "summary": "설치 가이드가 추가되고, 다양한 환경에서 Claude Code를 설치하고 설정하는 방법을 안내합니다. 사용자 경험을 개선합니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/b66412d_overview.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/permission-modes\" target=\"_blank\">Permission Modes</a>",
+        "summary": "자동 모드 활성화 조건이 업데이트되었으며, Max, Team, Enterprise 및 API 플랜에서 `--enable-auto-mode` 플래그 없이 Shift+Tab으로 접근 가능하도록 변경되었습니다. 모델 및 요금제 관련 세부 정보가 수정되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/b66412d_permission-modes.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/quickstart\" target=\"_blank\">Quickstart</a>",
+        "summary": "설치 가이드 UI가 개선되었고, 데스크톱 앱을 기본 설치 옵션으로 지원하며, Windows 쉘 선택 기능 및 UI 디자인이 업데이트되었습니다. 사용자 경험 향상에 기여합니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/b66412d_quickstart.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/settings\" target=\"_blank\">Settings</a>",
+        "summary": "effortLevel 설정에 'xhigh' 옵션이 추가되었고, 모델 지원 범위가 명시적으로 업데이트되었습니다. 더 높은 노력 수준을 지원합니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/b66412d_settings.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/skills\" target=\"_blank\">Skills</a>",
+        "summary": "skill 설정 effort level 옵션에 'xhigh'가 추가되어 모델의 다양한 노력을 지원합니다. 모델 성능 조절에 유용합니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/b66412d_skills.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/statusline\" target=\"_blank\">Statusline</a>",
+        "summary": "세션 비용 추정 방식이 변경되었고, 모델 ID가 업데이트되었습니다. 정확한 비용과 모델 정보 제공을 위한 변경입니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/b66412d_statusline.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/sub-agents\" target=\"_blank\">Sub Agents</a>",
+        "summary": "서브 에이전트 모델 설정에서 'opus' 모델 버전이 4.6에서 4.7로 업데이트되었고, 'effort' 레벨에 'xhigh' 옵션이 추가되었습니다. 더 다양한 모델 옵션과 세분화된 노력 수준을 제공합니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/b66412d_sub-agents.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/third-party-integrations\" target=\"_blank\">Third Party Integrations</a>",
+        "summary": "실험 변형을 위한 사전 버킷 처리 로직이 추가되었습니다. 이 변경으로 인해 실험 변형 결정이 더 정확해집니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/b66412d_third-party-integrations.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/ultrareview\" target=\"_blank\">Ultrareview</a>",
+        "summary": "Ultrareview 기능 소개 문서가 신규 추가되었습니다. 코드 검토를 위한 새로운 기능과 사용법을 안내합니다. (What's new: 코드 검토 기능 추가, Why it matters: 코드 품질 향상)",
+        "tag_text": "NEW",
+        "tag_class": "new"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/web-quickstart\" target=\"_blank\">Web Quickstart</a>",
+        "summary": "세션 사전 채우기 기능이 추가되어, 쿼리 매개변수를 통해 프롬프트, 저장소, 환경을 미리 설정하여 통합을 용이하게 합니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/b66412d_web-quickstart.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/whats-new__2026-w13\" target=\"_blank\">Whats New__2026 W13</a>",
+        "summary": "링크 경로를 /en/에서 /docs/en/로 변경했습니다. 변경된 링크들은 문서 내 접근성을 개선합니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/b66412d_whats-new__2026-w13.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/whats-new__2026-w14\" target=\"_blank\">Whats New__2026 W14</a>",
+        "summary": "링크 텍스트가 업데이트되어 문서 내 링크가 변경되었습니다. 사용자 안내 및 접근성 향상을 위한 변경입니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/b66412d_whats-new__2026-w14.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/whats-new__2026-w15\" target=\"_blank\">Whats New__2026 W15</a>",
+        "summary": "링크가 변경되어 문서 내 링크의 경로가 업데이트되었습니다. 사용자 경험 개선 및 문서 내비게이션을 위해 중요합니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/b66412d_whats-new__2026-w15.txt"
+      }
+    ]
+  },
+  {
     "date": "2026-04-15T15:30:29Z",
     "commit_hash": "dbca4bd",
     "entries": [
