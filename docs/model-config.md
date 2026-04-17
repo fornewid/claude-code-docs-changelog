@@ -45,7 +45,7 @@ Aliases point to the recommended version for your provider and update over time.
 
 You can configure your model in several ways, listed in order of priority:
 
-1. **During session** - Use `/model <alias|name>` to switch models mid-session
+1. **During session** - Use `/model <alias|name>` to switch immediately, or run `/model` with no argument to open the picker. The picker asks for confirmation when the conversation has prior output, since the next response re-reads the full history without cached context
 2. **At startup** - Launch with `claude --model <alias|name>`
 3. **Environment variable** - Set `ANTHROPIC_MODEL=<alias|name>`
 4. **Settings** - Configure permanently in your settings file using the `model`
@@ -183,13 +183,13 @@ Each level trades token spend against capability. The default suits most coding 
 
 The effort scale is calibrated per model, so the same level name does not represent the same underlying value across models.
 
-For one-off deep reasoning without changing your session setting, include "ultrathink" in your prompt to raise effort for that turn. This has no effect if your session is already at the highest available level.
+For one-off deep reasoning without changing your session setting, include "ultrathink" in your prompt. This adds an in-context instruction telling the model to reason more on that turn; it does not change the effort level sent to the API.
 
 #### Set the effort level
 
 You can change effort through any of the following:
 
-* **`/effort`**: run `/effort` followed by a level name to change it, or `/effort auto` to reset to the model default
+* **`/effort`**: run `/effort` with no arguments to open an interactive slider, `/effort` followed by a level name to set it directly, or `/effort auto` to reset to the model default
 * **In `/model`**: use left/right arrow keys to adjust the effort slider when selecting a model
 * **`--effort` flag**: pass a level name to set it for a single session when launching Claude Code
 * **Environment variable**: set `CLAUDE_CODE_EFFORT_LEVEL` to a level name or `auto`
