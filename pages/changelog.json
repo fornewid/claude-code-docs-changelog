@@ -1,5 +1,88 @@
 [
   {
+    "date": "2026-04-18T15:16:21Z",
+    "commit_hash": "6d58a33",
+    "entries": [
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/agent-sdk__hosting\" target=\"_blank\">Agent Sdk__Hosting</a>",
+        "summary": "SDK 런타임 종속성 및 Claude Code CLI 관련 내용이 업데이트되었습니다. SDK 사용에 필요한 환경 설정 정보가 개선되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/6d58a33_agent-sdk__hosting.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/agent-sdk__overview\" target=\"_blank\">Agent Sdk__Overview</a>",
+        "summary": "TypeScript SDK가 Claude Code 바이너리를 선택적 종속성으로 번들링하여 별도 설치가 필요 없어졌습니다. (API Key 설정 관련)",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/6d58a33_agent-sdk__overview.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/agent-sdk__quickstart\" target=\"_blank\">Agent Sdk__Quickstart</a>",
+        "summary": "TypeScript SDK 사용 시 Claude Code 바이너리 설치 불필요. 플랫폼별 기본 번들 제공으로 개발 편의성 향상.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/6d58a33_agent-sdk__quickstart.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/agent-sdk__typescript-v2-preview\" target=\"_blank\">Agent Sdk__Typescript V2 Preview</a>",
+        "summary": "SDK 사용 시 별도 설치 불필요 안내 추가. 네이티브 Claude Code 바이너리가 SDK에 포함되어 설치 편의성을 높임.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/6d58a33_agent-sdk__typescript-v2-preview.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/agent-sdk__typescript\" target=\"_blank\">Agent Sdk__Typescript</a>",
+        "summary": "SDK 사용 시 필요한 Claude Code 바이너리 관련 내용이 추가되고, pathToClaudeCodeExecutable 기본값이 변경되었습니다. 설치 과정 및 사용 편의성이 개선되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/6d58a33_agent-sdk__typescript.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/changelog\" target=\"_blank\">Changelog</a>",
+        "summary": "2.1.114 버전에서 에이전트 팀 동료의 도구 권한 요청 시 권한 대화 상자 충돌을 수정했습니다. 2.1.113 버전에서는 CLI를 네이티브 Claude Code 바이너리로 변경, 샌드박스 보안 강화, 다양한 버그 수정 및 개선 사항을 포함합니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/6d58a33_changelog.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/hooks\" target=\"_blank\">Hooks</a>",
+        "summary": "세션 당 한 번만 실행되는 'once' 옵션의 동작 방식이 변경되었습니다. 스킬 프론트매터에서 선언된 훅에만 적용되도록 수정되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/6d58a33_hooks.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/model-config\" target=\"_blank\">Model Config</a>",
+        "summary": "opusplan 모델의 컨텍스트 창 관련 내용이 추가되었습니다. opus 모델의 1M 업그레이드는 opusplan에 적용되지 않습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/6d58a33_model-config.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/routines\" target=\"_blank\">Routines</a>",
+        "summary": "PR 필터 옵션이 수정되었습니다. 'From fork' 필터가 제거되어, 외부 기여자 관련 PR 처리 방식이 변경되었습니다. 보안 및 스타일 검토 방식에 영향을 줄 수 있습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/6d58a33_routines.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/setup\" target=\"_blank\">Setup</a>",
+        "summary": "npm 설치 관련 내용이 업데이트되었습니다. npm을 통한 설치 방법과 native binary 설치를 병행하는 방법이 소개되었습니다.  npm 의존성 관련 내용도 추가되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/6d58a33_setup.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/troubleshooting\" target=\"_blank\">Troubleshooting</a>",
+        "summary": "npm 설치 후 네이티브 바이너리 오류 관련 문제 해결 가이드가 추가되었습니다. 플랫폼 미지원 및 선택적 의존성 관련 내용 포함.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/6d58a33_troubleshooting.txt"
+      }
+    ]
+  },
+  {
     "date": "2026-04-17T15:25:45Z",
     "commit_hash": "19eb11d",
     "entries": [
