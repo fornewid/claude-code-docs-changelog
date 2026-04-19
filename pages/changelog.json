@@ -1,5 +1,95 @@
 [
   {
+    "date": "2026-04-19T15:15:56Z",
+    "commit_hash": "0181e3e",
+    "entries": [
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/agent-sdk__typescript\" target=\"_blank\">Agent Sdk__Typescript</a>",
+        "summary": "Sandbox NetworkConfig에 deniedDomains 속성이 추가되어, 접근을 차단할 도메인을 지정하여 보안을 강화했습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/0181e3e_agent-sdk__typescript.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/changelog\" target=\"_blank\">Changelog</a>",
+        "summary": "Claude Code의 기능 개선 및 버그 수정이 이루어졌습니다. 특히, Opus 4.7 xhigh, /ultrareview, /less-permission-prompts 등 새로운 기능이 추가되었고, 사용자 환경 개선을 위한 여러 수정 사항이 포함되었습니다. (What changed: Added new features and bug fixes. Why it matters: Improves usability and performance.)",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/0181e3e_changelog.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/commands\" target=\"_blank\">Commands</a>",
+        "summary": "/compact 명령어 설명 추가 및 `/fewer-permission-prompts` 스킬 추가. 맥락 정리 기능과 권한 프롬프트 감소 기능에 대한 내용이 추가되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/0181e3e_commands.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/fullscreen\" target=\"_blank\">Fullscreen</a>",
+        "summary": "선택 영역 확장 기능 추가: Shift + 방향키 조합으로 선택 영역을 확장하고, Shift + Home/End로 라인 시작/끝까지 확장 가능합니다. 이는 사용자 편의성을 향상시킵니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/0181e3e_fullscreen.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/interactive-mode\" target=\"_blank\">Interactive Mode</a>",
+        "summary": "명령어 단축키 및 텍스트 편집 기능 관련 내용이 수정되어, 커서 이동 및 삭제 기능이 개선되었습니다. 사용 편의성이 향상되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/0181e3e_interactive-mode.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/keybindings\" target=\"_blank\">Keybindings</a>",
+        "summary": "스크롤 및 선택 관련 키 바인딩에 새로운 액션들이 추가되어 텍스트 선택 및 탐색 기능이 향상되었습니다. 사용자 경험 개선.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/0181e3e_keybindings.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/permissions\" target=\"_blank\">Permissions</a>",
+        "summary": "와일드카드 매칭 예시가 수정되었고, exec wrapper, find 관련 내용이 추가되어 권한 부여에 대한 추가적인 가이드라인을 제공합니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/0181e3e_permissions.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/remote-control\" target=\"_blank\">Remote Control</a>",
+        "summary": "원격 제어 기능에서 `/extra-usage` 명령어가 추가되었고, 일부 명령의 사용 가능 여부에 대한 설명이 수정되었습니다. 이는 사용자 경험을 개선합니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/0181e3e_remote-control.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/sandboxing\" target=\"_blank\">Sandboxing</a>",
+        "summary": "deniedDomains를 사용하여 허용된 도메인 내에서 특정 도메인 접근을 차단하는 기능 추가. 보안 강화 및 접근 제어 개선.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/0181e3e_sandboxing.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/scheduled-tasks\" target=\"_blank\">Scheduled Tasks</a>",
+        "summary": "반복 중지 기능이 추가되어 Esc 키를 눌러 루프를 중지할 수 있으며, 직접 예약한 작업은 영향을 받지 않습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/0181e3e_scheduled-tasks.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/settings\" target=\"_blank\">Settings</a>",
+        "summary": "샌드박스 설정 관련 문서가 업데이트되었습니다. 네트워크 및 파일 시스템 접근 권한 설정, 프록시 설정 등이 추가/개선되어 보안 및 유연성이 향상되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/0181e3e_settings.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/ultrareview\" target=\"_blank\">Ultrareview</a>",
+        "summary": "확인 대화 상자에 검토 범위(분기 검토 시 파일 및 줄 수 포함)가 추가되어, 검토 프로세스에 대한 더 나은 정보를 제공합니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/0181e3e_ultrareview.txt"
+      }
+    ]
+  },
+  {
     "date": "2026-04-18T15:16:21Z",
     "commit_hash": "6d58a33",
     "entries": [
