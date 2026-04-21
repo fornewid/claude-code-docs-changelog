@@ -1,5 +1,137 @@
 [
   {
+    "date": "2026-04-21T15:31:58Z",
+    "commit_hash": "9172ae7",
+    "entries": [
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/agent-sdk__typescript\" target=\"_blank\">Agent Sdk__Typescript</a>",
+        "summary": "SDKTaskUpdatedMessage가 추가되어 백그라운드 작업 상태 변경을 알립니다. 작업 상태 추적 및 관리에 중요합니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/9172ae7_agent-sdk__typescript.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/best-practices\" target=\"_blank\">Best Practices</a>",
+        "summary": "/btw 사용법에 대한 URL이 수정되었습니다. 더 이상 사용되지 않는 /btw 관련 오타를 수정하여 사용성을 개선했습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/9172ae7_best-practices.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/changelog\" target=\"_blank\">Changelog</a>",
+        "summary": "Claude Code의 새로운 기능, 개선 사항, 버그 수정 사항이 업데이트 되었습니다. Opus 4.7 xhigh 모델 지원, Auto 모드 개선, /ultrareview 기능 추가, 권한 프롬프트 감소 기능, PowerShell 도구 롤아웃 등 다양한 변경사항이 있습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/9172ae7_changelog.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/claude-directory\" target=\"_blank\">Claude Directory</a>",
+        "summary": "윈도우에서의 설정 경로가 명확해지고, 디렉토리 탐색 기능이 개선되었습니다. 또한, 파일 선택 가이드와 문제 해결 섹션이 추가되어 사용자 경험을 향상시켰습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/9172ae7_claude-directory.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/commands\" target=\"_blank\">Commands</a>",
+        "summary": "`/btw` 명령어의 링크 텍스트가 수정되었고, `/terminal-setup` 명령어가 지원하는 터미널 목록이 업데이트되었습니다. 사용자 편의성을 위한 변경입니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/9172ae7_commands.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/common-workflows\" target=\"_blank\">Common Workflows</a>",
+        "summary": "노트 및 비코드 폴더에서 작업하는 방법이 추가되었습니다. 문서, 마크다운 파일 등에서 Claude Code를 사용하여 검색, 편집, 재구성 가능합니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/9172ae7_common-workflows.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/desktop\" target=\"_blank\">Desktop</a>",
+        "summary": "팀원들을 위해 SSH 연결을 미리 설정하는 기능이 추가되었습니다. 관리자는 설정 파일을 통해 SSH 설정을 배포하고, 사용자는 앱에서 편집/삭제할 수 없습니다. 효율적인 팀 협업을 돕습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/9172ae7_desktop.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/env-vars\" target=\"_blank\">Env Vars</a>",
+        "summary": "CLAUDE_ENV_FILE 환경 변수에 대한 설명이 업데이트되었습니다. 쉘 스크립트 실행 방식이 명확하게 수정되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/9172ae7_env-vars.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/hooks-guide\" target=\"_blank\">Hooks Guide</a>",
+        "summary": "direnv 연동 방식이 변경되었고, Agent 훅이 실험적으로 변경되었습니다. 파일 변경 감지 방식과 'if' 조건 필터에 대한 설명도 업데이트되었습니다. (환경 변수, agent 훅, if 필드)",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/9172ae7_hooks-guide.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/hooks\" target=\"_blank\">Hooks</a>",
+        "summary": "Bash 명령어 필터링 방식이 변경되고, Agent Hook에 대한 정보가 업데이트되었습니다. Agent Hook은 실험적이며 변경될 수 있습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/9172ae7_hooks.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/interactive-mode\" target=\"_blank\">Interactive Mode</a>",
+        "summary": "macOS 터미널 설정 안내가 업데이트되었고, Shift+Enter 지원 터미널 목록이 확장되었으며, 'u' (undo) 명령어가 추가되었습니다. 사용성을 개선했습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/9172ae7_interactive-mode.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/settings\" target=\"_blank\">Settings</a>",
+        "summary": "SSH 연결 설정 옵션 추가로, 데스크톱 환경에서 SSH 연결을 쉽게 관리하고 사용할 수 있게 되었습니다. 팀 협업에 유용합니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/9172ae7_settings.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/statusline\" target=\"_blank\">Statusline</a>",
+        "summary": "/statusline 명령 사용법 및 관련 내용을 업데이트하여, 사용자가 더 쉽게 상태 표시줄을 설정하도록 돕습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/9172ae7_statusline.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/sub-agents\" target=\"_blank\">Sub Agents</a>",
+        "summary": "`/btw` 명령어 사용법 변경 및 관련 링크 수정. 대화 중 빠른 질문에 대한 안내가 개선되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/9172ae7_sub-agents.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/terminal-config\" target=\"_blank\">Terminal Config</a>",
+        "summary": "터미널 설정을 안내하는 문서가 변경되었습니다. Shift+Enter, 알림 설정, tmux 설정, Vim 모드 설정을 다룹니다. 터미널 사용성을 개선하고 기능 확장을 위한 내용입니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/9172ae7_terminal-config.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/ultrareview\" target=\"_blank\">Ultrareview</a>",
+        "summary": "Pro 및 Max 가입자의 무료 Ultrareview 사용 횟수가 2026년 5월 5일까지로 변경되었습니다. 무료 사용 기간 만료에 대한 명시적인 안내가 추가되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/9172ae7_ultrareview.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/vs-code\" target=\"_blank\">Vs Code</a>",
+        "summary": "확장된 사고 기능에 대한 설명이 개선되었습니다. Claude의 사고 과정이 대화 내에서 표시되는 방식에 대한 자세한 내용이 추가되었습니다. (최대 150자)",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/9172ae7_vs-code.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/zero-data-retention\" target=\"_blank\">Zero Data Retention</a>",
+        "summary": "ZDR 요청 방법이 업데이트되어, 영업팀 연락처가 추가되었습니다. 엔터프라이즈 전환 관련 안내도 포함되어, 더 나은 접근성을 제공합니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/9172ae7_zero-data-retention.txt"
+      }
+    ]
+  },
+  {
     "date": "2026-04-19T15:15:56Z",
     "commit_hash": "0181e3e",
     "entries": [
