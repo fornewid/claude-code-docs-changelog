@@ -1,5 +1,227 @@
 [
   {
+    "date": "2026-04-22T15:30:45Z",
+    "commit_hash": "85110aa",
+    "entries": [
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/agent-sdk__observability\" target=\"_blank\">Agent Sdk__Observability</a>",
+        "summary": "추적 기능 개선, trace context 연동, 민감 데이터 제어 기능 추가. 애플리케이션 추적 연동, CLI 하위 프로세스 추적 전파 및 API 바디 로깅 옵션이 추가되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/85110aa_agent-sdk__observability.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/agent-sdk__python\" target=\"_blank\">Agent Sdk__Python</a>",
+        "summary": "`effort` 옵션의 값에서 'xhigh'가 제거되었습니다. 이는 작업 부하 레벨 설정을 단순화하고 유지 관리성을 개선합니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/85110aa_agent-sdk__python.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/agent-sdk__sessions\" target=\"_blank\">Agent Sdk__Sessions</a>",
+        "summary": "서버리스 환경 및 여러 기기에서 세션 재개를 위해 SessionStore 어댑터 사용법이 추가되었습니다. 세션 공유를 통해 유연성을 향상시킵니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/85110aa_agent-sdk__sessions.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/agent-sdk__subagents\" target=\"_blank\">Agent Sdk__Subagents</a>",
+        "summary": "AgentDefinition 구성에 disallowedTools, maxTurns, background, effort, permissionMode 필드가 추가되어 에이전트 제어 기능이 향상되었습니다. ",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/85110aa_agent-sdk__subagents.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/agent-sdk__typescript\" target=\"_blank\">Agent Sdk__Typescript</a>",
+        "summary": "sessionStore 옵션 추가로 세션 기록을 외부 저장소에 미러링하여 세션 지속성 확보. AgentDefinition에 모델, 메모리 등 다양한 설정 추가.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/85110aa_agent-sdk__typescript.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/changelog\" target=\"_blank\">Changelog</a>",
+        "summary": "2.1.117 업데이트: 기능 개선 및 버그 수정. 서브에이전트 활성화, `/model` 개선, 플러그인 의존성 해결, Advisor Tool 개선, OpenTelemetry 향상, macOS/Linux 빌드 속도 개선, Opus 4.6/Sonnet 4.6 기본 노력 수준 변경, OAuth 및 기타 버그 수정.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/85110aa_changelog.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/claude-directory\" target=\"_blank\">Claude Directory</a>",
+        "summary": "문제 해결 섹션이 개선되어, 진단 방법과 명령어를 안내하는 페이지로 연결됩니다. 더 간결하고 효율적인 문제 해결을 돕습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/85110aa_claude-directory.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/common-workflows\" target=\"_blank\">Common Workflows</a>",
+        "summary": "확장 사고 기능 개선: 진행 표시기가 업데이트되어 클로드의 작업 진행 상황을 더 명확하게 보여줍니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/85110aa_common-workflows.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/data-usage\" target=\"_blank\">Data Usage</a>",
+        "summary": "WebFetch 도메인 안전성 검사 관련 내용이 추가되었습니다. URL 접근 전 api.anthropic.com에 호스트 이름을 전송하여 안전성을 검사합니다. 이는 WebFetch 사용에 중요합니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/85110aa_data-usage.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/debug-your-config\" target=\"_blank\">Debug Your Config</a>",
+        "summary": "새로운 파일 추가로 Claude 설정 디버깅 가이드 제공. `/context`, `/doctor` 등 명령어로 설정 문제 진단 방법 안내. 설정 적용 확인 및 오류 해결 방법 제시.",
+        "tag_text": "NEW",
+        "tag_class": "new"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/env-vars\" target=\"_blank\">Env Vars</a>",
+        "summary": "`CLAUDE_CODE_SIMPLE_SYSTEM_PROMPT` 환경 변수 추가로 간단한 시스템 프롬프트 사용 옵션 제공. 로깅 개선 및 API 바디 로깅 방식 변경.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/85110aa_env-vars.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/hooks-guide\" target=\"_blank\">Hooks Guide</a>",
+        "summary": "UserPromptExpansion 이벤트가 추가되어, 사용자 입력 확장을 훅으로 제어할 수 있게 되었습니다. 훅 사용성이 개선되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/85110aa_hooks-guide.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/hooks\" target=\"_blank\">Hooks</a>",
+        "summary": "UserPromptExpansion 훅이 추가되어 슬래시 명령 확장을 지원하고, 훅 생명주기 다이어그램이 업데이트되었습니다. ",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/85110aa_hooks.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/interactive-mode\" target=\"_blank\">Interactive Mode</a>",
+        "summary": "작업 목록 표시 개수가 10개에서 5개로 변경되었습니다. 세션 요약 관련 설정 안내가 수정되었습니다. ",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/85110aa_interactive-mode.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/mcp\" target=\"_blank\">Mcp</a>",
+        "summary": "MCP 서버 설정 URL이 변경되었습니다. 설정 위치가 업데이트되어 팀 및 엔터프라이즈 사용자를 위한 접속 경로가 수정되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/85110aa_mcp.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/memory\" target=\"_blank\">Memory</a>",
+        "summary": "구성에 대한 디버깅 가이드 추가, 설정이 적용되지 않는 문제 진단 지원. 새로운 디버깅 리소스 추가.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/85110aa_memory.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/monitoring-usage\" target=\"_blank\">Monitoring Usage</a>",
+        "summary": "모니터링 설정 변수 표가 업데이트되어, 새로운 변수와 설명이 추가되었습니다.  텔레메트리 관련 설정이 개선되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/85110aa_monitoring-usage.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/network-config\" target=\"_blank\">Network Config</a>",
+        "summary": "네트워크 접근 관련 URL 안내가 수정되었습니다. Bedrock, Vertex AI, Foundry 사용 시 API 주소가 변경되며, 구 버전 클라이언트를 위해 storage.googleapis.com 접근 권한이 필요합니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/85110aa_network-config.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/overview\" target=\"_blank\">Overview</a>",
+        "summary": "설치 구성 요소의 사용법이 변경되었습니다. 더 간결하게 수정되어, 사용 편의성을 향상시켰습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/85110aa_overview.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/permissions\" target=\"_blank\">Permissions</a>",
+        "summary": "Bash 샌드박스 동작 설명이 구체화되었고, auto mode 분류기 설정 방법이 변경되었습니다. CLAUDE.md를 활용해 분류기 동작을 제어할 수 있습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/85110aa_permissions.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/plugin-dependencies\" target=\"_blank\">Plugin Dependencies</a>",
+        "summary": "마켓플레이스 간 플러그인 의존성 해결 방법이 추가되었습니다.  `marketplace.json` 설정을 통해 다른 마켓플레이스 플러그인 사용 가능, 보안 강화.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/85110aa_plugin-dependencies.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/plugin-marketplaces\" target=\"_blank\">Plugin Marketplaces</a>",
+        "summary": "마켓플레이스 메타데이터 필드에 `allowCrossMarketplaceDependenciesOn` 필드가 추가되어, 플러그인 의존성 관리가 개선되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/85110aa_plugin-marketplaces.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/plugins-reference\" target=\"_blank\">Plugins Reference</a>",
+        "summary": "플러그인 훅 이벤트에 UserPromptExpansion이 추가되어, 프롬프트 확장 시점을 제어 가능해졌습니다. 사용자 입력 처리 유연성 향상.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/85110aa_plugins-reference.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/quickstart\" target=\"_blank\">Quickstart</a>",
+        "summary": "실험 관련 코드 블록이 제거되었습니다. 설치 설정 컴포넌트가 변경되었으며, AI 코딩 지원 기능 사용을 위한 가이드 업데이트입니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/85110aa_quickstart.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/sandboxing\" target=\"_blank\">Sandboxing</a>",
+        "summary": "샌드박스 설정 관련 내용이 업데이트되었습니다. 샌드박스 실패 시의 동작 방식과 자동 허용 모드의 동작 방식에 대한 설명이 개선되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/85110aa_sandboxing.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/settings\" target=\"_blank\">Settings</a>",
+        "summary": "macOS 설정 배포 방식이 명확해지고, 새로운 'skipWebFetchPreflight' 설정이 추가되어 웹 fetch 관련 동작을 제어합니다. 이는 웹 접근성 제어를 위한 변경입니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/85110aa_settings.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/setup\" target=\"_blank\">Setup</a>",
+        "summary": "소스 다운로드 경로가 변경되었습니다. 이전 저장소 대신 새로운 다운로드 서버를 사용하여 안정성을 향상시켰습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/85110aa_setup.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/skills\" target=\"_blank\">Skills</a>",
+        "summary": "기술 속성 설명에 `$name` 인자 지원, 모델 관련 기능 개선, 디버깅 팁 추가. 기술 사용 편의성 및 디버깅 효율 증대.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/85110aa_skills.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/sub-agents\" target=\"_blank\">Sub Agents</a>",
+        "summary": "서브 에이전트 사전 로드 시 `disable-model-invocation` 스킬은 사용할 수 없으며, 프론트매터 훅 실행 시점이 변경되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/85110aa_sub-agents.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/terminal-config\" target=\"_blank\">Terminal Config</a>",
+        "summary": "VS Code, Cursor, Windsurf 터미널 설정 시 마우스 휠 스크롤 설정을 추가하여 전체 화면 모드에서 부드러운 스크롤을 제공합니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/85110aa_terminal-config.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/troubleshooting\" target=\"_blank\">Troubleshooting</a>",
+        "summary": "다운로드 서버 주소가 `storage.googleapis.com`에서 `downloads.claude.ai`로 변경되었습니다. 네트워크 문제 해결 가이드도 업데이트되었습니다. ",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/85110aa_troubleshooting.txt"
+      }
+    ]
+  },
+  {
     "date": "2026-04-21T15:31:58Z",
     "commit_hash": "9172ae7",
     "entries": [
