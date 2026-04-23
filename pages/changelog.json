@@ -1,5 +1,234 @@
 [
   {
+    "date": "2026-04-23T15:37:38Z",
+    "commit_hash": "0440e93",
+    "entries": [
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/agent-sdk__hooks\" target=\"_blank\">Agent Sdk__Hooks</a>",
+        "summary": "hookSpecificOutput 설명 개선, TypeScript SDK에서 defer 기능 추가, deny, defer, ask, allow 우선순위 명확화. 중요한 hook 제어 흐름 개선.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/0440e93_agent-sdk__hooks.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/agent-sdk__typescript\" target=\"_blank\">Agent Sdk__Typescript</a>",
+        "summary": "도구 사용 결정에 'defer' 옵션 추가, 'deferred_tool_use' 필드를 통해 지연된 도구 호출 정보 전달, UI에서 해당 요청을 처리하고 재개할 수 있도록 합니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/0440e93_agent-sdk__typescript.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/agent-sdk__user-input\" target=\"_blank\">Agent Sdk__User Input</a>",
+        "summary": "유저 인풋 요청 처리 방식에 대한 안내가 추가되었습니다. 딜레이 처리와 관련된 내용이 추가되어 사용자 응답 대기 시간을 관리하는 방법을 설명합니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/0440e93_agent-sdk__user-input.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/auto-mode-config\" target=\"_blank\">Auto Mode Config</a>",
+        "summary": "새로운 파일 추가. 자동 모드 설정에 대한 안내 및 구성 방법을 제공합니다. 신뢰할 수 있는 인프라 정의 및 규칙 재정의 방법을 설명합니다. (What changed: 자동 모드 설정 문서 추가, Why it matters: 자동 모드 구성을 위한 가이드 제공)",
+        "tag_text": "NEW",
+        "tag_class": "new"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/changelog\" target=\"_blank\">Changelog</a>",
+        "summary": "2.1.118 버전 업데이트: 비주얼 모드, `/usage` 통합, 테마 관리, 훅 기능 강화, 환경 변수 추가, WSL 설정 상속, 자동 모드 개선, 플러그인 태깅, 세션 기능 향상, 버그 수정 및 보안 강화.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/0440e93_changelog.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/claude-directory\" target=\"_blank\">Claude Directory</a>",
+        "summary": "~/.claude 디렉토리의 파일 설명이 업데이트되었고, 'tasks', 'shell-snapshots', 'backups'에 대한 설명이 추가되어 데이터 관리가 개선되었습니다. (데이터 손실 방지)",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/0440e93_claude-directory.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/commands\" target=\"_blank\">Commands</a>",
+        "summary": "`/permissions` 명령어의 링크가 `auto-mode-config`로 변경되었고, `/voice` 명령어의 사용법이 수정되었습니다. 음성 입력 모드 설정이 추가되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/0440e93_commands.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/common-workflows\" target=\"_blank\">Common Workflows</a>",
+        "summary": "세션 재개 시 요약본 사용 기능이 추가되어, 사용량 제한을 초과하지 않고 이전 대화를 더 효율적으로 불러올 수 있습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/0440e93_common-workflows.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/desktop\" target=\"_blank\">Desktop</a>",
+        "summary": "autoMode 설정에 대한 링크가 변경되어 자동 모드 설정을 위한 새로운 문서로 연결됩니다. 사용자 경험 개선.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/0440e93_desktop.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/errors\" target=\"_blank\">Errors</a>",
+        "summary": "메모리 파일 관리 관련 지침이 개선되었습니다. `CLAUDE.md` 파일 관리 방법과 모델 성능 저하 시 확인해야 할 사항들이 업데이트되었습니다. (무효한 지시사항 정리)",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/0440e93_errors.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/google-vertex-ai\" target=\"_blank\">Google Vertex Ai</a>",
+        "summary": "Vertex AI 지역 설정 및 모델 가용성에 대한 설명이 업데이트되었습니다. 더 정확한 정보 제공 및 문제 해결을 돕습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/0440e93_google-vertex-ai.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/hooks\" target=\"_blank\">Hooks</a>",
+        "summary": "세션 유지를 위한 기본 보존 기간 추가. 답변이 준비되지 않은 경우, 'defer'로 다시 처리하며, 최대 30일간 세션 파일이 보존됩니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/0440e93_hooks.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/interactive-mode\" target=\"_blank\">Interactive Mode</a>",
+        "summary": "음성 입력 관련 단축키 설명이 수정되었습니다. 스페이스바를 길게 누르거나 탭하여 음성 dictation을 시작하는 옵션이 추가되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/0440e93_interactive-mode.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/keybindings\" target=\"_blank\">Keybindings</a>",
+        "summary": "음성 입력 활성화 시, 채팅 컨텍스트에서 사용 가능한 액션 설명이 수정되었습니다. 더 정확한 기능 설명을 제공합니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/0440e93_keybindings.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/mcp\" target=\"_blank\">Mcp</a>",
+        "summary": "GitHub MCP 서버 연결 방식이 변경되었습니다. 개인 액세스 토큰을 사용하여 인증하도록 바뀌어 보안 및 접근성이 향상되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/0440e93_mcp.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/memory\" target=\"_blank\">Memory</a>",
+        "summary": "CLAUDE.md 파일 크기 제한과 관련하여, 더 효율적인 지침 관리를 위한 path-scoped rules 사용을 권장하며, import는 조직화에만 사용하도록 변경.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/0440e93_memory.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/model-config\" target=\"_blank\">Model Config</a>",
+        "summary": "모델 선택이 사용자 설정에 저장되며, 프로젝트 설정에 따른 동작 방식과 기본 노력 수준이 업데이트 되었습니다.  새로운 버전의 동작 방식에 대한 정보가 추가되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/0440e93_model-config.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/monitoring-usage\" target=\"_blank\">Monitoring Usage</a>",
+        "summary": "모니터링 설정 관련 내용이 업데이트되었습니다. tool_details 설정 시 command_name이 추가되었고, request 관련 정보에 effort 레벨이 추가되어 분석 기능이 향상되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/0440e93_monitoring-usage.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/network-config\" target=\"_blank\">Network Config</a>",
+        "summary": "네트워크 접근 요구사항 목록이 표 형식으로 변경되고, 관련 설명이 추가되었습니다.  다운로드 호스트 관련 내용도 수정되었습니다. ",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/0440e93_network-config.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/overview\" target=\"_blank\">Overview</a>",
+        "summary": "Debian, Fedora, RHEL, Alpine에서 apt, dnf, apk를 사용한 설치 방법이 추가되어 Linux 환경에서 더 다양한 설치 옵션을 제공합니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/0440e93_overview.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/permission-modes\" target=\"_blank\">Permission Modes</a>",
+        "summary": "자동 모드 설정 관련 링크가 변경되었습니다. 신뢰할 수 있는 인프라 설정을 위한 안내 링크가 업데이트되었습니다. ",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/0440e93_permission-modes.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/permissions\" target=\"_blank\">Permissions</a>",
+        "summary": "마켓플레이스 관련 내용을 업데이트하여 사용자가 플러그인을 추가하고 설치하는 방식을 명확하게 개선했습니다. 중요하지 않은 변경 사항은 제외되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/0440e93_permissions.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/plugin-dependencies\" target=\"_blank\">Plugin Dependencies</a>",
+        "summary": "플러그인 의존성 해결 절차가 개선되었으며, 의존성 누락 시 해결 방법이 추가되었습니다. 오류 발생 시 해결 방법도 업데이트되었습니다. ",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/0440e93_plugin-dependencies.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/plugin-marketplaces\" target=\"_blank\">Plugin Marketplaces</a>",
+        "summary": "플러그인 설치 제한 사항 검사가 네트워크/파일 시스템 작업 전에 수행되도록 업데이트되어 보안을 강화합니다. ",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/0440e93_plugin-marketplaces.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/quickstart\" target=\"_blank\">Quickstart</a>",
+        "summary": "Debian, Fedora, RHEL, Alpine에서 apt, dnf, apk를 사용한 설치 방법이 추가되어 Linux 패키지 매니저를 통한 설치를 지원합니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/0440e93_quickstart.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/remote-control\" target=\"_blank\">Remote Control</a>",
+        "summary": "원격 제어 기능의 상태가 '연구 미리보기'로 변경되었으며, 팀 및 엔터프라이즈 플랜에서의 기본 설정 변경 사항이 업데이트되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/0440e93_remote-control.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/server-managed-settings\" target=\"_blank\">Server Managed Settings</a>",
+        "summary": "자동 모드 설정 관련 안내가 업데이트되었습니다.  사용자에게 더 정확하고 최신 정보를 제공하며,  관련 설정 가이드 링크가 변경되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/0440e93_server-managed-settings.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/settings\" target=\"_blank\">Settings</a>",
+        "summary": "autoMode 및 blockedMarketplaces 설정 관련 링크와 설명이 업데이트되었습니다. 사용자 편의성을 위한 변경입니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/0440e93_settings.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/setup\" target=\"_blank\">Setup</a>",
+        "summary": "Linux 패키지 매니저(apt, dnf, apk)를 통한 설치 방법 추가 및 자동 업데이트 관련 내용이 수정되었습니다. 더 다양한 설치 옵션과 관리 방법을 제공합니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/0440e93_setup.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/sub-agents\" target=\"_blank\">Sub Agents</a>",
+        "summary": "서브 에이전트 페이지에 내용 요약과 MCP 서버 연결 관련 노트가 추가되어 에이전트 설정과 사용법을 명확하게 설명합니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/0440e93_sub-agents.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/voice-dictation\" target=\"_blank\">Voice Dictation</a>",
+        "summary": "음성 받아쓰기 기능이 개선되어 탭 모드, 자동 전송, VS Code 확장 지원이 추가되었습니다. 기능 사용 방식과 설정 방법도 업데이트 되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/0440e93_voice-dictation.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/vs-code\" target=\"_blank\">Vs Code</a>",
+        "summary": "MCP 서버 추가 명령어와 예시가 업데이트되었습니다. GitHub MCP 서버 설정 시 인증 토큰 사용 방법이 추가되어 기능 개선을 도왔습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/0440e93_vs-code.txt"
+      }
+    ]
+  },
+  {
     "date": "2026-04-22T15:30:45Z",
     "commit_hash": "85110aa",
     "entries": [

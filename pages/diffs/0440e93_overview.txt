@@ -1,0 +1,13 @@
+diff --git a/docs/overview.md b/docs/overview.md
+index 22d0fa2..f0a687a 100644
+--- a/docs/overview.md
++++ b/docs/overview.md
+@@ -704,6 +704,8 @@ Choose your environment to get started. Most surfaces require a [Claude subscrip
+       </Tab>
+     </Tabs>
+ 
++    You can also install with [apt, dnf, or apk](/en/setup#install-with-linux-package-managers) on Debian, Fedora, RHEL, and Alpine.
++
+     Then start Claude Code in any project:
+ 
+     ```bash theme={null}
