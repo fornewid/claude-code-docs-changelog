@@ -1,0 +1,13 @@
+diff --git a/docs/permission-modes.md b/docs/permission-modes.md
+index 798acbc..5ce4c44 100644
+--- a/docs/permission-modes.md
++++ b/docs/permission-modes.md
+@@ -209,7 +209,7 @@ Repeated blocks usually mean the classifier is missing context about your infras
+ 
+     On entering auto mode, broad allow rules that grant arbitrary code execution are dropped:
+ 
+-    * Blanket `Bash(*)`
++    * Blanket `Bash(*)` or `PowerShell(*)`
+     * Wildcarded interpreters like `Bash(python*)`
+     * Package-manager run commands
+     * `Agent` allow rules

@@ -1,5 +1,123 @@
 [
   {
+    "date": "2026-04-25T15:17:29Z",
+    "commit_hash": "0e9fd7d",
+    "entries": [
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/agent-sdk__typescript\" target=\"_blank\">Agent Sdk__Typescript</a>",
+        "summary": "tool use hook에 duration_ms가 추가되었고, slash command에 aliases가 추가되어 기능 확장 및 사용성 향상.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/0e9fd7d_agent-sdk__typescript.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/agent-teams\" target=\"_blank\">Agent Teams</a>",
+        "summary": "teammateMode 설정 위치가 변경되었습니다. 글로벌 설정에서 개인 설정 파일로 이동하여 사용자 정의가 용이해졌습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/0e9fd7d_agent-teams.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/changelog\" target=\"_blank\">Changelog</a>",
+        "summary": "Vim 모드, `/usage` 통합, 테마 관리, MCP 도구, 자동 업데이트 비활성화 옵션, 및 플러그인 버전 태그 기능이 추가되었습니다.  버그 수정 및 기능 개선도 포함되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/0e9fd7d_changelog.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/claude-directory\" target=\"_blank\">Claude Directory</a>",
+        "summary": "UI 설정 팁이 변경되었고, IDE 관련 설정 항목(autoConnectIde, externalEditorContext)으로 업데이트되었습니다. 사용자 환경 개선.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/0e9fd7d_claude-directory.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/cli-reference\" target=\"_blank\">Cli Reference</a>",
+        "summary": "PR 관련 기능 개선: GitHub, GitLab, Bitbucket PR URL 지원 추가. 세션 연결 자동화로 코드 리뷰 효율 증대.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/0e9fd7d_cli-reference.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/env-vars\" target=\"_blank\">Env Vars</a>",
+        "summary": "새로운 환경 변수 'CLAUDE_CODE_HIDE_CWD' 추가. 작업 디렉토리를 숨겨 화면 공유 시 사용자 정보 노출을 방지합니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/0e9fd7d_env-vars.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/google-vertex-ai\" target=\"_blank\">Google Vertex Ai</a>",
+        "summary": "MCP 도구 검색이 기본적으로 비활성화되었고, 활성화를 위한 설정 방법이 추가되었습니다. 이는 Vertex AI 환경에서의 기능 사용성을 개선합니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/0e9fd7d_google-vertex-ai.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/hooks\" target=\"_blank\">Hooks</a>",
+        "summary": "PostToolUse 및 PostToolUseFailure 훅에 `duration_ms` 필드가 추가되어 도구 실행 시간을 측정합니다. 이는 성능 분석에 유용합니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/0e9fd7d_hooks.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/mcp\" target=\"_blank\">Mcp</a>",
+        "summary": "도구 검색 설정 관련 내용이 업데이트되었습니다. Vertex AI에서의 동작과, ANTHROPIC_BASE_URL 환경 변수에 따른 동작 방식이 추가/수정되었습니다. 더 정확한 도구 검색 설정이 가능합니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/0e9fd7d_mcp.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/monitoring-usage\" target=\"_blank\">Monitoring Usage</a>",
+        "summary": "도구 사용 관련 로깅에 `tool_use_id`가 추가되어 OTel 이벤트와 후크 데이터를 연결하고, 입력/결과 크기 정보를 제공하여 모니터링 기능 강화.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/0e9fd7d_monitoring-usage.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/permission-modes\" target=\"_blank\">Permission Modes</a>",
+        "summary": "자동 모드 진입 시, 임의 코드 실행을 허용하는 광범위한 규칙(Bash(*), PowerShell(*), 와일드카드 인터프리터 등)이 제거되어 보안이 강화되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/0e9fd7d_permission-modes.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/plugin-dependencies\" target=\"_blank\">Plugin Dependencies</a>",
+        "summary": "의존성 자동 업데이트 방식이 변경되어, 각 플러그인의 범위 내에서 가장 높은 git 태그 버전을 사용하도록 개선되었습니다. 이는 의존성 업데이트를 유지하면서 호환성을 보장합니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/0e9fd7d_plugin-dependencies.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/settings\" target=\"_blank\">Settings</a>",
+        "summary": "~/.claude.json 설정 정보가 변경되고, 'autoScrollEnabled' 설정 항목이 추가되었습니다. 자동 스크롤 기능 설정 가능, 사용자 경험 향상.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/0e9fd7d_settings.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/statusline\" target=\"_blank\">Statusline</a>",
+        "summary": "상태 표시줄에 'effort' 및 'thinking' 필드가 추가되어 모델의 추론 노력과 확장된 사고 활성화 여부를 표시합니다. 세션 정보를 더 자세히 제공합니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/0e9fd7d_statusline.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/terminal-config\" target=\"_blank\">Terminal Config</a>",
+        "summary": "tmux 설정 안내가 업데이트되었고, Vim 편집 모드 설정 방법이 변경되었습니다. 설정 파일 경로 및 설정 항목이 업데이트되어 사용자 편의성을 개선합니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/0e9fd7d_terminal-config.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/tools-reference\" target=\"_blank\">Tools Reference</a>",
+        "summary": "PowerShell 도구의 제약 사항이 업데이트되었습니다. 자동 모드 미지원, 프로필 미로드, 샌드박싱 미지원 등 알려진 문제점들이 수정되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/0e9fd7d_tools-reference.txt"
+      }
+    ]
+  },
+  {
     "date": "2026-04-24T15:29:32Z",
     "commit_hash": "72b2f74",
     "entries": [
