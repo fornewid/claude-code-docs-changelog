@@ -1,5 +1,67 @@
 [
   {
+    "date": "2026-04-26T15:17:54Z",
+    "commit_hash": "7fed9f2",
+    "entries": [
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/chrome\" target=\"_blank\">Chrome</a>",
+        "summary": "크롬 브라우저 확장 프로그램 링크가 업데이트되어 최신 버전으로 연결됩니다. 사용자는 이제 CLI 또는 VS Code에서 브라우저 자동화 기능을 사용할 수 있습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/7fed9f2_chrome.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/commands\" target=\"_blank\">Commands</a>",
+        "summary": "명령어 목록이 업데이트되었으며, 명령어에 대한 설명이 개선되었습니다. 사용자가 명령어를 더 쉽게 이해하고 사용할 수 있도록 돕습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/7fed9f2_commands.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/desktop-quickstart\" target=\"_blank\">Desktop Quickstart</a>",
+        "summary": "SSH 연결 설명이 업데이트되었습니다. 원격 머신에 Claude Code 자동 설치를 추가하여 사용자 경험을 개선합니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/7fed9f2_desktop-quickstart.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/desktop-scheduled-tasks\" target=\"_blank\">Desktop Scheduled Tasks</a>",
+        "summary": "로컬 작업과 원격 루틴의 명확한 구분 및 설정 방법, 작업 실행 방식, 옵션 설명 등이 변경되었습니다. 더 나은 이해를 돕기 위해 내용이 개선되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/7fed9f2_desktop-scheduled-tasks.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/desktop\" target=\"_blank\">Desktop</a>",
+        "summary": "Claude Desktop 앱의 기능과 사용법이 재구성되었고, 새로운 탭 소개, Git 설치 요구 사항 추가, 세션 개념 설명 등 전반적인 내용이 업데이트되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/7fed9f2_desktop.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/routines\" target=\"_blank\">Routines</a>",
+        "summary": "루틴 생성 경로 및 GitHub 설정 방법이 변경되었습니다. 더 명확한 지침과 권한 설정을 제공하여 사용성을 향상시켰습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/7fed9f2_routines.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/skills\" target=\"_blank\">Skills</a>",
+        "summary": "우선순위 결정 방식이 변경되었습니다. 엔터프라이즈가 개인, 개인은 프로젝트보다 우선합니다. 중요도에 따른 동작 방식 변경.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/7fed9f2_skills.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/terminal-config\" target=\"_blank\">Terminal Config</a>",
+        "summary": "터미널 설정 문서에 색상 토큰 레퍼런스 및 사용자 정의 옵션에 대한 상세 정보가 추가되어 테마 설정의 유연성을 높였습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/7fed9f2_terminal-config.txt"
+      }
+    ]
+  },
+  {
     "date": "2026-04-25T15:17:29Z",
     "commit_hash": "0e9fd7d",
     "entries": [
