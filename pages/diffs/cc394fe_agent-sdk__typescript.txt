@@ -1,0 +1,13 @@
+diff --git a/docs/agent-sdk__typescript.md b/docs/agent-sdk__typescript.md
+index cc18ca6..f122f7b 100644
+--- a/docs/agent-sdk__typescript.md
++++ b/docs/agent-sdk__typescript.md
+@@ -1375,6 +1375,8 @@ type SyncHookJSONOutput = {
+     | {
+         hookEventName: "PostToolUse";
+         additionalContext?: string;
++        updatedToolOutput?: unknown;
++        /** @deprecated Use `updatedToolOutput`, which works for all tools. */
+         updatedMCPToolOutput?: unknown;
+       }
+     | {
