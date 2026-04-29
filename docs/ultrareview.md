@@ -54,7 +54,7 @@ Ultrareview is a premium feature that bills against extra usage rather than your
 | Max                 | 3 free runs through May 5, 2026 | billed as [extra usage](https://support.claude.com/en/articles/12429409-extra-usage-for-paid-claude-plans) |
 | Team and Enterprise | none                            | billed as [extra usage](https://support.claude.com/en/articles/12429409-extra-usage-for-paid-claude-plans) |
 
-Pro and Max subscribers receive three free ultrareview runs to try the feature. These three runs are a one-time allotment per account, do not refresh, and expire on May 5, 2026. After you use all three, or after the free run period ends, each review is billed to extra usage and typically costs \$5 to \$20 depending on the size of the change.
+Pro and Max subscribers receive three free ultrareview runs to try the feature. These three runs are a one-time allotment per account, do not refresh, and expire on May 5, 2026. After you use all three, or after the free run period ends, each review is billed to extra usage and typically costs \$5 to \$20 depending on the size of the change. A run counts once the remote session starts, so a review that you stop early or that fails to complete still uses a free run. For a paid review, extra usage is billed only for the portion that ran.
 
 Because ultrareview always bills as extra usage outside the free runs, your account or organization must have extra usage enabled before you can launch a paid review. If extra usage is not enabled, Claude Code blocks the launch and links you to the billing settings where you can turn it on. You can also run `/extra-usage` to check or change your current setting.
 
@@ -84,6 +84,8 @@ Progress messages and the live session URL go to stderr so stdout stays parseabl
 | `--timeout <minutes>` | Maximum minutes to wait for the review to finish. Defaults to 30    |
 
 Running `claude ultrareview` requires the same authentication and extra usage configuration as `/ultrareview`. The subcommand exits with code 0 when the review completes with or without findings, code 1 when the review fails to launch, the remote session errors, or the timeout elapses, and code 130 when interrupted with Ctrl-C. The remote review keeps running if you interrupt the subcommand; follow the session URL printed to stderr to watch it in the browser.
+
+For automatic reviews on GitHub pull requests, [Code Review](/en/code-review) integrates with your repository directly and posts findings as inline PR comments without a CLI step.
 
 ## How ultrareview compares to /review
 
