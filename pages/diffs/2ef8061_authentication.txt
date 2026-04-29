@@ -1,0 +1,13 @@
+diff --git a/docs/authentication.md b/docs/authentication.md
+index fbee270..e88f9e6 100644
+--- a/docs/authentication.md
++++ b/docs/authentication.md
+@@ -25,7 +25,7 @@ You can authenticate with any of these account types:
+ 
+ To log out and re-authenticate, type `/logout` at the Claude Code prompt.
+ 
+-If you're having trouble logging in, see [authentication troubleshooting](/en/troubleshooting#authentication-issues).
++If you're having trouble logging in, see [authentication troubleshooting](/en/troubleshoot-install#login-and-authentication).
+ 
+ ## Set up team authentication
+ 
