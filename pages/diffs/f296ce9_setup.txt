@@ -1,0 +1,13 @@
+diff --git a/docs/setup.md b/docs/setup.md
+index 3003da2..380d410 100644
+--- a/docs/setup.md
++++ b/docs/setup.md
+@@ -489,7 +489,7 @@ In addition to the signed manifest, individual binaries carry platform-native co
+ 
+ ## Uninstall Claude Code
+ 
+-To remove Claude Code, follow the instructions for your installation method.
++To remove Claude Code, follow the instructions for your installation method. If `claude` still runs afterward, you likely have a second installation or a leftover shell alias from an older installer. See [Check for conflicting installations](/en/troubleshoot-install#check-for-conflicting-installations) to find and remove it.
+ 
+ ### Native installation
+ 

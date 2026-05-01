@@ -1,5 +1,207 @@
 [
   {
+    "date": "2026-05-01T15:24:26Z",
+    "commit_hash": "f296ce9",
+    "entries": [
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/agent-sdk__typescript\" target=\"_blank\">Agent Sdk__Typescript</a>",
+        "summary": "SDK 메시지 타입에 'origin' 필드가 추가되어, 메시지 출처를 추적 가능하게 되었으며, 'oauth_org_not_allowed' 에러 유형이 추가되었습니다. 이는 메시지 라우팅 및 오류 처리에 도움이 됩니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/f296ce9_agent-sdk__typescript.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/analytics\" target=\"_blank\">Analytics</a>",
+        "summary": "기여 지표 활성화를 위한 OpenTelemetry 설정을 안내하여 사용자별 토큰 사용량 및 비용 추정 기능을 추가했습니다. ",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/f296ce9_analytics.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/authentication\" target=\"_blank\">Authentication</a>",
+        "summary": "브라우저 리디렉션 실패 시 로그인 코드 입력 필요. WSL2, SSH, 컨테이너 환경에서 발생. 사용자 인증 문제 해결에 도움.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/f296ce9_authentication.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/auto-mode-config\" target=\"_blank\">Auto Mode Config</a>",
+        "summary": "Auto 모드 가용성에 대한 정보가 추가되어, 지원되는 플랜 및 환경에 대한 명확성을 제공합니다. API, Max, Team, Enterprise 플랜에서 사용 가능.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/f296ce9_auto-mode-config.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/changelog\" target=\"_blank\">Changelog</a>",
+        "summary": "Claude Code의 변경 로그가 업데이트되었습니다. 새로운 기능, 개선 사항, 버그 수정 사항이 포함되어 있으며, 특히 클로드 코드 저장소에서 자동 가져옵니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/f296ce9_changelog.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/claude-directory\" target=\"_blank\">Claude Directory</a>",
+        "summary": "claude project purge 명령어 추가 및 사용법 상세 설명. 프로젝트 관련 로컬 데이터 삭제 기능 개선 및 사용성 향상.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/f296ce9_claude-directory.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/cli-reference\" target=\"_blank\">Cli Reference</a>",
+        "summary": "CLI 참조 문서의 설명과 예시가 업데이트되었습니다.  `claude -p`  명령어에 대한 설명이 추가되었습니다.  SDK 쿼리 기능을 더 명확히 했습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/f296ce9_cli-reference.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/commands\" target=\"_blank\">Commands</a>",
+        "summary": "명령어 사용법에 대한 명확성을 위해 명령어는 메시지 시작 부분에서만 인식되며, 텍스트가 인수로 전달됨을 설명합니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/f296ce9_commands.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/data-usage\" target=\"_blank\">Data Usage</a>",
+        "summary": "v2.1.126부터 Vertex, Bedrock, Foundry에서 Statsig 메트릭이 기본적으로 활성화되고, DISABLE_TELEMETRY로 끌 수 있도록 변경되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/f296ce9_data-usage.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/env-vars\" target=\"_blank\">Env Vars</a>",
+        "summary": "새로운 환경 변수 'CLAUDE_CODE_PROVIDER_MANAGED_BY_HOST'가 추가되어 호스트 플랫폼이 모델 제공자 라우팅을 관리하도록 설정합니다. 사용자 설정은 무시됩니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/f296ce9_env-vars.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/fullscreen\" target=\"_blank\">Fullscreen</a>",
+        "summary": "대화 지우기 기능 안내 변경: 'Ctrl+L' 첫 번째 동작 설명 변경, 화면 다시 그리기로 수정. 사용자 경험 개선.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/f296ce9_fullscreen.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/headless\" target=\"_blank\">Headless</a>",
+        "summary": "API 재시도 이벤트의 에러 범주에 'oauth_org_not_allowed'가 추가되어 인증 관련 오류를 더 정확하게 처리합니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/f296ce9_headless.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/hooks-guide\" target=\"_blank\">Hooks Guide</a>",
+        "summary": "훅 가이드의 표 형식이 조정되었으며, 코드 가독성을 위해 간결하게 수정되었습니다. 내용 변경은 없습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/f296ce9_hooks-guide.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/hooks\" target=\"_blank\">Hooks</a>",
+        "summary": "표 형식의 설명이 갱신되어 이벤트 매칭 정보의 가독성이 향상되었습니다. 필터링 대상과 예시 값이 명확해졌습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/f296ce9_hooks.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/interactive-mode\" target=\"_blank\">Interactive Mode</a>",
+        "summary": "Ctrl+L의 기능 설명이 수정되었으며, Ctrl+R 사용 가이드에 '범위 변경' 기능이 추가되어 사용성이 개선되었습니다. (화면 갱신 및 히스토리 검색 기능 개선)",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/f296ce9_interactive-mode.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/keybindings\" target=\"_blank\">Keybindings</a>",
+        "summary": "채팅 관련 액션 설명 변경 및 HistorySearch 컨텍스트에 새로운 범위 설정 기능 추가. 사용자 경험 향상.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/f296ce9_keybindings.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/llm-gateway\" target=\"_blank\">Llm Gateway</a>",
+        "summary": "Claude Code가 Anthropic Messages 형식 게이트웨이에서 모델을 자동으로 검색합니다.  `/v1/models` 엔드포인트를 사용하며, 수동 설정 없이 게이트웨이 모델을 선택 가능하게 합니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/f296ce9_llm-gateway.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/memory\" target=\"_blank\">Memory</a>",
+        "summary": "컨텍스트 로딩 순서가 명확하게 변경되었습니다. 디렉토리 트리 순서대로 컨텍스트를 로드하여 명령의 우선순위를 결정합니다. 더 정확한 동작 방식을 제공합니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/f296ce9_memory.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/model-config\" target=\"_blank\">Model Config</a>",
+        "summary": "맞춤 모델 옵션 추가에 대한 안내가 개선되었습니다. LLM 게이트웨이 환경에서 자동 모델 로딩을 설명합니다. ",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/f296ce9_model-config.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/monitoring-usage\" target=\"_blank\">Monitoring Usage</a>",
+        "summary": "스킬 호출 이벤트에 트리거 정보를 추가하여 스킬 실행 방식을 더 자세히 파악할 수 있게 되었습니다. 이는 디버깅 및 사용자 행동 분석에 도움이 됩니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/f296ce9_monitoring-usage.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/permission-modes\" target=\"_blank\">Permission Modes</a>",
+        "summary": "`bypassPermissions` 모드에서 보호 경로에 대한 쓰기 허용, `acceptEdits` 모드에서 PowerShell 명령어 자동 승인, 문서 내용 일부 수정. 안전성과 사용성 개선.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/f296ce9_permission-modes.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/permissions\" target=\"_blank\">Permissions</a>",
+        "summary": "`bypassPermissions` 모드 동작 방식이 변경되었고, PowerShell에 대한 권한 설정 방법이 추가되었습니다.  사용 환경에 대한 안전성을 강화했습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/f296ce9_permissions.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/settings\" target=\"_blank\">Settings</a>",
+        "summary": "알림 채널 설정 `preferredNotifChannel` 추가. 작업 완료 및 권한 요청 알림 방식을 커스터마이징하여 사용자 경험을 개선합니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/f296ce9_settings.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/setup\" target=\"_blank\">Setup</a>",
+        "summary": "제거 안내에 추가 정보가 제공되어 잔여 설치 및 충돌 해결 방법을 안내합니다. 사용자 경험 개선에 기여합니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/f296ce9_setup.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/sub-agents\" target=\"_blank\">Sub Agents</a>",
+        "summary": "플러그인 하위 에이전트 관련 설명을 추가 및 수정했습니다. permissionMode, mcpServers, hooks의 동작 방식이 변경되었습니다. 더 정확한 정보를 제공합니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/f296ce9_sub-agents.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/terminal-config\" target=\"_blank\">Terminal Config</a>",
+        "summary": "터미널 알림 설정 관련 내용이 업데이트되었습니다. 일부 터미널에서 `preferredNotifChannel` 설정을 통해 터미널 벨을 사용하거나, 알림 훅을 설정하여 커스텀 사운드 재생 가능합니다. 원격 세션에서도 알림이 유지됩니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/f296ce9_terminal-config.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/tools-reference\" target=\"_blank\">Tools Reference</a>",
+        "summary": "Windows에서 PowerShell 사용 방식이 개선되었습니다. PowerShell이 기본 쉘로 처리되어, Bash와 통합 사용이 용이합니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/f296ce9_tools-reference.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/troubleshoot-install\" target=\"_blank\">Troubleshoot Install</a>",
+        "summary": "WSL2, SSH, 컨테이너 환경에서 OAuth 로그인 실패 시, 수동 코드 입력 또는 claude auth login 사용 방법 안내. 환경별 로그인 문제 해결 가이드 개선.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/f296ce9_troubleshoot-install.txt"
+      }
+    ]
+  },
+  {
     "date": "2026-04-30T15:37:57Z",
     "commit_hash": "39d4b80",
     "entries": [
