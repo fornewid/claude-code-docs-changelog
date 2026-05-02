@@ -1,0 +1,13 @@
+diff --git a/docs/plugins-reference.md b/docs/plugins-reference.md
+index dee0d3e..a50ba21 100644
+--- a/docs/plugins-reference.md
++++ b/docs/plugins-reference.md
+@@ -380,7 +380,7 @@ The manifest is optional. If omitted, Claude Code auto-discovers components in [
+   "keywords": ["keyword1", "keyword2"],
+   "skills": "./custom/skills/",
+   "commands": ["./custom/commands/special.md"],
+-  "agents": "./custom/agents/",
++  "agents": ["./custom/agents/reviewer.md"],
+   "hooks": "./config/hooks.json",
+   "mcpServers": "./mcp-config.json",
+   "outputStyles": "./styles/",

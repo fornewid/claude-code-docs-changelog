@@ -1,5 +1,46 @@
 [
   {
+    "date": "2026-05-02T15:18:10Z",
+    "commit_hash": "3d49b63",
+    "entries": [
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/changelog\" target=\"_blank\">Changelog</a>",
+        "summary": "문서 색인이 추가되어 사용자는 더 쉽게 문서를 탐색할 수 있습니다. 변경 사항은 주로 문서 접근성과 사용성을 개선합니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/3d49b63_changelog.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/desktop-quickstart\" target=\"_blank\">Desktop Quickstart</a>",
+        "summary": "Linux 지원이 중단되었고, CLI 사용을 안내합니다. 윈도우 ARM64 설치 안내도 업데이트되었습니다. ",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/3d49b63_desktop-quickstart.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/desktop\" target=\"_blank\">Desktop</a>",
+        "summary": "Linux 사용자에 대한 안내가 추가되었습니다. 데스크톱 앱은 macOS 및 Windows에서만 사용할 수 있으며, Linux에서는 CLI를 사용해야 합니다. (Linux 지원)",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/3d49b63_desktop.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/env-vars\" target=\"_blank\">Env Vars</a>",
+        "summary": "CLAUDE_CODE_SHELL_PREFIX 설명이 수정되었습니다. 쉘 명령어에 대한 로깅 및 감사 목적에 대한 구체적인 예시가 추가되었습니다. (쉘 명령어 래핑)",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/3d49b63_env-vars.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/plugins-reference\" target=\"_blank\">Plugins Reference</a>",
+        "summary": "에이전트 경로가 변경되었습니다. 'reviewer.md' 에이전트 파일을 사용하여 특정 에이전트 기능을 강화합니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/3d49b63_plugins-reference.txt"
+      }
+    ]
+  },
+  {
     "date": "2026-05-01T15:24:26Z",
     "commit_hash": "f296ce9",
     "entries": [
