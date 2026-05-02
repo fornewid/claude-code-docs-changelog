@@ -130,16 +130,30 @@ def generate_summary(client, filename, content, is_new=False):
     {content[:10000]}
     """
     
+    primary_model = 'gemini-2.0-flash-lite'
+    fallback_model = 'gemini-2.5-flash'
     max_retries = 3
     retry_delay = 2
-    
+
     for attempt in range(max_retries):
         try:
-            response = client.models.generate_content(
-                model='gemini-2.0-flash-lite',
-                contents=prompt,
-                config={'response_mime_type': 'application/json'}
-            )
+            try:
+                response = client.models.generate_content(
+                    model=primary_model,
+                    contents=prompt,
+                    config={'response_mime_type': 'application/json'}
+                )
+            except Exception as primary_error:
+                err_msg = str(primary_error)
+                if "429" in err_msg and "free_tier" in err_msg:
+                    logger.warning(f"{primary_model} blocked by free_tier quota for {filename}, falling back to {fallback_model}")
+                    response = client.models.generate_content(
+                        model=fallback_model,
+                        contents=prompt,
+                        config={'response_mime_type': 'application/json'}
+                    )
+                else:
+                    raise
             return json.loads(response.text)
         except Exception as e:
             error_str = str(e)
@@ -148,7 +162,7 @@ def generate_summary(client, filename, content, is_new=False):
                 time.sleep(retry_delay)
                 retry_delay *= 2  # Exponential backoff
                 continue
-            
+
             if attempt == max_retries - 1:
                 logger.error(f"Gemini API failed for {filename} after retries: {e}")
                 
