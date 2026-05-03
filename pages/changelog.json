@@ -1,5 +1,220 @@
 [
   {
+    "date": "2026-05-03T15:18:12Z",
+    "commit_hash": "42e09e6",
+    "entries": [
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/agent-teams\" target=\"_blank\">Agent Teams</a>",
+        "summary": "Git worktrees 링크가 변경되었습니다. 수동 병렬 세션 관련 안내가 업데이트되어 작업 흐름 개선에 기여합니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/42e09e6_agent-teams.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/best-practices\" target=\"_blank\">Best Practices</a>",
+        "summary": "Plan 모드와 비대화형 모드 사용법이 개선되었고, 세션 관리에 대한 새로운 팁이 추가되었습니다. 병렬 세션에 대한 내용도 업데이트되었습니다. (무엇이 바뀌었고, 왜 중요한가?)",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/42e09e6_best-practices.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/checkpointing\" target=\"_blank\">Checkpointing</a>",
+        "summary": "세션 분기를 위한 'fork' 사용법 링크가 업데이트되었습니다. 이전 링크 오류를 수정하여, 올바른 문서로 연결됩니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/42e09e6_checkpointing.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/claude-directory\" target=\"_blank\">Claude Directory</a>",
+        "summary": "`.worktreeinclude` 파일 참조 링크가 변경되었습니다. 워크트리 관련 문서 링크가 업데이트되어 사용자가 최신 정보를 쉽게 접근할 수 있습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/42e09e6_claude-directory.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/cli-reference\" target=\"_blank\">Cli Reference</a>",
+        "summary": "워크트리 관련 문서 링크가 업데이트 되었습니다.  Git worktree 사용법에 대한 접근성이 향상되었습니다. ",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/42e09e6_cli-reference.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/code-review\" target=\"_blank\">Code Review</a>",
+        "summary": "AWS Bedrock 오타 수정, Amazon Bedrock으로 변경. 비용 관리 설정 링크 업데이트.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/42e09e6_code-review.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/commands\" target=\"_blank\">Commands</a>",
+        "summary": "`/batch` 명령어 설명에서 git worktree 관련 링크가 변경되었습니다. 워크트리 사용법에 대한 접근성이 향상되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/42e09e6_commands.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/common-workflows\" target=\"_blank\">Common Workflows</a>",
+        "summary": "자주 사용되는 개발 워크플로우를 안내하는 레시피 목록이 추가되었고, 이전 대화 재개, 작업 트리 사용 등 다양한 기능이 소개되었습니다.  코드 탐색, 버그 수정 등의 프롬프트 예시도 추가되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/42e09e6_common-workflows.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/costs\" target=\"_blank\">Costs</a>",
+        "summary": "플랜 모드 관련 링크가 변경되었으며, 문서 내 링크가 정확한 정보를 가리키도록 수정되었습니다. 이는 사용자 안내의 정확성을 높입니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/42e09e6_costs.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/deep-links\" target=\"_blank\">Deep Links</a>",
+        "summary": "새로운 파일이 추가되어, Claude Code의 딥 링크 기능을 소개합니다. 링크를 통해 바로 세션을 시작하고, 작업 디렉토리와 프롬프트를 설정하는 방법을 설명합니다. (새 기능, 사용법 안내)",
+        "tag_text": "NEW",
+        "tag_class": "new"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/desktop\" target=\"_blank\">Desktop</a>",
+        "summary": "Git worktree 관련 링크가 변경되었고, extended thinking 관련 내용이 model-config로 이동했습니다. 더 정확한 정보 제공을 위한 변경입니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/42e09e6_desktop.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/errors\" target=\"_blank\">Errors</a>",
+        "summary": "오류 해결 안내가 업데이트되었습니다. 'Extended thinking' 관련 링크가 변경되어 사용자에게 정확한 정보를 제공합니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/42e09e6_errors.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/github-actions\" target=\"_blank\">Github Actions</a>",
+        "summary": "AWS Bedrock 관련 내용이 Amazon Bedrock으로 변경되었으며, 몇몇 설정 튜토리얼이 업데이트되었습니다. 가독성과 정확성을 높였습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/42e09e6_github-actions.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/gitlab-ci-cd\" target=\"_blank\">Gitlab Ci Cd</a>",
+        "summary": "AWS Bedrock를 Amazon Bedrock으로, 섹션 제목 변경 및 일부 내용 수정. 클라우드 환경 설정을 위한 정보 업데이트.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/42e09e6_gitlab-ci-cd.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/glossary\" target=\"_blank\">Glossary</a>",
+        "summary": "개념에 대한 링크가 업데이트되었습니다.  관련 문서 위치가 변경되어, 사용자가 최신 정보를 쉽게 찾도록 개선되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/42e09e6_glossary.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/headless\" target=\"_blank\">Headless</a>",
+        "summary": "파이프를 통해 데이터를 처리하고 빌드 스크립트에 Claude를 추가하는 등, CLI 사용법에 대한 새로운 예제가 추가되어, 자동화된 작업 흐름을 개선합니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/42e09e6_headless.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/hooks-guide\" target=\"_blank\">Hooks Guide</a>",
+        "summary": "알림 후크에 대한 설명이 개선되었고, 특정 이벤트에 대한 매칭 방법이 추가되어 후크의 활용성이 향상되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/42e09e6_hooks-guide.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/hooks\" target=\"_blank\">Hooks</a>",
+        "summary": "워크트리 관련 문서에서 `.worktreeinclude` 참조 링크가 수정되었습니다. 이는 워크트리 내 파일 복사 관련 내용으로, 사용자에게 중요한 정보입니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/42e09e6_hooks.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/how-claude-code-works\" target=\"_blank\">How Claude Code Works</a>",
+        "summary": "세션 관리 관련 내용이 업데이트되었습니다. `/resume` 피커 사용법과 세션 포킹 기능에 대한 내용이 추가되어 사용자 편의성을 높였습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/42e09e6_how-claude-code-works.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/legal-and-compliance\" target=\"_blank\">Legal And Compliance</a>",
+        "summary": "클로드 API 사용 관련, 3자 플랫폼 언급 시 AWS Bedrock을 Amazon Bedrock으로 변경. 계약 적용 범위 명확화.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/42e09e6_legal-and-compliance.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/model-config\" target=\"_blank\">Model Config</a>",
+        "summary": "ultrathink 사용법이 명확해졌고, 확장된 사고 기능에 대한 새로운 내용이 추가되었습니다. 특히 사고 기능 설정 및 표시 옵션에 대한 정보가 업데이트되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/42e09e6_model-config.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/monitoring-usage\" target=\"_blank\">Monitoring Usage</a>",
+        "summary": "API 제공업체 이름 오타 수정 (Claude Console -> Amazon Bedrock). 비용 관련 정보의 정확성을 위해 중요합니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/42e09e6_monitoring-usage.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/overview\" target=\"_blank\">Overview</a>",
+        "summary": "Claude Code의 사용자 정의 기능 관련 문서 내용이 업데이트되었습니다. 'custom commands' 용어가 'skills'로 변경되어 명확성을 높였습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/42e09e6_overview.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/permission-modes\" target=\"_blank\">Permission Modes</a>",
+        "summary": "계획 모드 기능에 대한 개선 사항이 추가되었으며, 계획 검토 및 승인 기능, 기본 설정 방법이 추가되어 사용성을 향상시켰습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/42e09e6_permission-modes.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/remote-control\" target=\"_blank\">Remote Control</a>",
+        "summary": "문서 내 링크 텍스트가 변경되었고, git worktree 링크가 수정되었습니다. git worktree 사용 가이드에 대한 변경입니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/42e09e6_remote-control.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/settings\" target=\"_blank\">Settings</a>",
+        "summary": "설정 옵션에 대한 설명이 개선되었으며, 여러 옵션에 대한 세부 정보와 사용 사례가 추가되었습니다. 문서 전반의 명확성이 향상되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/42e09e6_settings.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/skills\" target=\"_blank\">Skills</a>",
+        "summary": "새로운 스킬 예제가 추가되어, git diff를 요약하고 위험 요소를 식별합니다. 또한, 설명과 명령어 텍스트가 명확하게 변경되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/42e09e6_skills.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/sub-agents\" target=\"_blank\">Sub Agents</a>",
+        "summary": "Plan 모드 관련 링크가 업데이트되었고, 격리 설정에서 Git worktree 관련 링크가 변경되었습니다. 이는 문서 내 링크의 정확성을 높입니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/42e09e6_sub-agents.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/vs-code\" target=\"_blank\">Vs Code</a>",
+        "summary": "확장된 사고력 관련 링크가 업데이트되었고, 세션 관리 및 CLI 핸들러 관련 내용이 추가되었습니다. VS Code 탭을 여는 OS별 명령어 예시가 추가되어 사용성이 향상되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/42e09e6_vs-code.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/zero-data-retention\" target=\"_blank\">Zero Data Retention</a>",
+        "summary": "클로드 엔터프라이즈의 ZDR 관련 내용이 업데이트되었습니다. Amazon Bedrock 플랫폼에 대한 언급이 추가되어 관련 정책 참조를 안내합니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/42e09e6_zero-data-retention.txt"
+      }
+    ]
+  },
+  {
     "date": "2026-05-02T15:18:10Z",
     "commit_hash": "3d49b63",
     "entries": [
