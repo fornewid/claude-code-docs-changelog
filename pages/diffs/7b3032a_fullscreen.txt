@@ -1,0 +1,22 @@
+diff --git a/docs/fullscreen.md b/docs/fullscreen.md
+index d70fbec..15bbd19 100644
+--- a/docs/fullscreen.md
++++ b/docs/fullscreen.md
+@@ -122,7 +122,7 @@ Press `Ctrl+L` twice within two seconds to run `/clear` and start a new conversa
+ 
+ ## Use with tmux
+ 
+-Fullscreen rendering works inside tmux, with two caveats.
++Fullscreen rendering works inside tmux, with three caveats.
+ 
+ Mouse wheel scrolling requires tmux's mouse mode. If your `~/.tmux.conf` does not already enable it, add this line and reload your config:
+ 
+@@ -134,6 +134,8 @@ Without mouse mode, wheel events go to tmux instead of Claude Code. Keyboard scr
+ 
+ Fullscreen rendering is incompatible with iTerm2's tmux integration mode, which is the mode you enter with `tmux -CC`. In integration mode, iTerm2 renders each tmux pane as a native split rather than letting tmux draw to the terminal. The alternate screen buffer and mouse tracking do not work correctly there: the mouse wheel does nothing, and double-click can corrupt the terminal state. Don't enable fullscreen rendering in `tmux -CC` sessions. Regular tmux inside iTerm2, without `-CC`, works fine.
+ 
++tmux does not support synchronized output, so you may see more flicker during redraws than when running Claude Code directly in your terminal. If the flicker is noticeable, especially over SSH, run Claude Code in its own terminal tab outside tmux.
++
+ ## Keep native text selection
+ 
+ Mouse capture is the most common friction point, especially over SSH or inside tmux. When Claude Code captures mouse events, your terminal's native copy-on-select stops working. The selection you make with click-and-drag exists inside Claude Code, not in your terminal's selection buffer, so tmux copy mode, Kitty hints, and similar tools don't see it.

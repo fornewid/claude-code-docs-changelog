@@ -1,5 +1,417 @@
 [
   {
+    "date": "2026-05-06T15:48:31Z",
+    "commit_hash": "7b3032a",
+    "entries": [
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/agent-sdk__agent-loop\" target=\"_blank\">Agent Sdk__Agent Loop</a>",
+        "summary": "도구 병렬 실행 설정 변경, 턴 및 예산, 노력 수준 설정, 권한 모드 설명이 개선되었고, subagent 도구 선택 및 세션 관리 관련 내용이 추가되었습니다. 더 나은 에이전트 구성을 위한 가이드라인이 제시되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/7b3032a_agent-sdk__agent-loop.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/agent-sdk__claude-code-features\" target=\"_blank\">Agent Sdk__Claude Code Features</a>",
+        "summary": "설정 소스 관련 오타 수정 및 설명 개선. SDK 설정 로드 동작 방식에 대한 명확성을 더했습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/7b3032a_agent-sdk__claude-code-features.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/agent-sdk__cost-tracking\" target=\"_blank\">Agent Sdk__Cost Tracking</a>",
+        "summary": "TypeScript 및 Python SDK 문서에서 결과 메시지 링크가 수정되었으며, 일부 용어와 코드 예시가 업데이트되었습니다.  캐시 관련 토큰 추적 내용도 추가되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/7b3032a_agent-sdk__cost-tracking.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/agent-sdk__custom-tools\" target=\"_blank\">Agent Sdk__Custom Tools</a>",
+        "summary": "도구 서버 생성 함수 이름에 오타 수정 및 ToolAnnotations 참조 링크 업데이트. API 접근성 및 정확성 향상.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/7b3032a_agent-sdk__custom-tools.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/agent-sdk__hooks\" target=\"_blank\">Agent Sdk__Hooks</a>",
+        "summary": "훅 동작 방식, 설정 방법, 예제가 업데이트되었습니다. 여러 훅을 병렬로 실행하고, 훅 실행 순서에 의존하지 않도록 권장 사항이 추가되었습니다.  (훅 병렬 실행 방식 안내)",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/7b3032a_agent-sdk__hooks.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/agent-sdk__hosting\" target=\"_blank\">Agent Sdk__Hosting</a>",
+        "summary": "문서 내 링크가 업데이트되었고, 몇몇 오타가 수정되었습니다. 또한, 'sandbox-settings' 링크가 'sandboxsettings'로 변경되었습니다. (사소한 변경)",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/7b3032a_agent-sdk__hosting.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/agent-sdk__migration-guide\" target=\"_blank\">Agent Sdk__Migration Guide</a>",
+        "summary": "설정 소스 로드 기본 동작이 변경되었다가 다시 원상복구되었습니다. SDK에서 격리된 환경을 위해 설정 소스 옵션 사용법이 추가되었습니다. ",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/7b3032a_agent-sdk__migration-guide.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/agent-sdk__observability\" target=\"_blank\">Agent Sdk__Observability</a>",
+        "summary": "사용자 속성을 추가하여 엔드 유저별 활동 추적 가능. SIEM 플랫폼으로 전송하여 보안 감사 기능 강화.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/7b3032a_agent-sdk__observability.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/agent-sdk__permissions\" target=\"_blank\">Agent Sdk__Permissions</a>",
+        "summary": "훅 동작 방식, plan 모드 설명이 개선되었습니다. Claude의 코드 분석 과정에서 읽기 전용 도구 사용을 강조합니다. (수정, 명확성)",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/7b3032a_agent-sdk__permissions.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/agent-sdk__python\" target=\"_blank\">Agent Sdk__Python</a>",
+        "summary": "API 문서에서 괄호 표기 오류 수정, 일부 반환 타입 수정 및 Markdown 서식 변경이 있었습니다. 가독성을 높이고 정확한 정보를 제공합니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/7b3032a_agent-sdk__python.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/agent-sdk__quickstart\" target=\"_blank\">Agent Sdk__Quickstart</a>",
+        "summary": "문서 내 링크가 업데이트되었습니다. Python 및 TypeScript 옵션에 대한 참조가 수정되어 정확한 정보 제공합니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/7b3032a_agent-sdk__quickstart.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/agent-sdk__sessions\" target=\"_blank\">Agent Sdk__Sessions</a>",
+        "summary": "세션 ID, SDK client, 관련 함수 등의 오타가 수정되었고, 기존 내용의 링크가 업데이트되었습니다. 세션 관리에 대한 명확성을 높였습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/7b3032a_agent-sdk__sessions.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/agent-sdk__skills\" target=\"_blank\">Agent Sdk__Skills</a>",
+        "summary": "설정 소스 관련 링크에서 오타를 수정했습니다. (settingsource -> setting_source). 기능 사용성에 직접적인 영향은 없습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/7b3032a_agent-sdk__skills.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/agent-sdk__streaming-output\" target=\"_blank\">Agent Sdk__Streaming Output</a>",
+        "summary": "타입 정의가 변경되어 SDK 사용 방식이 업데이트되었습니다. BetaRawMessageStreamEvent를 사용하며, API 호환성 개선이 중요합니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/7b3032a_agent-sdk__streaming-output.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/agent-sdk__subagents\" target=\"_blank\">Agent Sdk__Subagents</a>",
+        "summary": "서브 에이전트 정의 관련, TypeScript/Python SDK 문서 링크가 업데이트되었고, Python SDK 필드명 관련 작은 수정이 있었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/7b3032a_agent-sdk__subagents.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/agent-sdk__todo-tracking\" target=\"_blank\">Agent Sdk__Todo Tracking</a>",
+        "summary": "ClaudeAgentOptions 사용으로 query 함수 호출 방식이 변경되었습니다. SDK 사용성을 개선하고 설정 옵션을 명확히 했습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/7b3032a_agent-sdk__todo-tracking.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/agent-sdk__typescript\" target=\"_blank\">Agent Sdk__Typescript</a>",
+        "summary": "함수 설명의 오타 수정 및 반환 타입의 명칭 변경, 추가적인 옵션 설명 추가 및 코드 예시 업데이트. 세션 관련 문서의 링크가 수정되었습니다. ",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/7b3032a_agent-sdk__typescript.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/agent-sdk__user-input\" target=\"_blank\">Agent Sdk__User Input</a>",
+        "summary": "tool input schema 링크가 변경되었고, canUseTool API 문서 링크가 수정되었습니다. SDK 참조 문서 업데이트입니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/7b3032a_agent-sdk__user-input.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/authentication\" target=\"_blank\">Authentication</a>",
+        "summary": "자격 증명 저장 위치 및 접근 방식에 대한 정보가 업데이트되었습니다. Windows 환경에서 사용자 프로필 디렉토리에 저장되어 보안이 강화되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/7b3032a_authentication.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/changelog\" target=\"_blank\">Changelog</a>",
+        "summary": "Claude Code의 변경 사항이 추가되었습니다. 새로운 기능과 개선 사항, 버그 수정 사항이 포함되어 있으며, GitHub에서 자동 가져온 changelog.md를 기반으로 합니다. (새로운 기능, 개선 사항, 버그 수정)",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/7b3032a_changelog.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/channels-reference\" target=\"_blank\">Channels Reference</a>",
+        "summary": "채널 기능에 대한 설명이 업데이트되었으며, 팀 및 엔터프라이즈 관리자가 채널을 활성화해야 함을 명확히 했습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/7b3032a_channels-reference.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/channels\" target=\"_blank\">Channels</a>",
+        "summary": "채널 관련 내용이 업데이트되었습니다. 인증 방식, 사용 가능 환경, 조직 설정 관련 내용이 추가 및 수정되었으며, Console API 키 사용 시 채널 기본 설정이 변경되었습니다. ",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/7b3032a_channels.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/claude-code-on-the-web\" target=\"_blank\">Claude Code On The Web</a>",
+        "summary": "스크립트 실행 시간 제한과 환경 캐싱 관련 내용이 추가되었습니다.  불필요한 세션 실패 방지 및 효율적인 캐싱을 위한 지침 제공.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/7b3032a_claude-code-on-the-web.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/cli-reference\" target=\"_blank\">Cli Reference</a>",
+        "summary": "--plugin-dir가 디렉토리 또는 .zip 아카이브에서 플러그인을 로드하도록 변경되었고, --plugin-url 옵션이 추가되어 URL에서 플러그인을 가져옵니다. 플러그인 관리 유연성 증가.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/7b3032a_cli-reference.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/commands\" target=\"_blank\">Commands</a>",
+        "summary": "/color 명령어에 임의 색상 선택 기능 추가 및 /focus 명령어에 viewMode 설정 관련 내용이 추가되어 사용자 정의가 향상되었습니다. ",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/7b3032a_commands.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/data-usage\" target=\"_blank\">Data Usage</a>",
+        "summary": "Statsig 대신 Anthropic으로 메트릭 서비스 이름이 변경되었고, 텔레메트리 관련 정보가 업데이트되었습니다.  사용자 데이터 수집 관련 내용이 변경되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/7b3032a_data-usage.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/desktop\" target=\"_blank\">Desktop</a>",
+        "summary": "세션 분할 보기를 지원하여 여러 세션을 동시에 작업할 수 있으며, 단축키로 쉽게 전환하고 닫을 수 있습니다. 멀티태스킹 기능 향상.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/7b3032a_desktop.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/env-vars\" target=\"_blank\">Env Vars</a>",
+        "summary": "`CLAUDE_CODE_CERT_STORE` 설명이 간결하게 변경되었고,  `CLAUDE_CODE_ENABLE_FINE_GRAINED_TOOL_STREAMING`의 동작 방식과 옵션이 명확해졌습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/7b3032a_env-vars.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/errors\" target=\"_blank\">Errors</a>",
+        "summary": "오류 해결 가이드라인이 수정 및 개선되었습니다. 인증서 관련 문제 해결을 위한 지침이 명확해졌습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/7b3032a_errors.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/features-overview\" target=\"_blank\">Features Overview</a>",
+        "summary": "Subagent와 Skill 비교 표에 Context window 영향을 추가하여 각 기능의 컨텍스트 비용을 명확하게 설명합니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/7b3032a_features-overview.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/fullscreen\" target=\"_blank\">Fullscreen</a>",
+        "summary": "tmux 환경에서 전체 화면 렌더링 시 고려해야 할 사항이 추가되었습니다. 동기화된 출력을 지원하지 않아 깜빡임이 발생할 수 있습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/7b3032a_fullscreen.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/headless\" target=\"_blank\">Headless</a>",
+        "summary": "플러그인 로딩 옵션에 `--plugin-url`이 추가되었고, stdin 입력 크기 제한에 대한 정보가 추가되었습니다. API 응답에 비용 정보가 포함됩니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/7b3032a_headless.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/hooks-guide\" target=\"_blank\">Hooks Guide</a>",
+        "summary": "훅 동작 시나리오가 업데이트되었습니다.  'ok: false'일 때의 동작 방식이 변경되어, 각 이벤트별 상황에 맞는 처리가 이루어집니다. ",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/7b3032a_hooks-guide.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/hooks\" target=\"_blank\">Hooks</a>",
+        "summary": "훅 동작 관련 설명이 수정되었으며, 다양한 이벤트 상황에서의 ok:false 동작 방식을 명확하게 정리했습니다. 훅 사용 방식의 이해도를 높임.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/7b3032a_hooks.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/how-claude-code-works\" target=\"_blank\">How Claude Code Works</a>",
+        "summary": "기술 문서에서 'skillOverrides'에 대한 새로운 기능이 추가되어, 사용자가 스킬의 가시성을 설정에서 제어할 수 있게 되었습니다. 이는 컨텍스트 관리에 도움을 줍니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/7b3032a_how-claude-code-works.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/interactive-mode\" target=\"_blank\">Interactive Mode</a>",
+        "summary": "대화형 모드에서 `Space`를 통한 오른쪽 이동 기능이 추가되었고, Ctrl+S를 이용한 검색 범위 순환 설명이 수정되었습니다. 사용 편의성이 향상되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/7b3032a_interactive-mode.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/llm-gateway\" target=\"_blank\">Llm Gateway</a>",
+        "summary": "게이트웨이 모델 검색 기능이 추가되어, Claude Code가 게이트웨이 모델을 자동으로 감지합니다. CLAUDE_CODE_ENABLE_GATEWAY_MODEL_DISCOVERY 설정으로 제어됩니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/7b3032a_llm-gateway.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/mcp\" target=\"_blank\">Mcp</a>",
+        "summary": "MCP 패널에 툴 개수 표시 및 비활성 서버 플래그 추가. 'workspace' 서버 이름 예약 및 동적 툴 업데이트 지원. alwaysLoad 설정 시 연결 대기 시간 제한.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/7b3032a_mcp.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/model-config\" target=\"_blank\">Model Config</a>",
+        "summary": "ANTHROPIC_CUSTOM_MODEL_OPTION 사용 시나리오가 개선되었고, LLM gateway 설정 관련 내용이 업데이트 되었습니다.  모델 선택에 대한 가이드라인이 명확해졌습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/7b3032a_model-config.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/monitoring-usage\" target=\"_blank\">Monitoring Usage</a>",
+        "summary": "OTEL 환경 변수 전달 방식 변경 및 mTLS 인증 설정 정보가 추가되었습니다. Claude Code가 하위 프로세스에 OTEL 변수를 전달하지 않는다는 점과 HTTP/gRPC 프로토콜에 따른 mTLS 설정 방법을 안내합니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/7b3032a_monitoring-usage.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/network-config\" target=\"_blank\">Network Config</a>",
+        "summary": "네트워크 접근 URL에 raw.githubusercontent.com이 추가되어 릴리스 노트 및 플러그인 정보 획득을 지원합니다. 보안 및 업데이트 관련 중요 변경 사항입니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/7b3032a_network-config.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/permissions\" target=\"_blank\">Permissions</a>",
+        "summary": "Plan 모드 설명이 명확해지고, 샌드박스 파일 시스템 설정 및 채널 관련 내용이 업데이트되었습니다. 원격 제어 관련 설명도 수정되었습니다. (권한 설정 관련 정보 갱신)",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/7b3032a_permissions.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/platforms\" target=\"_blank\">Platforms</a>",
+        "summary": "CLI 및 데스크톱 플랫폼 관련 기능 개선. 서드파티 공급자 사용 방법 명확화, 데스크톱 Vertex AI 지원 언급 및 제약 사항 설명.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/7b3032a_platforms.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/plugin-marketplaces\" target=\"_blank\">Plugin Marketplaces</a>",
+        "summary": "플러그인 설명에서 슬래시 제거, 사용 예시 변경 및 URL 정규화 관련 정보가 추가되어 더 명확해졌습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/7b3032a_plugin-marketplaces.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/plugins-reference\" target=\"_blank\">Plugins Reference</a>",
+        "summary": "플러그인 manifest에서 experimental 항목에 테마와 모니터 설정이 추가되었습니다.  Monitors가 experimental로 변경되었습니다. 이로 인해 기능 안정성이 향상되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/7b3032a_plugins-reference.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/plugins\" target=\"_blank\">Plugins</a>",
+        "summary": "플러그인 URL을 통해 zip 아카이브를 로드하는 새로운 기능이 추가되어 CI 빌드 통합을 용이하게 합니다. 보안 고려 사항도 명시되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/7b3032a_plugins.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/remote-control\" target=\"_blank\">Remote Control</a>",
+        "summary": "원격 제어 연결 안내가 업데이트되었고, 오류 해결을 위한 원인과 해결책이 추가되어 사용성을 향상시켰습니다. 특히 조직 정책 관련 내용이 강화되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/7b3032a_remote-control.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/scheduled-tasks\" target=\"_blank\">Scheduled Tasks</a>",
+        "summary": "반복 작업의 지연 시간이 증가했습니다. (최대 15분 -> 최대 30분). API 부하를 분산하기 위해 타이밍 조정.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/7b3032a_scheduled-tasks.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/security\" target=\"_blank\">Security</a>",
+        "summary": "편집 모드에서 자동 승인되는 파일 편집 및 특정 Bash 명령어 목록이 추가되어, 작업 디렉토리 내에서 보안을 유지하면서 효율성을 높였습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/7b3032a_security.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/settings\" target=\"_blank\">Settings</a>",
+        "summary": "설정 파일에 대한 Windows 경로 정보가 추가되었고, autoMemoryEnabled 설정이 추가되어 메모리 사용을 제어할 수 있게 되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/7b3032a_settings.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/setup\" target=\"_blank\">Setup</a>",
+        "summary": "Homebrew 및 WinGet 자동 업데이트 옵션 추가, 환경 변수 설명 추가, WinGet 업데이트 실패 시 안내 개선. 사용자 편의성 향상.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/7b3032a_setup.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/skills\" target=\"_blank\">Skills</a>",
+        "summary": "기술 본문 간결화 권장 사항이 추가되었고, skillOverrides 설정을 통해 메뉴 표시 여부를 제어하는 방법이 추가되었습니다. 중요하지 않은 기술을 숨기는 방법을 제공합니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/7b3032a_skills.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/statusline\" target=\"_blank\">Statusline</a>",
+        "summary": "상태 업데이트 트리거가 '/compact' 완료 후 추가되었고, context_window.current_usage null 발생 시점이 '/compact' 후로 변경되었습니다. API 사용량 관련 내용이 업데이트 되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/7b3032a_statusline.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/sub-agents\" target=\"_blank\">Sub Agents</a>",
+        "summary": "CLI 정의 에이전트 예시에 macOS/Linux 및 Windows PowerShell 탭이 추가되었고, 후크 관련 Windows PowerShell 안내가 추가되었습니다. 사용자 편의성 향상.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/7b3032a_sub-agents.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/tools-reference\" target=\"_blank\">Tools Reference</a>",
+        "summary": "도구 목록이 업데이트되어, `SendMessage`와 `TeamCreate`, `TeamDelete`가 에이전트 팀 관련 기능으로 추가되었습니다. 팀 협업 기능이 강화되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/7b3032a_tools-reference.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/voice-dictation\" target=\"_blank\">Voice Dictation</a>",
+        "summary": "키 바인딩 관련 내용이 수정 및 추가되었습니다. 캡스락과 같은 일부 키는 바인딩할 수 없다는 내용이 추가되었습니다.  ",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/7b3032a_voice-dictation.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/vs-code\" target=\"_blank\">Vs Code</a>",
+        "summary": "macOS에서 Cmd+Esc가 동작하지 않는 문제 해결을 위해 시스템 설정 변경 방법을 안내하며, 단축키 재설정 옵션을 추가했습니다. ",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/7b3032a_vs-code.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/web-quickstart\" target=\"_blank\">Web Quickstart</a>",
+        "summary": "새로운 세션이 설정 중 멈추거나 시간 초과되는 문제에 대한 해결책이 추가되었습니다. 설정 스크립트 시간 제한을 초과하지 않도록 개선했습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/7b3032a_web-quickstart.txt"
+      }
+    ]
+  },
+  {
     "date": "2026-05-04T15:43:48Z",
     "commit_hash": "de30bf0",
     "entries": [
