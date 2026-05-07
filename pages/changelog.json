@@ -1,5 +1,123 @@
 [
   {
+    "date": "2026-05-07T15:51:13Z",
+    "commit_hash": "2dac6d0",
+    "entries": [
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/agent-sdk__custom-tools\" target=\"_blank\">Agent Sdk__Custom Tools</a>",
+        "summary": "구조화된 데이터 반환 기능이 추가되어, Claude가 텍스트 파싱 없이 정확한 필드를 읽을 수 있도록 지원합니다. Python에서는 별도 MCP 서버가 필요합니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/2dac6d0_agent-sdk__custom-tools.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/agent-sdk__python\" target=\"_blank\">Agent Sdk__Python</a>",
+        "summary": "ClaudeAgentOptions에 'strict_mcp_config' 및 'include_hook_events' 속성이 추가되었고, 'effort' 값에 'xhigh'가 추가되었습니다. Agent 설정 관련 기능 개선.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/2dac6d0_agent-sdk__python.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/agent-sdk__typescript\" target=\"_blank\">Agent Sdk__Typescript</a>",
+        "summary": "env 설정에 대한 설명이 업데이트되었고, API 응답 시간 초과 관련 변수에 대한 내용이 추가되었습니다. settings 관련 옵션이 추가되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/2dac6d0_agent-sdk__typescript.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/amazon-bedrock\" target=\"_blank\">Amazon Bedrock</a>",
+        "summary": "ANTHROPIC_MODEL 환경 변수에서 모델 ID가 'global'에서 'us'로 변경되어, 미국 리전에 맞게 모델을 지정합니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/2dac6d0_amazon-bedrock.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/changelog\" target=\"_blank\">Changelog</a>",
+        "summary": "2.1.132 버전에서 환경 변수 추가, 버그 수정, 시각적 일관성 개선, 그리고 터미널 UI의 기능 향상이 이루어졌습니다. 전반적인 안정성과 사용자 경험 향상에 기여합니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/2dac6d0_changelog.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/claude-code-on-the-web\" target=\"_blank\">Claude Code On The Web</a>",
+        "summary": "세션 ID URL 생성 방식이 변경되어, Claude 코드 웹 환경에서 세션 링크를 추적하는 방식이 개선되었습니다. (추적성 향상)",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/2dac6d0_claude-code-on-the-web.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/cli-reference\" target=\"_blank\">Cli Reference</a>",
+        "summary": "CLI 플래그 설명과 예시가 개선되었습니다. 몇몇 플래그가 추가되었고, 더 나은 사용성을 위해 수정되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/2dac6d0_cli-reference.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/env-vars\" target=\"_blank\">Env Vars</a>",
+        "summary": "새로운 환경 변수 `CLAUDE_ASYNC_AGENT_STALL_TIMEOUT_MS`가 추가되어 백그라운드 에이전트의 타임아웃을 설정합니다. 에이전트 안정성을 개선합니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/2dac6d0_env-vars.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/fullscreen\" target=\"_blank\">Fullscreen</a>",
+        "summary": "JetBrains IDE 터미널의 스크롤 동작 개선 및 버그 해결. 2025.3 버전 이상으로 업그레이드 권장.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/2dac6d0_fullscreen.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/interactive-mode\" target=\"_blank\">Interactive Mode</a>",
+        "summary": "macOS 환경에서 Alt+T 단축키 동작 방식이 변경되었고, Shift+Enter가 지원되는 터미널 목록에 Windows Terminal이 추가되었습니다. 이로 인해 사용자 편의성이 향상되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/2dac6d0_interactive-mode.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/mcp\" target=\"_blank\">Mcp</a>",
+        "summary": "호스트 이름 일치 기능 개선 및 설명 추가: 대소문자 무시, FQDN 점 무시, DNS 의미론과 일치합니다. 중요 정보 전달.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/2dac6d0_mcp.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/memory\" target=\"_blank\">Memory</a>",
+        "summary": "특정 시점에 실행해야 하는 지침은 훅으로 작성하도록 권장하며, `--append-system-prompt` 사용법을 안내합니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/2dac6d0_memory.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/model-config\" target=\"_blank\">Model Config</a>",
+        "summary": "사고 모드 토글 단축키 정보가 업데이트되었고, 터미널 설정 관련 링크가 제거되었습니다. 사용 편의성을 개선했습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/2dac6d0_model-config.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/settings\" target=\"_blank\">Settings</a>",
+        "summary": "설정 관련 환경 변수 안내가 추가되었습니다. API 키 및 자동 메모리 비활성화 설정을 환경 변수로 제어 가능하도록 변경되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/2dac6d0_settings.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/statusline\" target=\"_blank\">Statusline</a>",
+        "summary": "context_window 필드 설명 변경: 토큰 카운트가 세션 누적이 아닌 현재 컨텍스트 사용량을 반영하도록 수정되었습니다. v2.1.132 이후 변경사항입니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/2dac6d0_statusline.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/terminal-config\" target=\"_blank\">Terminal Config</a>",
+        "summary": "터미널 별 Shift+Enter 줄 바꿈 지원 표가 업데이트 되었습니다. Windows Terminal이 추가되었고 gnome-terminal이 위치가 변경되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/2dac6d0_terminal-config.txt"
+      }
+    ]
+  },
+  {
     "date": "2026-05-06T15:48:31Z",
     "commit_hash": "7b3032a",
     "entries": [
