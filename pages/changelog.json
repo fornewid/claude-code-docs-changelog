@@ -1,5 +1,242 @@
 [
   {
+    "date": "2026-05-08T15:35:25Z",
+    "commit_hash": "d8c520e",
+    "entries": [
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/agent-sdk__claude-code-features\" target=\"_blank\">Agent Sdk__Claude Code Features</a>",
+        "summary": "Skill 사용법이 변경되었습니다. `allowed_tools` 대신 `skills` 옵션을 사용하여 스킬을 제어하고, Skill 도구 자동 활성화를 설명합니다. 더 간결하게 변경되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/d8c520e_agent-sdk__claude-code-features.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/agent-sdk__python\" target=\"_blank\">Agent Sdk__Python</a>",
+        "summary": "AgentDefinition에 skills 속성이 추가되어 에이전트 시작 시 스킬을 미리 로드하여 더 빠르게 사용할 수 있습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/d8c520e_agent-sdk__python.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/agent-sdk__sessions\" target=\"_blank\">Agent Sdk__Sessions</a>",
+        "summary": "V2 세션 API가 더 이상 사용되지 않으며, V1 query() 함수와 세션 옵션을 사용하도록 안내합니다. API 사용 방식 변경.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/d8c520e_agent-sdk__sessions.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/agent-sdk__skills\" target=\"_blank\">Agent Sdk__Skills</a>",
+        "summary": "`allowed_tools` 대신 `skills` 옵션을 사용하여 사용 가능한 스킬을 제어합니다. 스킬 이름 또는 'all'로 활성화하거나, '[]'로 비활성화합니다.  SDK 사용법이 간소화되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/d8c520e_agent-sdk__skills.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/agent-sdk__subagents\" target=\"_blank\">Agent Sdk__Subagents</a>",
+        "summary": "Subagent 설명 변경: skills 매개변수가 시작 시 에이전트 컨텍스트에 스킬을 미리 로드하도록 업데이트되었습니다. 미사용 스킬은 도구를 통해 호출 가능.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/d8c520e_agent-sdk__subagents.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/agent-sdk__typescript-v2-preview\" target=\"_blank\">Agent Sdk__Typescript V2 Preview</a>",
+        "summary": "V2 TypeScript SDK가 deprecated 되어, V1 SDK 사용 권장. 세션 API의 사용 중단 및 V1 SDK로의 전환 안내.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/d8c520e_agent-sdk__typescript-v2-preview.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/agent-sdk__typescript\" target=\"_blank\">Agent Sdk__Typescript</a>",
+        "summary": "query() 함수에 'skills' 옵션이 추가되어 세션에 사용 가능한 스킬을 지정할 수 있습니다. 에이전트 정의에서 'tools' 설명을 업데이트했습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/d8c520e_agent-sdk__typescript.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/amazon-bedrock\" target=\"_blank\">Amazon Bedrock</a>",
+        "summary": "구현 관련 코드 삭제. 문서 내 불필요한 실험 관련 코드가 제거되었습니다. 페이지 로딩 속도 개선 및 가독성 향상.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/d8c520e_amazon-bedrock.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/authentication\" target=\"_blank\">Authentication</a>",
+        "summary": "인증 정보 관리 방식이 업데이트되었습니다. 사용자 정의 API 엔드포인트 사용 방법을 안내하고, 추가적인 인증 방식 지원에 대한 내용이 추가되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/d8c520e_authentication.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/changelog\" target=\"_blank\">Changelog</a>",
+        "summary": "워크트리, 샌드박스, 정책 설정, 훅, 메모리 사용량 개선 및 버그 수정이 이루어졌습니다. 전반적인 기능 향상과 안정성 개선에 기여합니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/d8c520e_changelog.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/claude-code-on-the-web\" target=\"_blank\">Claude Code On The Web</a>",
+        "summary": "환경 편집 접근 방식이 개선되었고, 네트워크 접근 설정 위치 및 MCP 커넥터 관련 내용이 추가되어 사용자 편의성이 향상되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/d8c520e_claude-code-on-the-web.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/cli-reference\" target=\"_blank\">Cli Reference</a>",
+        "summary": "--plugin-url 플래그 설명에 여러 URL을 지원하도록 변경되었습니다. 사용 편의성을 향상시켰습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/d8c520e_cli-reference.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/debug-your-config\" target=\"_blank\">Debug Your Config</a>",
+        "summary": "`/debug [issue]` 명령어가 추가되어 디버깅 로그를 활성화하고, 문제 해결에 도움을 줍니다. 또한, 깨끗한 설정을 테스트하는 방법이 추가되었습니다.  ",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/d8c520e_debug-your-config.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/desktop\" target=\"_blank\">Desktop</a>",
+        "summary": "SSH 연결 허용 목록을 추가하여 조직의 데스크톱 앱에서 SSH 호스트 연결을 제한하는 기능이 추가되었습니다. 보안 강화에 기여합니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/d8c520e_desktop.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/discover-plugins\" target=\"_blank\">Discover Plugins</a>",
+        "summary": "깃 저장소 추가 시 .git 접미사 추가 안내, Git 호스트 지원범위 확대 및 마켓플레이스 혼동 방지. 플러그인 설치 방법 명확화.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/d8c520e_discover-plugins.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/env-vars\" target=\"_blank\">Env Vars</a>",
+        "summary": "ANTHROPIC_VERTEX_PROJECT_ID 설명이 개선되었고, CLAUDE_CODE_ENABLE_FINE_GRAINED_TOOL_STREAMING의 동작 방식이 명확해졌습니다. 더 나은 이해를 돕습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/d8c520e_env-vars.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/errors\" target=\"_blank\">Errors</a>",
+        "summary": "네트워크 오류 관련 내용이 추가되었습니다. 클라우드 환경에서 발생할 수 있는 'host_not_allowed' 오류에 대한 해결 방법을 안내합니다. ",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/d8c520e_errors.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/features-overview\" target=\"_blank\">Features Overview</a>",
+        "summary": "서브 에이전트의 스킬 로딩 방식이 변경되었습니다. `skills` 필드에 나열된 스킬은 시작 시점에 로드되고, 스킬 도구를 통해 다른 스킬도 사용 가능합니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/d8c520e_features-overview.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/google-vertex-ai\" target=\"_blank\">Google Vertex Ai</a>",
+        "summary": "Vertex AI 연동 관련 설정과 문제 해결 가이드가 업데이트되었습니다. GCP 자격 증명 새로 고침 기능과 문제 발생 시 해결 방법이 추가되었습니다. (중요성: 상)",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/d8c520e_google-vertex-ai.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/hooks\" target=\"_blank\">Hooks</a>",
+        "summary": "훅 이벤트에 `effort` 필드가 추가되어, 현재 모델의 노력 수준을 확인하고 접근할 수 있게 되었습니다. 이는 도구 사용 맥락에서 더 유용합니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/d8c520e_hooks.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/mcp\" target=\"_blank\">Mcp</a>",
+        "summary": "MCP 서버 설치 범위 설명에 '관리형 구성' 내용이 추가되어, 기업 수준의 서버 배포 옵션을 소개합니다. 팀 협업 및 관리 편의성이 향상됩니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/d8c520e_mcp.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/memory\" target=\"_blank\">Memory</a>",
+        "summary": "AGENTS.md를 CLAUDE.md로 사용하는 방법이 추가되었습니다. 심볼릭 링크 및 /init 명령어를 통한 내용 통합 방안을 안내합니다. Windows 환경에서의 주의사항도 포함합니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/d8c520e_memory.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/microsoft-foundry\" target=\"_blank\">Microsoft Foundry</a>",
+        "summary": "실험 관련 코드 삭제 및 ContactSalesCard 컴포넌트 호출 방식을 변경하여 문서 간소화 및 유지보수성 향상.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/d8c520e_microsoft-foundry.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/model-config\" target=\"_blank\">Model Config</a>",
+        "summary": "ANTHROPIC_BASE_URL 설정 관련 안내 추가. 요청 라우팅 관련 내용이며, LLM 게이트웨이 설정을 위한 참고 자료 제공.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/d8c520e_model-config.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/output-styles\" target=\"_blank\">Output Styles</a>",
+        "summary": "출력 스타일 파일 저장 위치가 세 가지 레벨로 확장되었습니다. 플러그인 자동 적용 설정 추가로 플러그인 사용성 개선.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/d8c520e_output-styles.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/overview\" target=\"_blank\">Overview</a>",
+        "summary": "설치, 통합, 사용법을 포괄하는 새로운 문서가 추가되었습니다. Agentic coding 도구의 사용성을 높이기 위한 업데이트입니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/d8c520e_overview.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/plugins\" target=\"_blank\">Plugins</a>",
+        "summary": "플러그인 로드 시 여러 URL을 지정하는 방법이 추가되었습니다. `--plugin-url` 플래그를 반복하거나, 공백으로 구분된 URL을 사용합니다. 플러그인 관리가 개선되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/d8c520e_plugins.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/quickstart\" target=\"_blank\">Quickstart</a>",
+        "summary": "설치 가이드가 간소화되고, 다양한 플랫폼(터미널, 데스크톱, VS Code, JetBrains) 설치 옵션을 제공합니다. 팀 기능 관련 내용도 추가되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/d8c520e_quickstart.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/routines\" target=\"_blank\">Routines</a>",
+        "summary": "환경 및 네트워크 접근 관련 내용이 업데이트되었습니다. 기본 환경의 신뢰할 수 있는 네트워크 접근 방식과 사용자 정의 설정 방법이 추가되었습니다.  (네트워크 접근, 허용된 도메인)",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/d8c520e_routines.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/settings\" target=\"_blank\">Settings</a>",
+        "summary": "settings.json의 설명 및 사용 예시가 업데이트되었습니다.  더 나은 설정을 위한 새로운 옵션들이 추가되었습니다.  사용 편의성이 향상되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/d8c520e_settings.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/sub-agents\" target=\"_blank\">Sub Agents</a>",
+        "summary": "subagent의 'tools' 및 'skills' 필드에 대한 설명이 개선되었습니다. context에 skill을 로드하는 방법과 skill tool을 사용하는 방법을 명확히 했습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/d8c520e_sub-agents.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/third-party-integrations\" target=\"_blank\">Third Party Integrations</a>",
+        "summary": "Experiment 컴포넌트 관련 코드 삭제 및 ContactSalesCard 호출 방식 변경. 단순 기능 제거로, 다른 변화는 없습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/d8c520e_third-party-integrations.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/vs-code\" target=\"_blank\">Vs Code</a>",
+        "summary": "VS Code 확장 기능 설치 방법이 업데이트되었습니다. Windsurf, Kiro 등 포크에서도 설치 가능하며, 설치 실패 시 CLI 사용 안내를 추가했습니다. 사용자 편의성 향상.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/d8c520e_vs-code.txt"
+      }
+    ]
+  },
+  {
     "date": "2026-05-07T15:51:13Z",
     "commit_hash": "2dac6d0",
     "entries": [
