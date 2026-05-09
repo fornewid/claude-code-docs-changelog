@@ -1,5 +1,198 @@
 [
   {
+    "date": "2026-05-09T15:22:20Z",
+    "commit_hash": "2a7d202",
+    "entries": [
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/agent-sdk__mcp\" target=\"_blank\">Agent Sdk__Mcp</a>",
+        "summary": "Agent SDK의 MCP 설정에 대한 내용이 업데이트되었습니다. 스트리밍 HTTP 전송 관련 정보가 추가되었으며, `streamable-http` 별칭 사용 방법이 안내됩니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/2a7d202_agent-sdk__mcp.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/agent-sdk__python\" target=\"_blank\">Agent Sdk__Python</a>",
+        "summary": "answers 필드 타입이 dict | None에서 dict[str, str | list[str]] | None으로 변경되어 멀티 선택 답변 처리 방식이 개선되었습니다. ",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/2a7d202_agent-sdk__python.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/agent-sdk__typescript\" target=\"_blank\">Agent Sdk__Typescript</a>",
+        "summary": "agent-sdk에 resolveSettings 함수가 추가되어 설정 병합 로직을 외부에서 사용할 수 있게 되었고, SDKPermissionDeniedMessage 타입이 추가되어 권한 거부 상황을 UI에서 처리할 수 있게 되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/2a7d202_agent-sdk__typescript.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/agent-sdk__user-input\" target=\"_blank\">Agent Sdk__User Input</a>",
+        "summary": "다중 선택 질문에 대한 답변 형식이 배열 또는 쉼표로 구분된 문자열로 변경되었습니다. API 사용의 유연성을 높였습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/2a7d202_agent-sdk__user-input.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/agent-teams\" target=\"_blank\">Agent Teams</a>",
+        "summary": "에이전트 팀 관련 몇 가지 제한 사항의 문구가 개선되었습니다. 더 명확한 이해를 돕기 위함입니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/2a7d202_agent-teams.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/auto-mode-config\" target=\"_blank\">Auto Mode Config</a>",
+        "summary": "auto-mode 설정에 hard_deny가 추가되었고, 우선순위, 사용법, 위험요소 등이 변경되었습니다. 보안 경계를 강화하고 설정을 더 세분화합니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/2a7d202_auto-mode-config.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/changelog\" target=\"_blank\">Changelog</a>",
+        "summary": "다양한 버그 수정 및 기능 개선이 이루어졌습니다. VSCode 확장, 플러그인, API, 사용자 인터페이스, MCP 서버 관련 문제들이 해결되었습니다. 워크트리 설정도 추가되었습니다. (버그 수정, 기능 개선)",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/2a7d202_changelog.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/commands\" target=\"_blank\">Commands</a>",
+        "summary": "명령어 사용법이 워크플로우별로 재구성되었고, `/clear` 명령어에 이름 지정 기능이 추가되어 대화 관리가 개선되었습니다. (명령어 목록, 목적, 설명 업데이트)",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/2a7d202_commands.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/env-vars\" target=\"_blank\">Env Vars</a>",
+        "summary": "`CLAUDE_CODE_NATIVE_CURSOR`와 `DO_NOT_TRACK` 환경 변수가 추가되어 터미널 커서 제어 및 원치 않는 추적 방지 옵션을 제공합니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/2a7d202_env-vars.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/errors\" target=\"_blank\">Errors</a>",
+        "summary": "조직 정책으로 인해 루틴이 비활성화되었을 때의 오류와 해결 방법이 추가되었습니다.  사용자가 루틴을 사용할 수 있도록 관리자에게 문의하세요.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/2a7d202_errors.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/hooks\" target=\"_blank\">Hooks</a>",
+        "summary": "resume 시 권한 모드 복원 방식이 변경되었습니다. 이전에는 수동 설정이 필요했지만, 이제는 자동 복원되며, 예외 사항과 재정의 방법이 추가되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/2a7d202_hooks.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/interactive-mode\" target=\"_blank\">Interactive Mode</a>",
+        "summary": "대화형 모드에서 제안을 수락하는 방법이 변경되었습니다. Tab/오른쪽 화살표는 프롬프트에, Enter는 제출로 변경되어 사용자 경험을 개선합니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/2a7d202_interactive-mode.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/mcp\" target=\"_blank\">Mcp</a>",
+        "summary": "MCP 서버 설정 시 JSON을 통한 `streamable-http` 별칭 지원. 서버 문서에서 설정 복사 시 수정 불필요.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/2a7d202_mcp.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/monitoring-usage\" target=\"_blank\">Monitoring Usage</a>",
+        "summary": "도구 권한 결정 로그의 'source' 속성 설명이 업데이트되었습니다. 사용자 설정, 세션 기반 허용, 및 SDK 동작에 대한 자세한 내용이 추가되었습니다. 권한 부여 방식의 차이점을 명확히 했습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/2a7d202_monitoring-usage.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/permissions\" target=\"_blank\">Permissions</a>",
+        "summary": "권한 규칙의 동작 방식에 대한 자세한 설명과 예시가 추가되었습니다. .env 파일 접근 규칙과 관련된 동작 방식도 명확해졌습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/2a7d202_permissions.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/plugins-reference\" target=\"_blank\">Plugins Reference</a>",
+        "summary": "플러그인 경로 설정 방식이 변경되었습니다. skills는 기본 경로를 유지하며 추가하고, commands 등은 기본 경로를 대체합니다. 사용자가 더 유연하게 설정할 수 있습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/2a7d202_plugins-reference.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/routines\" target=\"_blank\">Routines</a>",
+        "summary": "팀/기업 관리자가 루틴 기능을 끄는 방법, 비활성화 시 동작 방식, 문제 해결 가이드가 추가되었습니다. 조직 정책에 따른 기능 제어 설명.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/2a7d202_routines.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/security\" target=\"_blank\">Security</a>",
+        "summary": "네트워크 요청 승인, 격리된 컨텍스트, 신뢰 확인 등 보안 관련 기능이 강화되었습니다. 안전한 환경을 위해 중요합니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/2a7d202_security.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/server-managed-settings\" target=\"_blank\">Server Managed Settings</a>",
+        "summary": "OS 수준 정책 설정은 더 이상 지원되지 않으며, MDM 또는 managed-settings.json을 사용하도록 안내합니다. 이는 설정 적용 방식의 명확성을 높입니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/2a7d202_server-managed-settings.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/settings\" target=\"_blank\">Settings</a>",
+        "summary": "autoMode 설정에 hard_deny 옵션이 추가되어 자동 모드 제어 기능이 강화되었습니다. 정책 설정을 통해 사용자 경험을 개선합니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/2a7d202_settings.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/setup\" target=\"_blank\">Setup</a>",
+        "summary": "npm 설치 업그레이드 명령어 변경: `npm install -g @anthropic-ai/claude-code@latest` 사용 권장, `npm update -g` 지양. 최신 릴리스로의 업그레이드를 보장합니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/2a7d202_setup.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/terminal-config\" target=\"_blank\">Terminal Config</a>",
+        "summary": "터미널에서 알림 및 진행 상황 업데이트가 표시되도록 설정이 변경되었습니다. Shift+Enter와 Enter의 구분을 위한 설정이 추가되었습니다. ",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/2a7d202_terminal-config.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/vs-code\" target=\"_blank\">Vs Code</a>",
+        "summary": "claudeProcessWrapper 설정에 대한 설명이 개선되었습니다. 사용자가 별도로 설치된 'claude' 바이너리를 지정할 수 있도록 안내합니다. 이는 확장 기능의 플랫폼 호환성을 높입니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/2a7d202_vs-code.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/whats-new\" target=\"_blank\">Whats New</a>",
+        "summary": "플러그인, git bash, 코드 리뷰, 알림 등 다양한 기능 추가 및 개선. 개발 워크플로우를 효율적으로 만들 수 있습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/2a7d202_whats-new.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/whats-new__2026-w16\" target=\"_blank\">Whats New__2026 W16</a>",
+        "summary": "Claude Opus 4.7 업데이트: 모바일 푸시 알림 기능 추가로 긴 작업 완료 시 알림 수신 가능. 개발 효율성 향상.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/2a7d202_whats-new__2026-w16.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/whats-new__2026-w18\" target=\"_blank\">Whats New__2026 W18</a>",
+        "summary": "2026년 18주차의 새로운 기능 업데이트를 담은 파일입니다. 브라우저 콜백 없이 로그인, 프로젝트 정리 기능, PR URL로 세션 재개 기능 등이 추가되었습니다. 왜냐하면 사용자 경험과 효율성을 향상시키기 때문입니다.",
+        "tag_text": "NEW",
+        "tag_class": "new"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/whats-new__2026-w19\" target=\"_blank\">Whats New__2026 W19</a>",
+        "summary": "새로운 기능과 개선 사항을 요약한 문서입니다. 플러그인, 기록 검색, 워크트리, 자동 모드 등의 변경 사항을 다룹니다. (새로운 기능 추가 및 개선)",
+        "tag_text": "NEW",
+        "tag_class": "new"
+      }
+    ]
+  },
+  {
     "date": "2026-05-08T15:35:25Z",
     "commit_hash": "d8c520e",
     "entries": [
