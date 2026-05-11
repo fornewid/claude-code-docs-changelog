@@ -1,5 +1,39 @@
 [
   {
+    "date": "2026-05-11T16:02:33Z",
+    "commit_hash": "e8c4cdc",
+    "entries": [
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/glossary\" target=\"_blank\">Glossary</a>",
+        "summary": "용어집에 'Turn' 항목이 추가되었습니다. 턴의 정의와 세션, 에이전트 루프와의 관계를 설명하여 Claude의 동작 방식을 명확히 했습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/e8c4cdc_glossary.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/hooks-guide\" target=\"_blank\">Hooks Guide</a>",
+        "summary": "훅 동작 방식이 명확하게 변경되었고, 여러 훅의 결과를 결합하는 방법에 대한 새로운 설명과 예시가 추가되었습니다. 더 안전하고 예측 가능한 훅 사용을 위해 중요합니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/e8c4cdc_hooks-guide.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/settings\" target=\"_blank\">Settings</a>",
+        "summary": "새로운 설정 옵션이 추가되었습니다: `maxSkillDescriptionChars` 및 `skillListingBudgetFraction`. 이는 스킬 설명의 길이와 스킬 목록에 할당될 컨텍스트 양을 제어합니다. (v2.1.105)",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/e8c4cdc_settings.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/skills\" target=\"_blank\">Skills</a>",
+        "summary": "기술 설명 텍스트가 모델 컨텍스트에 맞게 조정되었고, 예산 설정 방법과 영향받는 기술 확인 방법이 추가되었습니다. 중요 기술의 유지를 돕습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/e8c4cdc_skills.txt"
+      }
+    ]
+  },
+  {
     "date": "2026-05-10T15:23:25Z",
     "commit_hash": "7d0e309",
     "entries": [
