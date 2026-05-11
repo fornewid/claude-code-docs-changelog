@@ -412,8 +412,8 @@
     "glossary.md": {
       "original_url": "https://code.claude.com/docs/en/glossary",
       "original_md_url": "https://code.claude.com/docs/en/glossary.md",
-      "hash": "83d04f2a5e3caaa59e68065c424d8d0c0ae58b271ec532017026d8002b2db7ea",
-      "last_updated": "2026-05-03T15:17:41.711557"
+      "hash": "5640dd3ab327a707381050ac06bc2b1660ea322208e285d29af85b77a6bf3e7c",
+      "last_updated": "2026-05-11T16:02:01.896514"
     },
     "google-vertex-ai.md": {
       "original_url": "https://code.claude.com/docs/en/google-vertex-ai",
@@ -436,8 +436,8 @@
     "hooks-guide.md": {
       "original_url": "https://code.claude.com/docs/en/hooks-guide",
       "original_md_url": "https://code.claude.com/docs/en/hooks-guide.md",
-      "hash": "ccd1639a9d75881ff461746c92514826d6dc1e2ba49b5c6e167c1de3acc172df",
-      "last_updated": "2026-05-06T15:48:03.260461"
+      "hash": "6507f3a52100ae36531053973b22f7de7ce367c729cef77e5cad89bda5209876",
+      "last_updated": "2026-05-11T16:02:04.110905"
     },
     "how-claude-code-works.md": {
       "original_url": "https://code.claude.com/docs/en/how-claude-code-works",
@@ -610,8 +610,8 @@
     "settings.md": {
       "original_url": "https://code.claude.com/docs/en/settings",
       "original_md_url": "https://code.claude.com/docs/en/settings.md",
-      "hash": "0b1e85fe696ef5aabce951d48e1380cb22e62c15740773c171d653a8e8d35d0d",
-      "last_updated": "2026-05-09T15:22:07.558568"
+      "hash": "9b2570f88995eed0b2988fd3ef2e430316a19b721b6122d45ea8fa009dbb17be",
+      "last_updated": "2026-05-11T16:02:20.087766"
     },
     "setup.md": {
       "original_url": "https://code.claude.com/docs/en/setup",
@@ -622,8 +622,8 @@
     "skills.md": {
       "original_url": "https://code.claude.com/docs/en/skills",
       "original_md_url": "https://code.claude.com/docs/en/skills.md",
-      "hash": "15145cbf7369c5532061cfe16254a55305dda0a7516941b944fedc0c19c313e7",
-      "last_updated": "2026-05-06T15:48:20.073634"
+      "hash": "2a978a793ab2683df3fe3aefdd76748bc16d70b98d94733adc4f38404c54b5a5",
+      "last_updated": "2026-05-11T16:02:21.207050"
     },
     "slack.md": {
       "original_url": "https://code.claude.com/docs/en/slack",
@@ -759,8 +759,8 @@
     }
   },
   "fetch_metadata": {
-    "last_fetch_completed": "2026-05-10T15:23:24.978438",
-    "fetch_duration_seconds": 70.159554,
+    "last_fetch_completed": "2026-05-11T16:02:33.366565",
+    "fetch_duration_seconds": 69.353327,
     "total_pages_discovered": 126,
     "pages_fetched_successfully": 127,
     "pages_failed": 0,
@@ -770,7 +770,7 @@
     "total_files": 126,
     "fetch_tool_version": "3.0"
   },
-  "last_updated": "2026-05-10T15:23:24.978470",
+  "last_updated": "2026-05-11T16:02:33.366593",
   "base_url": "https://raw.githubusercontent.com/fornewid/claude-code-docs-changelog/main/docs/",
   "github_repository": "fornewid/claude-code-docs-changelog",
   "github_ref": "main",
