@@ -1,0 +1,17 @@
+diff --git a/docs/quickstart.md b/docs/quickstart.md
+index a864509..99914eb 100644
+--- a/docs/quickstart.md
++++ b/docs/quickstart.md
+@@ -307,10 +307,10 @@ For more, see [best practices](/en/best-practices) and [common workflows](/en/co
+   </Accordion>
+ 
+   <Accordion title="Save time with shortcuts">
+-    * Press `?` to see all available keyboard shortcuts
++    * Type `/` to see all commands and skills
+     * Use Tab for command completion
+     * Press ↑ for command history
+-    * Type `/` to see all commands and skills
++    * Press `Shift+Tab` to cycle permission modes
+   </Accordion>
+ </AccordionGroup>
+ 
