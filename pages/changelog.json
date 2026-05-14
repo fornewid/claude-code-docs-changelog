@@ -1,5 +1,185 @@
 [
   {
+    "date": "2026-05-14T15:50:35Z",
+    "commit_hash": "1318e84",
+    "entries": [
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/admin-setup\" target=\"_blank\">Admin Setup</a>",
+        "summary": "API 제공업체 선택 가이드가 업데이트되어, 각 제공업체 선택 시 개발자 기능 사용 가능 여부 및 Claude.ai 계정 필요성을 명시했습니다. ",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/1318e84_admin-setup.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/agent-sdk__modifying-system-prompts\" target=\"_blank\">Agent Sdk__Modifying System Prompts</a>",
+        "summary": "Output Style에 keep-coding-instructions 옵션 추가, 코드 검토 예시 개선, 시스템 프롬프트 커스터마이징 표가 업데이트 되었습니다. 변경 사항은 역할 정의와 기능 설명의 정확성을 높입니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/1318e84_agent-sdk__modifying-system-prompts.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/agent-sdk__overview\" target=\"_blank\">Agent Sdk__Overview</a>",
+        "summary": "Agent SDK 관련 정보가 업데이트 되었습니다. 구독 플랜에 따른 크레딧 정책과 사용법에 대한 가이드가 추가되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/1318e84_agent-sdk__overview.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/agent-view\" target=\"_blank\">Agent View</a>",
+        "summary": "에이전트 뷰의 사용법이 개선되었습니다. `--permission-mode`, `--model`, `--effort` 플래그를 사용하여 에이전트 뷰 실행 시 기본값을 설정할 수 있습니다. 추가 설정 및 플러그인 로딩 옵션도 추가되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/1318e84_agent-view.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/authentication\" target=\"_blank\">Authentication</a>",
+        "summary": "2026년 6월 15일부터 에이전트 SDK 사용이 새로운 월별 크레딧을 소모하도록 변경되어, 구독 플랜 사용자가 주의해야 합니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/1318e84_authentication.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/changelog\" target=\"_blank\">Changelog</a>",
+        "summary": "2.1.141 릴리스에서 다양한 버그 수정 및 기능 개선이 이루어졌습니다. 특히, 터미널 알림, HTTPS 플러그인, 권한 처리 등이 개선되었고, 에이전트 및 UI/UX 관련 수정 사항이 포함되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/1318e84_changelog.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/commands\" target=\"_blank\">Commands</a>",
+        "summary": "/ultrareview 명령어의 무료 사용 횟수 제한 관련 설명이 수정되었습니다. (Pro/Max 사용자) 더 정확한 사용량 정보를 제공합니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/1318e84_commands.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/desktop-changelog\" target=\"_blank\">Desktop Changelog</a>",
+        "summary": "데스크톱 앱 변경 로그 파일입니다. 새로운 기능, 개선 사항 및 버그 수정 사항을 버전별로 설명합니다. 앱 사용성과 관리 효율성을 높입니다.",
+        "tag_text": "NEW",
+        "tag_class": "new"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/desktop-scheduled-tasks\" target=\"_blank\">Desktop Scheduled Tasks</a>",
+        "summary": "삭제 기능에 디스크 파일 삭제 옵션이 추가되었고, `update_scheduled_task` 도구를 사용해 작업 자체를 수정하는 기능이 추가되었습니다. ",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/1318e84_desktop-scheduled-tasks.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/desktop\" target=\"_blank\">Desktop</a>",
+        "summary": "터미널에서 새 탭을 여는 방법과 데스크톱 앱의 작업 완료 시 알림 기능이 추가되었습니다. 사용자 편의성을 높이기 위한 업데이트입니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/1318e84_desktop.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/fast-mode\" target=\"_blank\">Fast Mode</a>",
+        "summary": "빠른 모드 가격 정보가 업데이트되었습니다. 달러 표시와 톤당 가격 표기가 수정되었습니다. 가격 관련 정보 수정.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/1318e84_fast-mode.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/github-actions\" target=\"_blank\">Github Actions</a>",
+        "summary": "GitHub Actions에서 스킬 사용법이 추가되었고, 플러그인 설치 및 실행 방법이 업데이트되었습니다. 코드 리뷰 플러그인 사용 예시가 추가되어 기능 확장성을 높였습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/1318e84_github-actions.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/goal\" target=\"_blank\">Goal</a>",
+        "summary": "`/goal` 사용 가능한 환경이 데스크톱 앱이 추가되었으며, `-p` 옵션 설명이 명확해졌습니다. 사용자 편의성 향상.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/1318e84_goal.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/headless\" target=\"_blank\">Headless</a>",
+        "summary": "Agent SDK 사용에 대한 요금 정책 변경 사항이 추가되었습니다. 2026년 6월 15일부터 새로운 크레딧이 적용됩니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/1318e84_headless.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/hooks-guide\" target=\"_blank\">Hooks Guide</a>",
+        "summary": "훅 비활성화 관련 설정이 수정되었습니다. 'disableAllHooks' 설정에 대한 동작 방식이 명확해져 훅 관리가 용이해졌습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/1318e84_hooks-guide.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/legal-and-compliance\" target=\"_blank\">Legal And Compliance</a>",
+        "summary": "2026년 6월 15일부터 Agent SDK 및 claude -p 사용 시 별도의 에이전트 SDK 크레딧이 적용되며, 요금제에 대한 정보가 추가되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/1318e84_legal-and-compliance.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/memory\" target=\"_blank\">Memory</a>",
+        "summary": "CLAUDE.md 파일 로드 순서 표가 업데이트되었습니다. 로드 순서가 명확하게 정리되어 프로젝트 지침이 사용자 지침 다음에 나타납니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/1318e84_memory.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/output-styles\" target=\"_blank\">Output Styles</a>",
+        "summary": "출력 스타일 정의 방식이 변경되었습니다. 사용자 정의 스타일 생성 가이드가 추가되었고, 새로운 frontmatter 옵션이 소개되었습니다. 사용자 편의성을 위한 개선입니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/1318e84_output-styles.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/permissions\" target=\"_blank\">Permissions</a>",
+        "summary": "권한 거부 규칙의 우선순위가 명확하게 변경되었습니다. 사용자 설정에서 허용해도 프로젝트 설정에서 거부하면 차단됩니다. (최대 150자)",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/1318e84_permissions.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/plugins\" target=\"_blank\">Plugins</a>",
+        "summary": "플러그인 로컬 우선순위 관련 내용이 수정되었습니다. 관리 설정으로 강제 활성화/비활성화된 플러그인은 로컬 플러그인으로 덮어쓸 수 없도록 변경되었습니다. ",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/1318e84_plugins.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/remote-control\" target=\"_blank\">Remote Control</a>",
+        "summary": "원격 제어 자동 활성화 설정에 데스크톱 앱 내 설정 경로가 추가되어 사용 편의성이 향상되었습니다. 사용자는 이제 앱 설정에서 직접 변경할 수 있습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/1318e84_remote-control.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/settings\" target=\"_blank\">Settings</a>",
+        "summary": "설정 우선 순위 설명이 명확해지고, 배열 설정 병합 방식이 추가되었습니다. 사용자 및 프로젝트 설정 간의 동작 차이점을 강조합니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/1318e84_settings.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/sub-agents\" target=\"_blank\">Sub Agents</a>",
+        "summary": "플러그인 하위 에이전트의 스코프 및 호출 방법이 명확하게 변경되었으며, 하위 폴더 구조를 지원하도록 업데이트되었습니다. 플러그인 에이전트 사용법 개선.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/1318e84_sub-agents.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/ultrareview\" target=\"_blank\">Ultrareview</a>",
+        "summary": "Ultrareview 기능의 무료 사용 횟수와 결제 관련 내용이 업데이트되었습니다. 사용자에게 정확한 정보를 제공하고 오해를 방지합니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/1318e84_ultrareview.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/voice-dictation\" target=\"_blank\">Voice Dictation</a>",
+        "summary": "WSL 환경에서 음성 입력 사용 시 SoX PulseAudio 백엔드 설치 필요 정보가 추가되었습니다. 음성 입력 기능 개선을 위한 중요한 변경 사항입니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/1318e84_voice-dictation.txt"
+      }
+    ]
+  },
+  {
     "date": "2026-05-13T15:54:46Z",
     "commit_hash": "2941101",
     "entries": [
