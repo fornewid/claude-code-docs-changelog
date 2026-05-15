@@ -1,5 +1,179 @@
 [
   {
+    "date": "2026-05-15T15:44:54Z",
+    "commit_hash": "4383a35",
+    "entries": [
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/agent-sdk__hooks\" target=\"_blank\">Agent Sdk__Hooks</a>",
+        "summary": "systemMessage 필드의 동작 방식이 변경되었고, SDK 출력에 표시되지 않을 수 있음을 명시했습니다. 사용자에게 메시지를 표시하고, 모델에는 additionalContext를 사용해야 합니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/4383a35_agent-sdk__hooks.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/agent-sdk__plugins\" target=\"_blank\">Agent Sdk__Plugins</a>",
+        "summary": "플러그인 로딩 예제가 ClaudeAgentOptions를 사용하도록 업데이트되었고, 시스템 메시지 필터링 방식이 개선되었습니다. 더 명확한 코드 예시를 제공합니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/4383a35_agent-sdk__plugins.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/agent-sdk__python\" target=\"_blank\">Agent Sdk__Python</a>",
+        "summary": "systemMessage 필드 설명 변경: 기존의 transcript 추가에서 사용자에게 표시되는 경고 메시지로 변경되어 메시지 명확성이 향상되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/4383a35_agent-sdk__python.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/agent-sdk__slash-commands\" target=\"_blank\">Agent Sdk__Slash Commands</a>",
+        "summary": "슬래시 명령어 결과 처리 방식이 변경되었습니다. 'result' 타입 외 'success' 서브타입 확인 추가로 성공적인 명령 실행 여부 검증 강화.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/4383a35_agent-sdk__slash-commands.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/agent-sdk__streaming-vs-single-mode\" target=\"_blank\">Agent Sdk__Streaming Vs Single Mode</a>",
+        "summary": "스트리밍 모드 예제에서 SDKUserMessage 타입 추가, parent_tool_use_id 추가, 결과 서브타입 조건 변경으로 기능 개선 및 명확성 향상.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/4383a35_agent-sdk__streaming-vs-single-mode.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/agent-sdk__subagents\" target=\"_blank\">Agent Sdk__Subagents</a>",
+        "summary": "Subagent 처리 로직이 개선되었습니다. `ToolUseBlock` 사용, 메시지 타입 확인, `extractAgentId` 함수 개선 등을 통해 안정성을 높였습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/4383a35_agent-sdk__subagents.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/agent-sdk__typescript\" target=\"_blank\">Agent Sdk__Typescript</a>",
+        "summary": "`includeHookEvents` 옵션 추가, Task 관련 Input/Output 스키마 정의 및 SDKUserMessage의 session_id 타입 변경. 기능 확장 및 타입 안정성 강화.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/4383a35_agent-sdk__typescript.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/agent-view\" target=\"_blank\">Agent View</a>",
+        "summary": "에이전트 뷰에 프로젝트별 세션 필터링 기능 추가 및 세션 이름 설정 방법 안내. 백그라운드 세션 설정 관련 내용이 보강되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/4383a35_agent-view.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/amazon-bedrock\" target=\"_blank\">Amazon Bedrock</a>",
+        "summary": "자격 증명 갱신 설정에 대한 내용이 추가 및 수정되었습니다. `awsCredentialExport` 설정의 작동 방식에 대한 설명이 개선되었습니다. (자격 증명 문제 해결)",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/4383a35_amazon-bedrock.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/best-practices\" target=\"_blank\">Best Practices</a>",
+        "summary": "클로드의 대화 요약 기능 개선: `/rewind` 사용 설명이 명확해지고, 체크포인트 관련 세부 사항이 추가되어 작업 효율성을 높임.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/4383a35_best-practices.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/changelog\" target=\"_blank\">Changelog</a>",
+        "summary": "claude agents에 새로운 플래그가 추가되었고, Opus 4.7을 기본으로 사용하도록 변경되었습니다. 다양한 버그가 수정되었고, 플러그인 기능 및 성능이 개선되었습니다. ",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/4383a35_changelog.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/checkpointing\" target=\"_blank\">Checkpointing</a>",
+        "summary": "대화 요약 기능에 'Summarize up to here' 옵션이 추가되어 이전 대화 내용을 요약하고 현재 작업 내용은 유지할 수 있게 되었습니다. 사용성 개선.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/4383a35_checkpointing.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/claude-code-on-the-web\" target=\"_blank\">Claude Code On The Web</a>",
+        "summary": "원격 제어 세션 만료 또는 접근 거부 오류 메시지에 대한 설명이 개선되어, 문제 해결을 위한 추가 지침이 제공되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/4383a35_claude-code-on-the-web.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/cli-reference\" target=\"_blank\">Cli Reference</a>",
+        "summary": "cli-reference.md 파일에서 'claude agents' 명령어에 --cwd 옵션이 추가되어 특정 디렉토리에서 시작된 세션만 표시하도록 변경되었습니다. 이는 사용자 경험을 개선합니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/4383a35_cli-reference.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/commands\" target=\"_blank\">Commands</a>",
+        "summary": "/rewind 명령어에 대화 요약 기능이 추가되어 대화 내역 관리가 개선되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/4383a35_commands.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/env-vars\" target=\"_blank\">Env Vars</a>",
+        "summary": "ANTHROPIC_WORKSPACE_ID 변수가 추가되어 워크로드 ID 연합 사용시 특정 워크스페이스 타겟팅을 가능하게 합니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/4383a35_env-vars.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/glossary\" target=\"_blank\">Glossary</a>",
+        "summary": "체크포인트 정의가 수정되었습니다. 이제 각 프롬프트 시점의 복원 지점으로 명확히 설명하며, 추가 기능도 언급합니다. (변경 사항 요약 및 기능 개선)",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/4383a35_glossary.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/goal\" target=\"_blank\">Goal</a>",
+        "summary": "/goal 명령어에 대한 최소 요구사항이 추가되었습니다. 코드 버전 정보가 명시되어 사용자가 최신 버전을 사용하도록 안내합니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/4383a35_goal.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/hooks-guide\" target=\"_blank\">Hooks Guide</a>",
+        "summary": "훅의 타임아웃 설정 및 종류별 타임아웃 시간이 추가/수정되었습니다. 훅 사용 시 예상치 못한 지연을 방지하기 위해 중요합니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/4383a35_hooks-guide.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/hooks\" target=\"_blank\">Hooks</a>",
+        "summary": "타임아웃 기본값이 변경되고, macOS/Linux에서 command hook이 터미널 없이 실행되며, terminalSequence를 사용하여 알림을 보낼 수 있습니다. (2.1.139, 2.1.141 버전)",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/4383a35_hooks.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/mcp\" target=\"_blank\">Mcp</a>",
+        "summary": "서버 인증 오류 감지 방식이 개선되어 403 Forbidden 상태 코드도 지원합니다. OAuth 흐름이 향상되어 보안이 강화되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/4383a35_mcp.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/settings\" target=\"_blank\">Settings</a>",
+        "summary": "설정 소스 확인 방법이 개선되었습니다. /status 명령어를 통해 현재 세션에 로드된 설정 레이어를 쉽게 확인할 수 있으며, 오류 발생 시 문제 보고 기능이 추가되었습니다. ",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/4383a35_settings.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/sub-agents\" target=\"_blank\">Sub Agents</a>",
+        "summary": "서브 에이전트 관리 방식이 개선되어, CLI를 통한 에이전트 목록 확인 기능이 제거되었습니다. 더 간결한 관리 방식을 제공합니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/4383a35_sub-agents.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/voice-dictation\" target=\"_blank\">Voice Dictation</a>",
+        "summary": "음성 받아쓰기 힌트가 pushToTalk 설정에 따라 업데이트 되도록 변경되었고, 키 재지정 시 반영됩니다. 더 정확한 사용성을 제공합니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/4383a35_voice-dictation.txt"
+      }
+    ]
+  },
+  {
     "date": "2026-05-14T15:50:35Z",
     "commit_hash": "1318e84",
     "entries": [
