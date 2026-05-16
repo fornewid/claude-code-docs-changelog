@@ -1,5 +1,81 @@
 [
   {
+    "date": "2026-05-16T15:25:04Z",
+    "commit_hash": "a2eeb76",
+    "entries": [
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/agent-sdk__tool-search\" target=\"_blank\">Agent Sdk__Tool Search</a>",
+        "summary": "Vertex AI 지원 모델 정보가 업데이트되었고, `tool_reference` 블록을 지원하지 않는 프록시 관련 내용이 수정되었습니다. 도구 검색 기능의 호환성 개선.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/a2eeb76_agent-sdk__tool-search.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/amazon-bedrock\" target=\"_blank\">Amazon Bedrock</a>",
+        "summary": "작은/빠른 모델에 대한 AWS 리전 설정이 변경되었고, Bedrock에서 기본적으로 주 모델을 사용하도록 수정되었습니다. Haiku 사용을 위한 설정을 추가했습니다. (소규모/빠른 모델의 사용성 향상)",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/a2eeb76_amazon-bedrock.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/changelog\" target=\"_blank\">Changelog</a>",
+        "summary": "클로드 코드 2.1.143 릴리스: 플러그인 종속성 강화, 컨텍스트 비용 표시, 다양한 버그 수정 및 백그라운드 세션 개선. 사용자 편의성과 안정성 향상.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/a2eeb76_changelog.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/claude-directory\" target=\"_blank\">Claude Directory</a>",
+        "summary": "피드백 번들 관련 내용이 추가되었습니다. 외부 제공업체에 `/feedback`로 전송되는 텍스트 아카이브에 대한 설명이 포함됩니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/a2eeb76_claude-directory.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/data-usage\" target=\"_blank\">Data Usage</a>",
+        "summary": "피드백 명령 사용 시 대화 내역 전송 방식이 변경되었습니다. 전송 범위 선택 가능하며, 서드파티 사용 시 로컬에 저장되어 보안을 강화합니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/a2eeb76_data-usage.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/env-vars\" target=\"_blank\">Env Vars</a>",
+        "summary": "`ANTHROPIC_SMALL_FAST_MODEL_AWS_REGION` 변수 설명이 Bedrock 사용 시 구체화되었고, `ENABLE_TOOL_SEARCH`의 tool search 기능에 대한 Vertex AI 지원 내용이 업데이트되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/a2eeb76_env-vars.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/errors\" target=\"_blank\">Errors</a>",
+        "summary": "오류 보고 관련 안내가 업데이트되었습니다.  `/feedback` 명령 사용 환경에 대한 구체적인 내용이 추가되었습니다.  ",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/a2eeb76_errors.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/google-vertex-ai\" target=\"_blank\">Google Vertex Ai</a>",
+        "summary": "Vertex AI에서의 도구 검색 지원 모델이 변경되었고, 소형 모델 기본값이 주 모델로 변경되었습니다. Haiku 모델 사용을 위한 설정도 추가되었습니다. (Vertex AI 환경 개선)",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/a2eeb76_google-vertex-ai.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/mcp\" target=\"_blank\">Mcp</a>",
+        "summary": "도구 검색 설정 관련 내용이 변경되었습니다. Vertex AI 지원 모델 및 동작 방식에 대한 정보가 추가되어 도구 사용성을 개선합니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/a2eeb76_mcp.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/microsoft-foundry\" target=\"_blank\">Microsoft Foundry</a>",
+        "summary": "배경 작업에 사용할 Haiku 모델 설정을 추가하여 Foundry에서 더 나은 성능과 비용 효율성을 제공합니다. (Haiku 모델 사용 권장).",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/a2eeb76_microsoft-foundry.txt"
+      }
+    ]
+  },
+  {
     "date": "2026-05-15T15:44:54Z",
     "commit_hash": "4383a35",
     "entries": [
