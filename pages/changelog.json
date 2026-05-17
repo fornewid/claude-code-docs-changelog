@@ -1,5 +1,39 @@
 [
   {
+    "date": "2026-05-17T15:25:28Z",
+    "commit_hash": "8102970",
+    "entries": [
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/changelog\" target=\"_blank\">Changelog</a>",
+        "summary": "플러그인 의존성, 에이전트 기능, UI 개선, 버그 수정, 설정 옵션 추가 등 다양한 기능이 업데이트되었습니다. 사용자 경험과 전반적인 성능 향상에 초점을 맞췄습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/8102970_changelog.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/microsoft-foundry\" target=\"_blank\">Microsoft Foundry</a>",
+        "summary": "Claude Code 실행 방법 안내 추가, 환경 변수 설정 및 실행 명령어 제공. Foundry 연결 과정 설명, 설정 간소화.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/8102970_microsoft-foundry.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/model-config\" target=\"_blank\">Model Config</a>",
+        "summary": "설정 파일에서 노력 수준을 설정하는 옵션이 업데이트되었습니다. 이제 'max' 대신 'low', 'medium', 'high', 'xhigh'만 사용할 수 있습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/8102970_model-config.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/skills\" target=\"_blank\">Skills</a>",
+        "summary": "명령어 대체 프로세스에 대한 설명이 추가되었습니다. 명령어 출력이 일반 텍스트로 삽입되어 추가적인 확장을 방지합니다. (이해도를 높임)",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/8102970_skills.txt"
+      }
+    ]
+  },
+  {
     "date": "2026-05-16T15:25:04Z",
     "commit_hash": "a2eeb76",
     "entries": [
