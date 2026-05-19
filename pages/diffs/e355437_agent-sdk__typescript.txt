@@ -1,0 +1,124 @@
+diff --git a/docs/agent-sdk__typescript.md b/docs/agent-sdk__typescript.md
+index c61bd4c..fe80404 100644
+--- a/docs/agent-sdk__typescript.md
++++ b/docs/agent-sdk__typescript.md
+@@ -221,13 +221,13 @@ function getSessionMessages(
+ 
+ #### Return type: `SessionMessage`
+ 
+-| Property             | Type                    | Description                             |
+-| :------------------- | :---------------------- | :-------------------------------------- |
+-| `type`               | `"user" \| "assistant"` | Message role                            |
+-| `uuid`               | `string`                | Unique message identifier               |
+-| `session_id`         | `string`                | Session this message belongs to         |
+-| `message`            | `unknown`               | Raw message payload from the transcript |
+-| `parent_tool_use_id` | `null`                  | Reserved                                |
++| Property             | Type                    | Description                                                                                                                     |
++| :------------------- | :---------------------- | :------------------------------------------------------------------------------------------------------------------------------ |
++| `type`               | `"user" \| "assistant"` | Message role                                                                                                                    |
++| `uuid`               | `string`                | Unique message identifier                                                                                                       |
++| `session_id`         | `string`                | Session this message belongs to                                                                                                 |
++| `message`            | `unknown`               | Raw message payload from the transcript                                                                                         |
++| `parent_tool_use_id` | `string \| null`        | For subagent messages, the `tool_use_id` of the spawning `Agent` tool call. `null` for main-session messages and older sessions |
+ 
+ #### Example
+ 
+@@ -414,7 +414,7 @@ Configuration object for the `query()` function.
+ | `skills`                          | `string[] \| 'all'`                                                                                      | `undefined`                                 | Skills available to the session. Pass `'all'` to enable every discovered skill, or a list of skill names. When set, the SDK enables the Skill tool automatically without listing it in `allowedTools`. See [Skills](/en/agent-sdk/skills)                                                                                                                                                                                                                                           |
+ | `spawnClaudeCodeProcess`          | `(options: SpawnOptions) => SpawnedProcess`                                                              | `undefined`                                 | Custom function to spawn the Claude Code process. Use to run Claude Code in VMs, containers, or remote environments                                                                                                                                                                                                                                                                                                                                                                 |
+ | `stderr`                          | `(data: string) => void`                                                                                 | `undefined`                                 | Callback for stderr output                                                                                                                                                                                                                                                                                                                                                                                                                                                          |
+-| `strictMcpConfig`                 | `boolean`                                                                                                | `false`                                     | Enforce strict MCP validation                                                                                                                                                                                                                                                                                                                                                                                                                                                       |
++| `strictMcpConfig`                 | `boolean`                                                                                                | `false`                                     | Use only the servers passed in `mcpServers` and ignore project `.mcp.json`, user settings, and plugin-provided MCP servers                                                                                                                                                                                                                                                                                                                                                          |
+ | `systemPrompt`                    | `string \| { type: 'preset'; preset: 'claude_code'; append?: string; excludeDynamicSections?: boolean }` | `undefined` (minimal prompt)                | System prompt configuration. Pass a string for custom prompt, or `{ type: 'preset', preset: 'claude_code' }` to use Claude Code's system prompt. When using the preset object form, add `append` to extend it with additional instructions, and set `excludeDynamicSections: true` to move per-session context into the first user message for [better prompt-cache reuse across machines](/en/agent-sdk/modifying-system-prompts#improve-prompt-caching-across-users-and-machines) |
+ | `thinking`                        | [`ThinkingConfig`](#thinkingconfig)                                                                      | `{ type: 'adaptive' }` for supported models | Controls Claude's thinking/reasoning behavior. See [`ThinkingConfig`](#thinkingconfig) for options                                                                                                                                                                                                                                                                                                                                                                                  |
+ | `toolConfig`                      | [`ToolConfig`](#toolconfig)                                                                              | `undefined`                                 | Configuration for built-in tool behavior. See [`ToolConfig`](#toolconfig) for details                                                                                                                                                                                                                                                                                                                                                                                               |
+@@ -938,7 +938,7 @@ type SDKAssistantMessage = {
+ 
+ The `message` field is a [`BetaMessage`](https://platform.claude.com/docs/en/api/messages/create) from the Anthropic SDK. It includes fields like `id`, `content`, `model`, `stop_reason`, and `usage`.
+ 
+-`SDKAssistantMessageError` is one of: `'authentication_failed'`, `'oauth_org_not_allowed'`, `'billing_error'`, `'rate_limit'`, `'invalid_request'`, `'server_error'`, `'max_output_tokens'`, or `'unknown'`.
++`SDKAssistantMessageError` is one of: `'authentication_failed'`, `'oauth_org_not_allowed'`, `'billing_error'`, `'rate_limit'`, `'invalid_request'`, `'model_not_found'`, `'server_error'`, `'max_output_tokens'`, or `'unknown'`. `'model_not_found'` means the selected model doesn't exist or isn't available to your account or deployment.
+ 
+ ### `SDKUserMessage`
+ 
+@@ -992,6 +992,7 @@ type SDKResultMessage =
+       duration_ms: number;
+       duration_api_ms: number;
+       is_error: boolean;
++      api_error_status?: number | null;
+       num_turns: number;
+       result: string;
+       stop_reason: string | null;
+@@ -1026,6 +1027,8 @@ type SDKResultMessage =
+     };
+ ```
+ 
++The `api_error_status` field carries the HTTP status code of the API error that terminated the conversation. It is absent or `null` when the turn ended without an API error.
++
+ The `origin` field forwards the [`SDKMessageOrigin`](#sdkmessageorigin) of the user message that triggered this result. When a background task finishes and the SDK injects a synthetic follow-up turn, the resulting `SDKResultMessage` carries `origin: { kind: "task-notification" }`. Check this field to distinguish results that answer your prompt from results emitted for background-task follow-ups, so you can route or suppress the latter. The field is absent for results emitted before any user turn, such as startup errors.
+ 
+ When a `PreToolUse` hook returns `permissionDecision: "defer"`, the result has `stop_reason: "tool_deferred"` and `deferred_tool_use` carries the pending tool's `id`, `name`, and `input`. Read this field to surface the request in your own UI, then resume with the same `session_id` to continue. See [Defer a tool call for later](/en/hooks#defer-a-tool-call-for-later) for the full round trip.
+@@ -1847,7 +1850,7 @@ type TodoWriteInput = {
+ Creates and manages a structured task list for tracking progress.
+ 
+ <Note>
+-  `TodoWrite` is deprecated and will be removed in a future release. Use `TaskCreate`, `TaskGet`, `TaskUpdate`, and `TaskList` instead. Set `CLAUDE_CODE_ENABLE_TASKS=1` to opt in. See [Migrate to Task tools](/en/agent-sdk/todo-tracking#migrate-to-task-tools) for how monitoring code changes.
++  As of TypeScript Agent SDK 0.3.142, `TodoWrite` is disabled by default. Use `TaskCreate`, `TaskGet`, `TaskUpdate`, and `TaskList` instead. See [Migrate to Task tools](/en/agent-sdk/todo-tracking#migrate-to-task-tools) to update your monitoring code, or set `CLAUDE_CODE_ENABLE_TASKS=0` to revert to `TodoWrite`.
+ </Note>
+ 
+ ### TaskCreate
+@@ -2344,7 +2347,7 @@ type TodoWriteOutput = {
+ Returns the previous and updated task lists.
+ 
+ <Note>
+-  `TodoWrite` is deprecated and will be removed in a future release. Use `TaskCreate`, `TaskGet`, `TaskUpdate`, and `TaskList` instead. Set `CLAUDE_CODE_ENABLE_TASKS=1` to opt in. See [Migrate to Task tools](/en/agent-sdk/todo-tracking#migrate-to-task-tools) for how monitoring code changes.
++  As of TypeScript Agent SDK 0.3.142, `TodoWrite` is disabled by default. Use `TaskCreate`, `TaskGet`, `TaskUpdate`, and `TaskList` instead. See [Migrate to Task tools](/en/agent-sdk/todo-tracking#migrate-to-task-tools) to update your monitoring code, or set `CLAUDE_CODE_ENABLE_TASKS=0` to revert to `TodoWrite`.
+ </Note>
+ 
+ ### TaskCreate
+@@ -2739,12 +2742,16 @@ type CallToolResult = {
+ Controls Claude's thinking/reasoning behavior. Takes precedence over the deprecated `maxThinkingTokens`.
+ 
+ ```typescript theme={null}
++type ThinkingDisplay = "summarized" | "omitted";
++
+ type ThinkingConfig =
+-  | { type: "adaptive" } // The model determines when and how much to reason (Opus 4.6+)
+-  | { type: "enabled"; budgetTokens?: number } // Fixed thinking token budget
++  | { type: "adaptive"; display?: ThinkingDisplay } // The model determines when and how much to reason (Opus 4.6+)
++  | { type: "enabled"; budgetTokens?: number; display?: ThinkingDisplay } // Fixed thinking token budget
+   | { type: "disabled" }; // No extended thinking
+ ```
+ 
++The optional `display` field controls whether thinking text is returned `"summarized"` or `"omitted"`. On Claude Opus 4.7 and later, the API default is `"omitted"`, so set `"summarized"` to receive thinking content in `thinking` blocks.
++
+ ### `SpawnedProcess`
+ 
+ Interface for custom process spawning (used with `spawnClaudeCodeProcess` option). `ChildProcess` already satisfies this interface.
+@@ -3157,16 +3164,16 @@ type SandboxNetworkConfig = {
+ };
+ ```
+ 
+-| Property                  | Type       | Default     | Description                                                                                 |
+-| :------------------------ | :--------- | :---------- | :------------------------------------------------------------------------------------------ |
+-| `allowedDomains`          | `string[]` | `[]`        | Domain names that sandboxed processes can access                                            |
+-| `deniedDomains`           | `string[]` | `[]`        | Domain names that sandboxed processes cannot access. Takes precedence over `allowedDomains` |
+-| `allowManagedDomainsOnly` | `boolean`  | `false`     | Restrict network access to only the domains in `allowedDomains`                             |
+-| `allowLocalBinding`       | `boolean`  | `false`     | Allow processes to bind to local ports (e.g., for dev servers)                              |
+-| `allowUnixSockets`        | `string[]` | `[]`        | Unix socket paths that processes can access (e.g., Docker socket)                           |
+-| `allowAllUnixSockets`     | `boolean`  | `false`     | Allow access to all Unix sockets                                                            |
+-| `httpProxyPort`           | `number`   | `undefined` | HTTP proxy port for network requests                                                        |
+-| `socksProxyPort`          | `number`   | `undefined` | SOCKS proxy port for network requests                                                       |
++| Property                  | Type       | Default     | Description                                                                                                                                                                                                                                                    |
++| :------------------------ | :--------- | :---------- | :------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
++| `allowedDomains`          | `string[]` | `[]`        | Domain names that sandboxed processes can access                                                                                                                                                                                                               |
++| `deniedDomains`           | `string[]` | `[]`        | Domain names that sandboxed processes cannot access. Takes precedence over `allowedDomains`                                                                                                                                                                    |
++| `allowManagedDomainsOnly` | `boolean`  | `false`     | Managed-settings only. When set in [managed settings](/en/permissions#managed-settings), only `allowedDomains` entries from managed settings are honored and entries from user, project, or local settings are ignored. Has no effect when set via SDK options |
++| `allowLocalBinding`       | `boolean`  | `false`     | Allow processes to bind to local ports (e.g., for dev servers)                                                                                                                                                                                                 |
++| `allowUnixSockets`        | `string[]` | `[]`        | Unix socket paths that processes can access (e.g., Docker socket)                                                                                                                                                                                              |
++| `allowAllUnixSockets`     | `boolean`  | `false`     | Allow access to all Unix sockets                                                                                                                                                                                                                               |
++| `httpProxyPort`           | `number`   | `undefined` | HTTP proxy port for network requests                                                                                                                                                                                                                           |
++| `socksProxyPort`          | `number`   | `undefined` | SOCKS proxy port for network requests                                                                                                                                                                                                                          |
+ 
+ <Note>
+   The built-in sandbox proxy enforces `allowedDomains` based on the requested hostname and does not terminate or inspect TLS traffic, so techniques such as [domain fronting](https://en.wikipedia.org/wiki/Domain_fronting) can potentially bypass it. See [Sandboxing security limitations](/en/sandboxing#security-limitations) for details and [Secure deployment](/en/agent-sdk/secure-deployment#traffic-forwarding) for configuring a TLS-terminating proxy.

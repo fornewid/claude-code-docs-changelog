@@ -1,5 +1,325 @@
 [
   {
+    "date": "2026-05-19T16:09:01Z",
+    "commit_hash": "e355437",
+    "entries": [
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/agent-sdk__agent-loop\" target=\"_blank\">Agent Sdk__Agent Loop</a>",
+        "summary": "에이전트 도구 목록에 TaskCreate 및 TaskUpdate 도구가 추가되어 작업 관리 기능이 강화되었습니다. 에이전트의 작업 추적 능력이 향상되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/e355437_agent-sdk__agent-loop.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/agent-sdk__python\" target=\"_blank\">Agent Sdk__Python</a>",
+        "summary": "query() 동작 방식과 EffortLevel 관련 설명을 수정하고, ThinkingConfig에 display 옵션을 추가했습니다. SDK 사용성을 개선했습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/e355437_agent-sdk__python.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/agent-sdk__sessions\" target=\"_blank\">Agent Sdk__Sessions</a>",
+        "summary": "TypeScript SDK에서 V2 세션 API가 제거되었으며, query() 함수와 세션 옵션을 사용하도록 변경되었습니다. 기존 기능 사용법을 안내합니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/e355437_agent-sdk__sessions.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/agent-sdk__todo-tracking\" target=\"_blank\">Agent Sdk__Todo Tracking</a>",
+        "summary": "Task 도구로의 마이그레이션 안내가 업데이트되었습니다.  더 이상 `TodoWrite`를 사용하지 않고, TaskCreate, TaskUpdate 등 Task 도구를 사용합니다.  SDK 버전 및 코드 버전에 따른 변경 사항을 설명합니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/e355437_agent-sdk__todo-tracking.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/agent-sdk__typescript-v2-preview\" target=\"_blank\">Agent Sdk__Typescript V2 Preview</a>",
+        "summary": "V2 세션 API가 제거되었습니다. `unstable_v2_*` 함수와 관련 타입이 삭제되었으며, V1 `query()` API와 세션 옵션 사용을 권장합니다. Agent SDK 0.2.x 사용자를 위한 참조 자료로 남았습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/e355437_agent-sdk__typescript-v2-preview.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/agent-sdk__typescript\" target=\"_blank\">Agent Sdk__Typescript</a>",
+        "summary": "SessionMessage의 parent_tool_use_id 설명이 명확해지고, SDKAssistantMessageError에 model_not_found가 추가되었습니다. SDKResultMessage에 api_error_status 필드가 추가되어 API 에러 정보를 제공합니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/e355437_agent-sdk__typescript.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/agent-view\" target=\"_blank\">Agent View</a>",
+        "summary": "agent-view에서 `--cwd` 옵션을 사용하여 특정 프로젝트 세션만 표시하도록 변경되었고,  세션 동작 방식, 특히 배경 세션의 설정 및 파일 편집 격리 방식에 대한 정보가 추가 및 수정되었습니다. (프로젝트별 세션 필터링, 설정 유지 및 파일 격리 개선)",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/e355437_agent-view.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/changelog\" target=\"_blank\">Changelog</a>",
+        "summary": "Claude Code의 변경 로그가 업데이트되었습니다. 새로운 기능 추가, 버그 수정, 성능 개선, 권한 관리 개선 등 다양한 업데이트가 이루어졌습니다. (새로운 기능, 버그 수정, 성능 개선, 권한 관리 개선)",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/e355437_changelog.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/cli-reference\" target=\"_blank\">Cli Reference</a>",
+        "summary": "CLI 명령어 설명 테이블이 개선되었고, `auth login` 명령어에 `--console` 옵션이 추가되어 API 사용 관련 인증 방식을 명확히 했습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/e355437_cli-reference.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/code-review\" target=\"_blank\">Code Review</a>",
+        "summary": "코드 리뷰 결과 알림 방식이 개선되었고, 가격 관련 설명에서 '추가 사용량' 대신 '사용 크레딧'으로 변경되었습니다. 더 정확한 정보를 제공합니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/e355437_code-review.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/commands\" target=\"_blank\">Commands</a>",
+        "summary": "/feedback 명령어에 /share 별칭 추가. 사용자 피드백 공유 기능 명확화 및 접근성 향상.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/e355437_commands.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/debug-your-config\" target=\"_blank\">Debug Your Config</a>",
+        "summary": "문제 해결 가이드가 업데이트되었습니다.  오류 해결을 위한 세부 팁과 팁에 대한 수정사항이 추가되었습니다.  사용자가 문제를 더 쉽게 해결하도록 돕습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/e355437_debug-your-config.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/desktop\" target=\"_blank\">Desktop</a>",
+        "summary": "데스크톱 앱에서 지원되지 않는 기능들을 명확히 설명하는 내용이 추가되었습니다. 터미널 명령 등 CLI 전용 기능 사용 불가에 대한 안내가 포함되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/e355437_desktop.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/discover-plugins\" target=\"_blank\">Discover Plugins</a>",
+        "summary": "플러그인 설치 단계가 개선되었습니다. 컨텍스트 비용과 마지막 업데이트 날짜 정보가 추가되어 플러그인 사용 정보를 제공합니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/e355437_discover-plugins.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/env-vars\" target=\"_blank\">Env Vars</a>",
+        "summary": "새로운 환경 변수 'CLAUDE_CODE_ALT_SCREEN_FULL_REPAINT' 추가. 풀스크린 모드에서 화면 갱신 문제를 해결합니다.  'CLAUDE_CODE_ENABLE_OPUS_4_7_FAST_MODE'가 제거되고, 빠른 모드 기본 설정이 Opus 4.7로 변경.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/e355437_env-vars.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/fast-mode\" target=\"_blank\">Fast Mode</a>",
+        "summary": "Opus 4.7이 기본 Fast Mode가 되었고, Opus 4.6으로 고정하는 방법이 추가되었습니다.  불필요한 설정을 제거하여 문서가 간결해졌습니다. ",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/e355437_fast-mode.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/features-overview\" target=\"_blank\">Features Overview</a>",
+        "summary": "코드 인텔리전스 기능 추가 및 기존 기능 설명 업데이트. 코드 탐색 및 진단 기능을 통해 생산성을 향상시키고, 기능 추가 시점을 명확히 제시합니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/e355437_features-overview.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/glossary\" target=\"_blank\">Glossary</a>",
+        "summary": "프로젝트 신뢰 설정에서 홈 디렉토리 신뢰는 세션에만 적용되도록 변경되어 보안을 강화했습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/e355437_glossary.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/headless\" target=\"_blank\">Headless</a>",
+        "summary": "API 재시도 이벤트의 `error` 필드에 `model_not_found`가 추가되었습니다. 모델 로딩 실패 시 문제 해결에 도움을 줄 수 있습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/e355437_headless.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/hooks\" target=\"_blank\">Hooks</a>",
+        "summary": "표 형식의 내용이 약간 수정되었습니다. 변경 사항은 가독성을 향상시키고, 내용은 유지되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/e355437_hooks.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/jetbrains\" target=\"_blank\">Jetbrains</a>",
+        "summary": "IDE에서 Claude Code로 선택된 탭 공유 기능이 추가되었습니다. 권한 규칙에 따라 파일 공유가 차단될 수 있습니다. (맥락 인식 기능 향상)",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/e355437_jetbrains.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/keybindings\" target=\"_blank\">Keybindings</a>",
+        "summary": "ModelPicker 컨텍스트에 새로운 액션 'setAsDefault'가 추가되어, 선택한 모델을 새 세션의 기본값으로 설정할 수 있게 되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/e355437_keybindings.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/mcp\" target=\"_blank\">Mcp</a>",
+        "summary": "MCP 서버 연결 중 도구 사용 대기 방법 개선, alwaysLoad 설정 시 MCP 시작 차단 정책 변경 및 비동기적 연결에 대한 설명 추가.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/e355437_mcp.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/model-config\" target=\"_blank\">Model Config</a>",
+        "summary": "모델 선택 방식 변경, 세션 관련 동작 개선, 1M 컨텍스트 관련 용어 변경 및 설명 추가. 사용성 및 정확성 향상.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/e355437_model-config.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/monitoring-usage\" target=\"_blank\">Monitoring Usage</a>",
+        "summary": "추적 기능 개선, Anthropic API 연동 시 헤더 전송, 플러그인 메트릭 이벤트 로깅 추가로 모니터링 기능이 강화되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/e355437_monitoring-usage.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/overview\" target=\"_blank\">Overview</a>",
+        "summary": "제목이 변경되었습니다. 'Claude Code overview'에서 'Overview'로 수정되어 문서의 간결성을 높였습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/e355437_overview.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/permission-modes\" target=\"_blank\">Permission Modes</a>",
+        "summary": "자동 모드 설정 관련 내용이 업데이트되었습니다. 사용자 설정 파일 위치 변경 및 프로젝트/로컬 설정 무시 사항을 안내하여 보안을 강화했습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/e355437_permission-modes.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/permissions\" target=\"_blank\">Permissions</a>",
+        "summary": "Read 및 Edit 규칙 적용 대상이 확대되어, 파일 읽기 도구, @file 언급, IDE 컨텍스트까지 포함합니다. 이는 보안 및 접근성 향상을 의미합니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/e355437_permissions.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/plugin-dependencies\" target=\"_blank\">Plugin Dependencies</a>",
+        "summary": "플러그인 활성화/비활성화 시 종속성 처리 방식이 추가 설명되었습니다. 종속 플러그인 관리 오류 및 해결 방법 안내.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/e355437_plugin-dependencies.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/plugin-marketplaces\" target=\"_blank\">Plugin Marketplaces</a>",
+        "summary": "마켓플레이스 예약 이름 목록이 업데이트되었고, UI에 표시될 `displayName` 필드가 플러그인 항목에 추가되었습니다. 사용자 경험 개선.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/e355437_plugin-marketplaces.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/plugins-reference\" target=\"_blank\">Plugins Reference</a>",
+        "summary": "플러그인 manifest에 displayName 필드가 추가되어 플러그인 이름 표시가 개선되었고, single-skill 플러그인 로딩 방식이 변경되어 사용성이 향상되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/e355437_plugins-reference.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/remote-control\" target=\"_blank\">Remote Control</a>",
+        "summary": "원격 제어 문서에서 사용 가능한 명령어 목록이 업데이트되었습니다. /usage-credits 명령어가 추가되어 사용량 관련 정보를 제공합니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/e355437_remote-control.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/routines\" target=\"_blank\">Routines</a>",
+        "summary": "CLI /schedule 명령어 문제 해결 섹션이 추가되어, CLI 사용자의 문제 발생 시 해결 방안을 제시합니다. 사용성 향상.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/e355437_routines.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/scheduled-tasks\" target=\"_blank\">Scheduled Tasks</a>",
+        "summary": "세션 범위를 벗어나는 작업 예시로 Anthropic 루틴, 데스크톱 작업, GitHub Actions을 명시하여 스케줄링 옵션을 명확하게 했습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/e355437_scheduled-tasks.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/security\" target=\"_blank\">Security</a>",
+        "summary": "보안 관련 내용이 업데이트되었습니다. 특히 신뢰 확인 및 명령어 주입 감지 기능에 대한 세부 내용이 추가되어 안전성을 강화했습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/e355437_security.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/settings\" target=\"_blank\">Settings</a>",
+        "summary": "env 설정에 대한 설명이 업데이트되었습니다. subprocess에 환경 변수가 적용되는 방식에 대한 명확성이 추가되었습니다. (v2.1.143)",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/e355437_settings.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/skills\" target=\"_blank\">Skills</a>",
+        "summary": "fork 컨텍스트 스킬 사용법 및 Explore/Plan 에이전트 동작 방식에 대한 설명이 추가되어, 더 정확한 사용법과 이해를 돕습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/e355437_skills.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/statusline\" target=\"_blank\">Statusline</a>",
+        "summary": "Windows 설정 관련 안내가 추가되었습니다. Git Bash 사용 시 경로 구분자 문제와 해결 방법, 스크립트 실행 오류 해결 팁을 제공합니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/e355437_statusline.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/sub-agents\" target=\"_blank\">Sub Agents</a>",
+        "summary": "Explore 및 Plan 에이전트의 CLAUDE.md 및 git 상태 로딩을 건너뛰도록 변경되었고, 시작 시 로드되는 내용을 명시했습니다. 더 빠른 분석을 위해 최적화되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/e355437_sub-agents.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/tools-reference\" target=\"_blank\">Tools Reference</a>",
+        "summary": "`TodoWrite` 도구 사용 중단 및 `WaitForMcpServers` 도구 추가.  `cat`, `head`, `tail`, `sed` 명령어 사용 제한사항 변경.  도구 기능 개선.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/e355437_tools-reference.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/ultrareview\" target=\"_blank\">Ultrareview</a>",
+        "summary": "Ultrareview의 비용 관련 용어가 'extra usage'에서 'usage credits'로 변경되었으며, 관련 명령어와 사용 방식이 업데이트되었습니다. 더 정확한 설명 제공.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/e355437_ultrareview.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/voice-dictation\" target=\"_blank\">Voice Dictation</a>",
+        "summary": "음성 받아쓰기 설정 안내가 명확하게 변경되었으며, 키 바인딩 동작 방식에 대한 이해를 돕습니다. 기본 바인딩 동작 방식을 명확히 설명합니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/e355437_voice-dictation.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/vs-code\" target=\"_blank\">Vs Code</a>",
+        "summary": "VS Code CLI의 맥락 정보(선택, 파일 경로)가 추가되어 모델이 더 정확한 답변을 제공하도록 개선되었습니다. 보안을 위해 민감한 파일은 제외할 수 있습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/e355437_vs-code.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/whats-new\" target=\"_blank\">Whats New</a>",
+        "summary": "Agent 뷰, /goal, 빠른 모드, Rewind 메뉴 기능 추가 및 개선. 작업 효율성을 높이는 기능들을 제공합니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/e355437_whats-new.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/whats-new__2026-w20\" target=\"_blank\">Whats New__2026 W20</a>",
+        "summary": "새로운 파일은 2026년 20주차의 변경 사항을 요약합니다. Agent view, /goal 기능, Opus 4.7의 Fast 모드 등 새로운 기능에 대한 정보를 제공합니다.",
+        "tag_text": "NEW",
+        "tag_class": "new"
+      }
+    ]
+  },
+  {
     "date": "2026-05-17T15:25:28Z",
     "commit_hash": "8102970",
     "entries": [
