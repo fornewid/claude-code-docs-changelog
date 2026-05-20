@@ -1,5 +1,276 @@
 [
   {
+    "date": "2026-05-20T16:13:39Z",
+    "commit_hash": "8029d51",
+    "entries": [
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/agent-sdk__custom-tools\" target=\"_blank\">Agent Sdk__Custom Tools</a>",
+        "summary": "도구 설정에 대한 내용이 수정되었습니다. 'tools' 옵션과 'allowed/disallowed' 목록의 차이점을 명확히 하고, 사용 권장 사항을 개선했습니다. (가용성 및 권한 관련)",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/8029d51_agent-sdk__custom-tools.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/agent-sdk__modifying-system-prompts\" target=\"_blank\">Agent Sdk__Modifying System Prompts</a>",
+        "summary": "TypeScript SDK에서 outputStyle 설정 방법이 변경되었습니다. settings 객체 내에서 설정하도록 변경되었으며, Option 필드에서 제거되었습니다. ",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/8029d51_agent-sdk__modifying-system-prompts.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/agent-sdk__permissions\" target=\"_blank\">Agent Sdk__Permissions</a>",
+        "summary": "denied 규칙의 동작 방식과 allow 규칙의 영향을 명확하게 설명합니다. Bash 도구의 특정 사용 사례에 대한 Deny 규칙 동작을 더 자세히 설명합니다. (중요한 접근성 개선)",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/8029d51_agent-sdk__permissions.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/agent-sdk__python\" target=\"_blank\">Agent Sdk__Python</a>",
+        "summary": "ClaudeAgentOptions의 속성 설명이 업데이트되었습니다. 도구, 시스템 프롬프트, 모델 등과 관련된 옵션이 추가되어 유연성이 향상되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/8029d51_agent-sdk__python.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/agent-sdk__typescript\" target=\"_blank\">Agent Sdk__Typescript</a>",
+        "summary": "Bun build로 컴파일 시 SDK 문제 해결 가이드 추가. CLI 바이너리 임베딩 방법과 extractFromBunfs() 사용법, agentProgressSummaries 옵션 설명.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/8029d51_agent-sdk__typescript.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/agent-view\" target=\"_blank\">Agent View</a>",
+        "summary": "터미널 탭 제목에 입력 대기 횟수가 표시되며, `claude agents --json` 명령어를 통해 세션 정보를 JSON 형식으로 출력하는 기능이 추가되었습니다.  이는 사용자 편의성을 높입니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/8029d51_agent-view.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/amazon-bedrock\" target=\"_blank\">Amazon Bedrock</a>",
+        "summary": "프롬프트 캐싱 관련 내용이 업데이트되었습니다. 특정 지역에서 사용 불가하며, 캐시 수명에 따른 요금 차이가 설명되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/8029d51_amazon-bedrock.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/changelog\" target=\"_blank\">Changelog</a>",
+        "summary": "2.1.145 버전 릴리스: 스크립팅을 위한 JSON 형식의 Claude 세션 목록 추가, 추적 및 권한 문제 해결, UI 개선, 버그 수정 및 Read 도구 개선.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/8029d51_changelog.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/channels-reference\" target=\"_blank\">Channels Reference</a>",
+        "summary": "채널 플러그인 게시 관련 내용이 업데이트되었습니다. 공식 마켓플레이스 절차 및 Anthropic 파트너 협업 방안이 추가되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/8029d51_channels-reference.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/checkpointing\" target=\"_blank\">Checkpointing</a>",
+        "summary": "되감기 메뉴 접근 방식이 변경되었고, 텍스트 입력 시 동작에 대한 추가 설명이 제공됩니다. 사용자 경험 개선을 위한 변경입니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/8029d51_checkpointing.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/claude-platform-on-aws\" target=\"_blank\">Claude Platform On Aws</a>",
+        "summary": "프롬프트 캐싱 관련 내용이 업데이트되었습니다. 1시간 캐시 TTL 요청 방법과 요금 정보가 추가되어 이해도를 높입니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/8029d51_claude-platform-on-aws.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/cli-reference\" target=\"_blank\">Cli Reference</a>",
+        "summary": "CLI 명령어 설명 테이블이 개선되었고, `auth login` 명령어에 `--console` 옵션이 추가되어 API 사용을 위한 인증 방식이 개선되었습니다. ",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/8029d51_cli-reference.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/commands\" target=\"_blank\">Commands</a>",
+        "summary": "/run, /run-skill-generator, /verify 명령어 추가. 프로젝트 앱 실행 및 검증을 위한 기능 도입으로 개발 효율성 향상.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/8029d51_commands.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/context-window\" target=\"_blank\">Context Window</a>",
+        "summary": "프롬프트 캐싱 페이지가 추가되어 캐시된 접두사를 무효화하는 액션에 대한 정보 제공합니다. 컨텍스트 관리에 도움을 줍니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/8029d51_context-window.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/costs\" target=\"_blank\">Costs</a>",
+        "summary": "토큰 사용량 감소 방법 안내가 업데이트되었습니다. 프롬프트 캐싱 링크가 추가되어 비용 최적화에 대한 이해를 높였습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/8029d51_costs.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/discover-plugins\" target=\"_blank\">Discover Plugins</a>",
+        "summary": "공식 마켓플레이스 정보가 업데이트되고, 커뮤니티 마켓플레이스 섹션이 추가되어 플러그인 관리 및 배포 방법이 개선되었습니다. 사용자 편의성 향상.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/8029d51_discover-plugins.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/env-vars\" target=\"_blank\">Env Vars</a>",
+        "summary": "환경 변수 설정 방법, 우선 순위, CLI 및 설정 파일 간의 관계, 변수 목록 등 Claude Code 환경 변수 관련 내용이 추가, 개선되었습니다. (설정 파일, CLI 우선 순위)",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/8029d51_env-vars.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/fullscreen\" target=\"_blank\">Fullscreen</a>",
+        "summary": "전체 화면 렌더링에서 `/` 명령 및 `@` 파일 목록의 제안을 클릭하여 수락하는 기능이 추가되었습니다. 사용자 경험 개선.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/8029d51_fullscreen.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/google-vertex-ai\" target=\"_blank\">Google Vertex Ai</a>",
+        "summary": "프롬프트 캐싱 관련 문서 링크가 업데이트되었고, MCP 툴 검색 관련 내용이 추가되어 Vertex AI 환경 설정에 대한 정보가 보강되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/8029d51_google-vertex-ai.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/hooks\" target=\"_blank\">Hooks</a>",
+        "summary": "SubagentStop 및 Stop 훅에 `background_tasks` 및 `session_crons` 필드가 추가되어 작업 상태와 예약된 작업을 파악하는 데 도움이 됩니다. v2.1.145 이상에서 사용 가능합니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/8029d51_hooks.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/interactive-mode\" target=\"_blank\">Interactive Mode</a>",
+        "summary": "단축키 설명 및 PR 상태 업데이트 관련 내용이 수정되었습니다. 사용자 입력 취소 및 되감기 동작, PR 상태 표시가 개선되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/8029d51_interactive-mode.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/mcp\" target=\"_blank\">Mcp</a>",
+        "summary": "Claude.ai 계정으로 인증된 경우에만 커넥터가 로드되도록 변경되었습니다. 다른 인증 방식 사용 시 커넥터 로딩이 비활성화됩니다. 이는 사용자 경험과 로딩 효율성을 개선합니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/8029d51_mcp.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/microsoft-foundry\" target=\"_blank\">Microsoft Foundry</a>",
+        "summary": "프롬프트 캐싱 관련 링크가 업데이트되었습니다. 사용자는 1시간 캐시 TTL을 요청할 수 있으며, 더 높은 요금이 적용됩니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/8029d51_microsoft-foundry.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/model-config\" target=\"_blank\">Model Config</a>",
+        "summary": "프롬프트 캐싱 관련 내용이 업데이트되었습니다. 링크 변경 및 튜토리얼 링크 추가로 캐싱 이해도를 높였습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/8029d51_model-config.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/monitoring-usage\" target=\"_blank\">Monitoring Usage</a>",
+        "summary": "도구 관련 정보에 에이전트 ID와 부모 에이전트 ID가 추가되어, 도구 실행의 주체 및 관계를 추적하여 디버깅 및 분석 능력이 향상되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/8029d51_monitoring-usage.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/output-styles\" target=\"_blank\">Output Styles</a>",
+        "summary": "Proactive 스타일 설명이 명확해지고, `/clear` 또는 새 세션 후에 스타일 변경이 적용되도록 수정되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/8029d51_output-styles.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/permission-modes\" target=\"_blank\">Permission Modes</a>",
+        "summary": "자동 모드 설명이 개선되었으며, 명확성을 위해 'Proactive output style' 사용에 대한 권고 사항이 수정되었습니다. (Auto mode 설명이 개선되었습니다).",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/8029d51_permission-modes.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/permissions\" target=\"_blank\">Permissions</a>",
+        "summary": "도구 이름과 범위 지정을 사용한 거부 규칙의 차이점에 대한 명확성이 추가되었습니다. 이는 Claude Code가 도구를 처리하는 방식을 이해하는 데 중요합니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/8029d51_permissions.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/plugin-marketplaces\" target=\"_blank\">Plugin Marketplaces</a>",
+        "summary": "플러그인 유효성 검사 방법이 개선되었습니다. 개별 플러그인 디렉토리를 검사하는 기능과 오류 메시지 설명이 추가되어 문제 해결에 도움이 됩니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/8029d51_plugin-marketplaces.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/plugins-reference\" target=\"_blank\">Plugins Reference</a>",
+        "summary": "플러그인 manifest에서 인식되지 않는 필드를 다루는 방법이 추가되었습니다.  `--strict` 옵션을 사용하여 유효성 검사시 경고를 오류로 처리할 수 있습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/8029d51_plugins-reference.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/plugins\" target=\"_blank\">Plugins</a>",
+        "summary": "플러그인 제출 과정이 변경되었습니다. 공식 마켓플레이스와 커뮤니티 마켓플레이스가 구분되었고, 제출 방법과 승인 절차가 상세히 설명되었습니다. 이는 플러그인 배포 및 관리에 대한 명확성을 높입니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/8029d51_plugins.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/prompt-caching\" target=\"_blank\">Prompt Caching</a>",
+        "summary": "프롬프트 캐싱 작동 방식, 캐시 무효화 조건, 캐시 적중률 확인 방법을 설명하는 새로운 문서입니다. 성능 최적화에 도움이 됩니다.",
+        "tag_text": "NEW",
+        "tag_class": "new"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/routines\" target=\"_blank\">Routines</a>",
+        "summary": "CLI 버전이 2.1.81보다 낮으면 '/schedule' 기능이 작동하지 않아, CLI 업데이트 필요성을 안내합니다. 사용자 편의성을 위한 개선입니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/8029d51_routines.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/settings\" target=\"_blank\">Settings</a>",
+        "summary": "설정 파일 변경 시 적용 시점과 관련된 내용이 추가되었습니다. 일부 설정은 재시작, 나머지는 즉시 적용됩니다.  ConfigChange 훅도 설명합니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/8029d51_settings.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/skills\" target=\"_blank\">Skills</a>",
+        "summary": "새로운 앱 실행 및 검증 기능이 추가되었습니다.  `/run`, `/verify` 스킬로 앱을 쉽게 테스트하고, `/run-skill-generator`로 복잡한 환경 설정이 가능해졌습니다. ",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/8029d51_skills.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/statusline\" target=\"_blank\">Statusline</a>",
+        "summary": "워크스페이스, PR 관련 새로운 필드가 추가되어 Git 연동 기능이 강화되었고, 캐시 관련 정보도 추가되어 사용성 및 기능 개선이 이루어졌습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/8029d51_statusline.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/sub-agents\" target=\"_blank\">Sub Agents</a>",
+        "summary": "서브 에이전트 포크 시 프롬프트 캐시 재사용 관련 내용이 명확해졌으며, git worktree 격리 기능이 추가되어 파일 편집 관리 개선.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/8029d51_sub-agents.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/tools-reference\" target=\"_blank\">Tools Reference</a>",
+        "summary": "Read 도구의 작동 방식이 변경되었습니다. 파일이 토큰 제한을 초과할 경우 부분적으로 반환하며, offset 및 limit으로 추가 부분을 읽을 수 있습니다. ",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/8029d51_tools-reference.txt"
+      }
+    ]
+  },
+  {
     "date": "2026-05-19T16:09:01Z",
     "commit_hash": "e355437",
     "entries": [

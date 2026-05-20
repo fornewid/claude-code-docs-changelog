@@ -1,0 +1,43 @@
+diff --git a/docs/agent-view.md b/docs/agent-view.md
+index 0914d2f..250b171 100644
+--- a/docs/agent-view.md
++++ b/docs/agent-view.md
+@@ -125,6 +125,8 @@ Separately, the icon's shape shows whether the underlying process is running:
+ 
+ The `●` that can appear at the right edge of a row is the [pull request status](#pull-request-status) indicator, not part of the state icon. A number before it is the count of pull requests the session has opened.
+ 
++The terminal tab title shows the awaiting-input count while agent view is open: `2 awaiting input · claude agents` when sessions need input, or `claude agents` when none do.
++
+ Background sessions don't need any terminal open to keep working. A separate [supervisor process](#the-supervisor-process) runs them, so you can close agent view, close your shell, or start a new interactive session and your dispatched work keeps going.
+ 
+ Session state persists on disk through auto-updates and supervisor restarts. Sessions are also preserved when your machine sleeps. Their processes resume on wake and the supervisor reconnects to them instead of treating the time gap as idle. Shutting down still stops running sessions; see [Sessions show as failed after shutdown](#sessions-show-as-failed-after-shutdown) for how to recover them.
+@@ -292,10 +294,10 @@ Pass `--name` to set the session's display name in agent view instead of the aut
+ claude --bg --name "flaky-test-fix" "investigate the flaky SettingsChangeDetector test"
+ ```
+ 
+-After backgrounding, Claude prints the session's short ID and the commands for managing it:
++After backgrounding, Claude prints the session's short ID and the commands for managing it. When you pass `--name`, the name appears after the short ID:
+ 
+ ```text theme={null}
+-backgrounded · 7c5dcf5d
++backgrounded · 7c5dcf5d · flaky-test-fix
+   claude agents             list sessions
+   claude attach 7c5dcf5d    open in this terminal
+   claude logs 7c5dcf5d      show recent output
+@@ -398,6 +400,7 @@ Every background session has a short ID you can use from the shell. The ID is pr
+ | :--------------------------- | :-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+ | `claude agents`              | Open agent view                                                                                                                                                                                                                                                                                                                         |
+ | `claude agents --cwd <path>` | Open agent view scoped to sessions started under `<path>`                                                                                                                                                                                                                                                                               |
++| `claude agents --json`       | Print live sessions as a JSON array and exit. Each entry has `pid`, `cwd`, `kind`, and `startedAt`, plus `sessionId`, `name`, and `status` when set. Combine with `--cwd <path>` to filter                                                                                                                                              |
+ | `claude attach <id>`         | Attach to a session in this terminal                                                                                                                                                                                                                                                                                                    |
+ | `claude logs <id>`           | Print the session's recent output                                                                                                                                                                                                                                                                                                       |
+ | `claude stop <id>`           | Stop a session. Also accepts `claude kill`                                                                                                                                                                                                                                                                                              |
+@@ -416,7 +419,7 @@ Background sessions are hosted by a per-user supervisor process, separate from y
+ 
+ The supervisor and its sessions authenticate with the same credentials as your interactive sessions and make no additional network connections beyond the model API.
+ 
+-Each background session is its own Claude Code process, managed by the supervisor rather than tied to your terminal. A session that's actively working, waiting for your input, or has a terminal attached keeps its process running.
++Each background session is its own Claude Code process, managed by the supervisor rather than tied to your terminal. A session that's actively working, waiting for your input, or has a terminal attached keeps its process running. A running background shell command, subagent, workflow, or monitor counts as active work, so a long-running process such as a dev server keeps the session alive.
+ 
+ Once a session finishes and sits unattached for about an hour, the supervisor stops its process to free resources. The transcript and state stay on disk, and the next time you attach, peek, or reply, the supervisor starts a fresh process from where it left off. When every session has finished and no terminal is connected, the supervisor itself exits and starts again the next time you need it.
+ 
