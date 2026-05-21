@@ -1,5 +1,126 @@
 [
   {
+    "date": "2026-05-21T16:07:51Z",
+    "commit_hash": "394fe95",
+    "entries": [
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/admin-setup\" target=\"_blank\">Admin Setup</a>",
+        "summary": "관리 설정 표에 'Customization lockdown' 항목이 추가되어 사용자 정의 설정을 제한하여 보안을 강화했습니다. 사용자 제어 능력을 줄였습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/394fe95_admin-setup.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/agent-sdk__session-storage\" target=\"_blank\">Agent Sdk__Session Storage</a>",
+        "summary": "세션 기록을 외부 저장소에 저장하는 방법을 안내합니다. 멀티 호스트 환경 및 데이터 보존을 위한 중요한 변경 사항을 포함합니다. (세션 저장소 인터페이스, 퀵 스타트, 레퍼런스 구현 포함)",
+        "tag_text": "NEW",
+        "tag_class": "new"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/changelog\" target=\"_blank\">Changelog</a>",
+        "summary": "2.1.146 버전 업데이트: `/simplify`가 `/code-review`로 변경, 자동 모드 개선, 윈도우즈 PowerShell 문제 수정, 페이징 서버 문제 해결, 자동 업데이트 신뢰성 향상 등.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/394fe95_changelog.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/commands\" target=\"_blank\">Commands</a>",
+        "summary": "/desktop 명령어 사용 조건이 명확해졌고, Claude 구독이 필요함을 명시했습니다. 사용자 경험 개선에 기여합니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/394fe95_commands.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/desktop-quickstart\" target=\"_blank\">Desktop Quickstart</a>",
+        "summary": "Claude의 중단 및 조정 기능 설명이 변경되었습니다. 보다 명확한 지침을 제공하여 사용성을 향상시켰습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/394fe95_desktop-quickstart.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/desktop\" target=\"_blank\">Desktop</a>",
+        "summary": "데스크톱 앱으로 CLI 세션을 이동하는 방식이 변경되었습니다. 구독 사용자만 가능하며, API 키 인증 또는 다른 플랫폼에서는 사용할 수 없습니다. ",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/394fe95_desktop.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/errors\" target=\"_blank\">Errors</a>",
+        "summary": "서버 오류 메시지 및 상태 확인 방법이 업데이트되었습니다. Bedrock, Vertex AI 등 여러 서비스에 대한 지원 내용이 추가되었습니다. (API 상태 페이지)",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/394fe95_errors.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/hooks-guide\" target=\"_blank\">Hooks Guide</a>",
+        "summary": "훅 동작 방식 설명이 명확하게 변경되었고, JSON 출력을 통한 제어가 추가되어 훅의 유연성이 향상되었습니다. ",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/394fe95_hooks-guide.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/hooks\" target=\"_blank\">Hooks</a>",
+        "summary": "훅의 동작 방식과 JSON 출력에 대한 설명이 개선되었습니다. 특히, exit code 0과 JSON을 함께 사용하는 경우의 동작 방식이 명확해졌고, suppressOutput 필드 설명이 수정되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/394fe95_hooks.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/how-claude-code-works\" target=\"_blank\">How Claude Code Works</a>",
+        "summary": "Claude를 중단하고 방향을 전환하는 방법이 업데이트되었습니다. 더 빠르고 유연하게 작업 흐름을 조정할 수 있습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/394fe95_how-claude-code-works.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/permissions\" target=\"_blank\">Permissions</a>",
+        "summary": "새로운 `strictPluginOnlyCustomization` 설정이 추가되어, 플러그인 또는 관리 설정에서만 기술, 에이전트 등을 허용하여 보안을 강화합니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/394fe95_permissions.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/plugin-hints\" target=\"_blank\">Plugin Hints</a>",
+        "summary": "새로운 파일은 CLI 개발자를 위한 플러그인 추천 기능에 대한 가이드입니다. CLI에서 Claude Code 사용자에게 플러그인 설치를 제안하는 방법을 설명합니다. (142자)",
+        "tag_text": "NEW",
+        "tag_class": "new"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/prompt-library\" target=\"_blank\">Prompt Library</a>",
+        "summary": "새로운 파일은 Claude Code에 대한 프롬프트 라이브러리를 소개합니다. 작업 및 역할별로 태그된 복사-붙여넣기 프롬프트를 제공하여 효율적인 코드 작업을 돕습니다.",
+        "tag_text": "NEW",
+        "tag_class": "new"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/scheduled-tasks\" target=\"_blank\">Scheduled Tasks</a>",
+        "summary": "유지보수 프롬프트 관련 내용이 업데이트되었으며, 사용 불가 환경에 대한 설명이 추가되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/394fe95_scheduled-tasks.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/sessions\" target=\"_blank\">Sessions</a>",
+        "summary": "새로운 파일이 추가되었으며, 세션 관리 기능, CLI 명령어, 세션 피커 사용법, 분기, 및 컨텍스트 관리에 대한 내용을 담고 있습니다.  새로운 세션 관련 문서 추가.",
+        "tag_text": "NEW",
+        "tag_class": "new"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/settings\" target=\"_blank\">Settings</a>",
+        "summary": "관리 설정에 'strictPluginOnlyCustomization' 옵션 추가: 플러그인 외 사용자 및 프로젝트 소스 차단. 보안 강화 및 플러그인 제어 용이.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/394fe95_settings.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/tools-reference\" target=\"_blank\">Tools Reference</a>",
+        "summary": "도구 목록 설명이 업데이트되었고, 권한 정보가 추가되었습니다. 사용자 권한 관련 내용을 더 명확히 파악할 수 있습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/394fe95_tools-reference.txt"
+      }
+    ]
+  },
+  {
     "date": "2026-05-20T16:13:39Z",
     "commit_hash": "8029d51",
     "entries": [
