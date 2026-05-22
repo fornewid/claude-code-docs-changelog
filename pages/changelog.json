@@ -1,5 +1,219 @@
 [
   {
+    "date": "2026-05-22T15:56:16Z",
+    "commit_hash": "1d04f5a",
+    "entries": [
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/admin-setup\" target=\"_blank\">Admin Setup</a>",
+        "summary": "MCP 서버 제어에 대한 설명이 개선되어, 고정된 서버 세트를 배포하는 기능이 추가되었습니다. 이는 관리자가 서버 설정을 더욱 세밀하게 제어할 수 있게 합니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/1d04f5a_admin-setup.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/agent-sdk__typescript\" target=\"_blank\">Agent Sdk__Typescript</a>",
+        "summary": "`SpawnOptions` 인터페이스에 `signal` 필드 추가. 프로세스 종료 시그널 전달 기능 추가로, VM/컨테이너 종료 처리 간소화.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/1d04f5a_agent-sdk__typescript.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/agent-view\" target=\"_blank\">Agent View</a>",
+        "summary": "Ctrl+T로 세션을 고정하여 유휴 상태에서도 프로세스를 유지하고, 메모리 부족 시 동작 방식이 변경되었습니다. 응답 시간 개선에 기여합니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/1d04f5a_agent-view.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/auto-mode-config\" target=\"_blank\">Auto Mode Config</a>",
+        "summary": "Auto mode 지원 계획이 변경되었고, `auto-mode-config.md` 문서 내 auto mode 사용 가능 범위가 업데이트되었습니다.  API 사용자에게도 지원됩니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/1d04f5a_auto-mode-config.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/changelog\" target=\"_blank\">Changelog</a>",
+        "summary": "`/simplify`가 `/code-review`로 변경, 자동 업데이트 기능 개선, 버그 수정, 성능 향상, 사용자 경험 개선, 다양한 기능 수정 및 개선 사항 반영.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/1d04f5a_changelog.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/commands\" target=\"_blank\">Commands</a>",
+        "summary": "/code-review 명령어가 추가되어 diff에 대한 정확성 검사를 수행하도록 변경되었습니다. 이는 코드 변경 사항의 품질을 향상시키는 데 기여합니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/1d04f5a_commands.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/desktop\" target=\"_blank\">Desktop</a>",
+        "summary": "자동 모드 가용성이 변경되었습니다. 이제 Anthropic API를 사용하는 모든 사용자에게 제공되며, 제3자 제공업체에서는 사용할 수 없습니다. 클로드 모델 요구 사항이 명시되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/1d04f5a_desktop.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/devcontainer\" target=\"_blank\">Devcontainer</a>",
+        "summary": "개발 컨테이너 관련 문서에 'Sandbox environments' 섹션이 추가되어, 개발 컨테이너와 다른 환경 간의 비교를 제공합니다. 개발 환경 선택에 도움을 줍니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/1d04f5a_devcontainer.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/env-vars\" target=\"_blank\">Env Vars</a>",
+        "summary": "CLAUDE_CODE_ALT_SCREEN_FULL_REPAINT 변수 설명이 수정되었고, MCP_TOOL_TIMEOUT의 기본 값과 동작 방식에 대한 상세 정보가 추가되었습니다. Agent view 지원 추가 및 timeout 관련 내용 개선.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/1d04f5a_env-vars.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/errors\" target=\"_blank\">Errors</a>",
+        "summary": "이미지 리사이즈 오류에 대한 새로운 섹션이 추가되어 이미지 크기 조정 문제와 해결책을 설명합니다. API 제한과 이미지 형식 변환 관련 정보 제공.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/1d04f5a_errors.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/features-overview\" target=\"_blank\">Features Overview</a>",
+        "summary": "클로드의 기술 설명이 업데이트 되었습니다. `/code-review` 스킬이 추가되었고, 사용자 정의 기능에 대한 정보가 개선되었습니다. ",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/1d04f5a_features-overview.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/glossary\" target=\"_blank\">Glossary</a>",
+        "summary": "Auto mode의 가용 범위가 확장되었고, bundled skills의 종류가 변경되었습니다. API 사용자들에게 Auto mode가 제공됩니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/1d04f5a_glossary.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/interactive-mode\" target=\"_blank\">Interactive Mode</a>",
+        "summary": "대화형 모드에서 중복된 프롬프트가 기록되지 않도록 개선되어, 이전 입력 탐색이 더욱 효율적으로 변경되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/1d04f5a_interactive-mode.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/keybindings\" target=\"_blank\">Keybindings</a>",
+        "summary": "권한 컨텍스트에서 디버그 정보 토글 핫키가 변경되었습니다. 이전 기본값인 Ctrl+D가 제거되어 앱 종료와 충돌을 방지합니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/1d04f5a_keybindings.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/managed-mcp\" target=\"_blank\">Managed Mcp</a>",
+        "summary": "새로운 파일 추가됨. 조직의 MCP 서버 접근을 제어하고, 관리형 설정을 통해 서버를 제한하는 방법을 설명합니다. 보안 강화 및 관리 편의성 제공.",
+        "tag_text": "NEW",
+        "tag_class": "new"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/mcp\" target=\"_blank\">Mcp</a>",
+        "summary": "MCP 서버의 도구 실행 시간 제한 설정, 최대 출력 토큰 설정 및 OAuth 인증 방법을 업데이트했습니다.  또한 서버별 타임아웃 설정을 추가하여 유연성을 높였습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/1d04f5a_mcp.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/model-config\" target=\"_blank\">Model Config</a>",
+        "summary": "서브 에이전트 및 에이전트 팀에 대한 모델 설정 변경, 상속 옵션 추가. 모델 선택 유연성 향상, 사용성 개선.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/1d04f5a_model-config.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/permission-modes\" target=\"_blank\">Permission Modes</a>",
+        "summary": "자동 모드 관련 업데이트: 지원되는 플랜 및 모델 범위가 변경되었으며, 기능 사용 조건이 명확해졌습니다. 안전성 관련 설명도 추가되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/1d04f5a_permission-modes.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/permissions\" target=\"_blank\">Permissions</a>",
+        "summary": "MCP 설정 관련 설명이 업데이트되었습니다. `allowManagedMcpServersOnly` 설정의 동작 방식과 `allowManagedPermissionRulesOnly` 설정의 영향 범위가 명확해졌습니다. ",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/1d04f5a_permissions.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/plugin-marketplaces\" target=\"_blank\">Plugin Marketplaces</a>",
+        "summary": "플러그인 마켓플레이스 문서에 예약된 이름 목록이 업데이트되어, 새로운 공식 플러그인 이름이 추가되었습니다. 보안 강화.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/1d04f5a_plugin-marketplaces.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/sandbox-environments\" target=\"_blank\">Sandbox Environments</a>",
+        "summary": "새로운 파일은 샌드박스 환경에 대한 다양한 접근 방식을 비교하고 선택하는 방법을 안내하며, 조직 내 격리를 강제하는 방법을 설명합니다. 격리 유형, 설정, 보안 관련 내용 포함. (새로운 보안 격리 기능 추가)",
+        "tag_text": "NEW",
+        "tag_class": "new"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/sandboxing\" target=\"_blank\">Sandboxing</a>",
+        "summary": "Bash 샌드박스 설정 가이드가 업데이트되었습니다. 샌드박스 활성화 및 구성 방법, 모드 선택, 필수 패키지 설치를 안내합니다. 더 안전한 환경을 위해 샌드박스 설정 방법을 명시합니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/1d04f5a_sandboxing.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/scheduled-tasks\" target=\"_blank\">Scheduled Tasks</a>",
+        "summary": "Bedrock, Vertex AI, Microsoft Foundry에서 /loop 사용 시 동작 변경. 유지보수 프롬프트 미실행, 사용 메시지 출력으로 수정되어 사용성을 개선.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/1d04f5a_scheduled-tasks.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/security\" target=\"_blank\">Security</a>",
+        "summary": "관련 리소스 섹션이 업데이트되어 샌드박스 환경 비교 및 보안 관련 자료 접근성을 개선했습니다. 더 안전한 사용을 지원합니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/1d04f5a_security.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/server-managed-settings\" target=\"_blank\">Server Managed Settings</a>",
+        "summary": "서버 관리 설정의 제약 사항이 업데이트되었습니다. `managed-mcp.json` 파일 관련 내용이 수정 및 구체화되었습니다. (정책 키 사용 권장)",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/1d04f5a_server-managed-settings.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/settings\" target=\"_blank\">Settings</a>",
+        "summary": "설정 관련 문서에서 'Managed MCP configuration' 링크가 수정되었습니다. 더 정확한 링크로 연결되어 정보 접근성이 향상되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/1d04f5a_settings.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/setup\" target=\"_blank\">Setup</a>",
+        "summary": "Windows 설치 안내가 수정되었습니다. Git Bash 설치가 필수가 아니며, PowerShell 도구를 선택적으로 사용할 수 있습니다. 사용 편의성을 개선했습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/1d04f5a_setup.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/skills\" target=\"_blank\">Skills</a>",
+        "summary": "번들 스킬 목록이 업데이트되었으며, '/code-review' 스킬이 추가되었습니다. 코드 검토 기능을 제공하여 개발 워크플로우를 개선합니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/1d04f5a_skills.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/tools-reference\" target=\"_blank\">Tools Reference</a>",
+        "summary": "Claude Code가 PowerShell 실행 정책을 바이패스하여 .ps1 스크립트 실행을 지원하도록 개선되었습니다. 기업 환경에서의 보안 설정을 고려한 옵션도 추가되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/1d04f5a_tools-reference.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/troubleshoot-install\" target=\"_blank\">Troubleshoot Install</a>",
+        "summary": "설치 스크립트 오류에 대한 수정 사항이 추가되었으며, 403 오류와 관련된 내용이 업데이트되었습니다. curl 오류에 대한 추가적인 문제 해결 방법이 제공됩니다. (설치 관련 문제 개선)",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/1d04f5a_troubleshoot-install.txt"
+      }
+    ]
+  },
+  {
     "date": "2026-05-21T16:07:51Z",
     "commit_hash": "394fe95",
     "entries": [
