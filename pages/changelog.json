@@ -1,5 +1,74 @@
 [
   {
+    "date": "2026-05-23T15:26:52Z",
+    "commit_hash": "2ed369c",
+    "entries": [
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/agent-sdk__mcp\" target=\"_blank\">Agent Sdk__Mcp</a>",
+        "summary": "MCP 도구의 자동 승인 기능이 추가되었습니다. allowedTools를 사용하여 권한 요청 없이 도구 사용 가능하며, 사용성이 향상되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/2ed369c_agent-sdk__mcp.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/agent-sdk__overview\" target=\"_blank\">Agent Sdk__Overview</a>",
+        "summary": "하위 에이전트 호출 시 `Agent`를 `allowedTools`에 포함하여 자동 승인하도록 안내 변경. 에이전트 도구 사용성 개선.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/2ed369c_agent-sdk__overview.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/agent-sdk__plugins\" target=\"_blank\">Agent Sdk__Plugins</a>",
+        "summary": "플러그인 명령어 예시가 변경되어, 사용 가능한 명령어 목록을 명확히 제시합니다. 사용자 편의성 향상.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/2ed369c_agent-sdk__plugins.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/agent-sdk__quickstart\" target=\"_blank\">Agent Sdk__Quickstart</a>",
+        "summary": "도구 승인 설정 변경. 'allowed_tools' 주석이 '자동 승인'으로 변경되어 에이전트의 도구 사용 권한을 명확히 했습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/2ed369c_agent-sdk__quickstart.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/agent-sdk__slash-commands\" target=\"_blank\">Agent Sdk__Slash Commands</a>",
+        "summary": "`/clear` 명령어 관련 내용이 추가 및 수정되었고, 슬래시 명령어 예시와 설명을 업데이트했습니다. 대화 컨텍스트 초기화 기능에 대한 명확성이 향상되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/2ed369c_agent-sdk__slash-commands.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/agent-sdk__subagents\" target=\"_blank\">Agent Sdk__Subagents</a>",
+        "summary": "서브 에이전트 호출을 위한 'Agent' 도구 사용 방법이 명확해졌고, 자동 승인 및 일반 목적 서브 에이전트 사용에 대한 안내가 추가되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/2ed369c_agent-sdk__subagents.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/changelog\" target=\"_blank\">Changelog</a>",
+        "summary": "2.1.150 업데이트에서 내부 인프라 개선이 있었고, 2.1.149에서 사용자 편의성과 버그 수정이 광범위하게 이루어졌습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/2ed369c_changelog.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/sub-agents\" target=\"_blank\">Sub Agents</a>",
+        "summary": "subagent의 'isolation' 설정에서 worktree가 기본적으로 default branch에서 분기되도록 변경되었습니다. 격리된 환경 설정 개선입니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/2ed369c_sub-agents.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/worktrees\" target=\"_blank\">Worktrees</a>",
+        "summary": "서브 에이전트 워크트리에 대한 내용이 추가되어 병렬 편집 충돌을 방지하고, 기본 브랜치 설정을 명확히 했습니다. (작업 효율성 향상)",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/2ed369c_worktrees.txt"
+      }
+    ]
+  },
+  {
     "date": "2026-05-22T15:56:16Z",
     "commit_hash": "1d04f5a",
     "entries": [
