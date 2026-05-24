@@ -1,5 +1,46 @@
 [
   {
+    "date": "2026-05-24T15:27:33Z",
+    "commit_hash": "e17ab54",
+    "entries": [
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/changelog\" target=\"_blank\">Changelog</a>",
+        "summary": "문서 색인 추가, 변경사항 기록 체계 개선, 버그 수정 및 성능 향상. 기능 추가와 안정성 강화에 중점을 둠.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/e17ab54_changelog.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/code-review\" target=\"_blank\">Code Review</a>",
+        "summary": "로컬 코드 검토를 위한 명령어 사용법이 추가되었고, 관련 플러그인 안내가 명령어 페이지로 변경되었습니다. 이는 개발 효율성을 높입니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/e17ab54_code-review.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/quickstart\" target=\"_blank\">Quickstart</a>",
+        "summary": "로그인 안내가 업데이트되었습니다. 초기 로그인 시 프롬프트가 표시되며, /login 명령어를 사용하여 계정을 전환할 수 있도록 변경되었습니다. 사용자 편의성 향상.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/e17ab54_quickstart.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/sandboxing\" target=\"_blank\">Sandboxing</a>",
+        "summary": "Git worktree 사용 시 샌드박스가 메인 레포지토리의 .git 디렉토리에 쓰기를 허용하여 git 명령 실행을 가능하게 했습니다. (git commit 등)",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/e17ab54_sandboxing.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/tools-reference\" target=\"_blank\">Tools Reference</a>",
+        "summary": "Bash 도구에 쉘 시작 파일의 alias 및 쉘 함수 지원이 추가되었습니다. 개발 효율성을 높이는 중요한 변경 사항입니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/e17ab54_tools-reference.txt"
+      }
+    ]
+  },
+  {
     "date": "2026-05-23T15:26:52Z",
     "commit_hash": "2ed369c",
     "entries": [
