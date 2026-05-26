@@ -1,5 +1,165 @@
 [
   {
+    "date": "2026-05-26T16:20:47+00:00",
+    "commit_hash": "4d58178",
+    "entries": [
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/agent-sdk__typescript\" target=\"_blank\">Agent Sdk__Typescript</a>",
+        "summary": "query() 함수 구성 객체 속성 설명이 변경되었습니다. 더 명확한 정보 제공을 통해 사용 편의성을 개선했습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/4d58178_agent-sdk__typescript.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/agent-view\" target=\"_blank\">Agent View</a>",
+        "summary": "Ctrl+C 동작 방식이 변경되어, 실행 중인 응답 또는 쉘 명령어를 취소하도록 수정되었습니다. 또한, detach 시나리오가 업데이트되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/4d58178_agent-view.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/claude-directory\" target=\"_blank\">Claude Directory</a>",
+        "summary": "구 버전의 legacy 디렉토리 삭제 관련 내용이 추가되었습니다.  더 이상 사용되지 않는 디렉토리 정리로 저장 공간 관리 효율성을 높입니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/4d58178_claude-directory.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/commands\" target=\"_blank\">Commands</a>",
+        "summary": "/usage 명령어에 기능 개선이 있었습니다. Pro, Max, Team, Enterprise 플랜에서 세부 사용량 분석을 제공하여 더 나은 사용량 관리가 가능해졌습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/4d58178_commands.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/costs\" target=\"_blank\">Costs</a>",
+        "summary": "`/usage` 명령어에 대한 정보가 개선되었으며, Pro/Max 플랜 사용자를 위한 추가 사용량 정보가 제공됩니다. 팀 비용 관리 관련 내용도 업데이트되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/4d58178_costs.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/discover-plugins\" target=\"_blank\">Discover Plugins</a>",
+        "summary": "플러그인 설치 명령어의 레지스트리 경로가 변경되었습니다. 최신 플러그인 접근을 위해 업데이트 필요.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/4d58178_discover-plugins.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/env-vars\" target=\"_blank\">Env Vars</a>",
+        "summary": "새로운 환경 변수 2개가 추가되어 스킬 동기화 및 타임아웃 설정을 지원합니다. 웹 세션에서 자동 설정되며, 플러그인과 유사하게 동작합니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/4d58178_env-vars.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/fast-mode\" target=\"_blank\">Fast Mode</a>",
+        "summary": "빠른 모드 가격 정보가 업데이트 되었습니다. Opus 4.7 및 4.6 모델 모두에 대해 동일한 가격이 적용됩니다. ",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/4d58178_fast-mode.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/features-overview\" target=\"_blank\">Features Overview</a>",
+        "summary": "MCP 기능 설명이 업데이트되어 외부 시스템과의 연결 방식이 명확해졌습니다. 자동 재연결 기능이 추가되어 안정성이 향상되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/4d58178_features-overview.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/github-enterprise-server\" target=\"_blank\">Github Enterprise Server</a>",
+        "summary": "GitHub Enterprise Server 지원에 Claude Security 기능이 추가되었고, 설정 안내 및 권한 관련 내용이 업데이트 되었습니다. 보안 기능 사용 가능.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/4d58178_github-enterprise-server.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/keybindings\" target=\"_blank\">Keybindings</a>",
+        "summary": "DiffDialog 컨텍스트의 키 바인딩이 변경되었습니다. 파일 탐색 및 스크롤 동작에 대한 새로운 단축키가 추가되어 사용성을 향상시켰습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/4d58178_keybindings.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/managed-mcp\" target=\"_blank\">Managed Mcp</a>",
+        "summary": "managed-mcp.json 사용 시 claude.ai 커넥터 로드 설정을 추가, 관리 설정에서 제어 가능. 정책 기반 서버 제어 설명 개선, 표 내용 업데이트 및 추가.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/4d58178_managed-mcp.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/mcp\" target=\"_blank\">Mcp</a>",
+        "summary": "서버 플러그인 설치 관련 안내가 개선되었습니다. 마켓플레이스 오류 발생 시 해결 방법과 설치 후 재시작 방법이 추가되었습니다. ",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/4d58178_mcp.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/monitoring-usage\" target=\"_blank\">Monitoring Usage</a>",
+        "summary": "도구 실행 경로에 공백이 있는 경우, JSON 내에서 따옴표로 묶어 처리하도록 수정되었고, tool_result 이벤트의 decision_type 및 decision_source 속성이 명확하게 업데이트되었습니다. 사용자 거부 및 중단 케이스에 대한 동작도 명확히 했습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/4d58178_monitoring-usage.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/output-styles\" target=\"_blank\">Output Styles</a>",
+        "summary": "`/output-style` 명령어 사용 중단 및 `/config` 또는 설정을 직접 편집하는 방식으로 변경되었습니다. 더 이상 사용되지 않는 명령어를 제거했습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/4d58178_output-styles.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/permissions\" target=\"_blank\">Permissions</a>",
+        "summary": "--add-dir로 추가된 디렉터리에 대한 구성 로드 예외 사항이 추가되었으며, `allowAllClaudeAiMcps` 설정이 추가되었습니다. 보안 및 구성 관리 기능 강화.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/4d58178_permissions.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/prompt-caching\" target=\"_blank\">Prompt Caching</a>",
+        "summary": "모델 및 노력 수준 변경이 캐시 키에 포함되도록 업데이트되었습니다. 캐시 효율성을 높이기 위한 가이드도 제공합니다. (중요 변경)",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/4d58178_prompt-caching.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/remote-control\" target=\"_blank\">Remote Control</a>",
+        "summary": "원격 세션 제목 자동 업데이트 시나리오에 변경 사항이 추가되었으며, Claude 앱에서의 이름 변경 동기화가 반영되었습니다. (세션 이름 변경 기능 개선)",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/4d58178_remote-control.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/settings\" target=\"_blank\">Settings</a>",
+        "summary": "`allowAllClaudeAiMcps` 설정 추가. Claude.ai 커넥터 로딩 허용. Managed MCP 설정 관련.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/4d58178_settings.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/skills\" target=\"_blank\">Skills</a>",
+        "summary": "추가 디렉토리에서 스킬 로딩 방식이 명확해지고, 스킬 이름과 명령 이름의 관계가 상세히 설명되었습니다. 사용 편의성 향상.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/4d58178_skills.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/sub-agents\" target=\"_blank\">Sub Agents</a>",
+        "summary": "서브 에이전트가 사용할 수 없는 도구 목록이 명시적으로 추가되어, 도구 접근 방식에 대한 명확성을 제공합니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/4d58178_sub-agents.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/tools-reference\" target=\"_blank\">Tools Reference</a>",
+        "summary": "EnterWorktree 및 ExitWorktree 도구 설명이 subagents 격리 관련 내용으로 업데이트되어 워크트리 사용성을 명확히 했습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/4d58178_tools-reference.txt"
+      }
+    ]
+  },
+  {
     "date": "2026-05-24T15:27:33Z",
     "commit_hash": "e17ab54",
     "entries": [
