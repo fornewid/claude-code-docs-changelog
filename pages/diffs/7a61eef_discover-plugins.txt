@@ -1,0 +1,15 @@
+diff --git a/docs/discover-plugins.md b/docs/discover-plugins.md
+index d5cd17d..17bcf6c 100644
+--- a/docs/discover-plugins.md
++++ b/docs/discover-plugins.md
+@@ -90,6 +90,10 @@ These plugins bundle pre-configured [MCP servers](/en/mcp) so you can connect Cl
+ * **Communication**: `slack`
+ * **Monitoring**: `sentry`
+ 
++### Automatic security review
++
++The `security-guidance` plugin reviews each change Claude makes for common vulnerabilities and instructs Claude to fix what it finds in the same session. See [Catch security issues as Claude writes code](/en/security-guidance) for what it checks and how to add project-specific rules.
++
+ ### Development workflows
+ 
+ Plugins that add skills and agents for common development tasks:

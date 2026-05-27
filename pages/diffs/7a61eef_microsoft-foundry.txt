@@ -1,0 +1,13 @@
+diff --git a/docs/microsoft-foundry.md b/docs/microsoft-foundry.md
+index c1b21bc..81479f0 100644
+--- a/docs/microsoft-foundry.md
++++ b/docs/microsoft-foundry.md
+@@ -130,7 +130,7 @@ az login
+ ```
+ 
+ <Note>
+-  When using Microsoft Foundry, the `/login` and `/logout` commands are disabled since authentication is handled through Azure credentials.
++  When using Microsoft Foundry, the `/logout` command is unavailable since authentication is handled through Azure credentials.
+ </Note>
+ 
+ ### 3. Configure Claude Code

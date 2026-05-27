@@ -1,5 +1,155 @@
 [
   {
+    "date": "2026-05-27T16:20:44+00:00",
+    "commit_hash": "7a61eef",
+    "entries": [
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/admin-setup\" target=\"_blank\">Admin Setup</a>",
+        "summary": "대규모 코드베이스 지원을 위한 문서가 추가되었습니다. 모노레포 환경에서 디렉토리별 설정을 구성하는 방법을 안내합니다. (효율적인 설정 관리)",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/7a61eef_admin-setup.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/agent-sdk__agent-loop\" target=\"_blank\">Agent Sdk__Agent Loop</a>",
+        "summary": "수동 압축 트리거 방식에 대한 설명이 변경되었습니다. SDK 입력 방식을 강조하여 사용자 이해도를 높였습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/7a61eef_agent-sdk__agent-loop.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/agent-sdk__overview\" target=\"_blank\">Agent Sdk__Overview</a>",
+        "summary": "Agent SDK의 기능 설명이 개선되었고, 'Commands' 섹션이 추가되어 새로운 기능과 사용법에 대한 가이드를 제공합니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/7a61eef_agent-sdk__overview.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/agent-sdk__plugins\" target=\"_blank\">Agent Sdk__Plugins</a>",
+        "summary": "플러그인 로드 방식이 개선되었고, 스킬 호출 방식과 init 메시지 예시가 업데이트되었습니다.  더 나은 사용성을 제공합니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/7a61eef_agent-sdk__plugins.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/amazon-bedrock\" target=\"_blank\">Amazon Bedrock</a>",
+        "summary": "Claude Code 사용 시 /logout 명령어 사용 불가 안내가 추가되었습니다. AWS 인증 방식에 따라 로그아웃 기능이 제공되지 않습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/7a61eef_amazon-bedrock.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/best-practices\" target=\"_blank\">Best Practices</a>",
+        "summary": "검증 방식에 대한 구체적인 예시 추가, CLAUDE.md 파일 로딩 경로 변경, 비대화형 모드 사용법 개선, 그리고 코드 리뷰 단계 추가로 전반적인 워크플로우를 개선했습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/7a61eef_best-practices.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/changelog\" target=\"_blank\">Changelog</a>",
+        "summary": "Claude Code 업데이트로 `/code-review` 기능이 추가되어 코드 검토를 지원하고, 자동 업데이트 개선 및 다양한 버그가 수정되었습니다. (코드 검토 기능 추가, 버그 수정)",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/7a61eef_changelog.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/cli-reference\" target=\"_blank\">Cli Reference</a>",
+        "summary": "CLI 플래그 설명 및 예시가 업데이트되었습니다. 새로운 기능과 사용법에 대한 정보가 추가되어 CLI 사용성을 향상시킵니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/7a61eef_cli-reference.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/common-workflows\" target=\"_blank\">Common Workflows</a>",
+        "summary": "새로운 코드베이스 이해 섹션에 대한 안내 추가: 대규모 코드베이스 설정을 위한 링크 제공. (monorepo)",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/7a61eef_common-workflows.txt"
+      },
+      {
+        "title": "Desktop-Changelog",
+        "summary": "문서가 삭제되었습니다.",
+        "tag_text": "DELETE",
+        "tag_class": "delete"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/discover-plugins\" target=\"_blank\">Discover Plugins</a>",
+        "summary": "새로운 `security-guidance` 플러그인 소개. Claude가 코드를 작성하는 동안 보안 취약점을 검토하고 수정하도록 지시합니다. (보안 강화)",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/7a61eef_discover-plugins.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/google-vertex-ai\" target=\"_blank\">Google Vertex Ai</a>",
+        "summary": "Vertex AI 관련 문서가 업데이트되었습니다. /logout 명령어 사용 불가 및 Claude Code의 도구 검색 관련 내용이 수정되었습니다. ",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/7a61eef_google-vertex-ai.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/hooks-guide\" target=\"_blank\">Hooks Guide</a>",
+        "summary": "훅 실행 예시로, `security-guidance` 플러그인과 Claude Code의 통합을 소개하여, 모델 검토를 세션에 통합하는 방법을 보여줍니다. ",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/7a61eef_hooks-guide.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/interactive-mode\" target=\"_blank\">Interactive Mode</a>",
+        "summary": "`/btw` 사용 후 상호 작용 방식이 개선되었습니다. 이제 `f`를 눌러 세션을 분리하거나, 다양한 키를 통해 응답을 제어할 수 있습니다. ",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/7a61eef_interactive-mode.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/large-codebases\" target=\"_blank\">Large Codebases</a>",
+        "summary": "새로운 파일이 추가되었으며, 대규모 코드베이스에서 Claude Code를 구성하는 방법에 대한 가이드입니다. 무엇이 변경되었고 왜 중요한지를 설명합니다.",
+        "tag_text": "NEW",
+        "tag_class": "new"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/mcp\" target=\"_blank\">Mcp</a>",
+        "summary": "서버 정의 우선 순위에 대한 설명이 명확해졌습니다. 중복 정의 시 상위 우선 순위 설정을 사용하며, 필드 병합은 일어나지 않습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/7a61eef_mcp.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/memory\" target=\"_blank\">Memory</a>",
+        "summary": "메모리 시스템 관련 내용이 업데이트되었습니다. PreToolUse 훅 사용 권장, 임포트 홉 제한 변경, 모노레포 가이드 링크 추가.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/7a61eef_memory.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/microsoft-foundry\" target=\"_blank\">Microsoft Foundry</a>",
+        "summary": "Microsoft Foundry 사용 시 /logout 명령어 사용 불가 안내가 수정되었습니다. Azure 인증 방식으로 인해 해당 기능이 비활성화됩니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/7a61eef_microsoft-foundry.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/plugins-reference\" target=\"_blank\">Plugins Reference</a>",
+        "summary": "플러그인 예제 출처와 설명이 변경되었습니다. 의존성 분석 플러그인의 사용 예시가 추가되어, 코드 분석 능력을 개선합니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/7a61eef_plugins-reference.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/security-guidance\" target=\"_blank\">Security Guidance</a>",
+        "summary": "새로운 파일 추가로, Claude가 작성한 코드의 보안 취약점을 검토하고 수정하는 플러그인에 대한 지침을 제공합니다. 코드 검토를 통해 보안을 강화합니다. (What changed: 보안 플러그인 지침 추가. Why it matters: 코드 보안 강화)",
+        "tag_text": "NEW",
+        "tag_class": "new"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/security\" target=\"_blank\">Security</a>",
+        "summary": "보안 관련 리소스에 새로운 플러그인 안내가 추가되었습니다. 세션 중 코드 변경의 취약점을 검토하고 수정하는 데 유용합니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/7a61eef_security.txt"
+      }
+    ]
+  },
+  {
     "date": "2026-05-26T16:20:47+00:00",
     "commit_hash": "4d58178",
     "entries": [

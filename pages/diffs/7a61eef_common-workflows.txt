@@ -1,0 +1,13 @@
+diff --git a/docs/common-workflows.md b/docs/common-workflows.md
+index 19d55b4..f108bdf 100644
+--- a/docs/common-workflows.md
++++ b/docs/common-workflows.md
+@@ -23,6 +23,8 @@ These are prompt patterns for everyday tasks like exploring unfamiliar code, deb
+ 
+ ### Understand new codebases
+ 
++For configuring Claude Code in a monorepo or large codebase, see [Monorepos and large repos](/en/large-codebases).
++
+ #### Get a quick codebase overview
+ 
+ Suppose you've just joined a new project and need to understand its structure quickly.

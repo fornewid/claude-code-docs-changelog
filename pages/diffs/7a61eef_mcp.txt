@@ -1,0 +1,13 @@
+diff --git a/docs/mcp.md b/docs/mcp.md
+index 47e4bb9..5c28d2b 100644
+--- a/docs/mcp.md
++++ b/docs/mcp.md
+@@ -323,7 +323,7 @@ claude mcp add --transport http hubspot --scope user https://mcp.hubspot.com/ant
+ 
+ ### Scope hierarchy and precedence
+ 
+-When the same server is defined in more than one place, Claude Code connects to it once, using the definition from the highest-precedence source:
++When the same server is defined in more than one place, Claude Code connects to it once, using the definition from the highest-precedence source. The entire server entry from that source is used; fields are not merged across scopes.
+ 
+ 1. Local scope
+ 2. Project scope
