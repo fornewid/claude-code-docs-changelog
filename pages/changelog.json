@@ -1,5 +1,193 @@
 [
   {
+    "date": "2026-05-28T16:29:58+00:00",
+    "commit_hash": "e175e29",
+    "entries": [
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/agent-sdk__hooks\" target=\"_blank\">Agent Sdk__Hooks</a>",
+        "summary": "`MessageDisplay` 훅이 추가되어, UI 표시 전 텍스트를 수정할 수 있게 되었습니다. 에이전트 메시지 표시를 커스터마이징하여 유연성을 높였습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/e175e29_agent-sdk__hooks.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/agent-sdk__observability\" target=\"_blank\">Agent Sdk__Observability</a>",
+        "summary": "CLI가 Bash 및 PowerShell 명령에 TRACEPARENT를 전달하는 방식이 변경되어 추적 컨텍스트 전파가 활성화된 경우에만 작동하도록 업데이트되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/e175e29_agent-sdk__observability.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/agent-sdk__python\" target=\"_blank\">Agent Sdk__Python</a>",
+        "summary": "Python SDK에서 지원되지 않는 Hook 이벤트와 샌드박스 설정에 대한 정보가 추가되어 SDK 사용성을 개선했습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/e175e29_agent-sdk__python.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/agent-sdk__typescript\" target=\"_blank\">Agent Sdk__Typescript</a>",
+        "summary": "MessageDisplay 훅과 failIfUnavailable 옵션이 추가되어 샌드박스 설정 및 메시지 처리 기능이 개선되었습니다. 샌드박스 실패시 동작 제어 가능.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/e175e29_agent-sdk__typescript.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/agent-view\" target=\"_blank\">Agent View</a>",
+        "summary": "PR 상태 표시 방식 및 /command 사용법이 변경되었고, 모델 설정 관련 내용이 수정되었습니다. 사용자 편의성을 개선하고, 기능의 정확성을 높였습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/e175e29_agent-view.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/changelog\" target=\"_blank\">Changelog</a>",
+        "summary": "2.1.153 업데이트: Git LFS, npm 업데이트, 터미널 환경 변수, 에이전트 자동 완성, macOS, Windows 관련 수정사항 포함. 모델 선택 기능 향상.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/e175e29_changelog.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/cli-reference\" target=\"_blank\">Cli Reference</a>",
+        "summary": "fallback-model 플래그 설명이 수정되었습니다. 모델이 사용 불가능한 경우에도 작동하도록 변경되어, 안정성이 향상되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/e175e29_cli-reference.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/code-review\" target=\"_blank\">Code Review</a>",
+        "summary": "로컬 diff 검토를 위한 `/code-review` 명령 사용법과 기능이 추가되었습니다. 코드 검토 및 수정 기능 개선, `ultrareview` 지원.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/e175e29_code-review.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/commands\" target=\"_blank\">Commands</a>",
+        "summary": "/code-review 명령어에 `--fix` 옵션 추가 및 /code-review ultra 명령어 추가. 코드 검토 및 수정 기능 개선 및 멀티 에이전트 검토 기능 추가.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/e175e29_commands.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/env-vars\" target=\"_blank\">Env Vars</a>",
+        "summary": "W3C 추적 컨텍스트 전파를 위한 새로운 환경 변수 추가, 사용자 지정 프록시 사용 시 추적 기능 향상 및 DO_NOT_TRACK 설명 개선. (추적 거부 관련)",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/e175e29_env-vars.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/errors\" target=\"_blank\">Errors</a>",
+        "summary": "오류 메시지 내 서비스 상태 확인 링크가 업데이트되었습니다.  사용자가 서비스 상태를 더 쉽게 확인할 수 있도록 개선되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/e175e29_errors.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/headless\" target=\"_blank\">Headless</a>",
+        "summary": "내부 기술 `/commit`에서 `/code-review`로 변경, 사용자 호출 스킬 및 내장 명령어 사용에 대한 설명 수정.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/e175e29_headless.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/hooks-guide\" target=\"_blank\">Hooks Guide</a>",
+        "summary": "MessageDisplay 훅이 추가되어 메시지 표시 시점을 감지할 수 있게 되었고, 훅 필터링 표가 업데이트되어 매처에 대한 정보가 개선되었습니다. ",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/e175e29_hooks-guide.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/hooks\" target=\"_blank\">Hooks</a>",
+        "summary": "MessageDisplay 훅이 추가되어 어시스턴트 메시지 표시 시점을 알 수 있습니다. 훅 목록과 매칭 필드가 업데이트 되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/e175e29_hooks.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/interactive-mode\" target=\"_blank\">Interactive Mode</a>",
+        "summary": "대화형 모드에 `/` (역방향 히스토리 검색) 기능이 추가되었습니다. 명령어 검색의 편의성이 향상되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/e175e29_interactive-mode.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/keybindings\" target=\"_blank\">Keybindings</a>",
+        "summary": "모델 선택기 컨텍스트에서 'thisSessionOnly' 액션이 추가되어 세션별 설정을 가능하게 하고, Vim 모드에서 '/'가 history search를 시작하도록 변경되었습니다. (Vim 동작 일치)",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/e175e29_keybindings.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/model-config\" target=\"_blank\">Model Config</a>",
+        "summary": "모델 설정 저장 방식 및 동작이 변경되었습니다. `/model` 사용 방식, 기본 모델 저장 방법이 개선되었습니다. 사용 편의성이 향상되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/e175e29_model-config.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/monitoring-usage\" target=\"_blank\">Monitoring Usage</a>",
+        "summary": "OTEL 메트릭에 app.entrypoint 속성이 추가되어 세션 시작 방법을 추적하고, MCP 및 관련 속성이 추가되어 MCP 도구의 추적이 가능하도록 변경되었습니다. 추적 관련 설정 및 동작도 개선되었습니다. (변경사항 요약)",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/e175e29_monitoring-usage.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/plugin-marketplaces\" target=\"_blank\">Plugin Marketplaces</a>",
+        "summary": "플러그인 마켓플레이스 제거 명령어에 `--scope` 옵션이 추가되어 제거 범위를 지정할 수 있게 되었고, 제거 시 플러그인 재설치에 대한 경고 문구가 수정되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/e175e29_plugin-marketplaces.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/plugins-reference\" target=\"_blank\">Plugins Reference</a>",
+        "summary": "새로운 `MessageDisplay` 훅이 추가되어, 어시스턴트 메시지 표시 시 플러그인에서 상호 작용할 수 있게 되었습니다. 이는 사용자 경험을 개선하는 데 기여합니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/e175e29_plugins-reference.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/settings\" target=\"_blank\">Settings</a>",
+        "summary": "플러그인 제안 마켓플레이스 설정 추가 및 Git LFS 건너뛰기 기능 설명이 추가되었습니다. 플러그인 관리 및 업데이트 방식이 개선되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/e175e29_settings.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/setup\" target=\"_blank\">Setup</a>",
+        "summary": "업데이트 시도 결과 확인을 위한 'claude doctor' 명령어가 추가되었고, npm 글로벌 설치 권한 오류 시 해결 방법이 안내됩니다. 문제 해결 가이드 개선.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/e175e29_setup.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/skills\" target=\"_blank\">Skills</a>",
+        "summary": "allowed-tools 외에 disallowed-tools 속성 추가, 특정 도구 사용을 막아 자율 스킬 제어 개선. , 콤마 구분자 지원.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/e175e29_skills.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/statusline\" target=\"_blank\">Statusline</a>",
+        "summary": "터미널 크기 감지를 위한 환경 변수 사용법이 추가되었습니다. Claude Code에서 스크립트 실행 시 COLUMNS/LINES 변수를 사용해야 합니다. (v2.1.153 이상)",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/e175e29_statusline.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/sub-agents\" target=\"_blank\">Sub Agents</a>",
+        "summary": "v2.1.153 업데이트를 통해 서브 에이전트의 MCP 서버에 대한 제약 사항이 추가되어, 설정 및 정책에 따른 동작을 일관되게 적용합니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/e175e29_sub-agents.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/ultrareview\" target=\"_blank\">Ultrareview</a>",
+        "summary": "/ultrareview 명령어 변경, GitHub Enterprise 지원, 및 CI/CD 사용법 개선. 코드 검토 명령어 변경 및 기능 개선으로 안정성 향상.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/e175e29_ultrareview.txt"
+      }
+    ]
+  },
+  {
     "date": "2026-05-27T16:20:44+00:00",
     "commit_hash": "7a61eef",
     "entries": [
