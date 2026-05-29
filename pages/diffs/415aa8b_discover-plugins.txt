@@ -1,0 +1,13 @@
+diff --git a/docs/discover-plugins.md b/docs/discover-plugins.md
+index 17bcf6c..4fc6cf5 100644
+--- a/docs/discover-plugins.md
++++ b/docs/discover-plugins.md
+@@ -149,7 +149,7 @@ Anthropic also maintains a [demo plugins marketplace](https://github.com/anthrop
+     * **Marketplaces**: add, remove, or update your added marketplaces
+     * **Errors**: view any plugin loading errors
+ 
+-    Go to the **Discover** tab to see plugins from the marketplace you just added.
++    Go to the **Discover** tab to see plugins from the marketplace you just added. {/* min-version: 2.1.154 */}Plugins marked as relevant to your current working directory are pinned at the top with a **suggested for this directory** label.
+   </Step>
+ 
+   <Step title="Install a plugin">
