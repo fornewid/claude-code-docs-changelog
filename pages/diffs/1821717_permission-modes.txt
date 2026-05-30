@@ -1,0 +1,12 @@
+diff --git a/docs/permission-modes.md b/docs/permission-modes.md
+index 2b0b2a9..90ce2d8 100644
+--- a/docs/permission-modes.md
++++ b/docs/permission-modes.md
+@@ -300,6 +300,7 @@ Protected directories:
+ * `.vscode`
+ * `.idea`
+ * `.husky`
++* `.cargo`
+ * `.claude`, except for `.claude/commands`, `.claude/agents`, `.claude/skills`, and `.claude/worktrees` where Claude routinely creates content
+ 
+ Protected files:

@@ -1,5 +1,221 @@
 [
   {
+    "date": "2026-05-30T15:30:08+00:00",
+    "commit_hash": "1821717",
+    "entries": [
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/agent-sdk__hosting\" target=\"_blank\">Agent Sdk__Hosting</a>",
+        "summary": "Agent SDK 호스팅 가이드가 업데이트되었습니다.  프로세스 모델, 세션 패턴 선택, 컨테이너 프로비저닝,  지속성, 관찰성, 인증 및 다중 테넌트 격리와 같은 프로덕션 고려 사항에 대한 내용이 추가되었습니다.  Managed Agents에 대한 정보도 포함되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/1821717_agent-sdk__hosting.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/agent-sdk__overview\" target=\"_blank\">Agent Sdk__Overview</a>",
+        "summary": "에이전트 SDK 설치 시 필요한 Python 버전 정보가 추가되어 호환성 문제를 해결하고, 사용자 편의성을 높였습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/1821717_agent-sdk__overview.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/agent-sdk__quickstart\" target=\"_blank\">Agent Sdk__Quickstart</a>",
+        "summary": "Python 패키지 설치 방법이 개선되었으며, uv와 pip를 이용한 설치 과정에 대한 더 자세한 안내가 추가되었습니다. 윈도우즈 환경에 대한 설치 가이드도 제공합니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/1821717_agent-sdk__quickstart.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/agent-sdk__subagents\" target=\"_blank\">Agent Sdk__Subagents</a>",
+        "summary": "동적 워크플로우 섹션 추가. 다수의 에이전트 조율 시 Workflow 도구 사용을 권장하며, TypeScript SDK v0.3.149 이상에서 지원됩니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/1821717_agent-sdk__subagents.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/agent-sdk__typescript\" target=\"_blank\">Agent Sdk__Typescript</a>",
+        "summary": "`applyFlagSettings`의 동작 방식과 영향 범위를 명확히 설명하고, 새로운 `Workflow` 도구와 관련된 타입 및 설명을 추가하여 Agent SDK의 기능을 확장했습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/1821717_agent-sdk__typescript.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/agent-sdk__user-input\" target=\"_blank\">Agent Sdk__User Input</a>",
+        "summary": "사용자 입력 처리 방식이 개선되었습니다. `response` 필드 추가로 질문 카드 없이 자유 응답을 가능하게 하여 유연성을 높였습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/1821717_agent-sdk__user-input.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/agent-view\" target=\"_blank\">Agent View</a>",
+        "summary": "에이전트 뷰에서 세션 시작 시 `--agent` 플래그 추가 및 서브 에이전트 설정 기능 추가. agent 설정 반영 및 최소 버전 정보 추가.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/1821717_agent-view.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/changelog\" target=\"_blank\">Changelog</a>",
+        "summary": "2.1.157 버전에서 플러그인 자동 로딩, `/plugin` 명령어 개선, `claude agents` 기능 향상, 이미지 처리 개선 등 다양한 기능이 추가되고 버그가 수정되었습니다. (기능 추가 및 버그 수정)",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/1821717_changelog.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/cli-reference\" target=\"_blank\">Cli Reference</a>",
+        "summary": "CLI 명령어 설명이 업데이트되었고, 특히 `claude agents` 명령어에 대한 내용이 상세해졌습니다. 에이전트 뷰 사용법과 관련된 내용이 추가되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/1821717_cli-reference.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/desktop\" target=\"_blank\">Desktop</a>",
+        "summary": "데스크톱 앱 내의 동적 워크플로우 지원에 대한 내용이 추가되었고, CLI와 데스크톱 앱 간의 기능 차이점이 명확하게 수정되었습니다. (최대 150자)",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/1821717_desktop.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/env-vars\" target=\"_blank\">Env Vars</a>",
+        "summary": "터미널 제목 업데이트 비활성화 시 SDK 및 claude -p 세션에서 세션 제목을 생성하는 백그라운드 Haiku 요청이 건너뛰도록 변경. 사용자 환경에 영향.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/1821717_env-vars.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/errors\" target=\"_blank\">Errors</a>",
+        "summary": "Opus 4.7 및 4.8 사용 시 `claude update`를 먼저 실행해야 합니다. v2.1.156 이전 버전에서 도구 사용 중 오류 발생 및 `/rewind`로 해결 안 됨.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/1821717_errors.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/interactive-mode\" target=\"_blank\">Interactive Mode</a>",
+        "summary": "대화형 모드의 단축키 설명이 추가 및 수정되었습니다. 사용 편의성을 높이기 위한 내용이며, 사용자 경험 개선에 기여합니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/1821717_interactive-mode.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/keybindings\" target=\"_blank\">Keybindings</a>",
+        "summary": "이미지 붙여넣기 단축키에 WSL 환경 지원이 추가되었습니다. 사용자 편의성을 높이기 위해 변경되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/1821717_keybindings.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/mcp\" target=\"_blank\">Mcp</a>",
+        "summary": "WebSocket 서버 추가 및 기존 HTTP 서버 설명 보강. 새로운 연결 방식과 인증 관련 정보가 추가되어 MCP 서버 설정 및 관리가 개선되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/1821717_mcp.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/memory\" target=\"_blank\">Memory</a>",
+        "summary": "autoMemoryDirectory 설정 위치 및 동작 방식 변경. 프로젝트 설정에서 신뢰 여부에 따라 적용되도록 수정되어 보안 강화.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/1821717_memory.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/monitoring-usage\" target=\"_blank\">Monitoring Usage</a>",
+        "summary": "에이전트 도구 및 레거시 Task 도구의 서브에이전트 유형을 명확히 하고, WorkspaceBash 도구 관련 정보와 MCP 도구 관련 `tool_decision` 속성이 추가되었습니다. 이는 모니터링 세부 정보를 개선합니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/1821717_monitoring-usage.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/permission-modes\" target=\"_blank\">Permission Modes</a>",
+        "summary": "`.cargo` 디렉토리가 보호 디렉토리 목록에 추가되었습니다. 이는 빌드 및 종속성 관리 관련 파일 보호를 강화합니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/1821717_permission-modes.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/permissions\" target=\"_blank\">Permissions</a>",
+        "summary": "bypassPermissions 모드에서 .cargo 디렉토리 쓰기를 더 이상 프롬프트하지 않도록 변경되었습니다. 위험한 작업에 대한 추가 보호 기능이 개선되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/1821717_permissions.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/plugin-marketplaces\" target=\"_blank\">Plugin Marketplaces</a>",
+        "summary": "마켓플레이스 이름 사용 규칙과, 여러 플러그인을 단일 마켓플레이스에 등록하는 방법이 추가되었습니다. 사용자에게 더 명확한 안내를 제공합니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/1821717_plugin-marketplaces.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/plugins-reference\" target=\"_blank\">Plugins Reference</a>",
+        "summary": "Skills-directory plugins에 대한 내용이 추가되었고, plugin init 명령어에 대한 상세 설명이 추가되어 플러그인 개발 편의성을 높였습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/1821717_plugins-reference.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/plugins\" target=\"_blank\">Plugins</a>",
+        "summary": "플러그인 개발을 위해 스킬 디렉토리를 사용하는 방법이 추가되었습니다. `--plugin-dir` 플래그 없이 자동 로드를 지원하여 개발 편의성을 높였습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/1821717_plugins.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/settings\" target=\"_blank\">Settings</a>",
+        "summary": "`agent` 설정 설명이 업데이트되었고, `autoMemoryDirectory` 설정의 동작 방식에 대한 설명이 명확해졌습니다. 이는 사용자 경험을 개선합니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/1821717_settings.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/skills\" target=\"_blank\">Skills</a>",
+        "summary": "플러그인 기능과 라이브 변경 감지에 대한 내용이 추가되었습니다.  `CLAUDE_EFFORT` 변수 설명이 수정되었습니다. (새로운 플러그인 기능 및 ultracode 처리 개선)",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/1821717_skills.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/statusline\" target=\"_blank\">Statusline</a>",
+        "summary": "상태 라인에서 전송되는 JSON 필드에 대한 설명이 추가, 수정되었습니다. 이는 Claude Code의 동작 방식을 더 명확히 이해하도록 돕습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/1821717_statusline.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/sub-agents\" target=\"_blank\">Sub Agents</a>",
+        "summary": "sub-agent 설명에 cargo 디렉토리에 대한 위험 경고가 추가되었습니다. 권한 우회 시 주의 필요성을 강조합니다. (변경사항: cargo 디렉토리 관련 내용 추가, 중요성: 보안)",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/1821717_sub-agents.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/terminal-config\" target=\"_blank\">Terminal Config</a>",
+        "summary": "VS Code, Cursor, Windsurf 터미널 설정이 업데이트되었습니다. GPU 가속 설정을 비활성화하고 마우스 휠 스크롤 설정을 조정하여 터미널 안정성과 사용성을 개선했습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/1821717_terminal-config.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/tools-reference\" target=\"_blank\">Tools Reference</a>",
+        "summary": "`EnterWorktree` 도구 사용법이 명확해지고, `Workflow` 도구가 추가되어 여러 하위 에이전트를 관리할 수 있게 되었습니다. 이는 복잡한 작업 흐름을 개선합니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/1821717_tools-reference.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/workflows\" target=\"_blank\">Workflows</a>",
+        "summary": "워크플로우 트리거 동작 방식과 `/config` 설정을 통한 키워드 트리거 중지 방법이 추가되어 사용성을 개선했습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/1821717_workflows.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/worktrees\" target=\"_blank\">Worktrees</a>",
+        "summary": "워크트리 사용 안내가 개선되었습니다. 특히 워크트리 종료 시 동작, 오래된 워크트리 자동 삭제 조건, 서브 에이전트 워크트리 관련 내용이 명확해졌습니다. ",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/1821717_worktrees.txt"
+      }
+    ]
+  },
+  {
     "date": "2026-05-29T16:20:40+00:00",
     "commit_hash": "415aa8b",
     "entries": [
