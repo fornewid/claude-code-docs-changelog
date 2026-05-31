@@ -1,5 +1,37 @@
 [
   {
+    "date": "2026-05-31T15:31:46+00:00",
+    "commit_hash": "e4471ec",
+    "entries": [
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/changelog\" target=\"_blank\">Changelog</a>",
+        "summary": "문서 색인 추가 및 변경 사항 업데이트. 특히, Opus 4.8 지원, 동적 워크플로우 도입, 그리고 다양한 버그 수정 및 기능 개선이 이루어졌습니다. 이는 전반적인 사용성 향상 및 새로운 기능을 제공합니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/e4471ec_changelog.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/whats-new\" target=\"_blank\">Whats New</a>",
+        "summary": "Claude Opus 4.8 모델, 동적 워크플로우, 보안 가이드 플러그인, 빠른 모드 등 새로운 기능이 추가되어 작업 효율성을 높입니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/e4471ec_whats-new.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/whats-new__2026-w21\" target=\"_blank\">Whats New__2026 W21</a>",
+        "summary": "2026년 21주차 릴리스 노트. Pro 플랜 자동 모드, /usage 개선, /code-review 추가 등 다양한 기능 업데이트 및 버그 수정 사항 포함. (사용자 경험 개선)",
+        "tag_text": "NEW",
+        "tag_class": "new"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/whats-new__2026-w22\" target=\"_blank\">Whats New__2026 W22</a>",
+        "summary": "2026년 22주차 업데이트 문서. Opus 4.8, 워크플로우, 보안 플러그인, 빠른 모드 등 새로운 기능 소개 및 변경 사항 요약. 개선 사항과 새로운 기능, 가격 정보 포함.",
+        "tag_text": "NEW",
+        "tag_class": "new"
+      }
+    ]
+  },
+  {
     "date": "2026-05-30T15:30:08+00:00",
     "commit_hash": "1821717",
     "entries": [
