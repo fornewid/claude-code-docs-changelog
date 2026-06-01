@@ -1,5 +1,18 @@
 [
   {
+    "date": "2026-06-01T16:56:15Z",
+    "commit_hash": "8b0b163",
+    "entries": [
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/changelog\" target=\"_blank\">Changelog</a>",
+        "summary": "changelog.md 문서가 업데이트되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/8b0b163_changelog.txt"
+      }
+    ]
+  },
+  {
     "date": "2026-05-31T15:31:46+00:00",
     "commit_hash": "e4471ec",
     "entries": [
