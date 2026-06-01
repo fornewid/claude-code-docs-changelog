@@ -243,8 +243,8 @@
     "changelog.md": {
       "original_url": "https://github.com/anthropics/claude-code/blob/main/CHANGELOG.md",
       "original_raw_url": "https://raw.githubusercontent.com/anthropics/claude-code/main/CHANGELOG.md",
-      "hash": "923127412168f3e5b5aa288eb32da3cf1a80decfe324615407227175575fde31",
-      "last_updated": "2026-05-30T15:30:08.439020",
+      "hash": "65228e841640e694a31053f3a240e93126b03eca5e0663efee466e5bc0c75eb2",
+      "last_updated": "2026-06-01T16:56:15.606189",
       "source": "claude-code-repository"
     },
     "channels.md": {
@@ -867,8 +867,8 @@
     }
   },
   "fetch_metadata": {
-    "last_fetch_completed": "2026-05-31T15:31:46.323628",
-    "fetch_duration_seconds": 122.770468,
+    "last_fetch_completed": "2026-06-01T16:56:15.606241",
+    "fetch_duration_seconds": 147.075894,
     "total_pages_discovered": 144,
     "pages_fetched_successfully": 145,
     "pages_failed": 0,
@@ -878,7 +878,7 @@
     "total_files": 144,
     "fetch_tool_version": "3.0"
   },
-  "last_updated": "2026-05-31T15:31:46.323700",
+  "last_updated": "2026-06-01T16:56:15.606264",
   "base_url": "https://raw.githubusercontent.com/fornewid/claude-code-docs-changelog/main/docs/",
   "github_repository": "fornewid/claude-code-docs-changelog",
   "github_ref": "main",
