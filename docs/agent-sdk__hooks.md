@@ -204,13 +204,15 @@ The `hooks` option is a dictionary (Python) or object (TypeScript) where:
 
 ### Matchers
 
-Use matchers to filter when your callbacks fire. The `matcher` field is a regex string that matches against a different value depending on the hook event type. For example, tool-based hooks match against the tool name, while `Notification` hooks match against the notification type. See the [Claude Code hooks reference](/en/hooks#matcher-patterns) for the full list of matcher values for each event type.
+Use matchers to filter when your callbacks fire. The `matcher` field matches against a different value depending on the hook event type. For example, tool-based hooks match against the tool name, while `Notification` hooks match against the notification type. See the [Claude Code hooks reference](/en/hooks#matcher-patterns) for the full list of matcher values for each event type.
 
-| Option    | Type             | Default     | Description                                                                                                                                                                                                                                                                                                                                        |
-| --------- | ---------------- | ----------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| `matcher` | `string`         | `undefined` | Regex pattern matched against the event's filter field. For tool hooks, this is the tool name. Built-in tools include `Bash`, `Read`, `Write`, `Edit`, `Glob`, `Grep`, `WebFetch`, `Agent`, and others (see [Tool Input Types](/en/agent-sdk/typescript#tool-input-types) for the full list). MCP tools use the pattern `mcp__<server>__<action>`. |
-| `hooks`   | `HookCallback[]` | -           | Required. Array of callback functions to execute when the pattern matches                                                                                                                                                                                                                                                                          |
-| `timeout` | `number`         | `60`        | Timeout in seconds                                                                                                                                                                                                                                                                                                                                 |
+SDK matchers follow the same rules as [matchers in settings files](/en/hooks#matcher-patterns): a matcher containing only letters, digits, `_`, and `|` is compared as an exact string, with `|` separating alternatives, so `Write|Edit` matches exactly those two tools. A matcher of `*`, an empty string, or omitting the matcher entirely matches every occurrence of the event; a matcher containing any other character is evaluated as a regular expression, so `^mcp__` matches every MCP tool. A matcher like `mcp__memory` contains only letters and underscores, so it is compared as an exact string and matches no tool; use `mcp__memory__.*` to match every tool from that server.
+
+| Option    | Type             | Default     | Description                                                                                                                                                                                                                                                                                                                                                                        |
+| --------- | ---------------- | ----------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| `matcher` | `string`         | `undefined` | Pattern matched against the event's filter field, following the comparison rules above. For tool hooks, this is the tool name. Built-in tools include `Bash`, `Read`, `Write`, `Edit`, `Glob`, `Grep`, `WebFetch`, `Agent`, and others (see [Tool Input Types](/en/agent-sdk/typescript#tool-input-types) for the full list). MCP tools use the pattern `mcp__<server>__<action>`. |
+| `hooks`   | `HookCallback[]` | -           | Required. Array of callback functions to execute when the pattern matches                                                                                                                                                                                                                                                                                                          |
+| `timeout` | `number`         | `60`        | Timeout in seconds                                                                                                                                                                                                                                                                                                                                                                 |
 
 Use the `matcher` pattern to target specific tools whenever possible. A matcher with `'Bash'` only runs for Bash commands, while omitting the pattern runs your callbacks for every occurrence of the event. Note that for tool-based hooks, matchers only filter by **tool name**, not by file paths or other arguments. To filter by file path, check `tool_input.file_path` inside your callback.
 
@@ -237,7 +239,7 @@ Every hook callback receives three arguments:
 Your callback returns an object with two categories of fields:
 
 * **Top-level fields** work the same on every event: `systemMessage` shows a message to the user, and `continue` (`continue_` in Python) determines whether the agent keeps running after this hook.
-* **`hookSpecificOutput`** controls the current operation. The fields inside depend on the hook event type. For `PreToolUse` hooks, this is where you set `permissionDecision` (`"allow"`, `"deny"`, `"ask"`, or `"defer"`), `permissionDecisionReason`, and `updatedInput`. Returning `"defer"` ends the query so you can [resume it later](/en/hooks#defer-a-tool-call-for-later). For `PostToolUse` hooks, you can set `additionalContext` to append information to the tool result, or `updatedToolOutput` to replace the tool's output entirely before Claude sees it.
+* **`hookSpecificOutput`** controls the current operation. The fields inside depend on the hook event type. For `PreToolUse` hooks, this is where you set `permissionDecision` (`"allow"`, `"deny"`, `"ask"`, or `"defer"`), `permissionDecisionReason`, and `updatedInput`. Returning `"defer"` ends the query so you can [resume it later](/en/hooks#defer-a-tool-call-for-later). For `PostToolUse` hooks, you can set `additionalContext` to append information to the tool result. To replace the tool's output before Claude sees it, set `updatedToolOutput`, which works for any tool in both SDKs. The older `updatedMCPToolOutput` field replaces MCP tool output only and is deprecated.
 
 Return `{}` to allow the operation without changes. SDK callback hooks use the same JSON output format as [Claude Code shell command hooks](/en/hooks#json-output), which documents every field and event-specific option. For the SDK type definitions, see the [TypeScript](/en/agent-sdk/typescript#synchookjsonoutput) and [Python](/en/agent-sdk/python#synchookjsonoutput) SDK references.
 
@@ -454,9 +456,13 @@ The example below registers three independent checks for every tool call:
   ```
 </CodeGroup>
 
-### Filter with regex matchers
+### Filter with multi-tool matchers
 
-Use regex patterns to match multiple tools. This example registers three matchers with different scopes: the first triggers `file_security_hook` only for file modification tools, the second triggers `mcp_audit_hook` for any MCP tool (tools whose names start with `mcp__`), and the third triggers `global_logger` for every tool call regardless of name:
+Use multi-tool matchers to share one callback across related tools. This example registers three matchers with different scopes:
+
+* A pipe-separated exact list (`Write|Edit|Delete`) triggers `file_security_hook` only for file modification tools.
+* A regex (`^mcp__`) triggers `mcp_audit_hook` for any MCP tool whose name starts with `mcp__`.
+* An omitted matcher triggers `global_logger` for every tool call regardless of name.
 
 <CodeGroup>
   ```python Python theme={null}
@@ -626,7 +632,14 @@ This example sends a webhook after each tool completes, logging which tool ran a
 
 ### Forward notifications to Slack
 
-Use `Notification` hooks to receive system notifications from the agent and forward them to external services. Notifications fire for specific event types: `permission_prompt` (Claude needs permission), `idle_prompt` (Claude is waiting for input), `auth_success` (authentication completed), `elicitation_dialog` (Claude is prompting the user), `elicitation_response` (the user answered an elicitation), and `elicitation_complete` (an elicitation closed). Each notification includes a `message` field with a human-readable description and optionally a `title`.
+Use `Notification` hooks to receive system notifications from the agent and forward them to external services. Notifications fire for event types such as:
+
+* `permission_prompt` when Claude needs permission
+* `idle_prompt` when Claude is waiting for input
+* `auth_success` when authentication completes
+* `elicitation_dialog`, `elicitation_complete`, and `elicitation_response` for user-prompt elicitation flows
+
+Each notification includes a `message` field with a human-readable description and optionally a `title`.
 
 This example forwards every notification to a Slack channel. It requires a [Slack incoming webhook URL](https://api.slack.com/messaging/webhooks), which you create by adding an app to your Slack workspace and enabling incoming webhooks:
 
@@ -774,7 +787,7 @@ const myHook: HookCallback = async (input, toolUseID, { signal }) => {
   };
   ```
 
-* You must also return `permissionDecision: 'allow'` or `'ask'` for the input modification to take effect
+* Return `permissionDecision: 'allow'` to auto-approve the modified input, or `'ask'` to show it to the user for approval
 
 * Include `hookEventName` in `hookSpecificOutput` to identify which hook type the output is for
 
