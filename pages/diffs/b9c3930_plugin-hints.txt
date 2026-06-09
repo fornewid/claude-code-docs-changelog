@@ -1,0 +1,13 @@
+diff --git a/docs/plugin-hints.md b/docs/plugin-hints.md
+index a371138..1bb68ea 100644
+--- a/docs/plugin-hints.md
++++ b/docs/plugin-hints.md
+@@ -82,7 +82,7 @@ When the hint passes all checks, Claude Code shows a prompt like the following:
+ 
+ ```text theme={null}
+ ─────────────────────────────────────────────────────────────
+-  Plugin Recommendation
++  Plugin recommendation
+ 
+     The example-cli command suggests installing a plugin.
+ 

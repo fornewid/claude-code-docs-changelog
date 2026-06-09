@@ -1,0 +1,13 @@
+diff --git a/docs/memory.md b/docs/memory.md
+index c29f87e..bffbe6e 100644
+--- a/docs/memory.md
++++ b/docs/memory.md
+@@ -381,7 +381,7 @@ Claude reads and writes memory files during your session. When you see "Writing
+ 
+ ### Audit and edit your memory
+ 
+-Auto memory files are plain markdown you can edit or delete at any time. Run [`/memory`](#view-and-edit-with-memory) to browse and open memory files from within a session.
++Auto memory files are plain markdown you can edit or delete at any time. Run [`/memory`](#view-and-edit-with-%2Fmemory) to browse and open memory files from within a session.
+ 
+ ## View and edit with `/memory`
+ 
