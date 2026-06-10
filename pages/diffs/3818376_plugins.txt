@@ -1,0 +1,13 @@
+diff --git a/docs/plugins.md b/docs/plugins.md
+index 64505fc..b35a5e2 100644
+--- a/docs/plugins.md
++++ b/docs/plugins.md
+@@ -476,7 +476,7 @@ If you already have skills or hooks in your `.claude/` directory, you can conver
+ | Must manually copy to share   | Install with `/plugin install`   |
+ 
+ <Note>
+-  After migrating, you can remove the original files from `.claude/` to avoid duplicates. The plugin version will take precedence when loaded.
++  After migrating, remove the original files from `.claude/` to avoid duplicates. Project and user `.claude/agents/` definitions override same-named plugin agents, so the plugin version only takes effect once the originals are removed.
+ </Note>
+ 
+ ## Next steps
