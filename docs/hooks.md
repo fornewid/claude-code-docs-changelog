@@ -105,7 +105,7 @@ fi
 Now suppose Claude Code decides to run `Bash "rm -rf /tmp/build"`. Here's what happens:
 
 <Frame>
-  <img src="https://mintcdn.com/claude-code/-tYw1BD_DEqfyyOZ/images/hook-resolution.svg?fit=max&auto=format&n=-tYw1BD_DEqfyyOZ&q=85&s=c73ebc1eeda2037570427d7af1e0a891" alt="Hook resolution flow: PreToolUse event fires, matcher checks for Bash match, if condition checks for Bash(rm *) match, hook handler runs, result returns to Claude Code" width="930" height="290" data-path="images/hook-resolution.svg" />
+  <img src="https://mintcdn.com/claude-code/ikqp3_70mqIahteV/images/hook-resolution.svg?fit=max&auto=format&n=ikqp3_70mqIahteV&q=85&s=be0bf3053550c26de5f54cd64674c197" alt="Diagram of hook resolution: PreToolUse fires, the matcher checks for a Bash match, then the if condition checks for a Bash(rm *) match. If both match, the hook command runs and returns permissionDecision deny, so the tool call is blocked and Claude Code continues. If either check fails to match, the hook is skipped and the tool call is allowed to proceed." width="930" height="270" data-path="images/hook-resolution.svg" />
 </Frame>
 
 <Steps>
@@ -166,14 +166,14 @@ See [How a hook resolves](#how-a-hook-resolves) above for a complete walkthrough
 
 Where you define a hook determines its scope:
 
-| Location                                                   | Scope                         | Shareable                          |
-| :--------------------------------------------------------- | :---------------------------- | :--------------------------------- |
-| `~/.claude/settings.json`                                  | All your projects             | No, local to your machine          |
-| `.claude/settings.json`                                    | Single project                | Yes, can be committed to the repo  |
-| `.claude/settings.local.json`                              | Single project                | No, gitignored                     |
-| Managed policy settings                                    | Organization-wide             | Yes, admin-controlled              |
-| [Plugin](/en/plugins) `hooks/hooks.json`                   | When plugin is enabled        | Yes, bundled with the plugin       |
-| [Skill](/en/skills) or [agent](/en/sub-agents) frontmatter | While the component is active | Yes, defined in the component file |
+| Location                                                   | Scope                         | Shareable                                  |
+| :--------------------------------------------------------- | :---------------------------- | :----------------------------------------- |
+| `~/.claude/settings.json`                                  | All your projects             | No, local to your machine                  |
+| `.claude/settings.json`                                    | Single project                | Yes, can be committed to the repo          |
+| `.claude/settings.local.json`                              | Single project                | No, gitignored when Claude Code creates it |
+| Managed policy settings                                    | Organization-wide             | Yes, admin-controlled                      |
+| [Plugin](/en/plugins) `hooks/hooks.json`                   | When plugin is enabled        | Yes, bundled with the plugin               |
+| [Skill](/en/skills) or [agent](/en/sub-agents) frontmatter | While the component is active | Yes, defined in the component file         |
 
 For details on settings file resolution, see [settings](/en/settings). Enterprise administrators can use `allowManagedHooksOnly` to block user, project, and plugin hooks. Hooks from plugins force-enabled in managed settings `enabledPlugins` are exempt, so administrators can distribute vetted hooks through an organization marketplace. See [Hook configuration](/en/settings#hook-configuration).
 
@@ -811,6 +811,15 @@ Not every event supports blocking or controlling behavior through JSON. The even
 | MessageDisplay                                                                                                                      | `hookSpecificOutput`           | `displayContent` replaces the displayed text on screen. Display-only: the transcript and what Claude sees keep the original                                                                                                         |
 | SessionStart, Setup, SubagentStart                                                                                                  | Context only                   | `hookSpecificOutput.additionalContext` adds context for Claude. SessionStart also accepts [`initialUserMessage`, `watchPaths`, `sessionTitle`, and `reloadSkills`](#sessionstart-decision-control). No blocking or decision control |
 | WorktreeRemove, Notification, SessionEnd, PostCompact, InstructionsLoaded, StopFailure, CwdChanged, FileChanged                     | None                           | No decision control. Used for side effects like logging or cleanup                                                                                                                                                                  |
+
+A few events can also rewrite content rather than only allow or block it:
+
+* `PreToolUse` — `updatedInput` directly under `hookSpecificOutput` replaces a tool's arguments before it runs ([details](#pretooluse-decision-control))
+* `PermissionRequest` — `updatedInput` inside the `decision` object ([details](#permissionrequest-decision-control))
+* `PostToolUse` — `updatedToolOutput` replaces the tool's result ([details](#posttooluse-decision-control))
+* `UserPromptSubmit` — cannot replace the prompt; only injects `additionalContext` alongside it
+
+For redaction or transformation use cases, intercept at `PreToolUse` for outbound tool inputs and `PostToolUse` for inbound tool results.
 
 Here are examples of each pattern in action:
 
