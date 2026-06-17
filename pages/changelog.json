@@ -1,5 +1,214 @@
 [
   {
+    "date": "2026-06-17T16:19:56Z",
+    "commit_hash": "b1cc4af",
+    "entries": [
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/advisor\" target=\"_blank\">Advisor</a>",
+        "summary": "advisor.md 문서가 업데이트되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/b1cc4af_advisor.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/agent-sdk__agent-loop\" target=\"_blank\">Agent Sdk__Agent Loop</a>",
+        "summary": "agent-sdk__agent-loop.md 문서가 업데이트되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/b1cc4af_agent-sdk__agent-loop.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/agent-sdk__python\" target=\"_blank\">Agent Sdk__Python</a>",
+        "summary": "agent-sdk__python.md 문서가 업데이트되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/b1cc4af_agent-sdk__python.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/agent-sdk__structured-outputs\" target=\"_blank\">Agent Sdk__Structured Outputs</a>",
+        "summary": "agent-sdk__structured-outputs.md 문서가 업데이트되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/b1cc4af_agent-sdk__structured-outputs.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/agent-sdk__subagents\" target=\"_blank\">Agent Sdk__Subagents</a>",
+        "summary": "agent-sdk__subagents.md 문서가 업데이트되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/b1cc4af_agent-sdk__subagents.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/agent-sdk__todo-tracking\" target=\"_blank\">Agent Sdk__Todo Tracking</a>",
+        "summary": "agent-sdk__todo-tracking.md 문서가 업데이트되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/b1cc4af_agent-sdk__todo-tracking.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/agent-sdk__typescript\" target=\"_blank\">Agent Sdk__Typescript</a>",
+        "summary": "agent-sdk__typescript.md 문서가 업데이트되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/b1cc4af_agent-sdk__typescript.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/agent-teams\" target=\"_blank\">Agent Teams</a>",
+        "summary": "agent-teams.md 문서가 업데이트되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/b1cc4af_agent-teams.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/amazon-bedrock\" target=\"_blank\">Amazon Bedrock</a>",
+        "summary": "amazon-bedrock.md 문서가 업데이트되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/b1cc4af_amazon-bedrock.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/changelog\" target=\"_blank\">Changelog</a>",
+        "summary": "changelog.md 문서가 업데이트되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/b1cc4af_changelog.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/costs\" target=\"_blank\">Costs</a>",
+        "summary": "costs.md 문서가 업데이트되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/b1cc4af_costs.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/env-vars\" target=\"_blank\">Env Vars</a>",
+        "summary": "env-vars.md 문서가 업데이트되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/b1cc4af_env-vars.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/fast-mode\" target=\"_blank\">Fast Mode</a>",
+        "summary": "fast-mode.md 문서가 업데이트되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/b1cc4af_fast-mode.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/fullscreen\" target=\"_blank\">Fullscreen</a>",
+        "summary": "fullscreen.md 문서가 업데이트되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/b1cc4af_fullscreen.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/hooks\" target=\"_blank\">Hooks</a>",
+        "summary": "hooks.md 문서가 업데이트되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/b1cc4af_hooks.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/model-config\" target=\"_blank\">Model Config</a>",
+        "summary": "model-config.md 문서가 업데이트되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/b1cc4af_model-config.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/output-styles\" target=\"_blank\">Output Styles</a>",
+        "summary": "output-styles.md 문서가 업데이트되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/b1cc4af_output-styles.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/permission-modes\" target=\"_blank\">Permission Modes</a>",
+        "summary": "permission-modes.md 문서가 업데이트되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/b1cc4af_permission-modes.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/permissions\" target=\"_blank\">Permissions</a>",
+        "summary": "permissions.md 문서가 업데이트되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/b1cc4af_permissions.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/plugin-hints\" target=\"_blank\">Plugin Hints</a>",
+        "summary": "plugin-hints.md 문서가 업데이트되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/b1cc4af_plugin-hints.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/plugin-marketplaces\" target=\"_blank\">Plugin Marketplaces</a>",
+        "summary": "plugin-marketplaces.md 문서가 업데이트되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/b1cc4af_plugin-marketplaces.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/plugins-reference\" target=\"_blank\">Plugins Reference</a>",
+        "summary": "plugins-reference.md 문서가 업데이트되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/b1cc4af_plugins-reference.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/remote-control\" target=\"_blank\">Remote Control</a>",
+        "summary": "remote-control.md 문서가 업데이트되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/b1cc4af_remote-control.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/settings\" target=\"_blank\">Settings</a>",
+        "summary": "settings.md 문서가 업데이트되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/b1cc4af_settings.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/skills\" target=\"_blank\">Skills</a>",
+        "summary": "skills.md 문서가 업데이트되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/b1cc4af_skills.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/statusline\" target=\"_blank\">Statusline</a>",
+        "summary": "statusline.md 문서가 업데이트되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/b1cc4af_statusline.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/sub-agents\" target=\"_blank\">Sub Agents</a>",
+        "summary": "sub-agents.md 문서가 업데이트되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/b1cc4af_sub-agents.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/tools-reference\" target=\"_blank\">Tools Reference</a>",
+        "summary": "tools-reference.md 문서가 업데이트되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/b1cc4af_tools-reference.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/workflows\" target=\"_blank\">Workflows</a>",
+        "summary": "workflows.md 문서가 업데이트되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/b1cc4af_workflows.txt"
+      }
+    ]
+  },
+  {
     "date": "2026-06-16T16:35:41Z",
     "commit_hash": "fff547b",
     "entries": [
