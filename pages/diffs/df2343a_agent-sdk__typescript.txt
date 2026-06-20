@@ -1,0 +1,22 @@
+diff --git a/docs/agent-sdk__typescript.md b/docs/agent-sdk__typescript.md
+index 9f70f47..9970f39 100644
+--- a/docs/agent-sdk__typescript.md
++++ b/docs/agent-sdk__typescript.md
+@@ -3272,12 +3272,17 @@ type SDKRateLimitEvent = {
+     status: "allowed" | "allowed_warning" | "rejected";
+     resetsAt?: number;
+     utilization?: number;
++    errorCode?: "credits_required";
++    canUserPurchaseCredits?: boolean;
++    hasChargeableSavedPaymentMethod?: boolean;
+   };
+   uuid: UUID;
+   session_id: string;
+ };
+ ```
+ 
++{/* min-version: 2.1.181 */}When `errorCode` is `"credits_required"`, the rejection is from a claude.ai subscription whose included usage is exhausted, and the session cannot continue until the user buys usage credits. `canUserPurchaseCredits` indicates whether the authenticated user can buy credits for the account, and `hasChargeableSavedPaymentMethod` indicates whether a saved payment method is on file. All three fields are absent on rate-limit events that are not credits-required rejections. Requires Claude Code v2.1.181 or later.
++
+ ### `SDKLocalCommandOutputMessage`
+ 
+ Output from a local slash command (for example, `/voice` or `/usage`). Displayed as assistant-style text in the transcript.

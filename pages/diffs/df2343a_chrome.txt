@@ -1,0 +1,13 @@
+diff --git a/docs/chrome.md b/docs/chrome.md
+index 9bd3e81..36bccfd 100644
+--- a/docs/chrome.md
++++ b/docs/chrome.md
+@@ -168,7 +168,7 @@ Claude records the interaction sequence and saves it as a GIF file.
+ 
+ ### Extension not detected
+ 
+-If Claude Code's setup-issues line lists `chrome`:
++If Claude Code can't detect the Chrome extension:
+ 
+ 1. Verify the Chrome extension is installed and enabled in `chrome://extensions`
+ 2. Verify Claude Code is up to date by running `claude --version`
