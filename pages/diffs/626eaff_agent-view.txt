@@ -1,0 +1,13 @@
+diff --git a/docs/agent-view.md b/docs/agent-view.md
+index 23f0696..cf5799a 100644
+--- a/docs/agent-view.md
++++ b/docs/agent-view.md
+@@ -294,7 +294,7 @@ Carrying `--allow-dangerously-skip-permissions` through keeps `bypassPermissions
+ 
+ ### From your shell
+ 
+-Pass `--bg` to start a session that goes straight to the background:
++Pass `--bg` or its long form `--background` to start a session that goes straight to the background:
+ 
+ ```bash theme={null}
+ claude --bg "investigate the flaky SettingsChangeDetector test"
