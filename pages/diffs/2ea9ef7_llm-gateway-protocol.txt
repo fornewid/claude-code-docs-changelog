@@ -1,0 +1,13 @@
+diff --git a/docs/llm-gateway-protocol.md b/docs/llm-gateway-protocol.md
+index 2e3d79b..fcb33bf 100644
+--- a/docs/llm-gateway-protocol.md
++++ b/docs/llm-gateway-protocol.md
+@@ -154,7 +154,7 @@ Claude Code reads `id` and the optional `display_name` from each entry in the re
+ {
+   "data": [
+     { "id": "claude-sonnet-4-6", "display_name": "Claude Sonnet 4.6" },
+-    { "id": "claude-opus-4-7" }
++    { "id": "claude-opus-4-8" }
+   ]
+ }
+ ```
