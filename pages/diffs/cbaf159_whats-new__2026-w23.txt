@@ -1,0 +1,15 @@
+diff --git a/docs/whats-new__2026-w23.md b/docs/whats-new__2026-w23.md
+index 8ea0b76..831b9aa 100644
+--- a/docs/whats-new__2026-w23.md
++++ b/docs/whats-new__2026-w23.md
+@@ -73,7 +73,9 @@
+   <p className="digest-feature-try">Add a floor to your managed settings so older clients refuse to start:</p>
+ 
+   ```json managed-settings.json theme={null}
+-  "requiredMinimumVersion": "2.1.163"
++  {
++    "requiredMinimumVersion": "2.1.163"
++  }
+   ```
+ 
+   <a className="digest-feature-link" href="/docs/en/admin-setup#decide-what-to-enforce">Decide what to enforce</a>
