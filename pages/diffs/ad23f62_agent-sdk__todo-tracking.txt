@@ -1,0 +1,13 @@
+diff --git a/docs/agent-sdk__todo-tracking.md b/docs/agent-sdk__todo-tracking.md
+index 9c4a49a..648fefa 100644
+--- a/docs/agent-sdk__todo-tracking.md
++++ b/docs/agent-sdk__todo-tracking.md
+@@ -32,6 +32,8 @@ The SDK automatically creates todos for:
+ 
+ ## Examples
+ 
++Before running these examples, install the Claude Agent SDK by following the [quickstart](/en/agent-sdk/quickstart).
++
+ ### Monitoring Todo Changes
+ 
+ <CodeGroup>
