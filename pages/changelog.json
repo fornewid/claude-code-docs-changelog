@@ -1,5 +1,18 @@
 [
   {
+    "date": "2026-07-06T16:11:21Z",
+    "commit_hash": "57742ca",
+    "entries": [
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/github-enterprise-server\" target=\"_blank\">Github Enterprise Server</a>",
+        "summary": "github-enterprise-server.md 문서가 업데이트되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/57742ca_github-enterprise-server.txt"
+      }
+    ]
+  },
+  {
     "date": "2026-07-05T15:30:35Z",
     "commit_hash": "121dfb5",
     "entries": [
