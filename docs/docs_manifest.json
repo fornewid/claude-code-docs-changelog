@@ -484,8 +484,8 @@
     "github-enterprise-server.md": {
       "original_url": "https://code.claude.com/docs/en/github-enterprise-server",
       "original_md_url": "https://code.claude.com/docs/en/github-enterprise-server.md",
-      "hash": "bef08b60b066c929349644197a8d4f8786b6314c6e07087051b19b9c4703e141",
-      "last_updated": "2026-07-04T15:26:21.472541"
+      "hash": "0dd975d28f4433bd64124919b43062244f0fecf8e6413479304acf6bd1d8ba7e",
+      "last_updated": "2026-07-06T16:09:47.638058"
     },
     "gitlab-ci-cd.md": {
       "original_url": "https://code.claude.com/docs/en/gitlab-ci-cd",
@@ -981,8 +981,8 @@
     }
   },
   "fetch_metadata": {
-    "last_fetch_completed": "2026-07-05T15:30:35.088230",
-    "fetch_duration_seconds": 177.236013,
+    "last_fetch_completed": "2026-07-06T16:11:21.591167",
+    "fetch_duration_seconds": 190.674797,
     "total_pages_discovered": 163,
     "pages_fetched_successfully": 164,
     "pages_failed": 0,
@@ -992,7 +992,7 @@
     "total_files": 163,
     "fetch_tool_version": "3.0"
   },
-  "last_updated": "2026-07-05T15:30:35.088261",
+  "last_updated": "2026-07-06T16:11:21.591208",
   "base_url": "https://raw.githubusercontent.com/fornewid/claude-code-docs-changelog/main/docs/",
   "github_repository": "fornewid/claude-code-docs-changelog",
   "github_ref": "main",
