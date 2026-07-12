@@ -784,8 +784,8 @@
     "setup.md": {
       "original_url": "https://code.claude.com/docs/en/setup",
       "original_md_url": "https://code.claude.com/docs/en/setup.md",
-      "hash": "25459121dd0a2a6ad9ad53d05a9bf5d9cec6a4d4df0d16c1706c44220af8e9fa",
-      "last_updated": "2026-07-11T15:23:59.003726"
+      "hash": "8173b035633a39ff48b3ac911496aeed2e712c036f895543f175d48e409f1634",
+      "last_updated": "2026-07-12T15:24:36.768575"
     },
     "skills.md": {
       "original_url": "https://code.claude.com/docs/en/skills",
@@ -993,8 +993,8 @@
     }
   },
   "fetch_metadata": {
-    "last_fetch_completed": "2026-07-11T15:24:36.237088",
-    "fetch_duration_seconds": 163.616967,
+    "last_fetch_completed": "2026-07-12T15:25:11.620993",
+    "fetch_duration_seconds": 167.289546,
     "total_pages_discovered": 165,
     "pages_fetched_successfully": 166,
     "pages_failed": 0,
@@ -1004,7 +1004,7 @@
     "total_files": 165,
     "fetch_tool_version": "3.0"
   },
-  "last_updated": "2026-07-11T15:24:36.237107",
+  "last_updated": "2026-07-12T15:25:11.621026",
   "base_url": "https://raw.githubusercontent.com/fornewid/claude-code-docs-changelog/main/docs/",
   "github_repository": "fornewid/claude-code-docs-changelog",
   "github_ref": "main",
