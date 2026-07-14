@@ -1,0 +1,21 @@
+diff --git a/docs/agent-sdk__python.md b/docs/agent-sdk__python.md
+index ce32770..fd1b7ee 100644
+--- a/docs/agent-sdk__python.md
++++ b/docs/agent-sdk__python.md
+@@ -8,10 +8,16 @@
+ 
+ ## Installation
+ 
++Install the package into a virtual environment. On recent Debian, Ubuntu, and Homebrew Python installs, running `pip install` against system Python fails with `error: externally-managed-environment`.
++
+ ```bash theme={null}
++python3 -m venv .venv
++source .venv/bin/activate
+ pip install claude-agent-sdk
+ ```
+ 
++For uv, Windows PowerShell, and API key setup, see [Get started in the Agent SDK overview](/en/agent-sdk/overview#get-started).
++
+ ## Choosing between `query()` and `ClaudeSDKClient`
+ 
+ The Python SDK provides two ways to interact with Claude Code:

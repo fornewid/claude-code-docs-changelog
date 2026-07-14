@@ -1,0 +1,24 @@
+diff --git a/docs/channels-reference.md b/docs/channels-reference.md
+index 7d58c77..e0b7f28 100644
+--- a/docs/channels-reference.md
++++ b/docs/channels-reference.md
+@@ -7,7 +7,7 @@
+ > Build an MCP server that pushes webhooks, alerts, and chat messages into a Claude Code session. Reference for the channel contract: capability declaration, notification events, reply tools, sender gating, and permission relay.
+ 
+ <Note>
+-  Channels are in [research preview](/en/channels#research-preview) and require Claude Code v2.1.80 or later. Team and Enterprise organizations must [explicitly enable them](/en/channels#enterprise-controls).
++  Channels are in [research preview](/en/channels#research-preview). Team and Enterprise organizations must [explicitly enable them](/en/channels#enterprise-controls).
+ </Note>
+ 
+ A channel is an MCP server that pushes events into a Claude Code session so Claude can react to things happening outside the terminal.
+@@ -435,10 +435,6 @@ The [Telegram](https://github.com/anthropics/claude-plugins-official/tree/main/e
+ 
+ ## Relay permission prompts
+ 
+-<Note>
+-  Permission relay requires Claude Code v2.1.81 or later. Earlier versions ignore the `claude/channel/permission` capability.
+-</Note>
+-
+ When Claude calls a tool that needs approval, the local terminal dialog opens and the session waits. A two-way channel can opt in to receive the same prompt in parallel and relay it to you on another device. Both stay live: you can answer in the terminal or on your phone, and Claude Code applies whichever answer arrives first and closes the other.
+ 
+ Relay covers tool-use approvals like `Bash`, `Write`, and `Edit`. Project trust and MCP server consent dialogs don't relay; those only appear in the local terminal.
