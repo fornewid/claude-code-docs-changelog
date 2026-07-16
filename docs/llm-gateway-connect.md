@@ -5,7 +5,7 @@
 
 # Connect Claude Code to an LLM gateway
 
-> Point Claude Code at your organization's LLM gateway. Check whether your admin already configured it, or set the base URL and credential yourself for the CLI, VS Code, GitHub Actions, and the Agent SDK, then verify the connection and fix gateway errors.
+> Point Claude Code at your organization's LLM gateway. Check whether your admin already configured it, or set the base URL and credential yourself, then verify the connection and fix gateway errors.
 
 An [LLM gateway](/en/llm-gateway) is a proxy your organization runs between Claude Code and the model provider. When your organization uses one, Claude Code authenticates to the gateway with a credential your organization issues instead of your personal claude.ai login.
 
@@ -92,11 +92,13 @@ Replace the values with the ones your gateway team gave you:
   </Tab>
 </Tabs>
 
-Shell exports apply only to that terminal session and programs started from it; an editor launched from the dock or Start menu won't see them. To make them persist across new terminals, add the same lines to your shell profile, such as `~/.zshrc`, `~/.bashrc`, or your PowerShell `$PROFILE`, or use a settings file instead.
+Shell exports apply only to that terminal session and programs started from it. An editor launched from the dock or Start menu won't see them. To make the values persist across new terminals, add the same lines to your shell profile, such as `~/.zshrc`, `~/.bashrc`, or your PowerShell `$PROFILE`.
+
+If you export the gateway only in your shell, it doesn't reliably reach background agents hosted by the [supervisor](/en/agent-view#how-background-sessions-are-hosted); see [how each background session sources its gateway](/en/agent-view#the-supervisor-process). Use a settings file for any gateway that background agents must always route through.
 
 #### Set in a settings file
 
-To make the configuration apply everywhere Claude Code runs without depending on your shell, set the variables in the `env` block of a [settings file](/en/settings). Settings files have different scopes:
+To make the configuration apply everywhere Claude Code runs, including [background agents](/en/agent-view#how-background-sessions-are-hosted), set the variables in the `env` block of a [settings file](/en/settings) instead of relying on your shell. Settings files have different scopes:
 
 * `~/.claude/settings.json` applies to all your projects. On Windows the path is `%USERPROFILE%\.claude\settings.json`
 * `.claude/settings.local.json` applies to one project. Claude Code adds it to your gitignore when it creates the file; if you create it yourself, add it to your gitignore manually first so you don't accidentally commit your credential
@@ -184,7 +186,10 @@ Set the gateway variables for the [VS Code extension](/en/vs-code) in `claudeCod
 
 ### Desktop app
 
-The desktop app reads gateway routing from an [administrator-distributed configuration](https://claude.com/docs/third-party/claude-desktop/gateway), not from `ANTHROPIC_BASE_URL` or `settings.json`. If your organization has distributed it, the desktop app routes through the gateway with no setup on your part; if not, use the terminal CLI or VS Code extension for gateway sessions. Administrators distribute the configuration as described in the [organization rollout](/en/llm-gateway-rollout#distribute-through-managed-settings).
+The desktop app reads gateway routing from its [third-party inference configuration](https://claude.com/docs/third-party/claude-desktop/gateway), not from `ANTHROPIC_BASE_URL` or `settings.json`. That configuration can come from your organization or from a form in the app itself:
+
+* **Distributed by an administrator**: if your organization has [deployed the configuration](/en/llm-gateway-rollout#distribute-through-managed-settings), the desktop app routes through the gateway with no setup on your part
+* **Configured locally**: for devices without an administrator-distributed configuration, open Help → Troubleshooting → Enable Developer Mode, which restarts the app with a Developer menu. Then open Developer → Configure Third-Party Inference and enter your gateway base URL. An administrator-distributed configuration takes precedence and makes this form read-only
 
 With the gateway configuration active, the desktop app runs sessions on your local machine only: the environment picker doesn't offer SSH sessions or Anthropic-hosted cloud environments, and [Remote Control](/en/remote-control) is unavailable. To use Claude Code on a remote host through the gateway, run the CLI on that host with [`ANTHROPIC_BASE_URL` and the gateway credential](#set-the-base-url-and-credential) set there.
 
