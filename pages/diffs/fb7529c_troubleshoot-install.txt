@@ -1,0 +1,12 @@
+diff --git a/docs/troubleshoot-install.md b/docs/troubleshoot-install.md
+index 83dbbd4..71364c6 100644
+--- a/docs/troubleshoot-install.md
++++ b/docs/troubleshoot-install.md
+@@ -625,6 +625,7 @@ This can happen on glibc-based systems that have musl cross-compilation packages
+    ```bash theme={null}
+    apk add libgcc libstdc++ ripgrep
+    ```
++   On Alpine, `ripgrep` is in the community repository. If `apk` reports that the package is missing, see [Alpine Linux setup](/en/setup#alpine-linux-and-musl-based-distributions).
+ 
+ ### `Illegal instruction`
+ 

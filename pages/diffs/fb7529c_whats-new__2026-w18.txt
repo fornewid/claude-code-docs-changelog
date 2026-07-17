@@ -1,0 +1,13 @@
+diff --git a/docs/whats-new__2026-w18.md b/docs/whats-new__2026-w18.md
+index fbed673..84e99e3 100644
+--- a/docs/whats-new__2026-w18.md
++++ b/docs/whats-new__2026-w18.md
+@@ -71,7 +71,7 @@
+   https://github.com/your-org/your-repo/pull/1234
+   ```
+ 
+-  <p className="digest-feature-try">To skip the picker, pass the PR number on the command line instead:</p>
++  <p className="digest-feature-try">To open the picker already filtered to the PR, pass the PR number on the command line:</p>
+ 
+   ```bash theme={null}
+   claude --from-pr 1234
