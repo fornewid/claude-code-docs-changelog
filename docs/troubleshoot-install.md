@@ -59,7 +59,12 @@ curl -sI https://downloads.claude.ai/claude-code-releases/latest
 
 In PowerShell, run `curl.exe -sI` instead. PowerShell aliases `curl` to `Invoke-WebRequest`, which rejects the `-sI` flags.
 
-An `HTTP/2 200` line means you reached the server. If you see no output, `Could not resolve host`, or a connection timeout, your network is blocking the connection. Common causes:
+An `HTTP/2 200` line means you reached the server. Other results point to the cause:
+
+* `403`: usually a proxy or network filter blocking the host, or Claude Code is [not available in your region](https://www.anthropic.com/supported-countries)
+* `5xx`: usually a temporary service issue; wait a few minutes and retry
+
+If you see no output, `Could not resolve host`, or a connection timeout, your network is blocking the connection. Common causes:
 
 * Corporate firewalls or proxies blocking `downloads.claude.ai`
 * Regional network restrictions: try a VPN or alternative network
@@ -361,10 +366,16 @@ The `curl ... | bash` command downloads the script and pipes it to Bash for exec
 **Solutions:**
 
 1. **Check network stability**: Claude Code binaries are hosted at `downloads.claude.ai`. Test that you can reach it:
+
    ```bash theme={null}
    curl -sI https://downloads.claude.ai/claude-code-releases/latest
    ```
-   An `HTTP/2 200` line means you reached the server and the original failure was likely intermittent; retry the install command. If you see `Could not resolve host` or a connection timeout, your network is blocking the download.
+
+   An `HTTP/2 200` line means you reached the server and the original failure was likely intermittent; retry the install command. Other results point to the cause:
+
+   * `403`: usually a proxy or network filter blocking the host, or Claude Code is [not available in your region](https://www.anthropic.com/supported-countries)
+   * `5xx`: usually a temporary service issue; wait a few minutes and retry
+   * `Could not resolve host` or a connection timeout: your network is blocking the download
 
 2. **Try an alternative install method**:
 
@@ -436,9 +447,15 @@ The installer couldn't reach the download server. This typically means `download
 **Solutions:**
 
 1. **Test connectivity directly**:
+
    ```bash theme={null}
    curl -sI https://downloads.claude.ai/claude-code-releases/latest
    ```
+
+   An `HTTP/2 200` line means the server is reachable. Other results point to the cause:
+
+   * `403`: usually a proxy or network filter blocking the host, or Claude Code is [not available in your region](https://www.anthropic.com/supported-countries)
+   * `5xx`: usually a temporary service issue; wait a few minutes and retry
 
 2. **If behind a proxy**, set `HTTPS_PROXY` so the installer can route through it. See [proxy configuration](/en/network-config#proxy-configuration) for details.
    ```bash theme={null}
@@ -847,3 +864,4 @@ If none of the above resolves your issue:
 1. Check the [GitHub repository](https://github.com/anthropics/claude-code/issues) for known issues, or open a new one with your operating system, the install command you ran, and the full error output
 2. If `claude --version` works but something else is wrong, run `claude doctor` for an automated diagnostic report
 3. If you can start a session, use `/feedback` inside Claude Code to report the problem
+4. If the problem is with your account rather than the install, such as a login loop, a subscription that isn't recognized, or a disabled organization, contact Anthropic support: sign in at [claude.ai](https://claude.ai) (Console users: [platform.claude.com](https://platform.claude.com)), click your initials in the lower left, and select **Get help**. See [How to get support](https://support.claude.com/en/articles/9015913-how-to-get-support) for the full flow.
