@@ -1,0 +1,22 @@
+diff --git a/docs/monitoring-usage.md b/docs/monitoring-usage.md
+index 2de15cb..f41fbae 100644
+--- a/docs/monitoring-usage.md
++++ b/docs/monitoring-usage.md
+@@ -92,6 +92,8 @@ Claude Code doesn't pass `OTEL_*` environment variables to the subprocesses it s
+ | `OTEL_EXPORTER_OTLP_METRICS_TEMPORALITY_PREFERENCE` | Metrics temporality preference (default: `delta`). Set to `cumulative` if your backend expects cumulative temporality                                                                                                                                                                                                             | `delta`, `cumulative`                                                                                                           |
+ | `CLAUDE_CODE_OTEL_HEADERS_HELPER_DEBOUNCE_MS`       | Interval for refreshing dynamic headers (default: 1740000ms / 29 minutes)                                                                                                                                                                                                                                                         | `900000`                                                                                                                        |
+ 
++For the `http/protobuf` and `http/json` protocols, Claude Code sends each export request with a `Content-Length` header. {/* min-version: 2.1.212 */}Before v2.1.212, Claude Code versions from v2.1.191 onward sent these requests with chunked transfer encoding; Azure Monitor and other endpoints that require a declared length rejected them with `411 Length Required` or `400` errors.
++
+ ### mTLS authentication
+ 
+ How you configure client certificates for the OTLP exporter depends on the OTLP protocol in use for that signal, set via `OTEL_EXPORTER_OTLP_PROTOCOL` or the per-signal override. The same configuration applies to metrics, logs, and traces.
+@@ -141,6 +143,8 @@ By default, the `traceparent` header on model and HTTP MCP requests is sent only
+ 
+ In Agent SDK and non-interactive sessions started with `-p`, Claude Code also reads `TRACEPARENT` and `TRACESTATE` from its own environment when starting each interaction span. This lets an embedding process pass its active W3C trace context into the subprocess so Claude Code's spans appear as children of the caller's distributed trace. Interactive sessions ignore inbound `TRACEPARENT` to avoid accidentally inheriting ambient values from CI or container environments.
+ 
++The inbound trace context also applies to [events](#events). In Agent SDK and `-p` sessions with `TRACEPARENT` set, each OTLP event log record carries `trace_id` and `span_id` values that join it to your application's trace, even when the traces exporter isn't configured, so your logging backend can correlate events with the rest of the trace. A record emitted inside an active Claude Code span carries that span's ids; a record emitted outside one carries the inbound `TRACEPARENT` ids directly. {/* min-version: 2.1.212 */}Before v2.1.212, event records emitted outside an active span didn't carry `trace_id` or `span_id`.
++
+ #### Span hierarchy
+ 
+ Each user prompt starts a `claude_code.interaction` root span. API calls, tool calls, and hook executions are recorded as its children. Tool spans have two child spans of their own: one for the time spent waiting on a permission decision and one for the execution itself. When the Agent tool, or legacy Task tool, spawns a subagent, the subagent's API and tool spans nest under the parent's `claude_code.tool` span.

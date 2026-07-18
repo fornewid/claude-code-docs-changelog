@@ -1,0 +1,57 @@
+diff --git a/docs/glossary.md b/docs/glossary.md
+index bdd2eb6..c5632e7 100644
+--- a/docs/glossary.md
++++ b/docs/glossary.md
+@@ -6,7 +6,7 @@
+ 
+ > Definitions for Claude Code terminology. Learn what agentic loop, compaction, CLAUDE.md, hooks, subagents, MCP, and other core concepts mean.
+ 
+-This glossary defines Claude Code terminology. Each entry links to the page where the concept is covered in depth. For model-level concepts like tokens, temperature, and RAG, see the [platform glossary](https://platform.claude.com/docs/en/about-claude/glossary).
++This glossary defines Claude Code terminology. Each entry links to the page where the concept is covered in depth. For model-level concepts like tokens, temperature, and RAG, see the [platform glossary](https://platform.claude.com/docs/en/about-claude/glossary). For Claude Desktop terms such as desktop extension, MCPB, and DXT, see the [Claude Help Center](https://support.claude.com/).
+ 
+ ## A
+ 
+@@ -98,6 +98,8 @@ Learn more: [CLAUDE.md files](/en/memory#claude-md-files)
+ 
+ A reusable instruction you invoke by typing `/name` in the prompt. Built-in commands such as `/clear`, `/model`, and `/compact` control the session. You can define your own commands as files in `.claude/commands/`, or install them from a [plugin](#plugin). [Skills](#skill) are the recommended way to package multi-step commands.
+ 
++Two other uses of the word are unrelated: `claude` CLI subcommands such as `claude mcp add`, listed in the [CLI reference](/en/cli-reference#cli-commands), and the `command` field of a stdio [MCP server](#mcp-server) entry, which specifies the executable Claude Code launches to start the server.
++
+ Learn more: [Commands](/en/commands) · [Skills](/en/skills)
+ 
+ ### Compaction
+@@ -106,6 +108,12 @@ Automatic summarization of your conversation when the [context window](#context-
+ 
+ Learn more: [What survives compaction](/en/context-window#what-survives-compaction) · [When context fills up](/en/how-claude-code-works#when-context-fills-up)
+ 
++### Connector
++
++An [MCP server](#mcp-server) added to your claude.ai account rather than configured in Claude Code. When you sign in to Claude Code with that account, your connectors appear in `/mcp` alongside the servers you added locally. Organizations can also provision connectors and set per-tool controls on them.
++
++Learn more: [Use MCP servers from claude.ai](/en/mcp#use-mcp-servers-from-claude-ai)
++
+ ### Context window
+ 
+ The working memory for a session, holding conversation history, file contents, command outputs, CLAUDE.md, auto memory, loaded skills, and system instructions. As you work, context fills up until [compaction](#compaction) summarizes it. Run `/context` to see what's using space. For the underlying model concept, see the [platform glossary](https://platform.claude.com/docs/en/about-claude/glossary#context-window).
+@@ -162,6 +170,12 @@ An open standard for connecting AI tools to external data sources and services.
+ 
+ Learn more: [Model Context Protocol](/en/mcp)
+ 
++### MCP server
++
++A program that gives Claude tools, prompts, or resources over [MCP](#mcp-model-context-protocol). You add servers with `claude mcp add`, in `.mcp.json`, through a [plugin](#plugin), or as a claude.ai [connector](#connector). A local stdio server runs as a process Claude Code starts from the `command` and `args` fields of its configuration, which have nothing to do with the [commands](#command) you type at the prompt.
++
++Learn more: [Model Context Protocol](/en/mcp)
++
+ ### MCP Tool Search
+ 
+ A context-saving mechanism that defers MCP tool schemas until needed. Only tool names load at startup; Claude fetches the full schema on demand when it decides to use a specific tool. This keeps idle MCP servers from consuming much context.
+@@ -276,7 +290,7 @@ Learn more: [Create custom subagents](/en/sub-agents)
+ 
+ ### Surface
+ 
+-Any place you access Claude Code: the CLI, VS Code, JetBrains, Desktop, or claude.ai. All surfaces share the same engine, so your CLAUDE.md, settings, and skills work the same way across them. Slack and the Chrome extension are integrations that connect to a surface rather than surfaces themselves.
++Any place you access Claude Code: the CLI, VS Code, JetBrains, Desktop, or claude.ai. All surfaces share the same engine. Sessions on your machine read your local CLAUDE.md, settings, and skills; [cloud sessions](/en/claude-code-on-the-web#what’s-available-in-cloud-sessions) start from a fresh clone of your repository and don't read `~/.claude/` on your machine. Slack and the Chrome extension are integrations that connect to a surface rather than surfaces themselves.
+ 
+ Learn more: [Platforms and integrations](/en/platforms)
+ 

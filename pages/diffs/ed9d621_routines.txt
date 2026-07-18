@@ -1,0 +1,31 @@
+diff --git a/docs/routines.md b/docs/routines.md
+index 74f518c..756281e 100644
+--- a/docs/routines.md
++++ b/docs/routines.md
+@@ -116,7 +116,7 @@ Routines belong to your individual claude.ai account. They are not shared with t
+ 
+ ### Create from the CLI
+ 
+-Run `/schedule` in any session to create a scheduled routine conversationally. You can also pass a description directly, for a recurring routine like `/schedule daily PR review at 9am` or a one-off like `/schedule clean up feature flag in one week`. Claude walks through the same information the web form collects, then saves the routine to your account.
++Run `/schedule` in any session to create a scheduled routine conversationally. You can also pass a description directly, for a recurring routine like `/schedule daily PR review at 9am` or a one-off like `/schedule clean up feature flag in one week`. Claude walks through the same information the web form collects, then saves the routine to your account. The command is also available under the alias `/routines`.
+ 
+ A successful start looks like a conversation: Claude asks follow-up questions about the schedule, repositories, and prompt before saving. If Claude instead replies that you need to authenticate or that it can't connect to your remote claude.ai account, no routine was created; see [Troubleshooting](#troubleshooting).
+ 
+@@ -334,7 +334,7 @@ Connectors are the [claude.ai integrations](/en/mcp#use-mcp-servers-from-claude-
+ 
+ When you create a routine, all of your currently connected connectors are included by default. Remove any that aren't needed to limit which tools Claude has access to during the run. You can also add connectors directly from the routine form.
+ 
+-To manage or add connectors outside of the routine form, visit **Settings > Connectors** on claude.ai or use `/schedule update` in the CLI.
++To manage or add connectors outside of the routine form, visit [claude.ai/customize/connectors](https://claude.ai/customize/connectors) or use `/schedule update` in the CLI.
+ 
+ ### Environments and network access
+ 
+@@ -372,7 +372,7 @@ See [Network access](/en/claude-code-on-the-web#network-access) for details on a
+ 
+ Routines draw down subscription usage the same way interactive sessions do. In addition to the standard subscription limits, routines have a daily cap on how many runs can start per account. See your current consumption and remaining daily routine runs at [claude.ai/code/routines](https://claude.ai/code/routines) or [claude.ai/settings/usage](https://claude.ai/settings/usage).
+ 
+-When a routine hits the daily cap or your subscription usage limit, organizations with usage credits turned on can keep running routines on metered overage. Without usage credits, additional runs are rejected until the window resets. Turn on usage credits from **Settings > Billing** on claude.ai.
++When a routine hits the daily cap or your subscription usage limit, organizations with usage credits turned on can keep running routines on metered overage. Without usage credits, additional runs are rejected until the window resets. Turn on usage credits at [claude.ai/settings/usage](https://claude.ai/settings/usage). On Team and Enterprise plans, an admin turns them on for the organization at [claude.ai/admin-settings/usage](https://claude.ai/admin-settings/usage).
+ 
+ One-off runs do not count against the daily routine cap. They draw down your regular subscription usage like any other session, but they are exempt from the per-account daily routine run allowance.
+ 

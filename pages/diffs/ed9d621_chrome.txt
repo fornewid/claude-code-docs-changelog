@@ -1,0 +1,13 @@
+diff --git a/docs/chrome.md b/docs/chrome.md
+index d1dae67..6f2c7fd 100644
+--- a/docs/chrome.md
++++ b/docs/chrome.md
+@@ -195,7 +195,7 @@ Record a GIF showing how to complete the checkout flow, from adding
+ an item to the cart through to the confirmation page.
+ ```
+ 
+-Claude records the interaction sequence and saves it as a GIF file.
++Claude records the interaction sequence and saves it as a GIF file. The recording captures everything visible in the browser, including account details on logged-in pages, so review it before sharing it outside your team.
+ 
+ ### Save screenshots to disk
+ 
