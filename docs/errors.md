@@ -133,7 +133,7 @@ When you see one of the errors on this page, those retries have already been exh
 
 ## Server errors
 
-These errors come from the inference provider rather than your account or request. On the Anthropic API that means Anthropic infrastructure. On Amazon Bedrock, Google Cloud's Agent Platform, Microsoft Foundry, or a custom gateway it means that provider's infrastructure.
+Most of these errors come from the inference provider's infrastructure: Anthropic's on the Anthropic API, and that provider's on Amazon Bedrock, Google Cloud's Agent Platform, Microsoft Foundry, or a custom gateway. [Auto mode cannot determine the safety of an action](#auto-mode-cannot-determine-the-safety-of-an-action) and [Agent terminated early due to an API error](#agent-terminated-early-due-to-an-api-error) also cover causes on your side, such as an Amazon Bedrock account that can't invoke the classifier model or a subagent that hit a usage limit.
 
 ### API Error: 500 Internal server error
 
@@ -210,21 +210,23 @@ API Error: Response stalled mid-stream. The response above may be incomplete.
 
 ### Auto mode cannot determine the safety of an action
 
-The model that [auto mode](/docs/en/permission-modes#eliminate-prompts-with-auto-mode) uses to classify actions couldn't produce a decision, so auto mode didn't approve the action automatically. The message you see depends on why the classifier failed.
+The model that [auto mode](/docs/en/permission-modes#eliminate-prompts-with-auto-mode) uses to classify actions couldn't produce a decision, so auto mode didn't approve the action automatically. The message you see depends on how the classifier failed.
 
 Reads, searches, and edits inside your working directory skip the classifier, so they keep working in all of these cases.
 
-When the classifier model is overloaded:
+When the classifier model is unavailable:
 
 ```text theme={null}
 <model> is temporarily unavailable, so auto mode cannot determine the safety of <tool> right now. Wait briefly and then try this action again.
 ```
 
+More than one failure produces this same message, so the message alone doesn't tell you the cause. When the classifier model is overloaded or rate-limited, the failure is transient and retrying works. On [Amazon Bedrock](/docs/en/amazon-bedrock), including the [Mantle endpoint](/docs/en/amazon-bedrock#use-the-mantle-endpoint), the same message also appears when your AWS account can't invoke the model named in the message, and that failure repeats on every retry until the model is granted.
+
 **What to do:**
 
-* Retry after a few seconds; Claude sees the same message and usually retries on its own
+* Retry after a few seconds; Claude sees the same message and usually retries on its own. A transient failure is unrelated to [auto mode eligibility](/docs/en/permission-modes#eliminate-prompts-with-auto-mode); you don't need to change settings
 * If retries keep failing, continue with read-only tasks and come back to the blocked action later
-* This is transient and unrelated to [auto mode eligibility](/docs/en/permission-modes#eliminate-prompts-with-auto-mode); you don't need to change settings
+* On Amazon Bedrock, if the message returns on every retry, check that your account can invoke the model it names: for standard Amazon Bedrock models, confirm your [IAM policy](/docs/en/amazon-bedrock#iam-configuration) allows invoking it; for Mantle model IDs, [contact your AWS account team](/docs/en/amazon-bedrock#mantle-endpoint-errors)
 
 {/* min-version: 2.1.216 */}When a classifier request fails because your OAuth token expired or was rotated by another session, Claude Code refreshes the token and retries the request once, so a routine token expiry doesn't surface as this message. Before v2.1.216, an expired or rotated token failed each classifier request, and auto mode denied every checked action with this message until the token was refreshed.
 
@@ -281,7 +283,7 @@ When a rate limit, overload, or server error interrupts a foreground subagent th
 
 ## Usage limits
 
-These errors mean a quota tied to your account or plan has been reached. They are distinct from [server errors](#server-errors), which affect everyone.
+Most errors in this section mean a quota tied to your account or plan has been reached. Two work differently: [`Server is temporarily limiting requests`](#server-is-temporarily-limiting-requests) is a server-side throttle unrelated to your plan quota, and [`Usage credits required for 1M context`](#usage-credits-required-for-1m-context) is an entitlement check rather than an exhausted quota.
 
 <h3 id="youve-hit-your-session-limit">
   You've hit your session limit
@@ -1314,7 +1316,15 @@ These errors come from Claude's built-in tools. Claude corrects most tool errors
 
 ### Agent would be spawned with zero tools
 
-Nothing in a [subagent's `tools` list](/docs/en/sub-agents#supported-frontmatter-fields) resolved to a tool, so Claude Code refuses to launch the subagent rather than start one that can't act. The message groups the entries by why they didn't resolve: not a recognized tool, a tool that isn't available to subagents, or recognized but matching no tool in the current session. Omitting the `tools` field never triggers this refusal. An MCP server pattern such as `mcp__github__*` isn't exempt: when no connected tool comes from that server, the launch is refused with the pattern in the matched-nothing group. Before v2.1.208, the subagent launched with no tools and returned an empty or confusing result.
+Every entry in the subagent's [`tools` list](/docs/en/sub-agents#supported-frontmatter-fields) failed to match a usable tool, so Claude Code refused to launch the subagent: with no tools, it couldn't act. The message groups your entries by what went wrong:
+
+* **Unrecognized**: the entry matches no tool name, usually a typo such as `Grpe` for `Grep`.
+* **Not available to subagents**: the entry names a real tool that [subagents can't use](/docs/en/sub-agents#available-tools). Background subagents keep a smaller built-in tool set, so an entry that only a foreground subagent can use lands here when the subagent would run in the background, which is the default. If you list `Agent`, the message reports it under the next group instead.
+* **Matched no tools in this session**: the entry is valid but no tool in the current session matches it right now, such as `mcp__github__*` with no GitHub MCP server connected, or `Agent` while [nested spawning](/docs/en/sub-agents#let-subagents-spawn-their-own-subagents) is off.
+
+Omitting the `tools` field never triggers this refusal. If you leave the `tools` list empty, or `disallowedTools` removes every entry in it, Claude Code also skips the refusal and launches the subagent without tools.
+
+Before v2.1.208, the subagent launched with no tools and could return an empty or confusing result.
 
 ```text theme={null}
 Agent 'code-reviewer' would be spawned with zero tools — refusing. Its tools list resolved to nothing: unrecognized [Grpe]. Fix the agent's tools frontmatter or pass a different subagent_type.
@@ -1324,7 +1334,9 @@ Agent 'code-reviewer' would be spawned with zero tools — refusing. Its tools l
 
 * Correct each entry the error names against the [tools available to subagents](/docs/en/sub-agents#available-tools)
 * Remove entries for tools the session doesn't have, such as MCP tools from a server that isn't connected
-* To give the subagent every [subagent-available](/docs/en/sub-agents#available-tools) tool the parent has, delete the `tools` field instead of listing tools
+* For a tool that [background subagents drop](/docs/en/sub-agents#available-tools), such as `LSP` or `TaskCreate`, remove the entry or ask Claude to run the subagent in the foreground
+* Delete the `tools` field instead of listing tools to give the subagent every [tool available to subagents](/docs/en/sub-agents#available-tools)
+* For a `tools` list that contains only `Agent`, allow [nested spawning](/docs/en/sub-agents#let-subagents-spawn-their-own-subagents) or give the agent at least one other tool: `Agent` isn't available inside a subagent by default, so a list with nothing else in it resolves to no tools
 
 ### File is covered by a Read deny rule
 
@@ -1381,7 +1393,7 @@ The refusal appears in the Bash tool result rather than as a banner in your term
 
 Commands that open an interactive dialog can't do so while no terminal is attached to a background session. `/install-github-app`, the `/mcp` settings list, and the authentication actions in the MCP server menu respond with a message, and the session appears under **Needs input** in [agent view](/docs/en/agent-view) so you can find it, attach, and run the command again. While a terminal is attached, these commands work normally.
 
-{/* max-version: 2.1.215 */}Before v2.1.216, Claude Code refused these commands outright: in v2.1.214 and v2.1.215 the message told you to attach and run the command again, and from v2.1.208 through v2.1.212 Claude Code refused them even while a terminal was attached, with a message naming a form that works there, such as `Can't open MCP settings in a background session`. Before v2.1.208, they opened their dialog inside the background session. In v2.1.208 only, Claude Code also refused the `/model` picker in a background session, and `/upgrade` printed the upgrade URL instead of opening a browser.
+{/* max-version: 2.1.215 */}Before v2.1.216, the session didn't appear under **Needs input** after one of these refusals. In v2.1.213 through v2.1.215, the commands still worked while a terminal was attached, and the refusal message told you to attach and run the command again. From v2.1.208 through v2.1.212, Claude Code refused them even while a terminal was attached, with a message such as `Can't open MCP settings in a background session`; on those versions, run the command from a regular `claude` session instead, or upgrade. Before v2.1.208, they opened their dialog inside the background session. In v2.1.208 only, Claude Code also refused the `/model` picker in a background session, and `/upgrade` printed the upgrade URL instead of opening a browser.
 
 The wording names the command. The `/mcp` settings list reports:
 
