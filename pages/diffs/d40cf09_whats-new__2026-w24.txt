@@ -1,0 +1,13 @@
+diff --git a/docs/whats-new__2026-w24.md b/docs/whats-new__2026-w24.md
+index e0f666b..9d674e6 100644
+--- a/docs/whats-new__2026-w24.md
++++ b/docs/whats-new__2026-w24.md
+@@ -42,7 +42,7 @@
+   > /agents
+   ```
+ 
+-  <a className="digest-feature-link" href="/docs/docs/en/sub-agents#spawn-nested-subagents">Spawn nested subagents</a>
++  <a className="digest-feature-link" href="/docs/docs/en/sub-agents#let-subagents-spawn-their-own-subagents">Spawn nested subagents</a>
+ </div>
+ 
+ <div className="digest-feature">
