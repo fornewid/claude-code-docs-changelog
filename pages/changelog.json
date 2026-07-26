@@ -1,5 +1,53 @@
 [
   {
+    "date": "2026-07-26T15:27:25Z",
+    "commit_hash": "f717d16",
+    "entries": [
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/agent-view\" target=\"_blank\">Agent View</a>",
+        "summary": "agent-view.md 문서가 업데이트되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/f717d16_agent-view.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/changelog\" target=\"_blank\">Changelog</a>",
+        "summary": "changelog.md 문서가 업데이트되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/f717d16_changelog.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/env-vars\" target=\"_blank\">Env Vars</a>",
+        "summary": "env-vars.md 문서가 업데이트되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/f717d16_env-vars.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/interactive-mode\" target=\"_blank\">Interactive Mode</a>",
+        "summary": "interactive-mode.md 문서가 업데이트되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/f717d16_interactive-mode.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/plugin-marketplaces\" target=\"_blank\">Plugin Marketplaces</a>",
+        "summary": "plugin-marketplaces.md 문서가 업데이트되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/f717d16_plugin-marketplaces.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/troubleshoot-install\" target=\"_blank\">Troubleshoot Install</a>",
+        "summary": "troubleshoot-install.md 문서가 업데이트되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/f717d16_troubleshoot-install.txt"
+      }
+    ]
+  },
+  {
     "date": "2026-07-25T15:26:35Z",
     "commit_hash": "0c67f9d",
     "entries": [
