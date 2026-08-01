@@ -1,5 +1,25 @@
 [
   {
+    "date": "2026-08-01T15:27:41Z",
+    "commit_hash": "1c3bd80",
+    "entries": [
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/agent-sdk__agent-loop\" target=\"_blank\">Agent Sdk__Agent Loop</a>",
+        "summary": "agent-sdk__agent-loop.md 문서가 업데이트되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/1c3bd80_agent-sdk__agent-loop.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/agent-sdk__quickstart\" target=\"_blank\">Agent Sdk__Quickstart</a>",
+        "summary": "agent-sdk__quickstart.md 문서가 업데이트되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/1c3bd80_agent-sdk__quickstart.txt"
+      }
+    ]
+  },
+  {
     "date": "2026-07-30T15:41:41Z",
     "commit_hash": "52c0aed",
     "entries": [
