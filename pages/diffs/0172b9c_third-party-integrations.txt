@@ -1,0 +1,13 @@
+diff --git a/docs/third-party-integrations.md b/docs/third-party-integrations.md
+index 3741398..6c7a18f 100644
+--- a/docs/third-party-integrations.md
++++ b/docs/third-party-integrations.md
+@@ -90,6 +90,8 @@ For most organizations, Claude for Teams or Claude for Enterprise provides the b
+ 
+ Learn more about [Team plans](https://support.claude.com/en/articles/9266767-what-is-the-team-plan) and [Enterprise plans](https://support.claude.com/en/articles/9797531-what-is-the-enterprise-plan).
+ 
++The deployment options compared below cover where model inference runs. To run [Claude Code on the web](/docs/en/claude-code-on-the-web) sessions on compute your organization operates, see [self-hosted environments](/docs/en/self-hosted-environments).
++
+ If your organization has specific infrastructure requirements, compare the options below:
+ 
+ <table>
