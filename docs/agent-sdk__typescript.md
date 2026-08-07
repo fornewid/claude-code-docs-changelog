@@ -2731,7 +2731,7 @@ type RemoteTriggerInput = {
 };
 ```
 
-Manages [Routines](/docs/en/routines), the scheduled and triggered Claude Code runs hosted on Anthropic-managed cloud infrastructure. This tool backs the `/schedule` command. `trigger_id` is required for the `get`, `update`, and `run` actions. `body` is required for `create` and `update`, and optional for `run`.
+Manages [Routines](/docs/en/routines), the scheduled and triggered Claude Code runs hosted in the cloud. This tool backs the `/schedule` command. `trigger_id` is required for the `get`, `update`, and `run` actions. `body` is required for `create` and `update`, and optional for `run`.
 
 This tool is available only when the session is authenticated with a claude.ai account on a plan with Routines enabled.
 
@@ -3083,7 +3083,13 @@ type BashOutput = {
 };
 ```
 
-Returns command output with stdout/stderr split. Background commands include a `backgroundTaskId`.
+The `stdout`, `stderr`, and `backgroundTaskId` fields carry:
+
+| Field              | What it carries                                                                                 |
+| ------------------ | ----------------------------------------------------------------------------------------------- |
+| `stdout`           | The command's stdout and stderr, merged into one interleaved stream                             |
+| `stderr`           | Notices the tool itself adds, such as a shell working-directory reset, not the command's stderr |
+| `backgroundTaskId` | Present for background commands                                                                 |
 
 `timedOutAfterMs` is the timeout in milliseconds, set when the command reached its timeout and moved to the background rather than starting there explicitly. `backgroundCwdHint` is set when the backgrounded command contained a directory-change builtin such as `cd`, `pushd`, `popd`, or `chdir`, and notes that the session working directory didn't change. Both fields require Claude Code v2.1.210 or later.
 
