@@ -502,8 +502,8 @@
     "env-vars.md": {
       "original_url": "https://code.claude.com/docs/en/env-vars",
       "original_md_url": "https://code.claude.com/docs/en/env-vars.md",
-      "hash": "1973917c95bf48a36e1bc4474c0bf5f498fdf7bb2afebee169c5767c40616bb7",
-      "last_updated": "2026-08-08T15:09:04.137337"
+      "hash": "5961f37b9369849f268b74e1afcc4305a58203c92b92b5f48c1a6d0b44a5f22d",
+      "last_updated": "2026-08-09T15:10:19.475351"
     },
     "errors.md": {
       "original_url": "https://code.claude.com/docs/en/errors",
@@ -610,8 +610,8 @@
     "interactive-mode.md": {
       "original_url": "https://code.claude.com/docs/en/interactive-mode",
       "original_md_url": "https://code.claude.com/docs/en/interactive-mode.md",
-      "hash": "4281baa14a6befe1f13b27ef9ae94bc35552ee185fb23468218d880cb53e4e80",
-      "last_updated": "2026-08-08T15:09:16.789850"
+      "hash": "4b4bb782f99f6db60cbfee917b58ddc76d8aa9b9fc94c0db0f218e4243c1ccf4",
+      "last_updated": "2026-08-09T15:10:35.129665"
     },
     "jetbrains.md": {
       "original_url": "https://code.claude.com/docs/en/jetbrains",
@@ -898,8 +898,8 @@
     "settings.md": {
       "original_url": "https://code.claude.com/docs/en/settings",
       "original_md_url": "https://code.claude.com/docs/en/settings.md",
-      "hash": "f668e49ff6c12c6c634ef1f8d44d5cb87158c811dba1aa04e191d1d229706292",
-      "last_updated": "2026-08-08T15:09:54.124380"
+      "hash": "20a7c3bf0a74995739cce6c52a0bb7af3232a8a93885bb8186d2be6ebf76b753",
+      "last_updated": "2026-08-09T15:11:10.947693"
     },
     "setup.md": {
       "original_url": "https://code.claude.com/docs/en/setup",
@@ -1113,8 +1113,8 @@
     }
   },
   "fetch_metadata": {
-    "last_fetch_completed": "2026-08-08T15:10:30.157376",
-    "fetch_duration_seconds": 163.337188,
+    "last_fetch_completed": "2026-08-09T15:11:39.193659",
+    "fetch_duration_seconds": 149.533878,
     "total_pages_discovered": 185,
     "pages_fetched_successfully": 186,
     "pages_failed": 0,
@@ -1124,7 +1124,7 @@
     "total_files": 185,
     "fetch_tool_version": "3.0"
   },
-  "last_updated": "2026-08-08T15:10:30.157395",
+  "last_updated": "2026-08-09T15:11:39.193688",
   "base_url": "https://raw.githubusercontent.com/fornewid/claude-code-docs-changelog/main/docs/",
   "github_repository": "fornewid/claude-code-docs-changelog",
   "github_ref": "main",
