@@ -1,0 +1,13 @@
+diff --git a/docs/agent-sdk__hooks.md b/docs/agent-sdk__hooks.md
+index 8523c0f..4686285 100644
+--- a/docs/agent-sdk__hooks.md
++++ b/docs/agent-sdk__hooks.md
+@@ -14,8 +14,6 @@ Hooks are callback functions that run your code in response to agent events, lik
+ * **Require human approval** for sensitive actions like database writes or API calls
+ * **Track session lifecycle** to manage state, clean up resources, or send notifications
+ 
+-This guide covers how hooks work and how to configure them, with examples for common patterns like blocking tools, modifying inputs, and forwarding notifications.
+-
+ ## How hooks work
+ 
+ <Steps>
