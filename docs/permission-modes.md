@@ -71,7 +71,7 @@ You can switch modes mid-session, at startup, or as a persistent default. The mo
   <Tab title="VS Code">
     **During a session**: click the mode indicator at the bottom of the prompt box.
 
-    **As a default**: set `claudeCode.initialPermissionMode` in VS Code settings, or use the Claude Code extension settings panel.
+    **As a default**: set `claudeCode.initialPermissionMode` in your VS Code user settings, or use the Claude Code extension settings panel.
 
     The mode indicator shows these labels, mapped to the mode each one applies:
 
@@ -198,6 +198,8 @@ To make plan mode the default for a project, set `defaultMode` in `.claude/setti
 </Note>
 
 Auto mode lets Claude execute without routine permission prompts. A separate classifier model reviews actions before they run, blocking anything that escalates beyond your request, targets unrecognized infrastructure, or appears driven by hostile content Claude read. Explicit [ask rules](/docs/en/permissions#manage-permissions) still force a prompt.
+
+The classifier also reviews each message Claude sends to another agent with [`SendMessage`](/docs/en/tools-reference), plain or structured, before Claude Code delivers it, both in auto mode and in [plan mode while the classifier reviews commands](#analyze-before-you-edit-with-plan-mode); the send review requires Claude Code v2.1.222 or later.
 
 The classifier also decides removals targeting the filesystem root or home directory, such as `rm -rf /` and `rm -rf ~`, including when the removal sits inside command or process substitution. Before v2.1.218, the plain forms prompted for approval instead, and the substitution forms prompted in v2.1.208 through v2.1.217.
 
