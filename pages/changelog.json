@@ -1,5 +1,403 @@
 [
   {
+    "date": "2026-08-13T15:24:05Z",
+    "commit_hash": "ab73478",
+    "entries": [
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/admin-setup\" target=\"_blank\">Admin Setup</a>",
+        "summary": "admin-setup.md 문서가 업데이트되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/ab73478_admin-setup.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/advisor\" target=\"_blank\">Advisor</a>",
+        "summary": "advisor.md 문서가 업데이트되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/ab73478_advisor.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/agent-sdk__agent-loop\" target=\"_blank\">Agent Sdk__Agent Loop</a>",
+        "summary": "agent-sdk__agent-loop.md 문서가 업데이트되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/ab73478_agent-sdk__agent-loop.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/agent-sdk__cost-tracking\" target=\"_blank\">Agent Sdk__Cost Tracking</a>",
+        "summary": "agent-sdk__cost-tracking.md 문서가 업데이트되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/ab73478_agent-sdk__cost-tracking.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/agent-sdk__mcp\" target=\"_blank\">Agent Sdk__Mcp</a>",
+        "summary": "agent-sdk__mcp.md 문서가 업데이트되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/ab73478_agent-sdk__mcp.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/agent-sdk__modifying-system-prompts\" target=\"_blank\">Agent Sdk__Modifying System Prompts</a>",
+        "summary": "agent-sdk__modifying-system-prompts.md 문서가 업데이트되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/ab73478_agent-sdk__modifying-system-prompts.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/agent-sdk__plugins\" target=\"_blank\">Agent Sdk__Plugins</a>",
+        "summary": "agent-sdk__plugins.md 문서가 업데이트되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/ab73478_agent-sdk__plugins.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/agent-sdk__python\" target=\"_blank\">Agent Sdk__Python</a>",
+        "summary": "agent-sdk__python.md 문서가 업데이트되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/ab73478_agent-sdk__python.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/agent-sdk__session-storage\" target=\"_blank\">Agent Sdk__Session Storage</a>",
+        "summary": "agent-sdk__session-storage.md 문서가 업데이트되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/ab73478_agent-sdk__session-storage.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/agent-sdk__sessions\" target=\"_blank\">Agent Sdk__Sessions</a>",
+        "summary": "agent-sdk__sessions.md 문서가 업데이트되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/ab73478_agent-sdk__sessions.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/agent-sdk__skills\" target=\"_blank\">Agent Sdk__Skills</a>",
+        "summary": "agent-sdk__skills.md 문서가 업데이트되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/ab73478_agent-sdk__skills.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/agent-sdk__slash-commands\" target=\"_blank\">Agent Sdk__Slash Commands</a>",
+        "summary": "agent-sdk__slash-commands.md 문서가 업데이트되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/ab73478_agent-sdk__slash-commands.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/agent-sdk__subagents\" target=\"_blank\">Agent Sdk__Subagents</a>",
+        "summary": "agent-sdk__subagents.md 문서가 업데이트되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/ab73478_agent-sdk__subagents.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/agent-sdk__typescript\" target=\"_blank\">Agent Sdk__Typescript</a>",
+        "summary": "agent-sdk__typescript.md 문서가 업데이트되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/ab73478_agent-sdk__typescript.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/agent-view\" target=\"_blank\">Agent View</a>",
+        "summary": "agent-view.md 문서가 업데이트되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/ab73478_agent-view.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/authentication\" target=\"_blank\">Authentication</a>",
+        "summary": "authentication.md 문서가 업데이트되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/ab73478_authentication.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/best-practices\" target=\"_blank\">Best Practices</a>",
+        "summary": "best-practices.md 문서가 업데이트되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/ab73478_best-practices.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/changelog\" target=\"_blank\">Changelog</a>",
+        "summary": "changelog.md 문서가 업데이트되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/ab73478_changelog.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/checkpointing\" target=\"_blank\">Checkpointing</a>",
+        "summary": "checkpointing.md 문서가 업데이트되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/ab73478_checkpointing.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/claude-apps-gateway-config\" target=\"_blank\">Claude Apps Gateway Config</a>",
+        "summary": "claude-apps-gateway-config.md 문서가 업데이트되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/ab73478_claude-apps-gateway-config.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/claude-apps-gateway-deploy\" target=\"_blank\">Claude Apps Gateway Deploy</a>",
+        "summary": "claude-apps-gateway-deploy.md 문서가 업데이트되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/ab73478_claude-apps-gateway-deploy.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/claude-directory\" target=\"_blank\">Claude Directory</a>",
+        "summary": "claude-directory.md 문서가 업데이트되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/ab73478_claude-directory.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/cli-reference\" target=\"_blank\">Cli Reference</a>",
+        "summary": "cli-reference.md 문서가 업데이트되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/ab73478_cli-reference.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/commands\" target=\"_blank\">Commands</a>",
+        "summary": "commands.md 문서가 업데이트되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/ab73478_commands.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/cross-session-messaging\" target=\"_blank\">Cross Session Messaging</a>",
+        "summary": "cross-session-messaging.md 문서가 업데이트되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/ab73478_cross-session-messaging.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/devcontainer\" target=\"_blank\">Devcontainer</a>",
+        "summary": "devcontainer.md 문서가 업데이트되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/ab73478_devcontainer.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/discover-plugins\" target=\"_blank\">Discover Plugins</a>",
+        "summary": "discover-plugins.md 문서가 업데이트되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/ab73478_discover-plugins.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/env-vars\" target=\"_blank\">Env Vars</a>",
+        "summary": "env-vars.md 문서가 업데이트되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/ab73478_env-vars.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/errors\" target=\"_blank\">Errors</a>",
+        "summary": "errors.md 문서가 업데이트되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/ab73478_errors.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/fullscreen\" target=\"_blank\">Fullscreen</a>",
+        "summary": "fullscreen.md 문서가 업데이트되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/ab73478_fullscreen.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/headless\" target=\"_blank\">Headless</a>",
+        "summary": "headless.md 문서가 업데이트되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/ab73478_headless.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/hooks-guide\" target=\"_blank\">Hooks Guide</a>",
+        "summary": "hooks-guide.md 문서가 업데이트되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/ab73478_hooks-guide.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/hooks\" target=\"_blank\">Hooks</a>",
+        "summary": "hooks.md 문서가 업데이트되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/ab73478_hooks.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/memory\" target=\"_blank\">Memory</a>",
+        "summary": "memory.md 문서가 업데이트되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/ab73478_memory.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/permission-modes\" target=\"_blank\">Permission Modes</a>",
+        "summary": "permission-modes.md 문서가 업데이트되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/ab73478_permission-modes.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/permissions\" target=\"_blank\">Permissions</a>",
+        "summary": "permissions.md 문서가 업데이트되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/ab73478_permissions.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/plugin-dependencies\" target=\"_blank\">Plugin Dependencies</a>",
+        "summary": "plugin-dependencies.md 문서가 업데이트되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/ab73478_plugin-dependencies.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/plugin-marketplaces\" target=\"_blank\">Plugin Marketplaces</a>",
+        "summary": "plugin-marketplaces.md 문서가 업데이트되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/ab73478_plugin-marketplaces.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/plugins-reference\" target=\"_blank\">Plugins Reference</a>",
+        "summary": "plugins-reference.md 문서가 업데이트되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/ab73478_plugins-reference.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/plugins\" target=\"_blank\">Plugins</a>",
+        "summary": "plugins.md 문서가 업데이트되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/ab73478_plugins.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/prompt-caching\" target=\"_blank\">Prompt Caching</a>",
+        "summary": "prompt-caching.md 문서가 업데이트되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/ab73478_prompt-caching.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/remote-control\" target=\"_blank\">Remote Control</a>",
+        "summary": "remote-control.md 문서가 업데이트되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/ab73478_remote-control.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/sandbox-environments\" target=\"_blank\">Sandbox Environments</a>",
+        "summary": "sandbox-environments.md 문서가 업데이트되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/ab73478_sandbox-environments.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/sandboxing\" target=\"_blank\">Sandboxing</a>",
+        "summary": "sandboxing.md 문서가 업데이트되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/ab73478_sandboxing.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/scheduled-tasks\" target=\"_blank\">Scheduled Tasks</a>",
+        "summary": "scheduled-tasks.md 문서가 업데이트되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/ab73478_scheduled-tasks.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/security-guidance\" target=\"_blank\">Security Guidance</a>",
+        "summary": "security-guidance.md 문서가 업데이트되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/ab73478_security-guidance.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/self-hosted-environments-configuration\" target=\"_blank\">Self Hosted Environments Configuration</a>",
+        "summary": "self-hosted-environments-configuration.md 문서가 업데이트되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/ab73478_self-hosted-environments-configuration.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/self-hosted-environments-deploy\" target=\"_blank\">Self Hosted Environments Deploy</a>",
+        "summary": "self-hosted-environments-deploy.md 문서가 업데이트되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/ab73478_self-hosted-environments-deploy.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/self-hosted-environments-reference\" target=\"_blank\">Self Hosted Environments Reference</a>",
+        "summary": "self-hosted-environments-reference.md 문서가 업데이트되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/ab73478_self-hosted-environments-reference.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/self-hosted-environments\" target=\"_blank\">Self Hosted Environments</a>",
+        "summary": "self-hosted-environments.md 문서가 업데이트되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/ab73478_self-hosted-environments.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/settings\" target=\"_blank\">Settings</a>",
+        "summary": "settings.md 문서가 업데이트되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/ab73478_settings.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/skills\" target=\"_blank\">Skills</a>",
+        "summary": "skills.md 문서가 업데이트되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/ab73478_skills.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/tools-reference\" target=\"_blank\">Tools Reference</a>",
+        "summary": "tools-reference.md 문서가 업데이트되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/ab73478_tools-reference.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/troubleshoot-install\" target=\"_blank\">Troubleshoot Install</a>",
+        "summary": "troubleshoot-install.md 문서가 업데이트되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/ab73478_troubleshoot-install.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/ultrareview\" target=\"_blank\">Ultrareview</a>",
+        "summary": "ultrareview.md 문서가 업데이트되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/ab73478_ultrareview.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/zero-data-retention\" target=\"_blank\">Zero Data Retention</a>",
+        "summary": "zero-data-retention.md 문서가 업데이트되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/ab73478_zero-data-retention.txt"
+      }
+    ]
+  },
+  {
     "date": "2026-08-12T15:23:15Z",
     "commit_hash": "10f3a3b",
     "entries": [
