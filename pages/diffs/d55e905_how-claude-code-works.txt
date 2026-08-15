@@ -1,0 +1,13 @@
+diff --git a/docs/how-claude-code-works.md b/docs/how-claude-code-works.md
+index e474ad1..16049dc 100644
+--- a/docs/how-claude-code-works.md
++++ b/docs/how-claude-code-works.md
+@@ -63,8 +63,6 @@ Each tool use gives Claude new information that informs the next step. This is t
+ 
+ ## What Claude can access
+ 
+-This guide focuses on the terminal. Claude Code also runs in [VS Code](/docs/en/vs-code), [JetBrains IDEs](/docs/en/jetbrains), and other environments.
+-
+ When you run `claude` in a directory, Claude Code gains access to:
+ 
+ * **Your project.** Files in your directory and subdirectories, plus files elsewhere with your permission.

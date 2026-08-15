@@ -1,0 +1,13 @@
+diff --git a/docs/chrome.md b/docs/chrome.md
+index 6c0dbdd..4d142e2 100644
+--- a/docs/chrome.md
++++ b/docs/chrome.md
+@@ -65,7 +65,7 @@ Chrome integration also requires signing in with `/login`. If you authenticate w
+     type "hooks", and tell me what results appear
+     ```
+ 
+-    Before Claude's first browser action, Claude Code asks for permission to use the `claude-in-chrome` skill. Approve it and Claude opens a new tab and starts the task.
++    If Claude Code asks for permission before a browser action, approve it. The dialog starts with `Claude in Chrome wants to` and offers an option to allow all actions on that site for the session. Claude opens a new tab and starts the task.
+   </Step>
+ </Steps>
+ 

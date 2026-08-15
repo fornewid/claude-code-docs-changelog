@@ -1,0 +1,13 @@
+diff --git a/docs/terminal-config.md b/docs/terminal-config.md
+index 2f60c9e..b09fcc7 100644
+--- a/docs/terminal-config.md
++++ b/docs/terminal-config.md
+@@ -206,7 +206,7 @@ The reference below covers the tokens you can set in `overrides`. The interactiv
+ 
+   | Token          | Controls                                           |
+   | :------------- | :------------------------------------------------- |
+-  | `promptBorder` | Input box border in the default permission mode    |
++  | `promptBorder` | Input box border in Manual mode                    |
+   | `planMode`     | Plan mode accent and border                        |
+   | `autoAccept`   | Accept-edits mode accent and border                |
+   | `bashBorder`   | Input box border when entering a `!` shell command |
