@@ -167,7 +167,7 @@ The SDK provides hooks for different stages of agent execution. Some hooks are a
 | `Setup`                                                | No         | Yes            | Session setup/maintenance                                                                                                               | Run initialization tasks                                                                                                                                  |
 | `TeammateIdle`                                         | No         | Yes            | Teammate becomes idle                                                                                                                   | Reassign work or notify                                                                                                                                   |
 | `TaskCreated`                                          | No         | Yes            | A task is created via the `TaskCreate` tool                                                                                             | Enforce task naming conventions                                                                                                                           |
-| `TaskCompleted`                                        | No         | Yes            | Background task completes                                                                                                               | Aggregate results from parallel tasks                                                                                                                     |
+| [`TaskCompleted`](/docs/en/hooks#taskcompleted)             | No         | Yes            | A task is marked completed                                                                                                              | Require passing tests before a task closes                                                                                                                |
 | `Elicitation`                                          | No         | Yes            | An MCP server requests user input mid-task                                                                                              | Respond to MCP input requests programmatically                                                                                                            |
 | `ElicitationResult`                                    | No         | Yes            | A user responds to an MCP elicitation                                                                                                   | Modify or block the response before it returns to the server                                                                                              |
 | `ConfigChange`                                         | No         | Yes            | Configuration file changes                                                                                                              | Reload settings dynamically                                                                                                                               |
@@ -649,14 +649,12 @@ To confirm the hook fires, point the webhook URL at an endpoint you can watch an
 
 ### Forward notifications to Slack
 
-Use `Notification` hooks to receive system notifications from the agent and forward them to external services. Notifications fire for event types such as:
+Use `Notification` hooks to receive system notifications from the agent and forward them to external services. In SDK sessions, Claude Code runs this hook for the following notification types:
 
-* `permission_prompt` when Claude needs permission
-* `idle_prompt` when Claude is waiting for input
-* `auth_success` when authentication completes
-* `elicitation_dialog`, `elicitation_complete`, and `elicitation_response` for user-prompt elicitation flows
+* [`permission_prompt`](/docs/en/hooks#notification) once a permission request has waited about six seconds on your [`canUseTool` callback](/docs/en/agent-sdk/user-input). Requires TypeScript Agent SDK v0.3.233 or later, or Python Agent SDK v0.2.139 or later
+* `elicitation_complete` and `elicitation_response` for user-prompt elicitation flows
 
-In headless SDK sessions, only the elicitation events `elicitation_complete` and `elicitation_response` fire this hook; the other types are emitted by interactive UI that SDK sessions don't run. Permission requests, for example, go to the `canUseTool` callback instead.
+Claude Code emits the other types, such as `idle_prompt`, `auth_success`, and `elicitation_dialog`, from interactive UI that SDK sessions don't run.
 
 Each notification includes a `message` field with a human-readable description and optionally a `title`.
 
