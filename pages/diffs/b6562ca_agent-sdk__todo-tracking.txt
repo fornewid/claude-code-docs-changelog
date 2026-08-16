@@ -1,0 +1,13 @@
+diff --git a/docs/agent-sdk__todo-tracking.md b/docs/agent-sdk__todo-tracking.md
+index 7d36793..951bf13 100644
+--- a/docs/agent-sdk__todo-tracking.md
++++ b/docs/agent-sdk__todo-tracking.md
+@@ -39,7 +39,7 @@ Claude moves each todo through a predictable lifecycle:
+ 
+ ### When Todos Are Used
+ 
+-Claude creates todos for most multi-step work, such as:
++In a [session that has the task-tracking tools](#model-availability), Claude creates todos for most multi-step work, such as:
+ 
+ * **Complex multi-step tasks** requiring 3 or more distinct actions
+ * **User-provided task lists** when multiple items are mentioned
