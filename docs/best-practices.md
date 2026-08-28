@@ -462,9 +462,10 @@ The first command prints plain text. The `json` format returns a single JSON obj
   Run multiple Claude sessions in parallel to speed up development, run isolated experiments, or start complex workflows.
 </Tip>
 
-Pick the parallel approach that fits how much coordination you want to do yourself:
+Pick the parallel approach that fits how much coordination you want to do yourself, and add messaging when the sessions need to pass findings between them:
 
 * [Worktrees](/docs/en/worktrees): run separate CLI sessions in isolated git checkouts so edits don't collide
+* [Cross-session messaging](/docs/en/cross-session-messaging): let the sessions you run yourself pass findings to each other
 * [Desktop app](/docs/en/desktop#work-in-parallel-with-sessions): manage multiple local sessions visually, each in its own worktree
 * [Claude Code on the web](/docs/en/claude-code-on-the-web): run sessions in the cloud, on Anthropic-managed infrastructure by default
 * [Agent view](/docs/en/agent-view): research preview. Run `claude agents` to dispatch sessions that keep running in the background and watch them from one screen
@@ -498,7 +499,7 @@ For large migrations or analyses, you can distribute work across many parallel C
   <Step title="Write a script to loop through the list">
     ```bash theme={null}
     for file in $(cat files.txt); do
-      claude -p "Migrate $file from React to Vue. Return OK or FAIL." \
+      claude -p "Migrate $file from Python 2 to Python 3. Return OK or FAIL." \
         --allowedTools "Edit,Bash(git commit *)"
     done
     ```
