@@ -1,0 +1,25 @@
+diff --git a/docs/terminal-config.md b/docs/terminal-config.md
+index 9f73d9f..bb404fe 100644
+--- a/docs/terminal-config.md
++++ b/docs/terminal-config.md
+@@ -34,6 +34,11 @@ For VS Code, Cursor, Devin Desktop, Alacritty, and Zed, `/terminal-setup` writes
+ 
+ In VS Code, Cursor, and Devin Desktop, `/terminal-setup` also updates two editor settings: it sets `terminal.integrated.gpuAcceleration` to `"off"` to prevent garbled text in the integrated terminal, and it sets `terminal.integrated.mouseWheelScrollSensitivity` for smoother scrolling in [fullscreen mode](/docs/en/fullscreen). To undo the GPU acceleration change, set it back to `"auto"` and reload the editor window. Before v2.1.157, `/terminal-setup` left GPU acceleration unchanged.
+ 
++In Zed, `/terminal-setup` updates your `keymap.json` in place:
++
++* If the keymap already has bindings and none of them is a Terminal `shift-enter`, Claude Code first backs it up to a copy in the same directory, such as `keymap.json.1a2b3c4d.bak`, then merges the Shift+Enter binding into your keymap, keeping your other keybindings and comments
++* If Claude Code can't read or parse the keymap, can't back it up, or can't verify the merged result, it [leaves the file unchanged and prints the keybinding block to add yourself](/docs/en/errors#terminal-setup-left-your-zed-keymap-unchanged)
++
+ If you are running inside tmux, Shift+Enter also requires the [tmux configuration below](#configure-tmux) even when the outer terminal supports it.
+ 
+ To bind newline to a different key, or to swap behavior so Enter inserts a newline and Shift+Enter submits, map the `chat:newline` and `chat:submit` actions in your [keybindings file](/docs/en/keybindings).
+@@ -304,6 +309,8 @@ Run `/tui fullscreen` to switch and save the preference. Your conversation relau
+ 
+ When you paste more than 800 characters or more than two lines into the prompt, Claude Code collapses the input to a placeholder such as `[Pasted text #1 +120 lines]` so the input box stays usable. The full content is still sent to Claude when you submit.
+ 
++When you delete with a word or line shortcut such as `Ctrl+W` or `Ctrl+K`, or with a vim delete through an `f`/`t` motion such as `df]`, and the deleted range reaches inside a placeholder, Claude Code removes the placeholder whole. You can paste the deletion back to restore it, with [`Ctrl+Y`](/docs/en/interactive-mode#text-editing) after `Ctrl+W`, `Ctrl+U`, or `Ctrl+K`, or with [`p` in NORMAL mode](/docs/en/interactive-mode#editing-normal-mode) after a vim delete.
++
+ Claude Code keeps the collapsed content under `~/.claude/paste-cache/`, so when you recall a prompt from [command history](/docs/en/interactive-mode#command-history) and resubmit it, Claude Code sends the full pasted content again, including in a later session, until the retention sweep removes the cache file.
+ 
+ Claude Code deletes cache files older than [`cleanupPeriodDays`](/docs/en/settings-reference#cleanupperioddays), following the [retention sweep rules](/docs/en/claude-directory#cleaned-up-automatically), so a recalled prompt can reference pasted text that no longer exists. When you submit such a prompt, Claude Code never sends the literal `[Pasted text #N]` string, and shows a notification naming the missing paste:
