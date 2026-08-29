@@ -1,0 +1,13 @@
+diff --git a/docs/agent-sdk__subagents.md b/docs/agent-sdk__subagents.md
+index e8f7e66..d48d458 100644
+--- a/docs/agent-sdk__subagents.md
++++ b/docs/agent-sdk__subagents.md
+@@ -227,7 +227,7 @@ This bypasses automatic matching and directly invokes the named subagent.
+ 
+ ### Dynamic agent configuration
+ 
+-You can create agent definitions dynamically based on runtime conditions. This example creates a security reviewer with different strictness levels, using a more powerful model for strict reviews.
++You can create agent definitions dynamically based on runtime conditions. This example creates a security reviewer with different strictness levels, using a more capable model for strict reviews.
+ 
+ <CodeGroup>
+   ```python Python theme={null}
