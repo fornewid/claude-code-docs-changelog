@@ -26,7 +26,10 @@ To fix it:
 * If you set `cli_path`, confirm the file exists and is the `claude` executable.
 * If you rely on `PATH` resolution, confirm `claude --version` works in the same environment your application runs in. Processes you launch outside your shell, such as from an IDE or a service manager, often run with a different `PATH`.
 
-The TypeScript SDK reports a missing executable as `Claude Code native binary not found at <path>` or `Claude Code executable not found at <path>. Is options.pathToClaudeCodeExecutable set?`. It looks for the CLI in only two places, its bundled platform package and the path you set in `pathToClaudeCodeExecutable`. Reinstall `@anthropic-ai/claude-agent-sdk` without skipping optional dependencies so the bundled binary is present, or point `pathToClaudeCodeExecutable` at a [native install](/docs/en/setup#install-claude-code).
+The TypeScript SDK looks for the CLI in its bundled platform package and the path you set in `pathToClaudeCodeExecutable`. Match the message you see:
+
+* `Native CLI binary for <platform>-<arch> not found`: the bundled platform package is missing, most often because the install skipped optional dependencies. Reinstall `@anthropic-ai/claude-agent-sdk` without skipping optional dependencies, or point `pathToClaudeCodeExecutable` at a [native install](/docs/en/setup#install-claude-code). In a single-file executable built with `bun build --compile`, the same message has a different cause and fix. See [Compile to a single executable](/docs/en/agent-sdk/typescript#compile-to-a-single-executable).
+* `Claude Code native binary not found at <path>` or `Claude Code executable not found at <path>. Is options.pathToClaudeCodeExecutable set?`: the file at the resolved path is missing, or the process can't access it. Confirm the file exists at that path and that the process can access it.
 
 ### CLIConnectionError: Refusing to execute batch script
 
@@ -53,7 +56,7 @@ Before `claude-agent-sdk` 0.2.124, the Python SDK spawned batch scripts through 
 
 ### CLIConnectionError: Failed to start Claude Code
 
-The SDK found a file at the configured path but couldn't launch it. Python raises these failures as a `CLIConnectionError`. TypeScript rejects the message iteration with an error carrying no SDK class. The table below maps each message to what it tells you. Match the message you see:
+The SDK found a file at the resolved path but couldn't launch it. Python raises these failures as a `CLIConnectionError`. TypeScript rejects the message iteration with an error carrying no SDK class. The table below maps each message to what it tells you. Match the message you see:
 
 | Message                                                           | SDK        | What it tells you                                                    |
 | ----------------------------------------------------------------- | ---------- | -------------------------------------------------------------------- |
@@ -62,12 +65,13 @@ The SDK found a file at the configured path but couldn't launch it. Python raise
 | `Claude Code native binary at <path> exists but failed to launch` | TypeScript | The binary can't run, with a libc suggestion appended to the message |
 | `Failed to spawn Claude Code process: <detail>`                   | TypeScript | Any other launch failure                                             |
 
-In both SDKs, the usual cause is a configured path that points at something that can't run, such as a text file, a directory, or a file without execute permission. Read the native-binary message's libc suggestion as one possible cause.
+In both SDKs, the usual cause is a resolved path that points at something that can't run, such as a text file, a directory, or a file without execute permission. Read the native-binary message's libc suggestion as one possible cause.
 
 To fix it in either SDK:
 
 * Confirm the configured path points at the `claude` executable itself and that the file has execute permission.
 * If you don't need a custom path, remove `cli_path` in Python or `pathToClaudeCodeExecutable` in TypeScript so the SDK finds a CLI on its own, preferring its bundled copy.
+* When the failing binary is the SDK's bundled copy in a container image, reinstall the SDK during the image build so the bundled binary matches the container's platform, or rebuild the image for the architecture it runs on. The usual cause is a binary that doesn't match the container's architecture or libc, or one that lost its execute permission in the image build.
 
 ### CLIConnectionError: Not connected
 
