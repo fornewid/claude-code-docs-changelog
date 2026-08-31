@@ -1,0 +1,13 @@
+diff --git a/docs/third-party-integrations.md b/docs/third-party-integrations.md
+index 7e4934d..7d0dea9 100644
+--- a/docs/third-party-integrations.md
++++ b/docs/third-party-integrations.md
+@@ -151,7 +151,7 @@ If your organization has specific infrastructure requirements, compare the optio
+     <tr>
+       <td>Authentication</td>
+       <td>Claude.ai SSO or email</td>
+-      <td>API key</td>
++      <td>API key or a [Console sign-in without one](/docs/en/authentication#sign-in-without-an-api-key)</td>
+       <td>API key or AWS credentials</td>
+       <td>API key or AWS credentials</td>
+       <td>GCP credentials</td>
