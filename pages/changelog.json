@@ -1,5 +1,326 @@
 [
   {
+    "date": "2026-09-02T15:14:36Z",
+    "commit_hash": "f1730bf",
+    "entries": [
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/admin-setup\" target=\"_blank\">Admin Setup</a>",
+        "summary": "admin-setup.md 문서가 업데이트되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/f1730bf_admin-setup.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/advisor\" target=\"_blank\">Advisor</a>",
+        "summary": "advisor.md 문서가 업데이트되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/f1730bf_advisor.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/agent-sdk__agent-loop\" target=\"_blank\">Agent Sdk__Agent Loop</a>",
+        "summary": "agent-sdk__agent-loop.md 문서가 업데이트되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/f1730bf_agent-sdk__agent-loop.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/agent-sdk__custom-tools\" target=\"_blank\">Agent Sdk__Custom Tools</a>",
+        "summary": "agent-sdk__custom-tools.md 문서가 업데이트되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/f1730bf_agent-sdk__custom-tools.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/agent-sdk__hosting\" target=\"_blank\">Agent Sdk__Hosting</a>",
+        "summary": "agent-sdk__hosting.md 문서가 업데이트되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/f1730bf_agent-sdk__hosting.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/agent-sdk__python\" target=\"_blank\">Agent Sdk__Python</a>",
+        "summary": "agent-sdk__python.md 문서가 업데이트되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/f1730bf_agent-sdk__python.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/agent-sdk__typescript\" target=\"_blank\">Agent Sdk__Typescript</a>",
+        "summary": "agent-sdk__typescript.md 문서가 업데이트되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/f1730bf_agent-sdk__typescript.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/agent-teams\" target=\"_blank\">Agent Teams</a>",
+        "summary": "agent-teams.md 문서가 업데이트되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/f1730bf_agent-teams.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/agent-view\" target=\"_blank\">Agent View</a>",
+        "summary": "agent-view.md 문서가 업데이트되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/f1730bf_agent-view.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/changelog\" target=\"_blank\">Changelog</a>",
+        "summary": "changelog.md 문서가 업데이트되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/f1730bf_changelog.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/claude-apps-gateway-config\" target=\"_blank\">Claude Apps Gateway Config</a>",
+        "summary": "claude-apps-gateway-config.md 문서가 업데이트되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/f1730bf_claude-apps-gateway-config.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/claude-directory\" target=\"_blank\">Claude Directory</a>",
+        "summary": "claude-directory.md 문서가 업데이트되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/f1730bf_claude-directory.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/claude-security\" target=\"_blank\">Claude Security</a>",
+        "summary": "claude-security.md 문서가 업데이트되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/f1730bf_claude-security.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/cli-reference\" target=\"_blank\">Cli Reference</a>",
+        "summary": "cli-reference.md 문서가 업데이트되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/f1730bf_cli-reference.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/commands\" target=\"_blank\">Commands</a>",
+        "summary": "commands.md 문서가 업데이트되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/f1730bf_commands.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/communications-kit\" target=\"_blank\">Communications Kit</a>",
+        "summary": "communications-kit.md 문서가 업데이트되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/f1730bf_communications-kit.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/context-window\" target=\"_blank\">Context Window</a>",
+        "summary": "context-window.md 문서가 업데이트되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/f1730bf_context-window.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/costs\" target=\"_blank\">Costs</a>",
+        "summary": "costs.md 문서가 업데이트되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/f1730bf_costs.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/cross-session-messaging\" target=\"_blank\">Cross Session Messaging</a>",
+        "summary": "cross-session-messaging.md 문서가 업데이트되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/f1730bf_cross-session-messaging.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/desktop-ios-simulator\" target=\"_blank\">Desktop Ios Simulator</a>",
+        "summary": "desktop-ios-simulator.md 문서가 업데이트되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/f1730bf_desktop-ios-simulator.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/desktop\" target=\"_blank\">Desktop</a>",
+        "summary": "desktop.md 문서가 업데이트되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/f1730bf_desktop.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/env-vars\" target=\"_blank\">Env Vars</a>",
+        "summary": "env-vars.md 문서가 업데이트되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/f1730bf_env-vars.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/errors\" target=\"_blank\">Errors</a>",
+        "summary": "errors.md 문서가 업데이트되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/f1730bf_errors.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/feature-availability\" target=\"_blank\">Feature Availability</a>",
+        "summary": "feature-availability.md 문서가 업데이트되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/f1730bf_feature-availability.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/glossary\" target=\"_blank\">Glossary</a>",
+        "summary": "glossary.md 문서가 업데이트되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/f1730bf_glossary.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/hooks-guide\" target=\"_blank\">Hooks Guide</a>",
+        "summary": "hooks-guide.md 문서가 업데이트되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/f1730bf_hooks-guide.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/hooks\" target=\"_blank\">Hooks</a>",
+        "summary": "hooks.md 문서가 업데이트되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/f1730bf_hooks.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/interactive-mode\" target=\"_blank\">Interactive Mode</a>",
+        "summary": "interactive-mode.md 문서가 업데이트되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/f1730bf_interactive-mode.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/keybindings\" target=\"_blank\">Keybindings</a>",
+        "summary": "keybindings.md 문서가 업데이트되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/f1730bf_keybindings.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/llm-gateway-connect\" target=\"_blank\">Llm Gateway Connect</a>",
+        "summary": "llm-gateway-connect.md 문서가 업데이트되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/f1730bf_llm-gateway-connect.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/llm-gateway-protocol\" target=\"_blank\">Llm Gateway Protocol</a>",
+        "summary": "llm-gateway-protocol.md 문서가 업데이트되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/f1730bf_llm-gateway-protocol.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/managed-settings\" target=\"_blank\">Managed Settings</a>",
+        "summary": "managed-settings.md 문서가 업데이트되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/f1730bf_managed-settings.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/model-config\" target=\"_blank\">Model Config</a>",
+        "summary": "model-config.md 문서가 업데이트되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/f1730bf_model-config.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/output-styles\" target=\"_blank\">Output Styles</a>",
+        "summary": "output-styles.md 문서가 업데이트되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/f1730bf_output-styles.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/permission-modes\" target=\"_blank\">Permission Modes</a>",
+        "summary": "permission-modes.md 문서가 업데이트되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/f1730bf_permission-modes.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/permissions\" target=\"_blank\">Permissions</a>",
+        "summary": "permissions.md 문서가 업데이트되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/f1730bf_permissions.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/prompt-caching\" target=\"_blank\">Prompt Caching</a>",
+        "summary": "prompt-caching.md 문서가 업데이트되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/f1730bf_prompt-caching.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/remote-control\" target=\"_blank\">Remote Control</a>",
+        "summary": "remote-control.md 문서가 업데이트되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/f1730bf_remote-control.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/sessions\" target=\"_blank\">Sessions</a>",
+        "summary": "sessions.md 문서가 업데이트되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/f1730bf_sessions.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/settings-example\" target=\"_blank\">Settings Example</a>",
+        "summary": "settings-example.md 문서가 업데이트되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/f1730bf_settings-example.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/settings-reference\" target=\"_blank\">Settings Reference</a>",
+        "summary": "settings-reference.md 문서가 업데이트되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/f1730bf_settings-reference.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/settings\" target=\"_blank\">Settings</a>",
+        "summary": "settings.md 문서가 업데이트되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/f1730bf_settings.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/sub-agents\" target=\"_blank\">Sub Agents</a>",
+        "summary": "sub-agents.md 문서가 업데이트되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/f1730bf_sub-agents.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/vs-code\" target=\"_blank\">Vs Code</a>",
+        "summary": "vs-code.md 문서가 업데이트되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/f1730bf_vs-code.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/zero-data-retention\" target=\"_blank\">Zero Data Retention</a>",
+        "summary": "zero-data-retention.md 문서가 업데이트되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/f1730bf_zero-data-retention.txt"
+      }
+    ]
+  },
+  {
     "date": "2026-09-01T15:11:51Z",
     "commit_hash": "0a63f94",
     "entries": [
