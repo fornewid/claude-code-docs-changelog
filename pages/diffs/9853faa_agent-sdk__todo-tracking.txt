@@ -1,0 +1,15 @@
+diff --git a/docs/agent-sdk__todo-tracking.md b/docs/agent-sdk__todo-tracking.md
+index 426cc76..d6639fb 100644
+--- a/docs/agent-sdk__todo-tracking.md
++++ b/docs/agent-sdk__todo-tracking.md
+@@ -13,7 +13,9 @@ In a session that has the task-tracking tools, Claude keeps a written todo list,
+ ## Model availability
+ 
+ <Note>
+-  On TypeScript Agent SDK 0.3.233 and later, or Python Agent SDK 0.2.139 and later, the following tools aren't available on Opus 4.8, Sonnet 5, Fable 5, Mythos 5, or later versions of those families unless you opt in:
++  On TypeScript Agent SDK 0.3.233 and later, or Python Agent SDK 0.2.139 and later, the following restriction applies.
++
++  The following tools aren't available on Opus 4.8, Sonnet 5, Fable 5, Mythos 5, or later versions of those families unless you opt in:
+ 
+   * `TodoWrite`
+   * `TaskCreate`

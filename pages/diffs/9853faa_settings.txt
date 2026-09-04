@@ -1,0 +1,32 @@
+diff --git a/docs/settings.md b/docs/settings.md
+index 724ec10..009bdf6 100644
+--- a/docs/settings.md
++++ b/docs/settings.md
+@@ -668,12 +668,12 @@ If you mistype JSON or set a key to a value Claude Code doesn't accept, Claude C
+ 
+ * **Settings Error**: a user, project, or local file has invalid JSON or a value the schema rejects. At the start of an interactive session Claude Code shows a dialog that lets you fix the file with Claude's help, exit, or continue without the broken settings.
+ * **Settings Warning**: only individual entries fail, such as a malformed permission rule or an unknown hook event name. Claude Code skips those values and keeps the rest of the file in effect.
+-* **Managed settings**: Claude Code keeps enforcing the rest of the file. [Invalid entries in managed settings](/docs/en/managed-settings#invalid-entries-in-managed-settings) says what it drops and which keys fall back to a stricter value until you fix them.
++* **Managed settings**: Claude Code keeps enforcing the rest of the file. [Invalid entries in managed settings](/docs/en/managed-settings#invalid-entries-in-managed-settings) says what it drops and which keys fall back to a stricter value until you fix them. For a managed settings document that isn't valid JSON, see [Managed settings document could not be parsed](/docs/en/errors#managed-settings-document-could-not-be-parsed).
+ * **Configuration error**: `~/.claude.json` can't be parsed. Claude Code copies the broken file to `~/.claude/backups/.claude.json.corrupted.<timestamp>` and asks whether to exit and fix it by hand or reset to the default configuration; a `-p` run prints the error and exits. To recover your previous state, copy back one of the five most recent `.claude.json.backup.<timestamp>` files in `~/.claude/backups/`, which Claude Code saves before it writes the file.
+ 
+ After you continue, run `/status` to see the affected files and `claude doctor` for the details of each error.
+ 
+-A `-p` run shows no dialog: Claude Code skips the broken file or values and continues with the rest, so after a `-p` run that ignores a setting, run `claude doctor` to see what it dropped.
++A `-p` run shows no dialog. Unless [a managed settings document can't be parsed](/docs/en/errors#managed-settings-document-could-not-be-parsed), Claude Code skips the broken file or values and continues with the rest, so after a `-p` run that ignores a setting, run `claude doctor` to see what it dropped.
+ 
+ <span id="how-scopes-interact" />
+ 
+@@ -761,6 +761,12 @@ Something else is setting the same key, the file can't set that value, or the fi
+ * **The file can't set that value.** [`permissions.defaultMode`](/docs/en/settings-reference#permissions-defaultmode) values `auto` and `bypassPermissions` don't take effect from project or local settings; set them in user or managed settings instead, or pass `--permission-mode` for one session. Before v2.1.257, `bypassPermissions` took effect from any file.
+ * **The file is broken.** Invalid JSON or a rejected value makes Claude Code skip the file or the entry; see [Fix a broken settings file](#fix-a-broken-settings-file).
+ 
++#### A change you made in Claude Code is lost in new sessions
++
++When you save a choice for new sessions from inside Claude Code, such as a default model with `/model`, Claude Code writes it to your user settings file, `~/.claude/settings.json`. If you can't write to that file, for example because another tool generates it or links it to a read-only copy, the change applies to the current session and is gone in the next one. Set the key in the tool that generates the file, or replace the file with one you can write to.
++
++If you can write to the file and the change still doesn't last, check whether the change was [for one session only](#change-a-setting-for-one-session) or [a higher level sets the same key](#a-value-you-set-is-ignored). For the `model` key, [A new session starts on a different model than you picked](/docs/en/model-config#a-new-session-starts-on-a-different-model-than-you-picked) lists more causes.
++
+ #### A managed change hasn't reached you
+ 
+ Managed sources reach a running session on the schedule in the [delivery table](/docs/en/managed-settings#choose-a-delivery-mechanism), so restart the session first. If `/status` then names a different source than the one your administrator changed, a higher-priority source applies; [How Claude Code combines managed sources](/docs/en/managed-settings#how-claude-code-combines-managed-sources) gives the order.

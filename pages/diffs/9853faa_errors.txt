@@ -1,0 +1,112 @@
+diff --git a/docs/errors.md b/docs/errors.md
+index ec4a43c..dc4a84d 100644
+--- a/docs/errors.md
++++ b/docs/errors.md
+@@ -191,6 +191,7 @@ Match the message you see to a section below.
+ | `Refusing to write <path>: its parent-directory symlink resolution changed after permission was checked` / `Refusing to write <path>: it is a symbolic link. Write to the link's target path instead` | [Tool errors](#refusing-after-a-symlink-changed)                                                                              |
+ | `Refusing to search <path>: a path one of its Read deny rules is written through changed while the search was being prepared` / `Refusing to search <path>: it could not be opened`                   | [Tool errors](#refusing-after-a-symlink-changed)                                                                              |
+ | `its permission check expired before it ran (too many concurrent file operations)` / `ripgrep was found only by name on PATH`                                                                         | [Tool errors](#refusing-after-a-symlink-changed)                                                                              |
++| `task output swap refused (tasks dir moved or linked)`                                                                                                                                                | [Tool errors](#task-output-swap-refused)                                                                                      |
+ | `Can't open MCP settings while no terminal is attached to this background session`                                                                                                                    | [Background session errors](#commands-refused-in-a-background-session)                                                        |
+ | `Can't open MCP settings in a background session`                                                                                                                                                     | [Background session errors](#commands-refused-in-a-background-session)                                                        |
+ | `blocked because the path is spelled in a form that cannot be safely resolved`                                                                                                                        | [Background session errors](#write-or-command-blocked-because-the-path-cannot-be-safely-resolved)                             |
+@@ -219,6 +220,8 @@ Match the message you see to a section below.
+ | `Agent descriptions are over the 15.0k-token limit`                                                                                                                                                   | [Configuration warnings](#agent-descriptions-are-over-the-15000-token-limit)                                                  |
+ | `Ignoring N permissions.allow entries from ... this workspace has not been trusted`                                                                                                                   | [Configuration warnings](#workspace-has-not-been-trusted)                                                                     |
+ | `Remote managed settings failed to load (<cause>)`                                                                                                                                                    | [Configuration warnings](#remote-managed-settings-failed-to-load)                                                             |
++| `Managed settings document could not be parsed as a JSON object; none of its settings are in effect. Fix or remove it.`                                                                               | [Configuration warnings](#managed-settings-document-could-not-be-parsed)                                                      |
++| `Managed settings drop-in directory could not be read`                                                                                                                                                | [Configuration warnings](#managed-settings-document-could-not-be-parsed)                                                      |
+ | `"crossSessionInbound" must be one of "accept", "hold", "refuse"`                                                                                                                                     | [Configuration warnings](#crosssessioninbound-must-be-one-of-accept-hold-refuse)                                              |
+ | `headersHelper not run — this workspace has no persisted trust`                                                                                                                                       | [Configuration warnings](#headershelper-not-run)                                                                              |
+ | `... is not matched by file permission checks`                                                                                                                                                        | [Configuration warnings](#is-not-matched-by-file-permission-checks)                                                           |
+@@ -266,7 +269,7 @@ As of v2.1.198, the usual spinner tip is suppressed during retries. Once the err
+ If no data arrives on the response stream for 20 seconds while a request is still pending, the spinner shows `Waiting for API response · will retry in … · check your network` before any retry has started. The request hasn't failed yet: the countdown runs to the point where Claude Code aborts the stalled connection. After the abort, what you see depends on how far the response had got:
+ 
+ * Before Claude has completed a block of text or a tool call, or started one after finishing its thinking, Claude Code retries the request or ends the turn with an error. [Automatic retries](#automatic-retries) says which stalls it retries and how many times.
+-* After Claude has completed a block of text or a tool call, or started one after finishing its thinking, but before Claude has finished the response, Claude Code keeps what Claude completed, continues the turn from any tool calls Claude finished, and shows [The response above may be incomplete](#the-response-above-may-be-incomplete). In a non-interactive session, Claude Code may first prompt Claude to continue the response; that entry says when it does and when you still see the notice there.
++* After Claude has completed a block of text or a tool call, or started one after finishing its thinking, but before Claude has finished the response, Claude Code keeps what Claude completed, continues the turn from any tool calls Claude finished, and shows [The response above may be incomplete](#the-response-above-may-be-incomplete). In a non-interactive session, and for a subagent's response in any session, Claude Code may first prompt Claude to continue the response; that entry says when it does and when you still see the notice there.
+ * After Claude finished the response, Claude Code ends the turn normally.
+ 
+ The banner clears on its own once data resumes or a retry succeeds. If it reappears on every attempt, treat it as a [network issue](#unable-to-connect-to-api). Before v2.1.185, the banner appeared after 10 seconds with different wording.
+@@ -383,11 +386,12 @@ API Error: The response stopped arriving. The response above may be incomplete.
+ 
+ Before v2.1.227, `Connection lost mid-response` read `Connection closed mid-response` and `The response stopped arriving` read `Response stalled mid-stream`.
+ 
+-In three cases, Claude Code handles the failure without showing this notice right away:
++In four cases, Claude Code handles the failure without showing this notice right away:
+ 
+ * Earlier in the response, Claude Code either retries the failure or ends the turn with a different error. See [Automatic retries](#automatic-retries).
+ * When one of these failures arrives after Claude has finished the response, Claude Code keeps the complete response and ends the turn normally, without this notice. Before v2.1.222, Claude Code showed this notice when the connection dropped or stalled after the response finished, and reported the turn as an error even though the response was complete.
+ * In a [non-interactive session](/docs/en/headless), such as a `-p` run, an [Agent SDK](/docs/en/agent-sdk/overview) run, or a [cloud session](/docs/en/claude-code-on-the-web), you don't have to send `continue` yourself when the cut-off response is in the main conversation and contains text but no tool calls: Claude Code keeps the partial output and prompts Claude to continue from where it stopped, up to three times in a row. You see this notice for such a response only once Claude Code has used up those continuations. Before v2.1.246, Claude Code ended a non-interactive turn with this notice on the first cut-off.
++* In a [subagent](/docs/en/sub-agents#api-errors-in-subagents), whether the session is interactive or not: when its cut-off response contains text but no tool calls, Claude Code prompts the subagent to continue. The notice becomes the subagent's last message only once those continuations are used up. Before v2.1.257, a subagent showed this notice on the first cut-off.
+ 
+ **What to do:**
+ 
+@@ -2487,7 +2491,7 @@ Before v2.1.246, `claude plugin install` didn't report this failure.
+ 
+ ## Tool errors
+ 
+-These errors come from Claude's built-in tools. Claude corrects most tool errors on its own; the first two below need a change from you, because they come from a subagent definition or a permission rule you control.
++These errors come from Claude's built-in tools. Claude corrects most tool errors on its own. When one needs a change from you, that error's **What to do** list says what to change.
+ 
+ ### Agent would be spawned with zero tools
+ 
+@@ -2695,6 +2699,22 @@ The text after the path names the reason:
+ 
+ Before v2.1.251, Claude Code re-checked a path's resolution only for file writes, so a link replaced after the permission check could redirect a read or search to a different location without a message. Of these refusals, only the parent-directory write refusal appears on earlier versions.
+ 
++<h3 id="task-output-swap-refused">
++  Task output swap refused
++</h3>
++
++Claude Code saves each Bash command's output to a file under its temp directory. This message means a directory on that file's path is a symbolic link or has been moved, so Claude Code refused to run the command rather than write its output through that path. The message appears in the Bash tool result:
++
++```text wrap theme={null}
++task output swap refused (tasks dir moved or linked): /private/tmp/claude-501/-Users-you-my-project/1f0e62dc-4b0a-4f5e-9c2d-8a7b6c5d4e3f/tasks/b7k2f9m3q.output. To recover: restart Claude Code with CLAUDE_CODE_TMPDIR set to a fresh directory; or, if /private/tmp/claude-501/-Users-you-my-project is a stray directory or a symbolic link that should not be there, remove that entry itself (not what it points to) and restart.
++```
++
++**What to do:**
++
++* Upgrade to v2.1.260 or later. Earlier versions sometimes showed this message when no link or moved directory was present
++* Restart Claude Code with [`CLAUDE_CODE_TMPDIR`](/docs/en/env-vars) set to a fresh directory
++* Or check your project's directory under the Claude Code temp directory, `/private/tmp/claude-501/-Users-you-my-project` in the example message. If that path is a symbolic link, or a directory that shouldn't be there, remove the link or directory itself rather than the link's target, and restart Claude Code
++
+ ## Background session errors
+ 
+ [Background sessions](/docs/en/agent-view) run without an interactive terminal of their own, so commands that need one behave differently there. These messages appear in the transcript of a background session, in the terminal that attaches to one, in the session or shell you dispatch from, or, for the [worktree-guard entries](#write-or-command-blocked-because-the-path-cannot-be-safely-resolved) below, in any session isolated in a worktree or running a worktree-isolated subagent; where a message is specific to one surface, its entry says so.
+@@ -3198,6 +3218,35 @@ Your session is eligible for [server-managed settings](/docs/en/server-managed-s
+ 
+ Before v2.1.248, Claude Code reported a failed settings fetch only in the debug log.
+ 
++<h3 id="managed-settings-document-could-not-be-parsed">
++  Managed settings document could not be parsed
++</h3>
++
++Your organization deploys [managed settings](/docs/en/managed-settings), and one of the deployed documents is present but can't be parsed as a JSON object, so Claude Code exits with code 1 at startup instead of running without the policy the document carries. The line names the failed source before the message:
++
++```text theme={null}
++/Library/Application Support/ClaudeCode/managed-settings.json: Managed settings document could not be parsed as a JSON object; none of its settings are in effect. Fix or remove it.
++```
++
++The source is one of:
++
++* The path of the `managed-settings.json` file or a drop-in file under `managed-settings.d`
++* The macOS managed preferences profile, `per-user managed preferences` or `device-level managed preferences`
++* The Windows registry value, `Registry: HKLM\SOFTWARE\Policies\ClaudeCode\Settings`
++
++[Find entries Claude Code dropped](/docs/en/managed-settings#find-entries-claude-code-dropped) lists what makes each source unparseable.
++
++Claude Code refuses to start even when another admin source delivers a valid policy. You see this error in interactive sessions, `claude -p`, Agent SDK sessions, [background sessions](/docs/en/agent-view), and most subcommands, `claude doctor` included. The refusal fails closed on purpose: settings in a document Claude Code can't parse can't be enforced, and starting anyway would run sessions without the organization's controls.
++
++A schema problem in a parseable document doesn't produce this error. [Find entries Claude Code dropped](/docs/en/managed-settings#find-entries-claude-code-dropped) covers what Claude Code does with one.
++
++When a `managed-settings.d/` directory exists but can't be listed, Claude Code reports `Managed settings drop-in directory could not be read:` followed by the underlying error instead. [Find entries Claude Code dropped](/docs/en/managed-settings#find-entries-claude-code-dropped) covers when a read failure exits at startup.
++
++**What to do:**
++
++* If you administer the machine, fix the named document so it parses as a JSON object, or remove the file, profile, or registry value. An empty `managed-settings.json` counts as `{}` and doesn't block launch.
++* If you don't, ask your administrator to fix the deployed document. Nothing in your own settings files causes or clears this error.
++
+ ### headersHelper not run
+ 
+ Claude Code connected an MCP server with its static `headers` alone and skipped the server's [`headersHelper`](/docs/en/mcp#use-dynamic-headers-for-custom-authentication), because the helper is a shell command and the folder has no saved trust. A folder gets saved trust when you set its entry in `~/.claude.json` by hand or, outside your home directory, when you accept the trust dialog for it in an interactive session. See [Trust a folder before its headersHelper runs](/docs/en/mcp#trust-a-folder-before-its-headershelper-runs) for which servers this check applies to.
