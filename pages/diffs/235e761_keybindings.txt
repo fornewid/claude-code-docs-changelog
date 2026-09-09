@@ -1,0 +1,17 @@
+diff --git a/docs/keybindings.md b/docs/keybindings.md
+index fba0963..8c4d90c 100644
+--- a/docs/keybindings.md
++++ b/docs/keybindings.md
+@@ -184,9 +184,9 @@ The `historySearch:next`, `historySearch:accept`, `historySearch:cancel`, and `h
+ 
+ Actions available in the `Task` context:
+ 
+-| Action            | Default               | Description                                                                                                     |
+-| :---------------- | :-------------------- | :-------------------------------------------------------------------------------------------------------------- |
+-| `task:background` | Ctrl+B, Ctrl+X Ctrl+B | Background current task. The Ctrl+X Ctrl+B chord requires v2.1.169 or later and avoids the tmux prefix conflict |
++| Action            | Default               | Description                                                                      |
++| :---------------- | :-------------------- | :------------------------------------------------------------------------------- |
++| `task:background` | Ctrl+B, Ctrl+X Ctrl+B | Background current task. The Ctrl+X Ctrl+B chord avoids the tmux prefix conflict |
+ 
+ ### Theme actions
+ 
