@@ -1,5 +1,234 @@
 [
   {
+    "date": "2026-09-16T15:10:31Z",
+    "commit_hash": "59ca9f6",
+    "entries": [
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/admin-setup\" target=\"_blank\">Admin Setup</a>",
+        "summary": "문서 내 용어가 'Claude Code on the web'에서 'Cloud sessions'로 변경되어 클라우드 환경 관련 기능 명칭이 일관되게 정비되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/59ca9f6_admin-setup.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/agent-sdk__agent-loop\" target=\"_blank\">Agent Sdk__Agent Loop</a>",
+        "summary": "예산 한도 초과 시 처리 방식, 모델 설정 방법, 에러 대응 시 주의사항 등의 설명이 업데이트되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/59ca9f6_agent-sdk__agent-loop.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/agent-sdk__configuration\" target=\"_blank\">Agent Sdk__Configuration</a>",
+        "summary": "Agent SDK 세션 설정 방법을 안내하는 문서가 추가되었습니다. TypeScript와 Python 환경에서의 옵션 전달, 모델 선택, 환경 변수 설정 등을 다룹니다.",
+        "tag_text": "NEW",
+        "tag_class": "new"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/agent-sdk__hooks\" target=\"_blank\">Agent Sdk__Hooks</a>",
+        "summary": "훅 타임아웃 발생 시 이벤트별 처리 동작이 구체화되었으며, Stop 및 SessionStart 등의 타임아웃 정책이 변경되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/59ca9f6_agent-sdk__hooks.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/agent-sdk__session-storage\" target=\"_blank\">Agent Sdk__Session Storage</a>",
+        "summary": "세션 스토리지 문서가 파이썬 SDK 예제 추가 및 일반화된 용어(객체 스토리지, 키-값 스토리지 등) 사용으로 업데이트되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/59ca9f6_agent-sdk__session-storage.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/agent-sdk__typescript\" target=\"_blank\">Agent Sdk__Typescript</a>",
+        "summary": "fallbackModel 설정에 대한 설명이 확장되어, 쉼표로 구분된 목록 지원 및 관련 문서 링크가 추가되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/59ca9f6_agent-sdk__typescript.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/changelog\" target=\"_blank\">Changelog</a>",
+        "summary": "Claude Code 2.1.273 버전 업데이트: LLM 게이트웨이 헤더 추가, 원격 세션 포킹 지원, 각종 권한 및 인증 오류 수정, 아티팩트 및 웹/Slack 연동 기능이 개선되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/59ca9f6_changelog.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/claude-apps-gateway-deploy\" target=\"_blank\">Claude Apps Gateway Deploy</a>",
+        "summary": "공인 IP 대역 허용 가이드 추가, 감사 로그 이벤트(`access.public_client`) 및 JWT 비밀키 순환 설명이 보완되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/59ca9f6_claude-apps-gateway-deploy.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/claude-code-on-the-web\" target=\"_blank\">Claude Code On The Web</a>",
+        "summary": "클라우드 세션 문서가 전면 개편되어 브라우저, 모바일, 데스크톱 앱 등 다양한 환경에서의 실행 방법과 용어가 'web'에서 'cloud'로 일괄 수정되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/59ca9f6_claude-code-on-the-web.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/cloud-environments\" target=\"_blank\">Cloud Environments</a>",
+        "summary": "클라우드 세션 및 관련 인터페이스(웹, 터미널 등)의 용어가 최신 사양에 맞춰 전반적으로 수정되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/59ca9f6_cloud-environments.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/context-window\" target=\"_blank\">Context Window</a>",
+        "summary": "컨텍스트 압축(Compaction) 후 규칙 및 중첩 CLAUDE.md 파일의 자동 재로드 동작이 변경됨에 따라 관련 설명서가 수정되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/59ca9f6_context-window.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/env-vars\" target=\"_blank\">Env Vars</a>",
+        "summary": "Bash 명령어 파일 변경 사항에 대한 diff 표시 여부를 제어하는 CLAUDE_CODE_BASH_EDIT_DIFF 환경 변수 문서가 추가되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/59ca9f6_env-vars.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/errors\" target=\"_blank\">Errors</a>",
+        "summary": "클라우드 세션 및 GitHub 연동 관련 새로운 에러 메시지들이 에러 문서에 추가되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/59ca9f6_errors.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/feature-availability\" target=\"_blank\">Feature Availability</a>",
+        "summary": "문서 내 'Claude Code on the web' 용어가 'Cloud sessions' 및 관련 표현으로 일괄 변경되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/59ca9f6_feature-availability.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/glossary\" target=\"_blank\">Glossary</a>",
+        "summary": "클라우드 세션 개념이 추가되고 용어가 정비되어, 클라우드 및 원격 세션 관련 문서의 명확성이 향상되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/59ca9f6_glossary.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/llm-gateway-connect\" target=\"_blank\">Llm Gateway Connect</a>",
+        "summary": "게이트웨이 연동 문서에 아티팩트 도구 스키마 관련 400 에러 원인 및 해결 방법이 추가되고 일부 명칭이 수정되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/59ca9f6_llm-gateway-connect.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/mcp\" target=\"_blank\">Mcp</a>",
+        "summary": "MCP 문서에 환경 변수 참조 표시 방식, 미설정 변수 처리, 인증 알림 동작에 대한 설명이 추가되고 용어가 정비되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/59ca9f6_mcp.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/model-config\" target=\"_blank\">Model Config</a>",
+        "summary": "클라우드 세션 및 모바일 앱 환경에서의 모델 허용 목록 정책과 제한 사항에 대한 설명이 명확하게 업데이트되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/59ca9f6_model-config.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/permission-modes\" target=\"_blank\">Permission Modes</a>",
+        "summary": "작업 디렉토리 외부 읽기 권한 및 셸 파서 동작에 대한 설명이 보완되었고, 웹 및 모바일 관련 용어가 클라우드 세션으로 통일되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/59ca9f6_permission-modes.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/permissions\" target=\"_blank\">Permissions</a>",
+        "summary": "자동 모드에서의 호스트 분류 동작 방식이 업데이트되었으며, 샌드박싱 적용 범위가 PowerShell 및 Monitor 명령어로 확장되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/59ca9f6_permissions.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/platforms\" target=\"_blank\">Platforms</a>",
+        "summary": "플랫폼 문서의 'Claude Code on the web' 항목이 'Web'으로 명칭이 변경되고 접속 경로가 추가되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/59ca9f6_platforms.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/plugin-marketplaces\" target=\"_blank\">Plugin Marketplaces</a>",
+        "summary": "로컬 디렉토리에서 추가된 마켓플레이스의 인플레이스(in-place) 로드 및 버전 관리 규칙에 대한 설명이 업데이트되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/59ca9f6_plugin-marketplaces.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/sandbox-environments\" target=\"_blank\">Sandbox Environments</a>",
+        "summary": "샌드박스 환경 문서 내의 용어가 'Claude Code on the web'에서 'Cloud sessions'로 변경되고 관련 기능 설명이 업데이트되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/59ca9f6_sandbox-environments.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/sandboxing\" target=\"_blank\">Sandboxing</a>",
+        "summary": "샌드박스 문서가 업데이트되어 PowerShell/Monitor 명령 지원, 자동 모드에서의 네트워크 도메인 처리 방식 변경, 그리고 관련 규칙 설명이 보완되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/59ca9f6_sandboxing.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/self-hosted-environments-deploy\" target=\"_blank\">Self Hosted Environments Deploy</a>",
+        "summary": "세션 디렉토리 영속성 및 디스크 공간 관리 안내가 추가되었고, --remove-session-state 옵션에 따른 로그 보존 정책이 업데이트되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/59ca9f6_self-hosted-environments-deploy.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/self-hosted-environments-reference\" target=\"_blank\">Self Hosted Environments Reference</a>",
+        "summary": "세션 종료 시 임시 디렉터리를 정리하는 새로운 `--remove-session-state` 플래그 및 환경 변수 설정이 추가되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/59ca9f6_self-hosted-environments-reference.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/settings-reference\" target=\"_blank\">Settings Reference</a>",
+        "summary": "새로운 설정 항목(bashEditDiffEnabled, gatewayInternalNetworks)이 추가되고 권한 및 자동 모드 관련 설명이 업데이트되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/59ca9f6_settings-reference.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/skills\" target=\"_blank\">Skills</a>",
+        "summary": "주입된 명령어에 대한 권한 검증 규칙이 세분화되고 자동 모드 동작 방식이 추가되어 보안 및 실행 프로세스가 명확해졌습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/59ca9f6_skills.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/sub-agents\" target=\"_blank\">Sub Agents</a>",
+        "summary": "백그라운드 서브에이전트의 도구 목록에 SubagentHandback이 추가되고, 자동 모드와 비대 interacción 환경에서의 서브에이전트 동작 및 결과 보고 방식이 구체화되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/59ca9f6_sub-agents.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/troubleshooting\" target=\"_blank\">Troubleshooting</a>",
+        "summary": "메모리 진단 출력 결과 처리 방법과 터미널 스크롤 관련 문구가 더 명확하게 수정되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/59ca9f6_troubleshooting.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/web-quickstart\" target=\"_blank\">Web Quickstart</a>",
+        "summary": "웹 기반 Claude Code 용어가 'cloud sessions'로 변경되고, 실행 방식 및 지원 플랫폼 비교표가 개편되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/59ca9f6_web-quickstart.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/zero-data-retention\" target=\"_blank\">Zero Data Retention</a>",
+        "summary": "ZDR 활성화 시 비활성화되는 기능 목록에서 웹용 Claude Code와 데스크톱 클라우드 세션 항목이 통합 및 수정되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/59ca9f6_zero-data-retention.txt"
+      }
+    ]
+  },
+  {
     "date": "2026-09-15T15:11:27Z",
     "commit_hash": "a10f636",
     "entries": [
