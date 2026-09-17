@@ -1,5 +1,130 @@
 [
   {
+    "date": "2026-09-17T15:11:45Z",
+    "commit_hash": "8076e0b",
+    "entries": [
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/admin-setup\" target=\"_blank\">Admin Setup</a>",
+        "summary": "커스텀 잠금 설정의 동작 범위가 확장되고, claude.ai 동기화 비활성화 설정이 새로 추가되어 관리자 제어 기능이 강화되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/8076e0b_admin-setup.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/agent-sdk__modifying-system-prompts\" target=\"_blank\">Agent Sdk__Modifying System Prompts</a>",
+        "summary": "세션 중 시스템 프롬프트 변경 방법과 스냅샷 기능, 캐시 영향에 대한 가이드가 상세히 개정 및 추가되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/8076e0b_agent-sdk__modifying-system-prompts.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/agent-sdk__observability\" target=\"_blank\">Agent Sdk__Observability</a>",
+        "summary": "OTEL_LOG_TOOL_CONTENT=1 환경변수 설명이 구체화되어 도구 출력 스팬 이벤트 및 컨텍스트 게이트 정보를 제공합니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/8076e0b_agent-sdk__observability.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/agent-sdk__python\" target=\"_blank\">Agent Sdk__Python</a>",
+        "summary": "SystemPromptCustom 타입 추가 및 system_prompt 설정에 새로운 옵션이 확장되어 프롬프트 관리 유연성이 향상되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/8076e0b_agent-sdk__python.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/agent-teams\" target=\"_blank\">Agent Teams</a>",
+        "summary": "v2.1.179 이전 버전에 대한 레거시 언급이 제거되고, 에이전트 팀 디스플레이 모드의 기본값 및 동작 설명이 최신 버전 기준으로 정비되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/8076e0b_agent-teams.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/changelog\" target=\"_blank\">Changelog</a>",
+        "summary": "메모리 부족 경고 기능 추가, MCP 서버 연결 및 타임아웃 오류 수정, OpenTelemetry 추적 기능 개선 등 다양한 버그 수정 및 성능 최적화가 이루어졌습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/8076e0b_changelog.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/desktop\" target=\"_blank\">Desktop</a>",
+        "summary": "claude.ai 계정에 연동된 스킬과 플러그인이 터미널 세션 및 로컬/클라우드 환경에서도 로드되도록 관련 동작 설명이 추가되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/8076e0b_desktop.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/discover-plugins\" target=\"_blank\">Discover Plugins</a>",
+        "summary": "claude.ai 계정에서 플러그인을 동기화하여 Claude Code와 연동하는 기능과 관련 UI 및 설정 방법이 추가되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/8076e0b_discover-plugins.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/llm-gateway-protocol\" target=\"_blank\">Llm Gateway Protocol</a>",
+        "summary": "Thinking signature 거절 처리 조건이 구체화되고, 게이트웨이 환경에서의 콘텐츠 변경 주의사항과 에러 응답 본문 유지 관련 가이드가 추가되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/8076e0b_llm-gateway-protocol.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/managed-settings\" target=\"_blank\">Managed Settings</a>",
+        "summary": "관리형 설정 문서에 syncClaudeAiPlugins 키가 추가되어 크로스 소스 설정 범위와 동작 방식이 확장되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/8076e0b_managed-settings.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/mcp\" target=\"_blank\">Mcp</a>",
+        "summary": "Claude Code의 MCP v2 런타임 전환 조건 및 프로토콜 협상 규칙이 업데이트되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/8076e0b_mcp.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/plugin-marketplaces\" target=\"_blank\">Plugin Marketplaces</a>",
+        "summary": "플러그인 마켓플레이스의 백그라운드 자동 업데이트, Git LFS 주의사항, 그리고 오프라인 환경에서의 동작 방식이 상세히 개선되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/8076e0b_plugin-marketplaces.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/plugins-reference\" target=\"_blank\">Plugins Reference</a>",
+        "summary": "claude.ai 계정 플러그인의 터미널 세션 동기화 및 관련 설정, 명령어 사용법이 문서에 추가되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/8076e0b_plugins-reference.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/settings-reference\" target=\"_blank\">Settings Reference</a>",
+        "summary": "새로운 `syncClaudeAiPlugins` 설정이 추가되고 관련 기능 설명이 업데이트되었으며, Git LFS 파일 다운로드 동작이 기본적으로 비활성화되도록 변경되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/8076e0b_settings-reference.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/settings\" target=\"_blank\">Settings</a>",
+        "summary": "새로운 설정 항목인 `syncClaudeAiPlugins`가 추가되어 플러그인 동기화 제어 및 우선순위 규칙이 명확해졌습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/8076e0b_settings.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/skills\" target=\"_blank\">Skills</a>",
+        "summary": "claude.ai 계정 스킬 동기화 기능이 개편되어, 터미널 세션 로그인 시 백그라운드 자동 동기화 및 실시간 업데이트를 지원합니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/8076e0b_skills.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/worktrees\" target=\"_blank\">Worktrees</a>",
+        "summary": "워크플로우 생성 차단 및 정리 예외 조건이 3가지에서 4가지로 확장되었으며, 새로운 Git 설정 관련 오류 처리 방법이 추가되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/8076e0b_worktrees.txt"
+      }
+    ]
+  },
+  {
     "date": "2026-09-16T15:10:31Z",
     "commit_hash": "59ca9f6",
     "entries": [
