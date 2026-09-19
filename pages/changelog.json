@@ -1,5 +1,2430 @@
 [
   {
+    "date": "2026-09-19T15:10:01Z",
+    "commit_hash": "d6e5dd7",
+    "entries": [
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/about-claude__additional-resources\" target=\"_blank\">About Claude__Additional Resources</a>",
+        "summary": "Claude 학습 자료와 AI 활용을 위한 리소스 정보를 제공하는 새로운 문서가 추가되었습니다.",
+        "tag_text": "NEW",
+        "tag_class": "new"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/about-claude__glossary\" target=\"_blank\">About Claude__Glossary</a>",
+        "summary": "Claude 플랫폼의 주요 용어(컨텍스트 창, HHH, MCP, RAG 등)를 설명하는 새로운 용어집 문서가 추가되었습니다.",
+        "tag_text": "NEW",
+        "tag_class": "new"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/about-claude__model-deprecations\" target=\"_blank\">About Claude__Model Deprecations</a>",
+        "summary": "Claude 모델의 수명 주기, 지원 종료 일정, 그리고 마이그레이션 가이드를 안내하는 새로운 문서가 추가되었습니다.",
+        "tag_text": "NEW",
+        "tag_class": "new"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/about-claude__models__choosing-a-model\" target=\"_blank\">About Claude__Models__Choosing A Model</a>",
+        "summary": "Claude 모델 선택 가이드 문서가 새로 추가되었습니다. 성능, 속도, 비용을 고려한 모델 선택 기준과 효율성/능력 중심의 시작 전략을 안내합니다.",
+        "tag_text": "NEW",
+        "tag_class": "new"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/about-claude__models__migration-guide\" target=\"_blank\">About Claude__Models__Migration Guide</a>",
+        "summary": "최신 클로드 모델로의 마이그레이션 가이드 목록을 제공하는 문서가 새로 추가되었습니다.",
+        "tag_text": "NEW",
+        "tag_class": "new"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/about-claude__models__model-ids-and-versions\" target=\"_blank\">About Claude__Models__Model Ids And Versions</a>",
+        "summary": "Claude 모델 ID 구조와 버전 관리 정책을 안내하는 신규 문서로, 4.6 세대부터 도입된 날짜 없는(dateless) 고정 스냅샷 포맷과 플랫폼별 네이밍 규칙을 설명합니다.",
+        "tag_text": "NEW",
+        "tag_class": "new"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/about-claude__models__optimizing-for-cost-and-intelligence\" target=\"_blank\">About Claude__Models__Optimizing For Cost And Intelligence</a>",
+        "summary": "Claude 플랫폼에서 비용과 성능을 최적화하는 방법을 다루는 신규 문서를 추가했습니다. 프롬프트 캐싱, 모델 선택, 예산 설정 등 다양한 최적화 전략을 안내합니다.",
+        "tag_text": "NEW",
+        "tag_class": "new"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/about-claude__use-case-guides__commerce-agents\" target=\"_blank\">About Claude__Use Case Guides__Commerce Agents</a>",
+        "summary": "커머스 에이전트 구축 가이드가 추가되었습니다. 쇼핑 및 판매자 에이전트 구현을 위한 오픈소스 블루프린트와 활용법을 안내합니다.",
+        "tag_text": "NEW",
+        "tag_class": "new"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/about-claude__use-case-guides__content-moderation\" target=\"_blank\">About Claude__Use Case Guides__Content Moderation</a>",
+        "summary": "Claude을 활용한 콘텐츠 모더레이션 가이드 문서가 추가되었습니다. LLM 기반 모더레이션의 이점과 구현 방법을 설명합니다.",
+        "tag_text": "NEW",
+        "tag_class": "new"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/about-claude__use-case-guides__customer-support-chat\" target=\"_blank\">About Claude__Use Case Guides__Customer Support Chat</a>",
+        "summary": "Claude을 활용한 고객 지원 챗봇 구축 가이드가 추가되어, 사전 요구사항 및 상호작용 설계 방법 등을 안내합니다.",
+        "tag_text": "NEW",
+        "tag_class": "new"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/about-claude__use-case-guides__legal-summarization\" target=\"_blank\">About Claude__Use Case Guides__Legal Summarization</a>",
+        "summary": "법률 문서 요약(Legal Summarization) 가이드가 추가되어, Claude를 활용한 계약서 및 법률 문서 효율화 방법과 프롬프트 작성 팁을 제공합니다.",
+        "tag_text": "NEW",
+        "tag_class": "new"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/about-claude__use-case-guides__ticket-routing\" target=\"_blank\">About Claude__Use Case Guides__Ticket Routing</a>",
+        "summary": "고객 지원 티켓 자동 분류를 위해 Claude의 자연어 이해 능력을 활용하는 방법을 안내하는 새로운 가이드 문서가 추가되었습니다.",
+        "tag_text": "NEW",
+        "tag_class": "new"
+      },
+      {
+        "title": "Accessibility",
+        "summary": "문서가 삭제되었습니다.",
+        "tag_text": "DELETE",
+        "tag_class": "delete"
+      },
+      {
+        "title": "Admin-Setup",
+        "summary": "문서가 삭제되었습니다.",
+        "tag_text": "DELETE",
+        "tag_class": "delete"
+      },
+      {
+        "title": "Advisor",
+        "summary": "문서가 삭제되었습니다.",
+        "tag_text": "DELETE",
+        "tag_class": "delete"
+      },
+      {
+        "title": "Agent-Sdk__Agent-Loop",
+        "summary": "문서가 삭제되었습니다.",
+        "tag_text": "DELETE",
+        "tag_class": "delete"
+      },
+      {
+        "title": "Agent-Sdk__Claude-Code-Features",
+        "summary": "문서가 삭제되었습니다.",
+        "tag_text": "DELETE",
+        "tag_class": "delete"
+      },
+      {
+        "title": "Agent-Sdk__Configuration",
+        "summary": "문서가 삭제되었습니다.",
+        "tag_text": "DELETE",
+        "tag_class": "delete"
+      },
+      {
+        "title": "Agent-Sdk__Cost-Tracking",
+        "summary": "문서가 삭제되었습니다.",
+        "tag_text": "DELETE",
+        "tag_class": "delete"
+      },
+      {
+        "title": "Agent-Sdk__Custom-Tools",
+        "summary": "문서가 삭제되었습니다.",
+        "tag_text": "DELETE",
+        "tag_class": "delete"
+      },
+      {
+        "title": "Agent-Sdk__Examples",
+        "summary": "문서가 삭제되었습니다.",
+        "tag_text": "DELETE",
+        "tag_class": "delete"
+      },
+      {
+        "title": "Agent-Sdk__File-Checkpointing",
+        "summary": "문서가 삭제되었습니다.",
+        "tag_text": "DELETE",
+        "tag_class": "delete"
+      },
+      {
+        "title": "Agent-Sdk__Hooks",
+        "summary": "문서가 삭제되었습니다.",
+        "tag_text": "DELETE",
+        "tag_class": "delete"
+      },
+      {
+        "title": "Agent-Sdk__Hosting",
+        "summary": "문서가 삭제되었습니다.",
+        "tag_text": "DELETE",
+        "tag_class": "delete"
+      },
+      {
+        "title": "Agent-Sdk__Mcp",
+        "summary": "문서가 삭제되었습니다.",
+        "tag_text": "DELETE",
+        "tag_class": "delete"
+      },
+      {
+        "title": "Agent-Sdk__Migration-Guide",
+        "summary": "문서가 삭제되었습니다.",
+        "tag_text": "DELETE",
+        "tag_class": "delete"
+      },
+      {
+        "title": "Agent-Sdk__Modifying-System-Prompts",
+        "summary": "문서가 삭제되었습니다.",
+        "tag_text": "DELETE",
+        "tag_class": "delete"
+      },
+      {
+        "title": "Agent-Sdk__Observability",
+        "summary": "문서가 삭제되었습니다.",
+        "tag_text": "DELETE",
+        "tag_class": "delete"
+      },
+      {
+        "title": "Agent-Sdk__Overview",
+        "summary": "문서가 삭제되었습니다.",
+        "tag_text": "DELETE",
+        "tag_class": "delete"
+      },
+      {
+        "title": "Agent-Sdk__Permissions",
+        "summary": "문서가 삭제되었습니다.",
+        "tag_text": "DELETE",
+        "tag_class": "delete"
+      },
+      {
+        "title": "Agent-Sdk__Plugins",
+        "summary": "문서가 삭제되었습니다.",
+        "tag_text": "DELETE",
+        "tag_class": "delete"
+      },
+      {
+        "title": "Agent-Sdk__Python",
+        "summary": "문서가 삭제되었습니다.",
+        "tag_text": "DELETE",
+        "tag_class": "delete"
+      },
+      {
+        "title": "Agent-Sdk__Quickstart",
+        "summary": "문서가 삭제되었습니다.",
+        "tag_text": "DELETE",
+        "tag_class": "delete"
+      },
+      {
+        "title": "Agent-Sdk__Secure-Deployment",
+        "summary": "문서가 삭제되었습니다.",
+        "tag_text": "DELETE",
+        "tag_class": "delete"
+      },
+      {
+        "title": "Agent-Sdk__Session-Storage",
+        "summary": "문서가 삭제되었습니다.",
+        "tag_text": "DELETE",
+        "tag_class": "delete"
+      },
+      {
+        "title": "Agent-Sdk__Sessions",
+        "summary": "문서가 삭제되었습니다.",
+        "tag_text": "DELETE",
+        "tag_class": "delete"
+      },
+      {
+        "title": "Agent-Sdk__Skills",
+        "summary": "문서가 삭제되었습니다.",
+        "tag_text": "DELETE",
+        "tag_class": "delete"
+      },
+      {
+        "title": "Agent-Sdk__Streaming-Output",
+        "summary": "문서가 삭제되었습니다.",
+        "tag_text": "DELETE",
+        "tag_class": "delete"
+      },
+      {
+        "title": "Agent-Sdk__Streaming-Vs-Single-Mode",
+        "summary": "문서가 삭제되었습니다.",
+        "tag_text": "DELETE",
+        "tag_class": "delete"
+      },
+      {
+        "title": "Agent-Sdk__Structured-Outputs",
+        "summary": "문서가 삭제되었습니다.",
+        "tag_text": "DELETE",
+        "tag_class": "delete"
+      },
+      {
+        "title": "Agent-Sdk__Subagents",
+        "summary": "문서가 삭제되었습니다.",
+        "tag_text": "DELETE",
+        "tag_class": "delete"
+      },
+      {
+        "title": "Agent-Sdk__Todo-Tracking",
+        "summary": "문서가 삭제되었습니다.",
+        "tag_text": "DELETE",
+        "tag_class": "delete"
+      },
+      {
+        "title": "Agent-Sdk__Tool-Search",
+        "summary": "문서가 삭제되었습니다.",
+        "tag_text": "DELETE",
+        "tag_class": "delete"
+      },
+      {
+        "title": "Agent-Sdk__Troubleshooting",
+        "summary": "문서가 삭제되었습니다.",
+        "tag_text": "DELETE",
+        "tag_class": "delete"
+      },
+      {
+        "title": "Agent-Sdk__Typescript-V2-Preview",
+        "summary": "문서가 삭제되었습니다.",
+        "tag_text": "DELETE",
+        "tag_class": "delete"
+      },
+      {
+        "title": "Agent-Sdk__Typescript",
+        "summary": "문서가 삭제되었습니다.",
+        "tag_text": "DELETE",
+        "tag_class": "delete"
+      },
+      {
+        "title": "Agent-Sdk__User-Input",
+        "summary": "문서가 삭제되었습니다.",
+        "tag_text": "DELETE",
+        "tag_class": "delete"
+      },
+      {
+        "title": "Agent-Teams",
+        "summary": "문서가 삭제되었습니다.",
+        "tag_text": "DELETE",
+        "tag_class": "delete"
+      },
+      {
+        "title": "Agent-View",
+        "summary": "문서가 삭제되었습니다.",
+        "tag_text": "DELETE",
+        "tag_class": "delete"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/agents-and-tools__agent-skills__best-practices\" target=\"_blank\">Agents And Tools__Agent Skills__Best Practices</a>",
+        "summary": "Claude 에이전트 스킬(Skill) 작성 시 컨텍스트 윈도우 최적화, 자유도 조절, 명명 규칙 및 점진적 공개 패턴을 다루는 모범 사례 가이드가 추가되었습니다.",
+        "tag_text": "NEW",
+        "tag_class": "new"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/agents-and-tools__agent-skills__claude-api-skill\" target=\"_blank\">Agents And Tools__Agent Skills__Claude Api Skill</a>",
+        "summary": "Claude API 에이전트 스킬에 대한 새로운 문서가 추가되었습니다. Messages API와 Managed Agents에 대한 최신 참조 자료와 마이그레이션 가이드를 제공합니다.",
+        "tag_text": "NEW",
+        "tag_class": "new"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/agents-and-tools__agent-skills__enterprise\" target=\"_blank\">Agents And Tools__Agent Skills__Enterprise</a>",
+        "summary": "엔터프라이즈 환경에서의 에이전트 스킬(Agent Skills) 도입, 보안 검토, 리스크 평가 및 라이프사이클 관리 지침을 제공하는 신규 문서가 추가되었습니다.",
+        "tag_text": "NEW",
+        "tag_class": "new"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/agents-and-tools__agent-skills__overview\" target=\"_blank\">Agents And Tools__Agent Skills__Overview</a>",
+        "summary": "Claude의 기능을 확장하는 모듈형 에이전트 스킬(Agent Skills)의 개념, 사용법, 3단계 점진적 공개(progressive disclosure) 아키텍처를 설명하는 신규 문서가 추가되었습니다.",
+        "tag_text": "NEW",
+        "tag_class": "new"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/agents-and-tools__agent-skills__quickstart\" target=\"_blank\">Agents And Tools__Agent Skills__Quickstart</a>",
+        "summary": "Claude API를 활용한 Agent Skills 빠른 시작 가이드 추가. PowerPoint 생성 예제를 통해 스킬 활성화 방법 안내.",
+        "tag_text": "NEW",
+        "tag_class": "new"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/agents-and-tools__mcp-connector\" target=\"_blank\">Agents And Tools__Mcp Connector</a>",
+        "summary": "Messages API에서 원격 MCP 서버와 직접 연동하는 MCP 커넥터 베타 문서가 추가되었습니다.",
+        "tag_text": "NEW",
+        "tag_class": "new"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/agents-and-tools__mcp-tunnels__concepts\" target=\"_blank\">Agents And Tools__Mcp Tunnels__Concepts</a>",
+        "summary": "MCP 터널 아키텍처 및 구성 요소 문서를 추가하여 배포 개념, 자격 증명 모드, 연결 모델을 정의합니다.",
+        "tag_text": "NEW",
+        "tag_class": "new"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/agents-and-tools__mcp-tunnels__console\" target=\"_blank\">Agents And Tools__Mcp Tunnels__Console</a>",
+        "summary": "Claude Console에서 MCP 터널을 생성하고 관리하는 방법에 대한 새로운 문서가 추가되었습니다.",
+        "tag_text": "NEW",
+        "tag_class": "new"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/agents-and-tools__mcp-tunnels__deploy-compose\" target=\"_blank\">Agents And Tools__Mcp Tunnels__Deploy Compose</a>",
+        "summary": "Docker Compose를 사용하여 VM에 보안이 강화된 MCP 터널 스택을 배포하는 가이드 문서를 추가했습니다.",
+        "tag_text": "NEW",
+        "tag_class": "new"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/agents-and-tools__mcp-tunnels__deploy-helm\" target=\"_blank\">Agents And Tools__Mcp Tunnels__Deploy Helm</a>",
+        "summary": "Kubernetes 클러스터에 Anthropic Helm 차트를 사용하여 MCP 터널을 배포하는 가이드가 추가되었습니다.",
+        "tag_text": "NEW",
+        "tag_class": "new"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/agents-and-tools__mcp-tunnels__overview\" target=\"_blank\">Agents And Tools__Mcp Tunnels__Overview</a>",
+        "summary": "프라이빗 네트워크의 MCP 서버와 Claude를 안전하게 연결하는 MCP 터널(Research Preview) 기능 소개 문서가 추가되었습니다.",
+        "tag_text": "NEW",
+        "tag_class": "new"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/agents-and-tools__mcp-tunnels__quickstart\" target=\"_blank\">Agents And Tools__Mcp Tunnels__Quickstart</a>",
+        "summary": "Docker Compose를 사용해 비공개 MCP 서버를 Claude와 연결하는 빠른 시작 가이드 파일이 추가되었습니다.",
+        "tag_text": "NEW",
+        "tag_class": "new"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/agents-and-tools__mcp-tunnels__reference\" target=\"_blank\">Agents And Tools__Mcp Tunnels__Reference</a>",
+        "summary": "MCP 터널 레퍼런스 문서가 추가되어 프록시 설정, REST API, 인증서 요구사항 및 설정 컴포넌트 가이드를 제공합니다.",
+        "tag_text": "NEW",
+        "tag_class": "new"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/agents-and-tools__mcp-tunnels__security\" target=\"_blank\">Agents And Tools__Mcp Tunnels__Security</a>",
+        "summary": "MCP 터널 배포를 위한 보안 강화 가이드, 침해 대응 절차 및 터널 해체 방법 문서가 새로 추가되었습니다.",
+        "tag_text": "NEW",
+        "tag_class": "new"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/agents-and-tools__mcp-tunnels__troubleshooting\" target=\"_blank\">Agents And Tools__Mcp Tunnels__Troubleshooting</a>",
+        "summary": "MCP 터널 트러블슈팅 문서가 추가되었으며 연결, TLS, IP 검증, OAuth 라우팅 문제 해결 방법을 안내합니다.",
+        "tag_text": "NEW",
+        "tag_class": "new"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/agents-and-tools__remote-mcp-servers\" target=\"_blank\">Agents And Tools__Remote Mcp Servers</a>",
+        "summary": "원격 MCP 서버 문서가 추가되어 서드파티 서버 연결 방법과 예시를 제공하여 개발자의 확장성을 높입니다.",
+        "tag_text": "NEW",
+        "tag_class": "new"
+      },
+      {
+        "title": "Agents",
+        "summary": "문서가 삭제되었습니다.",
+        "tag_text": "DELETE",
+        "tag_class": "delete"
+      },
+      {
+        "title": "Amazon-Bedrock",
+        "summary": "문서가 삭제되었습니다.",
+        "tag_text": "DELETE",
+        "tag_class": "delete"
+      },
+      {
+        "title": "Analytics",
+        "summary": "문서가 삭제되었습니다.",
+        "tag_text": "DELETE",
+        "tag_class": "delete"
+      },
+      {
+        "title": "Artifacts",
+        "summary": "문서가 삭제되었습니다.",
+        "tag_text": "DELETE",
+        "tag_class": "delete"
+      },
+      {
+        "title": "Authentication",
+        "summary": "문서가 삭제되었습니다.",
+        "tag_text": "DELETE",
+        "tag_class": "delete"
+      },
+      {
+        "title": "Auto-Mode-Config",
+        "summary": "문서가 삭제되었습니다.",
+        "tag_text": "DELETE",
+        "tag_class": "delete"
+      },
+      {
+        "title": "Best-Practices",
+        "summary": "문서가 삭제되었습니다.",
+        "tag_text": "DELETE",
+        "tag_class": "delete"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/build-with-claude__batch-processing\" target=\"_blank\">Build With Claude__Batch Processing</a>",
+        "summary": "대규모 요청을 비동기식으로 처리하고 50% 비용 절감 및 처리량 향상을 제공하는 Message Batches API 가이드 문서가 추가되었습니다.",
+        "tag_text": "NEW",
+        "tag_class": "new"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/build-with-claude__cache-diagnostics\" target=\"_blank\">Build With Claude__Cache Diagnostics</a>",
+        "summary": "프롬프트 캐시 미스 원인을 진단하는 새로운 캐시 진단(Cache Diagnostics) 베타 기능 가이드가 추가되었습니다.",
+        "tag_text": "NEW",
+        "tag_class": "new"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/build-with-claude__citations\" target=\"_blank\">Build With Claude__Citations</a>",
+        "summary": "Claude의 답변 출처를 검증할 수 있는 새로운 Citations 기능 문서가 추가되었습니다.",
+        "tag_text": "NEW",
+        "tag_class": "new"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/build-with-claude__claude-in-amazon-bedrock\" target=\"_blank\">Build With Claude__Claude In Amazon Bedrock</a>",
+        "summary": "Amazon Bedrock에서 Claude 모델을 설정하고 사용하는 방법에 대한 가이드가 추가되었습니다.",
+        "tag_text": "NEW",
+        "tag_class": "new"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/build-with-claude__claude-in-microsoft-foundry\" target=\"_blank\">Build With Claude__Claude In Microsoft Foundry</a>",
+        "summary": "Microsoft Foundry에서 Claude 모델을 설정하고 사용하는 방법에 대한 새 가이드가 추가되었습니다.",
+        "tag_text": "NEW",
+        "tag_class": "new"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/build-with-claude__claude-on-amazon-bedrock-legacy\" target=\"_blank\">Build With Claude__Claude On Amazon Bedrock Legacy</a>",
+        "summary": "Amazon Bedrock을 위한 레거시 Claude 통합 문서가 추가되었으며, AWS SDK 설정 및 모델 접근 방법을 안내합니다.",
+        "tag_text": "NEW",
+        "tag_class": "new"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/build-with-claude__claude-on-vertex-ai\" target=\"_blank\">Build With Claude__Claude On Vertex Ai</a>",
+        "summary": "Google Cloud Vertex AI에서 Claude 모델을 사용하는 방법과 다국어 SDK 설치 및 요청 예제를 안내하는 문서가 추가되었습니다.",
+        "tag_text": "NEW",
+        "tag_class": "new"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/build-with-claude__claude-platform-on-aws\" target=\"_blank\">Build With Claude__Claude Platform On Aws</a>",
+        "summary": "AWS를 통해 앤스로픽 관리 인프라로 Claude 플랫폼을 사용하는 방법과 Amazon Bedrock과의 차이점을 설명하는 새 문서가 추가되었습니다.",
+        "tag_text": "NEW",
+        "tag_class": "new"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/build-with-claude__compaction\" target=\"_blank\">Build With Claude__Compaction</a>",
+        "summary": "긴 대화와 에이전트 워크플로우에서 컨텍스트를 자동으로 요약·관리하는 서버 측 콤팩션(Compaction) 기능 가이드가 추가되었습니다.",
+        "tag_text": "NEW",
+        "tag_class": "new"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/build-with-claude__context-editing\" target=\"_blank\">Build With Claude__Context Editing</a>",
+        "summary": "대화 컨텍스트를 자동으로 관리하는 컨텍스트 편집(Context Editing) 기능 문서가 추가되었습니다.",
+        "tag_text": "NEW",
+        "tag_class": "new"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/build-with-claude__context-windows\" target=\"_blank\">Build With Claude__Context Windows</a>",
+        "summary": "Claude의 컨텍스트 윈도우 동작 방식, 모델별 크기, 확장된 사고(thinking) 및 도구 사용 시의 토큰 관리 방법을 설명하는 새 문서가 추가되었습니다.",
+        "tag_text": "NEW",
+        "tag_class": "new"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/build-with-claude__effort\" target=\"_blank\">Build With Claude__Effort</a>",
+        "summary": "클로드의 응답 토큰 사용량과 추론 깊이를 조절하는 'effort' 파라미터 설정 가이드가 추가되었습니다.",
+        "tag_text": "NEW",
+        "tag_class": "new"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/build-with-claude__embeddings\" target=\"_blank\">Build With Claude__Embeddings</a>",
+        "summary": "Claude 생태계에서 임베딩 모델 사용을 위한 가이드 문서가 추가되었으며, 권장되는 Voyage AI 모델 목록과 사양을 안내합니다.",
+        "tag_text": "NEW",
+        "tag_class": "new"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/build-with-claude__extended-thinking\" target=\"_blank\">Build With Claude__Extended Thinking</a>",
+        "summary": "클로드 모델의 수동 확장 사고(Extended Thinking) 설정 및 적응형 사고 마이그레이션 가이드 문서가 추가되었습니다.",
+        "tag_text": "NEW",
+        "tag_class": "new"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/build-with-claude__fallback-credit\" target=\"_blank\">Build With Claude__Fallback Credit</a>",
+        "summary": "거절된 요청을 다른 모델로 재시도할 때 프롬프트 캐시 비용을 절감하는 'Fallback Credit' 기능에 대한 신규 문서입니다.",
+        "tag_text": "NEW",
+        "tag_class": "new"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/build-with-claude__fast-mode\" target=\"_blank\">Build With Claude__Fast Mode</a>",
+        "summary": "Claude Opus 모델의 출력을 최대 2.5배 높여주는 'Fast 모드' 기능 문서가 추가되었습니다.",
+        "tag_text": "NEW",
+        "tag_class": "new"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/build-with-claude__files\" target=\"_blank\">Build With Claude__Files</a>",
+        "summary": "Claude API의 새로운 파일 관리(Files API) 문서가 추가되어 업로드 및 메시지 참조 방법 등을 안내합니다.",
+        "tag_text": "NEW",
+        "tag_class": "new"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/build-with-claude__handling-stop-reasons\" target=\"_blank\">Build With Claude__Handling Stop Reasons</a>",
+        "summary": "Messages API의 stop_reason 필드 값과 의미, 각 중단 사유별(end_turn, max_tokens, tool_use 등) 대응 방법을 안내하는 문서가 추가되었습니다.",
+        "tag_text": "NEW",
+        "tag_class": "new"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/build-with-claude__mid-conversation-effort-example\" target=\"_blank\">Build With Claude__Mid Conversation Effort Example</a>",
+        "summary": "세션 수준의 오케스트레이션 모드 구축을 위한 새로운 문서가 추가되었으며, 다중 에이전트 팬아웃 활용 방법을 설명합니다.",
+        "tag_text": "NEW",
+        "tag_class": "new"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/build-with-claude__multilingual-support\" target=\"_blank\">Build With Claude__Multilingual Support</a>",
+        "summary": "Claude의 다국어 지원 기능, 성능 데이터, 응답 언어 설정 방법 및 모범 사례를 안내하는 새로운 문서가 추가되었습니다.",
+        "tag_text": "NEW",
+        "tag_class": "new"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/build-with-claude__overview\" target=\"_blank\">Build With Claude__Overview</a>",
+        "summary": "Claude API의 기능 영역, 가용성 분류 체계, 그리고 모델 기능(Capability)을 안내하는 새로운 개요 문서가 추가되었습니다.",
+        "tag_text": "NEW",
+        "tag_class": "new"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/build-with-claude__pdf-support\" target=\"_blank\">Build With Claude__Pdf Support</a>",
+        "summary": "Claude의 PDF 처리 기능 문서가 추가되었습니다. 텍스트 추출, 시각적 분석, 플랫폼별 사용법 및 제약사항을 안내합니다.",
+        "tag_text": "NEW",
+        "tag_class": "new"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/build-with-claude__preserved-thinking\" target=\"_blank\">Build With Claude__Preserved Thinking</a>",
+        "summary": "Claude 신규 모델의 '보존된 사고(Preserved Thinking)' 기능과 API 접두사 검증 규칙 및 통합 방법 가이드를 추가했습니다.",
+        "tag_text": "NEW",
+        "tag_class": "new"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/build-with-claude__prompt-caching\" target=\"_blank\">Build With Claude__Prompt Caching</a>",
+        "summary": "클로드 API의 비용과 지연 시간을 줄여주는 프롬프트 캐싱 기능 사용법에 대한 새 문서가 추가되었습니다.",
+        "tag_text": "NEW",
+        "tag_class": "new"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/build-with-claude__prompt-engineering__claude-prompting-best-practices\" target=\"_blank\">Build With Claude__Prompt Engineering__Claude Prompting Best Practices</a>",
+        "summary": "최신 Claude 모델을 위한 종합적인 프롬프트 엔지니어링 가이드가 추가되었으며, 모델별 지침, XML 구조화, 예시 활용 등의 모범 사례를 제공합니다.",
+        "tag_text": "NEW",
+        "tag_class": "new"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/build-with-claude__prompt-engineering__overview\" target=\"_blank\">Build With Claude__Prompt Engineering__Overview</a>",
+        "summary": "Claude 프롬프트 엔지니어링 가이드의 개요 문서가 새로 추가되었습니다. 효과적인 프롬프트 작성과 학습 리소스를 안내합니다.",
+        "tag_text": "NEW",
+        "tag_class": "new"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/build-with-claude__prompt-engineering__prompting-claude-fable-5\" target=\"_blank\">Build With Claude__Prompt Engineering__Prompting Claude Fable 5</a>",
+        "summary": "Claude Fable 5 및 Mythos 5 모델을 위한 프롬프팅 가이드가 추가되어, 장기 실행 작업, 지시어 준수, 노력 수준 제어 및 모범 사례를 안내합니다.",
+        "tag_text": "NEW",
+        "tag_class": "new"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/build-with-claude__prompt-engineering__prompting-claude-opus-4-8\" target=\"_blank\">Build With Claude__Prompt Engineering__Prompting Claude Opus 4 8</a>",
+        "summary": "Claude Opus 4.8 모델을 위한 프롬프트 엔지니어링 가이드가 추가되었으며, 상세도, 노력도 설정, 도구 사용, 하위 에이전트 제어 등 주요 동작 패턴과 튜닝 방법을 설명합니다.",
+        "tag_text": "NEW",
+        "tag_class": "new"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/build-with-claude__prompt-engineering__prompting-claude-opus-5\" target=\"_blank\">Build With Claude__Prompt Engineering__Prompting Claude Opus 5</a>",
+        "summary": "Claude Opus 5 모델의 프롬프트 엔지니어링 가이드가 추가되어, 응답 길이 제어, 서브에이전트 제어 및 작업 범위 설정 등의 최적화 패턴을 제공합니다.",
+        "tag_text": "NEW",
+        "tag_class": "new"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/build-with-claude__prompt-engineering__prompting-claude-sonnet-5\" target=\"_blank\">Build With Claude__Prompt Engineering__Prompting Claude Sonnet 5</a>",
+        "summary": "Claude Sonnet 5 프롬프트 엔지니어링 가이드 신설. 응답 길이, 노력 수준, 도구 사용, 마이그레이션 방법 등을 다룹니다.",
+        "tag_text": "NEW",
+        "tag_class": "new"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/build-with-claude__refusals-and-fallback\" target=\"_blank\">Build With Claude__Refusals And Fallback</a>",
+        "summary": "Claude 모델의 안전성 분류기 거부 응답(Refusal) 처리 및 대체 모델(Fallback) 설정 방법을 안내하는 새로운 문서가 추가되었습니다.",
+        "tag_text": "NEW",
+        "tag_class": "new"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/build-with-claude__search-results\" target=\"_blank\">Build With Claude__Search Results</a>",
+        "summary": "RAG 애플리케이션을 위한 Claude 검색 결과 및 자연 출처 인용(Citations) 기능 가이드가 추가되었습니다.",
+        "tag_text": "NEW",
+        "tag_class": "new"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/build-with-claude__skills-guide\" target=\"_blank\">Build With Claude__Skills Guide</a>",
+        "summary": "API를 통한 Claude의 에이전트 스킬(Agent Skills) 사용법을 안내하는 새로운 문서가 추가되었습니다.",
+        "tag_text": "NEW",
+        "tag_class": "new"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/build-with-claude__streaming\" target=\"_blank\">Build With Claude__Streaming</a>",
+        "summary": "Claude 메시지 스트리밍 API 사용법에 대한 새 문서가 추가되었습니다. 다양한 언어별 SDK 예제와 이벤트 처리 방법을 안내합니다.",
+        "tag_text": "NEW",
+        "tag_class": "new"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/build-with-claude__structured-outputs\" target=\"_blank\">Build With Claude__Structured Outputs</a>",
+        "summary": "구조화된 출력(Structured Outputs) 사용법을 안내하는 신규 문서가 추가되었습니다.",
+        "tag_text": "NEW",
+        "tag_class": "new"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/build-with-claude__task-budgets\" target=\"_blank\">Build With Claude__Task Budgets</a>",
+        "summary": "에이전틱 작업 시 Claude가 스스로 토큰 예산을 관리하도록 돕는 'Task budgets' 기능 문서가 추가되었습니다.",
+        "tag_text": "NEW",
+        "tag_class": "new"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/build-with-claude__thinking-tool-workflows\" target=\"_blank\">Build With Claude__Thinking Tool Workflows</a>",
+        "summary": "Claude의 사고(Thinking) 기능과 도구 사용(Tool-use) 워크플로우를 결합하는 방법과 필수 규칙을 안내하는 문서가 추가되었습니다.",
+        "tag_text": "NEW",
+        "tag_class": "new"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/build-with-claude__thinking-troubleshooting\" target=\"_blank\">Build With Claude__Thinking Troubleshooting</a>",
+        "summary": "Claude의 Thinking 기능 설정 오류와 해결 방법을 다루는 새로운 문서가 추가되었습니다.",
+        "tag_text": "NEW",
+        "tag_class": "new"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/build-with-claude__thinking\" target=\"_blank\">Build With Claude__Thinking</a>",
+        "summary": "Claude의 Thinking 기능 사용법, 설정, API 연동 가이드를 담은 새로운 문서가 추가되었습니다.",
+        "tag_text": "NEW",
+        "tag_class": "new"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/build-with-claude__token-counting\" target=\"_blank\">Build With Claude__Token Counting</a>",
+        "summary": "Claude API의 토큰 카운팅 기능 사용법을 안내하는 새로운 문서가 추가되었습니다. 비용 관리 및 프롬프트 최적화에 유용합니다.",
+        "tag_text": "NEW",
+        "tag_class": "new"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/build-with-claude__vision-coordinates\" target=\"_blank\">Build With Claude__Vision Coordinates</a>",
+        "summary": "Claude의 비전 좌표 및 바운딩 박스 사용법을 다루는 새 문서가 추가되어 이미지 리사이징 및 좌표 매핑 방법을 안내합니다.",
+        "tag_text": "NEW",
+        "tag_class": "new"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/build-with-claude__vision\" target=\"_blank\">Build With Claude__Vision</a>",
+        "summary": "Claude의 비전 기능 사용법을 안내하는 새로운 문서가 추가되었습니다. API를 통한 이미지 전달 방식과 다중 언어 코드 예제를 제공합니다.",
+        "tag_text": "NEW",
+        "tag_class": "new"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/build-with-claude__working-with-messages\" target=\"_blank\">Build With Claude__Working With Messages</a>",
+        "summary": "Messages API 사용법을 안내하는 문서가 추가되었습니다. 기본 요청, 멀티턴 대화, 다양한 언어별 예제를 제공합니다.",
+        "tag_text": "NEW",
+        "tag_class": "new"
+      },
+      {
+        "title": "Champion-Kit",
+        "summary": "문서가 삭제되었습니다.",
+        "tag_text": "DELETE",
+        "tag_class": "delete"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/changelog\" target=\"_blank\">Changelog</a>",
+        "summary": "Claude Code의 2.1.277 및 2.1.278 버전 업데이트로, Claude API 자동 모드 서버 기본 설정, AGENTS.md 지원 추가, 세션 행 및 오류 처리 개선, 그리고 다수의 버그와 충돌 문제가 수정되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/d6e5dd7_changelog.txt"
+      },
+      {
+        "title": "Channels-Reference",
+        "summary": "문서가 삭제되었습니다.",
+        "tag_text": "DELETE",
+        "tag_class": "delete"
+      },
+      {
+        "title": "Channels",
+        "summary": "문서가 삭제되었습니다.",
+        "tag_text": "DELETE",
+        "tag_class": "delete"
+      },
+      {
+        "title": "Checkpointing",
+        "summary": "문서가 삭제되었습니다.",
+        "tag_text": "DELETE",
+        "tag_class": "delete"
+      },
+      {
+        "title": "Chrome",
+        "summary": "문서가 삭제되었습니다.",
+        "tag_text": "DELETE",
+        "tag_class": "delete"
+      },
+      {
+        "title": "Claude-Apps-Gateway-Config",
+        "summary": "문서가 삭제되었습니다.",
+        "tag_text": "DELETE",
+        "tag_class": "delete"
+      },
+      {
+        "title": "Claude-Apps-Gateway-Deploy",
+        "summary": "문서가 삭제되었습니다.",
+        "tag_text": "DELETE",
+        "tag_class": "delete"
+      },
+      {
+        "title": "Claude-Apps-Gateway-On-Aws",
+        "summary": "문서가 삭제되었습니다.",
+        "tag_text": "DELETE",
+        "tag_class": "delete"
+      },
+      {
+        "title": "Claude-Apps-Gateway-On-Gcp",
+        "summary": "문서가 삭제되었습니다.",
+        "tag_text": "DELETE",
+        "tag_class": "delete"
+      },
+      {
+        "title": "Claude-Apps-Gateway-Spend-Limits",
+        "summary": "문서가 삭제되었습니다.",
+        "tag_text": "DELETE",
+        "tag_class": "delete"
+      },
+      {
+        "title": "Claude-Apps-Gateway",
+        "summary": "문서가 삭제되었습니다.",
+        "tag_text": "DELETE",
+        "tag_class": "delete"
+      },
+      {
+        "title": "Claude-Code-On-The-Web",
+        "summary": "문서가 삭제되었습니다.",
+        "tag_text": "DELETE",
+        "tag_class": "delete"
+      },
+      {
+        "title": "Claude-Directory",
+        "summary": "문서가 삭제되었습니다.",
+        "tag_text": "DELETE",
+        "tag_class": "delete"
+      },
+      {
+        "title": "Claude-Platform-On-Aws",
+        "summary": "문서가 삭제되었습니다.",
+        "tag_text": "DELETE",
+        "tag_class": "delete"
+      },
+      {
+        "title": "Claude-Projects",
+        "summary": "문서가 삭제되었습니다.",
+        "tag_text": "DELETE",
+        "tag_class": "delete"
+      },
+      {
+        "title": "Claude-Security",
+        "summary": "문서가 삭제되었습니다.",
+        "tag_text": "DELETE",
+        "tag_class": "delete"
+      },
+      {
+        "title": "Claude-Tag",
+        "summary": "문서가 삭제되었습니다.",
+        "tag_text": "DELETE",
+        "tag_class": "delete"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/claude_api_primer\" target=\"_blank\">Claude_Api_Primer</a>",
+        "summary": "Claude API 사용법을 안내하는 새로운 가이드 문서가 추가되었습니다. 모델 정보, 기본 메시지 API, 멀티모달(Vision), 어댑티브 사고(Thinking) 기능 등의 예제와 설명을 포함합니다.",
+        "tag_text": "NEW",
+        "tag_class": "new"
+      },
+      {
+        "title": "Cli-Reference",
+        "summary": "문서가 삭제되었습니다.",
+        "tag_text": "DELETE",
+        "tag_class": "delete"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/cli-sdks-libraries__cli__apply\" target=\"_blank\">Cli Sdks Libraries__Cli__Apply</a>",
+        "summary": "ant apply CLI를 사용하여 에이전트, 환경, 스킬 등 Claude API 리소스를 코드로 관리하는 새로운 문서가 추가되었습니다.",
+        "tag_text": "NEW",
+        "tag_class": "new"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/cli-sdks-libraries__cli__authentication\" target=\"_blank\">Cli Sdks Libraries__Cli__Authentication</a>",
+        "summary": "ant CLI 인증 옵션 문서가 추가되었습니다. 대화형 로그인, API 키, 네임드 프로필 및 WIF 설정 방법을 안내합니다.",
+        "tag_text": "NEW",
+        "tag_class": "new"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/cli-sdks-libraries__cli__quickstart\" target=\"_blank\">Cli Sdks Libraries__Cli__Quickstart</a>",
+        "summary": "Claude API를 터미널에서 사용하기 위한 'ant' CLI 도구의 설치, 인증 및 첫 요청 가이드 문서가 새로 추가되었습니다.",
+        "tag_text": "NEW",
+        "tag_class": "new"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/cli-sdks-libraries__cli__scripting\" target=\"_blank\">Cli Sdks Libraries__Cli__Scripting</a>",
+        "summary": "CLI 스크립팅 및 자동화 가이드가 추가되어, API 리소스 버전 관리, 셸 스크립트 연동, Claude Code 활용 및 인증 방법을 제공합니다.",
+        "tag_text": "NEW",
+        "tag_class": "new"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/cli-sdks-libraries__cli__sessions-connect\" target=\"_blank\">Cli Sdks Libraries__Cli__Sessions Connect</a>",
+        "summary": "Managed Agents 세션 연결을 위한 ant CLI 명령어 문서가 추가되어, 터미널에서 실시간 모니터링 및 제어가 가능해졌습니다.",
+        "tag_text": "NEW",
+        "tag_class": "new"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/cli-sdks-libraries__cli__using\" target=\"_blank\">Cli Sdks Libraries__Cli__Using</a>",
+        "summary": "ant CLI의 명령어 구조, 출력 형식, GJSON 변환, 요청 본문 전달 방식 등을 다루는 새로운 사용 설명서 문서가 추가되었습니다.",
+        "tag_text": "NEW",
+        "tag_class": "new"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/cli-sdks-libraries__libraries__apple-foundation-models\" target=\"_blank\">Cli Sdks Libraries__Libraries__Apple Foundation Models</a>",
+        "summary": "애플 Foundation Models 프레임워크에서 Claude를 사용할 수 있는 Swift 패키지 문서가 추가되었습니다.",
+        "tag_text": "NEW",
+        "tag_class": "new"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/cli-sdks-libraries__libraries__openai-sdk\" target=\"_blank\">Cli Sdks Libraries__Libraries__Openai Sdk</a>",
+        "summary": "OpenAI SDK를 사용하여 Claude API를 테스트할 수 있는 호환성 계층 가이드 문서가 추가되었습니다.",
+        "tag_text": "NEW",
+        "tag_class": "new"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/cli-sdks-libraries__middleware\" target=\"_blank\">Cli Sdks Libraries__Middleware</a>",
+        "summary": "Anthropic SDK의 요청/응답 인터셉트 및 수정을 위한 미들웨어 사용법 문서가 추가되었습니다.",
+        "tag_text": "NEW",
+        "tag_class": "new"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/cli-sdks-libraries__overview\" target=\"_blank\">Cli Sdks Libraries__Overview</a>",
+        "summary": "Claude API 개발을 위한 공식 CLI, 7개 언어별 SDK, 연동 라이브러리 정보를 제공하는 새로운 개요 문서가 추가되었습니다.",
+        "tag_text": "NEW",
+        "tag_class": "new"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/cli-sdks-libraries__sdks__csharp\" target=\"_blank\">Cli Sdks Libraries__Sdks__Csharp</a>",
+        "summary": "Anthropic C# SDK의 설치, 클라이언트 구성, 스트리밍, 오류 처리, 재시도 및 IChatClient 통합 방법 등을 안내하는 새로운 문서가 추가되었습니다.",
+        "tag_text": "NEW",
+        "tag_class": "new"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/cli-sdks-libraries__sdks__go\" target=\"_blank\">Cli Sdks Libraries__Sdks__Go</a>",
+        "summary": "Anthropic Go SDK 문서가 추가되어 설치, 요구사항, 기본 사용법 및 요청 필드 처리 방법을 안내합니다.",
+        "tag_text": "NEW",
+        "tag_class": "new"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/cli-sdks-libraries__sdks__java\" target=\"_blank\">Cli Sdks Libraries__Sdks__Java</a>",
+        "summary": "Anthropic Java SDK 문서가 추가되어 설치, 빌더 패턴을 이용한 클라이언트 설정, 동기/비동기 및 스트리밍 사용법을 제공합니다.",
+        "tag_text": "NEW",
+        "tag_class": "new"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/cli-sdks-libraries__sdks__php\" target=\"_blank\">Cli Sdks Libraries__Sdks__Php</a>",
+        "summary": "Anthropic PHP SDK 공식 문서 추가. 설치, 사용법, 스트리밍, 에러 핸들링, 재시도, 페이지네이션 및 플랫폼 통합 가이드 제공.",
+        "tag_text": "NEW",
+        "tag_class": "new"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/cli-sdks-libraries__sdks__python\" target=\"_blank\">Cli Sdks Libraries__Sdks__Python</a>",
+        "summary": "Anthropic Python SDK 문서가 추가되어 설치, 동기/비동기 클라이언트, 스트리밍, 도구 사용 및 배치 처리 방법을 제공합니다.",
+        "tag_text": "NEW",
+        "tag_class": "new"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/cli-sdks-libraries__sdks__ruby\" target=\"_blank\">Cli Sdks Libraries__Sdks__Ruby</a>",
+        "summary": "앤트로픽 Ruby SDK 설치, 설정 및 사용법(스트리밍, 도구 호출, 에러 처리 등)을 안내하는 신규 문서가 추가되었습니다.",
+        "tag_text": "NEW",
+        "tag_class": "new"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/cli-sdks-libraries__sdks__typescript\" target=\"_blank\">Cli Sdks Libraries__Sdks__Typescript</a>",
+        "summary": "Anthropic TypeScript SDK의 설치, 설정, 스트리밍, 도구(Tool) 및 MCP(Model Context Protocol) 활용법을 다루는 공식 문서가 추가되었습니다.",
+        "tag_text": "NEW",
+        "tag_class": "new"
+      },
+      {
+        "title": "Cloud-Environments",
+        "summary": "문서가 삭제되었습니다.",
+        "tag_text": "DELETE",
+        "tag_class": "delete"
+      },
+      {
+        "title": "Code-Review",
+        "summary": "문서가 삭제되었습니다.",
+        "tag_text": "DELETE",
+        "tag_class": "delete"
+      },
+      {
+        "title": "Commands",
+        "summary": "문서가 삭제되었습니다.",
+        "tag_text": "DELETE",
+        "tag_class": "delete"
+      },
+      {
+        "title": "Common-Workflows",
+        "summary": "문서가 삭제되었습니다.",
+        "tag_text": "DELETE",
+        "tag_class": "delete"
+      },
+      {
+        "title": "Communications-Kit",
+        "summary": "문서가 삭제되었습니다.",
+        "tag_text": "DELETE",
+        "tag_class": "delete"
+      },
+      {
+        "title": "Computer-Use",
+        "summary": "문서가 삭제되었습니다.",
+        "tag_text": "DELETE",
+        "tag_class": "delete"
+      },
+      {
+        "title": "Context-Window",
+        "summary": "문서가 삭제되었습니다.",
+        "tag_text": "DELETE",
+        "tag_class": "delete"
+      },
+      {
+        "title": "Corporate-Launcher",
+        "summary": "문서가 삭제되었습니다.",
+        "tag_text": "DELETE",
+        "tag_class": "delete"
+      },
+      {
+        "title": "Costs",
+        "summary": "문서가 삭제되었습니다.",
+        "tag_text": "DELETE",
+        "tag_class": "delete"
+      },
+      {
+        "title": "Cross-Session-Messaging",
+        "summary": "문서가 삭제되었습니다.",
+        "tag_text": "DELETE",
+        "tag_class": "delete"
+      },
+      {
+        "title": "Data-Usage",
+        "summary": "문서가 삭제되었습니다.",
+        "tag_text": "DELETE",
+        "tag_class": "delete"
+      },
+      {
+        "title": "Debug-Your-Config",
+        "summary": "문서가 삭제되었습니다.",
+        "tag_text": "DELETE",
+        "tag_class": "delete"
+      },
+      {
+        "title": "Deep-Links",
+        "summary": "문서가 삭제되었습니다.",
+        "tag_text": "DELETE",
+        "tag_class": "delete"
+      },
+      {
+        "title": "Desktop-Ios-Simulator",
+        "summary": "문서가 삭제되었습니다.",
+        "tag_text": "DELETE",
+        "tag_class": "delete"
+      },
+      {
+        "title": "Desktop-Linux",
+        "summary": "문서가 삭제되었습니다.",
+        "tag_text": "DELETE",
+        "tag_class": "delete"
+      },
+      {
+        "title": "Desktop-Quickstart",
+        "summary": "문서가 삭제되었습니다.",
+        "tag_text": "DELETE",
+        "tag_class": "delete"
+      },
+      {
+        "title": "Desktop-Scheduled-Tasks",
+        "summary": "문서가 삭제되었습니다.",
+        "tag_text": "DELETE",
+        "tag_class": "delete"
+      },
+      {
+        "title": "Desktop-Wsl",
+        "summary": "문서가 삭제되었습니다.",
+        "tag_text": "DELETE",
+        "tag_class": "delete"
+      },
+      {
+        "title": "Desktop",
+        "summary": "문서가 삭제되었습니다.",
+        "tag_text": "DELETE",
+        "tag_class": "delete"
+      },
+      {
+        "title": "Devcontainer",
+        "summary": "문서가 삭제되었습니다.",
+        "tag_text": "DELETE",
+        "tag_class": "delete"
+      },
+      {
+        "title": "Discover-Plugins",
+        "summary": "문서가 삭제되었습니다.",
+        "tag_text": "DELETE",
+        "tag_class": "delete"
+      },
+      {
+        "title": "Env-Vars",
+        "summary": "문서가 삭제되었습니다.",
+        "tag_text": "DELETE",
+        "tag_class": "delete"
+      },
+      {
+        "title": "Errors",
+        "summary": "문서가 삭제되었습니다.",
+        "tag_text": "DELETE",
+        "tag_class": "delete"
+      },
+      {
+        "title": "Fast-Mode",
+        "summary": "문서가 삭제되었습니다.",
+        "tag_text": "DELETE",
+        "tag_class": "delete"
+      },
+      {
+        "title": "Feature-Availability",
+        "summary": "문서가 삭제되었습니다.",
+        "tag_text": "DELETE",
+        "tag_class": "delete"
+      },
+      {
+        "title": "Features-Overview",
+        "summary": "문서가 삭제되었습니다.",
+        "tag_text": "DELETE",
+        "tag_class": "delete"
+      },
+      {
+        "title": "Fullscreen",
+        "summary": "문서가 삭제되었습니다.",
+        "tag_text": "DELETE",
+        "tag_class": "delete"
+      },
+      {
+        "title": "Gateways",
+        "summary": "문서가 삭제되었습니다.",
+        "tag_text": "DELETE",
+        "tag_class": "delete"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/get-api-key\" target=\"_blank\">Get Api Key</a>",
+        "summary": "Claude API 키 발급 및 관리 방법을 안내하는 새로운 문서가 추가되었습니다. 키 종류 선택, 생성 절차, 환경 설정 및 관리 방법을 제공하여 개발 시작을 돕습니다.",
+        "tag_text": "NEW",
+        "tag_class": "new"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/get-started\" target=\"_blank\">Get Started</a>",
+        "summary": "Claude API 사용을 시작하기 위한 가이드 파일이 추가되었으며, cURL, CLI, Python, TypeScript, C#, Go 등 다양한 환경별 API 호출 방법을 안내합니다.",
+        "tag_text": "NEW",
+        "tag_class": "new"
+      },
+      {
+        "title": "Github-Actions-Cloud-Providers",
+        "summary": "문서가 삭제되었습니다.",
+        "tag_text": "DELETE",
+        "tag_class": "delete"
+      },
+      {
+        "title": "Github-Actions",
+        "summary": "문서가 삭제되었습니다.",
+        "tag_text": "DELETE",
+        "tag_class": "delete"
+      },
+      {
+        "title": "Github-Enterprise-Server",
+        "summary": "문서가 삭제되었습니다.",
+        "tag_text": "DELETE",
+        "tag_class": "delete"
+      },
+      {
+        "title": "Gitlab-Ci-Cd",
+        "summary": "문서가 삭제되었습니다.",
+        "tag_text": "DELETE",
+        "tag_class": "delete"
+      },
+      {
+        "title": "Glossary",
+        "summary": "문서가 삭제되었습니다.",
+        "tag_text": "DELETE",
+        "tag_class": "delete"
+      },
+      {
+        "title": "Goal",
+        "summary": "문서가 삭제되었습니다.",
+        "tag_text": "DELETE",
+        "tag_class": "delete"
+      },
+      {
+        "title": "Google-Vertex-Ai",
+        "summary": "문서가 삭제되었습니다.",
+        "tag_text": "DELETE",
+        "tag_class": "delete"
+      },
+      {
+        "title": "Headless",
+        "summary": "문서가 삭제되었습니다.",
+        "tag_text": "DELETE",
+        "tag_class": "delete"
+      },
+      {
+        "title": "Hooks-Guide",
+        "summary": "문서가 삭제되었습니다.",
+        "tag_text": "DELETE",
+        "tag_class": "delete"
+      },
+      {
+        "title": "Hooks",
+        "summary": "문서가 삭제되었습니다.",
+        "tag_text": "DELETE",
+        "tag_class": "delete"
+      },
+      {
+        "title": "How-Claude-Code-Works",
+        "summary": "문서가 삭제되었습니다.",
+        "tag_text": "DELETE",
+        "tag_class": "delete"
+      },
+      {
+        "title": "Interactive-Mode",
+        "summary": "문서가 삭제되었습니다.",
+        "tag_text": "DELETE",
+        "tag_class": "delete"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/intro\" target=\"_blank\">Intro</a>",
+        "summary": "Claude 플랫폼의 신규 개발자를 위한 공식 소개 문서가 추가되었으며, API 활용법, 모델 정보, 추천 개발 경로 등을 안내합니다.",
+        "tag_text": "NEW",
+        "tag_class": "new"
+      },
+      {
+        "title": "Jetbrains",
+        "summary": "문서가 삭제되었습니다.",
+        "tag_text": "DELETE",
+        "tag_class": "delete"
+      },
+      {
+        "title": "Keybindings",
+        "summary": "문서가 삭제되었습니다.",
+        "tag_text": "DELETE",
+        "tag_class": "delete"
+      },
+      {
+        "title": "Large-Codebases",
+        "summary": "문서가 삭제되었습니다.",
+        "tag_text": "DELETE",
+        "tag_class": "delete"
+      },
+      {
+        "title": "Legal-And-Compliance",
+        "summary": "문서가 삭제되었습니다.",
+        "tag_text": "DELETE",
+        "tag_class": "delete"
+      },
+      {
+        "title": "Llm-Gateway-Connect",
+        "summary": "문서가 삭제되었습니다.",
+        "tag_text": "DELETE",
+        "tag_class": "delete"
+      },
+      {
+        "title": "Llm-Gateway-Protocol",
+        "summary": "문서가 삭제되었습니다.",
+        "tag_text": "DELETE",
+        "tag_class": "delete"
+      },
+      {
+        "title": "Llm-Gateway-Rollout",
+        "summary": "문서가 삭제되었습니다.",
+        "tag_text": "DELETE",
+        "tag_class": "delete"
+      },
+      {
+        "title": "Llm-Gateway",
+        "summary": "문서가 삭제되었습니다.",
+        "tag_text": "DELETE",
+        "tag_class": "delete"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/manage-claude__access-transparency\" target=\"_blank\">Manage Claude__Access Transparency</a>",
+        "summary": "Anthropic 인력의 데이터 접근 기록을 Compliance API로 제공하는 'Access Transparency' 기능 문서가 추가되었습니다.",
+        "tag_text": "NEW",
+        "tag_class": "new"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/manage-claude__admin-api-keys\" target=\"_blank\">Manage Claude__Admin Api Keys</a>",
+        "summary": "Claude Console 및 Claude Enterprise 조직의 관리자 API 키 생성 방법을 안내하는 새로운 문서가 추가되었습니다.",
+        "tag_text": "NEW",
+        "tag_class": "new"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/manage-claude__admin-api\" target=\"_blank\">Manage Claude__Admin Api</a>",
+        "summary": "조직 멤버, 워크스페이스, 초대 및 API 키를 프로그래밍 방식으로 관리할 수 있는 Admin API 문서가 새로 추가되었습니다.",
+        "tag_text": "NEW",
+        "tag_class": "new"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/manage-claude__analytics-api\" target=\"_blank\">Manage Claude__Analytics Api</a>",
+        "summary": "Claude Code 및 Claude Enterprise 분석 API 사용법과 접근 권한 설정 방법에 대한 신규 문서가 추가되었습니다.",
+        "tag_text": "NEW",
+        "tag_class": "new"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/manage-claude__api-and-data-retention\" target=\"_blank\">Manage Claude__Api And Data Retention</a>",
+        "summary": "Anthropic의 API 및 데이터 보존 정책을 안내하는 신규 문서로, ZDR(데이터 무보존)과 HIPAA 준수 관련 범위 및 상세 내용을 설명합니다.",
+        "tag_text": "NEW",
+        "tag_class": "new"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/manage-claude__app-attest\" target=\"_blank\">Manage Claude__App Attest</a>",
+        "summary": "Apple App Attest를 활용해 API 키나 프록시 없이 iOS 및 macOS 앱에서 안전하게 Claude API를 호출하는 설정 방법이 추가되었습니다.",
+        "tag_text": "NEW",
+        "tag_class": "new"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/manage-claude__authentication\" target=\"_blank\">Manage Claude__Authentication</a>",
+        "summary": "Claude API 인증 문서가 새로 추가되었으며, API 키, 워크로드 아이덴티티 페더레이션, 앱 어테스트 방식에 대한 가이드를 제공합니다.",
+        "tag_text": "NEW",
+        "tag_class": "new"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/manage-claude__claude-code-analytics-api\" target=\"_blank\">Manage Claude__Claude Code Analytics Api</a>",
+        "summary": "Claude Code Analytics Admin API 문서가 새로 추가되었습니다. 조직별 사용량, 생산성 지표, 비용 등을 프로그래밍 방식으로 조회할 수 있습니다.",
+        "tag_text": "NEW",
+        "tag_class": "new"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/manage-claude__cmek-aws-kms\" target=\"_blank\">Manage Claude__Cmek Aws Kms</a>",
+        "summary": "AWS KMS를 활용한 고객 관리형 암호화 키(CMEK) 설정 가이드가 추가되어 보안 설정 방법과 절차를 제공합니다.",
+        "tag_text": "NEW",
+        "tag_class": "new"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/manage-claude__cmek-azure-key-vault\" target=\"_blank\">Manage Claude__Cmek Azure Key Vault</a>",
+        "summary": "조직의 데이터 암호화를 위해 Azure Key Vault를 CMEK(고객 관리형 암호화 키)로 구성하는 방법에 대한 새로운 가이드가 추가되었습니다.",
+        "tag_text": "NEW",
+        "tag_class": "new"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/manage-claude__cmek\" target=\"_blank\">Manage Claude__Cmek</a>",
+        "summary": "자체 관리형 암호화 키(CMEK) 설정 가이드가 추가되어, 워크스페이스 데이터 보안을 위한 클라우드 제공업체 키 연동 방법을 안내합니다.",
+        "tag_text": "NEW",
+        "tag_class": "new"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/manage-claude__compliance-activity-feed\" target=\"_blank\">Manage Claude__Compliance Activity Feed</a>",
+        "summary": "조직의 컴플라이언스 API 활동 피드 조회, 필터링 및 페이지네이션 방법을 안내하는 신규 문서가 추가되었습니다.",
+        "tag_text": "NEW",
+        "tag_class": "new"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/manage-claude__compliance-api-access\" target=\"_blank\">Manage Claude__Compliance Api Access</a>",
+        "summary": "Compliance API 설정 및 API 키 생성 방법을 안내하는 새 문서가 추가되었습니다.",
+        "tag_text": "NEW",
+        "tag_class": "new"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/manage-claude__compliance-api\" target=\"_blank\">Manage Claude__Compliance Api</a>",
+        "summary": "조직의 활동, 채팅, 파일 및 사용자 정보에 프로그래밍 방식으로 접근하여 감사 및 거버넌스를 수행할 수 있는 컴플라이언스 API 문서가 추가되었습니다.",
+        "tag_text": "NEW",
+        "tag_class": "new"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/manage-claude__compliance-content-data\" target=\"_blank\">Manage Claude__Compliance Content Data</a>",
+        "summary": "Compliance API를 통한 Claude Enterprise 조직의 채팅, 파일, 프로젝트 조회 및 삭제 문서가 추가되었습니다.",
+        "tag_text": "NEW",
+        "tag_class": "new"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/manage-claude__compliance-errors\" target=\"_blank\">Manage Claude__Compliance Errors</a>",
+        "summary": "Compliance API 에러 응답 및 처리 방법을 안내하는 새로운 문서가 추가되어 장애 대응과 디버깅 효율성이 향상됩니다.",
+        "tag_text": "NEW",
+        "tag_class": "new"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/manage-claude__compliance-faq\" target=\"_blank\">Manage Claude__Compliance Faq</a>",
+        "summary": "Compliance API 접근, 범위, 데이터 보존 및 통합에 대한 자주 묻는 질문(FAQ) 문서가 추가되었습니다.",
+        "tag_text": "NEW",
+        "tag_class": "new"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/manage-claude__compliance-integration-patterns\" target=\"_blank\">Manage Claude__Compliance Integration Patterns</a>",
+        "summary": "Compliance API 통합 패턴 가이드가 추가되었으며, 액티비티 피드 소비 방식, SIEM 연동, 콘텐츠 보존 계획 등을 다룹니다.",
+        "tag_text": "NEW",
+        "tag_class": "new"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/manage-claude__compliance-org-data\" target=\"_blank\">Manage Claude__Compliance Org Data</a>",
+        "summary": "조직, 사용자, 역할, 그룹 및 설정을 관리하기 위한 Compliance API 사용법 문서가 새롭게 추가되었습니다.",
+        "tag_text": "NEW",
+        "tag_class": "new"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/manage-claude__compliance-sessions\" target=\"_blank\">Manage Claude__Compliance Sessions</a>",
+        "summary": "Claude Enterprise 조직을 위한 Compliance API 세션 트랜스크립트 조회 문서가 추가되어 로컬 및 원격 세션 관리 방법을 안내합니다.",
+        "tag_text": "NEW",
+        "tag_class": "new"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/manage-claude__data-residency\" target=\"_blank\">Manage Claude__Data Residency</a>",
+        "summary": "데이터 주권 및 위치 제어를 위한 새로운 'Data residency' 문서가 추가되었습니다. 추론 및 워크스페이스 지역 설정 방법을 설명합니다.",
+        "tag_text": "NEW",
+        "tag_class": "new"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/manage-claude__inference-hooks-configuration\" target=\"_blank\">Manage Claude__Inference Hooks Configuration</a>",
+        "summary": "Claude Enterprise 조직을 위한 Inference hooks 설정 가이드가 추가되어 AI 보안 서버 연결, 오류 처리 및 롤아웃을 관리할 수 있게 되었습니다.",
+        "tag_text": "NEW",
+        "tag_class": "new"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/manage-claude__inference-hooks-endpoint\" target=\"_blank\">Manage Claude__Inference Hooks Endpoint</a>",
+        "summary": "Inference hooks 연동을 위한 AI 보안 서버 구축 가이드(프로토콜, 요청/응답 스키마, 서명 검증 등)가 추가되었습니다.",
+        "tag_text": "NEW",
+        "tag_class": "new"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/manage-claude__inference-hooks\" target=\"_blank\">Manage Claude__Inference Hooks</a>",
+        "summary": "Claude Enterprise 조직이 AI 보안 서버를 통해 프롬프트를 사전 검사하여 허용/거부할 수 있는 Inference hooks 기능 문서가 추가되었습니다.",
+        "tag_text": "NEW",
+        "tag_class": "new"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/manage-claude__rate-limits-api\" target=\"_blank\">Manage Claude__Rate Limits Api</a>",
+        "summary": "조직 및 워크스페이스의 API 사용량 제한을 프로그래밍 방식으로 조회할 수 있는 Rate Limits API 문서가 새로 추가되었습니다.",
+        "tag_text": "NEW",
+        "tag_class": "new"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/manage-claude__spend-limits-api\" target=\"_blank\">Manage Claude__Spend Limits Api</a>",
+        "summary": "Claude Enterprise 조직을 위한 Spend Limits API 문서가 추가되었습니다. 멤버별 지출 한도 설정 및 한도 증가 요청 관리 기능을 제공합니다.",
+        "tag_text": "NEW",
+        "tag_class": "new"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/manage-claude__usage-cost-api\" target=\"_blank\">Manage Claude__Usage Cost Api</a>",
+        "summary": "조직의 API 사용량과 비용을 프로그래밍 방식으로 관리할 수 있는 새로운 Usage & Cost Admin API 문서가 추가되었습니다.",
+        "tag_text": "NEW",
+        "tag_class": "new"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/manage-claude__user-management\" target=\"_blank\">Manage Claude__User Management</a>",
+        "summary": "Claude Enterprise 조직의 Admin API를 활용한 사용자 관리, 초대, 그룹 및 커스텀 역할 관리 방법을 다루는 새로운 문서가 추가되었습니다.",
+        "tag_text": "NEW",
+        "tag_class": "new"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/manage-claude__wif-admin-api\" target=\"_blank\">Manage Claude__Wif Admin Api</a>",
+        "summary": "워크로드 아이덴티티 페더레이션(WIF) 관리와 관련된 Admin API 가이드 문서가 추가되었습니다. 인프라 코드화 및 CI 워크플로우 자동화를 지원합니다.",
+        "tag_text": "NEW",
+        "tag_class": "new"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/manage-claude__wif-providers__aws\" target=\"_blank\">Manage Claude__Wif Providers__Aws</a>",
+        "summary": "AWS 워크로드(Lambda, EC2 등)에서 WIF를 통해 Claude API에 인증하는 새로운 가이드 문서가 추가되었습니다.",
+        "tag_text": "NEW",
+        "tag_class": "new"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/manage-claude__wif-providers__azure\" target=\"_blank\">Manage Claude__Wif Providers__Azure</a>",
+        "summary": "Microsoft Entra ID(구 Azure AD)와 Claude API 간 워크로드 아이덴티티 페더레이션(WIF) 설정을 위한 가이드가 추가되었습니다.",
+        "tag_text": "NEW",
+        "tag_class": "new"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/manage-claude__wif-providers__gcp\" target=\"_blank\">Manage Claude__Wif Providers__Gcp</a>",
+        "summary": "Google Cloud WIF(Workload Identity Federation) 연동 가이드가 추가되어, GCP 환경에서 API 키 없이 안전하게 Claude API를 호출할 수 있게 되었습니다.",
+        "tag_text": "NEW",
+        "tag_class": "new"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/manage-claude__wif-providers__github-actions\" target=\"_blank\">Manage Claude__Wif Providers__Github Actions</a>",
+        "summary": "GitHub Actions에서 워크로드 아이덴티티 페더레이션(WIF)을 활용해 API 키 없이 안전하게 Claude API를 인증 및 호출하는 방법을 안내합니다.",
+        "tag_text": "NEW",
+        "tag_class": "new"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/manage-claude__wif-providers__kubernetes\" target=\"_blank\">Manage Claude__Wif Providers__Kubernetes</a>",
+        "summary": "Kubernetes WIF(Workload Identity Federation) 연동 가이드가 추가되어, 자체 관리형 클러스터에서 안전하게 Claude API를 인증하고 토큰을 발급받는 방법을 제공합니다.",
+        "tag_text": "NEW",
+        "tag_class": "new"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/manage-claude__wif-providers__okta\" target=\"_blank\">Manage Claude__Wif Providers__Okta</a>",
+        "summary": "Okta 워크로드 아이덴티티 연동(WIF) 문서 추가. Okta OIDC 토큰을 Anthropic API 액세스로 교환하는 방법 안내.",
+        "tag_text": "NEW",
+        "tag_class": "new"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/manage-claude__wif-providers__spiffe\" target=\"_blank\">Manage Claude__Wif Providers__Spiffe</a>",
+        "summary": "SPIFFE(SPIRE 등) 워크로드를 WIF를 통해 Claude API에 인증하는 방법에 대한 새로운 가이드 문서가 추가되었습니다.",
+        "tag_text": "NEW",
+        "tag_class": "new"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/manage-claude__wif-reference\" target=\"_blank\">Manage Claude__Wif Reference</a>",
+        "summary": "Workload Identity Federation(WIF) 설정을 위한 레퍼런스 문서가 추가되었으며, 토큰 교환 요청/응답, 환경 변수 및 자격 증명 우선순위 정보를 제공합니다.",
+        "tag_text": "NEW",
+        "tag_class": "new"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/manage-claude__workload-identity-federation\" target=\"_blank\">Manage Claude__Workload Identity Federation</a>",
+        "summary": "워크로드 아이덴티티 페더레이션(WIF) 문서 추가. 정적 API 키 대신 OIDC 토큰을 활용한 안전한 워크로드 인증 방법과 설정 가이드를 제공합니다.",
+        "tag_text": "NEW",
+        "tag_class": "new"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/manage-claude__workspaces\" target=\"_blank\">Manage Claude__Workspaces</a>",
+        "summary": "워크스페이스 관리 문서가 새로 추가되어 API 사용량 조직화, 팀 권한 관리, 비용 제어 방법을 제공합니다.",
+        "tag_text": "NEW",
+        "tag_class": "new"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/managed-agents__agent-setup\" target=\"_blank\">Managed Agents__Agent Setup</a>",
+        "summary": "관리형 에이전트 설정을 위한 신규 문서가 추가되었습니다. 에이전트 구성 필드와 생성 방법을 설명하여 개발을 지원합니다.",
+        "tag_text": "NEW",
+        "tag_class": "new"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/managed-agents__budgets\" target=\"_blank\">Managed Agents__Budgets</a>",
+        "summary": "관리형 에이전트 세션의 지출을 제한하기 위한 'Session budgets' 기능에 대한 새로운 가이드 문서가 추가되었습니다.",
+        "tag_text": "NEW",
+        "tag_class": "new"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/managed-agents__cloud-sandboxes-reference\" target=\"_blank\">Managed Agents__Cloud Sandboxes Reference</a>",
+        "summary": "관리형 에이전트 클라우드 샌드박스의 사전 설치된 패키지, 데이터베이스 및 유틸리티 환경 정보를 제공하는 새 문서가 추가되었습니다.",
+        "tag_text": "NEW",
+        "tag_class": "new"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/managed-agents__define-outcomes\" target=\"_blank\">Managed Agents__Define Outcomes</a>",
+        "summary": "관리형 에이전트(Managed Agents)의 결과물 정의(Define outcomes) 가이드가 추가되어 에이전트 평가 기준과 채점기 설정 방법을 안내합니다.",
+        "tag_text": "NEW",
+        "tag_class": "new"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/managed-agents__dreams\" target=\"_blank\">Managed Agents__Dreams</a>",
+        "summary": "관리형 에이전트의 메모리를 정리하고 통찰력을 도출하는 'Dreams' 기능 문서가 추가되었습니다.",
+        "tag_text": "NEW",
+        "tag_class": "new"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/managed-agents__environments\" target=\"_blank\">Managed Agents__Environments</a>",
+        "summary": "관리형 에이전트(Managed Agents)의 클라우드 환경 설정 가이드가 추가되었습니다.",
+        "tag_text": "NEW",
+        "tag_class": "new"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/managed-agents__events-and-streaming\" target=\"_blank\">Managed Agents__Events And Streaming</a>",
+        "summary": "관리형 에이전트의 세션 이벤트 스트림 및 통신 방법을 다루는 새로운 문서가 추가되었습니다.",
+        "tag_text": "NEW",
+        "tag_class": "new"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/managed-agents__files\" target=\"_blank\">Managed Agents__Files</a>",
+        "summary": "관리형 에이전트 환경에서 파일을 업로드하고 샌드박스 세션에 마운트하여 활용하는 방법을 안내하는 새로운 문서가 추가되었습니다.",
+        "tag_text": "NEW",
+        "tag_class": "new"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/managed-agents__github\" target=\"_blank\">Managed Agents__Github</a>",
+        "summary": "관리형 에이전트에서 GitHub 저장소를 마운트하고 MCP를 통해 PR을 생성하는 방법을 안내하는 새로운 문서가 추가되었습니다.",
+        "tag_text": "NEW",
+        "tag_class": "new"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/managed-agents__mcp-connector\" target=\"_blank\">Managed Agents__Mcp Connector</a>",
+        "summary": "관리형 에이전트(Managed Agents)에 MCP 서버를 연결하여 외부 도구와 데이터를 활용하는 방법을 설명하는 문서를 추가했습니다.",
+        "tag_text": "NEW",
+        "tag_class": "new"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/managed-agents__memory\" target=\"_blank\">Managed Agents__Memory</a>",
+        "summary": "세션을 넘어 데이터를 유지하는 에이전트 메모리 스토어 기능(Beta) 문서가 추가되었습니다.",
+        "tag_text": "NEW",
+        "tag_class": "new"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/managed-agents__migration\" target=\"_blank\">Managed Agents__Migration</a>",
+        "summary": "Messages API 또는 Claude Agent SDK에서 Claude Managed Agents로 마이그레이션하는 방법을 안내하는 문서가 추가되었습니다.",
+        "tag_text": "NEW",
+        "tag_class": "new"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/managed-agents__multiagent-orchestration\" target=\"_blank\">Managed Agents__Multiagent Orchestration</a>",
+        "summary": "관리형 에이전트(Managed Agents)의 멀티에이전트 오케스트레이션 기능과 코디네이터 설정 방법을 안내하는 새로운 문서가 추가되었습니다.",
+        "tag_text": "NEW",
+        "tag_class": "new"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/managed-agents__onboarding\" target=\"_blank\">Managed Agents__Onboarding</a>",
+        "summary": "관리형 에이전트(Managed Agents) 콘솔 온보딩 문서를 새로 추가하여, 시각적 인터페이스를 통한 에이전트 생성·테스트 및 API 연동 방법을 안내합니다.",
+        "tag_text": "NEW",
+        "tag_class": "new"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/managed-agents__overview\" target=\"_blank\">Managed Agents__Overview</a>",
+        "summary": "Claude Managed Agents의 베타 출시 개요, 핵심 개념, 작동 방식 및 지원 도구 정보를 담은 신규 문서가 추가되었습니다.",
+        "tag_text": "NEW",
+        "tag_class": "new"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/managed-agents__permission-policies\" target=\"_blank\">Managed Agents__Permission Policies</a>",
+        "summary": "Managed Agents의 권한 정책(Permission policies) 문서가 새로 추가되었습니다. 에이전트 및 MCP 도구 실행 제어 방법을 설명합니다.",
+        "tag_text": "NEW",
+        "tag_class": "new"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/managed-agents__quickstart\" target=\"_blank\">Managed Agents__Quickstart</a>",
+        "summary": "Claude Managed Agents의 시작하기(Quickstart) 문서가 새로 추가되어, 에이전트 생성 및 세션 설정 방법을 안내합니다.",
+        "tag_text": "NEW",
+        "tag_class": "new"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/managed-agents__reference\" target=\"_blank\">Managed Agents__Reference</a>",
+        "summary": "Claude Managed Agents의 이벤트 유형, CLI 플래그, MCP 서버, 레이트 리미트 등을 다루는 새로운 레퍼런스 문서가 추가되었습니다.",
+        "tag_text": "NEW",
+        "tag_class": "new"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/managed-agents__scheduled-deployments\" target=\"_blank\">Managed Agents__Scheduled Deployments</a>",
+        "summary": "Claude Managed Agents의 예약된 배포(Scheduled Deployments) 기능 문서가 추가되어, 크론(Cron) 스케줄을 이용한 에이전트 자율 실행 설정 방법을 제공합니다.",
+        "tag_text": "NEW",
+        "tag_class": "new"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/managed-agents__self-hosted-sandboxes-security\" target=\"_blank\">Managed Agents__Self Hosted Sandboxes Security</a>",
+        "summary": "셀프 호스팅 샌드박스 환경의 보안 책임 공유 모델을 정의하는 새로운 문서가 추가되었습니다.",
+        "tag_text": "NEW",
+        "tag_class": "new"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/managed-agents__self-hosted-sandboxes\" target=\"_blank\">Managed Agents__Self Hosted Sandboxes</a>",
+        "summary": "자체 호스팅 샌드박스(Self-hosted sandboxes) 기능에 대한 새 문서가 추가되었습니다. 내부 인프라에서 에이전트의 도구 실행, 파일, 네트워크를 제어할 수 있도록 지원합니다.",
+        "tag_text": "NEW",
+        "tag_class": "new"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/managed-agents__session-operations\" target=\"_blank\">Managed Agents__Session Operations</a>",
+        "summary": "관리형 에이전트(Managed Agents) 세션 조작 및 관리를 위한 새로운 문서가 추가되었습니다.",
+        "tag_text": "NEW",
+        "tag_class": "new"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/managed-agents__sessions\" target=\"_blank\">Managed Agents__Sessions</a>",
+        "summary": "관리형 에이전트 세션 생성, 버전 고정 및 초기 이벤트 시딩을 위한 API 사용법을 안내하는 새로운 문서입니다.",
+        "tag_text": "NEW",
+        "tag_class": "new"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/managed-agents__skills\" target=\"_blank\">Managed Agents__Skills</a>",
+        "summary": "관리형 에이전트의 재사용 가능한 도메인 전문성 제공을 위한 'Skills' 문서 추가 (사전 구축 및 커스텀 스킬 설정 방법 안내).",
+        "tag_text": "NEW",
+        "tag_class": "new"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/managed-agents__tools\" target=\"_blank\">Managed Agents__Tools</a>",
+        "summary": "클로드 Managed Agents의 기본 도구 설정 방법과 웹 검색·파일 제어 등 도구별 구성 가이드를 제공하는 신규 문서가 추가되었습니다.",
+        "tag_text": "NEW",
+        "tag_class": "new"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/managed-agents__vaults\" target=\"_blank\">Managed Agents__Vaults</a>",
+        "summary": "볼트 및 자격 증명 관리를 위한 새로운 문서가 추가되어 세션별 사용자 인증 설정과 토큰 관리 방법을 제공합니다.",
+        "tag_text": "NEW",
+        "tag_class": "new"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/managed-agents__webhooks\" target=\"_blank\">Managed Agents__Webhooks</a>",
+        "summary": "관리형 에이전트(Managed Agents)의 주요 상태 변화를 폴링 없이 실시간으로 수신할 수 있는 웹훅 가이드 문서가 추가되었습니다.",
+        "tag_text": "NEW",
+        "tag_class": "new"
+      },
+      {
+        "title": "Managed-Mcp",
+        "summary": "문서가 삭제되었습니다.",
+        "tag_text": "DELETE",
+        "tag_class": "delete"
+      },
+      {
+        "title": "Managed-Settings",
+        "summary": "문서가 삭제되었습니다.",
+        "tag_text": "DELETE",
+        "tag_class": "delete"
+      },
+      {
+        "title": "Mcp-Quickstart",
+        "summary": "문서가 삭제되었습니다.",
+        "tag_text": "DELETE",
+        "tag_class": "delete"
+      },
+      {
+        "title": "Mcp",
+        "summary": "문서가 삭제되었습니다.",
+        "tag_text": "DELETE",
+        "tag_class": "delete"
+      },
+      {
+        "title": "Memory",
+        "summary": "문서가 삭제되었습니다.",
+        "tag_text": "DELETE",
+        "tag_class": "delete"
+      },
+      {
+        "title": "Microsoft-Foundry",
+        "summary": "문서가 삭제되었습니다.",
+        "tag_text": "DELETE",
+        "tag_class": "delete"
+      },
+      {
+        "title": "Mobile",
+        "summary": "문서가 삭제되었습니다.",
+        "tag_text": "DELETE",
+        "tag_class": "delete"
+      },
+      {
+        "title": "Model-Config",
+        "summary": "문서가 삭제되었습니다.",
+        "tag_text": "DELETE",
+        "tag_class": "delete"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/models__fable-5-1__overview\" target=\"_blank\">Models__Fable 5 1__Overview</a>",
+        "summary": "Claude Fable 5.1 모델 문서가 추가되었습니다. 1M 토큰 컨텍스트, 128K 출력, 주요 가격 및 사양 정보를 제공합니다.",
+        "tag_text": "NEW",
+        "tag_class": "new"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/models__fable-5-1__whats-new-fable-5-1\" target=\"_blank\">Models__Fable 5 1__Whats New Fable 5 1</a>",
+        "summary": "Claude Fable 5.1 및 Mythos 5.1의 새로운 기능, 가격 정책, 그리고 강제 도구 사용 중단 등 주요 변경 사항을 안내합니다.",
+        "tag_text": "NEW",
+        "tag_class": "new"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/models__fable-5__introducing-claude-fable-5-and-claude-mythos-5\" target=\"_blank\">Models__Fable 5__Introducing Claude Fable 5 And Claude Mythos 5</a>",
+        "summary": "Claude Fable 5와 Claude Mythos 5 모델의 기능, API 변경 사항, 가용성 및 연동 가이드를 소개하는 새로운 문서가 추가되었습니다.",
+        "tag_text": "NEW",
+        "tag_class": "new"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/models__fable-5__migration-guide\" target=\"_blank\">Models__Fable 5__Migration Guide</a>",
+        "summary": "Claude Mythos 5 및 Fable 5 모델 마이그레이션 가이드가 추가되었으며, API 변경 사항과 마이그레이션 체크리스트를 안내합니다.",
+        "tag_text": "NEW",
+        "tag_class": "new"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/models__fable-5__overview\" target=\"_blank\">Models__Fable 5__Overview</a>",
+        "summary": "Claude Fable 5 모델의 레거시 상태, 가격, 컨텍스트 창, 플랫폼별 모델 ID 등 상세 스펙을 안내하는 문서가 추가되었습니다.",
+        "tag_text": "NEW",
+        "tag_class": "new"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/models__haiku-4-5__migration-guide\" target=\"_blank\">Models__Haiku 4 5__Migration Guide</a>",
+        "summary": "Claude Haiku 4.5 마이그레이션 가이드가 추가되었으며, 모델 ID 변경, 샘플링 파라미터 및 도구 버전 등 주요 Breaking Changes를 안내합니다.",
+        "tag_text": "NEW",
+        "tag_class": "new"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/models__haiku-4-5__overview\" target=\"_blank\">Models__Haiku 4 5__Overview</a>",
+        "summary": "새로운 Claude Haiku 4.5 모델의 개요 문서가 추가되었습니다. 주요 사양, 가격, 성능 비교 및 플랫폼별 모델 ID 정보를 제공합니다.",
+        "tag_text": "NEW",
+        "tag_class": "new"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/models__mythos-5-1__overview\" target=\"_blank\">Models__Mythos 5 1__Overview</a>",
+        "summary": "Project Glasswing 초대를 통해 제공되는 Claude Mythos 5.1 모델의 사양, 가격 및 모델 ID 정보를 추가했습니다.",
+        "tag_text": "NEW",
+        "tag_class": "new"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/models__mythos-5__overview\" target=\"_blank\">Models__Mythos 5__Overview</a>",
+        "summary": "보안 및 생물학 연구용 초대 전용 모델인 Claude Mythos 5의 사양, 가격 및 모델 ID 정보를 안내하는 문서가 신규 추가되었습니다.",
+        "tag_text": "NEW",
+        "tag_class": "new"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/models__opus-4-5__overview\" target=\"_blank\">Models__Opus 4 5__Overview</a>",
+        "summary": "Claude Opus 4.5 모델의 레거시 상태, 가격, 컨텍스트 창, 플랫폼별 모델 ID 등의 상세 사양을 담은 문서가 추가되었습니다.",
+        "tag_text": "NEW",
+        "tag_class": "new"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/models__opus-4-6__overview\" target=\"_blank\">Models__Opus 4 6__Overview</a>",
+        "summary": "Claude Opus 4.6 모델의 레거시 상태, 가격, 컨텍스트 창 및 플랫폼별 모델 ID를 안내하는 문서가 추가되었습니다.",
+        "tag_text": "NEW",
+        "tag_class": "new"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/models__opus-4-7__overview\" target=\"_blank\">Models__Opus 4 7__Overview</a>",
+        "summary": "Claude Opus 4.7 모델의 레거시 상태, 가격, 플랫폼별 모델 ID 및 사양 정보를 추가하여 모델 활용을 지원합니다.",
+        "tag_text": "NEW",
+        "tag_class": "new"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/models__opus-4-8__overview\" target=\"_blank\">Models__Opus 4 8__Overview</a>",
+        "summary": "Claude Opus 4.8 레거시 모델의 사양, 가격, 플랫폼별 모델 ID 및 마이그레이션 정보를 추가하는 문서가 신규 도입되었습니다.",
+        "tag_text": "NEW",
+        "tag_class": "new"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/models__opus-5__migration-guide\" target=\"_blank\">Models__Opus 5__Migration Guide</a>",
+        "summary": "Claude Opus 5 마이그레이션 가이드를 추가하여 모델 ID 변경, 기본 활성화된 Thinking 기능 등 주요 변경 사항과 권장 사항을 안내합니다.",
+        "tag_text": "NEW",
+        "tag_class": "new"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/models__opus-5__overview\" target=\"_blank\">Models__Opus 5__Overview</a>",
+        "summary": "Claude Opus 5 모델 개요 파일이 추가되었으며, 주요 성능, 가격, 컨텍스트 창 및 사양 정보를 제공합니다.",
+        "tag_text": "NEW",
+        "tag_class": "new"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/models__opus-5__whats-new-opus-5\" target=\"_blank\">Models__Opus 5__Whats New Opus 5</a>",
+        "summary": "Claude Opus 5 모델 출시 및 사고 기능(Thinking) 기본 활성화 등 주요 기능과 파괴적 변경 사항을 안내합니다.",
+        "tag_text": "NEW",
+        "tag_class": "new"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/models__overview\" target=\"_blank\">Models__Overview</a>",
+        "summary": "Anthropic Claude 모델 라인업과 성능을 비교하는 신규 문서가 추가되었습니다. 개발자가 적절한 모델을 선택하는 데 도움을 줍니다.",
+        "tag_text": "NEW",
+        "tag_class": "new"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/models__sonnet-4-5__overview\" target=\"_blank\">Models__Sonnet 4 5__Overview</a>",
+        "summary": "Claude Sonnet 4.5 모델의 사양, 가격, 플랫폼별 ID 및 마이그레이션 정보를 담은 레거시 문서가 새로 추가되었습니다.",
+        "tag_text": "NEW",
+        "tag_class": "new"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/models__sonnet-4-6__overview\" target=\"_blank\">Models__Sonnet 4 6__Overview</a>",
+        "summary": "Claude Sonnet 4.6 레거시 모델 문서가 추가되어 사양, 가격, 모델 ID 및 마이그레이션 정보를 제공합니다.",
+        "tag_text": "NEW",
+        "tag_class": "new"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/models__sonnet-5__migration-guide\" target=\"_blank\">Models__Sonnet 5__Migration Guide</a>",
+        "summary": "Claude Sonnet 5 마이그레이션 가이드 추가. 적응형 사고 기능 기본 활성화 및 새로운 토크나이저 도입 등의 주요 변경 사항을 안내합니다.",
+        "tag_text": "NEW",
+        "tag_class": "new"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/models__sonnet-5__overview\" target=\"_blank\">Models__Sonnet 5__Overview</a>",
+        "summary": "새로운 Claude Sonnet 5 모델의 개요, 가격, 사양, 성능 비교 정보를 제공하여 개발자가 최신 모델 도입을 검토할 수 있게 합니다.",
+        "tag_text": "NEW",
+        "tag_class": "new"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/models__sonnet-5__whats-new-sonnet-5\" target=\"_blank\">Models__Sonnet 5__Whats New Sonnet 5</a>",
+        "summary": "Claude Sonnet 5 출시 문서 추가. 적응형 사고 기본 활성화, 샘플링 파라미터 미지원 등 주요 변경 사항과 새 토크나이저 정보를 안내합니다.",
+        "tag_text": "NEW",
+        "tag_class": "new"
+      },
+      {
+        "title": "Monitoring-Usage",
+        "summary": "문서가 삭제되었습니다.",
+        "tag_text": "DELETE",
+        "tag_class": "delete"
+      },
+      {
+        "title": "Network-Config",
+        "summary": "문서가 삭제되었습니다.",
+        "tag_text": "DELETE",
+        "tag_class": "delete"
+      },
+      {
+        "title": "Output-Styles",
+        "summary": "문서가 삭제되었습니다.",
+        "tag_text": "DELETE",
+        "tag_class": "delete"
+      },
+      {
+        "title": "Overview",
+        "summary": "문서가 삭제되었습니다.",
+        "tag_text": "DELETE",
+        "tag_class": "delete"
+      },
+      {
+        "title": "Permission-Modes",
+        "summary": "문서가 삭제되었습니다.",
+        "tag_text": "DELETE",
+        "tag_class": "delete"
+      },
+      {
+        "title": "Permissions",
+        "summary": "문서가 삭제되었습니다.",
+        "tag_text": "DELETE",
+        "tag_class": "delete"
+      },
+      {
+        "title": "Platforms",
+        "summary": "문서가 삭제되었습니다.",
+        "tag_text": "DELETE",
+        "tag_class": "delete"
+      },
+      {
+        "title": "Plugin-Dependencies",
+        "summary": "문서가 삭제되었습니다.",
+        "tag_text": "DELETE",
+        "tag_class": "delete"
+      },
+      {
+        "title": "Plugin-Evals",
+        "summary": "문서가 삭제되었습니다.",
+        "tag_text": "DELETE",
+        "tag_class": "delete"
+      },
+      {
+        "title": "Plugin-Hints",
+        "summary": "문서가 삭제되었습니다.",
+        "tag_text": "DELETE",
+        "tag_class": "delete"
+      },
+      {
+        "title": "Plugin-Marketplaces",
+        "summary": "문서가 삭제되었습니다.",
+        "tag_text": "DELETE",
+        "tag_class": "delete"
+      },
+      {
+        "title": "Plugin-Relevance",
+        "summary": "문서가 삭제되었습니다.",
+        "tag_text": "DELETE",
+        "tag_class": "delete"
+      },
+      {
+        "title": "Plugins-Reference",
+        "summary": "문서가 삭제되었습니다.",
+        "tag_text": "DELETE",
+        "tag_class": "delete"
+      },
+      {
+        "title": "Plugins",
+        "summary": "문서가 삭제되었습니다.",
+        "tag_text": "DELETE",
+        "tag_class": "delete"
+      },
+      {
+        "title": "Prompt-Caching",
+        "summary": "문서가 삭제되었습니다.",
+        "tag_text": "DELETE",
+        "tag_class": "delete"
+      },
+      {
+        "title": "Prompt-Library",
+        "summary": "문서가 삭제되었습니다.",
+        "tag_text": "DELETE",
+        "tag_class": "delete"
+      },
+      {
+        "title": "Quickstart",
+        "summary": "문서가 삭제되었습니다.",
+        "tag_text": "DELETE",
+        "tag_class": "delete"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/release-notes__overview\" target=\"_blank\">Release Notes__Overview</a>",
+        "summary": "Claude 플랫폼 릴리스 노트를 정리한 문서로, 신규 모델(Fable/Mythos 5.1), API 기능 업데이트, CLI 도구 및 엔드포인트 변경 사항을 안내합니다.",
+        "tag_text": "NEW",
+        "tag_class": "new"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/release-notes__system-prompts__claude-fable-5-1\" target=\"_blank\">Release Notes__System Prompts__Claude Fable 5 1</a>",
+        "summary": "Claude Fable 5.1 시스템 프롬프트 문서가 새로 추가되었습니다. 모델 정보와 아동 안전, 거부 처리 등의 핵심 행동 지침을 포함합니다.",
+        "tag_text": "NEW",
+        "tag_class": "new"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/release-notes__system-prompts__claude-fable-5\" target=\"_blank\">Release Notes__System Prompts__Claude Fable 5</a>",
+        "summary": "Claude Fable 5 시스템 프롬프트가 추가되었으며, 모델의 정체성, 제품 정보, 아동 안전 지침 및 거절 처리 규정이 포함되어 있습니다.",
+        "tag_text": "NEW",
+        "tag_class": "new"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/release-notes__system-prompts__claude-haiku-3-5\" target=\"_blank\">Release Notes__System Prompts__Claude Haiku 3 5</a>",
+        "summary": "Claude Haiku 3.5의 시스템 프롬프트 문서가 새로 추가되었습니다. 모델의 핵심 지침과 행동 양식을 정의합니다.",
+        "tag_text": "NEW",
+        "tag_class": "new"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/release-notes__system-prompts__claude-haiku-3\" target=\"_blank\">Release Notes__System Prompts__Claude Haiku 3</a>",
+        "summary": "Claude Haiku 3의 시스템 프롬프트 문서가 새로 추가되었습니다. 모델의 기본 지침과 응답 성향을 확인할 수 있어 중요합니다.",
+        "tag_text": "NEW",
+        "tag_class": "new"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/release-notes__system-prompts__claude-haiku-4-5\" target=\"_blank\">Release Notes__System Prompts__Claude Haiku 4 5</a>",
+        "summary": "Claude Haiku 4.5 모델의 시스템 프롬프트 변경 사항을 담은 신규 문서가 추가되었습니다.",
+        "tag_text": "NEW",
+        "tag_class": "new"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/release-notes__system-prompts__claude-opus-3\" target=\"_blank\">Release Notes__System Prompts__Claude Opus 3</a>",
+        "summary": "Claude Opus 3의 핵심 시스템 프롬프트가 공개되어 AI의 응답 방식과 제약 사항을 명확히 파악할 수 있게 되었습니다.",
+        "tag_text": "NEW",
+        "tag_class": "new"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/release-notes__system-prompts__claude-opus-4-1\" target=\"_blank\">Release Notes__System Prompts__Claude Opus 4 1</a>",
+        "summary": "Claude Opus 4.1 시스템 프롬프트가 추가되었으며, 모델의 정체성, 안전 가이드라인, 응답 형식 등의 핵심 행동 지침을 정의합니다.",
+        "tag_text": "NEW",
+        "tag_class": "new"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/release-notes__system-prompts__claude-opus-4-5\" target=\"_blank\">Release Notes__System Prompts__Claude Opus 4 5</a>",
+        "summary": "Claude Opus 4.5의 새로운 시스템 프롬프트가 추가되었습니다. 새로운 제품 기능(Chrome, Excel, Cowork 등)과 맞춤화 설정 안내가 포함되어 있습니다.",
+        "tag_text": "NEW",
+        "tag_class": "new"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/release-notes__system-prompts__claude-opus-4-6\" target=\"_blank\">Release Notes__System Prompts__Claude Opus 4 6</a>",
+        "summary": "Claude Opus 4.6 모델의 새로운 코어 시스템 프롬프트 문서가 추가되었습니다. 제품 정보, 거부 처리, 톤 및 포맷팅 지침 등을 담고 있습니다.",
+        "tag_text": "NEW",
+        "tag_class": "new"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/release-notes__system-prompts__claude-opus-4-7\" target=\"_blank\">Release Notes__System Prompts__Claude Opus 4 7</a>",
+        "summary": "Claude Opus 4.7 모델의 시스템 프롬프트가 추가되었으며, 모델 행동 지침, 제품 정보 및 안전성 가이드라인을 포함합니다.",
+        "tag_text": "NEW",
+        "tag_class": "new"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/release-notes__system-prompts__claude-opus-4-8\" target=\"_blank\">Release Notes__System Prompts__Claude Opus 4 8</a>",
+        "summary": "Claude Opus 4.8의 새로운 시스템 프롬프트가 추가되었으며, 제품 정보, 거부 처리, 아동 안전 지침 등이 포함되어 있습니다.",
+        "tag_text": "NEW",
+        "tag_class": "new"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/release-notes__system-prompts__claude-opus-4\" target=\"_blank\">Release Notes__System Prompts__Claude Opus 4</a>",
+        "summary": "Claude Opus 4의 핵심 시스템 프롬프트가 추가되었으며, 모델의 정체성, 안전 가이드라인 및 응답 생성 규칙을 정의합니다.",
+        "tag_text": "NEW",
+        "tag_class": "new"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/release-notes__system-prompts__claude-opus-5\" target=\"_blank\">Release Notes__System Prompts__Claude Opus 5</a>",
+        "summary": "Claude Opus 5 시스템 프롬프트가 추가되었으며, 제품 정보, Fable 모델 안전장치 라우팅 및 아동 안전 지침 등이 포함되어 있습니다.",
+        "tag_text": "NEW",
+        "tag_class": "new"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/release-notes__system-prompts__claude-sonnet-3-5\" target=\"_blank\">Release Notes__System Prompts__Claude Sonnet 3 5</a>",
+        "summary": "Claude Sonnet 3.5의 핵심 시스템 프롬프트 업데이트 내역을 담은 문서가 새로 추가되었습니다.",
+        "tag_text": "NEW",
+        "tag_class": "new"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/release-notes__system-prompts__claude-sonnet-3-7\" target=\"_blank\">Release Notes__System Prompts__Claude Sonnet 3 7</a>",
+        "summary": "Claude Sonnet 3.7의 새로운 시스템 프롬프트 문서가 추가되었습니다. 모델의 성향, 확장된 사고 모드, 제품 정보 및 안전 가이드라인 등이 상세히 정의되어 있습니다.",
+        "tag_text": "NEW",
+        "tag_class": "new"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/release-notes__system-prompts__claude-sonnet-4-5\" target=\"_blank\">Release Notes__System Prompts__Claude Sonnet 4 5</a>",
+        "summary": "Claude Sonnet 4.5의 새로운 시스템 프롬프트 문서가 추가되었으며, 모델의 행동 지침, 제품 정보, 거부 처리 기준 등을 정의합니다.",
+        "tag_text": "NEW",
+        "tag_class": "new"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/release-notes__system-prompts__claude-sonnet-4-6\" target=\"_blank\">Release Notes__System Prompts__Claude Sonnet 4 6</a>",
+        "summary": "Claude Sonnet 4.6 시스템 프롬프트 문서가 새로 추가되었습니다. 모델의 동작 지침, 제품 정보, 거부 처리 및 어조 규칙 등이 포함되어 있습니다.",
+        "tag_text": "NEW",
+        "tag_class": "new"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/release-notes__system-prompts__claude-sonnet-4\" target=\"_blank\">Release Notes__System Prompts__Claude Sonnet 4</a>",
+        "summary": "Claude Sonnet 4의 초기 시스템 프롬프트가 추가되었으며, 모델의 정체성, 안전 가이드라인 및 응답 형식을 정의합니다.",
+        "tag_text": "NEW",
+        "tag_class": "new"
+      },
+      {
+        "title": "Remote-Control",
+        "summary": "문서가 삭제되었습니다.",
+        "tag_text": "DELETE",
+        "tag_class": "delete"
+      },
+      {
+        "title": "Routines",
+        "summary": "문서가 삭제되었습니다.",
+        "tag_text": "DELETE",
+        "tag_class": "delete"
+      },
+      {
+        "title": "Sandbox-Environments",
+        "summary": "문서가 삭제되었습니다.",
+        "tag_text": "DELETE",
+        "tag_class": "delete"
+      },
+      {
+        "title": "Sandboxing",
+        "summary": "문서가 삭제되었습니다.",
+        "tag_text": "DELETE",
+        "tag_class": "delete"
+      },
+      {
+        "title": "Scheduled-Tasks",
+        "summary": "문서가 삭제되었습니다.",
+        "tag_text": "DELETE",
+        "tag_class": "delete"
+      },
+      {
+        "title": "Security-Guidance",
+        "summary": "문서가 삭제되었습니다.",
+        "tag_text": "DELETE",
+        "tag_class": "delete"
+      },
+      {
+        "title": "Security",
+        "summary": "문서가 삭제되었습니다.",
+        "tag_text": "DELETE",
+        "tag_class": "delete"
+      },
+      {
+        "title": "Self-Hosted-Environments-Configuration",
+        "summary": "문서가 삭제되었습니다.",
+        "tag_text": "DELETE",
+        "tag_class": "delete"
+      },
+      {
+        "title": "Self-Hosted-Environments-Deploy",
+        "summary": "문서가 삭제되었습니다.",
+        "tag_text": "DELETE",
+        "tag_class": "delete"
+      },
+      {
+        "title": "Self-Hosted-Environments-Identity",
+        "summary": "문서가 삭제되었습니다.",
+        "tag_text": "DELETE",
+        "tag_class": "delete"
+      },
+      {
+        "title": "Self-Hosted-Environments-Quickstart",
+        "summary": "문서가 삭제되었습니다.",
+        "tag_text": "DELETE",
+        "tag_class": "delete"
+      },
+      {
+        "title": "Self-Hosted-Environments-Reference",
+        "summary": "문서가 삭제되었습니다.",
+        "tag_text": "DELETE",
+        "tag_class": "delete"
+      },
+      {
+        "title": "Self-Hosted-Environments-Testing",
+        "summary": "문서가 삭제되었습니다.",
+        "tag_text": "DELETE",
+        "tag_class": "delete"
+      },
+      {
+        "title": "Self-Hosted-Environments",
+        "summary": "문서가 삭제되었습니다.",
+        "tag_text": "DELETE",
+        "tag_class": "delete"
+      },
+      {
+        "title": "Server-Managed-Settings",
+        "summary": "문서가 삭제되었습니다.",
+        "tag_text": "DELETE",
+        "tag_class": "delete"
+      },
+      {
+        "title": "Sessions",
+        "summary": "문서가 삭제되었습니다.",
+        "tag_text": "DELETE",
+        "tag_class": "delete"
+      },
+      {
+        "title": "Settings-Example",
+        "summary": "문서가 삭제되었습니다.",
+        "tag_text": "DELETE",
+        "tag_class": "delete"
+      },
+      {
+        "title": "Settings-Reference",
+        "summary": "문서가 삭제되었습니다.",
+        "tag_text": "DELETE",
+        "tag_class": "delete"
+      },
+      {
+        "title": "Settings",
+        "summary": "문서가 삭제되었습니다.",
+        "tag_text": "DELETE",
+        "tag_class": "delete"
+      },
+      {
+        "title": "Setup",
+        "summary": "문서가 삭제되었습니다.",
+        "tag_text": "DELETE",
+        "tag_class": "delete"
+      },
+      {
+        "title": "Skills",
+        "summary": "문서가 삭제되었습니다.",
+        "tag_text": "DELETE",
+        "tag_class": "delete"
+      },
+      {
+        "title": "Slack",
+        "summary": "문서가 삭제되었습니다.",
+        "tag_text": "DELETE",
+        "tag_class": "delete"
+      },
+      {
+        "title": "Statusline",
+        "summary": "문서가 삭제되었습니다.",
+        "tag_text": "DELETE",
+        "tag_class": "delete"
+      },
+      {
+        "title": "Sub-Agents",
+        "summary": "문서가 삭제되었습니다.",
+        "tag_text": "DELETE",
+        "tag_class": "delete"
+      },
+      {
+        "title": "Terminal-Config",
+        "summary": "문서가 삭제되었습니다.",
+        "tag_text": "DELETE",
+        "tag_class": "delete"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/test-and-evaluate__develop-tests\" target=\"_blank\">Test And Evaluate__Develop Tests</a>",
+        "summary": "성공 기준 정의 및 LLM 평가 구축 가이드가 추가되어 프롬프트 엔지니어링의 정량적 평가 방법과 모범 사례를 제공합니다.",
+        "tag_text": "NEW",
+        "tag_class": "new"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/test-and-evaluate__strengthen-guardrails__handle-streaming-refusals\" target=\"_blank\">Test And Evaluate__Strengthen Guardrails__Handle Streaming Refusals</a>",
+        "summary": "스트리밍 응답에서 거부(refusal) 사유를 감지하고 처리하는 방법에 대한 새로운 문서를 추가하여 안정적인 예외 처리를 지원합니다.",
+        "tag_text": "NEW",
+        "tag_class": "new"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/test-and-evaluate__strengthen-guardrails__increase-consistency\" target=\"_blank\">Test And Evaluate__Strengthen Guardrails__Increase Consistency</a>",
+        "summary": "Claude의 출력 일관성을 높이기 위한 포맷 지정, 응답 프리필, 예시 활용 등의 프롬프트 엔지니어링 기법을 안내하는 새로운 문서입니다.",
+        "tag_text": "NEW",
+        "tag_class": "new"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/test-and-evaluate__strengthen-guardrails__mitigate-jailbreaks\" target=\"_blank\">Test And Evaluate__Strengthen Guardrails__Mitigate Jailbreaks</a>",
+        "summary": "클로드 애플리케이션을 탈옥과 프롬프트 인젝션으로부터 보호하기 위한 가이드와 모범 사례를 추가했습니다.",
+        "tag_text": "NEW",
+        "tag_class": "new"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/test-and-evaluate__strengthen-guardrails__reduce-hallucinations\" target=\"_blank\">Test And Evaluate__Strengthen Guardrails__Reduce Hallucinations</a>",
+        "summary": "Claude의 응답에서 환각 현상을 줄이기 위해 불확실성 허용, 직접 인용 활용, 출처 검증 등의 가이드라인을 제공하는 신규 문서가 추가되었습니다.",
+        "tag_text": "NEW",
+        "tag_class": "new"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/test-and-evaluate__strengthen-guardrails__reduce-latency\" target=\"_blank\">Test And Evaluate__Strengthen Guardrails__Reduce Latency</a>",
+        "summary": "Claude 응답 지연 시간(Latency)을 줄이기 위한 가이드가 추가되었습니다. 빠른 모델 선택, 토큰 최적화, 스트리밍 활용 방법을 다룹니다.",
+        "tag_text": "NEW",
+        "tag_class": "new"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/test-and-evaluate__strengthen-guardrails__reduce-prompt-leak\" target=\"_blank\">Test And Evaluate__Strengthen Guardrails__Reduce Prompt Leak</a>",
+        "summary": "프롬프트 유출 방지 가이드 문서가 추가되었습니다. 컨텍스트 분리, 출력 필터링, 정기 감사 등을 통해 성능 저하 없이 유출 위험을 줄이는 방법을 다룹니다.",
+        "tag_text": "NEW",
+        "tag_class": "new"
+      },
+      {
+        "title": "Third-Party-Integrations",
+        "summary": "문서가 삭제되었습니다.",
+        "tag_text": "DELETE",
+        "tag_class": "delete"
+      },
+      {
+        "title": "Tools-Reference",
+        "summary": "문서가 삭제되었습니다.",
+        "tag_text": "DELETE",
+        "tag_class": "delete"
+      },
+      {
+        "title": "Troubleshoot-Install",
+        "summary": "문서가 삭제되었습니다.",
+        "tag_text": "DELETE",
+        "tag_class": "delete"
+      },
+      {
+        "title": "Troubleshooting",
+        "summary": "문서가 삭제되었습니다.",
+        "tag_text": "DELETE",
+        "tag_class": "delete"
+      },
+      {
+        "title": "Ultrareview",
+        "summary": "문서가 삭제되었습니다.",
+        "tag_text": "DELETE",
+        "tag_class": "delete"
+      },
+      {
+        "title": "Voice-Dictation",
+        "summary": "문서가 삭제되었습니다.",
+        "tag_text": "DELETE",
+        "tag_class": "delete"
+      },
+      {
+        "title": "Vs-Code",
+        "summary": "문서가 삭제되었습니다.",
+        "tag_text": "DELETE",
+        "tag_class": "delete"
+      },
+      {
+        "title": "Web-Quickstart",
+        "summary": "문서가 삭제되었습니다.",
+        "tag_text": "DELETE",
+        "tag_class": "delete"
+      },
+      {
+        "title": "Whats-New",
+        "summary": "문서가 삭제되었습니다.",
+        "tag_text": "DELETE",
+        "tag_class": "delete"
+      },
+      {
+        "title": "Whats-New__2026-W13",
+        "summary": "문서가 삭제되었습니다.",
+        "tag_text": "DELETE",
+        "tag_class": "delete"
+      },
+      {
+        "title": "Whats-New__2026-W14",
+        "summary": "문서가 삭제되었습니다.",
+        "tag_text": "DELETE",
+        "tag_class": "delete"
+      },
+      {
+        "title": "Whats-New__2026-W15",
+        "summary": "문서가 삭제되었습니다.",
+        "tag_text": "DELETE",
+        "tag_class": "delete"
+      },
+      {
+        "title": "Whats-New__2026-W16",
+        "summary": "문서가 삭제되었습니다.",
+        "tag_text": "DELETE",
+        "tag_class": "delete"
+      },
+      {
+        "title": "Whats-New__2026-W17",
+        "summary": "문서가 삭제되었습니다.",
+        "tag_text": "DELETE",
+        "tag_class": "delete"
+      },
+      {
+        "title": "Whats-New__2026-W18",
+        "summary": "문서가 삭제되었습니다.",
+        "tag_text": "DELETE",
+        "tag_class": "delete"
+      },
+      {
+        "title": "Whats-New__2026-W19",
+        "summary": "문서가 삭제되었습니다.",
+        "tag_text": "DELETE",
+        "tag_class": "delete"
+      },
+      {
+        "title": "Whats-New__2026-W20",
+        "summary": "문서가 삭제되었습니다.",
+        "tag_text": "DELETE",
+        "tag_class": "delete"
+      },
+      {
+        "title": "Whats-New__2026-W21",
+        "summary": "문서가 삭제되었습니다.",
+        "tag_text": "DELETE",
+        "tag_class": "delete"
+      },
+      {
+        "title": "Whats-New__2026-W22",
+        "summary": "문서가 삭제되었습니다.",
+        "tag_text": "DELETE",
+        "tag_class": "delete"
+      },
+      {
+        "title": "Whats-New__2026-W23",
+        "summary": "문서가 삭제되었습니다.",
+        "tag_text": "DELETE",
+        "tag_class": "delete"
+      },
+      {
+        "title": "Whats-New__2026-W24",
+        "summary": "문서가 삭제되었습니다.",
+        "tag_text": "DELETE",
+        "tag_class": "delete"
+      },
+      {
+        "title": "Whats-New__2026-W25",
+        "summary": "문서가 삭제되었습니다.",
+        "tag_text": "DELETE",
+        "tag_class": "delete"
+      },
+      {
+        "title": "Whats-New__2026-W26",
+        "summary": "문서가 삭제되었습니다.",
+        "tag_text": "DELETE",
+        "tag_class": "delete"
+      },
+      {
+        "title": "Whats-New__2026-W27",
+        "summary": "문서가 삭제되었습니다.",
+        "tag_text": "DELETE",
+        "tag_class": "delete"
+      },
+      {
+        "title": "Whats-New__2026-W28",
+        "summary": "문서가 삭제되었습니다.",
+        "tag_text": "DELETE",
+        "tag_class": "delete"
+      },
+      {
+        "title": "Whats-New__2026-W29",
+        "summary": "문서가 삭제되었습니다.",
+        "tag_text": "DELETE",
+        "tag_class": "delete"
+      },
+      {
+        "title": "Whats-New__2026-W30",
+        "summary": "문서가 삭제되었습니다.",
+        "tag_text": "DELETE",
+        "tag_class": "delete"
+      },
+      {
+        "title": "Whats-New__2026-W32",
+        "summary": "문서가 삭제되었습니다.",
+        "tag_text": "DELETE",
+        "tag_class": "delete"
+      },
+      {
+        "title": "Whats-New__2026-W33",
+        "summary": "문서가 삭제되었습니다.",
+        "tag_text": "DELETE",
+        "tag_class": "delete"
+      },
+      {
+        "title": "Whats-New__2026-W34",
+        "summary": "문서가 삭제되었습니다.",
+        "tag_text": "DELETE",
+        "tag_class": "delete"
+      },
+      {
+        "title": "Whats-New__2026-W35",
+        "summary": "문서가 삭제되었습니다.",
+        "tag_text": "DELETE",
+        "tag_class": "delete"
+      },
+      {
+        "title": "Whats-New__2026-W36",
+        "summary": "문서가 삭제되었습니다.",
+        "tag_text": "DELETE",
+        "tag_class": "delete"
+      },
+      {
+        "title": "Whats-New__2026-W37",
+        "summary": "문서가 삭제되었습니다.",
+        "tag_text": "DELETE",
+        "tag_class": "delete"
+      },
+      {
+        "title": "Workflows",
+        "summary": "문서가 삭제되었습니다.",
+        "tag_text": "DELETE",
+        "tag_class": "delete"
+      },
+      {
+        "title": "Worktrees",
+        "summary": "문서가 삭제되었습니다.",
+        "tag_text": "DELETE",
+        "tag_class": "delete"
+      },
+      {
+        "title": "Zero-Data-Retention",
+        "summary": "문서가 삭제되었습니다.",
+        "tag_text": "DELETE",
+        "tag_class": "delete"
+      }
+    ]
+  },
+  {
     "date": "2026-09-18T15:12:15Z",
     "commit_hash": "84fea53",
     "entries": [
