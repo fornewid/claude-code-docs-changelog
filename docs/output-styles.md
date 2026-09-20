@@ -1,0 +1,136 @@
+> ## Documentation Index
+> Fetch the complete documentation index at: https://code.claude.com/docs/llms.txt
+> Use this file to discover all available pages before exploring further.
+
+# Output styles
+
+> Adapt Claude Code for uses beyond software engineering
+
+Output styles change how Claude responds, not what Claude knows. They set Claude's role, tone, and output format for every response. Use one when you keep re-prompting for the same voice or format every turn, or when you want Claude to act as something other than a software engineer.
+
+A custom output style gives Claude your own instructions and lets you choose whether to keep Claude Code's built-in software engineering instructions. Keep them when you're changing how Claude communicates but still coding, like always answering with a diagram. Leave them out when Claude isn't doing software engineering at all, like a writing assistant or data analyst.
+
+For instructions about your project, conventions, or codebase, use [CLAUDE.md](/docs/en/memory) instead.
+
+## Built-in output styles
+
+Claude Code's **Default** output style is its standard set of instructions, designed to help you complete software engineering tasks efficiently.
+
+There are four additional built-in output styles:
+
+* **Proactive**: Claude executes immediately, makes reasonable assumptions instead of pausing for routine decisions, and prefers action over planning. This is stronger autonomous-execution guidance than [auto mode](/docs/en/permission-modes#eliminate-prompts-with-auto-mode) applies, and it works without changing your permission mode, so your permission mode still decides what runs without asking you.
+
+* **Concise**: Claude leads with the result, skips preamble and narration, and keeps responses short by default, while doing the engineering work as thoroughly as in the Default style. When you ask for an explanation or more detail, Claude answers in full. Claude always keeps the complete content of error reports, security warnings, and confirmations for destructive actions. Requires Claude Code v2.1.237 or later.
+
+* **Explanatory**: Provides educational "Insights" in between helping you complete software engineering tasks. Helps you understand implementation choices and codebase patterns.
+
+* **Learning**: Collaborative, learn-by-doing mode where Claude will not only share "Insights" while coding, but also ask you to contribute small, strategic pieces of code yourself. Claude Code will add `TODO(human)` markers in your code for you to implement.
+
+## Change your output style
+
+Pick a style in one of these ways:
+
+* **`/output-style` command**: run `/output-style <style>` to switch, for example `/output-style concise`. With no argument, the command lists the styles you can pick and marks the current one. Claude Code saves your selection to `.claude/settings.local.json` at the [local project level](/docs/en/settings).
+
+  The command also works in [non-interactive mode](/docs/en/headless) and Agent SDK sessions, and from the mobile app or web via [Remote Control](/docs/en/remote-control#limitations), where you can list and select only [built-in styles](#built-in-output-styles). Requires Claude Code v2.1.269 or later.
+* **Terminal**: run `/config` and select **Output style** to pick a style from a menu. Claude Code saves your selection to `.claude/settings.local.json` at the [local project level](/docs/en/settings).
+* **VS Code extension**: open the [command menu](/docs/en/vs-code#use-the-prompt-box) with `/` and select **Output styles** to pick a style, including your custom styles. Claude Code saves your selection to `.claude/settings.local.json`, the same file the terminal menu writes. Requires Claude Code v2.1.257 or later.
+* **Desktop app**: set the `outputStyle` field in a settings file, for example `.claude/settings.local.json`, the file the terminal menu writes. When you run `/config` there, Claude Code [opens **Settings > Claude Code**](/docs/en/desktop#what’s-not-available-in-desktop) rather than a menu.
+
+To set a style without the menu, edit the `outputStyle` field directly in a settings file:
+
+```json theme={null}
+{
+  "outputStyle": "Explanatory"
+}
+```
+
+When you switch styles mid-session, Claude uses the new style starting with your next message. For what that first message costs in prompt caching, see [Changing output style](/docs/en/prompt-caching#changing-output-style). Before v2.1.251, the new style applied only after you ran `/clear` or started a new session.
+
+## Create a custom output style
+
+A custom output style is a Markdown file: frontmatter for metadata, then the instructions for Claude.
+
+In the VS Code extension, you can also create the file from the [**Output styles** menu](/docs/en/vs-code#use-the-prompt-box) rather than writing it by hand. This requires Claude Code v2.1.261 or later.
+
+<Steps>
+  <Step title="Create a Markdown file">
+    Save it at one of three levels. The file name becomes the style name unless you set `name` in the frontmatter.
+
+    * User: `~/.claude/output-styles`
+    * Project: `.claude/output-styles`
+    * Managed policy: `.claude/output-styles` inside the [managed settings directory](/docs/en/managed-settings#delivery-mechanisms)
+
+    Project output styles load from every `.claude/output-styles/` between the working directory and the repository root. When more than one of these nested directories defines a style with the same name, Claude Code uses the one closest to the working directory.
+  </Step>
+
+  <Step title="Add frontmatter and instructions">
+    Decide whether to keep Claude Code's software engineering instructions. Set `keep-coding-instructions: true` if you're changing how Claude communicates but still want it coding the same way. Leave it out if Claude won't be doing software engineering.
+
+    This example leads every explanation with a diagram while keeping Claude's coding behavior:
+
+    ```markdown theme={null}
+    ---
+    name: Diagrams first
+    description: Lead every explanation with a diagram
+    keep-coding-instructions: true
+    ---
+
+    When explaining code, architecture, or data flow, start with a Mermaid diagram showing the structure, then explain in prose.
+
+    ## Diagram conventions
+
+    Use `flowchart TD` for control flow and `sequenceDiagram` for request paths. Keep diagrams under 15 nodes.
+    ```
+  </Step>
+
+  <Step title="Switch to your style">
+    Run `/output-style <style>` in the terminal, or run `/config` and select your style under **Output style**. Claude uses the new style starting with your next message. In the terminal, Claude Code reads style files when it starts, so if you create or edit one during a running session, restart Claude Code to pick up the change.
+  </Step>
+</Steps>
+
+[Plugins](/docs/en/plugins-reference) can also ship output styles in an `output-styles/` directory.
+
+### Frontmatter
+
+Output style files support these frontmatter fields:
+
+| Frontmatter                | Purpose                                                                                                                                                                                                                                                  | Default                 |
+| :------------------------- | :------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | :---------------------- |
+| `name`                     | Name of the output style, if not the file name                                                                                                                                                                                                           | Inherits from file name |
+| `description`              | Description of the output style, shown in the `/config` picker                                                                                                                                                                                           | None                    |
+| `keep-coding-instructions` | Keep Claude Code's built-in software engineering instructions                                                                                                                                                                                            | `false`                 |
+| `force-for-plugin`         | Plugin output styles only: apply this style automatically whenever the plugin is enabled, without requiring users to select it. Overrides the user's `outputStyle` setting. If multiple enabled plugins set this, Claude Code uses the first one loaded. | `false`                 |
+
+## How output styles work
+
+An output style changes the instructions Claude Code gives Claude.
+
+* Claude Code sends the active style's instructions with every request.
+* When you [select a style other than Default](#change-your-output-style), Claude Code also reminds Claude of the style during the conversation.
+* Custom output styles leave out Claude Code's built-in software engineering instructions, such as how to scope changes, write comments, and verify work, unless `keep-coding-instructions` is set to `true`.
+
+Output styles apply to the main conversation and to a [fork](/docs/en/sub-agents#fork-the-current-conversation), which inherits the parent's full conversation and system prompt. Other [subagents run their own system prompt](/docs/en/sub-agents#what-loads-at-startup), so styles don't change how they respond.
+
+Token usage depends on the style. A style's instructions add input tokens, though prompt caching reduces this cost after the first request in a session.
+
+The built-in Explanatory and Learning styles produce longer responses than Default by design, which increases output tokens. The Concise style does the opposite by instructing Claude to keep responses short by default. For custom styles, output token usage depends on what your instructions tell Claude to produce.
+
+## Comparisons to related features
+
+Several features customize how Claude Code behaves. Output styles change Claude Code's default instructions and apply to every response. The others add instructions without changing the defaults, or scope them to a specific task.
+
+| Feature                  | How it works                                                 | Use it when                                                                                         |
+| :----------------------- | :----------------------------------------------------------- | :-------------------------------------------------------------------------------------------------- |
+| Output styles            | Changes Claude Code's default instructions                   | You want a different role, tone, or default response format every turn                              |
+| [CLAUDE.md](/docs/en/memory)  | Adds a user message after the system prompt                  | Claude should always know your project conventions and codebase context                             |
+| `--append-system-prompt` | Appends to the system prompt without removing anything       | You want a one-off addition passed as a [CLI flag](/docs/en/cli-reference#system-prompt-flags) at launch |
+| [Agents](/docs/en/sub-agents) | Runs a subagent with its own system prompt, model, and tools | You want a separately scoped helper for a focused task                                              |
+| [Skills](/docs/en/skills)     | Loads task-specific instructions when invoked or relevant    | You have a reusable workflow                                                                        |
+
+## Related resources
+
+* [Settings](/docs/en/settings): where the `outputStyle` field lives and how settings precedence works
+* [Permission modes](/docs/en/permission-modes): how the Proactive style compares to auto mode
+* [Plugins](/docs/en/plugins): package and distribute output styles alongside skills, hooks, and agents
+* [Debug your configuration](/docs/en/debug-your-config): diagnose why an output style isn't taking effect
