@@ -1,5 +1,18 @@
 [
   {
+    "date": "2026-09-21T15:11:02Z",
+    "commit_hash": "1cabb3d",
+    "entries": [
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/commands\" target=\"_blank\">Commands</a>",
+        "summary": "/design 명령어 설명이 업데이트되어 편집 방식 변경 및 요구 버전이 v2.1.265로 상향되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/1cabb3d_commands.txt"
+      }
+    ]
+  },
+  {
     "date": "2026-09-20T15:09:32Z",
     "commit_hash": "6cc58fb",
     "entries": [
