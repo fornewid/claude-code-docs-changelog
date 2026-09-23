@@ -1,5 +1,284 @@
 [
   {
+    "date": "2026-09-23T15:11:15Z",
+    "commit_hash": "7a8c494",
+    "entries": [
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/advisor\" target=\"_blank\">Advisor</a>",
+        "summary": "Opus 5.5 모델 지원 추가 및 LLM 게이트웨이 환경에서의 에러 처리 관련 문서가 업데이트되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/7a8c494_advisor.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/agent-sdk__python\" target=\"_blank\">Agent Sdk__Python</a>",
+        "summary": "1M 토큰 컨텍스트 지원 모델 목록에 Claude Opus 5.5가 추가되어 최신 모델 마이그레이션 정보를 업데이트했습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/7a8c494_agent-sdk__python.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/agent-sdk__typescript\" target=\"_blank\">Agent Sdk__Typescript</a>",
+        "summary": "MCP 리소스 읽기를 위한 readMcpResource 메서드와 SDKControlMcpReadResourceResponse 타입이 추가되어 앱에서 MCP 위젯 렌더링이 가능해집니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/7a8c494_agent-sdk__typescript.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/amazon-bedrock\" target=\"_blank\">Amazon Bedrock</a>",
+        "summary": "Amazon Bedrock 문서의 기본 모델 버전이 Opus 5에서 Opus 5.5로 업데이트되었으며, 관련 별칭 및 버전별 기본값 설명이 수정되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/7a8c494_amazon-bedrock.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/artifacts\" target=\"_blank\">Artifacts</a>",
+        "summary": "아티팩트 활성화 조건과 관련된 조직 정책 로드 방식 및 네트워크(프록시/VPN) 가이드라인이 추가되어 트러블슈팅이 용이해졌습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/7a8c494_artifacts.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/changelog\" target=\"_blank\">Changelog</a>",
+        "summary": "서버 측 자동 모드 분류기 도입, AGENTS.md 파일 지원 추가, 그리고 다양한 세션 중단 및 플러그인 관리 버그가 대거 수정되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/7a8c494_changelog.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/claude-code-on-the-web\" target=\"_blank\">Claude Code On The Web</a>",
+        "summary": "/effort 명령어와 관련된 상세 제약 조건 설명이 제거되고 가용성 노트 링크로 간소화되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/7a8c494_claude-code-on-the-web.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/claude-directory\" target=\"_blank\">Claude Directory</a>",
+        "summary": "각 파일별 YAML 프론트매터 필드와 지원 항목을 정리한 레퍼런스 테이블이 추가되어 설정 가독성과 참조 편의성이 향상되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/7a8c494_claude-directory.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/claude-platform-on-aws\" target=\"_blank\">Claude Platform On Aws</a>",
+        "summary": "AWS 상의 Claude 플랫폼에서 기본 모델 별칭(alias)에 대한 버전별 매핑 정보와 기본값이 최신 버전 기준으로 업데이트되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/7a8c494_claude-platform-on-aws.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/communications-kit\" target=\"_blank\">Communications Kit</a>",
+        "summary": "Opus 5.5 모델 지원이 추가됨에 따라 보안 및 생물학 콘텐츠 처리 정책과 모델 비교 표가 업데이트되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/7a8c494_communications-kit.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/costs\" target=\"_blank\">Costs</a>",
+        "summary": "세션 모델 변경 시 서브에이전트 상속 동작이 추가되고, 확장 사고를 끌 수 없는 모델 목록에 Opus 5.5가 추가되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/7a8c494_costs.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/desktop\" target=\"_blank\">Desktop</a>",
+        "summary": "확장된 사고 기능 문서가 업데이트되어 Opus 5.5 모델이 항상 확장된 사고를 사용한다는 내용이 추가되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/7a8c494_desktop.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/discover-plugins\" target=\"_blank\">Discover Plugins</a>",
+        "summary": "마켓플레이스 자동 새로고침 예외 조건에 claude.ai에서 추가된 경우가 포함되도록 문서가 업데이트되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/7a8c494_discover-plugins.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/errors\" target=\"_blank\">Errors</a>",
+        "summary": "Opus 5.5 모델 지원 추가에 따른 에러 메시지, 버전 요구사항, 자동 모델 폴백 및 플러그인 경로 규칙 등의 문서 내용이 갱신되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/7a8c494_errors.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/fast-mode\" target=\"_blank\">Fast Mode</a>",
+        "summary": "Opus 5.5 모델 지원 추가 및 가격 인하, 빠른 모드 명령어 사용법 변경 등 최신 업데이트 반영.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/7a8c494_fast-mode.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/features-overview\" target=\"_blank\">Features Overview</a>",
+        "summary": "기능 개요 문서에 새로운 'Output styles' 항목이 추가되어 역할, 톤, 응답 형식을 설정하는 방법이 안내됩니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/7a8c494_features-overview.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/glossary\" target=\"_blank\">Glossary</a>",
+        "summary": "용어집에 'Frontmatter' 항목이 추가되어 마크다운 파일 상단의 YAML 설정 블록과 관련 설정 문서 정보를 제공합니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/7a8c494_glossary.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/google-vertex-ai\" target=\"_blank\">Google Vertex Ai</a>",
+        "summary": "Google Vertex AI 문서의 기본 모델 버전 정보(Opus 5.5 등)와 버전별 동작 설명이 최신 사양에 맞춰 업데이트되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/7a8c494_google-vertex-ai.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/hooks\" target=\"_blank\">Hooks</a>",
+        "summary": "PermissionRequest 이벤트의 agent 훅 지원이 제외되고 관련 제약 사항 및 설정 방법이 문서에 추가되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/7a8c494_hooks.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/keybindings\" target=\"_blank\">Keybindings</a>",
+        "summary": "확인(Confirmation) 컨텍스트의 기본 키 바인딩에서 'Y'와 'N'이 제거되고, 관련 동작 설명 및 선택(Select) 메뉴의 키 바인딩 동작이 변경되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/7a8c494_keybindings.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/llm-gateway-protocol\" target=\"_blank\">Llm Gateway Protocol</a>",
+        "summary": "어드바이저(advisor) 도구 거부 발생 시 자동 재시도 및 관련 베타 값 처리 로직이 추가되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/7a8c494_llm-gateway-protocol.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/mcp\" target=\"_blank\">Mcp</a>",
+        "summary": "Claude Code의 MCP 서버 설명 및 지침 글자 수 제한이 명시되었고, 이를 변경할 수 있는 새로운 환경 변수가 추가되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/7a8c494_mcp.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/memory\" target=\"_blank\">Memory</a>",
+        "summary": "규칙 frontmatter 참조 문서가 추가되고, AGENTS.md의 메모리 및 컨텍스트 표시 방식 관련 설명이 최신 버전 기준으로 업데이트되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/7a8c494_memory.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/model-config\" target=\"_blank\">Model Config</a>",
+        "summary": "Opus 5.5 모델이 새롭게 추가되고 기본 모델 및 별칭(alias) 설정이 업데이트되었으며, 서브에이전트 모델 상속 및 안전성 분류기 폴백 동작이 개선되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/7a8c494_model-config.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/monitoring-usage\" target=\"_blank\">Monitoring Usage</a>",
+        "summary": "훅(hook) 이벤트 로깅 항목에 문자 수 및 출력 저장 횟수 관련 메트릭이 추가되어 모니터링 기능이 강화되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/7a8c494_monitoring-usage.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/network-config\" target=\"_blank\">Network Config</a>",
+        "summary": "플러그인 및 마켓플레이스 클론을 위해 `github.com` 도메인이 허용 목록에 추가되어 관련 네트워크 요구사항이 업데이트되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/7a8c494_network-config.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/output-styles\" target=\"_blank\">Output Styles</a>",
+        "summary": "출력 스타일 문서가 전면 개정되어 내장 스타일(Proactive, Concise, Explanatory, Learning)의 상세한 동작 방식과 사용 사례가 표와 함께 추가되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/7a8c494_output-styles.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/plugin-marketplaces\" target=\"_blank\">Plugin Marketplaces</a>",
+        "summary": "플러그인 마켓플레이스의 백그라운드 자동 업데이트 동작이 변경되어, 기존의 URL 재작성 방식 대신 git 자격 증명 도우미를 사용하도록 수정되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/7a8c494_plugin-marketplaces.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/plugins-reference\" target=\"_blank\">Plugins Reference</a>",
+        "summary": "플러그인 에이전트 frontmatter 지원 필드(`color`, `experimental` 등 추가, `initialPrompt` 제외)가 업데이트되었으며, userConfig 필드에 고정 옵션(options) 제한 기능 및 규칙이 추가되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/7a8c494_plugins-reference.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/plugins\" target=\"_blank\">Plugins</a>",
+        "summary": "플래그를 사용할 수 없는 세션에서 플러그인을 로드하기 위한 CLAUDE_CODE_PLUGIN_DIRS 환경 변수 설정 방법이 추가되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/7a8c494_plugins.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/prompt-caching\" target=\"_blank\">Prompt Caching</a>",
+        "summary": "Opus 5.5 모델이 프롬프트 캐시 유지 대상에 추가되고 관련 문서와 토큰 비용 설명이 업데이트되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/7a8c494_prompt-caching.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/remote-control\" target=\"_blank\">Remote Control</a>",
+        "summary": "원격 제어 기기의 깃(Git) 변경 사항 표시 방식이 브랜치 상태에 따라 커밋 및 미커밋 변경 사항을 포함하도록 구체화되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/7a8c494_remote-control.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/settings-example\" target=\"_blank\">Settings Example</a>",
+        "summary": "effortLevel 설정이 모델별 설정 구조인 modelSettings 하위로 변경되어 더 체계적인 설정 관리를 지원합니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/7a8c494_settings-example.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/settings-reference\" target=\"_blank\">Settings Reference</a>",
+        "summary": "settings-reference.md 문서가 업데이트되어 Opus 5.5 모델 지원 및 모델별 effortLevel 설정 방식 변경 사항이 반영되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/7a8c494_settings-reference.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/skills\" target=\"_blank\">Skills</a>",
+        "summary": "프론트매터 설정 가이드가 보완되었고, 개인 스킬이 사라지는 현상에 대한 원인과 복구 방법 안내가 추가되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/7a8c494_skills.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/sub-agents\" target=\"_blank\">Sub Agents</a>",
+        "summary": "서브에이전트 설정 문서 내 --agents 플래그 제한 사항, 프론트매터 작성법 및 필드(`name`, `model` 등) 설명이 업데이트되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/7a8c494_sub-agents.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/ultrareview\" target=\"_blank\">Ultrareview</a>",
+        "summary": "ultrareview 명령어 실행 중 세션 중단 및 계정 전환 상황에 대한 안내와 종료 코드(1)의 예외 처리가 추가되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/7a8c494_ultrareview.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/voice-dictation\" target=\"_blank\">Voice Dictation</a>",
+        "summary": "음성 받아쓰기 기능에 녹음 취소 방법(Esc, Ctrl+C)과 스페이스바 동작 조건 등 상세 가이드가 추가되어 사용자 편의성이 향상되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/7a8c494_voice-dictation.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/vs-code\" target=\"_blank\">Vs Code</a>",
+        "summary": "VS Code 확장 기능 문서에 `/plan`, `/skills`, `/status`, `/sandbox`, `/chrome`, `/export` 등의 신규 명령어와 텍스트 붙여넣기 기능이 추가되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/7a8c494_vs-code.txt"
+      }
+    ]
+  },
+  {
     "date": "2026-09-22T15:11:30Z",
     "commit_hash": "949d993",
     "entries": [
