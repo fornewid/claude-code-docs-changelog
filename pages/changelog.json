@@ -1,5 +1,25 @@
 [
   {
+    "date": "2026-09-24T15:11:11Z",
+    "commit_hash": "b86b285",
+    "entries": [
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/changelog\" target=\"_blank\">Changelog</a>",
+        "summary": "Claude Code 2.1.281 릴리스: Claude Desktop 게이트웨이 및 Bedrock 업스트림 설정 추가, 대규모 세션 복원 및 프롬프트 캐시 안정성 개선, 보안 및 권한 처리 강화, MCP 서버 연결 및 플러그인 관리 관련 다수 버그 수정.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/b86b285_changelog.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/env-vars\" target=\"_blank\">Env Vars</a>",
+        "summary": "기능 플래그 비활성화 시 사용 불가능한 기능 목록에서 AGENTS.md 파일 읽기 제한 항목이 제거되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/b86b285_env-vars.txt"
+      }
+    ]
+  },
+  {
     "date": "2026-09-23T15:11:15Z",
     "commit_hash": "7a8c494",
     "entries": [
