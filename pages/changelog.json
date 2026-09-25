@@ -1,5 +1,340 @@
 [
   {
+    "date": "2026-09-25T15:12:33Z",
+    "commit_hash": "ac49729",
+    "entries": [
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/agent-sdk__permissions\" target=\"_blank\">Agent Sdk__Permissions</a>",
+        "summary": "Linux 및 macOS 환경에서 root 또는 sudo 권한으로 bypassPermissions 모드 실행 시 보안 강화를 위해 실행이 거부되도록 제한이 추가되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/ac49729_agent-sdk__permissions.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/agent-sdk__python\" target=\"_blank\">Agent Sdk__Python</a>",
+        "summary": "ClaudeAgentOptions 설정에 환경변수(CLAUDE_AGENT_SDK_CLIENT_APP) 설명이 추가되고 deprecated된 debug_stderr 동작이 명시되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/ac49729_agent-sdk__python.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/agent-sdk__troubleshooting\" target=\"_blank\">Agent Sdk__Troubleshooting</a>",
+        "summary": "Agent SDK 트러블슈팅 문서에 기능별 증상과 해당 해결 페이지를 안내하는 참조 테이블이 추가되어 문제 해결 접근성이 향상되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/ac49729_agent-sdk__troubleshooting.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/amazon-bedrock\" target=\"_blank\">Amazon Bedrock</a>",
+        "summary": "Mantle 엔드포인트 사용을 위한 전용 IAM 권한 설정 가이드와 403 오류 원인별 해결 방법이 추가되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/ac49729_amazon-bedrock.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/changelog\" target=\"_blank\">Changelog</a>",
+        "summary": "세션 복원, API 오류, Vim 모드 버그 등 다양한 안정성 문제가 수정되었으며, 터미널 prose 너비 설정 및 원격 제어 관련 기능이 추가 및 개선되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/ac49729_changelog.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/claude-apps-gateway-config\" target=\"_blank\">Claude Apps Gateway Config</a>",
+        "summary": "모델 호출 없이 게이트웨이 부하 테스트를 수행할 수 있는 새로운 load_test_mode 설정이 추가되어 성능 검증이 용이해졌습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/ac49729_claude-apps-gateway-config.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/claude-apps-gateway\" target=\"_blank\">Claude Apps Gateway</a>",
+        "summary": "잠금 설정 시에도 필터를 통과하는 부모 제공 설정에 새로운 마켓플레이스 관련 항목(strictKnownMarketplaces, blockedMarketplaces)이 추가되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/ac49729_claude-apps-gateway.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/claude-platform-on-aws\" target=\"_blank\">Claude Platform On Aws</a>",
+        "summary": "AWS 자격 증명 새로 고침 기능과 관련된 특정 Claude Code 버전 요구 사항 문구가 삭제되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/ac49729_claude-platform-on-aws.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/claude-projects\" target=\"_blank\">Claude Projects</a>",
+        "summary": "원격 제어(Remote Control) 기능 추가로 Claude Code 프로젝트 스레드 실행 방안이 확장되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/ac49729_claude-projects.txt"
+      },
+      {
+        "title": "Claude-Tag",
+        "summary": "문서가 삭제되었습니다.",
+        "tag_text": "DELETE",
+        "tag_class": "delete"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/commands\" target=\"_blank\">Commands</a>",
+        "summary": "/batch 명령어 문서가 갱신되어 worktree 지원 범위 확대 및 비-git 환경에서의 사용 조건이 추가되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/ac49729_commands.txt"
+      },
+      {
+        "title": "Discover-Plugins",
+        "summary": "문서가 삭제되었습니다.",
+        "tag_text": "DELETE",
+        "tag_class": "delete"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/env-vars\" target=\"_blank\">Env Vars</a>",
+        "summary": "환경 변수 문서에 프로젝트/로컬 설정에서 설정할 수 없는 변수 제약 사항과 관련 레퍼런스 링크가 추가되어 구성 관리 방침이 명확해졌습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/ac49729_env-vars.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/errors\" target=\"_blank\">Errors</a>",
+        "summary": "자동 모드 안전성 검증 및 요청/명령어 관련 새로운 에러 메시지들이 문서에 추가되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/ac49729_errors.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/fullscreen\" target=\"_blank\">Fullscreen</a>",
+        "summary": "마우스 휠을 이용한 선택 메뉴 스크롤 기능이 추가되고 관련 버전 요구사항이 업데이트되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/ac49729_fullscreen.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/headless\" target=\"_blank\">Headless</a>",
+        "summary": "headless 모드의 `--bare` 옵션 설명에 플러그인이 'installed plugins'로 구체화되어 문서의 정확도가 향상되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/ac49729_headless.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/managed-settings\" target=\"_blank\">Managed Settings</a>",
+        "summary": "마켓플레이스 정책 및 제한(strictKnownMarketplaces, blockedMarketplaces) 관련 동작 방식과 버전 요구사항이 추가되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/ac49729_managed-settings.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/monitoring-usage\" target=\"_blank\">Monitoring Usage</a>",
+        "summary": "OTEL 설정 변수 제한 및 OTEL_LOG_TOOL_DETAILS=1에 따른 속성 익명화 예외 규칙이 추가되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/ac49729_monitoring-usage.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/permission-modes\" target=\"_blank\">Permission Modes</a>",
+        "summary": "서버 측 분류기 검토(Server-side classifier review) 기능이 확장 및 세분화되었으며, 서버 검토 결과가 없을 때의 동작과 관련 환경 변수 설정 방법이 업데이트되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/ac49729_permission-modes.txt"
+      },
+      {
+        "title": "Plugin-Dependencies",
+        "summary": "문서가 삭제되었습니다.",
+        "tag_text": "DELETE",
+        "tag_class": "delete"
+      },
+      {
+        "title": "Plugin-Hints",
+        "summary": "문서가 삭제되었습니다.",
+        "tag_text": "DELETE",
+        "tag_class": "delete"
+      },
+      {
+        "title": "Plugin-Marketplaces",
+        "summary": "문서가 삭제되었습니다.",
+        "tag_text": "DELETE",
+        "tag_class": "delete"
+      },
+      {
+        "title": "Plugin-Relevance",
+        "summary": "문서가 삭제되었습니다.",
+        "tag_text": "DELETE",
+        "tag_class": "delete"
+      },
+      {
+        "title": "Plugins-Reference",
+        "summary": "문서가 삭제되었습니다.",
+        "tag_text": "DELETE",
+        "tag_class": "delete"
+      },
+      {
+        "title": "Plugins",
+        "summary": "문서가 삭제되었습니다.",
+        "tag_text": "DELETE",
+        "tag_class": "delete"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/plugins__anthropic-marketplaces\" target=\"_blank\">Plugins__Anthropic Marketplaces</a>",
+        "summary": "Claude Code의 공식, 커뮤니티, 데모 플러그인 마켓플레이스의 종류와 사용법을 안내하는 새로운 문서가 추가되었습니다.",
+        "tag_text": "NEW",
+        "tag_class": "new"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/plugins__cli-hints\" target=\"_blank\">Plugins__Cli Hints</a>",
+        "summary": "CLI/SDK에서 Claude Code 플러그인 설치를 유도하는 `<claude-code-hint />` 태그 사용법 문서가 추가되었습니다.",
+        "tag_text": "NEW",
+        "tag_class": "new"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/plugins__cli-reference\" target=\"_blank\">Plugins__Cli Reference</a>",
+        "summary": "Claude Code의 플러그인 쉘 명령어, /plugin 및 /reload-plugins 사용법에 대한 포괄적인 CLI 참조 문서가 추가되었습니다.",
+        "tag_text": "NEW",
+        "tag_class": "new"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/plugins__code-intelligence\" target=\"_blank\">Plugins__Code Intelligence</a>",
+        "summary": "코드 인텔리전스(LSP) 플러그인 설치 및 설정 가이드가 추가되어, Claude가 실시간 진단 및 코드 내비게이션 기능을 활용할 수 있게 되었습니다.",
+        "tag_text": "NEW",
+        "tag_class": "new"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/plugins__components\" target=\"_blank\">Plugins__Components</a>",
+        "summary": "플러그인 컴포넌트 추가 방법을 설명하는 새로운 문서 파일(plugins__components.md)이 추가되었습니다.",
+        "tag_text": "NEW",
+        "tag_class": "new"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/plugins__create-marketplace\" target=\"_blank\">Plugins__Create Marketplace</a>",
+        "summary": "클로드 코드(Claude Code) 플러그인 마켓플레이스 생성 및 관리 방법을 안내하는 새로운 문서가 추가되었습니다.",
+        "tag_text": "NEW",
+        "tag_class": "new"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/plugins__create\" target=\"_blank\">Plugins__Create</a>",
+        "summary": "Claude Code 플러그인 제작을 위한 가이드 문서가 추가되어, 첫 플러그인 생성 및 디렉토리 구조 설정 방법을 제공합니다.",
+        "tag_text": "NEW",
+        "tag_class": "new"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/plugins__dependencies\" target=\"_blank\">Plugins__Dependencies</a>",
+        "summary": "플러그인 의존성 관리 방법을 안내하는 새로운 문서가 추가되어, 버전 제약 및 마켓플레이스 간 의존성 설정 등을 지원합니다.",
+        "tag_text": "NEW",
+        "tag_class": "new"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/plugins__host-marketplace\" target=\"_blank\">Plugins__Host Marketplace</a>",
+        "summary": "마켓플레이스 호스팅 및 유지관리에 대한 새로운 가이드 문서를 추가하여 배포, 접근 제어, 업데이트 방법을 안내합니다.",
+        "tag_text": "NEW",
+        "tag_class": "new"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/plugins__install\" target=\"_blank\">Plugins__Install</a>",
+        "summary": "Claude Code 플러그인 설치 및 관리 가이드가 추가되었으며, 터미널, 데스크톱, VS Code 등 환경별 설치 방법과 스코프 설정법을 안내합니다.",
+        "tag_text": "NEW",
+        "tag_class": "new"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/plugins__loading\" target=\"_blank\">Plugins__Loading</a>",
+        "summary": "Claude Code의 플러그인 로딩 과정, 설정 파일 역할, 문제 해결 규칙을 다루는 새로운 문서가 추가되었습니다.",
+        "tag_text": "NEW",
+        "tag_class": "new"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/plugins__manifest-reference\" target=\"_blank\">Plugins__Manifest Reference</a>",
+        "summary": "플러그인 매니페스트(plugin.json)의 구조, 필드, 설정 방법 및 검증 규칙을 정의하는 새로운 문서가 추가되었습니다.",
+        "tag_text": "NEW",
+        "tag_class": "new"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/plugins__marketplace-reference\" target=\"_blank\">Plugins__Marketplace Reference</a>",
+        "summary": "marketplace.json 파일 구조, 플러그인 소스 및 예약된 이름을 설명하는 새로운 마켓플레이스 참조 문서가 추가되었습니다.",
+        "tag_text": "NEW",
+        "tag_class": "new"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/plugins__measure\" target=\"_blank\">Plugins__Measure</a>",
+        "summary": "Claude Code 플러그인의 토큰 비용 측정 방법과 사용량 추적 기능을 안내하는 새로운 문서가 추가되었습니다.",
+        "tag_text": "NEW",
+        "tag_class": "new"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/plugins__org\" target=\"_blank\">Plugins__Org</a>",
+        "summary": "조직 내 Claude Code 플러그인 관리 및 배포를 위한 관리자 가이드가 추가되었습니다.",
+        "tag_text": "NEW",
+        "tag_class": "new"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/plugins__overview\" target=\"_blank\">Plugins__Overview</a>",
+        "summary": "Claude Code 플러그인의 개념, 구성 요소, 마켓플레이스 활용법을 설명하는 새로운 개요 문서가 추가되었습니다.",
+        "tag_text": "NEW",
+        "tag_class": "new"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/plugins__publish\" target=\"_blank\">Plugins__Publish</a>",
+        "summary": "Claude Code 플러그인 배포 및 마켓플레이스 등록 방법을 안내하는 새 문서가 추가되었습니다.",
+        "tag_text": "NEW",
+        "tag_class": "new"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/plugins__relevance\" target=\"_blank\">Plugins__Relevance</a>",
+        "summary": "조직의 마켓플레이스 플러그인에 'relevance' 블록을 추가하여 작업 맥락에 맞는 플러그인을 사용자에게 추천하는 기능 안내서가 추가되었습니다.",
+        "tag_text": "NEW",
+        "tag_class": "new"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/plugins__security\" target=\"_blank\">Plugins__Security</a>",
+        "summary": "플러그인 보안 및 신뢰성 가이드 문서가 추가되어, 설치 전 검토 방법과 마켓플레이스 등급 체계를 안내합니다.",
+        "tag_text": "NEW",
+        "tag_class": "new"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/plugins__troubleshooting\" target=\"_blank\">Plugins__Troubleshooting</a>",
+        "summary": "Claude Code 플러그인 트러블슈팅 가이드가 추가되었으며, 설치부터 환경별 오류 및 해결 방법을 상세히 다룹니다.",
+        "tag_text": "NEW",
+        "tag_class": "new"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/remote-control\" target=\"_blank\">Remote Control</a>",
+        "summary": "신뢰할 수 있는 기기(Trusted Devices) 기능이 Pro 및 Max 플랜으로 확대 지원되며, 설정 경로와 관리 방법이 업데이트되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/ac49729_remote-control.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/sandboxing\" target=\"_blank\">Sandboxing</a>",
+        "summary": "자동 허용 모드의 예외 사항에 서버 측 분류기 검토가 추가되었으며, 크레덴셜 설정과 관련된 불필요한 버전 요구사항 문구가 제거되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/ac49729_sandboxing.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/sessions\" target=\"_blank\">Sessions</a>",
+        "summary": "세션 복구 시 중단된 도구 호출 처리 방식과 환경 변수 설정에 대한 상세 설명이 추가되어 예기치 않은 종료 후 복구 동작이 명확해졌습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/ac49729_sessions.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/settings-example\" target=\"_blank\">Settings Example</a>",
+        "summary": "팀 설정 예시에서 텔레메트리 환경 변수가 제거되고, 관련 설정 규칙 및 관리 방법이 문서에 추가되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/ac49729_settings-example.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/settings\" target=\"_blank\">Settings</a>",
+        "summary": "프로젝트 및 로컬 설정 파일에서 텔레메트리 관련 env 변수 적용 제한 사항이 문서에 추가되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/ac49729_settings.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/worktrees\" target=\"_blank\">Worktrees</a>",
+        "summary": "플러그인 문서 링크가 업데이트되었고, WorktreeCreate 훅을 통한 깃 저장소 외 외부 배포 기능 설명이 추가되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/ac49729_worktrees.txt"
+      }
+    ]
+  },
+  {
     "date": "2026-09-24T15:11:11Z",
     "commit_hash": "b86b285",
     "entries": [
