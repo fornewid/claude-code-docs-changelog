@@ -1,5 +1,445 @@
 [
   {
+    "date": "2026-09-26T15:10:46Z",
+    "commit_hash": "79cdb47",
+    "entries": [
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/advisor\" target=\"_blank\">Advisor</a>",
+        "summary": "Advisor 상태에 새로운 'Unavailable' 항목이 추가되어 호출 실패 시 에러 코드를 확인할 수 있게 되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/79cdb47_advisor.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/agent-sdk__mcp\" target=\"_blank\">Agent Sdk__Mcp</a>",
+        "summary": "SDK MCP 서버의 첫 턴 대기 타임아웃 동작이 MCP_TIMEOUT 환경 변수를 따르도록 문서가 수정되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/79cdb47_agent-sdk__mcp.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/agent-sdk__observability\" target=\"_blank\">Agent Sdk__Observability</a>",
+        "summary": "OTEL_LOG_TOOL_CONTENT=1 환경변수의 로깅 범위에 MCP, WebFetch, WebSearch 도구 결과가 추가되어 상세한 모니터링이 가능해졌습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/79cdb47_agent-sdk__observability.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/agent-sdk__permissions\" target=\"_blank\">Agent Sdk__Permissions</a>",
+        "summary": "핵심 경로(Critical path) 파일 삭제 및 중요 도구에 대한 권한 허용 규칙과 콜백 동작 방식이 명확하게 업데이트되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/79cdb47_agent-sdk__permissions.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/agent-sdk__python\" target=\"_blank\">Agent Sdk__Python</a>",
+        "summary": "ClaudeAgentOptions에 verbatim_prompts 옵션이 추가되어 프롬프트 전달 방식을 제어할 수 있게 되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/79cdb47_agent-sdk__python.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/agent-sdk__typescript\" target=\"_blank\">Agent Sdk__Typescript</a>",
+        "summary": "번들 크기 최적화를 위한 `/core` 엔트리포인트 추가, 사전 워밍업 기능을 제공하는 `prewarm()` 함수 도입, 그리고 `verbatimPrompts` 설정 옵션이 추가되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/79cdb47_agent-sdk__typescript.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/agent-teams\" target=\"_blank\">Agent Teams</a>",
+        "summary": "에이전트 팀원들의 설정 소스 로드 방식이 개선되어, 리드와 동일한 제한된 소스 목록을 따르도록 변경되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/79cdb47_agent-teams.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/agent-view\" target=\"_blank\">Agent View</a>",
+        "summary": "백그라운드 세션 및 에이전트 뷰에 '--setting-sources' 설정 플래그가 추가되고, 워크트리 삭제 조건 및 신뢰 권한 관련 안내가 구체화되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/79cdb47_agent-view.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/authentication\" target=\"_blank\">Authentication</a>",
+        "summary": "OS별(macOS/Linux, PowerShell, CMD) 인증 토큰 환경 변수 설정 방법이 추가되어 플랫폼별 가이드가 개선되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/79cdb47_authentication.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/auto-mode-config\" target=\"_blank\">Auto Mode Config</a>",
+        "summary": "auto-mode-config.md 문서에서 구버전 버전 히스토리(v2.1.x 등)와 관련된 불필요한 마이그레이션 세부 사항 및 구형 버전 언급 내용을 정리하여 가독성을 높였습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/79cdb47_auto-mode-config.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/best-practices\" target=\"_blank\">Best Practices</a>",
+        "summary": "Stop hook 및 권한 모드(auto/manual) 관련 설명이 최신 버전 기준으로 업데이트되어 정확한 동작 방식을 안내합니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/79cdb47_best-practices.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/changelog\" target=\"_blank\">Changelog</a>",
+        "summary": "Claude Code 2.1.283 버전 업데이트: 게이트웨이 힌트 헤더, 관리형 설정, OpenTelemetry 이벤트 추가 및 다수의 플러그인, MCP, UI/Vim 모드 버그가 수정되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/79cdb47_changelog.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/channels\" target=\"_blank\">Channels</a>",
+        "summary": "개발 중인 채널을 테스트할 때 --dangerously-load-development-channels에 전달하는 형식(plugin/server)이 명시되어 테스트 방법이 명확해졌습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/79cdb47_channels.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/claude-apps-gateway-config\" target=\"_blank\">Claude Apps Gateway Config</a>",
+        "summary": "텔레메트리 리소스 속성(`telemetry.resource_attributes`) 설정 기능이 추가되고, 부하 테스트 모드 관련 설명과 요구 버전이 업데이트되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/79cdb47_claude-apps-gateway-config.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/claude-apps-gateway\" target=\"_blank\">Claude Apps Gateway</a>",
+        "summary": "Claude Code의 HTTPS 로그인 요구사항 및 루프백 예외 조건에 대한 설명이 보다 명확하게 구체화되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/79cdb47_claude-apps-gateway.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/claude-code-on-the-web\" target=\"_blank\">Claude Code On The Web</a>",
+        "summary": "GitHub 인증 정보 보안 처리 방식과 클라우드 세션의 시간 제한(Time limits) 제약 사항이 새롭게 추가되어 사용자 가이드가 보완되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/79cdb47_claude-code-on-the-web.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/claude-directory\" target=\"_blank\">Claude Directory</a>",
+        "summary": "세션 임시 파일 저장을 위한 '스크래치패드' 디렉토리 관련 문서가 추가되었으며, 도구 결과 및 데이터 정리 정책에 대한 설명이 갱신되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/79cdb47_claude-directory.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/claude-projects\" target=\"_blank\">Claude Projects</a>",
+        "summary": "로컬 컴퓨터에서 스레드를 직접 실행하는 방법과 원격 제어(Remote Control) 연동 가이드가 새롭게 추가되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/79cdb47_claude-projects.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/cli-reference\" target=\"_blank\">Cli Reference</a>",
+        "summary": "--agents 플래그에 JSON 파일 경로 지정 기능이 추가되어 유연성을 높였습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/79cdb47_cli-reference.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/cloud-environments\" target=\"_blank\">Cloud Environments</a>",
+        "summary": "클라우드 환경 문서에 명령어, 훅, 셋업 스크립트, 유휴 세션 등에 대한 새로운 '시간 제한(Time limits)' 섹션과 관련 가이드가 추가되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/79cdb47_cloud-environments.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/costs\" target=\"_blank\">Costs</a>",
+        "summary": "서브에이전트 사용 시 비용 발생 원인과 절감 방법, 그리고 백그라운드 작업 및 워크플로우에 따른 토큰 소비 내역이 추가되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/79cdb47_costs.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/desktop-quickstart\" target=\"_blank\">Desktop Quickstart</a>",
+        "summary": "데스크톱 앱 설명이 갱신되고, 구독 정보 및 탭 기능(Cowork 등) 정의가 업데이트되어 사용자 가이드가 명확해졌습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/79cdb47_desktop-quickstart.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/env-vars\" target=\"_blank\">Env Vars</a>",
+        "summary": "위험한 삭제 작업의 타임아웃을 비활성화하는 새로운 환경 변수(CLAUDE_CODE_DISABLE_DANGEROUS_RM_TIMEOUT)가 추가되어 권한 모드 제어가 유연해졌습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/79cdb47_env-vars.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/errors\" target=\"_blank\">Errors</a>",
+        "summary": "오류 문서의 에러 메시지 매핑 테이블에 새로운 서버 에러 및 인증 관련 에러 메시지들이 추가되어 문제 해결 편의성이 향상되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/79cdb47_errors.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/fullscreen\" target=\"_blank\">Fullscreen</a>",
+        "summary": "전체 화면 모드에서 스크롤바를 이용한 목록 탐색 및 에이전트 메시지 확장 기능 등 새로운 마우스 상호작용 기능이 추가되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/79cdb47_fullscreen.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/glossary\" target=\"_blank\">Glossary</a>",
+        "summary": "Auto mode의 기본 활성화 조건이 v2.1.283 이상 버전 기준으로 업데이트되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/79cdb47_glossary.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/headless\" target=\"_blank\">Headless</a>",
+        "summary": "SIGTERM 세션 재개 동작 설정 및 작업 디렉터리 삭제 시 처리 방식이 추가되고, 플러그인 로드 오류 시 절대 경로 안내가 보완되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/79cdb47_headless.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/jetbrains\" target=\"_blank\">Jetbrains</a>",
+        "summary": "작업 중 메시지를 큐에 대기시킬 때의 에디터 선택 영역 동작 방식에 대한 설명이 추가되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/79cdb47_jetbrains.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/keybindings\" target=\"_blank\">Keybindings</a>",
+        "summary": "대화상자 종료 단축키 안내, 탭 및 푸터 동작 변경, 그리고 메시지 셀렉터와 Diff 뷰의 Select 액션 통합 등 키보드 단축키 문서가 업데이트되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/79cdb47_keybindings.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/llm-gateway-protocol\" target=\"_blank\">Llm Gateway Protocol</a>",
+        "summary": "LLM 게이트웨이 프로토콜 문서에 스트림 응답 처리 규칙, 새로운 프롬프트 식별자 헤더(x-claude-code-prompt-id), 그리고 실험적 베타 비활성화 설정의 예외 사항이 추가되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/79cdb47_llm-gateway-protocol.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/managed-settings\" target=\"_blank\">Managed Settings</a>",
+        "summary": "관리형 설정 문서에 새로운 설정 키(deniedModels, availableModelsMatch 등)가 병합 규칙 및 유효하지 않은 값 처리 테이블에 추가되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/79cdb47_managed-settings.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/mcp\" target=\"_blank\">Mcp</a>",
+        "summary": "MCP 문서에 SDK 서버 등록 제한, URL 중복 처리 규칙, 도구 결과 이미지 파일 저장, URL 모드 및 UI 리소스 관련 상세 내용이 추가되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/79cdb47_mcp.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/model-config\" target=\"_blank\">Model Config</a>",
+        "summary": "특정 모델이나 버전을 차단할 수 있는 `deniedModels` 및 `availableModelsMatch` 설정이 추가되어 모델 제어 기능이 강화되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/79cdb47_model-config.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/monitoring-usage\" target=\"_blank\">Monitoring Usage</a>",
+        "summary": "디버그 로그 파일 경로 설정 방법이 변경되고, MCP 및 웹 검색/조회 도구들의 텔레메트리 툴 출력(tool.output) 이벤트 지원 및 관련 속성 설명이 확장되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/79cdb47_monitoring-usage.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/overview\" target=\"_blank\">Overview</a>",
+        "summary": "설치 안내서에 터미널 사용법, 설치 확인 방법 및 PATH 설정 오류에 대한 트러블슈팅 가이드가 추가되어 사용자 편의성이 향상되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/79cdb47_overview.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/permission-modes\" target=\"_blank\">Permission Modes</a>",
+        "summary": "Claude Code v2.1.283 이상 버전에 따른 자동(auto) 권한 모드의 기본 적용 조건 변경 및 관련 테이블 문서가 수정되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/79cdb47_permission-modes.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/permissions\" target=\"_blank\">Permissions</a>",
+        "summary": "백그라운드 세션 시작 시 워크스페이스 신뢰 여부를 확인하는 절차가 추가되어, 신뢰되지 않은 디렉토리에서는 대화형 대화상자가 표시되거나 오류가 발생합니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/79cdb47_permissions.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/platforms\" target=\"_blank\">Platforms</a>",
+        "summary": "Remote Control 기능의 지원 환경(Desktop 추가) 및 실행 명령어 옵션이 업데이트되어 사용자 편의성이 향상되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/79cdb47_platforms.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/plugin-evals\" target=\"_blank\">Plugin Evals</a>",
+        "summary": "플러그인 평가(eval) 실행 시 요구되는 Git 버전(2.31 이상) 추가 및 관련 에러 처리 내용이 문서에 반영되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/79cdb47_plugin-evals.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/plugins__anthropic-marketplaces\" target=\"_blank\">Plugins__Anthropic Marketplaces</a>",
+        "summary": "Anthropic의 디렉토리와 마켓플레이스 간의 차이점 및 연동 방식에 대한 설명이 추가되어 플러그인 등록 및 동기화 경로가 명확해졌습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/79cdb47_plugins__anthropic-marketplaces.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/plugins__create-marketplace\" target=\"_blank\">Plugins__Create Marketplace</a>",
+        "summary": "플러그인 배포 관련 용어가 'marketplace'에서 'directory'로 변경되어 공식 명칭 및 문서 링크가 수정되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/79cdb47_plugins__create-marketplace.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/plugins__create\" target=\"_blank\">Plugins__Create</a>",
+        "summary": "플러그인 제작 문서에 'plugin-dev' 도구를 이용한 자동 스캐폴딩 가이드가 추가되고, 마켓플레이스 제출 및 플랫폼 지원 관련 링크와 설명이 최신화되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/79cdb47_plugins__create.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/plugins__host-marketplace\" target=\"_blank\">Plugins__Host Marketplace</a>",
+        "summary": "조직 동기화의 플러그인 소스 제한 사항 및 관련 문서 링크가 최신 가이드라인에 맞추어 업데이트되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/79cdb47_plugins__host-marketplace.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/plugins__manifest-reference\" target=\"_blank\">Plugins__Manifest Reference</a>",
+        "summary": "플러그인 검증(claude plugin validate) 도구의 경로 검사 범위 변경 및 관련 버전 요구사항이 문서에 반영되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/79cdb47_plugins__manifest-reference.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/plugins__org\" target=\"_blank\">Plugins__Org</a>",
+        "summary": "조직 관리자 문서의 플러그인 관련 링크가 업데이트되었고, 통합 롤아웃 안내 문서가 새로 추가되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/79cdb47_plugins__org.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/plugins__overview\" target=\"_blank\">Plugins__Overview</a>",
+        "summary": "플러그인 문서에 MCP 서버 게시 방법, 컴포넌트 지원 테이블 링크, Anthropic 디렉토리 제출 경로 등이 추가되어 안내가 구체화되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/79cdb47_plugins__overview.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/plugins__publish\" target=\"_blank\">Plugins__Publish</a>",
+        "summary": "플러그인 배포 문서가 커뮤니티 마켓플레이스에서 앤스로픽 디렉토리(Anthropic's directory) 제출 방식으로 개편되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/79cdb47_plugins__publish.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/prompt-caching\" target=\"_blank\">Prompt Caching</a>",
+        "summary": "MCP 서버 변경 시 캐시 무효화 조건이 구체화되었으며, 서버 상태 변화에 따른 캐시 유지 여부를 정리한 표가 추가되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/79cdb47_prompt-caching.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/prompt-library\" target=\"_blank\">Prompt Library</a>",
+        "summary": "프롬프트 라이브러리의 링크 렌더링 과정에서 안전한 URL 패턴 검증 로직이 추가되어 잠재적인 보안 취약점이 개선되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/79cdb47_prompt-library.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/remote-control\" target=\"_blank\">Remote Control</a>",
+        "summary": "원격 제어(Remote Control) 문서가 업데이트되어 요구사항, 기능 제한 및 Claude Desktop 앱 지원 내용이 수정되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/79cdb47_remote-control.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/sandboxing\" target=\"_blank\">Sandboxing</a>",
+        "summary": "샌드박스 문서 내 임시 디렉토리 용어가 'session temp directory'에서 'per-user temp directory'로 변경되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/79cdb47_sandboxing.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/security\" target=\"_blank\">Security</a>",
+        "summary": "클라우드 세션의 자격 증명 보호 메커니즘이 구체화되고 세션 삭제 및 데이터 저장 관련 내용이 추가되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/79cdb47_security.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/self-hosted-environments-deploy\" target=\"_blank\">Self Hosted Environments Deploy</a>",
+        "summary": "안정 버전(stable) 동적 조회를 위한 Docker 빌드 명령어 수정 및 관련 설명이 추가되어 최신 바이너리 관리가 용이해졌습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/79cdb47_self-hosted-environments-deploy.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/settings-reference\" target=\"_blank\">Settings Reference</a>",
+        "summary": "새로운 설정 항목(availableModelsMatch, deniedModels, maxProseWidth)이 추가되고 기존 availableModels 설명이 보완되어 모델 관리 및 인터페이스 제어 기능이 향상되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/79cdb47_settings-reference.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/setup\" target=\"_blank\">Setup</a>",
+        "summary": "설치 문서가 개편되어 터미널 초심자를 위한 안내가 보강되었고, 설치 후 버전 확인 및 PATH 설정 관련 트러블슈팅 안내가 추가되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/79cdb47_setup.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/skills\" target=\"_blank\">Skills</a>",
+        "summary": "SKILL.md의 프론트매터 이름 지정 규칙, 예약된 폴더명(anthropic-skills), 동기화된 스킬 충돌 해결 방식에 대한 설명이 업데이트되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/79cdb47_skills.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/sub-agents\" target=\"_blank\">Sub Agents</a>",
+        "summary": "서브에이전트 사용 시 토큰 사용량 및 비용 관련 안내가 추가되었고, JSON 정의 파일 경로 지정 기능과 빈 프롬프트 옵션이 도입되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/79cdb47_sub-agents.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/tools-reference\" target=\"_blank\">Tools Reference</a>",
+        "summary": "오토 모드 설명이 간소화되고 ListMcpResourcesTool 설명에 MCP 앱 UI 리소스를 제외한다는 내용이 추가되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/79cdb47_tools-reference.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/troubleshoot-install\" target=\"_blank\">Troubleshoot Install</a>",
+        "summary": "Windows 환경에서의 실행 파일 누락 복구 방법, macOS의 Bash PATH 설정 안내, 그리고 계정 권한 오류 관련 트러블슈팅 가이드가 추가되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/79cdb47_troubleshoot-install.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/troubleshooting\" target=\"_blank\">Troubleshooting</a>",
+        "summary": "디스크 용량 부족(ENOSPC) 및 명령어 출력 손실 오류에 대한 트러블슈팅 가이드와 에러 참고서 링크가 추가되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/79cdb47_troubleshooting.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/vs-code\" target=\"_blank\">Vs Code</a>",
+        "summary": "권한 모드 조건 및 웹 탭 세션 관리 기능이 업데이트되어 사용성이 개선되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/79cdb47_vs-code.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/workflows\" target=\"_blank\">Workflows</a>",
+        "summary": "ultracode 모드 사용 시 토큰 제한 영향 및 면제되는 확인 절차가 추가되었으며, 워크플로우 비활성화 및 ultracode 제한 설정에 대한 안내가 보완되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/79cdb47_workflows.txt"
+      }
+    ]
+  },
+  {
     "date": "2026-09-25T15:12:33Z",
     "commit_hash": "ac49729",
     "entries": [
