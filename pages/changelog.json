@@ -1,5 +1,207 @@
 [
   {
+    "date": "2026-09-28T15:12:17Z",
+    "commit_hash": "c4186e5",
+    "entries": [
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/agent-sdk__custom-tools\" target=\"_blank\">Agent Sdk__Custom Tools</a>",
+        "summary": "TypeScript 도구 정의 시 선택적 파라미터 처리 방식이 .default()에서 .optional()로 변경되고, 이미지 및 리소스 처리 관련 설명이 보강되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/c4186e5_agent-sdk__custom-tools.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/agent-sdk__modifying-system-prompts\" target=\"_blank\">Agent Sdk__Modifying System Prompts</a>",
+        "summary": "시스템 프롬프트 외에 Claude Code가 대화에 추가하는 컨텍스트(리마인더) 관리 방법과 이를 비활성화하는 가이드가 추가되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/c4186e5_agent-sdk__modifying-system-prompts.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/agent-sdk__python\" target=\"_blank\">Agent Sdk__Python</a>",
+        "summary": "SDKSessionInfo의 summary 속성 설명이 업데이트되었고, 권한 설정 관련 옵션명이 변경되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/c4186e5_agent-sdk__python.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/agent-sdk__streaming-output\" target=\"_blank\">Agent Sdk__Streaming Output</a>",
+        "summary": "구조화된 출력(Structured output)의 스트리밍 동작 방식과 제한 사항에 대한 설명이 상세히 업데이트되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/c4186e5_agent-sdk__streaming-output.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/agent-sdk__typescript\" target=\"_blank\">Agent Sdk__Typescript</a>",
+        "summary": "플러그인 및 출력 스타일을 다시 로드하는 API와 컨텍스트 사용량 추적 속성이 추가되어 기능이 확장되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/c4186e5_agent-sdk__typescript.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/agent-sdk__user-input\" target=\"_blank\">Agent Sdk__User Input</a>",
+        "summary": "TypeScript에서 suppressAlwaysAllowRule을 이용해 항상 허용 옵션을 건너뛰는 기능이 추가되어 사용자 권한 제어가 정교해졌습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/c4186e5_agent-sdk__user-input.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/authentication\" target=\"_blank\">Authentication</a>",
+        "summary": "게이트웨이 환경에서의 인증 설정 및 API 키 차단 정책에 대한 세부 내용이 업데이트되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/c4186e5_authentication.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/claude-apps-gateway-config\" target=\"_blank\">Claude Apps Gateway Config</a>",
+        "summary": "PostgreSQL 설정에 readiness_grace_seconds가 추가되고, 게이트웨이 로그인 및 설정 관련 보안 정책 가이드가 보강되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/c4186e5_claude-apps-gateway-config.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/claude-apps-gateway-deploy\" target=\"_blank\">Claude Apps Gateway Deploy</a>",
+        "summary": "Postgres 장애 시 인프라 가용성을 높이기 위한 readiness_grace_seconds 설정 및 유예 기간 동안의 동작 방식이 추가되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/c4186e5_claude-apps-gateway-deploy.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/claude-apps-gateway-on-aws\" target=\"_blank\">Claude Apps Gateway On Aws</a>",
+        "summary": "RDS 장애 조치 등에서 헬스체크 유지를 위한 readiness_grace_seconds 설정 및 관련 설명이 추가되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/c4186e5_claude-apps-gateway-on-aws.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/claude-apps-gateway-spend-limits\" target=\"_blank\">Claude Apps Gateway Spend Limits</a>",
+        "summary": "게이트웨이 장애 시 페일오픈 동작의 한계와 이를 보완하는 readiness_grace_seconds 설정 문서가 추가되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/c4186e5_claude-apps-gateway-spend-limits.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/data-usage\" target=\"_blank\">Data Usage</a>",
+        "summary": "원격 제어 기능에 영향을 주는 텔레메트리 환경 변수 비활성화 동작 설명이 더 명확하게 수정되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/c4186e5_data-usage.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/errors\" target=\"_blank\">Errors</a>",
+        "summary": "플러그인 마켓플레이스 이름 및 심볼릭 링크 관련 에러 메시지가 추가되어 트러블슈팅 가이드가 개선되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/c4186e5_errors.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/glossary\" target=\"_blank\">Glossary</a>",
+        "summary": "용어집에 System prompt와 System reminder 항목이 추가되어, Claude Code의 내부 동작 방식과 컨텍스트 전달 구조를 명확히 이해할 수 있게 되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/c4186e5_glossary.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/how-claude-code-works\" target=\"_blank\">How Claude Code Works</a>",
+        "summary": "Claude Code가 자동으로 추가하는 컨텍스트(CLAUDE.md, 출력 스타일, Git 속성 등)에 대한 설명과 설정 변경 방법이 추가되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/c4186e5_how-claude-code-works.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/llm-gateway-connect\" target=\"_blank\">Llm Gateway Connect</a>",
+        "summary": "관리형 설정에서 게이트웨이 로그인 정책(`forceLoginGatewayUrl`)이 추가됨에 따라, 관련 오류 메시지 및 해결 방법 문서가 업데이트되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/c4186e5_llm-gateway-connect.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/llm-gateway-rollout\" target=\"_blank\">Llm Gateway Rollout</a>",
+        "summary": "게이트웨이 자격 증명과 함께 사용하면 안 되는 설정 항목에 `forceLoginGatewayUrl`이 추가되었고 관련 오류 조건이 업데이트되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/c4186e5_llm-gateway-rollout.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/llm-gateway\" target=\"_blank\">Llm Gateway</a>",
+        "summary": "게이트웨이 사용 시 개발자의 claude.ai 로그인 정보 처리 방식에 대한 동작 설명이 명확하게 구체화되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/c4186e5_llm-gateway.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/managed-settings\" target=\"_blank\">Managed Settings</a>",
+        "summary": "관리형 설정에서 sandbox 블록의 유효성 검사 및 오류 처리 방식이 상세히 추가되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/c4186e5_managed-settings.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/memory\" target=\"_blank\">Memory</a>",
+        "summary": "충돌 및 오래된 규칙을 점검하는 새로운 `/doctor prompt-audit` 명령어와 내장 깃(Git) 명령어 충돌 방지 설정 방법이 추가되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/c4186e5_memory.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/permission-modes\" target=\"_blank\">Permission Modes</a>",
+        "summary": "symlink 검사 로직이 추가되어, 외부 또는 보호된 경로를 가리키는 심링크 파일에 대한 쓰기 작업 시 자동으로 프롬프트가 발생하도록 보안이 강화되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/c4186e5_permission-modes.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/permissions\" target=\"_blank\">Permissions</a>",
+        "summary": "심볼릭 링크 처리 방식에 대한 권한 규칙 설명이 대폭 확장되어 쓰기 작업 및 경로 해석 예외 상황에 대한 동작이 명확해졌습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/c4186e5_permissions.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/plugins__cli-reference\" target=\"_blank\">Plugins__Cli Reference</a>",
+        "summary": "플러그인 제거 시 데이터 삭제 조건, `--scope` 생략 시 자동 감지 동작, 유효성 검사 대상 파일 범위가 업데이트되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/c4186e5_plugins__cli-reference.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/plugins__create\" target=\"_blank\">Plugins__Create</a>",
+        "summary": "marketplace.json을 포함하는 폴더를 플러그인 로드 경로로 사용할 수 있는 기능이 추가되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/c4186e5_plugins__create.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/plugins__manifest-reference\" target=\"_blank\">Plugins__Manifest Reference</a>",
+        "summary": "플러그인 매니페스트 검증(validate) 명령어가 MCP 서버 항목 검사 및 셸 형태 훅의 경로 변수 누락 경고 기능을 새롭게 지원합니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/c4186e5_plugins__manifest-reference.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/plugins__marketplace-reference\" target=\"_blank\">Plugins__Marketplace Reference</a>",
+        "summary": "공식 마켓플레이스 사칭 등 제한된 이름을 사용하는 등록된 마켓플레이스의 로딩 중단 정책 및 관련 에러 메시지가 추가되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/c4186e5_plugins__marketplace-reference.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/plugins__troubleshooting\" target=\"_blank\">Plugins__Troubleshooting</a>",
+        "summary": "플러그인 훅이 액션을 차단하는 경우에 대한 트러블슈팅과 공백 경로 문제 해결 방법 등 관련 오류 진단 내용이 추가되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/c4186e5_plugins__troubleshooting.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/sessions\" target=\"_blank\">Sessions</a>",
+        "summary": "세션 재개 시 백그라운드 작업 처리 방식이 추가되어, 미완료된 백그라운드 서부에이전트나 워크플로우 내역이 재개된 대화 기록에 노트로 표시됩니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/c4186e5_sessions.txt"
+      }
+    ]
+  },
+  {
     "date": "2026-09-27T15:10:43Z",
     "commit_hash": "7a13aa4",
     "entries": [
