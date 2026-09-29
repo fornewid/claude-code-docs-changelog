@@ -1,5 +1,60 @@
 [
   {
+    "date": "2026-09-29T15:12:30Z",
+    "commit_hash": "3c98ee1",
+    "entries": [
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/artifacts\" target=\"_blank\">Artifacts</a>",
+        "summary": "Claude Slides, Design, Docs 템플릿 지원 기능과 관련 명령어 사용법이 문서에 추가되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/3c98ee1_artifacts.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/authentication\" target=\"_blank\">Authentication</a>",
+        "summary": "다중 계정 설정 방법 추가, 버전별 세부 문구 정리 및 apiKeyHelper 관련 설명이 최신화되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/3c98ee1_authentication.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/changelog\" target=\"_blank\">Changelog</a>",
+        "summary": "Claude Code 2.1.283 버전 업데이트로 게이트웨이 및 관리 설정, MCP 도구 개선, 프롬프트 감사 기능 추가 및 다양한 버그가 수정되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/3c98ee1_changelog.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/cloud-environments\" target=\"_blank\">Cloud Environments</a>",
+        "summary": "클라우드 세션 환경설정에서 OTEL 변수 제외 처리 및 텔레메트리 관련 에이전트 프록시 예외 사항이 추가되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/3c98ee1_cloud-environments.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/feature-availability\" target=\"_blank\">Feature Availability</a>",
+        "summary": "오토 모드 지원 모델 조건이 'Sonnet 5 또는 그 이후 버전'으로 완화되었으며, 관련 문서의 마크다운 테이블 포맷이 정돈되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/3c98ee1_feature-availability.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/prompt-caching\" target=\"_blank\">Prompt Caching</a>",
+        "summary": "Sonnet 5.5 모델이 프롬프트 캐싱 및 노력 수준 유지 대상에 추가되었으며, MCP 서버 도구 로딩 및 캐시 동작 설명이 업데이트되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/3c98ee1_prompt-caching.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/vs-code\" target=\"_blank\">Vs Code</a>",
+        "summary": "VS Code 확장 프로그램 문서에 Ultracode 워크플로우 스위치, 피드백 로컬 아카이브 저장 기능, 그리고 세션 목록 필터링 기능이 추가되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/3c98ee1_vs-code.txt"
+      }
+    ]
+  },
+  {
     "date": "2026-09-28T15:12:17Z",
     "commit_hash": "c4186e5",
     "entries": [
