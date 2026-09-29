@@ -64,7 +64,7 @@ Claude Code refuses a message in the following cases:
 
 * The message is [over the size cap](#limitations). Claude Code refuses it in the sending session, before it leaves.
 * A rapid burst to a session on this machine has reached [what that session's inbox accepts](#limitations). Claude Code refuses further messages to that session.
-* The reply target on this machine fails a safety check, such as a symlinked target or an endpoint that isn't the expected process. [Refusing to send a cross-session message](/docs/en/errors#refusing-to-send-a-cross-session-message) lists these checks.
+* The reply target on this machine fails a safety check, such as a symlinked target. [Refusing to send a cross-session message](/docs/en/errors#refusing-to-send-a-cross-session-message) lists these checks.
 
 The receiving session checks each arriving message against its own [inbound controls](#control-inbound-messages), and the check ends in one of three outcomes:
 
@@ -134,11 +134,11 @@ When you rename a session, or start or resume an interactive one, with a name an
 
 How a message travels, and whether it passes through Anthropic servers, depends on where the target session runs:
 
-| Where the other session runs               | How the message travels                                                                                                      |
-| :----------------------------------------- | :--------------------------------------------------------------------------------------------------------------------------- |
-| On this machine                            | Over a per-session socket on macOS and Linux, or a per-session named pipe on native Windows, never through Anthropic servers |
-| On another of your machines                | Through Anthropic servers, arriving over that machine's [Remote Control](/docs/en/remote-control) connection                      |
-| In the [cloud](/docs/en/claude-code-on-the-web) | Through Anthropic servers, straight to the cloud session                                                                     |
+| Where the other session runs | How the message travels |
+| :- | :- |
+| On this machine | Over a per-session socket on macOS and Linux, or a per-session named pipe on native Windows, never through Anthropic servers |
+| On another of your machines | Through Anthropic servers, arriving over that machine's [Remote Control](/docs/en/remote-control) connection |
+| In the [cloud](/docs/en/claude-code-on-the-web) | Through Anthropic servers, straight to the cloud session |
 
 Starting a conversation with a session on another of your machines requires Claude Code v2.1.225 or later and a target that [appears in the listing](#see-which-sessions-claude-can-reach).
 
@@ -185,11 +185,11 @@ The new column is tenant_id, and rebasing on main is safe now.
 
 Set [`crossSessionInbound`](/docs/en/settings-reference#crosssessioninbound) to choose what a session does with messages arriving from your other sessions:
 
-| Value    | Behavior                                                                                                                                                                                                         |
-| :------- | :--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| `accept` | Claude Code delivers each message to Claude                                                                                                                                                                      |
-| `hold`   | Claude Code shows a notice for each message and doesn't deliver it. If an `accept` later applies, per the [precedence rules](/docs/en/settings-reference#crosssessioninbound), Claude Code releases the held messages |
-| `refuse` | Claude Code drops each message without delivering it                                                                                                                                                             |
+| Value | Behavior |
+| :- | :- |
+| `accept` | Claude Code delivers each message to Claude |
+| `hold` | Claude Code shows a notice for each message and doesn't deliver it. If an `accept` later applies, per the [precedence rules](/docs/en/settings-reference#crosssessioninbound), Claude Code releases the held messages |
+| `refuse` | Claude Code drops each message without delivering it |
 
 Beyond editing a settings file, you can select the value in the `/config` row **Messages from your other sessions**. Claude Code writes the value you select to your user settings. The row requires Claude Code v2.1.232 or later and doesn't appear while managed settings or the `--settings` flag sets the key, since a user-settings value wouldn't apply then. Claude Code rejects the `/config crossSessionInbound=value` shorthand for this key.
 
