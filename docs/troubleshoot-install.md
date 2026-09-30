@@ -419,7 +419,12 @@ If Homebrew installs an older Claude Code version than you expect, the same stal
 
 ### TLS or SSL connection errors
 
-Errors like `curl: (35) TLS connect error`, `schannel: next InitializeSecurityContext failed`, or PowerShell's `Could not establish trust relationship for the SSL/TLS secure channel` indicate TLS handshake failures.
+Errors such as these mean the TLS handshake failed:
+
+* `curl: (35) TLS connect error`
+* `schannel: next InitializeSecurityContext failed`
+* PowerShell's `Could not create SSL/TLS secure channel`
+* PowerShell's `Could not establish trust relationship for the SSL/TLS secure channel`
 
 **Solutions:**
 
@@ -949,7 +954,7 @@ If you see `OAuth error: Invalid code. Please make sure the full code was copied
 
 ### 403 Forbidden after login
 
-If you see `API Error: 403 {"error":{"type":"forbidden","message":"Request not allowed"}}` after logging in:
+If you see `API Error: 403 Request not allowed` after logging in:
 
 * **Claude Pro/Max users**: verify your subscription is active at [claude.ai/settings](https://claude.ai/settings)
 * **Anthropic Console users**: confirm your account has the "Claude Code" or "Developer" role. Admins assign this in the Anthropic Console under Settings → Members.
