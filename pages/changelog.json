@@ -1,5 +1,312 @@
 [
   {
+    "date": "2026-09-30T15:13:09Z",
+    "commit_hash": "15a4244",
+    "entries": [
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/agent-sdk__file-checkpointing\" target=\"_blank\">Agent Sdk__File Checkpointing</a>",
+        "summary": "파일 체크포인트 문서 내 중복되는 코드 예제를 제거하고 상세 설명을 외부 참조 및 상위 예제로 통합하여 가독성을 개선했습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/15a4244_agent-sdk__file-checkpointing.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/agent-view\" target=\"_blank\">Agent View</a>",
+        "summary": "agent-view 문서를 업데이트하여 claude를 실행할 때 기본적으로 agent view가 열리도록 설정하는 새로운 구성 옵션(defaultToAgentsView) 안내가 추가되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/15a4244_agent-view.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/artifacts\" target=\"_blank\">Artifacts</a>",
+        "summary": "아티팩트 퍼블리싱 권한, 공개 공유, 댓글 기능, 커넥터 연동 페이지 공유 및 관리 정책에 대한 문서 내용이 업데이트되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/15a4244_artifacts.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/changelog\" target=\"_blank\">Changelog</a>",
+        "summary": "Claude Code 2.1.285 버전 업데이트: 웹 페치 비활성화 환경변수 및 데스크톱 앱 실행 옵션이 추가되었으며, 원격 제어, 플러그인, 아티팩트 및 서브에이전트 관련 다수의 버그가 수정되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/15a4244_changelog.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/chrome\" target=\"_blank\">Chrome</a>",
+        "summary": "관리형 MCP 정책 관련 프롬프트 미표시 조건이 추가되고, 자동 모드(auto mode)에서의 사이트 권한 동작 방식이 구체화되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/15a4244_chrome.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/claude-apps-gateway-config\" target=\"_blank\">Claude Apps Gateway Config</a>",
+        "summary": "Amazon Bedrock 가드레일 설정 기능이 추가되었으며, 비대화형 실행 및 데스크톱 설정 관련 요구 버전 정보가 업데이트되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/15a4244_claude-apps-gateway-config.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/claude-apps-gateway\" target=\"_blank\">Claude Apps Gateway</a>",
+        "summary": "Claude Desktop의 플러그인 마켓플레이스 차단 기능과 연동되는 strictKnownMarketplaces 설정 관련 설명이 추가되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/15a4244_claude-apps-gateway.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/claude-directory\" target=\"_blank\">Claude Directory</a>",
+        "summary": "플러그인 설치 기록 백업 및 예외 파일에 대한 디렉토리 및 관리 경로 설명이 추가되어 데이터 복구 및 디버깅 가시성이 향상되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/15a4244_claude-directory.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/claude-security\" target=\"_blank\">Claude Security</a>",
+        "summary": "Claude Security 플러그인 문서에 모델 및 제공자(Provider) 설정 관련 신규 섹션이 추가되고 요구사항과 비용 안내가 업데이트되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/15a4244_claude-security.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/cli-reference\" target=\"_blank\">Cli Reference</a>",
+        "summary": "claude gateway 명령어 설명에서 특정 버전(v2.1.195) 요구 사항 문구가 삭제되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/15a4244_cli-reference.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/cloud-environments\" target=\"_blank\">Cloud Environments</a>",
+        "summary": "Trusted 네트워크 접근의 기본 허용 도메인 목록에 claude.com, anthropic.com 및 Docker 관련 서브도메인이 추가되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/15a4244_cloud-environments.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/commands\" target=\"_blank\">Commands</a>",
+        "summary": "새로운 명령어(`/artifact-capabilities`, `/artifact-diagramming`, `/claude-in-chrome`)가 추가되고 기존 API 명령어 항목이 업데이트되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/15a4244_commands.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/costs\" target=\"_blank\">Costs</a>",
+        "summary": "/insights 명령어 보고서에 오토 모드 사용 시 처리 가능한 권한 프롬프트 수를 추정하는 기능이 추가되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/15a4244_costs.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/desktop-ios-simulator\" target=\"_blank\">Desktop Ios Simulator</a>",
+        "summary": "Xcode 27 지원이 추가됨에 따라 관련 요구사항이 갱신되었으며, 복수의 Xcode 버전 중 사용할 버전을 선택하는 방법 안내가 추가되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/15a4244_desktop-ios-simulator.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/desktop\" target=\"_blank\">Desktop</a>",
+        "summary": "데스크톱 앱의 OpenTelemetry 설정 안내가 추가되고, SSO 요구 대상이 확대되었으며, CLI 세션을 데스크톱으로 가져오는 절차가 명확해졌습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/15a4244_desktop.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/env-vars\" target=\"_blank\">Env Vars</a>",
+        "summary": "환경 변수 문서가 업데이트되어 API 타임아웃, 출력 토큰 기본값 및 Bedrock 관련 설정 조건이 상세히 수정되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/15a4244_env-vars.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/feature-availability\" target=\"_blank\">Feature Availability</a>",
+        "summary": "Artifacts 기능의 가용성이 관리자 활성화 조건에서 기본 지원으로 변경되어 사용 접근성이 향상되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/15a4244_feature-availability.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/github-enterprise-server\" target=\"_blank\">Github Enterprise Server</a>",
+        "summary": "GHES 네트워크 요구사항 및 문제 해결 가이드가 업데이트되어, 사전 세션 흐름 제약 사항과 조직 로그인 요구 사항이 명확해졌습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/15a4244_github-enterprise-server.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/glossary\" target=\"_blank\">Glossary</a>",
+        "summary": "Artifact 용어 설명 중 플랜별 공유 권한 세부 내용이 간소화되고 관련 문서 링크로 대체되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/15a4244_glossary.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/google-vertex-ai\" target=\"_blank\">Google Vertex Ai</a>",
+        "summary": "모델 핀 변경 없이 1M 컨텍스트 창을 사용하는 방법을 포함하도록 관련 문서 참조 설명이 보완되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/15a4244_google-vertex-ai.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/hooks\" target=\"_blank\">Hooks</a>",
+        "summary": "차단된 프롬프트 처리 방식에 대한 상세 설명과 suppressOriginalPrompt 관련 문서가 추가되었으며, 설정 및 이벤트 관련 내용이 업데이트되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/15a4244_hooks.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/managed-mcp\" target=\"_blank\">Managed Mcp</a>",
+        "summary": "관리형 MCP 환경에서 Claude in Chrome 서버를 허용하는 설정 및 예외 처리 항목이 새롭게 추가되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/15a4244_managed-mcp.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/memory\" target=\"_blank\">Memory</a>",
+        "summary": "CLAUDE.md 작성 가이드가 재구조화되었으며, 공백이 포함된 파일 경로를 임포트하는 방법(역슬래시 사용)과 프롬프트 감사 기능에 대한 설명이 추가되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/15a4244_memory.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/model-config\" target=\"_blank\">Model Config</a>",
+        "summary": "모델 설정 문서에서 에이전트 SDK, 원격 제어 및 관리형 설정 관련 동작 방식과 검증 로직이 업데이트되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/15a4244_model-config.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/monitoring-usage\" target=\"_blank\">Monitoring Usage</a>",
+        "summary": "Claude 앱 게이트웨이 인증 세션에서의 OpenTelemetry 사용자 식별 및 설정 관련 문서 내용이 구체화되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/15a4244_monitoring-usage.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/network-config\" target=\"_blank\">Network Config</a>",
+        "summary": "Amazon Bedrock 환경에서 바이트 수준 워치독 및 타임아웃 동작이 변경되었으며, GHES 관련 SCM 커넥터 제약 사항이 업데이트되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/15a4244_network-config.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/permission-modes\" target=\"_blank\">Permission Modes</a>",
+        "summary": "원격 제어 세션의 권한 모드 표시 방식이 수정되고, 자동 모드 차단 동작 및 임계값에 대한 설명이 가독성 좋게 재구성되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/15a4244_permission-modes.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/permissions\" target=\"_blank\">Permissions</a>",
+        "summary": "읽기 전용 명령어 실행 시 PATH 등 특수 쉘 변수를 수정하면 권한 프롬프트가 발생하도록 예외 규정이 추가되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/15a4244_permissions.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/plugins__cli-reference\" target=\"_blank\">Plugins__Cli Reference</a>",
+        "summary": "플러그인 CLI 레퍼런스 문서가 업데이트되어 설치, 제거, 평가(eval), 마켓플레이스 관리 명령어의 옵션과 동작 설명이 명확하게 개선되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/15a4244_plugins__cli-reference.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/plugins__components\" target=\"_blank\">Plugins__Components</a>",
+        "summary": "플러그인 내에서 규칙 적용 시 스킬 대신 훅(Hook)을 사용해야 하는 경우와 관련 가이드 링크가 추가되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/15a4244_plugins__components.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/plugins__host-marketplace\" target=\"_blank\">Plugins__Host Marketplace</a>",
+        "summary": "호스팅된 마켓플레이스 파일 및 아카이브 플러그인에 대한 새로운 다운로드 용량 제한과 서버 응답 시간, 리디렉션 규칙이 추가되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/15a4244_plugins__host-marketplace.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/plugins__loading\" target=\"_blank\">Plugins__Loading</a>",
+        "summary": "플러그인이 동기화되지 않는 터미널 세션 조건과 플러그인 상태 파일 백업 파일 형식이 추가되어 관련 동작을 명확히 하였습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/15a4244_plugins__loading.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/plugins__marketplace-reference\" target=\"_blank\">Plugins__Marketplace Reference</a>",
+        "summary": "마켓플레이스 및 플러그인 이름의 허용 문자 규칙이 명시되고, 다운로드 제한 문서 링크 및 관련 에러 메시지가 추가되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/15a4244_plugins__marketplace-reference.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/plugins__troubleshooting\" target=\"_blank\">Plugins__Troubleshooting</a>",
+        "summary": "installed_plugins.json 파일의 읽기 오류 및 호환성 문제에 대한 새로운 트러블슈팅 가이드와 에러 메시지가 추가되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/15a4244_plugins__troubleshooting.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/remote-control\" target=\"_blank\">Remote Control</a>",
+        "summary": "원격 제어 CLI 옵션에 크롬 통합 관련 `--chrome` 플래그가 추가되고 데스크톱 앱의 설정 경로 명칭이 변경되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/15a4244_remote-control.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/routines\" target=\"_blank\">Routines</a>",
+        "summary": "루틴 실행의 사용량 제한 규정이 일일 제한에서 시간당 제한(시간당 100회 등)으로 변경되었으며, 관련 상세 제한 표가 추가되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/15a4244_routines.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/self-hosted-environments-deploy\" target=\"_blank\">Self Hosted Environments Deploy</a>",
+        "summary": "Anthropic 관리형 Git 사용 시 사설 CA 인증서 신뢰 설정 방법 및 용량 제한(capacity 1) 경고가 추가되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/15a4244_self-hosted-environments-deploy.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/self-hosted-environments-reference\" target=\"_blank\">Self Hosted Environments Reference</a>",
+        "summary": "SCM 커넥터 기능이 현재 사용할 수 없도록 변경됨에 따라 관련 플래그 설정 및 동작 안내가 수정되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/15a4244_self-hosted-environments-reference.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/self-hosted-environments\" target=\"_blank\">Self Hosted Environments</a>",
+        "summary": "GitHub Enterprise Server 호스트 사용 시 필요한 네트워크 요구사항 문서 링크가 추가되어 자체 호스트 환경 구축 가이드가 보완되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/15a4244_self-hosted-environments.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/server-managed-settings\" target=\"_blank\">Server Managed Settings</a>",
+        "summary": "비인터랙티브 실행 환경에 VS Code 확장 프로그램 채팅 패널과 데스크톱 앱의 Code 탭이 추가되어 설정 적용 방식이 명시되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/15a4244_server-managed-settings.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/settings-reference\" target=\"_blank\">Settings Reference</a>",
+        "summary": "작업 디렉토리 외부 읽기 차단 설정(permissions.blockReadsOutsideWorkingDirectories)에 대한 상세 동작 방식, 샌드박스 연동 규칙 및 예외 사항이 대폭 보강되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/15a4244_settings-reference.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/skills\" target=\"_blank\">Skills</a>",
+        "summary": "Claude API 프로젝트를 위한 번들 스킬과 서브커맨드 목록이 추가되었고, 플러그인 스킬 비활성화 방법이 명확히 안내되어 스킬 테스트 및 관리 효율성이 향상되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/15a4244_skills.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/tools-reference\" target=\"_blank\">Tools Reference</a>",
+        "summary": "PDF 처리 기능에 poppler-utils(pdftoppm) 의존성이 추가되어, 긴 PDF 문서 읽기 시 사전 설치가 필요하게 되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/15a4244_tools-reference.txt"
+      }
+    ]
+  },
+  {
     "date": "2026-09-29T15:12:30Z",
     "commit_hash": "3c98ee1",
     "entries": [
