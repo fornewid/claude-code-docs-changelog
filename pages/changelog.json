@@ -1,5 +1,270 @@
 [
   {
+    "date": "2026-10-01T15:12:13Z",
+    "commit_hash": "3f3f62a",
+    "entries": [
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/admin-setup\" target=\"_blank\">Admin Setup</a>",
+        "summary": "허용된 API 제공업체를 제한하는 새로운 관리 설정(allowedProviders)이 추가되어 보안과 제어력이 향상되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/3f3f62a_admin-setup.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/advisor\" target=\"_blank\">Advisor</a>",
+        "summary": "어드바이저 모델 선택 가이드가 업데이트되어, Sonnet 5.5 및 Sonnet 5에 대한 허용된 어드바이저와 제약 조건이 더 구체적으로 명시되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/3f3f62a_advisor.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/agent-sdk__agent-loop\" target=\"_blank\">Agent Sdk__Agent Loop</a>",
+        "summary": "Agent SDK의 'auto' 권한 모드 설명이 모델 분류기의 동작 방식과 검토 범위에 대한 상세한 내용으로 업데이트되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/3f3f62a_agent-sdk__agent-loop.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/agent-sdk__permissions\" target=\"_blank\">Agent Sdk__Permissions</a>",
+        "summary": "권한 모드 기본값 설정 로직 변경 및 auto 모드의 동작 설명이 구체화되어 SDK 사용 시 주의사항이 추가되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/3f3f62a_agent-sdk__permissions.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/agent-sdk__python\" target=\"_blank\">Agent Sdk__Python</a>",
+        "summary": "MCP 서버 제어 옵션 설명이 구체화되고 스트리밍 입력 예제와 내장 도구들의 입출력 스키마가 최신 버전 기준으로 대폭 업데이트되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/3f3f62a_agent-sdk__python.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/agent-sdk__typescript\" target=\"_blank\">Agent Sdk__Typescript</a>",
+        "summary": "Agent SDK TypeScript 문서 업데이트: 세션 속성, MCP 서버 제어, 권한 모드, Bash 실행 시간 제한 및 신규 시작 실패 사유 추가.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/3f3f62a_agent-sdk__typescript.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/amazon-bedrock\" target=\"_blank\">Amazon Bedrock</a>",
+        "summary": "Amazon Bedrock 모델 접근 불가 시 Claude Code의 모델 접근 기억 캐시 및 세션 중 모델 비활성화에 따른 자동 대체(fallback) 동작 메커니즘이 추가되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/3f3f62a_amazon-bedrock.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/authentication\" target=\"_blank\">Authentication</a>",
+        "summary": "관리형 설정에서 허용된 API 제공자를 제한하는 allowedProviders 옵션 설명과 설정 예시가 추가되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/3f3f62a_authentication.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/changelog\" target=\"_blank\">Changelog</a>",
+        "summary": "Claude Code 2.1.286 릴리스는 권한 프롬프트 개선, 병렬/서브에이전트 동작 안정화, 원격 제어 및 MCP 연결 오류 수정 등 대규모 버그 수정과 UX 개선을 포함합니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/3f3f62a_changelog.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/claude-apps-gateway-config\" target=\"_blank\">Claude Apps Gateway Config</a>",
+        "summary": "Bedrock 업스트림을 다른 AWS 계정에서 실행하기 위한 assume_role 설정 및 개발자별 AWS 비용 추적 기능이 추가되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/3f3f62a_claude-apps-gateway-config.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/claude-apps-gateway-on-aws\" target=\"_blank\">Claude Apps Gateway On Aws</a>",
+        "summary": "개발자별 및 팀별 AWS 비용 귀속(Cost attribution)을 위한 assume_role 및 애플리케이션 추론 프로필 설정 방법이 추가되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/3f3f62a_claude-apps-gateway-on-aws.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/cli-reference\" target=\"_blank\">Cli Reference</a>",
+        "summary": "CLI 참조 문서에 새 명령줄 플래그(--desktop)가 추가되고 일부 기존 플래그 설명이 업데이트되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/3f3f62a_cli-reference.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/cloud-environments\" target=\"_blank\">Cloud Environments</a>",
+        "summary": "Anthropic 호스팅 환경에서 VM 유휴 상태 복원 및 재생성 시 환경 변수, 네트워크 접근, 셋업 스크립트가 적용되는 방식이 상세히 업데이트되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/3f3f62a_cloud-environments.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/commands\" target=\"_blank\">Commands</a>",
+        "summary": "/resume 명령어 문서가 업데이트되어, 실행 중인 백그라운드 세션에 직접 접근하고 전환하는 새로운 방식을 안내합니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/3f3f62a_commands.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/desktop\" target=\"_blank\">Desktop</a>",
+        "summary": "데스크톱 앱의 오토 모드 설명이 구체화되었고, 사이드로드 플래그 관련 예외 사항이 추가되었으며, 터미널에서 데스크톱 앱을 직접 실행하는 `--desktop` 명령어 기능이 도입되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/3f3f62a_desktop.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/env-vars\" target=\"_blank\">Env Vars</a>",
+        "summary": "환경 변수 문서가 업데이트되어 새로운 제어 변수(모델 액세스 폴백 및 메모리 건너뛰기)와 백그라운드 명령어 제한 시간이 추가되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/3f3f62a_env-vars.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/errors\" target=\"_blank\">Errors</a>",
+        "summary": "MCP 서버 URL 유효성 검사 오류 및 비-HTTPS 토큰 엔드포인트 차단 관련 에러 문서가 추가되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/3f3f62a_errors.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/glossary\" target=\"_blank\">Glossary</a>",
+        "summary": "용어집에 'Transcript' 항목이 새로 추가되어, 세션 대화 기록의 저장 위치와 작동 방식을 명확히 이해할 수 있게 되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/3f3f62a_glossary.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/google-vertex-ai\" target=\"_blank\">Google Vertex Ai</a>",
+        "summary": "모델 접근 거부 시 캐싱 기능 및 세션 중 모델 비활성화에 대비한 자동 폴백(fallback) 전환 기능이 추가되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/3f3f62a_google-vertex-ai.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/hooks\" target=\"_blank\">Hooks</a>",
+        "summary": "hooks.md 문서에서 session_title 필드 설명이 확장되고 UserPromptSubmit에 추가되었으며, 관련 링크와 오타 등이 수정되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/3f3f62a_hooks.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/interactive-mode\" target=\"_blank\">Interactive Mode</a>",
+        "summary": "백그라운드 명령어의 타임아웃 동작, 제한 시간(최대 2시간), 메모리 압박 및 서브에이전트 관련 제어 규칙이 업데이트되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/3f3f62a_interactive-mode.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/llm-gateway\" target=\"_blank\">Llm Gateway</a>",
+        "summary": "allowedProviders 설정을 통해 LLM 게이트웨이 엔드포인트를 강제하고 외부 우회를 방지하는 방법이 추가되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/3f3f62a_llm-gateway.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/managed-settings\" target=\"_blank\">Managed Settings</a>",
+        "summary": "managed-settings 문서에 allowedProviders 설정 규칙과 읽기 실패 시 동작 방식, 유효하지 않은 값 처리 기준이 추가되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/3f3f62a_managed-settings.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/mcp\" target=\"_blank\">Mcp</a>",
+        "summary": "MCP 서버 설정 상태 메시지, OAuth 보안 요구사항 및 타임아웃 관련 문서 내용이 업데이트되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/3f3f62a_mcp.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/model-config\" target=\"_blank\">Model Config</a>",
+        "summary": "LLM 게이트웨이 및 커스텀 `ANTHROPIC_BASE_URL` 환경에서의 1M 컨텍스트 창 동작 방식과 대체 모델 전환 조건이 업데이트되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/3f3f62a_model-config.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/monitoring-usage\" target=\"_blank\">Monitoring Usage</a>",
+        "summary": "관리형 설정 오류 타입이 업데이트되어 공급자 강제 적용 사유가 추가되고 허용되지 않는 API 공급자에 대한 에러(`provider_not_allowed`)가 신설되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/3f3f62a_monitoring-usage.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/permission-modes\" target=\"_blank\">Permission Modes</a>",
+        "summary": "권한 모드(Permission Modes) 문서가 업데이트되어, 시작 권한 모드의 조건과 서브에이전트 및 분류기(Classifier) 관련 동작 세부 사항이 명확하게 수정되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/3f3f62a_permission-modes.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/permissions\" target=\"_blank\">Permissions</a>",
+        "summary": "권한 모드 설명이 구체화되고 스킬 거부 규칙 및 버전 종속성 문구가 개선되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/3f3f62a_permissions.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/plugins__cli-reference\" target=\"_blank\">Plugins__Cli Reference</a>",
+        "summary": "플러그인 설정 관리를 위한 `plugin configure` 명령어 추가 및 `install`, `list` 명령어에 새로운 설정 및 데이터 크기 관련 옵션이 확장되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/3f3f62a_plugins__cli-reference.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/plugins__components\" target=\"_blank\">Plugins__Components</a>",
+        "summary": "플러그인 번들의 user_config 설정 방법과 셸 명령어, VS Code 확장 기능에서의 설정 관리 기능이 추가 및 개선되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/3f3f62a_plugins__components.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/plugins__install\" target=\"_blank\">Plugins__Install</a>",
+        "summary": "플러그인 설치 및 관리 문서가 업데이트되어, MCP 서버 설정이 필요한 상태와 사용자 설정 옵션 관련 메뉴 설명이 추가되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/3f3f62a_plugins__install.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/plugins__troubleshooting\" target=\"_blank\">Plugins__Troubleshooting</a>",
+        "summary": "플러그인 트러블슈팅 문서에 Git URL 오류, 폴더 충돌, 번들 MCP 서버 설정 및 VS Code 확장 관련 문제 해결 방법이 추가되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/3f3f62a_plugins__troubleshooting.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/sessions\" target=\"_blank\">Sessions</a>",
+        "summary": "백그라운드 실행 중인 세션 재개 및 연결 방법, 명령어 옵션별 동작 방식에 대한 상세 설명이 추가되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/3f3f62a_sessions.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/skills\" target=\"_blank\">Skills</a>",
+        "summary": "스킬 권한 설정 표가 추가되고, Claude가 스킬을 따르지 않을 때 대처하는 가이드라인 섹션이 신설되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/3f3f62a_skills.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/third-party-integrations\" target=\"_blank\">Third Party Integrations</a>",
+        "summary": "관리형 머신에서 사용할 수 있는 배포 옵션을 제한하는 allowedProviders 설정 가이드가 추가되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/3f3f62a_third-party-integrations.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/tools-reference\" target=\"_blank\">Tools Reference</a>",
+        "summary": "백그라운드 명령어의 시간 제한, 환경 변수 설정 및 타임아웃 규칙이 상세히 추가되고 개정되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/3f3f62a_tools-reference.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/vs-code\" target=\"_blank\">Vs Code</a>",
+        "summary": "VS Code 확장 프로그램의 플러그인 관리 기능이 대폭 확장되었습니다. 플러그인 설정, 제거, 공유 설정 변경 및 관련 UI 안내가 상세히 추가되어 사용 편의성이 향상되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/3f3f62a_vs-code.txt"
+      }
+    ]
+  },
+  {
     "date": "2026-09-30T15:13:09Z",
     "commit_hash": "15a4244",
     "entries": [
