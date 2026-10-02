@@ -1,0 +1,39 @@
+diff --git a/docs/cli-reference.md b/docs/cli-reference.md
+index 9cc30ce..70b9f9c 100644
+--- a/docs/cli-reference.md
++++ b/docs/cli-reference.md
+@@ -24,7 +24,7 @@ You can start sessions, pipe content, resume conversations, and manage updates w
+ | `claude install [version]` | Install or reinstall the native binary. Accepts a version like `2.1.118`, or `stable` or `latest`. See [Install a specific version](/docs/en/setup#install-a-specific-version) | `claude install stable` |
+ | `claude auth login` | Sign in to your Anthropic account. Use `--email` to pre-fill your email address, `--sso` to force SSO authentication, and `--console` to sign in with Anthropic Console for API usage billing instead of a Claude subscription | `claude auth login --console` |
+ | `claude auth logout` | Log out from your Anthropic account | `claude auth logout` |
+-| `claude auth status` | Show authentication status as JSON. Use `--text` for human-readable output. Exits with code 0 if logged in, 1 if not. The JSON includes a `configDirectory` field naming the [configuration directory](/docs/en/claude-directory) the CLI uses. The field requires Claude Code v2.1.268 or later | `claude auth status` |
++| `claude auth status` | Show authentication status as JSON. Use `--text` for human-readable output. Exits with code 0 if logged in, 1 if not. The JSON includes a `configDirectory` field naming the [configuration directory](/docs/en/claude-directory) the CLI uses. The field requires Claude Code v2.1.268 or later. The JSON's `authMethod` field is one of `none`, `claude.ai`, `oauth_token`, `api_key`, `api_key_helper`, or `third_party` | `claude auth status` |
+ | `claude agents` | Open [agent view](/docs/en/agent-view) to monitor and dispatch parallel background sessions. Use `--cwd <path>` to show only sessions started under that directory, or `--json` to print active sessions as a JSON array for scripting (`--json --all` also includes completed background sessions). Pass `--permission-mode`, `--model`, `--effort`, or `--agent` to set [defaults for dispatched sessions](/docs/en/agent-view#permission-mode-model-and-effort). Accepts `--settings`, `--add-dir`, `--plugin-dir`, and `--mcp-config` like the top-level `claude` command. Opening agent view requires an interactive terminal | `claude agents --json` |
+ | `claude attach <id>` | Attach to a [background session](/docs/en/agent-view#manage-sessions-from-the-shell) in this terminal | `claude attach 7c5dcf5d` |
+ | `claude auto-mode defaults` | Print the built-in [auto mode](/docs/en/permission-modes#eliminate-prompts-with-auto-mode) classifier rules as JSON. Use `claude auto-mode config` to see your effective config with settings applied. `--label <prefix>` prints only the rules whose label starts with that prefix, matched case-insensitively. Requires Claude Code v2.1.208 or later | `claude auto-mode defaults --label 'Git Destructive'` |
+@@ -113,7 +113,7 @@ Customize Claude Code's behavior with these command-line flags. `claude --help`
+ | `--permission-prompts` | Set who answers permission prompts in print mode. With the default `host`, Claude Code sends them to the Agent SDK host or the `--permission-prompt-tool` tool. Pass `none` when nobody can answer, and Claude Code denies them instead. See [Turn off permission prompts in unattended runs](/docs/en/headless#turn-off-permission-prompts-in-unattended-runs). Requires Claude Code v2.1.259 or later | `claude -p --permission-prompts none "query"` |
+ | `--plugin-dir` | Load a plugin from a directory or `.zip` archive, or several from a [folder of plugins](/docs/en/plugins/create#load-a-directory-or-archive-for-one-session), for this session only. Each flag takes one path. Repeat the flag for more paths: `--plugin-dir A --plugin-dir B.zip`. Passing a folder of plugins requires Claude Code v2.1.265 or later | `claude --plugin-dir ./my-plugin` |
+ | `--plugin-url` | Fetch a plugin `.zip` archive from a URL for this session only. Repeat the flag for multiple plugins, or pass space-separated URLs in a single quoted value | `claude --plugin-url https://example.com/plugin.zip` |
+-| `--print`, `-p` | Print response without interactive mode (see [Agent SDK documentation](/docs/en/agent-sdk/overview) for programmatic usage details). For `--resume` on a background session that is still running, see [Resume a session](/docs/en/sessions#resume-a-running-background-session) | `claude -p "query"` |
++| `--print`, `-p` | Print response without interactive mode (see [Agent SDK documentation](/docs/en/agent-sdk/overview) for programmatic usage details). For `--resume` on a background session that is still running, see [Resume a running background session](/docs/en/sessions#resume-a-running-background-session) | `claude -p "query"` |
+ | `--prompt-suggestions` | Emit a `prompt_suggestion` message with a predicted next user prompt after each turn that generates one; very short conversations can produce none. Requires `--print`, `--output-format stream-json`, and `--verbose`. See [Prompt suggestions](/docs/en/interactive-mode#prompt-suggestions) | `claude -p --prompt-suggestions --output-format stream-json --verbose "query"` |
+ | `--ref <branch>` | With `--environment`, base the new session's checkout on a named ref instead of local `HEAD` | `claude -p "Run the smoke test" --environment ccpool_abc123 --ref main` |
+ | `--remote` | Deprecated alias for `--cloud`, including the existing-session form | `claude --remote "Fix the login bug"` |
+@@ -150,7 +150,15 @@ Claude Code provides five flags for customizing the system prompt. Four set its
+ | `--append-system-prompt-file` | Appends file contents to the default prompt | `claude --append-system-prompt-file ./style-rules.txt` |
+ | `--system-prompt-snapshot` | With `off`, rebuilds the prompt on every request. With `on`, the default, reuses a recorded prompt where [recording applies](#system-prompt-flags-in-resumed-conversations) | `claude --append-system-prompt "Draft rules" --system-prompt-snapshot off` |
+ 
+-`--system-prompt` and `--system-prompt-file` are mutually exclusive. The append flags can be combined with either replacement flag.
++You can combine these flags. To replace the default prompt and still append your own text, pass `--append-system-prompt` or `--append-system-prompt-file` together with `--system-prompt` or `--system-prompt-file`. With Claude Code v2.1.283 or later, you can also pass a flag together with its own file form, such as `--append-system-prompt` with `--append-system-prompt-file`, and Claude Code uses both.
++
++For example, run the following in your shell to append both a style guide from a file and one extra instruction:
++
++```bash theme={null}
++claude -p --append-system-prompt-file ./style.md --append-system-prompt "Always reply in French" "Summarize README.md"
++```
++
++Claude receives the default system prompt followed by the contents of `style.md`, a blank line, and then `Always reply in French`. The file's contents come first even if you pass `--append-system-prompt` before `--append-system-prompt-file`.
+ 
+ When the replacement text combines instructions that are the same on every run with context that changes per run, add a line containing only `__SYSTEM_PROMPT_DYNAMIC_BOUNDARY__` between the instructions and the context. Claude Code splits the prompt at the first such line and removes that line, so the part above it stays cached while the part below changes. Requires Claude Code v2.1.275 or later. [Cache the static part of a custom prompt](/docs/en/agent-sdk/modifying-system-prompts#cache-the-static-part-of-a-custom-prompt) lists the configurations where the split applies.
+ 
