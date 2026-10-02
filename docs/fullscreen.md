@@ -97,6 +97,8 @@ Fullscreen rendering captures mouse events and handles them inside Claude Code:
 * **Click a setting's value in the `/config` panel** to change it, and scroll the settings list with the mouse wheel. Requires Claude Code v2.1.271 or later.
 * **Scroll a select or multi-select menu with the mouse wheel** when it has more options than it shows at once, such as the `/model` list in a short terminal window. The wheel scrolls the list while the pointer is over its options. Requires Claude Code v2.1.280 or later.
 * **Scroll an overflowing list with its scrollbar.** In list panels such as `/skills`, `/mcp`, and `/plugin`'s Installed list, a scrollbar appears beside a list with more rows than fit while the pointer is over it. Click the track to jump to that point, or drag the thumb. Requires Claude Code v2.1.281 or later.
+  * Where the bar has `↑` and `↓` arrows at its ends, click an arrow to scroll a single row, or hold it to keep scrolling. The arrows require Claude Code v2.1.286 or later.
+* **Click the `↑ N more` or `↓ N more` row at the edge of a list** to jump to that end of the list without choosing an option. Requires Claude Code v2.1.286 or later.
 * **Click a collapsed tool result** to expand it and see the full output. Click again to collapse. The tool call and its result expand together. Only messages that have more to show are clickable.
   * Clicking also expands the output of a `!` shell command, whether an older truncated result or the live progress row while the command runs. Requires Claude Code v2.1.257 or later.
   * Clicking also expands a dim `Message from @<sender>` line when the sender is a [teammate](/docs/en/agent-teams) or another agent running in your session. The line for a message from [one of your other sessions](/docs/en/cross-session-messaging#what-a-message-looks-like) also shows the message's first line and isn't clickable, so press `Ctrl+o` to read that one.
@@ -209,7 +211,7 @@ Your terminal's `Cmd+f` and tmux search don't see the conversation because it li
 
 ## Watch your changes in the diff panel
 
-In fullscreen rendering, [`/diff`](/docs/en/interactive-mode#review-changes-with-%2Fdiff) opens a panel beside the conversation rather than a viewer you have to close, so you can watch the changes accumulate while Claude works. In a wide terminal the panel can also open on its own once Claude starts editing files. [Diff panel](/docs/en/interactive-mode#diff-panel) covers what it shows, how to keep it closed, and how to change what it compares against.
+In fullscreen rendering, [`/diff`](/docs/en/interactive-mode#review-changes-with-%2Fdiff) opens a panel beside the conversation, so you can watch the changes accumulate while Claude works. [Diff panel](/docs/en/interactive-mode#diff-panel) covers what it shows, when it opens on its own, how to keep it closed, and how to change what it compares against.
 
 ## Clear the conversation
 
