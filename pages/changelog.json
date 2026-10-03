@@ -1,5 +1,256 @@
 [
   {
+    "date": "2026-10-03T16:25:15Z",
+    "commit_hash": "e814f97",
+    "entries": [
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/agent-sdk__typescript\" target=\"_blank\">Agent Sdk__Typescript</a>",
+        "summary": "TypeScript Agent SDK 문서의 MCP 서버 설정과 권한 시스템 거부 이벤트 설명에 훅 관련 예외 조건 및 세부 사항이 업데이트되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/e814f97_agent-sdk__typescript.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/agent-teams\" target=\"_blank\">Agent Teams</a>",
+        "summary": "특정 버전 번호(v2.1.181~v2.1.199)에 대한 언급이 제거되고, 유휴 에이전트 패널 동작 방식 설명이 일반화되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/e814f97_agent-teams.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/changelog\" target=\"_blank\">Changelog</a>",
+        "summary": "v2.1.288 업데이트: UI 선택 기능 추가, 대화 압축 및 자동 모드 개선, MCP 및 플러그인 관련 다수의 버그 수정.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/e814f97_changelog.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/claude-apps-gateway-config\" target=\"_blank\">Claude Apps Gateway Config</a>",
+        "summary": "OIDC 인증을 위한 개인키 기반 인증서(private_key_jwt) 설정 방법과 클라이언트 인증서 로테이션 절차가 추가되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/e814f97_claude-apps-gateway-config.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/claude-apps-gateway-deploy\" target=\"_blank\">Claude Apps Gateway Deploy</a>",
+        "summary": "IdP 인증서 자격 증명 설정 방법과 대규모 그룹 소속 사용자의 431 헤더 초과 오류 해결 가이드가 추가되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/e814f97_claude-apps-gateway-deploy.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/claude-directory\" target=\"_blank\">Claude Directory</a>",
+        "summary": "로컬 데이터 삭제 명령어 이름이 'claude project purge'에서 'claude purge'로 변경되었으며, 규칙 로드 시점이 확장되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/e814f97_claude-directory.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/claude-projects\" target=\"_blank\">Claude Projects</a>",
+        "summary": "클로드 프로젝트 문서의 제한 사항 항목에서 관련 CLI 명령어 레퍼런스 링크가 제거되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/e814f97_claude-projects.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/cli-reference\" target=\"_blank\">Cli Reference</a>",
+        "summary": "프로젝트 정리 명령어 이름이 `claude project purge`에서 `claude purge`로 변경되어 사용 편의성이 높아졌습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/e814f97_cli-reference.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/code-review\" target=\"_blank\">Code Review</a>",
+        "summary": "코드 리뷰 명령어에 리뷰 결과 개수를 조절하는 --max-findings 옵션이 추가되어 유연한 결과 확인이 가능해졌습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/e814f97_code-review.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/commands\" target=\"_blank\">Commands</a>",
+        "summary": "/code-review 및 /review 명령어에 최대 발견 사항 수를 지정할 수 있는 `--max-findings` 옵션이 추가되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/e814f97_commands.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/debug-your-config\" target=\"_blank\">Debug Your Config</a>",
+        "summary": "하위 디렉토리의 CLAUDE.md 파일이 읽기(Read) 도구뿐만 아니라 쓰기, 편집 도구 사용 후에도 로드되도록 변경된 동작 방식을 반영했습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/e814f97_debug-your-config.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/env-vars\" target=\"_blank\">Env Vars</a>",
+        "summary": "구조화된 출력 비활성화 및 비스트리밍 요청 재시도 횟수를 설정하는 새로운 환경 변수들이 추가되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/e814f97_env-vars.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/errors\" target=\"_blank\">Errors</a>",
+        "summary": "콘텐츠 필터링 정책에 따른 출력 차단 오류 항목과 관련 환경 변수, 재시도 예외 처리 규칙이 문서에 추가되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/e814f97_errors.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/glossary\" target=\"_blank\">Glossary</a>",
+        "summary": "Rules 용어 설명에 경로 범위 규칙이 로드되는 조건(읽기, 쓰기, 편집)이 구체적으로 추가되어 문서의 정확성이 향상되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/e814f97_glossary.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/hooks-guide\" target=\"_blank\">Hooks Guide</a>",
+        "summary": "UserPromptSubmit 및 PermissionRequest 훅의 동작 조건과 제약 사항이 업데이트되어 예외 상황에서의 처리 방식이 명확해졌습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/e814f97_hooks-guide.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/hooks\" target=\"_blank\">Hooks</a>",
+        "summary": "UserPromptSubmit 및 PermissionRequest 훅의 실행 조건과 동작 방식에 대한 상세 설명이 추가되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/e814f97_hooks.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/interactive-mode\" target=\"_blank\">Interactive Mode</a>",
+        "summary": "로컬 세션의 백그라운드 명령어 제한 시간이 제거되고, 무인 세션에만 제한 시간이 적용되도록 변경되어 작업 유연성이 향상되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/e814f97_interactive-mode.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/keybindings\" target=\"_blank\">Keybindings</a>",
+        "summary": "Pane 및 PaneField 키보드 단축키 컨텍스트와 기본 바인딩이 추가되어 모드 인터페이스 조작성이 향상되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/e814f97_keybindings.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/llm-gateway-protocol\" target=\"_blank\">Llm Gateway Protocol</a>",
+        "summary": "LLM 게이트웨이 프로토콜 문서에 구조화된 출력 비활성화 환경 변수 관련 내용이 추가되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/e814f97_llm-gateway-protocol.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/mcp\" target=\"_blank\">Mcp</a>",
+        "summary": "MCP 프로토콜 협상 규칙이 업데이트되어 v2.1.285 이상 버전부터 stdio 서버에 대한 프로토콜 협상이 기본 적용됩니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/e814f97_mcp.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/model-config\" target=\"_blank\">Model Config</a>",
+        "summary": "제공자별 모델 선택기 동작 방식이 구체화되었고, auto-compact 윈도우 설정 방법이 모델별 설정(`modelSettings`)을 지원하도록 변경되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/e814f97_model-config.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/plugins__manifest-reference\" target=\"_blank\">Plugins__Manifest Reference</a>",
+        "summary": "플러그인 매니페스트에 서버 요청 타임아웃 설정을 지정하는 requestTimeout 필드가 추가되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/e814f97_plugins__manifest-reference.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/plugins__marketplace-reference\" target=\"_blank\">Plugins__Marketplace Reference</a>",
+        "summary": "marketplace.json의 name 필드 설명이 명확해졌으며, 플러그인 ID 구조와 유효성 검사 실패 이유가 구체적으로 보완되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/e814f97_plugins__marketplace-reference.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/plugins__mods__create\" target=\"_blank\">Plugins__Mods__Create</a>",
+        "summary": "모듈 공유 방법이 대상별(소수 인원, 팀, 조직, 전체 공개)로 세분화되어 문서에 추가되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/e814f97_plugins__mods__create.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/plugins__mods__reference\" target=\"_blank\">Plugins__Mods__Reference</a>",
+        "summary": "tool.describe 이벤트에 isDeferred 옵션이 추가되어 MCP 툴 검색 기능을 활용하거나 툴을 미리 로드할 수 있게 되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/e814f97_plugins__mods__reference.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/plugins__publish\" target=\"_blank\">Plugins__Publish</a>",
+        "summary": "디렉토리 제출 및 플러그인 발행 가이드가 단계별(Steps) 컴포넌트 형태로 개편되어 가독성과 제출 절차 안내가 개선되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/e814f97_plugins__publish.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/self-hosted-environments-configuration\" target=\"_blank\">Self Hosted Environments Configuration</a>",
+        "summary": "Amazon Bedrock 및 Google Cloud Agent Platform을 통한 모델 요청 라우팅 설정 가이드가 추가되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/e814f97_self-hosted-environments-configuration.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/self-hosted-environments-deploy\" target=\"_blank\">Self Hosted Environments Deploy</a>",
+        "summary": "셀프 호스팅 환경 배포 문서에 클라우드 제공업체(Bedrock, GCP 등)의 모델 요청 및 자격 증명 갱신용 엔드포인트 네트워크 요구사항이 추가되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/e814f97_self-hosted-environments-deploy.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/self-hosted-environments\" target=\"_blank\">Self Hosted Environments</a>",
+        "summary": "셀프 호스트 환경에서 Amazon Bedrock 및 Google Cloud Agent Platform을 통한 모델 추론 라우팅 지원 추가에 따른 문서 업데이트",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/e814f97_self-hosted-environments.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/settings-reference\" target=\"_blank\">Settings Reference</a>",
+        "summary": "modelSettings에 autoCompactWindow 설정이 추가되고, sandbox 자격 증명 관련 문서에서 구버전 요구사항 표기가 정리되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/e814f97_settings-reference.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/setup\" target=\"_blank\">Setup</a>",
+        "summary": "신규 모델 사용을 위한 최신 채널 전환 방법과 apt, dnf, apk 등 리눅스 패키지 매니저의 채널 설정 안내가 추가되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/e814f97_setup.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/skills\" target=\"_blank\">Skills</a>",
+        "summary": "빌트인 명령어와의 충돌 해결 규칙 추가, 노력 수준(effort) 설정 설명 수정, 버전 관련 문구 정리 등 스킬 문서가 개선되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/e814f97_skills.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/tools-reference\" target=\"_blank\">Tools Reference</a>",
+        "summary": "사용자 질문 타임아웃 동작 방식이 변경되고, 백그라운드 명령의 시간 제한 적용 조건이 무인 세션 중심으로 구체화되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/e814f97_tools-reference.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/ultrareview\" target=\"_blank\">Ultrareview</a>",
+        "summary": "Team 및 Enterprise 플랜 항목이 요금 테이블에서 제거되었고, 관련 빌링 권한 요청 안내 문구가 간소화되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/e814f97_ultrareview.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/voice-dictation\" target=\"_blank\">Voice Dictation</a>",
+        "summary": "음성 받아쓰기 기능의 오류 메시지 안내가 업데이트되어 인증 문제 및 API 키 우선순위 관련 트러블슈팅이 개선되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/e814f97_voice-dictation.txt"
+      }
+    ]
+  },
+  {
     "date": "2026-10-02T15:11:43Z",
     "commit_hash": "5af63ea",
     "entries": [

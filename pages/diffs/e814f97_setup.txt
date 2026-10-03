@@ -1,0 +1,19 @@
+diff --git a/docs/setup.md b/docs/setup.md
+index 0a5cc25..3f2413a 100644
+--- a/docs/setup.md
++++ b/docs/setup.md
+@@ -237,10 +237,14 @@ Configure this via `/config` → **Auto-update channel**, or add it to your [set
+ }
+ ```
+ 
++A newly launched model can require a Claude Code version newer than the stable channel serves. To run the model now, move to the latest channel.
++
+ For enterprise deployments, you can enforce a consistent release channel across your organization using [managed settings](/docs/en/managed-settings).
+ 
+ Homebrew installations choose a channel by cask name instead of this setting: `claude-code` tracks stable and `claude-code@latest` tracks latest.
+ 
++Installations from the apt, dnf, and apk repositories choose a channel by repository instead of this setting. To switch one, follow [Install with Linux package managers](#install-with-linux-package-managers).
++
+ ### Pin a minimum version
+ 
+ The `minimumVersion` setting establishes a floor. Background auto-updates and `claude update` refuse to install any version below this value, so moving to the `"stable"` channel does not downgrade you if you are already on a newer `"latest"` build.
