@@ -1,5 +1,192 @@
 [
   {
+    "date": "2026-10-06T15:11:46Z",
+    "commit_hash": "5598f10",
+    "entries": [
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/admin-setup\" target=\"_blank\">Admin Setup</a>",
+        "summary": "Git 제공자 설정 페이지 개편 및 HIPAA 구성 가이드가 추가되어 관련 보안 설정과 문서 경로가 변경되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/5598f10_admin-setup.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/agent-sdk__claude-code-features\" target=\"_blank\">Agent Sdk__Claude Code Features</a>",
+        "summary": "자식 디렉토리의 CLAUDE.md 파일 로딩 방식 설명에 관련 문서 링크가 추가되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/5598f10_agent-sdk__claude-code-features.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/agent-sdk__custom-tools\" target=\"_blank\">Agent Sdk__Custom Tools</a>",
+        "summary": "커스텀 툴 문서에서 입력 스키마 설명이 확장되고, 선택적 파라미터 처리 방식과 실행 예시(Python/TypeScript)가 상세히 업데이트되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/5598f10_agent-sdk__custom-tools.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/agent-sdk__python\" target=\"_blank\">Agent Sdk__Python</a>",
+        "summary": "TypedDict 기반 도구 정의 지원 및 세션 상태 이벤트 처리 기능이 추가되어 SDK 활용성이 향상되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/5598f10_agent-sdk__python.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/agent-sdk__typescript\" target=\"_blank\">Agent Sdk__Typescript</a>",
+        "summary": "세션 상태 변경을 추적하는 새로운 SDKSessionStateChangedMessage 타입이 추가되어 세션 모니터링이 개선되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/5598f10_agent-sdk__typescript.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/agent-view\" target=\"_blank\">Agent View</a>",
+        "summary": "세션 관리 명령어에 이름(name)으로 접근하는 기능이 추가되었으며, 관련 동작 설명 및 버전 기록이 업데이트되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/5598f10_agent-view.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/changelog\" target=\"_blank\">Changelog</a>",
+        "summary": "Claude Code 2.1.288 및 2.1.289 버전 릴리스: 플러그인(Mods) 및 UI 오류 수정, Bash 권한 규칙 개선, 세션 복구 및 클라우드 세션 안정성이 향상되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/5598f10_changelog.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/channels-reference\" target=\"_blank\">Channels Reference</a>",
+        "summary": "개발자 채널 플래그 실행 조건이 명시되어, 비대호형 모드나 SDK 사용 시 채널이 등록되지 않는 제약 사항을 확인할 수 있게 되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/5598f10_channels-reference.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/chrome\" target=\"_blank\">Chrome</a>",
+        "summary": "HIPAA 사용 기업 조직을 위한 Claude in Chrome 설정 방법 및 BAA 관련 주의사항이 추가되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/5598f10_chrome.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/claude-code-on-the-web\" target=\"_blank\">Claude Code On The Web</a>",
+        "summary": "HIPAA 설정이 적용된 조직도 제로 데이터 Retention 조직과 마찬가지로 클라우드 세션 기능을 사용할 수 없도록 제한 사항이 추가되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/5598f10_claude-code-on-the-web.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/claude-directory\" target=\"_blank\">Claude Directory</a>",
+        "summary": "HIPAA 설정 적용 시 Claude Desktop 대화 기록 및 history.jsonl 항목의 보관 기간 및 삭제 정책이 변경되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/5598f10_claude-directory.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/commands\" target=\"_blank\">Commands</a>",
+        "summary": "특정 버전 명시 제거 및 스크롤 속도 명령어 설명 간소화 등 문서의 세부 내용이 일부 수정되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/5598f10_commands.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/desktop\" target=\"_blank\">Desktop</a>",
+        "summary": "데스크톱 앱의 UI 메뉴 및 단축키(브라우저, 코드 리뷰, CI 모니터링 등)가 개편되어 워크플로우와 접근성이 향상되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/5598f10_desktop.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/env-vars\" target=\"_blank\">Env Vars</a>",
+        "summary": "새로운 환경 변수(CLAUDE_CODE_EMIT_SESSION_STATE_EVENTS, CLAUDE_CODE_GZIP_REQUEST_BODIES)가 추가되고 기존 베타 트레이싱 변수 설명이 갱신되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/5598f10_env-vars.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/github-enterprise-server\" target=\"_blank\">Github Enterprise Server</a>",
+        "summary": "GitHub Enterprise Server 연동 UI 및 설정 경로가 변경되어, 새로운 메뉴 구조에 맞춰 연결 및 수동 설정 절차가 업데이트되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/5598f10_github-enterprise-server.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/hipaa-setup\" target=\"_blank\">Hipaa Setup</a>",
+        "summary": "HIPAA 준수 조직을 위한 Claude Code 로컬 모드 설정 가이드 문서가 추가되었습니다.",
+        "tag_text": "NEW",
+        "tag_class": "new"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/keybindings\" target=\"_blank\">Keybindings</a>",
+        "summary": "키보드 단축키 문서 내 확인 및 권한 관련 액션의 설명이 업데이트되어 변경된 동작 방식을 명확히 안내합니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/5598f10_keybindings.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/legal-and-compliance\" target=\"_blank\">Legal And Compliance</a>",
+        "summary": "의료 규정 준수(BAA) 섹션이 업데이트되어 새로운 HIPAA 구성 및 Zero Data Retention 적용 조건에 대한 상세한 안내가 추가되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/5598f10_legal-and-compliance.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/memory\" target=\"_blank\">Memory</a>",
+        "summary": "CLAUDE.md 및 플러그인 설정 방식(ID 변경 등)과 서브디렉토리 파일 로딩 조건이 업데이트되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/5598f10_memory.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/network-config\" target=\"_blank\">Network Config</a>",
+        "summary": "프록시 환경에서의 gzip 압축 문제 대응을 위해 CLAUDE_CODE_GZIP_REQUEST_BODIES 환경 변수 설정 방법이 추가되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/5598f10_network-config.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/platforms\" target=\"_blank\">Platforms</a>",
+        "summary": "Slack 통합 기능의 사용 가능한 요금제가 Pro 및 Max 플랜으로 구체화되어 문서에 반영되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/5598f10_platforms.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/remote-control\" target=\"_blank\">Remote Control</a>",
+        "summary": "Remote Control 사용 제한 조건(Zero Data Retention, HIPAA 구성 및 요금제 조건) 및 관련 문제 해결 가이드가 업데이트되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/5598f10_remote-control.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/self-hosted-environments\" target=\"_blank\">Self Hosted Environments</a>",
+        "summary": "HIPAA 설정이 적용된 조직이 셀프 호스팅 환경 사용 불가 대상에 추가되어 관련 제약 사항이 명시되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/5598f10_self-hosted-environments.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/slack\" target=\"_blank\">Slack</a>",
+        "summary": "Slack용 Claude Code 문서가 Claude Tag 연동 여부 및 Pro/Max 요금제 기준으로 업데이트되었으며, 관련 트러블슈팅 안내가 추가되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/5598f10_slack.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/web-quickstart\" target=\"_blank\">Web Quickstart</a>",
+        "summary": "HIPAA 설정이 적용된 조직도 제로 데이터 보유 조직과 마찬가지로 클라우드 세션 기능을 사용할 수 없도록 안내가 추가되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/5598f10_web-quickstart.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/workflows\" target=\"_blank\">Workflows</a>",
+        "summary": "/workflows 명령어의 동작 방식 변경과 프롬프트 단축키 기능 업데이트 등 최신 워크플로우 가이드가 반영되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/5598f10_workflows.txt"
+      }
+    ]
+  },
+  {
     "date": "2026-10-05T15:12:49Z",
     "commit_hash": "c4fd960",
     "entries": [
