@@ -1,5 +1,179 @@
 [
   {
+    "date": "2026-10-07T15:21:38Z",
+    "commit_hash": "ba88be3",
+    "entries": [
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/agent-sdk__python\" target=\"_blank\">Agent Sdk__Python</a>",
+        "summary": "ToolAnnotations의 mcp 버전별 속성 접근 방식, model_usage의 costBasis 필드 추가 및 SDK 에러 처리 관련 문서가 업데이트되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/ba88be3_agent-sdk__python.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/agent-sdk__typescript\" target=\"_blank\">Agent Sdk__Typescript</a>",
+        "summary": "MCP 서버 관리 동작 방식, 거부된 쿼리의 에러 처리 예외, 그리고 Thinking 설정 관련 설명이 구체화되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/ba88be3_agent-sdk__typescript.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/agent-view\" target=\"_blank\">Agent View</a>",
+        "summary": "새로운 데몬 로그 확인 명령어인 'claude daemon logs'가 추가되어 슈퍼바이저 로그를 실시간으로 쉽게 모니터링할 수 있게 되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/ba88be3_agent-view.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/changelog\" target=\"_blank\">Changelog</a>",
+        "summary": "플러그인 마켓플레이스 및 에이전트 기능 추가, 보안 취약점 수정, 프롬프트 캐싱 및 렌더링 성능 개선, 다양한 버그가 해결되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/ba88be3_changelog.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/claude-apps-gateway-config\" target=\"_blank\">Claude Apps Gateway Config</a>",
+        "summary": "인증서 교체 시 롤링 재시작 절차가 명확해졌으며, PostgreSQL URL 설정에 대한 단일 호스트 제약 조건이 추가되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/ba88be3_claude-apps-gateway-config.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/claude-apps-gateway-deploy\" target=\"_blank\">Claude Apps Gateway Deploy</a>",
+        "summary": "PostgreSQL 요구사항 및 연결 URL 설정에 대한 상세 설명이 추가되었으며, 관련 부팅 오류 트러블슈팅 가이드가 보완되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/ba88be3_claude-apps-gateway-deploy.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/claude-apps-gateway\" target=\"_blank\">Claude Apps Gateway</a>",
+        "summary": "PostgreSQL 요구사항이 버전 14 이상에서 버전 11 이상으로 완화되었으며, 구형 버전 사용 시 필요한 조건이 추가되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/ba88be3_claude-apps-gateway.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/claude-code-on-the-web\" target=\"_blank\">Claude Code On The Web</a>",
+        "summary": "클라우드 세션 인증 오류 메시지가 업데이트되었고, claude auth login 명령어 안내가 추가되어 인증 방법이 명확해졌습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/ba88be3_claude-code-on-the-web.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/cli-reference\" target=\"_blank\">Cli Reference</a>",
+        "summary": "백그라운드 세션 관리를 위한 새로운 CLI 명령어인 'claude daemon logs'와 'claude daemon run'이 추가되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/ba88be3_cli-reference.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/env-vars\" target=\"_blank\">Env Vars</a>",
+        "summary": "새로운 플러그인 디렉토리 감시 환경 변수(CLAUDE_CODE_PLUGIN_DIR_WATCH)가 추가되었고, 서브프로세스 환경 보안 관련 문서 내용이 보강되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/ba88be3_env-vars.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/errors\" target=\"_blank\">Errors</a>",
+        "summary": "클라우드 세션 로그인 오류 추가 및 콘텐츠 필터링 응답에 대한 재시도 정책 변경 등 에러 및 재시도 관련 문서가 업데이트되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/ba88be3_errors.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/glossary\" target=\"_blank\">Glossary</a>",
+        "summary": "CLAUDE.md와 AGENTS.md 파일의 로딩 방식에 대한 설명이 수정되어 작동 방식을 명확히 했습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/ba88be3_glossary.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/how-claude-code-works\" target=\"_blank\">How Claude Code Works</a>",
+        "summary": "CLAUDE.md 부재 시 AGENTS.md 파일이 대체재로 사용될 수 있도록 설명이 수정되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/ba88be3_how-claude-code-works.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/llm-gateway-protocol\" target=\"_blank\">Llm Gateway Protocol</a>",
+        "summary": "게이트웨이를 경유하는 세션의 HIPAA 설정 제한 사항과 관련 문서 링크가 추가되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/ba88be3_llm-gateway-protocol.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/llm-gateway-rollout\" target=\"_blank\">Llm Gateway Rollout</a>",
+        "summary": "게이트웨이 환경에서의 HIPAA 설정 제한 사항과 관리형 설정 키 사용 시 주의사항을 안내하는 문서가 추가되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/ba88be3_llm-gateway-rollout.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/monitoring-usage\" target=\"_blank\">Monitoring Usage</a>",
+        "summary": "세션 데이터 유출 경로를 관리 제어 및 이벤트와 매핑하는 표가 추가되었으며, 보존 정리(retention sweep) 결과 확인 방법과 `files_past_cutoff` 메트릭 설명이 업데이트되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/ba88be3_monitoring-usage.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/permission-modes\" target=\"_blank\">Permission Modes</a>",
+        "summary": "HIPAA 설정이 적용된 조직의 권한 모드 기본값 규칙과 전환 방법에 대한 문서가 추가되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/ba88be3_permission-modes.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/plugins__components\" target=\"_blank\">Plugins__Components</a>",
+        "summary": "에이전트 이름 지정 규칙에 대한 설명이 프론트매터의 name 필드 기준으로 명확하게 수정되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/ba88be3_plugins__components.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/plugins__mods__reference\" target=\"_blank\">Plugins__Mods__Reference</a>",
+        "summary": "prompt.mention 이벤트 추가, Box 컴포넌트의 borderStyle 상세 표기 및 제한 사항이 업데이트되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/ba88be3_plugins__mods__reference.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/sandboxing\" target=\"_blank\">Sandboxing</a>",
+        "summary": "백그라운드 세션의 샌드박스 동작 방식과 전체 프로세스 보안을 위한 경계 설정 방법이 문서에 추가되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/ba88be3_sandboxing.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/security\" target=\"_blank\">Security</a>",
+        "summary": "클로드 코드 보안 문서의 격리 실행 권장 사항이 샌드박스 런타임 또는 dev container 사용을 명시하도록 구체화되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/ba88be3_security.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/self-hosted-environments-deploy\" target=\"_blank\">Self Hosted Environments Deploy</a>",
+        "summary": "셀프 호스팅 러너의 종료 타이밍 및 종료 시그널 처리 과정 문서가 명확하게 개정되어 오케스트레이터 설정 및 타임아웃 계산 방법이 상세히 안내되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/ba88be3_self-hosted-environments-deploy.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/sessions\" target=\"_blank\">Sessions</a>",
+        "summary": "세션 재개 시 권한 모드(플랜 모드 등) 복원 규칙이 업데이트되었으며, 세션 피커 내비게이션을 위한 새로운 키보드 단축키가 추가되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/ba88be3_sessions.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/sub-agents\" target=\"_blank\">Sub Agents</a>",
+        "summary": "서브에이전트 이름의 최대 글자 수(256자) 제한이 추가되고, 노력 수준(effort) 설정과 관련된 환경 변수 예외 사항이 명시되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/ba88be3_sub-agents.txt"
+      }
+    ]
+  },
+  {
     "date": "2026-10-06T15:11:46Z",
     "commit_hash": "5598f10",
     "entries": [
