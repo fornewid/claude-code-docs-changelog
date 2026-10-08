@@ -1,0 +1,18 @@
+diff --git a/docs/github-actions.md b/docs/github-actions.md
+index f3ebdb8..5d4adb0 100644
+--- a/docs/github-actions.md
++++ b/docs/github-actions.md
+@@ -129,11 +129,13 @@ When you install the app, you grant the following permissions:
+ | Permission | Access |
+ | - | - |
+ | Actions | Read and write |
++| Administration | Read |
+ | Checks | Read and write |
+ | Contents | Read and write |
+ | Discussions | Read and write |
+ | Issues | Read and write |
+ | Members | Read |
++| Merge queues | Read |
+ | Metadata | Read |
+ | Pull requests | Read and write |
+ | Repository hooks | Read and write |

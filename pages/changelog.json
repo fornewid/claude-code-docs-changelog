@@ -1,5 +1,389 @@
 [
   {
+    "date": "2026-10-08T15:11:55Z",
+    "commit_hash": "eab8143",
+    "entries": [
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/advisor\" target=\"_blank\">Advisor</a>",
+        "summary": "어드바이저 모델 지원 범위에 Haiku 5.5가 추가되고 관련 버전 요구 사항 및 모델 호환성 표가 업데이트되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/eab8143_advisor.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/agent-sdk__modifying-system-prompts\" target=\"_blank\">Agent Sdk__Modifying System Prompts</a>",
+        "summary": "커스텀 출력 스타일 설정 및 시스템 프롬프트 관련 환경 변수 동작 방식이 업데이트되었으며, 비교표의 커스텀 수준 설명이 수정되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/eab8143_agent-sdk__modifying-system-prompts.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/agent-sdk__python\" target=\"_blank\">Agent Sdk__Python</a>",
+        "summary": "서브에이전트 옵션 설명이 구체화되고, 에이전트 설정에 추론 노력(effort) 수준을 지정하는 필드가 추가되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/eab8143_agent-sdk__python.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/agent-sdk__typescript\" target=\"_blank\">Agent Sdk__Typescript</a>",
+        "summary": "TypeScript Agent SDK 문서의 설정 옵션(forwardSubagentType, level, subagent_type 등)과 반환 타입 설명이 최신화되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/eab8143_agent-sdk__typescript.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/agent-teams\" target=\"_blank\">Agent Teams</a>",
+        "summary": "플러그인 모드를 통한 서브에이전트 모델 설정 우선순위 규칙이 추가되어 사용자 정의 모델 제어가 유연해졌습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/eab8143_agent-teams.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/agent-view\" target=\"_blank\">Agent View</a>",
+        "summary": "세션 백그라운드 전환 조건, 특정 명령어의 즉시 실행 예외 처리, 그리고 백그라운드 프로세스 유지 조건이 업데이트되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/eab8143_agent-view.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/amazon-bedrock\" target=\"_blank\">Amazon Bedrock</a>",
+        "summary": "AWS 자격 증명 설정 가이드가 확장되어 인스턴스 프로필 건너뛰기, AWS 콘솔 로그인 및 베드락 API 키 사용법 등이 상세히 추가되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/eab8143_amazon-bedrock.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/changelog\" target=\"_blank\">Changelog</a>",
+        "summary": "새로운 Claude Haiku 5.5 모델 추가 및 기본 설정, 서브에이전트 제어 기능 개선, 메모리 누수 및 원격 제어 관련 다수의 버그가 수정되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/eab8143_changelog.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/claude-apps-gateway-config\" target=\"_blank\">Claude Apps Gateway Config</a>",
+        "summary": "Claude Desktop 설정 및 정책 상속, 동기화 주기 등에 대한 문서가 세분화되고 상세하게 보완되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/eab8143_claude-apps-gateway-config.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/claude-apps-gateway-deploy\" target=\"_blank\">Claude Apps Gateway Deploy</a>",
+        "summary": "클로드 앱 게이트웨이 배포 문서에 네트워크 주소 설정 가이드, 프라이빗 네트워크 보안 요구사항 및 트러블슈팅 내용이 보강되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/eab8143_claude-apps-gateway-deploy.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/claude-directory\" target=\"_blank\">Claude Directory</a>",
+        "summary": "Claude 규칙(Rules)의 파일 로딩 조건이 읽기뿐만 아니라 쓰기와 편집 시점으로 구체화되었으며, 관리형 설정(managed-settings)의 우선순위 설명이 명확하게 보완되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/eab8143_claude-directory.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/claude-platform-on-aws\" target=\"_blank\">Claude Platform On Aws</a>",
+        "summary": "Claude Platform on AWS 문서의 인증 방식(SigV4 및 Workspace API key) 섹션 구조가 가독성 향상을 위해 개선되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/eab8143_claude-platform-on-aws.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/cloud-environments\" target=\"_blank\">Cloud Environments</a>",
+        "summary": "문서 내 'API credentials' 용어가 'network secrets'로 변경되었으며, 관련 기능과 설정 방법에 대한 설명이 수정되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/eab8143_cloud-environments.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/commands\" target=\"_blank\">Commands</a>",
+        "summary": "/doctor 명령어 설명이 간소화되고 관련 상세 문서 링크가 추가되어 가독성이 향상되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/eab8143_commands.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/corporate-launcher\" target=\"_blank\">Corporate Launcher</a>",
+        "summary": "corporate-launcher 가이드에 인자 처리 시 버전별 변경 가능성을 고려하여 특정 인수 철자에 의존하지 않도록 하는 주의사항이 추가되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/eab8143_corporate-launcher.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/deep-links\" target=\"_blank\">Deep Links</a>",
+        "summary": "deep-links 문서에 딥링크 등록 설정 범위에 대한 설명이 추가되었고, SSH 연결을 통한 Claude Desktop 세션 오픈 기능 안내가 새로 도입되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/eab8143_deep-links.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/desktop\" target=\"_blank\">Desktop</a>",
+        "summary": "원격 제어 세션 관리 기능과 프롬프트 자동 완성 기능이 추가되었으며, 터미널 세션 지원 범위 및 모델 요구사항이 업데이트되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/eab8143_desktop.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/env-vars\" target=\"_blank\">Env Vars</a>",
+        "summary": "환경 변수 문서에 절대 경로 작성법 및 일부 모델 지원 관련 설명이 추가 및 수정되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/eab8143_env-vars.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/errors\" target=\"_blank\">Errors</a>",
+        "summary": "클라우드 세션 중 발생하는 GitHub GraphQL 관련 오류 메시지가 최신 에러 텍스트로 업데이트되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/eab8143_errors.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/feature-availability\" target=\"_blank\">Feature Availability</a>",
+        "summary": "기능 가용성 문서에 Haiku 5.5 모델이 Auto 모드 지원 대상에 추가되었으며, 관련 링크 및 제약 사항이 일부 정비되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/eab8143_feature-availability.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/github-actions\" target=\"_blank\">Github Actions</a>",
+        "summary": "GitHub Actions 앱 권한 목록에 Administration과 Merge queues 권한이 추가되어 기능 범위가 확장되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/eab8143_github-actions.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/glossary\" target=\"_blank\">Glossary</a>",
+        "summary": "용어집 문서가 업데이트되어 Effort level의 지원 모델에 Haiku 5.5가 추가되고, Output style과 Settings layers의 설명이 구체화되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/eab8143_glossary.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/headless\" target=\"_blank\">Headless</a>",
+        "summary": "서브에이전트 및 포크된 스킬의 메시지 스트리밍 동작 방식이 업데이트되었으며, 실행 방식에 따른 parent_tool_use_id 매핑 테이블과 버전 요구사항이 추가되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/eab8143_headless.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/hooks\" target=\"_blank\">Hooks</a>",
+        "summary": "WorktreeRemove 훅의 실행 조건과 정리 동작이 상세히 추가 및 구체화되어 개발자의 이해를 돕습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/eab8143_hooks.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/keybindings\" target=\"_blank\">Keybindings</a>",
+        "summary": "프롬프트 상단 영역(Above-prompt) 및 패널(Pane) 조작을 위한 새로운 키보드 단축키와 컨텍스트가 추가되어 네비게이션이 향상되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/eab8143_keybindings.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/llm-gateway-connect\" target=\"_blank\">Llm Gateway Connect</a>",
+        "summary": "LLM 게이트웨이 환경에서 SSH 세션 지원(베타)이 추가되었으며, 관련 허용 목록 및 게이트웨이 주소 설정 방법이 안내되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/eab8143_llm-gateway-connect.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/managed-mcp\" target=\"_blank\">Managed Mcp</a>",
+        "summary": "서버 URL 매칭 규칙이 업데이트되어 포트 지정 및 와일드카드 동작 방식이 상세히 추가되고 차단 예시가 확장되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/eab8143_managed-mcp.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/mcp\" target=\"_blank\">Mcp</a>",
+        "summary": "MCP 프로토콜 v2에서 stdio 서버의 최신 리비전 협상이 기본값으로 변경되었으며, 관련 설명과 경고 문구가 간소화되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/eab8143_mcp.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/memory\" target=\"_blank\">Memory</a>",
+        "summary": "외부 심볼릭 링크 승인 방식이 세션 시작 시의 대화상자 형태로 구체화되어 사용자 이해도가 향상되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/eab8143_memory.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/microsoft-foundry\" target=\"_blank\">Microsoft Foundry</a>",
+        "summary": "Microsoft Foundry 문서의 인증 방식 섹션이 개편되어 가독성이 향상되었으며, 관련 노트와 RBAC 설정 안내가 추가되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/eab8143_microsoft-foundry.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/mobile\" target=\"_blank\">Mobile</a>",
+        "summary": "모바일 클라이언트의 원격 제어 세션에서 Auto 권한 모드 지원이 추가됨에 따라 관련 제한 사항 문서가 업데이트되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/eab8143_mobile.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/model-config\" target=\"_blank\">Model Config</a>",
+        "summary": "Haiku 5.5 모델 지원이 추가되었으며, 관련 별칭, 버전 요구사항, 세션 재개 규칙 및 노력 수준(Effort level) 기본값이 업데이트되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/eab8143_model-config.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/monitoring-usage\" target=\"_blank\">Monitoring Usage</a>",
+        "summary": "클라우드 환경 문서의 용어 변경을 반영하여 'API credential'을 'network secret'으로 수정하고 관련 링크를 업데이트했습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/eab8143_monitoring-usage.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/network-config\" target=\"_blank\">Network Config</a>",
+        "summary": "커스텀 ANTHROPIC_BASE_URL 사용 시 바이트 레벨 워치독 타임아웃 시간이 기능 플래그 페치 여부에 따라 동적으로 변경되도록 수정되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/eab8143_network-config.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/permission-modes\" target=\"_blank\">Permission Modes</a>",
+        "summary": "모바일 앱의 권한 설정 UI 변경, 원격 제어 세션의 Auto 모드 지원 추가, 그리고 지원 모델 목록에 Haiku 5.5가 추가되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/eab8143_permission-modes.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/plugin-evals\" target=\"_blank\">Plugin Evals</a>",
+        "summary": "plugin-evals 문서에 agent 모의 호출 예산(budget) 제한 및 정규식 패턴(`expect`) 관련 상세 설명이 추가되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/eab8143_plugin-evals.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/plugins__cli-reference\" target=\"_blank\">Plugins__Cli Reference</a>",
+        "summary": "마켓플레이스 CLI 명령어(add, remove, update)에 --json 옵션과 결과 포맷이 추가되어 자동화 및 프로그래밍 방식의 응답 처리가 용이해졌습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/eab8143_plugins__cli-reference.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/plugins__components\" target=\"_blank\">Plugins__Components</a>",
+        "summary": "모니터 명령어의 실행 디렉토리와 권한 관련 설명이 구체화되어 보안 및 동작 방식을 명확히 이해할 수 있게 되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/eab8143_plugins__components.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/plugins__marketplace-reference\" target=\"_blank\">Plugins__Marketplace Reference</a>",
+        "summary": "상대 경로 소스 오류 메시지가 구체화되어 문제 파악이 용이해졌습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/eab8143_plugins__marketplace-reference.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/plugins__mods__admin\" target=\"_blank\">Plugins__Mods__Admin</a>",
+        "summary": "모드 동작 관련 용어가 '로딩(loading)'에서 '후크 실행 및 거부(running hooks/refused)' 중심으로 명확하게 수정되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/eab8143_plugins__mods__admin.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/plugins__mods__api\" target=\"_blank\">Plugins__Mods__Api</a>",
+        "summary": "MCP 도구 지연 로딩 설정(isDeferred)과 프로세스 실행($.process.spawn) 거부 이벤트에 대한 새로운 문서 내용이 추가되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/eab8143_plugins__mods__api.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/plugins__mods__gallery\" target=\"_blank\">Plugins__Mods__Gallery</a>",
+        "summary": "터미널 이미지 지원(kitty/Ghostty) 조건 및 alt 텍스트 대체 규칙, 강제 출력 환경변수 설정 방법이 추가되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/eab8143_plugins__mods__gallery.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/plugins__security\" target=\"_blank\">Plugins__Security</a>",
+        "summary": "플러그인 보안 문서에 'Monitors' 구성 요소와 백그라운드 셸 명령 실행에 대한 보안 주의사항이 추가되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/eab8143_plugins__security.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/prompt-caching\" target=\"_blank\">Prompt Caching</a>",
+        "summary": "Haiku 5.5 모델이 캐시 유지 대상에 추가되고, 프롬프트 캐시 TTL 비용 관련 문구가 더 명확하게 수정되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/eab8143_prompt-caching.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/quickstart\" target=\"_blank\">Quickstart</a>",
+        "summary": "퀵스타트 가이드의 단계(로그인 및 세션 시작 순서 변경 등)와 설명이 사용자의 실제 흐름에 맞추어 전반적으로 개선되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/eab8143_quickstart.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/routines\" target=\"_blank\">Routines</a>",
+        "summary": "루틴 문서 내 환경 변수 설정 가이드에서 API 키 저장 방식을 API 자격 증명 대신 네트워크 보안 비밀 사용으로 변경하도록 안내가 수정되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/eab8143_routines.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/settings-reference\" target=\"_blank\">Settings Reference</a>",
+        "summary": "settings-reference.md 문서에 모델 지원 범위 확대, plan mode 경로 설정 예외 조건, 관리형 설정 및 SSH 호스트 제한 관련 상세 설명이 추가되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/eab8143_settings-reference.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/settings\" target=\"_blank\">Settings</a>",
+        "summary": "관리형 설정 및 우선순위 규칙이 명확히 수정되었으며, 예외 설정 목록에 새로운 보안 및 제어 항목들이 추가되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/eab8143_settings.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/skills\" target=\"_blank\">Skills</a>",
+        "summary": "새로운 /doctor 명령어와 프롬프트 감사 기능이 추가되고, 계정 스킬 동기화의 유휴 상태 주기 및 백그라운드 동작 세부사항이 업데이트되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/eab8143_skills.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/statusline\" target=\"_blank\">Statusline</a>",
+        "summary": "서브에이전트 상태 줄의 작업 필드(Task fields)에 대한 상세 문서와 표가 추가되었으며, 문서 전반의 가독성이 개선되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/eab8143_statusline.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/sub-agents\" target=\"_blank\">Sub Agents</a>",
+        "summary": "서브에이전트 모델 설정에 모드(mod) 관련 내용이 추가되고, 제한 턴 도달 시 재개 기능 설명 및 비용 관련 표현이 일부 개선되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/eab8143_sub-agents.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/tools-reference\" target=\"_blank\">Tools Reference</a>",
+        "summary": "WebSearch 도구의 플랫폼별 지원 범위가 수정되고, 세션 검색 제한의 리필 기능 및 환경 변수 관련 상세 설명이 추가되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/eab8143_tools-reference.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/vs-code\" target=\"_blank\">Vs Code</a>",
+        "summary": "VS Code 문서에 데브 컨테이너 실행 안내, 화면 읽기 프로그램의 큐 메시지 안내, 그리고 일반적인 오류 해결을 위한 문제별 가이드 테이블이 추가되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/eab8143_vs-code.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/workflows\" target=\"_blank\">Workflows</a>",
+        "summary": "워크플로우 비활성화 시 사용 불가능해지는 기능 목록이 가독성 좋게 글머리 기호로 개편되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/eab8143_workflows.txt"
+      }
+    ]
+  },
+  {
     "date": "2026-10-07T15:21:38Z",
     "commit_hash": "ba88be3",
     "entries": [

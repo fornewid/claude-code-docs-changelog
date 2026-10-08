@@ -1,0 +1,13 @@
+diff --git a/docs/plugins__components.md b/docs/plugins__components.md
+index 576188d..588fae1 100644
+--- a/docs/plugins__components.md
++++ b/docs/plugins__components.md
+@@ -993,7 +993,7 @@ A monitor is a shell command that runs in the background for the whole session.
+ ]
+ ```
+ 
+-The command runs in a shell, in the working directory the session started in.
++The command runs in a shell, in the session's current working directory. It runs with your full user permissions and outside the [sandbox](/docs/en/sandboxing).
+ 
+ A monitor's command is limited in where it starts and what it can reference:
+ 
