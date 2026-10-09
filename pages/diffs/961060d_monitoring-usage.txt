@@ -1,0 +1,65 @@
+diff --git a/docs/monitoring-usage.md b/docs/monitoring-usage.md
+index 9e94015..4b798ed 100644
+--- a/docs/monitoring-usage.md
++++ b/docs/monitoring-usage.md
+@@ -559,6 +559,10 @@ All metrics and events share these standard attributes:
+ 
+ In sessions signed in to a [Claude apps gateway](/docs/en/claude-apps-gateway) through `/login`, the CLI stamps exports with the authenticated identity: `user.id` is the IdP subject, `user.email` is the signed-in email, and `user.groups` carries IdP group membership as a comma-separated string. Each export also carries `identity.source: gateway-oidc`. The gateway identity is applied last, so `user.*` and `identity.*` keys set through `OTEL_RESOURCE_ATTRIBUTES` are ignored on those sessions.
+ 
++<Note>
++  Events that Claude Code logs before a developer signs in don't carry the gateway identity. When Claude Code opens a session signed out of the gateway, for example after [the gateway ends the sign-in](/docs/en/errors#cloud-gateway-session-expired), the startup events logged before sign-in carry the anonymous `user.id` and no `identity.source`. These include [`managed_settings_resolved`](#managed-settings-resolved-event), [`plugin_loaded`](#plugin-loaded-event), and [`mcp_server_connection`](#mcp-server-connection-event).
++</Note>
++
+ For the identity attributes on Claude Desktop and Cowork sessions that connect through a gateway, see the [gateway `telemetry` reference](/docs/en/claude-apps-gateway-config#telemetry).
+ 
+ Events additionally include the following attributes. These are never attached to metrics because they would cause unbounded cardinality:
+@@ -841,7 +845,7 @@ Logged when an API request to Claude fails.
+ * `error`: Error message
+ * `status_code`: HTTP status code as a number. Absent for non-HTTP errors such as connection failures.
+ * `duration_ms`: Request duration in milliseconds
+-* `attempt`: Total number of attempts made, including the initial request (`1` means no retries occurred)
++* `attempt`: Number of attempts made, including the initial request. [Detect retry exhaustion](#detect-retry-exhaustion) says when the count starts again
+ * `request_id`: API request ID, such as `"req_011..."`, described under [Event correlation attributes](#event-correlation-attributes).
+ * `client_request_id`: Client-generated UUID sent as the `x-client-request-id` request header. Available even when a failure such as a timeout or connection error never produced a server `request_id`; see the [event correlation attributes](#event-correlation-attributes) table for when it's present. Requires Claude Code v2.1.214 or later
+ * `speed`: `"fast"` or `"normal"`, indicating whether fast mode was active
+@@ -1204,7 +1208,7 @@ Logged when an official-marketplace plugin hook emits per-invocation metrics. On
+ * `event.sequence`: per-process counter for ordering events, described under [Event correlation attributes](#event-correlation-attributes)
+ * `plugin_id`: plugin identifier in `<name>@<marketplace>` form
+ * `hook_event`: hook event type that emitted the metrics
+-* Up to 20 plugin-emitted metric keys. Names match `^[a-z][a-z0-9_]{0,39}$`. Values are boolean or number.
++* Up to 20 plugin-emitted metric keys. Names match `^[a-z][a-z0-9_]{0,39}$`. Values are Boolean or number.
+ 
+ #### Compaction event
+ 
+@@ -1266,7 +1270,7 @@ Logged when a session quality survey is shown or answered. See [Session quality
+ * `appearance_id`: Unique ID linking the events emitted for one survey instance
+ * `survey_type`: Which survey produced the event. `"session"` is the "How is Claude doing?" rating prompt
+ * `response`: The user's selection on `responded` events
+-* `enabled_via_override`: `true` when [`CLAUDE_CODE_ENABLE_FEEDBACK_SURVEY_FOR_OTEL`](/docs/en/env-vars) is set. Emitted as a boolean, not a string. Present on `session` survey events. Filter on this attribute to confirm the override is applied across a fleet
++* `enabled_via_override`: `true` when [`CLAUDE_CODE_ENABLE_FEEDBACK_SURVEY_FOR_OTEL`](/docs/en/env-vars) is set. Emitted as a Boolean, not a string. Present on `session` survey events. Filter on this attribute to confirm the override is applied across a fleet
+ 
+ #### Retention sweep event
+ 
+@@ -1353,7 +1357,7 @@ In an interactive session in a folder you haven't [trusted](/docs/en/permissions
+   For example, managed settings with `apiKeyHelper`, two `env` variables, and a deny rule are exported as `{"apiKeyHelper":"[REDACTED]","env":{"HTTPS_PROXY":"[REDACTED]","CLAUDE_CODE_ENABLE_TELEMETRY":"[REDACTED]"},"permissions":{"deny":["Read([REDACTED])"]}}`.
+ 
+   Claude Code cuts the value at 8 KB of UTF-8, and the cut value isn't valid JSON
+-* `managed_settings.settings_truncated` (when `managed_settings.settings` is present): `true` when Claude Code cut `managed_settings.settings` at 8 KB, `false` otherwise. Emitted as a boolean, not a string
++* `managed_settings.settings_truncated` (when `managed_settings.settings` is present): `true` when Claude Code cut `managed_settings.settings` at 8 KB, `false` otherwise. Emitted as a Boolean, not a string
+ 
+ ## Interpret metrics and events data
+ 
+@@ -1398,9 +1402,11 @@ Per-model breakdowns of commits can only be approximated by joining against the
+ 
+ Claude Code retries failed API requests internally and emits a single `claude_code.api_error` event only after it gives up, so the event itself is the terminal signal for that request. Intermediate retry attempts are not logged as separate events.
+ 
+-The `attempt` attribute on the event records the total number of attempts. `CLAUDE_CODE_MAX_RETRIES` defaults to 10 and is capped at 15. On v2.1.199 or later, you can set `CLAUDE_CODE_RETRY_WATCHDOG` to raise the default and remove the cap.
++The `attempt` attribute on the event records the number of attempts. `CLAUDE_CODE_MAX_RETRIES` defaults to 10 and is capped at 15. On v2.1.199 or later, you can set `CLAUDE_CODE_RETRY_WATCHDOG` to raise the default and remove the cap.
++
++When the request exhausts all retries on a transient error, `attempt` is at most one more than that effective limit: 11 by default.
+ 
+-When the request exhausts all retries on a transient error, `attempt` equals one more than that effective limit: 11 by default, and never more than 16 unless the watchdog is set. A lower value indicates a non-retryable error such as a `400` response, or a cause with its own smaller retry budget. For example, Claude Code retries a failure to load AWS or Google Cloud credentials at most twice.
++A lower value can still mean the retries ran out: `attempt` starts again from `1` each time Claude Code re-issues the request after a streaming failure.
+ 
+ To distinguish a session that recovered from one that stalled, group events by `session.id` and check whether a later `api_request` event exists after the error.
+ 

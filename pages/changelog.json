@@ -1,5 +1,256 @@
 [
   {
+    "date": "2026-10-09T15:11:37Z",
+    "commit_hash": "961060d",
+    "entries": [
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/agent-sdk__agent-loop\" target=\"_blank\">Agent Sdk__Agent Loop</a>",
+        "summary": "최대 예산(max_budget_usd)의 정의가 명확해지고, 예산 초과 시점과 여유 공간(headroom)에 대한 설명이 추가되어 비용 관리가 용이해졌습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/961060d_agent-sdk__agent-loop.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/agent-sdk__python\" target=\"_blank\">Agent Sdk__Python</a>",
+        "summary": "max_budget_usd의 예산 초과 가능성 안내가 추가되고, CLAUDE_CODE_MAX_RETRIES 설명이 분리되었으며, URL 페치 기능에 offset 필드가 추가되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/961060d_agent-sdk__python.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/agent-sdk__subagents\" target=\"_blank\">Agent Sdk__Subagents</a>",
+        "summary": "TypeScript SDK v0.3.292 이상에서 지원되는 subagent 메시지의 agent_id 필드 감지 및 로깅 기능이 추가되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/961060d_agent-sdk__subagents.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/agent-sdk__typescript\" target=\"_blank\">Agent Sdk__Typescript</a>",
+        "summary": "Agent SDK TypeScript 문서에 서브에이전트 식별을 위한 agent_id 필드 추가, 예산 한도 설정 주의사항, 재시도 설정 가이드가 업데이트되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/961060d_agent-sdk__typescript.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/agent-view\" target=\"_blank\">Agent View</a>",
+        "summary": "세션 백그라운드 전환 조건, 대화 저장 정책, 그리고 에러 처리 관련 동작이 업데이트되어 세션 관리의 안정성이 향상되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/961060d_agent-view.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/amazon-bedrock\" target=\"_blank\">Amazon Bedrock</a>",
+        "summary": "Amazon Bedrock 문서의 1M 토큰 컨텍스트 윈도우 지원 모델 및 기본 설정 방식이 업데이트되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/961060d_amazon-bedrock.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/artifacts\" target=\"_blank\">Artifacts</a>",
+        "summary": "아티팩트 발행 권한 조건, 브라우저 자동 열기 설정, 세션 단축키 및 공동 편집 충돌 해결 방안 등의 문서 내용이 대폭 보완되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/961060d_artifacts.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/changelog\" target=\"_blank\">Changelog</a>",
+        "summary": "Claude Code 2.1.295 버전이 업데이트되었습니다. 명령 및 HTTP 훅의 실패 차단 설정(`onFailure`), 프로그램 상태 프로토콜 지원 등이 추가되었고, 게이트웨이 및 MCP 서버 관련 여러 버그와 안정성 문제가 대거 수정되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/961060d_changelog.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/claude-apps-gateway\" target=\"_blank\">Claude Apps Gateway</a>",
+        "summary": "1M 토큰 컨텍스트 창 지원 기능이 추가되어 특정 모델에서 기본적으로 대규모 컨텍스트를 활용할 수 있게 되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/961060d_claude-apps-gateway.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/debug-your-config\" target=\"_blank\">Debug Your Config</a>",
+        "summary": "안전 모드(safe-mode)에서 비활성화되는 커스텀 항목 목록이 확장되고 문제 해결을 위한 가이드가 보완되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/961060d_debug-your-config.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/env-vars\" target=\"_blank\">Env Vars</a>",
+        "summary": "환경 변수 문서(env-vars.md)의 타임아웃, 백그라운드 작업, AFK 설정 및 서브에이전트 관련 설명과 제약 조건이 최신 버전 기준으로 업데이트되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/961060d_env-vars.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/errors\" target=\"_blank\">Errors</a>",
+        "summary": "재시도 및 과부하 환경 변수 설정(`CLAUDE_CODE_OVERLOADED_RETRY_BASE_DELAY_MS`)이 추가되고, API 에러 메시지 및 링크가 업데이트되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/961060d_errors.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/feature-availability\" target=\"_blank\">Feature Availability</a>",
+        "summary": "서버 관리형 설정의 기능 가용성이 플랫폼별 상세 문서 참조로 변경되어 정확한 지원 여부 확인이 가능해졌습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/961060d_feature-availability.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/google-vertex-ai\" target=\"_blank\">Google Vertex Ai</a>",
+        "summary": "Google Vertex AI 문서의 1M 토큰 컨텍스트 창 지원 모델 및 기본 설정 방식이 업데이트되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/961060d_google-vertex-ai.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/headless\" target=\"_blank\">Headless</a>",
+        "summary": "백그라운드 작업 종료 조건 및 대기 시간에 대한 규칙이 구체화되었으며, 관련 출력 형식 및 예산 제한 동작이 업데이트되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/961060d_headless.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/hooks\" target=\"_blank\">Hooks</a>",
+        "summary": "SessionStart 훅의 설정 필드 및 리로드 가이드가 개선되었으며, 웹페치 및 태스크 관련 훅에 새 필드가 추가되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/961060d_hooks.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/mcp\" target=\"_blank\">Mcp</a>",
+        "summary": "MCP 도구의 로딩 방식을 제어하는 항상 로딩 및 지연 로딩 설정 기능이 추가되고 관련 서버 제한 사항이 문서화되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/961060d_mcp.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/microsoft-foundry\" target=\"_blank\">Microsoft Foundry</a>",
+        "summary": "Microsoft Foundry에서 최신 모델의 1M 토큰 컨텍스트 창 기본 지원 및 설정 방법이 추가되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/961060d_microsoft-foundry.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/model-config\" target=\"_blank\">Model Config</a>",
+        "summary": "모델 설정 문서에서 opus[1m] 별칭의 기본 동작 조건, 관리 콘솔 전달을 위한 인증 요구사항, 그리고 안전성 분류기 기반 폴백 동작 및 사용자 프롬프트 옵션이 구체화되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/961060d_model-config.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/monitoring-usage\" target=\"_blank\">Monitoring Usage</a>",
+        "summary": "게이트웨이 인증 전 로그에 대한 익명 ID 처리 방식을 추가하고, API 에러 이벤트의 재시도(attempt) 횟수 기록 방식과 관련된 설명을 업데이트했습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/961060d_monitoring-usage.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/plugins__cli-reference\" target=\"_blank\">Plugins__Cli Reference</a>",
+        "summary": "플러그인 CLI 참조 문서에 마켓플레이스 소스를 지정하여 한 번에 설치할 수 있는 새 옵션(--marketplace)이 추가되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/961060d_plugins__cli-reference.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/plugins__install\" target=\"_blank\">Plugins__Install</a>",
+        "summary": "마켓플레이스 추가와 플러그인 설치를 셸 환경에서도 단일 명령어로 수행할 수 있는 기능이 추가되고 관련 설명이 보강되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/961060d_plugins__install.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/plugins__mods__admin\" target=\"_blank\">Plugins__Mods__Admin</a>",
+        "summary": "$.session.send 설명에 팀원(teammate) 에이전트 대상 기능이 추가되어 멀티 에이전트 협업 지원 범위가 확장되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/961060d_plugins__mods__admin.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/plugins__mods__events\" target=\"_blank\">Plugins__Mods__Events</a>",
+        "summary": "프롬프트 중단 기능, API 서버 도구 호출 조회 방법, 그리고 훅 에러 핸들러(`next.called`) 처리 방식이 추가 및 개선되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/961060d_plugins__mods__events.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/plugins__mods__interface\" target=\"_blank\">Plugins__Mods__Interface</a>",
+        "summary": "플러그인 모드 인터페이스 문서에 데스크톱 앱의 Link 사용 규칙과 Client 실패 시 동작, 그리고 holdToasts 옵션에 대한 상세 설명이 추가되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/961060d_plugins__mods__interface.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/plugins__mods__reference\" target=\"_blank\">Plugins__Mods__Reference</a>",
+        "summary": "플러그인 모드 레퍼런스에 tool.check 에이전트/조직 필드, 에이전트 상태 값, UI Link 및 제한(Limits) 관련 상세 정보가 추가되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/961060d_plugins__mods__reference.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/plugins__mods__test\" target=\"_blank\">Plugins__Mods__Test</a>",
+        "summary": "세션 추가 기능을 테스트할 수 있는 새로운 mock.session(on)이 추가되었고, 관련된 자동 처리 API 범위가 확장되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/961060d_plugins__mods__test.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/plugins__mods__troubleshoot\" target=\"_blank\">Plugins__Mods__Troubleshoot</a>",
+        "summary": "모드 문제해결 문서에 세션 상태 중복 방지, UI 렌더링 오류, 토스트 메시지 디버깅 및 롤아웃 스위치 관련 새 에러 메시지 안내가 추가되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/961060d_plugins__mods__troubleshoot.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/plugins__publish\" target=\"_blank\">Plugins__Publish</a>",
+        "summary": "쉘 환경에서 마켓플레이스 추가와 플러그인 설치를 한 번에 처리할 수 있는 명령어 옵션이 추가되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/961060d_plugins__publish.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/self-hosted-environments-configuration\" target=\"_blank\">Self Hosted Environments Configuration</a>",
+        "summary": "다중 저장소 세션 환경에서의 프로젝트 설정 및 MCP 파일 로드 동작 방식에 대한 상세 가이드가 추가되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/961060d_self-hosted-environments-configuration.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/server-managed-settings\" target=\"_blank\">Server Managed Settings</a>",
+        "summary": "서버 관리형 설정의 JSON 스키마 검증 경고 동작이 추가되었으며, 콘솔 API 키 인증 시 설정 전달 방식과 OAuth 토큰 사용법에 대한 안내가 보완되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/961060d_server-managed-settings.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/skills\" target=\"_blank\">Skills</a>",
+        "summary": "managed-agents-onboard 명령어에 URL 및 퀵스타트 템플릿을 지원하는 새로운 하위 옵션이 추가되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/961060d_skills.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/tools-reference\" target=\"_blank\">Tools Reference</a>",
+        "summary": "백그라운드 명령어 제한 시간 변경(-p 플래그 기준 추가), 파일 조회 시 CLAUDE.md 자동 로드, WebFetch 크기 제한 안내 및 WebSearch 세션 제한 관련 상세 설정이 추가되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/961060d_tools-reference.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/vs-code\" target=\"_blank\">Vs Code</a>",
+        "summary": "showMessageTimestamps 설정의 기본값이 true로 변경되어 시간 표시 기능이 기본 활성화됩니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/961060d_vs-code.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/workflows\" target=\"_blank\">Workflows</a>",
+        "summary": "에이전트가 멈췄을 때의 자동 재시작 메커니즘, 실패 원인 분류, 타임아웃 설정 방법(stallMs)에 대한 문서가 추가되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/961060d_workflows.txt"
+      }
+    ]
+  },
+  {
     "date": "2026-10-08T15:11:55Z",
     "commit_hash": "eab8143",
     "entries": [
