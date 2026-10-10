@@ -1,5 +1,249 @@
 [
   {
+    "date": "2026-10-10T15:11:22Z",
+    "commit_hash": "954c31e",
+    "entries": [
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/agent-sdk__typescript\" target=\"_blank\">Agent Sdk__Typescript</a>",
+        "summary": "Agent SDK v0.3.273 및 v0.3.280 업데이트에 따른 구조화된 사용량 리포트 필드(`usage_report`) 추가 및 붙여넣기 콘텐츠의 크기 제한 명시.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/954c31e_agent-sdk__typescript.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/changelog\" target=\"_blank\">Changelog</a>",
+        "summary": "v2.1.296 버전 출시: 게이트웨이 및 서브에이전트 설정 추가, 파일 읽기 및 후크 관련 다수의 버그 수정, 성능 및 에러 처리 개선.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/954c31e_changelog.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/chrome\" target=\"_blank\">Chrome</a>",
+        "summary": "Chrome 통합 문서에 프로젝트 설정 제한 경고, 조직 불일치 문제, 그리고 파일 업로드 제한 사항이 추가되어 문제 해결 가이드가 보완되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/954c31e_chrome.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/claude-apps-gateway-config\" target=\"_blank\">Claude Apps Gateway Config</a>",
+        "summary": "새로운 `code` 설정 키가 도입되어 Claude Desktop의 Code tab까지 정책 적용 범위를 확장할 수 있게 되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/954c31e_claude-apps-gateway-config.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/claude-apps-gateway-deploy\" target=\"_blank\">Claude Apps Gateway Deploy</a>",
+        "summary": "게이트웨이 정책 설정에 'code' 블록이 추가되어 초기 등록 시 설정 전달 방법이 확장되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/954c31e_claude-apps-gateway-deploy.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/claude-apps-gateway\" target=\"_blank\">Claude Apps Gateway</a>",
+        "summary": "관리 설정에 `parentSettingsBehavior` 설정이 추가되었으며, Claude Desktop 정책 적용 방식이 `code` 블록 지원을 포함하도록 확장되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/954c31e_claude-apps-gateway.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/claude-code-on-the-web\" target=\"_blank\">Claude Code On The Web</a>",
+        "summary": "클라우드 세션 중단 시 복원되지 않는 항목에 '/loop' 태스크가 추가되었고, 관련 문서의 섹션 제목과 앵커가 직관적으로 개선되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/954c31e_claude-code-on-the-web.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/claude-projects\" target=\"_blank\">Claude Projects</a>",
+        "summary": "다중 저장소 환경 및 자체 호스팅 환경에서의 권한 규칙 적용 방식이 업데이트되었으며, 관련 문서 링크가 추가되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/954c31e_claude-projects.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/cli-reference\" target=\"_blank\">Cli Reference</a>",
+        "summary": "CLI 참조 문서에 백그라운드 세션 이름 매칭 조건, MCP 로그인 인증 절차, 자체 호스팅 환경에서의 MCP 설정 대기 시간 관련 설명이 업데이트되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/954c31e_cli-reference.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/env-vars\" target=\"_blank\">Env Vars</a>",
+        "summary": "새로운 Chrome 통합 제어 환경 변수(CLAUDE_CODE_ENABLE_CFC)가 추가되고 MCP 시작 대기 시간 변수 설명이 보완되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/954c31e_env-vars.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/errors\" target=\"_blank\">Errors</a>",
+        "summary": "새로운 에러 메시지 및 환경 변수(CLAUDE_CODE_RETRY_WATCHDOG_MAX_WAIT_MS)가 문서에 추가되어 문제 해결 가이드가 업데이트되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/954c31e_errors.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/headless\" target=\"_blank\">Headless</a>",
+        "summary": "백그라운드 작업 대기 상태의 stderr 출력 조건이 추가되고, 자체 호스팅 환경에서의 MCP 서버 대기 시간 관련 내용이 보완되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/954c31e_headless.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/hipaa-setup\" target=\"_blank\">Hipaa Setup</a>",
+        "summary": "HIPAA 설정 문서에 상세한 설정 예제 및 관련 레포지토리 링크가 추가되어 보안 설정 참조가 용이해졌습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/954c31e_hipaa-setup.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/hooks-guide\" target=\"_blank\">Hooks Guide</a>",
+        "summary": "HTTP 훅의 상태 코드별 동작 및 실패 처리 설정(onFailure: \"block\") 방법이 구체화되었고, 디버그 및 결과 확인 가이드가 개정되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/954c31e_hooks-guide.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/hooks\" target=\"_blank\">Hooks</a>",
+        "summary": "훅 실패 시 동작을 제어하는 `onFailure` 필드가 추가되었고, 종료 코드(Exit code)와 stdout/stderr 처리에 대한 설명이 표와 함께 구체화되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/954c31e_hooks.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/managed-settings\" target=\"_blank\">Managed Settings</a>",
+        "summary": "HIPAA 설정 가이드 링크가 추가되었으며, 원격 설정의 로드 조건에 Claude Desktop Code 탭 관련 내용이 확장되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/954c31e_managed-settings.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/plugins__host-marketplace\" target=\"_blank\">Plugins__Host Marketplace</a>",
+        "summary": "VS Code 확장 프로그램에서의 플러그인 설치 방법이 추가되고, 명령어 및 아카이브 URL 변경 검증 예외 규칙이 보완되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/954c31e_plugins__host-marketplace.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/plugins__install\" target=\"_blank\">Plugins__Install</a>",
+        "summary": "플러그인 설치 시 마켓플레이스가 등록되지 않은 경우 출력되는 메시지와 설치 진행 과정에 대한 설명이 추가되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/954c31e_plugins__install.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/plugins__mods__api\" target=\"_blank\">Plugins__Mods__Api</a>",
+        "summary": "$.model API에 대화 내용 유지를 위한 fork 메서드와 프롬프트 캐싱 기능이 추가되어 LLM 호출 효율성이 향상되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/954c31e_plugins__mods__api.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/plugins__mods__events\" target=\"_blank\">Plugins__Mods__Events</a>",
+        "summary": "툴 호출 결과 보류 및 프롬프트 거부 동작에 대한 새로운 기능과 설명이 추가되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/954c31e_plugins__mods__events.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/plugins__mods__reference\" target=\"_blank\">Plugins__Mods__Reference</a>",
+        "summary": "tool.describe 및 session.append 이벤트의 동작 설명이 상세히 수정되었고, 훅 모듈 내 중첩 스코프에 대한 제한 사항이 추가되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/954c31e_plugins__mods__reference.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/plugins__mods__troubleshoot\" target=\"_blank\">Plugins__Mods__Troubleshoot</a>",
+        "summary": "코드 중첩 제한 에러 및 핫 리로딩 비활성화 문제에 대한 새로운 트러블슈팅 가이드가 추가되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/954c31e_plugins__mods__troubleshoot.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/plugins__troubleshooting\" target=\"_blank\">Plugins__Troubleshooting</a>",
+        "summary": "플러그인 마켓플레이스 이름 제약, 설정 파일 무시 오류, Windows 환경의 언인스톨 이슈 등 다양한 트러블슈팅 가이드가 추가되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/954c31e_plugins__troubleshooting.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/remote-control\" target=\"_blank\">Remote Control</a>",
+        "summary": "모바일 및 웹에서 MCP 서브커맨드 사용 조건이 구체화되었고, 터미널 세션 없이 claude.ai 커넥터를 인증하는 방법이 추가되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/954c31e_remote-control.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/scheduled-tasks\" target=\"_blank\">Scheduled Tasks</a>",
+        "summary": "예약 작업의 지터(Jitter) 동작 방식과 지연 시간 범위를 명확히 설명하는 표가 추가되어 실행 타이밍을 더 쉽게 예측할 수 있게 되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/954c31e_scheduled-tasks.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/self-hosted-environments-deploy\" target=\"_blank\">Self Hosted Environments Deploy</a>",
+        "summary": "자체 호스팅 환경 배포 문서에 GitHub 자격 증명 관리, IP 허용 목록 설정 및 네트워크 요구 사항(git proxy 등)에 대한 상세 가이드가 추가되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/954c31e_self-hosted-environments-deploy.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/self-hosted-environments-identity\" target=\"_blank\">Self Hosted Environments Identity</a>",
+        "summary": "decode-token 명령어가 JWKS 엔드포인트 연결 실패나 토큰 검증 실패 시 오류를 표준 에러로 출력하고 종료 코드 1을 반환하는 동작 방식이 추가되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/954c31e_self-hosted-environments-identity.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/self-hosted-environments-quickstart\" target=\"_blank\">Self Hosted Environments Quickstart</a>",
+        "summary": "자체 호스팅 환경 및 러너 설정 문서가 개정되어, 안내 설정(guided setup)과 수동 설정 과정이 명확히 분리되고 권한 및 Git 인증 관련 오류 처리 안내가 보강되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/954c31e_self-hosted-environments-quickstart.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/self-hosted-environments-reference\" target=\"_blank\">Self Hosted Environments Reference</a>",
+        "summary": "새로운 `--server-auto-mode-lists` 플래그와 관련 규칙 설명이 추가되어 세션의 자동 모드 분류기 동작을 제어할 수 있게 되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/954c31e_self-hosted-environments-reference.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/self-hosted-environments-testing\" target=\"_blank\">Self Hosted Environments Testing</a>",
+        "summary": "세션 생성 명령어의 출력 결과 및 오류 처리에 대한 설명이 구체화되었고, 예제 스크립트에 입력 리디렉션 및 사전 준비 조건이 추가되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/954c31e_self-hosted-environments-testing.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/self-hosted-environments\" target=\"_blank\">Self Hosted Environments</a>",
+        "summary": "자체 호스팅 환경 문서의 네트워크 연결 및 Git 프록시 동작 방식이 업데이트되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/954c31e_self-hosted-environments.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/skills\" target=\"_blank\">Skills</a>",
+        "summary": "자체 호스팅 환경의 일부 세션에서는 계정의 스킬이 로드되지 않는다는 제약 사항이 추가되어 클라우드 환경 설정 이해에 도움을 줍니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/954c31e_skills.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/troubleshoot-install\" target=\"_blank\">Troubleshoot Install</a>",
+        "summary": "설치 트러블슈팅 문서에 새로운 에러 증상과 해결책이 추가되고, PATH 설정 검증 및 문제 해결 가이드가 대폭 보강되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/954c31e_troubleshoot-install.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/vs-code\" target=\"_blank\">Vs Code</a>",
+        "summary": "원격 제어 파일 전송 기능과 새로운 설정 옵션(spinnerVerbs)이 추가되어 VS Code 환경에서의 기능 활용도가 향상되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/954c31e_vs-code.txt"
+      }
+    ]
+  },
+  {
     "date": "2026-10-09T15:11:37Z",
     "commit_hash": "961060d",
     "entries": [
