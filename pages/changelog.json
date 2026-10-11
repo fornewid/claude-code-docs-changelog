@@ -1,5 +1,269 @@
 [
   {
+    "date": "2026-10-11T15:10:49Z",
+    "commit_hash": "2d43135",
+    "entries": [
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/agent-sdk__agent-loop\" target=\"_blank\">Agent Sdk__Agent Loop</a>",
+        "summary": "네트워크 경로 읽기 작업에 대한 권한 규칙과 'dontAsk' 모드에서의 차단 정책이 구체화되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/2d43135_agent-sdk__agent-loop.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/agent-sdk__permissions\" target=\"_blank\">Agent Sdk__Permissions</a>",
+        "summary": "네트워크 경로 읽기 작업이 허용 규칙 및 자동 승인 대상에서 제외되도록 권한 정책이 강화되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/2d43135_agent-sdk__permissions.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/agent-sdk__python\" target=\"_blank\">Agent Sdk__Python</a>",
+        "summary": "세션 분기를 위한 fork_session() 함수가 추가되고, allowed_tools 설명 및 백그라운드 작업 처리 방식에 대한 문서가 업데이트되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/2d43135_agent-sdk__python.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/agent-sdk__typescript\" target=\"_blank\">Agent Sdk__Typescript</a>",
+        "summary": "세션 분기를 위한 `forkSession()` API가 추가되었고, `allowedTools` 및 MCP 도구의 `structuredContent` 제한 관련 설명이 업데이트되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/2d43135_agent-sdk__typescript.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/analytics\" target=\"_blank\">Analytics</a>",
+        "summary": "기여도 지표의 지원 범위가 github.com으로 한정되고, GitHub Enterprise Server는 사용량 지표만 제공하도록 변경되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/2d43135_analytics.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/auto-mode-classifier-billing\" target=\"_blank\">Auto Mode Classifier Billing</a>",
+        "summary": "자동 모드 분류기 요청 과금 관련 문서가 추가되었습니다. 안내 메시지의 의미와 원인, 해결 방법을 안내하여 비용 관리를 돕습니다.",
+        "tag_text": "NEW",
+        "tag_class": "new"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/changelog\" target=\"_blank\">Changelog</a>",
+        "summary": "Claude Code 2.1.296 업데이트: 서브에이전트 제어 기능 추가, 다양한 후크 및 플러그인 버그 수정, 윈도우 환경 호환성 개선 및 캐시 읽기 비용 인하 등이 적용되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/2d43135_changelog.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/claude-apps-gateway-config\" target=\"_blank\">Claude Apps Gateway Config</a>",
+        "summary": "Claude Code 게이트웨이 설정 파일 관리 소스 관련 내용이 수정되고 사용자 설정 문서 링크가 추가되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/2d43135_claude-apps-gateway-config.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/code-review\" target=\"_blank\">Code Review</a>",
+        "summary": "코드 리뷰 분석 대시보드의 비용 및 리포지토리 세부 정보 지표가 업데이트되었으며, 비용 산정 기준과 모니터링 방법에 대한 설명이 수정되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/2d43135_code-review.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/commands\" target=\"_blank\">Commands</a>",
+        "summary": "/copy 명령어에 블록쿼트 선택 기능이 추가되었고, /rename 명령어의 설명 일부가 간소화되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/2d43135_commands.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/costs\" target=\"_blank\">Costs</a>",
+        "summary": "스피너 옆에 실시간 토큰 수를 표시하는 기능이 추가되어 사용자가 현재 턴의 출력량을 쉽게 확인할 수 있게 되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/2d43135_costs.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/debug-your-config\" target=\"_blank\">Debug Your Config</a>",
+        "summary": "하위 디렉토리의 CLAUDE.md 파일을 로드하는 구체적인 방법이 추가되어 문제 해결 가이드가 개선되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/2d43135_debug-your-config.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/desktop\" target=\"_blank\">Desktop</a>",
+        "summary": "SSH 세션별 Worktree 폴더 설정 기능이 추가되고 관련 가이드와 관리형 설정 내용이 업데이트되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/2d43135_desktop.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/errors\" target=\"_blank\">Errors</a>",
+        "summary": "UTF-8 인코딩 오류 방지 기능, 마켓플레이스 예약 이름 정책 및 새로운 에러 메시지들이 추가되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/2d43135_errors.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/github-enterprise-server\" target=\"_blank\">Github Enterprise Server</a>",
+        "summary": "GitHub Enterprise Server(GHES)에서 기여도 메트릭(Contribution metrics) 지원이 중단됨에 따라 관련 문서 및 설정 가이드가 수정되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/2d43135_github-enterprise-server.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/headless\" target=\"_blank\">Headless</a>",
+        "summary": "네트워크 경로 읽기 권한 예외 사항 및 세션 관련 문서 링크가 최신화되어 권한 관리와 세션 복원 방식이 명확해졌습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/2d43135_headless.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/hooks-guide\" target=\"_blank\">Hooks Guide</a>",
+        "summary": "네트워크 경로 읽기 관련 권한 규칙이 추가되고, 훅 문제 해결(Troubleshooting) 섹션의 설명과 디버깅 가이드가 구체화되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/2d43135_hooks-guide.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/hooks\" target=\"_blank\">Hooks</a>",
+        "summary": "데스크톱 앱 워크트리, 에이전트 필드, 표준 출력의 JSON 파싱 규칙 및 환경 변수 지속 설정에 대한 설명이 업데이트되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/2d43135_hooks.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/interactive-mode\" target=\"_blank\">Interactive Mode</a>",
+        "summary": "Ctrl+C로 지운 임시 초안을 Up 키로 복원하는 기능(v2.1.288+) 및 큐에 대기 중인 텍스트 회수 시 세션 전환 취소 및 이력 복원 동작이 추가되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/2d43135_interactive-mode.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/monitoring-usage\" target=\"_blank\">Monitoring Usage</a>",
+        "summary": "Desktop SSH 세션에 속성 텔레메트리를 추가하는 방법과 관련 설정 지침이 새롭게 문서화되어 원격 머신 추적이 용이해졌습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/2d43135_monitoring-usage.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/permission-modes\" target=\"_blank\">Permission Modes</a>",
+        "summary": "네트워크 경로 읽기 및 심볼릭 링크 설정 파일에 대한 권한 처리 규칙이 추가되고, 백그라운드 세션의 권한 검증 방식이 구체화되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/2d43135_permission-modes.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/permissions\" target=\"_blank\">Permissions</a>",
+        "summary": "네트워크 경로 읽기 권한 검사, exec wrappers 및 find 명령어 제한 규칙, 그리고 ps 환경변수 출력 제한 등 권한 설정 관련 상세 가이드가 업데이트되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/2d43135_permissions.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/plugins__host-marketplace\" target=\"_blank\">Plugins__Host Marketplace</a>",
+        "summary": "SSH 키가 없는 사용자를 위한 공인 깃 저장소 플러그인 설치 시 환경 변수 설정 및 유지 지침이 구체화되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/2d43135_plugins__host-marketplace.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/plugins__loading\" target=\"_blank\">Plugins__Loading</a>",
+        "summary": "플러그인 로딩 실패 원인(하위 디렉토리, 워크트리 등)에 대한 설명이 개선되었고, 동일한 이름을 가진 플러그인의 훅 충돌 처리 방식이 추가되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/2d43135_plugins__loading.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/plugins__marketplace-reference\" target=\"_blank\">Plugins__Marketplace Reference</a>",
+        "summary": "JavaScript 객체 기본 속성 이름들이 마켓플레이스 예약어로 추가되어 해당 명칭 사용이 제한됩니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/2d43135_plugins__marketplace-reference.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/plugins__mods__reference\" target=\"_blank\">Plugins__Mods__Reference</a>",
+        "summary": "서브에이전트 재개 시 hook 동작, 네임스페이스 메서드의 컨텍스트 규칙, HTTP 요청/응답 크기와 시간에 대한 새로운 제한 사항이 추가되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/2d43135_plugins__mods__reference.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/plugins__mods__troubleshoot\" target=\"_blank\">Plugins__Mods__Troubleshoot</a>",
+        "summary": "플러그인 이름 충돌 설명이 업데이트되었고, 훅 모듈 리로드 시 발생하는 에러 메시지와 해결 방법이 추가되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/2d43135_plugins__mods__troubleshoot.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/plugins__troubleshooting\" target=\"_blank\">Plugins__Troubleshooting</a>",
+        "summary": "예약된 마켓플레이스 이름 충돌에 대한 트러블슈팅 가이드가 추가되고, 중복된 플러그인 이름으로 인해 훅이 실행되지 않는 문제의 진단 방법이 개선되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/2d43135_plugins__troubleshooting.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/routines\" target=\"_blank\">Routines</a>",
+        "summary": "GitHub 연동 및 PR 트리거 관련 루틴 동작 설명이 구체화되어 작업 브랜치 및 권한 설정에 대한 이해가 향상되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/2d43135_routines.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/sandboxing\" target=\"_blank\">Sandboxing</a>",
+        "summary": "모니터 툴(Monitor tool) 명령어는 자동 승인되지 않고 샌드박스에서 실행되며 프롬프트 생략을 위해 허용 규칙 추가가 필요함이 추가되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/2d43135_sandboxing.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/self-hosted-environments-deploy\" target=\"_blank\">Self Hosted Environments Deploy</a>",
+        "summary": "자체 호스팅 환경 문서의 깃 프록시 제한 사항에 세션 리포지토리 전용 자격 증명 및 브랜치 푸시 제한 항목이 추가되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/2d43135_self-hosted-environments-deploy.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/sessions\" target=\"_blank\">Sessions</a>",
+        "summary": "세션 관리 문서가 대폭 간소화되었으며, 권한 모드 복원 및 플랜 모드 조건에 관한 세부 설명이 최신화되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/2d43135_sessions.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/settings-reference\" target=\"_blank\">Settings Reference</a>",
+        "summary": "새로운 `worktree.location` 설정 추가 및 기존 설정 항목들의 범위와 동작 설명이 업데이트되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/2d43135_settings-reference.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/settings\" target=\"_blank\">Settings</a>",
+        "summary": "데스크톱 앱의 워크트리 세션 관련 안내와 설정 스코프(`User`) 내용이 업데이트되어 설정 관리 문서가 개선되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/2d43135_settings.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/skills\" target=\"_blank\">Skills</a>",
+        "summary": "git worktree 및 동적 워크플로우에서의 스킬 동작 조건이 구체화되고 관련 설명이 업데이트되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/2d43135_skills.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/sub-agents\" target=\"_blank\">Sub Agents</a>",
+        "summary": "서브에이전트 설정(CLAUDE_CODE_SUBAGENT_MODEL, dontAsk 권한 모드, Git 상태 스냅샷) 관련 문서가 업데이트되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/2d43135_sub-agents.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/vs-code\" target=\"_blank\">Vs Code</a>",
+        "summary": "플랜 모드 복원 기능에 거부 규칙이 적용되는 예외 케이스가 추가되어 권한 및 도구 제한 관련 설명이 보완되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/2d43135_vs-code.txt"
+      }
+    ]
+  },
+  {
     "date": "2026-10-10T15:11:22Z",
     "commit_hash": "954c31e",
     "entries": [
