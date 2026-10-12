@@ -1,5 +1,95 @@
 [
   {
+    "date": "2026-10-12T15:15:08Z",
+    "commit_hash": "0dd8022",
+    "entries": [
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/agent-sdk__typescript\" target=\"_blank\">Agent Sdk__Typescript</a>",
+        "summary": "백그라운드 및 서브에이전트 작업의 실행 추적을 위해 run_id 필드가 추가되었으며 관련 타입 및 설명이 갱신되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/0dd8022_agent-sdk__typescript.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/debug-your-config\" target=\"_blank\">Debug Your Config</a>",
+        "summary": "설정 디버깅 문서에서 클린 세션 생성 및 테스트 절차가 탭과 단계별 가이드 형태로 상세히 개편되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/0dd8022_debug-your-config.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/desktop\" target=\"_blank\">Desktop</a>",
+        "summary": "데스크톱 앱에서 로컬 세션을 차단하고 SSH 연결을 관리하는 방법과 관련 설정(disableDesktopLocalSessions 등)이 추가되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/0dd8022_desktop.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/errors\" target=\"_blank\">Errors</a>",
+        "summary": "로그인 만료 오류 메시지 처리 방식과 플러그인 마켓플레이스 관리 방법에 대한 가이드가 업데이트되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/0dd8022_errors.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/hooks\" target=\"_blank\">Hooks</a>",
+        "summary": "WorktreeCreate 및 WorktreeRemove 훅의 실행 조건과 원격 제어 및 종료 툴 연동에 따른 동작 세부사항이 확장 및 구체화되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/0dd8022_hooks.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/permission-modes\" target=\"_blank\">Permission Modes</a>",
+        "summary": "Bash 샌드박스의 자동 허용 모드 문서가 업데이트되어 프롬프트 동작에 대한 설명이 명확해졌습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/0dd8022_permission-modes.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/plugins__marketplace-reference\" target=\"_blank\">Plugins__Marketplace Reference</a>",
+        "summary": "마켓플레이스 이름 제한 및 거부 메시지 관련 안내가 업데이트되어 삭제되는 데이터 범위와 인라인 설정 파일 수정 절차가 추가되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/0dd8022_plugins__marketplace-reference.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/plugins__mods__reference\" target=\"_blank\">Plugins__Mods__Reference</a>",
+        "summary": "프롬프트 자동완성 기능을 지원하는 새로운 'prompt.autocomplete' 이벤트가 추가되어 개발자가 커스텀 제안을 제공할 수 있게 되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/0dd8022_plugins__mods__reference.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/remote-control\" target=\"_blank\">Remote Control</a>",
+        "summary": "git 저장소 외에도 WorktreeCreate 훅을 통해 worktree 모드를 사용할 수 있도록 원격 제어 CLI 옵션 문서가 업데이트되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/0dd8022_remote-control.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/sandboxing\" target=\"_blank\">Sandboxing</a>",
+        "summary": "환경변수 설정이나 eval 등이 포함된 샌드박스 명령어의 권한 처리 방식과 허용 규칙 작성법이 추가되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/0dd8022_sandboxing.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/scheduled-tasks\" target=\"_blank\">Scheduled Tasks</a>",
+        "summary": "예약 작업의 지연(Jitter) 동작 방식이 업데이트되었으며, 특히 5분마다 실행되는 작업의 예외 처리와 상세한 실행 시점 안내가 추가되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/0dd8022_scheduled-tasks.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/workflows\" target=\"_blank\">Workflows</a>",
+        "summary": "중단된 워크플로우 재실행 시 에이전트의 재실행 조건에 대한 상세 설명과 세션 종료 후 재개 관련 내용이 추가되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/0dd8022_workflows.txt"
+      }
+    ]
+  },
+  {
     "date": "2026-10-11T15:10:49Z",
     "commit_hash": "2d43135",
     "entries": [
