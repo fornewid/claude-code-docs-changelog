@@ -1,5 +1,53 @@
 [
   {
+    "date": "2026-10-13T15:13:10Z",
+    "commit_hash": "953d490",
+    "entries": [
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/agent-sdk__typescript\" target=\"_blank\">Agent Sdk__Typescript</a>",
+        "summary": "특정 도구들의 기본 지원 모델 범위가 특정 Claude 4.x 및 이전 버전 모델 위주로 명확하게 업데이트되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/953d490_agent-sdk__typescript.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/feature-availability\" target=\"_blank\">Feature Availability</a>",
+        "summary": "Google Cloud Agent Platform 등에서 MCP 서버 및 웹 검색 기능의 지원 모델 버전에 대한 상세 설명이 업데이트되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/953d490_feature-availability.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/interactive-mode\" target=\"_blank\">Interactive Mode</a>",
+        "summary": "작업 추적 도구를 기본 제공하는 모델 목록이 업데이트되어 사용자 환경에 영향을 줍니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/953d490_interactive-mode.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/llm-gateway-connect\" target=\"_blank\">Llm Gateway Connect</a>",
+        "summary": "어댑티브 추론 오류 설명에 지원 대상 모델 목록(Claude Haiku 5.5, Fable 5 등)이 추가되어 정확한 문제 진단이 가능해졌습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/953d490_llm-gateway-connect.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/mcp\" target=\"_blank\">Mcp</a>",
+        "summary": "도구 검색 비활성화 시 대기 메커니즘을 트리거하는 대상 모델 조건이 구체적인 클로드 4.5 세대 모델명(Opus, Sonnet, Haiku)으로 상세히 업데이트되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/953d490_mcp.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/tools-reference\" target=\"_blank\">Tools Reference</a>",
+        "summary": "Task 추적 도구 및 WebSearch 지원 모델 버전 정보가 최신 모델 스펙에 맞게 업데이트되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/953d490_tools-reference.txt"
+      }
+    ]
+  },
+  {
     "date": "2026-10-12T15:15:08Z",
     "commit_hash": "0dd8022",
     "entries": [
