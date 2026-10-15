@@ -1,5 +1,200 @@
 [
   {
+    "date": "2026-10-15T15:11:31Z",
+    "commit_hash": "cfd6401",
+    "entries": [
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/agent-sdk__observability\" target=\"_blank\">Agent Sdk__Observability</a>",
+        "summary": "Claude API 및 Managed Agents를 위한 OpenTelemetry 가이드 링크가 추가되어 관련 리소스 접근성이 향상되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/cfd6401_agent-sdk__observability.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/agent-sdk__subagents\" target=\"_blank\">Agent Sdk__Subagents</a>",
+        "summary": "Subagent 설정에 토큰 제한을 조정하는 autoCompactWindow 필드가 추가되어 컨텍스트 관리 효율성이 향상되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/cfd6401_agent-sdk__subagents.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/agent-sdk__typescript\" target=\"_blank\">Agent Sdk__Typescript</a>",
+        "summary": "AgentDefinition에 autoCompactWindow 옵션이 추가되고, 메시지 병합 시 body 필드의 동작 방식이 업데이트되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/cfd6401_agent-sdk__typescript.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/agent-teams\" target=\"_blank\">Agent Teams</a>",
+        "summary": "서브에이전트 정의에 autoCompactWindow 설정 항목이 추가되어 에이전트 팀 구성 시 컨텍스트 압축 윈도우를 제어할 수 있게 되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/cfd6401_agent-teams.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/artifacts\" target=\"_blank\">Artifacts</a>",
+        "summary": "수동 모드에서의 아티팩트 파일 수정 권한 승인 절차와 외부 파일 읽기 권한 설정 방법이 추가되어 사용자 제어가 명확해졌습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/cfd6401_artifacts.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/changelog\" target=\"_blank\">Changelog</a>",
+        "summary": "가상 텍스트 및 OpenTelemetry 속성 추가, 워크플로우 에이전트 프롬프트 수정 지원, 각종 세션 중단 및 원격 제어 버그 수정 등 대규모 기능 개선 및 안정성 패치가 적용되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/cfd6401_changelog.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/claude-directory\" target=\"_blank\">Claude Directory</a>",
+        "summary": "서브에이전트 설정(frontmatter)에 `autoCompactWindow` 필드가 추가되어 컨텍스트 관리 기능이 개선되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/cfd6401_claude-directory.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/cloud-environments\" target=\"_blank\">Cloud Environments</a>",
+        "summary": "클라우드 환경 설정 UI 변경 사항을 반영하고, Team 및 Enterprise 플랜을 포함한 네트워크 시크릿(Network secrets) 지원 범위 및 권한 요구사항을 업데이트했습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/cfd6401_cloud-environments.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/common-workflows\" target=\"_blank\">Common Workflows</a>",
+        "summary": "@ 파일 참조 시 내용 포함을 비활성화하는 새로운 환경 변수(CLAUDE_CODE_DISABLE_FILE_MENTIONS=1) 설정 방법이 추가되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/cfd6401_common-workflows.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/desktop\" target=\"_blank\">Desktop</a>",
+        "summary": "SSH 세션 환경에서의 브라우저 패널 및 PR 생성 제한 사항이 추가되었으며, 세션 권한 모드, 포트 자동 할당 규칙, 그리고 SSH 원격 머신 시스템 요구사항이 업데이트되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/cfd6401_desktop.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/env-vars\" target=\"_blank\">Env Vars</a>",
+        "summary": "새로운 환경 변수 'CLAUDE_CODE_ARTIFACT_PUBLISH_EDITS'가 추가되고 기존 중단된 턴 최대 대기 시간 관련 설명이 명확하게 수정되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/cfd6401_env-vars.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/github-enterprise-server\" target=\"_blank\">Github Enterprise Server</a>",
+        "summary": "GitHub Enterprise Server 문서에 인증 실패 오류 해결 방법이 추가되고 불필요한 설정 설명이 간소화되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/cfd6401_github-enterprise-server.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/headless\" target=\"_blank\">Headless</a>",
+        "summary": "--bare 모드와 --system-prompt 플래그 사용 시 동작 방식에 대한 세부 설명이 보완되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/cfd6401_headless.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/hooks\" target=\"_blank\">Hooks</a>",
+        "summary": "PreToolUse 훅의 파일 참조 예외 상황이 추가되었으며, 새 환경 변수를 통한 파일 언급 비활성화 방법이 안내되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/cfd6401_hooks.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/monitoring-usage\" target=\"_blank\">Monitoring Usage</a>",
+        "summary": "Claude API 및 Managed Agents를 위한 OpenTelemetry 문서 링크가 추가되어 관련 리소스 접근성이 향상되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/cfd6401_monitoring-usage.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/plugin-evals\" target=\"_blank\">Plugin Evals</a>",
+        "summary": "API 오류 시 종료 코드 및 채점 방식이 변경됨에 따라 관련 문서가 업데이트되었고, API 오류 관련 새로운 문제 해결 가이드가 추가되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/cfd6401_plugin-evals.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/plugins__cli-reference\" target=\"_blank\">Plugins__Cli Reference</a>",
+        "summary": "CLI 플러그인 평가(evals)의 종료 코드(exit code) 0번과 1번에 대한 설명이 API 오류 및 CI 실행 가이드 참조 등 더 상세한 조건으로 업데이트되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/cfd6401_plugins__cli-reference.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/plugins__components\" target=\"_blank\">Plugins__Components</a>",
+        "summary": "플러그인 에이전트 프런트매터에 지원되는 필드로 autoCompactWindow가 추가되어 에이전트 설정 옵션이 확장되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/cfd6401_plugins__components.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/plugins__mods__events\" target=\"_blank\">Plugins__Mods__Events</a>",
+        "summary": "skill.prompt 훅에서 스킬의 출처 플러그인이나 파일을 읽을 수 있는 기능이 추가되어 개발 편의성이 향상되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/cfd6401_plugins__mods__events.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/plugins__mods__reference\" target=\"_blank\">Plugins__Mods__Reference</a>",
+        "summary": "skill.prompt 훅의 소스 및 프론트매터 필드 문서가 추가되었고, next.error의 re-entry 및 cause 관련 에러 처리 명세가 업데이트되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/cfd6401_plugins__mods__reference.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/self-hosted-environments-configuration\" target=\"_blank\">Self Hosted Environments Configuration</a>",
+        "summary": "새로운 MCP 설정 환경 변수 추가, 훅 타임아웃에 따른 재시도 조건 명시, 그리고 셸 스크립트 작성 시 변수 따옴표 처리 및 에러 출력에 대한 모범 사례가 업데이트되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/cfd6401_self-hosted-environments-configuration.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/self-hosted-environments-deploy\" target=\"_blank\">Self Hosted Environments Deploy</a>",
+        "summary": "셀프 호스팅 러너 문서 내 Git 프록시 인증 요구사항, SSH 재작성 옵션, 종료 타임아웃 및 문제 해결 가이드가 명확하게 개선되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/cfd6401_self-hosted-environments-deploy.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/self-hosted-environments-quickstart\" target=\"_blank\">Self Hosted Environments Quickstart</a>",
+        "summary": "GitHub 연동 요구사항 변경, SSH 복제 설정 추가, 러너 종료 동작 구체화 및 Git 오류 트러블슈팅 가이드가 보완되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/cfd6401_self-hosted-environments-quickstart.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/self-hosted-environments-reference\" target=\"_blank\">Self Hosted Environments Reference</a>",
+        "summary": "자체 호스팅 러너의 시작 타임아웃 동작 방식과 오케스트레이터의 헬스체크 응답 필드(last_error 등)가 업데이트되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/cfd6401_self-hosted-environments-reference.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/settings-reference\" target=\"_blank\">Settings Reference</a>",
+        "summary": "비대호환 모드나 에이전트 SDK에서 시스템 프롬프트 교체 시 세션이 스냅샷 없이 시작되는 조건과 유지 방법이 추가되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/cfd6401_settings-reference.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/skills\" target=\"_blank\">Skills</a>",
+        "summary": "지원되지 않는 스킬 이름 문자 열 규칙 및 거부된 이름 확인 방법에 대한 가이드가 추가되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/cfd6401_skills.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/sub-agents\" target=\"_blank\">Sub Agents</a>",
+        "summary": "서브에이전트의 자동 압축 창을 조절하는 autoCompactWindow frontmatter 필드와 관련 디버깅 기능이 추가되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/cfd6401_sub-agents.txt"
+      }
+    ]
+  },
+  {
     "date": "2026-10-14T15:12:39Z",
     "commit_hash": "1ec2c1f",
     "entries": [
