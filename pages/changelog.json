@@ -1,5 +1,208 @@
 [
   {
+    "date": "2026-10-16T15:11:07Z",
+    "commit_hash": "56fbc0f",
+    "entries": [
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/analytics\" target=\"_blank\">Analytics</a>",
+        "summary": "코드 리뷰 전용 대시보드 및 사용량 확인 페이지에 대한 안내가 추가되어 분석 도구 접근성이 향상되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/56fbc0f_analytics.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/changelog\" target=\"_blank\">Changelog</a>",
+        "summary": "Claude Code 2.1.301 버전이 출시되어 오픈텔레메트리 추적, vim 모드 편의 기능, 다양한 오류 수정 및 VSCode 확장 프로그램의 LaTeX 수식 렌더링 등이 추가되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/56fbc0f_changelog.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/claude-code-on-the-web\" target=\"_blank\">Claude Code On The Web</a>",
+        "summary": "CMEK(고객 관리 암호화 키)를 사용하는 조직도 클라우드 세션 및 /web-setup 기능을 사용할 수 없도록 제한 사항이 추가되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/56fbc0f_claude-code-on-the-web.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/cloud-environments\" target=\"_blank\">Cloud Environments</a>",
+        "summary": "의존성 설치 스크립트에 SHA256 해시 기반의 캐싱 로직이 추가되어 불필요한 npm 재설치를 방지하고 시작 속도를 최적화합니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/56fbc0f_cloud-environments.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/code-review-costs\" target=\"_blank\">Code Review Costs</a>",
+        "summary": "Claude Code Review 비용 산정, 가격 정책, 비용 추정 및 예산 관리 방법을 안내하는 새로운 문서가 추가되었습니다.",
+        "tag_text": "NEW",
+        "tag_class": "new"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/code-review-customize\" target=\"_blank\">Code Review Customize</a>",
+        "summary": "코드 리뷰 커스터마이징 문서가 추가되어 CLAUDE.md와 REVIEW.md를 통한 규칙 설정 방법과 브랜치 보호 설정에 따른 동작 방식을 안내합니다.",
+        "tag_text": "NEW",
+        "tag_class": "new"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/code-review-local\" target=\"_blank\">Code Review Local</a>",
+        "summary": "로컬 코드 리뷰 명령어(`/code-review`) 사용법, 대상 지정, 플래그 설정 및 실행 방식에 대한 신규 문서가 추가되었습니다.",
+        "tag_text": "NEW",
+        "tag_class": "new"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/code-review-pull-requests\" target=\"_blank\">Code Review Pull Requests</a>",
+        "summary": "GitHub PR에서 Claude 코드 리뷰 결과를 읽고 대응하며, 명령어(@claude review)로 리뷰를 요청하는 방법을 안내하는 문서를 추가했습니다.",
+        "tag_text": "NEW",
+        "tag_class": "new"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/code-review-setup\" target=\"_blank\">Code Review Setup</a>",
+        "summary": "Claude 코드 리뷰 설정 가이드가 추가되어 GitHub 연동, 저장소 선택, 조직 기본값 설정 방법을 안내합니다.",
+        "tag_text": "NEW",
+        "tag_class": "new"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/code-review-troubleshooting\" target=\"_blank\">Code Review Troubleshooting</a>",
+        "summary": "코드 리뷰 트러블슈팅 문서가 추가되어, 리뷰가 시작되지 않거나 실패하는 문제 및 예산 한도 초과 등의 해결 방법을 제공합니다.",
+        "tag_text": "NEW",
+        "tag_class": "new"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/code-review\" target=\"_blank\">Code Review</a>",
+        "summary": "코드 리뷰(Code Review) 문서가 전면 개편되어 기능 설명이 간소화되고 상세한 설정 가이드가 축소되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/56fbc0f_code-review.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/errors\" target=\"_blank\">Errors</a>",
+        "summary": "errors.md 문서에 원격 제어, 이미지 처리, CLI 및 설정 관련 새로운 오류 메시지와 경고 항목들이 추가되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/56fbc0f_errors.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/github-enterprise-server\" target=\"_blank\">Github Enterprise Server</a>",
+        "summary": "코드 리뷰 문서 링크가 수정되어 올바른 설정 페이지로 접근할 수 있도록 안내가 변경되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/56fbc0f_github-enterprise-server.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/interactive-mode\" target=\"_blank\">Interactive Mode</a>",
+        "summary": "괄호 매칭('%') 및 관련 편집(d%, c%, y%) 단축키가 추가되어 코드 탐색과 편집 효율성이 향상되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/56fbc0f_interactive-mode.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/mcp-quickstart\" target=\"_blank\">Mcp Quickstart</a>",
+        "summary": "v2.1.299 이전 버전에서 HTTP 서버 연결 시 타임아웃 문제에 대한 해결 방법으로 Claude Code 업데이트 안내가 추가되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/56fbc0f_mcp-quickstart.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/mcp\" target=\"_blank\">Mcp</a>",
+        "summary": "Anthropic 호스팅 MCP 서버의 설명 전달 방식이 명시되었으며, 환경 변수를 통한 제한 설정 범위가 구체화되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/56fbc0f_mcp.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/memory\" target=\"_blank\">Memory</a>",
+        "summary": "메모리 파일 디버깅 섹션에 'Instruction file not loaded' 오류 발생 시 조치 방법과 관련 문서 링크가 추가되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/56fbc0f_memory.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/model-config\" target=\"_blank\">Model Config</a>",
+        "summary": "게이트웨이 및 커스텀 모델 ID의 컨텍스트 창 설정 오류를 해결하는 방법에 대한 상세한 가이드와 경고 메시지 처리 방법이 추가되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/56fbc0f_model-config.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/plugins__mods__admin\" target=\"_blank\">Plugins__Mods__Admin</a>",
+        "summary": "WebFetch 비활성화 시 모드의 네트워크 요청 동작 방식과 차단 대책에 대한 상세한 설명이 추가되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/56fbc0f_plugins__mods__admin.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/plugins__mods__gallery\" target=\"_blank\">Plugins__Mods__Gallery</a>",
+        "summary": "VS Code 확장 프로그램에서의 코드 블록, SVG, 포커스 동작 관련 문서 내용이 최신 사양에 맞춰 업데이트되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/56fbc0f_plugins__mods__gallery.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/plugins__mods__interface\" target=\"_blank\">Plugins__Mods__Interface</a>",
+        "summary": "VS Code 확장 프로그램에서 모드(mods) 및 UI 인터페이스를 지원하도록 관련 가이드와 렌더링 가능한 요소 테이블이 업데이트되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/56fbc0f_plugins__mods__interface.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/plugins__mods__overview\" target=\"_blank\">Plugins__Mods__Overview</a>",
+        "summary": "VS Code 확장 프로그램에서 모드 UI 렌더링이 지원되도록 문서가 업데이트되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/56fbc0f_plugins__mods__overview.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/plugins__mods__reference\" target=\"_blank\">Plugins__Mods__Reference</a>",
+        "summary": "Claude Code 모드(mods) 문서에 VS Code 확장 프로그램 지원 관련 렌더 사이트 및 UI 요소 호환성 정보가 추가되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/56fbc0f_plugins__mods__reference.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/plugins__mods__troubleshoot\" target=\"_blank\">Plugins__Mods__Troubleshoot</a>",
+        "summary": "VS Code 확장 프로그램 환경에서의 단축키 작동 오류 및 드로잉 미출력 문제에 대한 새로운 트러블슈팅 가이드와 해결 방법이 추가되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/56fbc0f_plugins__mods__troubleshoot.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/remote-control\" target=\"_blank\">Remote Control</a>",
+        "summary": "v2.1.300 버전에서 `--sandbox` 및 `--no-sandbox` 플래그가 제거되었으며, 사용 시 에러와 함께 서버가 종료됩니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/56fbc0f_remote-control.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/skills\" target=\"_blank\">Skills</a>",
+        "summary": "스킬 확장 규칙의 링크 수정, 제어 문자 관련 오류 안내 추가, 백그라운드 포크 스킬의 체크포인트 및 /rewind 동작 설명이 보완되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/56fbc0f_skills.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/ultrareview\" target=\"_blank\">Ultrareview</a>",
+        "summary": "ultrareview 사용 불가 조건에 고객 관리형 암호화 키(CMEK) 사용 조직이 추가되었고 대체 실행 명령어 안내가 명확해졌습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/56fbc0f_ultrareview.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/vs-code\" target=\"_blank\">Vs Code</a>",
+        "summary": "VS Code 확장 프로그램의 LaTeX 수식 렌더링, 중단된 대화 복원 방지, 그리고 패널 내 커스텀 플러그인 UI 지원 기능에 대한 문서가 추가되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/56fbc0f_vs-code.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/web-quickstart\" target=\"_blank\">Web Quickstart</a>",
+        "summary": "고객 관리 암호화 키(CMEK)를 사용하는 조직도 클라우드 세션을 사용할 수 없도록 제한 사항이 추가되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/56fbc0f_web-quickstart.txt"
+      }
+    ]
+  },
+  {
     "date": "2026-10-15T15:11:31Z",
     "commit_hash": "cfd6401",
     "entries": [
