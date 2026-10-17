@@ -1,5 +1,172 @@
 [
   {
+    "date": "2026-10-17T15:09:32Z",
+    "commit_hash": "a3174ed",
+    "entries": [
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/agent-sdk__permissions\" target=\"_blank\">Agent Sdk__Permissions</a>",
+        "summary": "Agent SDK 권한 문서에 훅의 허용 규칙, 플랜 모드의 예외 처리, 그리고 새로운 Auto 모드 동작 방식이 추가되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/a3174ed_agent-sdk__permissions.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/agent-sdk__typescript\" target=\"_blank\">Agent Sdk__Typescript</a>",
+        "summary": "setModel()과 denyWrite 설정에 대한 상세 설명이 추가되어 모델 변경 시 모드 전환 및 절대 경로 차단 방식을 명확히 안내합니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/a3174ed_agent-sdk__typescript.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/changelog\" target=\"_blank\">Changelog</a>",
+        "summary": "클라이언트 자동 모드 모델 설정 추가, 유휴 압축 기능 개선, 그리고 플러그인, VS Code, 클라우드 세션 및 슬랙 연동 관련 다수의 버그가 수정되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/a3174ed_changelog.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/channels\" target=\"_blank\">Channels</a>",
+        "summary": "플러그인 미발견 오류 발생 시 카탈로그를 갱신하고 문제 해결 문서를 참조하도록 안내 문구가 구체화되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/a3174ed_channels.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/desktop\" target=\"_blank\">Desktop</a>",
+        "summary": "데스크톱 앱 종료 후 세션 재연결 및 태스크 유지 조건에 대한 동작 방식이 업데이트되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/a3174ed_desktop.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/env-vars\" target=\"_blank\">Env Vars</a>",
+        "summary": "API_TIMEOUT_MS 환경 변수 설명에 스트리밍 요청의 응답 헤더 수신 조건 내용이 구체화되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/a3174ed_env-vars.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/errors\" target=\"_blank\">Errors</a>",
+        "summary": "신규 에러 메시지 처리 안내 추가 및 API 재시도 동작 설명, 서브에이전트 툴 설정 가이드가 보완되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/a3174ed_errors.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/hooks-guide\" target=\"_blank\">Hooks Guide</a>",
+        "summary": "훅 종료 코드, PreToolUse 권한(allow/deny) 동작 및 플랜 모드 예외 사항, Windows 환경 가이드 등이 업데이트되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/a3174ed_hooks-guide.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/hooks\" target=\"_blank\">Hooks</a>",
+        "summary": "훅 실패 시 동작을 제어하는 `onFailure` 설정과 관련된 설명 및 에러 처리 문서가 전반적으로 수정되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/a3174ed_hooks.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/large-codebases\" target=\"_blank\">Large Codebases</a>",
+        "summary": "플러그인 설치 실패 시 오류 메시지와 해결 방법이 구체화되어 문제 해결이 용이해졌습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/a3174ed_large-codebases.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/mcp\" target=\"_blank\">Mcp</a>",
+        "summary": "플러그인 설치 오류 메시지 대응 가이드가 구체화되고 카탈로그 업데이트 방법이 추가되어 문제 해결이 용이해졌습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/a3174ed_mcp.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/network-config\" target=\"_blank\">Network Config</a>",
+        "summary": "스트리밍 유휴 감시(idle watchdogs) 타이머의 동작 방식과 타임아웃 환경 변수 설정에 대한 상세 설명이 추가되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/a3174ed_network-config.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/permissions\" target=\"_blank\">Permissions</a>",
+        "summary": "MCP 서버 규칙 작성법, 규칙·훅·모드 간의 우선순위, 그리고 플랜 모드에서의 훅 승인 관련 제약 사항이 새롭게 문서화되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/a3174ed_permissions.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/plugins__mods__interface\" target=\"_blank\">Plugins__Mods__Interface</a>",
+        "summary": "Box 및 Text 컴포넌트의 지원 속성과 간격 지정 방식이 상세하게 업데이트되어 UI 개발 편의성이 향상되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/a3174ed_plugins__mods__interface.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/plugins__mods__reference\" target=\"_blank\">Plugins__Mods__Reference</a>",
+        "summary": "Box 컴포넌트의 간격(spacing) 단계와 Text 컴포넌트의 타이포그래피 속성이 추가되었으며, 기존 bold 속성이 deprecate되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/a3174ed_plugins__mods__reference.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/plugins__mods__troubleshoot\" target=\"_blank\">Plugins__Mods__Troubleshoot</a>",
+        "summary": "다른 모드의 밴드가 표시되고 내 모드는 표시되지 않는 문제에 대한 트러블슈팅 가이드가 추가되어 모드 간 충돌 해결을 돕습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/a3174ed_plugins__mods__troubleshoot.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/sandboxing\" target=\"_blank\">Sandboxing</a>",
+        "summary": "자동 허용 모드에서의 권한 규칙 예외 사항이 구체화되었고, `/sandbox` 설정 저장 실패 시 원인과 해결 방법을 안내하는 트러블슈팅 섹션이 추가되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/a3174ed_sandboxing.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/security-guidance\" target=\"_blank\">Security Guidance</a>",
+        "summary": "플러그인 설치 실패 시 오류 메시지가 구체화되고 카탈로그 최신화 명령어 안내 및 트러블슈팅 링크가 추가되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/a3174ed_security-guidance.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/skills\" target=\"_blank\">Skills</a>",
+        "summary": "터미널 및 SDK 환경별 스킬 체이닝 동작 방식이 구체화되고, 플러그인 설치 실패 시 대응 가이드가 최신 오류 메시지로 업데이트되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/a3174ed_skills.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/sub-agents\" target=\"_blank\">Sub Agents</a>",
+        "summary": "서브에이전트의 도구 제한 기능과 MCP 서버 패턴 사용법이 표 형식 등으로 명확하게 개선되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/a3174ed_sub-agents.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/terminal-config\" target=\"_blank\">Terminal Config</a>",
+        "summary": "전체 화면 모드에서 사용되는 새로운 UI 토큰인 'composerSidebarBackground'가 추가되어 관련 설정 정보가 업데이트되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/a3174ed_terminal-config.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/vs-code\" target=\"_blank\">Vs Code</a>",
+        "summary": "VS Code 확장 프로그램 문서가 가독성을 높이기 위해 목록 형식, 앵커 태그 및 설명 문구들을 전반적으로 개선했습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/a3174ed_vs-code.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/zero-data-retention\" target=\"_blank\">Zero Data Retention</a>",
+        "summary": "제로 데이터 보존(ZDR) 예외 기능에 'Chat and Cowork unified' 항목이 추가되어 엔터프라이즈 사용자가 관련 제약을 명확히 인지할 수 있게 되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/a3174ed_zero-data-retention.txt"
+      }
+    ]
+  },
+  {
     "date": "2026-10-16T15:11:07Z",
     "commit_hash": "56fbc0f",
     "entries": [
