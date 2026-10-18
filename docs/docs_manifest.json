@@ -1365,8 +1365,8 @@
     }
   },
   "fetch_metadata": {
-    "last_fetch_completed": "2026-10-17T15:09:32.077241",
-    "fetch_duration_seconds": 136.382337,
+    "last_fetch_completed": "2026-10-18T15:09:51.836353",
+    "fetch_duration_seconds": 141.245531,
     "total_pages_discovered": 227,
     "pages_fetched_successfully": 228,
     "pages_failed": 0,
@@ -1376,7 +1376,7 @@
     "total_files": 227,
     "fetch_tool_version": "3.0"
   },
-  "last_updated": "2026-10-17T15:09:32.077264",
+  "last_updated": "2026-10-18T15:09:51.836382",
   "base_url": "https://raw.githubusercontent.com/fornewid/claude-code-docs-changelog/main/docs/",
   "github_repository": "fornewid/claude-code-docs-changelog",
   "github_ref": "main",
