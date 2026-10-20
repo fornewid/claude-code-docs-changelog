@@ -1,5 +1,298 @@
 [
   {
+    "date": "2026-10-20T15:11:43Z",
+    "commit_hash": "edc3c99",
+    "entries": [
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/agent-sdk__agent-loop\" target=\"_blank\">Agent Sdk__Agent Loop</a>",
+        "summary": "dontAsk 모드의 권한 처리 규칙, 툴 정의의 컨텍스트 로딩 방식, 서브에이전트 관련 설명이 업데이트되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/edc3c99_agent-sdk__agent-loop.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/agent-sdk__permissions\" target=\"_blank\">Agent Sdk__Permissions</a>",
+        "summary": "설치된 모드(mod)의 권한 승인 기능 및 Claude Code v2.1.302의 기본 권한 모드 정책 변경 사항이 문서에 반영되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/edc3c99_agent-sdk__permissions.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/agent-sdk__subagents\" target=\"_blank\">Agent Sdk__Subagents</a>",
+        "summary": "서브에이전트의 백그라운드 실행 동작 설명이 개선되고, 대화 내역을 복제하는 포크(Fork) 서브에이전트 기능 및 제어 방법이 추가되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/edc3c99_agent-sdk__subagents.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/agents\" target=\"_blank\">Agents</a>",
+        "summary": "routine 기능의 용어가 cloud scheduled task로 변경되어 문서 전반의 명확성이 향상되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/edc3c99_agents.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/changelog\" target=\"_blank\">Changelog</a>",
+        "summary": "Claude Code 2.1.304 버전이 출시되어 자동 모드 설정 명령어 추가, 세션 사용량 한도 경고, 다양한 버그 수정 및 성능 최적화가 적용되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/edc3c99_changelog.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/claude-apps-gateway-config\" target=\"_blank\">Claude Apps Gateway Config</a>",
+        "summary": "프록시 헤더 처리 규칙, Bedrock 설정 주의사항 및 누적 메트릭 전송을 위한 OTLP 환경변수 설정 방법이 추가되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/edc3c99_claude-apps-gateway-config.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/claude-apps-gateway\" target=\"_blank\">Claude Apps Gateway</a>",
+        "summary": "Claude apps gateway 문서에 게이트웨이 로그인 제약사항, 관리형 설정 구성 방법 및 CI 환경 관련 주의사항이 추가되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/edc3c99_claude-apps-gateway.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/claude-code-on-the-web\" target=\"_blank\">Claude Code On The Web</a>",
+        "summary": "문서 내 'Routines' 용어가 'Cloud scheduled tasks'로 변경되고 관련 IP 허용 목록 제약 사항 설명이 가독성 좋게 정리되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/edc3c99_claude-code-on-the-web.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/claude-projects\" target=\"_blank\">Claude Projects</a>",
+        "summary": "문서 내 용어가 'Routines'에서 'Scheduled tasks' 및 'Cloud scheduled tasks'로 일괄 변경되어 기능 명칭이 직관적으로 개편되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/edc3c99_claude-projects.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/code-review-troubleshooting\" target=\"_blank\">Code Review Troubleshooting</a>",
+        "summary": "포크 PR에서 쓰기 권한 관련 설명과 팁 기능 조건 문구가 구체화되어 트러블슈팅 가이드가 개선되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/edc3c99_code-review-troubleshooting.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/context-window\" target=\"_blank\">Context Window</a>",
+        "summary": "대화 압축 후 스킬 설명이 자동으로 다시 로드되도록 변경되어 관련 문서와 로직이 업데이트되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/edc3c99_context-window.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/corporate-launcher\" target=\"_blank\">Corporate Launcher</a>",
+        "summary": "기업용 런처 작성 규칙(인수 처리, 표준 입력 제한, 절대 경로 사용 등)이 구체화되고 관련 예제와 설정 방법이 추가되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/edc3c99_corporate-launcher.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/costs\" target=\"_blank\">Costs</a>",
+        "summary": "예약된 작업(scheduled tasks)이 세션 범위로 제한됨에 따라 관련 문서 설명이 명확하게 수정되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/edc3c99_costs.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/desktop-quickstart\" target=\"_blank\">Desktop Quickstart</a>",
+        "summary": "데스크톱 앱 UI 레이아웃 변경에 맞춰 환경 설정, 모델 선택, 권한 모드 및 기능 사용법 문서가 최신화되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/edc3c99_desktop-quickstart.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/desktop-scheduled-tasks\" target=\"_blank\">Desktop Scheduled Tasks</a>",
+        "summary": "로컬 예약 작업(Scheduled tasks)의 생성 단계, UI 구성, 설정 방법 및 실행 조건에 대한 문서가 대폭 수정 및 보완되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/edc3c99_desktop-scheduled-tasks.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/desktop\" target=\"_blank\">Desktop</a>",
+        "summary": "데스크톱 앱의 UI 레이아웃, 세션 설정, 파일 첨부 방법, 브라우저 패널 및 PR 관리 기능에 대한 가이드가 최신 UI에 맞게 업데이트되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/edc3c99_desktop.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/env-vars\" target=\"_blank\">Env Vars</a>",
+        "summary": "환경 변수 문서(`env-vars.md`)가 업데이트되어 API 타임아웃 및 자동 압축 윈도우(토큰 수십만 단위 접미사 지원) 설명이 정교해지고, 새로운 `CLAUDE_CODE_AUTO_MODE_MODEL` 변수가 추가되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/edc3c99_env-vars.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/fast-mode\" target=\"_blank\">Fast Mode</a>",
+        "summary": "Claude Code v2.1.280 이전 버전에 대한 구형 기본 모델(Opus 4.7) 언급이 제거되어 문서가 최신 버전 기준으로 정리되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/edc3c99_fast-mode.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/feature-availability\" target=\"_blank\">Feature Availability</a>",
+        "summary": "문서 내 'Routines' 기능 명칭이 'Cloud scheduled tasks'로 변경되어 가용성 정보가 갱신되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/edc3c99_feature-availability.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/fullscreen\" target=\"_blank\">Fullscreen</a>",
+        "summary": "세션 압축 해제 후 스크롤 동작 및 이전 메시지 확인 방식에 대한 설명이 변경되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/edc3c99_fullscreen.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/headless\" target=\"_blank\">Headless</a>",
+        "summary": "헤드리스 모드의 권한 모드 및 수동(Manual) 모드 기본 동작 방식이 업데이트되었으며, 관련 설명과 버전 정보가 정비되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/edc3c99_headless.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/hooks\" target=\"_blank\">Hooks</a>",
+        "summary": "훅(Hooks) 문서가 업데이트되어 병렬 실행 제한, 종료 코드 처리 방식, 그리고 JSON 출력 구문 분석 규칙에 대한 상세한 설명이 보완되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/edc3c99_hooks.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/model-config\" target=\"_blank\">Model Config</a>",
+        "summary": "CLAUDE_CODE_AUTO_MODE_MODEL 및 CLAUDE_CODE_AUTO_COMPACT_WINDOW 환경 변수에 대한 동작 방식과 경고 메시지 관련 가이드가 추가되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/edc3c99_model-config.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/network-config\" target=\"_blank\">Network Config</a>",
+        "summary": "API_TIMEOUT_MS 변수 설명에 응답 헤더 대기 시간 제한의 의미를 명확히 하는 내용이 추가되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/edc3c99_network-config.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/permission-modes\" target=\"_blank\">Permission Modes</a>",
+        "summary": "non-interactive 실행 시 기본 권한 모드가 Manual로 변경되었으며, 관련 설정 가이드와 예시가 추가되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/edc3c99_permission-modes.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/permissions\" target=\"_blank\">Permissions</a>",
+        "summary": "플러그인 mod의 권한 우회 동작 및 tool.check 이벤트 처리 방식이 변경되었으며, 관련 예외 조건과 버전 요구 사항이 현행화되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/edc3c99_permissions.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/plugins__mods__admin\" target=\"_blank\">Plugins__Mods__Admin</a>",
+        "summary": "Team/Enterprise 로그인 자격 증명 및 권한 규칙, 보안 가드 관련 상세 동작 방식이 업데이트되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/edc3c99_plugins__mods__admin.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/plugins__mods__api\" target=\"_blank\">Plugins__Mods__Api</a>",
+        "summary": "사용자 중단 후 세션 동작 방식이 추가되어, 거부되거나 취소된 호출을 재시도하는 방법과 백그라운드 작업 처리를 안내합니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/edc3c99_plugins__mods__api.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/plugins__mods__events\" target=\"_blank\">Plugins__Mods__Events</a>",
+        "summary": "관리형 설정 및 tool.check 훅의 실행 순서와 권한 처리 규칙에 대한 설명이 명확하게 업데이트되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/edc3c99_plugins__mods__events.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/plugins__mods__interface\" target=\"_blank\">Plugins__Mods__Interface</a>",
+        "summary": "VS Code 확장 프로그램에서 모드 렌더링을 위한 최소 버전 요구사항이 Amazon Bedrock 세션 등을 고려하여 구체화되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/edc3c99_plugins__mods__interface.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/plugins__mods__overview\" target=\"_blank\">Plugins__Mods__Overview</a>",
+        "summary": "조직 설정 및 인증 방식에 따른 모드의 권한 승인 예외 조건이 구체화되었으며, VS Code 확장 프로그램의 버전 요구사항이 갱신되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/edc3c99_plugins__mods__overview.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/plugins__mods__reference\" target=\"_blank\">Plugins__Mods__Reference</a>",
+        "summary": "VS Code 확장 프로그램 렌더링 요구사항 및 팀/기업 플랜 로그인 세션 관련 설정 설명이 최신 사양에 맞게 업데이트되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/edc3c99_plugins__mods__reference.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/plugins__mods__troubleshoot\" target=\"_blank\">Plugins__Mods__Troubleshoot</a>",
+        "summary": "빌트인 가드 조건 설명이 수정되고, 중단 후 토스트 메시지 트러블슈팅 섹션이 추가되었으며, VS Code 확장 프로그램 및 기능 플래그 관련 요구사항이 업데이트되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/edc3c99_plugins__mods__troubleshoot.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/routines\" target=\"_blank\">Routines</a>",
+        "summary": "문서 내의 'routines' 용어가 'scheduled tasks'로 변경되었으며, 관련 기능과 관리 설정에 대한 설명이 업데이트되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/edc3c99_routines.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/sandbox-environments\" target=\"_blank\">Sandbox Environments</a>",
+        "summary": "샌드박스 런타임의 설치 방식이 글로벌 패키지 설치 및 'srt' 명령어 사용으로 변경되어 실행 방법이 간소화되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/edc3c99_sandbox-environments.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/self-hosted-environments-deploy\" target=\"_blank\">Self Hosted Environments Deploy</a>",
+        "summary": "재시작 전 상태 메시지 공지 방법, 버전 고정 시 대체 바이너리 사용 주의사항, 세션 종료/삭제 시 푸시 동작 및 모델 버전 관련 트러블슈팅 가이드가 추가되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/edc3c99_self-hosted-environments-deploy.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/self-hosted-environments\" target=\"_blank\">Self Hosted Environments</a>",
+        "summary": "자체 호스팅 환경 문서 내 용어가 'scheduled routines'에서 'cloud scheduled tasks'로 일관되게 변경되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/edc3c99_self-hosted-environments.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/sessions\" target=\"_blank\">Sessions</a>",
+        "summary": "세션 복원 시 컴팩션된 대화 내용 처리 방식과 중단된 도구 호출에 대한 설명이 상세히 추가되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/edc3c99_sessions.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/settings-reference\" target=\"_blank\">Settings Reference</a>",
+        "summary": "settings-reference.md 문서에 권한 모드, 자동 압축, 무시되는 환경 변수 목록 등 상세 설정 옵션 설명이 업데이트되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/edc3c99_settings-reference.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/troubleshooting\" target=\"_blank\">Troubleshooting</a>",
+        "summary": "업데이트 후 비대화형 실행 시 도구 호출 거부 문제에 대한 트러블슈팅 가이드 링크가 추가되어 문제 해결 편의성이 향상되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/edc3c99_troubleshooting.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/vs-code\" target=\"_blank\">Vs Code</a>",
+        "summary": "VS Code 문서가 업데이트되어 대화 복원 동작, 플러그인 버전 요구사항, 백그라운드 작업 및 수식 렌더링 관련 설명이 개선되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/edc3c99_vs-code.txt"
+      }
+    ]
+  },
+  {
     "date": "2026-10-18T15:09:52Z",
     "commit_hash": "dbc9522",
     "entries": [
