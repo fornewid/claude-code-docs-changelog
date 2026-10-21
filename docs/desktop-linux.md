@@ -6,9 +6,9 @@
 
 > Install and update the Claude desktop app on Ubuntu and Debian
 
-<Note>
-  Linux support for the Claude desktop app is in beta.
-</Note>
+> [!NOTE]
+>
+> Linux support for the Claude desktop app is in beta.
 
 The desktop app on Linux gives you the same Chat, Cowork, and Claude Code experience as on macOS and Windows: parallel sessions, visual diff review, an integrated terminal and editor, and live app preview. See [Use Claude Code Desktop](/docs/en/desktop) for the feature reference.
 
@@ -21,59 +21,57 @@ Other Debian-based distributions that meet these requirements may work but aren'
 
 ### Cowork requirements
 
-Cowork is the desktop tab for [Dispatch and longer agentic work](https://claude.com/docs/cowork/overview). On Linux, Cowork runs those tasks in a virtual machine that the desktop app hosts with QEMU and KVM. To use Cowork, your machine needs:
+Cowork is the part of the desktop app for [Dispatch and longer agentic work](https://claude.com/docs/cowork/overview). On Linux, Cowork runs those tasks in a virtual machine that the desktop app hosts with QEMU and KVM. To use Cowork, your machine needs:
 
-* **Hardware virtualization**: turned on in your firmware settings. Without it, the Cowork tab reports "Cowork requires hardware virtualization (KVM)".
-* **QEMU and UEFI firmware**: `qemu-system-x86`, `ovmf`, and `virtiofsd` on x86\_64, or `qemu-system-arm`, `qemu-efi-aarch64`, and `virtiofsd` on arm64. `apt install claude-desktop` installs them by default as recommended packages. If you installed with `--no-install-recommends`, or your system is a minimal image that skips recommended packages, the Cowork tab reports "Cowork requires QEMU" and shows the `apt install` command to run. Ubuntu 22.04 has no `virtiofsd` package; the app uses a bundled copy there.
+* **Hardware virtualization**: turned on in your firmware settings. Without it, Cowork reports "Cowork requires hardware virtualization (KVM)".
+* **QEMU and UEFI firmware**: `qemu-system-x86`, `ovmf`, and `virtiofsd` on x86\_64, or `qemu-system-arm`, `qemu-efi-aarch64`, and `virtiofsd` on arm64. `apt install claude-desktop` installs them by default as recommended packages. If you installed with `--no-install-recommends`, or your system is a minimal image that skips recommended packages, Cowork reports "Cowork requires QEMU" and shows the `apt install` command to run. Ubuntu 22.04 has no `virtiofsd` package; the app uses a bundled copy there.
 * **Access to `/dev/kvm`**: add your user to the `kvm` group with `sudo usermod -aG kvm $USER`, then log out and back in. Some desktop environments grant the logged-in user access to `/dev/kvm` without the group, but Cowork also needs `/dev/vhost-vsock`, which only `kvm` group members can open. Join the group even if `/dev/kvm` already works for you.
 
-The app checks these requirements once at launch: restart it after installing packages, and log out and back in after joining the group. If `/dev/vhost-vsock` is missing and your running kernel has no module directory under `/lib/modules`, the Cowork tab reports that the kernel doesn't include the virtualization support Cowork needs and that it can't be added manually. This combination is common on ChromeOS and in container-based Linux environments.
+The app checks these requirements once at launch: restart it after installing packages, and log out and back in after joining the group. If `/dev/vhost-vsock` is missing and your running kernel has no module directory under `/lib/modules`, Cowork reports that the kernel doesn't include the virtualization support Cowork needs and that it can't be added manually. This combination is common on ChromeOS and in container-based Linux environments.
 
 ## Install
 
 Install from Anthropic's apt repository so that updates arrive through your system's regular package updates. Open a terminal and run the commands in each step.
 
-<Steps>
-  <Step title="Add Anthropic's apt repository">
-    This step downloads the signing key with `curl` and verifies it with `gpg`, which fresh Debian and Ubuntu installations may not include. If either command reports `command not found`, install both first:
+**1. Add Anthropic's apt repository**
 
-    ```bash theme={null}
-    sudo apt install curl gnupg
-    ```
+This step downloads the signing key with `curl` and verifies it with `gpg`, which fresh Debian and Ubuntu installations may not include. If either command reports `command not found`, install both first:
 
-    Download Anthropic's signing key:
+```bash theme={null}
+sudo apt install curl gnupg
+```
 
-    ```bash theme={null}
-    sudo curl -fsSLo /usr/share/keyrings/claude-desktop-archive-keyring.asc https://downloads.claude.ai/claude-desktop/key.asc
-    ```
+Download Anthropic's signing key:
 
-    The command prints nothing when it succeeds and a `curl:` error when it doesn't. A missing or wrong key makes `apt update` fail later with `NO_PUBKEY BAA929FF1A7ECACE`, so confirm the key downloaded and belongs to Anthropic before continuing:
+```bash theme={null}
+sudo curl -fsSLo /usr/share/keyrings/claude-desktop-archive-keyring.asc https://downloads.claude.ai/claude-desktop/key.asc
+```
 
-    ```bash theme={null}
-    gpg --show-keys /usr/share/keyrings/claude-desktop-archive-keyring.asc
-    ```
+The command prints nothing when it succeeds and a `curl:` error when it doesn't. A missing or wrong key makes `apt update` fail later with `NO_PUBKEY BAA929FF1A7ECACE`, so confirm the key downloaded and belongs to Anthropic before continuing:
 
-    The fingerprint gpg prints should be `31DDDE24DDFAB679F42D7BD2BAA929FF1A7ECACE`. If gpg reports that the file can't be opened or contains no valid OpenPGP data, the download failed or returned the wrong content: confirm your network can reach `downloads.claude.ai`, then rerun the download command.
+```bash theme={null}
+gpg --show-keys /usr/share/keyrings/claude-desktop-archive-keyring.asc
+```
 
-    Register the repository:
+The fingerprint gpg prints should be `31DDDE24DDFAB679F42D7BD2BAA929FF1A7ECACE`. If gpg reports that the file can't be opened or contains no valid OpenPGP data, the download failed or returned the wrong content: confirm your network can reach `downloads.claude.ai`, then rerun the download command.
 
-    ```bash theme={null}
-    echo "deb [arch=amd64,arm64 signed-by=/usr/share/keyrings/claude-desktop-archive-keyring.asc] https://downloads.claude.ai/claude-desktop/apt/stable stable main" | sudo tee /etc/apt/sources.list.d/claude-desktop.list
-    ```
-  </Step>
+Register the repository:
 
-  <Step title="Install the package">
-    ```bash theme={null}
-    sudo apt update && sudo apt install claude-desktop
-    ```
-  </Step>
+```bash theme={null}
+echo "deb [arch=amd64,arm64 signed-by=/usr/share/keyrings/claude-desktop-archive-keyring.asc] https://downloads.claude.ai/claude-desktop/apt/stable stable main" | sudo tee /etc/apt/sources.list.d/claude-desktop.list
+```
 
-  <Step title="Launch and sign in">
-    Launch **Claude** from your application launcher, or run `claude-desktop` from a terminal, and sign in with your Anthropic account.
+**2. Install the package**
 
-    The Linux app signs in the same way as on macOS and Windows: with a claude.ai subscription, or through your organization's SSO. Desktop doesn't accept a Claude Console API key directly; use the [CLI](/docs/en/quickstart) for API-key authentication. For enterprise deployments that route Desktop to Google Cloud's Agent Platform or an LLM gateway, see [Claude Desktop on 3P](https://claude.com/docs/third-party/claude-desktop/overview) and [network configuration](/docs/en/network-config).
-  </Step>
-</Steps>
+```bash theme={null}
+sudo apt update && sudo apt install claude-desktop
+```
+
+**3. Launch and sign in**
+
+Launch **Claude** from your application launcher, or run `claude-desktop` from a terminal, and sign in with your Anthropic account.
+
+The Linux app signs in the same way as on macOS and Windows: with a claude.ai subscription, or through your organization's SSO. For API-key authentication, use the [CLI](/docs/en/quickstart). To use Desktop with Amazon Bedrock, Google Cloud's Agent Platform, Microsoft Foundry, or an LLM gateway instead, see [Claude Desktop on 3P](https://claude.com/docs/third-party/claude-desktop/overview). For proxy servers and custom certificate authorities in those deployments, see [network configuration](/docs/en/network-config).
 
 ### Install from a downloaded file
 
@@ -139,9 +137,7 @@ If `apt` stops with `The following packages have unmet dependencies` or `Unsatis
 * `libc6 (>= 2.34)`: your distribution is older than the package supports. Ubuntu 20.04 ships `libc6` 2.31. Upgrade to Ubuntu 22.04 or later, or Debian 12 or later.
 * All missing dependencies show `not installable` with an `:amd64` or `:arm64` suffix: you downloaded the `.deb` for a different architecture than your machine's. Run `dpkg --print-architecture` and download the matching `.deb`, or [install from the apt repository](#install), which selects the package for your architecture.
 
-<h3 id="running-as-root-without-no-sandbox-is-not-supported">
-  Running as root without `--no-sandbox` is not supported
-</h3>
+### Running as root without `--no-sandbox` is not supported
 
 If `claude-desktop` exits with this message, you launched it as root. Log in as a regular user and launch it from there.
 
@@ -157,7 +153,7 @@ After the fix, restart the app and sign in. Then quit and launch it again to con
 
 ### Cowork isn't available
 
-If the Cowork tab shows one of these messages, fix the requirement it names, then restart the app:
+If Cowork shows one of these messages, fix the requirement it names, then restart the app:
 
 * **Cowork requires QEMU**: install the [QEMU and UEFI firmware packages](#cowork-requirements) the message lists.
 * **Cowork requires hardware virtualization (KVM)**: turn on [hardware virtualization](#cowork-requirements) in your firmware settings.

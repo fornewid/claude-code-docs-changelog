@@ -23,9 +23,9 @@ Tool search adds one extra round-trip each time Claude searches for tools, but f
 
 For details on the underlying API mechanism, see [Tool search in the API](https://platform.claude.com/docs/en/agents-and-tools/tool-use/tool-search-tool).
 
-<Note>
-  Tool search isn't supported on Microsoft Foundry [deployments hosted on Azure](https://platform.claude.com/docs/en/build-with-claude/claude-in-microsoft-foundry#hosting-options), which reject it server-side: the SDK detects the rejection and loads tool definitions upfront for that deployment instead. [`ENABLE_TOOL_SEARCH`](#configure-tool-search) can't override this, since the rejection comes from the deployment itself.
-</Note>
+> [!NOTE]
+>
+> Tool search isn't supported on Microsoft Foundry [deployments hosted on Azure](https://platform.claude.com/docs/en/build-with-claude/claude-in-microsoft-foundry#hosting-options), which reject it server-side: the SDK detects the rejection and loads tool definitions upfront for that deployment instead. [`ENABLE_TOOL_SEARCH`](#configure-tool-search) can't override this, since the rejection comes from the deployment itself.
 
 ## Configure tool search
 
@@ -36,13 +36,17 @@ Tool search is on by default. For models on the SDK's unsupported-model list, th
 
 Before Claude Code v2.1.221, the SDK disabled tool search for all models on Google Cloud's Agent Platform unless you set `ENABLE_TOOL_SEARCH`.
 
-The SDK also disables tool search when `ANTHROPIC_BASE_URL` points to a non-first-party host, since most proxies don't forward `tool_reference` blocks. You can override that default with the `ENABLE_TOOL_SEARCH` environment variable:
+> [!NOTE]
+>
+> Tool search is on by default behind an `ANTHROPIC_BASE_URL` gateway, with nothing to set. If the gateway rejects it, see [Tool search through an LLM gateway](/docs/en/mcp#tool-search-through-a-gateway). Before Claude Code v2.1.304, the SDK disabled tool search behind such a gateway unless `ENABLE_TOOL_SEARCH` was `true`, `auto`, or `auto:N`.
+
+You control whether and when tool definitions are deferred with the `ENABLE_TOOL_SEARCH` environment variable, which takes these values:
 
 | Value | Behavior |
 | :- | :- |
-| (unset) | Tool search is on. Tool definitions are deferred and discovered on demand. Falls back to loading upfront on models earlier than Opus 4 and Sonnet 4, Google Cloud's Agent Platform models earlier than Opus 4.5, Sonnet 4.5, and Haiku 4.5, a non-first-party `ANTHROPIC_BASE_URL`, or a Microsoft Foundry deployment hosted on Azure. |
-| `true` | Tool search stays on with a non-first-party `ANTHROPIC_BASE_URL`. The other (unset) fallbacks still apply. The SDK sends the beta header through proxies, and requests fail on proxies that don't support `tool_reference` blocks. |
-| `auto` | Counts the tokens in the tool definitions that tool search can defer and compares the total against the model's context window. When the total reaches 10% of the window, tool search activates. Below that, the SDK loads every tool definition into context upfront. |
+| (unset) | Tool search is on, with tool definitions deferred and discovered on demand. Falls back to loading upfront on models earlier than Opus 4 and Sonnet 4, on the [earlier Agent Platform models](#configure-tool-search), and on Microsoft Foundry deployments hosted on Azure. |
+| `true` | Tool search is on, with the same fallbacks as (unset). |
+| `auto` | Tool search is off, and tool definitions load upfront, until the definitions it can defer reach 10% of the model's context window. Tool search then activates, and can [stay on in the same conversation](/docs/en/mcp#tools-that-stay-deferred-below-the-threshold) even if those definitions later drop below 10%. |
 | `auto:N` | Same as `auto` with a custom percentage. `auto:5` activates when those definitions reach 5% of the context window. Lower values activate sooner. |
 | `false` | Tool search is off. All tool definitions are loaded into context on every turn. |
 
@@ -52,74 +56,72 @@ Tool search applies to all registered tools, whether they come from remote MCP s
 
 Set the value in the `env` option on `query()`. In TypeScript, `env` replaces the subprocess environment, so spread `...process.env` to keep inherited variables. In Python, `env` is merged on top of the inherited environment. This example connects to a remote MCP server that exposes many tools, pre-approves all of them with a wildcard, and uses `auto:5` so tool search activates when the definitions it can defer reach 5% of the context window:
 
-<CodeGroup>
-  ```typescript TypeScript theme={null}
-  import { query } from "@anthropic-ai/claude-agent-sdk";
+```typescript TypeScript theme={null}
+import { query } from "@anthropic-ai/claude-agent-sdk";
 
-  try {
-    for await (const message of query({
-      prompt: "Find and run the appropriate database query",
-      options: {
-        mcpServers: {
-          "enterprise-tools": {
-            // Connect to a remote MCP server
-            type: "http",
-            url: "https://tools.example.com/mcp"
-          }
-        },
-        allowedTools: ["mcp__enterprise-tools__*"], // Wildcard pre-approves all tools from this server
-        env: {
-          ...process.env, // env replaces the subprocess environment, so keep inherited variables
-          ENABLE_TOOL_SEARCH: "auto:5" // Activate tool search when deferrable definitions reach 5% of context
+try {
+  for await (const message of query({
+    prompt: "Find and run the appropriate database query",
+    options: {
+      mcpServers: {
+        "enterprise-tools": {
+          // Connect to a remote MCP server
+          type: "http",
+          url: "https://tools.example.com/mcp"
         }
-      }
-    })) {
-      if (message.type === "result" && message.subtype === "success") {
-        console.log(message.result);
+      },
+      allowedTools: ["mcp__enterprise-tools__*"], // Wildcard pre-approves all tools from this server
+      env: {
+        ...process.env, // env replaces the subprocess environment, so keep inherited variables
+        ENABLE_TOOL_SEARCH: "auto:5" // Activate tool search when deferrable definitions reach 5% of context
       }
     }
-  } catch (error) {
-    // A single-shot query() throws after yielding an error result
-    console.log(`Session ended with an error: ${error}`);
+  })) {
+    if (message.type === "result" && message.subtype === "success") {
+      console.log(message.result);
+    }
   }
-  ```
+} catch (error) {
+  // A single-shot query() throws after yielding an error result
+  console.log(`Session ended with an error: ${error}`);
+}
+```
 
-  ```python Python theme={null}
-  import asyncio
-  from claude_agent_sdk import query, ClaudeAgentOptions, ResultMessage
-
-
-  async def main():
-      options = ClaudeAgentOptions(
-          mcp_servers={
-              "enterprise-tools": {
-                  "type": "http",
-                  "url": "https://tools.example.com/mcp",
-              }
-          },
-          allowed_tools=[
-              "mcp__enterprise-tools__*"
-          ],  # Wildcard pre-approves all tools from this server
-          env={
-              "ENABLE_TOOL_SEARCH": "auto:5"  # Activate tool search when deferrable definitions reach 5% of context
-          },
-      )
-
-      try:
-          async for message in query(
-              prompt="Find and run the appropriate database query",
-              options=options,
-          ):
-              if isinstance(message, ResultMessage) and message.subtype == "success":
-                  print(message.result)
-      except Exception as error:
-          # A single-shot query() raises after yielding an error result
-          print(f"Session ended with an error: {error}")
+```python Python theme={null}
+import asyncio
+from claude_agent_sdk import query, ClaudeAgentOptions, ResultMessage
 
 
-  asyncio.run(main())
-  ```
-</CodeGroup>
+async def main():
+    options = ClaudeAgentOptions(
+        mcp_servers={
+            "enterprise-tools": {
+                "type": "http",
+                "url": "https://tools.example.com/mcp",
+            }
+        },
+        allowed_tools=[
+            "mcp__enterprise-tools__*"
+        ],  # Wildcard pre-approves all tools from this server
+        env={
+            "ENABLE_TOOL_SEARCH": "auto:5"  # Activate tool search when deferrable definitions reach 5% of context
+        },
+    )
+
+    try:
+        async for message in query(
+            prompt="Find and run the appropriate database query",
+            options=options,
+        ):
+            if isinstance(message, ResultMessage) and message.subtype == "success":
+                print(message.result)
+    except Exception as error:
+        # A single-shot query() raises after yielding an error result
+        print(f"Session ended with an error: {error}")
+
+
+asyncio.run(main())
+```
 
 To run this example, replace `https://tools.example.com/mcp` with the URL of your own MCP server. On success the result text prints to the console.
 
@@ -131,27 +133,25 @@ The search mechanism matches queries against tool names and descriptions. Names 
 
 You can also add a system prompt section listing available tool categories. This gives the agent context about what kinds of tools are available to search for. Pass the text in the `systemPrompt` option of `query()` in TypeScript, or `system_prompt` in Python. Use the `claude_code` preset with `append`, which adds your text to the preset's prompt instead of replacing it:
 
-<CodeGroup>
-  ```typescript TypeScript theme={null}
-  options: {
-    systemPrompt: {
-      type: "preset",
-      preset: "claude_code",
-      append: "You can search for tools to interact with Slack, GitHub, and Jira."
-    }
+```typescript TypeScript theme={null}
+options: {
+  systemPrompt: {
+    type: "preset",
+    preset: "claude_code",
+    append: "You can search for tools to interact with Slack, GitHub, and Jira."
   }
-  ```
+}
+```
 
-  ```python Python theme={null}
-  options = ClaudeAgentOptions(
-      system_prompt={
-          "type": "preset",
-          "preset": "claude_code",
-          "append": "You can search for tools to interact with Slack, GitHub, and Jira.",
-      }
-  )
-  ```
-</CodeGroup>
+```python Python theme={null}
+options = ClaudeAgentOptions(
+    system_prompt={
+        "type": "preset",
+        "preset": "claude_code",
+        "append": "You can search for tools to interact with Slack, GitHub, and Jira.",
+    }
+)
+```
 
 For the full set of system prompt options, see [Modifying system prompts](/docs/en/agent-sdk/modifying-system-prompts).
 
