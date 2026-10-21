@@ -1,5 +1,249 @@
 [
   {
+    "date": "2026-10-21T15:11:18Z",
+    "commit_hash": "5634a20",
+    "entries": [
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/advisor\" target=\"_blank\">Advisor</a>",
+        "summary": "어드바이저 모델의 동작 방식과 경고 문구가 수정되어, 메인 모델보다 순위가 낮은 모델 사용 시 백그라운드 여부와 관계없이 세션이 시작되도록 변경되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/5634a20_advisor.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/agent-sdk__examples\" target=\"_blank\">Agent Sdk__Examples</a>",
+        "summary": "완성된 프로젝트를 포크하여 쇼핑 및 상거래 에이전트를 구축할 수 있는 새로운 가이드와 레퍼런스 구현체 링크가 추가되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/5634a20_agent-sdk__examples.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/agent-sdk__permissions\" target=\"_blank\">Agent Sdk__Permissions</a>",
+        "summary": "권한 평가 흐름 문서에서 커스텀 UI 컴포넌트(<Steps>)가 표준 Markdown 헤더로 변경되어 가독성과 렌더링 호환성이 개선되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/5634a20_agent-sdk__permissions.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/agent-sdk__tool-search\" target=\"_blank\">Agent Sdk__Tool Search</a>",
+        "summary": "도구 검색(Tool search) 설정과 관련된 ENABLE_TOOL_SEARCH 환경 변수의 동작 및 값 설명이 업데이트되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/5634a20_agent-sdk__tool-search.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/agent-sdk__troubleshooting\" target=\"_blank\">Agent Sdk__Troubleshooting</a>",
+        "summary": "structured_output 누락 원인으로 'Claude의 거부(refusal)'와 '만족할 수 없는 스키마' 항목이 구체적으로 추가되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/5634a20_agent-sdk__troubleshooting.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/artifacts\" target=\"_blank\">Artifacts</a>",
+        "summary": "아티팩트 삭제 기능(키보드 단축키 'd')이 추가되고 컴플라이언스 API 엔드포인트 경로가 변경되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/5634a20_artifacts.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/auto-mode-config\" target=\"_blank\">Auto Mode Config</a>",
+        "summary": "자동 모드 설정 문서에 Enterprise 플랜 및 API 키 지원 정보, 새로운 트러블슈팅 가이드('/auto-mode-setup' 알 수 없음 오류), 그리고 마크다운 경고/노트 컴포넌트 업데이트가 반영되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/5634a20_auto-mode-config.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/changelog\" target=\"_blank\">Changelog</a>",
+        "summary": "클라우드 세션 환경 변수 처리, API 오류 메시지, MCP 도구 및 샌드박스 관련 버그가 수정되었으며, 사용량 추적 및 원격 제어 기능이 개선되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/5634a20_changelog.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/checkpointing\" target=\"_blank\">Checkpointing</a>",
+        "summary": "체크포인트 문서에 세션 종료 전 되돌린 메시지가 복원되는 현상에 대한 주의사항이 추가되고 노트 태그 형식이 변경되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/5634a20_checkpointing.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/chrome\" target=\"_blank\">Chrome</a>",
+        "summary": "문서 컴포넌트 형식(Note/Warning/Steps)이 표준 Markdown blockquotes로 변경되었으며, 연결 오류 해결법에 새로운 항목이 추가되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/5634a20_chrome.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/claude-projects\" target=\"_blank\">Claude Projects</a>",
+        "summary": "클라우드 스레드가 리포지토리의 스킬이나 설정 파일을 상속받지 않도록 변경되었으며, 프로젝트 생성 안내서의 마크다운 형식이 수정되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/5634a20_claude-projects.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/code-review-customize\" target=\"_blank\">Code Review Customize</a>",
+        "summary": "REVIEW.md에서 다른 파일을 포함(include)할 수 있는 기능이 추가되었으며, 관련 규칙 및 제약 사항이 문서에 반영되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/5634a20_code-review-customize.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/code-review-pull-requests\" target=\"_blank\">Code Review Pull Requests</a>",
+        "summary": "CI 스크립트의 jq 파싱 명령어 업데이트 및 리뷰 중단 명령어 추가 등 코드 리뷰 명령어 사용법이 개선되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/5634a20_code-review-pull-requests.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/code-review-troubleshooting\" target=\"_blank\">Code Review Troubleshooting</a>",
+        "summary": "REVIEW.md 관련 체크런 메시지 항목에 새로운 메시지 유형과 원인별 해결 방법이 추가되어 문제 해결이 용이해졌습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/5634a20_code-review-troubleshooting.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/commands\" target=\"_blank\">Commands</a>",
+        "summary": "commands.md 문서가 업데이트되어 /auto-mode-setup 및 /claude-api 명령어의 요구사항과 서브커맨드 정보가 최신화되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/5634a20_commands.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/costs\" target=\"_blank\">Costs</a>",
+        "summary": "/usage 명령어에 사용량 권장 사항 및 'f' 단축키를 통한 자동 수정 기능이 추가되고, 관련 가이드가 업데이트되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/5634a20_costs.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/cross-session-messaging\" target=\"_blank\">Cross Session Messaging</a>",
+        "summary": "크로스 세션 메시징 문서가 개정되어, 클라우드 세션의 응답 제약 사항이 명확해지고 답변 주소 및 메시지 만료 조건 관련 세부 내용이 수정되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/5634a20_cross-session-messaging.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/errors\" target=\"_blank\">Errors</a>",
+        "summary": "인증, 업데이트, 플러그인, 툴 오류 및 디스크 용량 관련 새 에러 메시지와 대응 가이드가 문서에 추가되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/5634a20_errors.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/gitlab-ci-cd\" target=\"_blank\">Gitlab Ci Cd</a>",
+        "summary": "문서 내 컴포넌트 형식(Tabs 및 Note)이 표준 마크다운 블록쿼트와 일반 섹션 구조로 변경되어 가독성이 개선되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/5634a20_gitlab-ci-cd.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/headless\" target=\"_blank\">Headless</a>",
+        "summary": "구조화된 출력(structured output) 누락 시 예외 처리 가이드가 추가되었으며, 문서 내 컴포넌트 마크다운 형식이 업데이트되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/5634a20_headless.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/interactive-mode\" target=\"_blank\">Interactive Mode</a>",
+        "summary": "지운 임시 초안을 다시 불러오는 기능에 대한 설명이 추가되었고, 문서 내 노트 및 탭 형식 등이 마크다운 표준에 맞게 수정되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/5634a20_interactive-mode.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/keybindings\" target=\"_blank\">Keybindings</a>",
+        "summary": "Settings 컨텍스트에 새 단축키(settings:fixUsage)가 추가되고, 키 바인딩 설정 시 공백 오류에 대한 경고 안내가 보완되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/5634a20_keybindings.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/llm-gateway-protocol\" target=\"_blank\">Llm Gateway Protocol</a>",
+        "summary": "LLM 게이트웨이 프로토콜 문서가 업데이트되어, 미인식 모델 ID에 대한 요청 동작 변경 및 베타 헤더와 바디 필드 쌍에 대한 상세한 가이드와 재시도 동작이 추가되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/5634a20_llm-gateway-protocol.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/permission-modes\" target=\"_blank\">Permission Modes</a>",
+        "summary": "문서 내 HTML 컴포넌트(Tabs, Tab 등)가 제거되고 마크다운 및 표준 태그로 단순화되었으며, UI 예제와 관련된 일부 설명 및 링크 구조가 수정되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/5634a20_permission-modes.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/plugins__mods__api\" target=\"_blank\">Plugins__Mods__Api</a>",
+        "summary": "터미널 외부 알림을 전송하는 새로운 `$.ui.notify(text)` API가 추가되었으며, 관련 사용법과 예제가 문서에 반영되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/5634a20_plugins__mods__api.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/plugins__mods__events\" target=\"_blank\">Plugins__Mods__Events</a>",
+        "summary": "`tool.check` 이벤트 문서에 읽고 쓰기 전용(read-only) 도구 호출 감지 기능(`e.isReadOnly`)과 반환 값에 대한 상세 설명이 추가되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/5634a20_plugins__mods__events.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/plugins__mods__reference\" target=\"_blank\">Plugins__Mods__Reference</a>",
+        "summary": "tool.check의 e.isReadOnly 필드 및 notify UI 메서드가 추가되었으며, 관련 레퍼런스 문서 내용이 갱신되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/5634a20_plugins__mods__reference.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/plugins__publish\" target=\"_blank\">Plugins__Publish</a>",
+        "summary": "플러그인 배포 문서의 컴포넌트 태그(<Steps>, <Step> 등)가 일반 마크다운 형식으로 변경되어 가독성과 호환성이 개선되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/5634a20_plugins__publish.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/remote-control\" target=\"_blank\">Remote Control</a>",
+        "summary": "원격 제어 문서의 서버 모드 및 플래그 설명 부분이 개편되었으며, 주요 명령행 옵션과 동작 방식이 업데이트되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/5634a20_remote-control.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/self-hosted-environments-configuration\" target=\"_blank\">Self Hosted Environments Configuration</a>",
+        "summary": "셀프 호스팅 환경 문서에 백그라운드 프로세스 로그 처리 방법과 작업 제출 실패 시 예외 처리 가이드가 추가되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/5634a20_self-hosted-environments-configuration.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/sub-agents\" target=\"_blank\">Sub Agents</a>",
+        "summary": "문서 내 탭(Tabs) 컴포넌트가 일반 마크다운 헤더 및 리스트 형식으로 변경되어 가독성과 구조가 개선되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/5634a20_sub-agents.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/tools-reference\" target=\"_blank\">Tools Reference</a>",
+        "summary": "Read 및 WebSearch 도구의 제한 사항이 추가되어 대용량 이미지 처리 오류 및 비대화형 모드에서의 검색 제한 규칙이 명시되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/5634a20_tools-reference.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/troubleshoot-install\" target=\"_blank\">Troubleshoot Install</a>",
+        "summary": "설치 문제 해결 문서에 새로운 오류 증상 및 해결책이 추가되고, 가독성 향상을 위해 탭 컴포넌트가 일반 마크다운 구조로 개편되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/5634a20_troubleshoot-install.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/troubleshooting\" target=\"_blank\">Troubleshooting</a>",
+        "summary": "릴리스 검증 실패 및 자동 업데이트 오류에 대한 문제 해결 가이드가 추가되고, 터미널 시작 시 발생하는 불필요한 문자 출력 현상에 대한 대처법이 신설되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/5634a20_troubleshooting.txt"
+      }
+    ]
+  },
+  {
     "date": "2026-10-20T15:11:43Z",
     "commit_hash": "edc3c99",
     "entries": [
