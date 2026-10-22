@@ -1,5 +1,326 @@
 [
   {
+    "date": "2026-10-22T15:12:26Z",
+    "commit_hash": "1c91062",
+    "entries": [
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/agent-sdk__permissions\" target=\"_blank\">Agent Sdk__Permissions</a>",
+        "summary": "Agent SDK 권한 문서 내 위험한 파일 삭제(critical-path) 및 모드별 동작 설명이 개선되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/1c91062_agent-sdk__permissions.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/agent-sdk__python\" target=\"_blank\">Agent Sdk__Python</a>",
+        "summary": "Agent SDK Python에서 run_in_background의 기본 동작 방식이 메인 에이전트와 서브에이전트별로 상세화 및 변경되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/1c91062_agent-sdk__python.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/agent-sdk__typescript\" target=\"_blank\">Agent Sdk__Typescript</a>",
+        "summary": "getContextUsage() 필드 및 MCP 서버 설정 규칙에 대한 새로운 문서와 예제가 추가되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/1c91062_agent-sdk__typescript.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/agent-teams\" target=\"_blank\">Agent Teams</a>",
+        "summary": "에이전트 팀의 계획 승인 프로세스 및 권한 모드 동작 방식에 대한 상세 설명이 추가되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/1c91062_agent-teams.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/authentication\" target=\"_blank\">Authentication</a>",
+        "summary": "로그인 우회 조건 및 이전 로그인 후에도 로그인 프롬프트가 나타나는 원인과 해결 방법에 대한 문서가 추가되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/1c91062_authentication.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/auto-mode-config\" target=\"_blank\">Auto Mode Config</a>",
+        "summary": "자동 모드 거부 내역을 확인하는 방법(최근 거부 탭, 훅, 대화 내용)이 더 명확하고 체계적으로 개편되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/1c91062_auto-mode-config.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/changelog\" target=\"_blank\">Changelog</a>",
+        "summary": "Claude Code 2.1.307/308 업데이트: API 버전 갱신, 텔레메트리 이벤트 추가, 다양한 버그 수정 및 안정성 향상.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/1c91062_changelog.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/claude-apps-gateway-config\" target=\"_blank\">Claude Apps Gateway Config</a>",
+        "summary": "1시간 프롬프트 캐시 설정(promptCacheTtl 등) 관련 문서가 추가되고, DB 연결 풀 및 페일오버 설명이 보완되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/1c91062_claude-apps-gateway-config.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/claude-apps-gateway-deploy\" target=\"_blank\">Claude Apps Gateway Deploy</a>",
+        "summary": "API_TIMEOUT_MS 설정 가이드와 PostgreSQL 연결 풀 크기 산정 방법이 추가되었으며, 데이터베이스 연결 관련 트러블슈팅 항목이 보강되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/1c91062_claude-apps-gateway-deploy.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/claude-apps-gateway-on-aws\" target=\"_blank\">Claude Apps Gateway On Aws</a>",
+        "summary": "다중 팀 소속 개발자가 세션별로 과금할 팀을 선택하는 방법과 관련 설정 가이드가 추가되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/1c91062_claude-apps-gateway-on-aws.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/claude-apps-gateway-on-gcp\" target=\"_blank\">Claude Apps Gateway On Gcp</a>",
+        "summary": "Cloud SQL 연결 풀 제한 및 롤링 업데이트에 대한 주의사항이 가독성 높은 노트 형식으로 분리 및 추가되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/1c91062_claude-apps-gateway-on-gcp.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/claude-apps-gateway-spend-limits\" target=\"_blank\">Claude Apps Gateway Spend Limits</a>",
+        "summary": "Claude Haiku 5.5 모델의 토큰 임계값 초과 시 적용되는 롱 프롬프트 요금 정책 및 과금 방식이 새롭게 추가되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/1c91062_claude-apps-gateway-spend-limits.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/claude-apps-gateway\" target=\"_blank\">Claude Apps Gateway</a>",
+        "summary": "게이트웨이 세션에서 1시간 캐시 TTL이 정책 설정을 통해 옵트인 방식으로 지원되도록 변경되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/1c91062_claude-apps-gateway.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/claude-code-on-the-web\" target=\"_blank\">Claude Code On The Web</a>",
+        "summary": "클라우드 세션 문서에 엔터프라이즈 커스텀 역할 권한 설정 안내 및 세션 재개 시 복구되지 않는 백그라운드 작업 항목의 상세 설명이 추가되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/1c91062_claude-code-on-the-web.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/costs\" target=\"_blank\">Costs</a>",
+        "summary": "비용 문서 내 테스트 명령어 필터링 스크립트의 정규표현식 패턴이 강화되고 불필요한 권한 결정 로직이 제거되어 안정성이 향상되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/1c91062_costs.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/debug-your-config\" target=\"_blank\">Debug Your Config</a>",
+        "summary": "스킬 frontmatter에 정의된 훅이 세션에서 아직 호출되지 않아 발생할 수 있는 문제와 해결 방법을 추가하여 디버깅 가이드를 개선했습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/1c91062_debug-your-config.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/desktop-scheduled-tasks\" target=\"_blank\">Desktop Scheduled Tasks</a>",
+        "summary": "데스크톱 예약 작업 문서가 업데이트되어 커스텀 크론 표현식 옵션, 세션 찾기 방법, 삭제 시 파일 유지 정책 등이 변경되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/1c91062_desktop-scheduled-tasks.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/desktop\" target=\"_blank\">Desktop</a>",
+        "summary": "데스크톱 앱 문서 내 작업 공간 정렬, 단축키, 파일 복사 메뉴, 세션 분할 보기, 그리고 세션 간 통신 및 제안된 작업 기능 등이 업데이트되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/1c91062_desktop.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/env-vars\" target=\"_blank\">Env Vars</a>",
+        "summary": "CLAUDE_CODE_TRANSCRIPT_LOCAL_GC 및 ENABLE_PROMPT_CACHING_1H_BEDROCK 환경 변수에 대한 상세 동작 조건이 추가되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/1c91062_env-vars.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/errors\" target=\"_blank\">Errors</a>",
+        "summary": "스트리밍 유휴 타임아웃, 툴 호출 파싱 실패 등 새로운 에러 메시지와 조직 관리 설정 관련 안내가 추가되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/1c91062_errors.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/hooks\" target=\"_blank\">Hooks</a>",
+        "summary": "스킬 훅이 작동하지 않을 때의 원인(플러그인 전용 잠금, 훅 제한 초과)과 확인 및 해결 방법을 안내하는 문서가 추가되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/1c91062_hooks.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/interactive-mode\" target=\"_blank\">Interactive Mode</a>",
+        "summary": "Vim 모드에서 질문을 취소하는 방법과 세션을 백그라운드 전환 시 큐에 대기 중인 메시지 처리 방식이 추가되어 사용성이 개선되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/1c91062_interactive-mode.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/keybindings\" target=\"_blank\">Keybindings</a>",
+        "summary": "Vim 모드에서 단 한 번의 키 입력으로 질문을 취소할 수 있는 사용자 지정 키바인딩 설정 방법이 추가되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/1c91062_keybindings.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/mcp\" target=\"_blank\">Mcp</a>",
+        "summary": "헤더가 필요한 게이트웨이 뒤의 MCP 서버 로그인 방법 추가 및 백그라운드 명령어 출력 읽기 관련 문서가 업데이트되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/1c91062_mcp.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/memory\" target=\"_blank\">Memory</a>",
+        "summary": "경로 범위 규칙의 기준 디렉토리 설명이 추가되고, 조직 전체에 배포된 CLAUDE.md 파일을 제외할 수 없는 예외 규칙에 대한 설명이 보강되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/1c91062_memory.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/network-config\" target=\"_blank\">Network Config</a>",
+        "summary": "네트워크 설정 문서의 Event-level watchdog 타이머 동작 방식과 타임아웃 계산 세부 설명이 구체화되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/1c91062_network-config.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/plugins__components\" target=\"_blank\">Plugins__Components</a>",
+        "summary": "플러그인 에이전트 frontmatter의 이름 길이 제한(256자 초과 시 파일명으로 대체) 및 파싱 오류 시 동작에 대한 규칙이 추가되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/1c91062_plugins__components.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/plugins__loading\" target=\"_blank\">Plugins__Loading</a>",
+        "summary": "관리형 설정으로 인해 skills 디렉토리 플러그인이 차단되는 경우에 대한 원인 및 해결 방법 안내가 추가되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/1c91062_plugins__loading.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/plugins__mods__troubleshoot\" target=\"_blank\">Plugins__Mods__Troubleshoot</a>",
+        "summary": "플러그인/모드 트러블슈팅 문서에 모듈 로드 오류 및 깊은 중첩 코드로 인한 파서/엔진 오류에 대한 해결 가이드가 추가되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/1c91062_plugins__mods__troubleshoot.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/plugins__org\" target=\"_blank\">Plugins__Org</a>",
+        "summary": "strictPluginOnlyCustomization 정책 설정 시 skills-directory 플러그인 로딩이 중단되는 동작 변경 사항이 문서에 반영되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/1c91062_plugins__org.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/plugins__publish\" target=\"_blank\">Plugins__Publish</a>",
+        "summary": "세션별 플러그인 로드 방식에 관리자 설정에 따른 차단 예외 사항 안내가 추가되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/1c91062_plugins__publish.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/plugins__troubleshooting\" target=\"_blank\">Plugins__Troubleshooting</a>",
+        "summary": "v2.1.299 이전 버전에서 동기화된 플러그인 경로 오류 메시지 발생 원인과 해결 방법을 안내하는 노트가 추가되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/1c91062_plugins__troubleshooting.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/prompt-caching\" target=\"_blank\">Prompt Caching</a>",
+        "summary": "대화 압축 시 시스템 프롬프트와 프로젝트 컨텍스트 캐싱 동작에 대한 설명이 개선되었고, 게이트웨이 및 Bedrock 환경에서의 1시간 TTL 설정 방법이 구체화되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/1c91062_prompt-caching.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/remote-control\" target=\"_blank\">Remote Control</a>",
+        "summary": "원격 제어 기능 사용을 위한 엔터프라이즈 커스텀 역할 권한 요구사항 및 버전별 상세 조건이 추가되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/1c91062_remote-control.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/routines\" target=\"_blank\">Routines</a>",
+        "summary": "예약된 작업(Scheduled tasks) 기능에 대해 엔터프라이즈 커스텀 역할 권한 설정, UI에서의 커스텀 크론 표현식 입력 방법 및 오류 원인 안내가 업데이트되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/1c91062_routines.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/sandboxing\" target=\"_blank\">Sandboxing</a>",
+        "summary": "중첩된 사용자 네임스페이스 허용 설정(allowNestedUserNamespaces)과 관련된 보안 주의사항 및 Linux 환경에서 Chromium/Podman 실행 오류 해결 가이드가 추가되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/1c91062_sandboxing.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/scheduled-tasks\" target=\"_blank\">Scheduled Tasks</a>",
+        "summary": "예약 작업 및 루프 중지 방법, 백그라운드 세션 분리, 세션 복원 시 제약 사항 등이 상세히 업데이트되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/1c91062_scheduled-tasks.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/self-hosted-environments-configuration\" target=\"_blank\">Self Hosted Environments Configuration</a>",
+        "summary": "git hook 오류 메시지 감지 및 삭제된 브랜치 처리 방식이 추가되었고, 사용자 계정 스킬 다운로드 관련 문구가 명확하게 수정되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/1c91062_self-hosted-environments-configuration.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/self-hosted-environments-deploy\" target=\"_blank\">Self Hosted Environments Deploy</a>",
+        "summary": "원격 브랜치 누락 오류에 대한 원인 분석 및 해결 방법 가이드가 구체화되고 상세히 확장되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/1c91062_self-hosted-environments-deploy.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/server-managed-settings\" target=\"_blank\">Server Managed Settings</a>",
+        "summary": "샌드박스 설정(`sandbox.allowNestedUserNamespaces`) 추가, 플러그인 명령어 제약 사항 명시, 그리고 환경변수 승인 정책(`CLAUDE_CODE_DISABLE_1M_CONTEXT` 등)이 업데이트되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/1c91062_server-managed-settings.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/settings-reference\" target=\"_blank\">Settings Reference</a>",
+        "summary": "Linux 및 WSL2 환경에서 샌드박스 내 네임스페이스 생성을 허용하는 새 설정(sandbox.allowNestedUserNamespaces)이 추가되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/1c91062_settings-reference.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/skills\" target=\"_blank\">Skills</a>",
+        "summary": "skills.md 문서에 새로운 api-version 서브커맨드, 플러그인 로드 제약 조건, 프론트매터 경로 규칙 및 트러블슈팅 가이드가 추가되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/1c91062_skills.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/sub-agents\" target=\"_blank\">Sub Agents</a>",
+        "summary": "MCP 서버 이름에 이중 언더스코어가 포함된 경우의 도구 설정 방법이 추가되고, 에이전트 팀 기능 활성화 시 서브에이전트 명명 조건이 구체화되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/1c91062_sub-agents.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/tools-reference\" target=\"_blank\">Tools Reference</a>",
+        "summary": "PowerShell 환경에서 검색 명령어와 git diff 등의 종료 코드 1에 대한 오류 오인 상황을 명시하고 대처 방법을 추가했습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/1c91062_tools-reference.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/vs-code\" target=\"_blank\">Vs Code</a>",
+        "summary": "네트워크 경로 파일 링크 제한 사유 및 Focus view에서의 파일 행 유지 기능이 추가되어 보안과 사용성이 개선되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/1c91062_vs-code.txt"
+      }
+    ]
+  },
+  {
     "date": "2026-10-21T15:11:18Z",
     "commit_hash": "5634a20",
     "entries": [
