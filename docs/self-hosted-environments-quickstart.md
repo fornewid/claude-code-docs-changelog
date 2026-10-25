@@ -35,7 +35,7 @@ The runner host needs:
 
 Install on the host before you start:
 
-* **Claude Code v2.1.224 or later**, with any of the [standard install methods](https://code.claude.com/docs/en/setup.md). The runner is part of the standard `claude` binary, and earlier versions don't recognize the `self-hosted-runner` subcommand. To pin the exact version your fleet runs, see [Install a specific version](https://code.claude.com/docs/en/setup.md#install-a-specific-version). For container images, see the Dockerfile in [Deploy to production](https://code.claude.com/docs/en/self-hosted-environments-deploy.md#build-the-runner-image).
+* **Claude Code v2.1.224 or later**, with any of the [standard install methods](https://code.claude.com/docs/en/setup.md). The runner is part of the standard `claude` binary, and earlier versions don't recognize the `self-hosted-runner` subcommand. A runner that serves Claude Tag sessions needs v2.1.229 or later and `python3` on its `PATH`, since the [hooks the control plane supplies](https://code.claude.com/docs/en/self-hosted-environments-configuration.md#how-each-session’s-config-is-assembled) for those sessions run `python3`. To pin the exact version your fleet runs, see [Install a specific version](https://code.claude.com/docs/en/setup.md#install-a-specific-version). For container images, see the Dockerfile in [Deploy to production](https://code.claude.com/docs/en/self-hosted-environments-deploy.md#build-the-runner-image).
 * **Git 2.24 or newer**. Some git options on the deploy page need newer versions; [Configure git](https://code.claude.com/docs/en/self-hosted-environments-deploy.md#configure-git) states each floor.
 
 Confirm the host is ready:
@@ -121,6 +121,8 @@ If the session doesn't start working, match what you see:
 * **The session fails to start with a git error**: if the error includes git's `could not read Username for` followed by your git host's URL, the runner had no HTTPS credentials for that host.
   * **Supply HTTPS credentials**: see [Configure git](https://code.claude.com/docs/en/self-hosted-environments-deploy.md#configure-git)
   * **Clone over SSH instead**: if the runner host already has an SSH key, see [Rewrite git URLs for private networks](https://code.claude.com/docs/en/self-hosted-environments-deploy.md#rewrite-git-urls-for-private-networks)
+  * **After either fix**: start the runner again and watch the failed session instead of starting a new one. If it has failed several times, wait several minutes for the runner to log `Picked up session`.
+  * **To use a different repository instead**: [archive](https://code.claude.com/docs/en/claude-code-on-the-web.md#archive-sessions) or [delete](https://code.claude.com/docs/en/claude-code-on-the-web.md#delete-sessions) the failed session, then start the runner again and start a new session. Otherwise, the runner can pick up the failed session instead of the new one.
 
 ### If the runner exits
 

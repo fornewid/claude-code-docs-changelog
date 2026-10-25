@@ -223,6 +223,8 @@ These rules and settings change who approves the retry:
 * **An ask rule for the parameter**: add an [ask rule](https://code.claude.com/docs/en/permissions.md#match-by-input-parameter) for `Bash(dangerouslyDisableSandbox:true)` to be prompted on Bash retries. You get the prompt in auto mode and `bypassPermissions` mode too, and the rule takes precedence over a matching allow rule
 * **[`permissions.blockReadsOutsideWorkingDirectories`](https://code.claude.com/docs/en/settings-reference#permissions-blockreadsoutsideworkingdirectories)**: [Actions no mode auto-approves](https://code.claude.com/docs/en/permission-modes.md#actions-no-mode-auto-approves) covers the retries that prompt while it's on
 
+While commands are refused with a [`Sandbox is required` message](#commands-refused-with-sandbox-is-required), Claude Code ignores the `dangerouslyDisableSandbox` parameter and refuses the retry too.
+
 #### Turn off the retry with strict sandbox mode
 
 You can disable the unsandboxed retry by setting `"allowUnsandboxedCommands": false` in your [sandbox settings](https://code.claude.com/docs/en/settings-reference.md#sandbox-settings). With the retry disabled, Claude Code ignores the `dangerouslyDisableSandbox` parameter. While the sandbox is running, commands Claude runs are then sandboxed unless they match an `excludedCommands` entry. To keep Claude Code from running commands unsandboxed when the sandbox can't start, also set [`failIfUnavailable`](https://code.claude.com/docs/en/settings-reference#sandbox-failifunavailable). The `/sandbox` **Overrides** tab shows this setting as **Strict sandbox mode**.
@@ -537,7 +539,7 @@ Inside the directories that sandboxed commands can write to, the sandbox still d
 
 * **In your working directory and the directories above it**: the `.claude` settings files, the `.claude/skills`, `.claude/agents`, `.claude/commands`, and `.claude/hooks` directories, `.mcp.json`, and the files Claude Code runs on its own, such as `.claude/workflows` and `.claude/scheduled_tasks.json`
 * **In your working directory only**: shell startup files such as `.bashrc` and `.zshrc`, `.gitconfig`, the `.vscode` and `.idea` directories, and `hooks` and `config` inside `.git`
-* **Files that would turn your working directory into a bare git repository**: `HEAD`, `objects`, and `refs` at the top level, plus existing `config` and `hooks` entries there when a `HEAD` sits beside them. A file named `config` is denied even with no `HEAD`. On Linux and WSL2, the sandbox deletes a top-level `HEAD` file or `objects` or `refs` directory that appears while a sandboxed command is running
+* **Files that would turn your working directory into a bare git repository**: `HEAD`, `objects`, and `refs` at the top level, plus existing `config` and `hooks` entries there when a `HEAD` file or symlink sits beside them. A file named `config` is denied even with no `HEAD`. [A `HEAD`, `objects`, or `refs` that appears later can be deleted](#when-the-sandbox-deletes-head-objects-or-refs). On Linux and WSL2, a sandboxed command can create one where none exists.
 * **In `~/.claude`, or the directory `CLAUDE_CONFIG_DIR` points to**: most of its contents, plus `~/.claude.json` and the `.credentials.json` credential store
 
 If a symlink appears at a protected settings file's path during the session, the sandbox also denies writes to the file it points to, starting with the next command.
@@ -551,6 +553,12 @@ If you add an `allowWrite` entry or an `Edit` allow rule that covers one of thes
 To see most of these paths resolved for your machine, run `/sandbox` and open the **Config** tab, which lists them under **Denied within allowed**, mixed in with your own `denyWrite` entries.
 
 If `git merge` or `git checkout` fails with `unable to unlink old` on one of these paths, see [A git command fails with `unable to unlink old`](#a-git-command-fails-with-unable-to-unlink-old).
+
+#### When the sandbox deletes `HEAD`, `objects`, or `refs`
+
+After a sandboxed command ends, a newer top-level `HEAD`, `objects`, or `refs` entry in your working directory is deleted unless it's a folder with contents. Newer means the entry wasn't there when the sandbox last built its configuration: at session start, or after a change such as [`/cd`](https://code.claude.com/docs/en/commands).
+
+A newer `objects` or `refs` folder with contents is deleted too, with its contents, when a `HEAD` file or symlink was there the last time the sandbox built its configuration. To keep a folder, see [A folder named `objects` or `refs` disappears after a command](#a-folder-named-objects-or-refs-disappears-after-a-command).
 
 #### Denied paths that pass through a symlink
 
@@ -881,15 +889,28 @@ When Claude pipes text to one of these tools, adding the tool to [`excludedComma
 
 After the failure, Claude may [offer to rerun the command outside the sandbox](#the-unsandboxed-retry-escape-hatch). Approve that retry, or run the git command yourself in another terminal. If you've set `allowUnsandboxedCommands` to `false`, Claude can't offer the retry, so run the command yourself.
 
+### A folder named `objects` or `refs` disappears after a command
+
+A top-level `objects` or `refs` folder that appeared during the session can be [deleted after a sandboxed command ends](#when-the-sandbox-deletes-head-objects-or-refs). It doesn't matter whether a command, Claude, or you created it. To keep a folder, leave something in it. If a `HEAD` file or symlink has been at the top level during the session, move it away, then restart every Claude Code session open there.
+
+Before v2.1.307, the folder was deleted even with something in it and no `HEAD`. On an earlier version, [update Claude Code](https://code.claude.com/docs/en/setup.md#update-claude-code).
+
 ### Bubblewrap fails to start inside a container
 
 In an unprivileged container, [bubblewrap](#os-level-enforcement) can't mount a fresh `/proc` filesystem, so sandboxed commands fail with a `bwrap` error such as `Can't mount proc on /newroot/proc: Operation not permitted`. Set [`enableWeakerNestedSandbox`](https://code.claude.com/docs/en/settings-reference#sandbox-enableweakernestedsandbox) to `true` so the sandbox bind-mounts the container's existing `/proc` instead. Only use this setting when the outer container already provides the isolation boundary you need, since the setting exposes process information to sandboxed commands that a fresh `/proc` mount would hide.
 
 ### 0-byte read-only files appear at `.claude` settings paths, and "Yes, and don't ask again" doesn't save
 
-On Linux and WSL2, the sandbox holds a write denial on a file that doesn't exist yet by creating a 0-byte read-only placeholder there while a sandboxed command runs. The sandbox removes the placeholder afterward. If a session is killed before that cleanup runs, for example by SIGKILL, the placeholders stay behind. Later sessions bind the placeholders read-only again on every start, so a settings write such as saving a permission choice fails at a path where a placeholder remains.
+On Linux and WSL2, the sandbox holds a write denial on a file that doesn't exist yet by creating a 0-byte read-only placeholder there while a sandboxed command runs. The sandbox removes the placeholder afterward.
 
-Run `claude doctor` in your terminal to list the leftover placeholder files. The [`Sandbox mask files left behind at write-deny paths`](https://code.claude.com/docs/en/errors#stale-sandbox-mask-files-left-by-a-killed-session) warning names some of them and counts the rest. Delete each file with `rm` while no other Claude Code session is running in that project. Before v2.1.257, Claude Code left the same placeholders behind without flagging them.
+A placeholder stays behind in cases such as these:
+
+* The session is killed before that cleanup runs, for example by SIGKILL
+* The session exits while a sandboxed command is still running, such as a background command
+
+Later sessions bind the placeholders read-only again on every start, so a settings write such as saving a permission choice fails at a path where a placeholder remains.
+
+Run `claude doctor` in your terminal to list the leftover placeholder files. The [`Sandbox mask files left behind at write-deny paths`](https://code.claude.com/docs/en/errors#stale-sandbox-mask-files-left-by-a-killed-session) warning names some of them and counts the rest. Delete each file with `rm` while no other Claude Code session is running in that project. Before v2.1.257, Claude Code left the same placeholders behind when a session was killed, without flagging them.
 
 ### `git` over SSH fails with the sandbox on
 
@@ -987,6 +1008,21 @@ Add the IP address the name resolves to alongside the hostname in `allowedDomain
 An IP address entry with no port lets sandboxed commands reach every service listening on that address.
 
 Before v2.1.284, the proxy connected to whatever address an allowed hostname resolved to.
+
+### Commands are refused with `Sandbox is required`
+
+If you require the sandbox with [`sandbox.failIfUnavailable`](https://code.claude.com/docs/en/settings-reference#sandbox-failifunavailable) and it fails in one of these ways after Claude Code starts, each sandboxed command Claude runs is refused with the message shown. The session keeps running, and the refused command doesn't run unsandboxed:
+
+* **`Sandbox is required but failed to initialize: <reason>`**: Claude Code started, but the sandbox then failed to initialize. Take the step the message gives: `Restart to retry.` or `Fix the sandbox settings to retry`.
+* **`Sandbox is required (sandbox.failIfUnavailable) and stopped being available in this session: <reason>`**: on Linux or WSL2, the sandbox started and Claude Code then found a dependency missing. Fix what the reason names, such as [installing a missing dependency](#set-up-linux-and-wsl2), then restart Claude Code.
+
+Excluded commands and commands you type yourself keep running, and Claude can't retry a refused command unsandboxed:
+
+* **Excluded commands**: commands that match an [`excludedCommands`](#run-commands-outside-the-sandbox-with-excludedcommands) entry keep running outside the sandbox. When one writes to a [`filesystem.allowWrite`](https://code.claude.com/docs/en/settings-reference#sandbox-filesystem-allowwrite) path outside your working directory, that write goes through the regular permission flow. Under an [admin-required sandbox](#repository-settings-under-an-admin-required-sandbox), Claude Code ignores entries from the repository's settings
+* **Commands you type at the [`!` shell-mode prompt](https://code.claude.com/docs/en/interactive-mode#shell-mode-with-prefix)**: keep running outside the sandbox. In a [background session](https://code.claude.com/docs/en/agent-view.md), they're refused too
+* **Unsandboxed retries**: Claude Code ignores the `dangerouslyDisableSandbox` parameter of an [unsandboxed retry](#the-unsandboxed-retry-escape-hatch)
+
+In a Linux session with `CLAUDE_CODE_SUBPROCESS_ENV_SCRUB` set, every command runs sandboxed, so excluded commands and commands you type are refused too.
 
 ### `/sandbox` fails with `Sandbox settings are overridden by a higher-priority configuration`
 
