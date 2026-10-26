@@ -195,8 +195,8 @@
     "agent-sdk__typescript.md": {
       "original_url": "https://code.claude.com/docs/en/agent-sdk/typescript",
       "original_md_url": "https://code.claude.com/docs/en/agent-sdk/typescript.md",
-      "hash": "65c93cdd9ca5e10374d7ea7a15c6d1e6534c9f7e86898d488501d6360ca6d211",
-      "last_updated": "2026-10-25T15:08:14.435278"
+      "hash": "2bfc12bff2d2381bee24004f2cd80cdb2f4bbcdc30129e94747fe614520efecd",
+      "last_updated": "2026-10-26T15:30:42.955902"
     },
     "agent-sdk__typescript-v2-preview.md": {
       "original_url": "https://code.claude.com/docs/en/agent-sdk/typescript-v2-preview",
@@ -340,8 +340,8 @@
     "claude-apps-gateway-spend-limits.md": {
       "original_url": "https://code.claude.com/docs/en/claude-apps-gateway-spend-limits",
       "original_md_url": "https://code.claude.com/docs/en/claude-apps-gateway-spend-limits.md",
-      "hash": "592a42461e19a795b29b9007933ef58e647e4d9c5298e11968f3b73009db0f59",
-      "last_updated": "2026-10-24T15:08:18.945491"
+      "hash": "03a791cb4f1a5c5a9308ab331705a102371e217e597eb54b964a496189550721",
+      "last_updated": "2026-10-26T15:30:59.682728"
     },
     "claude-code-on-the-web.md": {
       "original_url": "https://code.claude.com/docs/en/claude-code-on-the-web",
@@ -496,8 +496,8 @@
     "desktop.md": {
       "original_url": "https://code.claude.com/docs/en/desktop",
       "original_md_url": "https://code.claude.com/docs/en/desktop.md",
-      "hash": "352d0d4a6be0ce61fdc594e5aa612a1120734362bd8551ba454e06b70a064a20",
-      "last_updated": "2026-10-25T15:08:49.336434"
+      "hash": "536481a197f2159e79920d1e855c8fb137213c843e29f959925708c78791861a",
+      "last_updated": "2026-10-26T15:31:17.401663"
     },
     "desktop-ios-simulator.md": {
       "original_url": "https://code.claude.com/docs/en/desktop-ios-simulator",
@@ -1132,8 +1132,8 @@
     "statusline.md": {
       "original_url": "https://code.claude.com/docs/en/statusline",
       "original_md_url": "https://code.claude.com/docs/en/statusline.md",
-      "hash": "ae281440ad99e518a74a6d44da7038f17ad45217dba5ee9fe58815bc386913b3",
-      "last_updated": "2026-10-24T15:09:47.971186"
+      "hash": "a2391a0f4b8892bd32c0ea95d3d3d25f319c6891c963895ea0f2dd4c74150aa4",
+      "last_updated": "2026-10-26T15:32:30.141069"
     },
     "sub-agents.md": {
       "original_url": "https://code.claude.com/docs/en/sub-agents",
@@ -1365,8 +1365,8 @@
     }
   },
   "fetch_metadata": {
-    "last_fetch_completed": "2026-10-25T15:10:29.238140",
-    "fetch_duration_seconds": 159.13018,
+    "last_fetch_completed": "2026-10-26T15:32:56.147616",
+    "fetch_duration_seconds": 156.637523,
     "total_pages_discovered": 227,
     "pages_fetched_successfully": 228,
     "pages_failed": 0,
@@ -1376,7 +1376,7 @@
     "total_files": 227,
     "fetch_tool_version": "3.0"
   },
-  "last_updated": "2026-10-25T15:10:29.238175",
+  "last_updated": "2026-10-26T15:32:56.147644",
   "base_url": "https://raw.githubusercontent.com/fornewid/claude-code-docs-changelog/main/docs/",
   "github_repository": "fornewid/claude-code-docs-changelog",
   "github_ref": "main",
