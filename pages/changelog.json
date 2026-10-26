@@ -1,5 +1,25 @@
 [
   {
+    "date": "2026-10-26T15:32:56Z",
+    "commit_hash": "9018223",
+    "entries": [
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/agent-sdk__typescript\" target=\"_blank\">Agent Sdk__Typescript</a>",
+        "summary": "UserPromptSubmit 훅이 메시지를 차단하거나 중단할 때의 결과 처리 방식과 UUID 동작 변경 사항이 추가되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/9018223_agent-sdk__typescript.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/desktop\" target=\"_blank\">Desktop</a>",
+        "summary": "원격 SSH 접속 시 호스트 키 확인 방법과 인증 실패 및 Windows OpenSSH 클라이언트 누락 시 트러블슈팅 가이드가 추가되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/9018223_desktop.txt"
+      }
+    ]
+  },
+  {
     "date": "2026-10-25T15:10:29Z",
     "commit_hash": "2e721b4",
     "entries": [
