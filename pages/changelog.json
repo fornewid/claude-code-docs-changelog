@@ -1,5 +1,249 @@
 [
   {
+    "date": "2026-10-27T15:13:30Z",
+    "commit_hash": "9356e8b",
+    "entries": [
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/agent-sdk__agent-loop\" target=\"_blank\">Agent Sdk__Agent Loop</a>",
+        "summary": "agent-sdk__agent-loop.md 문서의 dontAsk 및 bypassPermissions 권한 모드 설명이 간소화되고 관련 상세 문서 링크로 업데이트되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/9356e8b_agent-sdk__agent-loop.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/agent-sdk__custom-tools\" target=\"_blank\">Agent Sdk__Custom Tools</a>",
+        "summary": "특정 도구에 대한 승인 요구 및 차단(permission_policy) 기능이 추가되어 보안 제어가 강화되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/9356e8b_agent-sdk__custom-tools.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/agent-sdk__permissions\" target=\"_blank\">Agent Sdk__Permissions</a>",
+        "summary": "TypeScript SDK의 커스텀 툴 권한 정책(always_deny, always_ask) 추가 및 권한 평가 단계별 위험한 rm 명령어 처리 방식이 업데이트되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/9356e8b_agent-sdk__permissions.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/agent-sdk__plugins\" target=\"_blank\">Agent Sdk__Plugins</a>",
+        "summary": "실행 중인 세션에 플러그인을 동적으로 추가하는 TypeScript SDK의 reloadPlugins() 메서드 사용법이 추가되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/9356e8b_agent-sdk__plugins.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/agent-sdk__typescript\" target=\"_blank\">Agent Sdk__Typescript</a>",
+        "summary": "Agent SDK TypeScript 문서에 `reloadPlugins`의 `addPlugins` 옵션과 인프로세스 MCP 서버의 `tools` 정책 설정 방법이 추가되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/9356e8b_agent-sdk__typescript.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/agent-view\" target=\"_blank\">Agent View</a>",
+        "summary": "세션 백그라운드 전환 시 동적 워크플로우와 백그라운드 작업의 동작 방식이 개정되었으며, 안전 모드 및 관련 안내 사항이 추가되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/9356e8b_agent-view.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/best-practices\" target=\"_blank\">Best Practices</a>",
+        "summary": "Claude Code의 모범 사례 문서가 전면 개정되어, 비결정적 지침과 결정적 지침의 구분 및 환경 설정 가이드가 새롭게 추가되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/9356e8b_best-practices.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/claude-apps-gateway-config\" target=\"_blank\">Claude Apps Gateway Config</a>",
+        "summary": "레거시 설정인 serve_to_desktop 가이드가 추가되고, 권한 규칙 문서 링크와 정책 테스트 방법이 신설되었으며 기본 설정 예시에서 Bash가 제외되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/9356e8b_claude-apps-gateway-config.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/claude-apps-gateway-deploy\" target=\"_blank\">Claude Apps Gateway Deploy</a>",
+        "summary": "게이트웨이 배포 문서에 텔레메트리 관련 'auth.denied' 감사 로그 트러블슈팅 가이드가 추가되어 문제 해결이 용이해졌습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/9356e8b_claude-apps-gateway-deploy.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/claude-code-on-the-web\" target=\"_blank\">Claude Code On The Web</a>",
+        "summary": "Claude가 대화 중 플러그인을 추천하는 기능과 추가/제거 방법, 그리고 이를 비활성화하는 권한 설정 방법이 추가되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/9356e8b_claude-code-on-the-web.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/claude-directory\" target=\"_blank\">Claude Directory</a>",
+        "summary": "세션 트랜스크립트에 시스템 프롬프트 및 도구 정의 등이 포함되도록 저장 내용이 확장되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/9356e8b_claude-directory.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/claude-security\" target=\"_blank\">Claude Security</a>",
+        "summary": "Claude Security 플러그인에 스캔 강도(low, medium, high) 조절 기능과 수동/자동 업데이트 방법이 추가되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/9356e8b_claude-security.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/commands\" target=\"_blank\">Commands</a>",
+        "summary": "/effort 명령어의 설명이 간소화되고 관련 문서 링크가 정리되어 사용법과 버전 요구사항을 더 쉽게 파악할 수 있게 되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/9356e8b_commands.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/env-vars\" target=\"_blank\">Env Vars</a>",
+        "summary": "CLAUDE_CODE_DISABLE_BG_EXIT_HANDOFF 및 CLAUDE_CODE_DISABLE_DANGEROUS_RM_TIMEOUT 환경 변수의 설명이 최신 동작에 맞게 수정되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/9356e8b_env-vars.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/errors\" target=\"_blank\">Errors</a>",
+        "summary": "Java MCP SDK 0.17.0 이하 버전 관련 오류 문서가 추가되고, 세션 삭제 시 unpushed 커밋 처리 방법 안내가 업데이트되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/9356e8b_errors.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/hooks-guide\" target=\"_blank\">Hooks Guide</a>",
+        "summary": "Agent SDK 앱의 always_ask 도구 호출이 훅 승인 예외 항목에 추가되어 권한 관리 가이드가 업데이트되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/9356e8b_hooks-guide.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/hooks\" target=\"_blank\">Hooks</a>",
+        "summary": "Agent SDK 앱에서 항상 승인이 필요한 도구에 대한 permissionDecision의 예외 처리 규칙이 문서에 추가되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/9356e8b_hooks.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/how-claude-code-works\" target=\"_blank\">How Claude Code Works</a>",
+        "summary": "모범 사례 문서 링크의 설명 문구가 수정되어 프롬프트 대신 규칙 강화의 중요성을 추가로 안내합니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/9356e8b_how-claude-code-works.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/mcp\" target=\"_blank\">Mcp</a>",
+        "summary": "Claude Code의 MCP 프로토콜 버전별 엘리시테이션(Elicitation) 지원 모드와 호환성 관련 주의사항이 구체적으로 추가되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/9356e8b_mcp.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/model-config\" target=\"_blank\">Model Config</a>",
+        "summary": "추론 레벨 설정(ultrathink) 및 적용 시점에 대한 가이드가 업데이트되어 사용자가 세션 내에서 노력 수준을 더 정확히 제어할 수 있게 되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/9356e8b_model-config.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/permission-modes\" target=\"_blank\">Permission Modes</a>",
+        "summary": "위험한 rm 명령어 감지 및 touch 명령어 제어 규칙이 강화되었으며, 클라우드 세션 권한 및 보호된 파일 범위가 확장되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/9356e8b_permission-modes.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/plugins__mods__admin\" target=\"_blank\">Plugins__Mods__Admin</a>",
+        "summary": "조직 관리 환경에서 실행되지 않는 사용자 모드 훅 목록과 관리 설정 변경 방법을 안내하는 문서가 추가되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/9356e8b_plugins__mods__admin.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/plugins__mods__gallery\" target=\"_blank\">Plugins__Mods__Gallery</a>",
+        "summary": "Input 컴포넌트에 여러 줄 입력을 지원하는 rows 속성이 추가되어 커밋 메시지 작성 등 다중 행 텍스트 처리가 가능해졌습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/9356e8b_plugins__mods__gallery.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/plugins__mods__interface\" target=\"_blank\">Plugins__Mods__Interface</a>",
+        "summary": "Input 필드의 다중 행(rows) 지원 추가, 렌더링 실패 시 디버그 메시지 명시, 키보드 네비게이션 동작이 개선되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/9356e8b_plugins__mods__interface.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/plugins__mods__reference\" target=\"_blank\">Plugins__Mods__Reference</a>",
+        "summary": "플러그인 UI 컴포넌트의 입력(Input) 행 속성이 추가되고, 구형 버전에서의 미출력 동작 방식 변경과 함께 트리 중첩 및 크기 제한 관련 제약 사항이 구체화되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/9356e8b_plugins__mods__reference.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/plugins__org\" target=\"_blank\">Plugins__Org</a>",
+        "summary": "플러그인 보안 정책(disableSideloadFlags)의 제어 범위가 확장되고 클라우드 세션에서의 플러그인 추천 관련 안내 노트가 추가되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/9356e8b_plugins__org.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/self-hosted-environments-configuration\" target=\"_blank\">Self Hosted Environments Configuration</a>",
+        "summary": "유휴 세션 해제 플래그 설명에 백그라운드 프로세스가 실행 중일 때 세션을 유지하는 방법에 대한 문서 링크가 추가되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/9356e8b_self-hosted-environments-configuration.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/self-hosted-environments-deploy\" target=\"_blank\">Self Hosted Environments Deploy</a>",
+        "summary": "패키지 레지스트리 미러 추가 및 백그라운드 프로세스 실행 중 유휴 세션 유지를 위한 --hold-idle-file 기능이 문서에 반영되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/9356e8b_self-hosted-environments-deploy.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/self-hosted-environments-reference\" target=\"_blank\">Self Hosted Environments Reference</a>",
+        "summary": "유휴 세션 유지 및 관리 기능을 위한 새로운 플래그(--hold-idle-file, --max-hold-min)가 추가되고 관련 문서가 정비되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/9356e8b_self-hosted-environments-reference.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/server-managed-settings\" target=\"_blank\">Server Managed Settings</a>",
+        "summary": "서버 관리 설정 문서에 캐시된 설정 적용 시 예외 사항(내장 가드 및 플러그인 처리 등)에 대한 상세 설명이 추가되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/9356e8b_server-managed-settings.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/settings-reference\" target=\"_blank\">Settings Reference</a>",
+        "summary": "settings-reference 문서에 macOS sandbox 예시 수정, sparsePaths에 .claude 추가, disableSideloadFlags의 에러 처리 범위 확대 내용이 반영되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/9356e8b_settings-reference.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/vs-code\" target=\"_blank\">Vs Code</a>",
+        "summary": "VS Code 문서에서 선택 영역 및 열린 파일 자동 컨텍스트 설정(`attachSelection` 추가 등)과 관련 가이드가 재구성되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/9356e8b_vs-code.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/web-quickstart\" target=\"_blank\">Web Quickstart</a>",
+        "summary": "웹 퀵스타트 문서의 인라인 코멘트 작성 방법이 구체적인 마우스 호버 및 '+' 버튼 클릭 동작으로 명확하게 수정되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/9356e8b_web-quickstart.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/workflows\" target=\"_blank\">Workflows</a>",
+        "summary": "워크플로우 세션 종료 및 백그라운드 실행 재개 방식에 대한 문서가 업데이트되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/9356e8b_workflows.txt"
+      }
+    ]
+  },
+  {
     "date": "2026-10-26T15:32:56Z",
     "commit_hash": "9018223",
     "entries": [
