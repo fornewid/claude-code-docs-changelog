@@ -1,5 +1,172 @@
 [
   {
+    "date": "2026-10-28T15:08:58Z",
+    "commit_hash": "f589b97",
+    "entries": [
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/agent-sdk__agent-loop\" target=\"_blank\">Agent Sdk__Agent Loop</a>",
+        "summary": "max_turns 계산 방식과 옵션 설명이 수정되어, 최종 텍스트 응답 턴 포함 여부 및 제한 동작에 대한 명확한 가이드를 제공합니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/f589b97_agent-sdk__agent-loop.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/agent-sdk__configuration\" target=\"_blank\">Agent Sdk__Configuration</a>",
+        "summary": "세션 중 모델 변경 시 자동 모드 지원 여부에 따라 모드가 기본 모드로 전환되는 동작 및 복원 방법에 대한 설명이 추가되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/f589b97_agent-sdk__configuration.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/agent-sdk__permissions\" target=\"_blank\">Agent Sdk__Permissions</a>",
+        "summary": "bypassPermissions 모드에서 중요한 경로 삭제 프롬프트를 비활성화하는 방법에 대한 문서 링크가 추가되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/f589b97_agent-sdk__permissions.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/agent-sdk__streaming-output\" target=\"_blank\">Agent Sdk__Streaming Output</a>",
+        "summary": "스트리밍 중단 시 수신되는 이벤트의 상세 동작과 버전별 요구사항이 추가되어 예외 처리가 명확해졌습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/f589b97_agent-sdk__streaming-output.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/agent-sdk__typescript\" target=\"_blank\">Agent Sdk__Typescript</a>",
+        "summary": "startup() 함수의 훅 메시지 처리 방식, updatedPermissions 항목 제한(4096개), 중첩 서브에이전트의 agent_id 동작 및 Unix 소켓 설정 설명이 추가되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/f589b97_agent-sdk__typescript.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/agent-view\" target=\"_blank\">Agent View</a>",
+        "summary": "agent-view 문서에서 특정 버전 요구사항 표기가 제거되고, /fork 명령어 관련 하위 섹션이 추가되어 세부 동작 방식이 명확해졌습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/f589b97_agent-view.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/amazon-bedrock\" target=\"_blank\">Amazon Bedrock</a>",
+        "summary": "Amazon Bedrock 기본 모델 버전 변경 이력 설명이 간소화되어 문서 가독성이 향상되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/f589b97_amazon-bedrock.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/changelog\" target=\"_blank\">Changelog</a>",
+        "summary": "Claude Code 2.1.312 버전이 릴리스되었습니다. OIDC 클레임 지원 추가, 대규모 파일 덮어쓰기 방지 및 다양한 세션/UI 버그가 수정되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/f589b97_changelog.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/claude-code-on-the-web\" target=\"_blank\">Claude Code On The Web</a>",
+        "summary": "웹 문서에 Diff 뷰 파일 누락 시 해결 방법이 추가되고, 설정 메뉴 경로 안내가 최신 UI에 맞게 수정되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/f589b97_claude-code-on-the-web.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/claude-projects\" target=\"_blank\">Claude Projects</a>",
+        "summary": "UI 용어가 'Move to project'에서 'Continue in project' 및 관련 설정 경로로 변경되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/f589b97_claude-projects.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/cross-session-messaging\" target=\"_blank\">Cross Session Messaging</a>",
+        "summary": "세션 간 메시지 수신 대기 상태 확인 방법과 v2.1.309 이상 버전 요구사항이 추가되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/f589b97_cross-session-messaging.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/desktop\" target=\"_blank\">Desktop</a>",
+        "summary": "데스크톱 앱 설정 메뉴 경로 변경(Settings > Code 추가) 및 컴퓨터 사용 설정 방법 등 UI 안내가 최신 버전 기준으로 업데이트되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/f589b97_desktop.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/env-vars\" target=\"_blank\">Env Vars</a>",
+        "summary": "위험한 삭제 명령 확인을 건너뛰는 환경 변수와 중단된 도구 호출 유지 관련 환경 변수 등 새로운 설정 항목이 추가되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/f589b97_env-vars.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/errors\" target=\"_blank\">Errors</a>",
+        "summary": "피드백 페이로드 용량 초과 및 팀원 거부 규칙 관련 새로운 에러 메시지가 추가되고, 관련 문서가 업데이트되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/f589b97_errors.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/mcp\" target=\"_blank\">Mcp</a>",
+        "summary": "MCP 문서의 오류 보고 형식 및 연결 실패 관련 내용이 가독성을 높이기 위해 재구성되고 노트 형식으로 변경되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/f589b97_mcp.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/permission-modes\" target=\"_blank\">Permission Modes</a>",
+        "summary": "bypassPermissions 모드에서 위험한 rm 명령의 프롬프트를 건너뛸 수 있는 환경 변수(CLAUDE_CODE_EVEN_MORE_DANGEROUSLY_SKIP_PERMISSIONS) 설정 방법이 추가되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/f589b97_permission-modes.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/plugins__mods__events\" target=\"_blank\">Plugins__Mods__Events</a>",
+        "summary": "다른 모델로 요청을 보내는 방법이 추가되었으며, settings.read 훅의 동작 설명과 가이드 문서가 명확하게 개선되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/f589b97_plugins__mods__events.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/plugins__mods__gallery\" target=\"_blank\">Plugins__Mods__Gallery</a>",
+        "summary": "Input 컴포넌트의 다중 행(rows) 동작 방식과 플랫폼별 제한 사항(VS Code 및 버전 요구사항) 설명이 구체화되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/f589b97_plugins__mods__gallery.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/plugins__mods__reference\" target=\"_blank\">Plugins__Mods__Reference</a>",
+        "summary": "UI 버튼 컴포넌트의 자식 요소 및 속성(variant, role) 지원이 추가되고, 프로세스 실행 및 API 호출에 대한 크기 제한 규정이 업데이트되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/f589b97_plugins__mods__reference.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/plugins__mods__troubleshoot\" target=\"_blank\">Plugins__Mods__Troubleshoot</a>",
+        "summary": "settings.read 훅 트러블슈팅 문서가 개선되어, 거부 사유 및 스키마 오류 분석 방법과 디버깅 절차가 더 명확해졌습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/f589b97_plugins__mods__troubleshoot.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/routines\" target=\"_blank\">Routines</a>",
+        "summary": "루틴 생성 시 모델의 추론(effort) 수준을 설정하는 옵션이 추가되어 작업 세밀 조율이 가능해졌습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/f589b97_routines.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/settings-reference\" target=\"_blank\">Settings Reference</a>",
+        "summary": "Bash 샌드박스 리다이렉션 규칙에 heredoc이 추가되고, 불필요한 버전 요구 사항 문구가 정리되었으며 신규 환경 변수 예외 처리가 반영되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/f589b97_settings-reference.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/sub-agents\" target=\"_blank\">Sub Agents</a>",
+        "summary": "하위 에이전트 호출 시 모델 파라미터 제약사항이 추가되고 구버전 관련 노트가 정리되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/f589b97_sub-agents.txt"
+      }
+    ]
+  },
+  {
     "date": "2026-10-27T15:13:30Z",
     "commit_hash": "9356e8b",
     "entries": [
