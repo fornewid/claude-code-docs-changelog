@@ -1,5 +1,235 @@
 [
   {
+    "date": "2026-10-29T15:09:01Z",
+    "commit_hash": "717dabc",
+    "entries": [
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/agent-sdk__python\" target=\"_blank\">Agent Sdk__Python</a>",
+        "summary": "PermissionResultAllow의 updated_permissions 항목 수 제한(4,096개)에 대한 제약 조건이 추가되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/717dabc_agent-sdk__python.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/agent-sdk__typescript\" target=\"_blank\">Agent Sdk__Typescript</a>",
+        "summary": "Cron 작업 타입에 nextFireAt 필드가 추가되고, MCP 서버 설정 변경 시 기업 정책 차단 에러 안내가 추가되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/717dabc_agent-sdk__typescript.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/authentication\" target=\"_blank\">Authentication</a>",
+        "summary": "관리형 기기에서 키 없는 로그인을 방지하고 로그인 제어를 강화하기 위한 forceLoginOrgUUID 설정 및 배포 가이드가 추가되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/717dabc_authentication.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/changelog\" target=\"_blank\">Changelog</a>",
+        "summary": "Claude Code 2.1.311-312 업데이트: 대형 파일 처리 안정성 개선, 세션 복구 및 클라우드/원격 제어 기능 오류 수정, 사용량 제한 안내 명확화 등.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/717dabc_changelog.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/claude-apps-gateway-config\" target=\"_blank\">Claude Apps Gateway Config</a>",
+        "summary": "게이트웨이 설정 문서가 업데이트되어 업스트림 타임아웃 동작, 모델 ID 변경, SSH 전송 요구사항 등 상세 가이드가 개선되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/717dabc_claude-apps-gateway-config.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/claude-code-on-the-web\" target=\"_blank\">Claude Code On The Web</a>",
+        "summary": "클라우드 세션 인증 방식이 업데이트되어 Console 계정 관련 안내가 추가되고 명령어(claude auth login) 사용법이 명확해졌습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/717dabc_claude-code-on-the-web.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/cloud-environments\" target=\"_blank\">Cloud Environments</a>",
+        "summary": "Enterprise 플랜 사용자도 조직 관리자 권한 없이 단축 양식을 통해 네트워크 시크릿을 추가할 수 있도록 권한 및 가이드가 업데이트되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/717dabc_cloud-environments.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/corporate-launcher\" target=\"_blank\">Corporate Launcher</a>",
+        "summary": "deep 링크 세션 시작 방식 변경 및 disableDeepLinkRegistration 설정의 동작 방식과 주의사항이 업데이트되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/717dabc_corporate-launcher.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/deep-links\" target=\"_blank\">Deep Links</a>",
+        "summary": "딥링크 사용 전 필수 조건인 URL 핸들러 등록 및 대화 세션 실행에 대한 안내가 추가되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/717dabc_deep-links.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/devcontainer\" target=\"_blank\">Devcontainer</a>",
+        "summary": "컨테이너 환경에서 Anthropic 로그인 및 브라우저 콜백 오류 발생 시 대체 로그인 URL을 사용하는 방법과 관련 문제 해결서 링크가 추가되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/717dabc_devcontainer.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/env-vars\" target=\"_blank\">Env Vars</a>",
+        "summary": "백그라운드 작업 및 모델 노력 수준(Effort Level)과 관련된 환경 변수 설명이 업데이트되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/717dabc_env-vars.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/errors\" target=\"_blank\">Errors</a>",
+        "summary": "errors.md 문서에 새로운 오류 메시지 항목들이 추가되고 네트워크 대기 상태 및 셸 명령어 오류 관련 설명이 개선되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/717dabc_errors.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/fast-mode\" target=\"_blank\">Fast Mode</a>",
+        "summary": "Claude Opus 5.5 패스트 모드 정식 출시 및 모델별(Opus 5.5 vs Opus 5/4.8) 요구사항 및 이용 조건 차등 적용 내용을 반영했습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/717dabc_fast-mode.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/feature-availability\" target=\"_blank\">Feature Availability</a>",
+        "summary": "Fast 모드 사용 시 프로비저닝이 필요한 모델 대상이 구체적인 버전(Claude Opus 5 및 4.8)으로 명시되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/717dabc_feature-availability.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/github-enterprise-server\" target=\"_blank\">Github Enterprise Server</a>",
+        "summary": "연결 테스트 실패 시 원인 파악과 해결 방법을 안내하는 새로운 트러블슈팅 가이드가 추가되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/717dabc_github-enterprise-server.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/managed-settings\" target=\"_blank\">Managed Settings</a>",
+        "summary": "로그인 키(Login keys)를 제공하는 관리형 소스 결정 규칙과 병합 동작에 대한 상세 설명이 추가되어 설정 관리 방법이 명확해졌습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/717dabc_managed-settings.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/mcp-quickstart\" target=\"_blank\">Mcp Quickstart</a>",
+        "summary": "엔터프라이즈 정책에 의해 서버가 차단되었을 때의 상태 표시(`✘ Blocked by enterprise managed policy`) 설명이 추가되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/717dabc_mcp-quickstart.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/mcp\" target=\"_blank\">Mcp</a>",
+        "summary": "MCP 문서에 엔터프라이즈 정책 차단 상태, 환경변수 빈 문자열 처리, 프록시 환경 OAuth 사용법 등이 추가되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/717dabc_mcp.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/model-config\" target=\"_blank\">Model Config</a>",
+        "summary": "CLAUDE_CODE_EFFORT_LEVEL 환경 변수에 'unset' 값이 추가되고, API 기본값을 사용하기 위한 'Send no effort level' 섹션이 신설되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/717dabc_model-config.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/monitoring-usage\" target=\"_blank\">Monitoring Usage</a>",
+        "summary": "API 사용량 로깅 문서에 5분 및 1시간 캐시 수명을 위한 새로운 토큰 필드(`cache_creation_5m_tokens`, `cache_creation_1h_tokens`)가 추가되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/717dabc_monitoring-usage.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/plugins__anthropic-marketplaces\" target=\"_blank\">Plugins__Anthropic Marketplaces</a>",
+        "summary": "데모 플러그인 마켓플레이스(claude-code-plugins)가 공식적으로 폐기(deprecated)됨에 따라 관련 내용이 제거되고 마이그레이션 가이드가 추가되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/717dabc_plugins__anthropic-marketplaces.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/plugins__cli-reference\" target=\"_blank\">Plugins__Cli Reference</a>",
+        "summary": "플러그인 검증 도구(validate)의 출력 형식에 README 관련 'Advice' 항목이 추가되어 설치 가이드를 제공합니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/717dabc_plugins__cli-reference.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/plugins__create-marketplace\" target=\"_blank\">Plugins__Create Marketplace</a>",
+        "summary": "마켓플레이스 호스팅 가이드에 고유한 이름을 먼저 설정해야 한다는 중요 안내가 추가되어 중복 충돌을 방지합니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/717dabc_plugins__create-marketplace.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/plugins__publish\" target=\"_blank\">Plugins__Publish</a>",
+        "summary": "마켓플레이스 이름 중복 방지를 위한 네이밍 주의사항 안내가 추가되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/717dabc_plugins__publish.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/self-hosted-environments-configuration\" target=\"_blank\">Self Hosted Environments Configuration</a>",
+        "summary": "오케스트레이터의 중단 및 재시작 시 실행 중인 훅을 안전하게 처리하는 `--shutdown-drain-sec` 옵션과 관련 설정 방법이 추가되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/717dabc_self-hosted-environments-configuration.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/self-hosted-environments-deploy\" target=\"_blank\">Self Hosted Environments Deploy</a>",
+        "summary": "자체 호스팅 러너 문서에 --base-dir 설정 추가, 종료 타이밍 설명 보완 및 문제 해결 가이드가 업데이트되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/717dabc_self-hosted-environments-deploy.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/self-hosted-environments-reference\" target=\"_blank\">Self Hosted Environments Reference</a>",
+        "summary": "self-hosted-runner orchestrator에 `--shutdown-drain-sec` 플래그가 추가되어 종료 시그널 수신 시 안전하게 작업(훅)을 마무리할 수 있게 되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/717dabc_self-hosted-environments-reference.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/server-managed-settings\" target=\"_blank\">Server Managed Settings</a>",
+        "summary": "First-party sign-in keys 문서가 추가되어 로그인 설정 관련 예외 규칙과 배포 시 주의사항을 확인할 수 있습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/717dabc_server-managed-settings.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/settings-reference\" target=\"_blank\">Settings Reference</a>",
+        "summary": "유휴 압축(idle compaction) 조건 및 강제 로그인 방식(forceLoginMethod) 설정 동작이 업데이트되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/717dabc_settings-reference.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/troubleshoot-install\" target=\"_blank\">Troubleshoot Install</a>",
+        "summary": "WSL2 및 원격 환경에서의 OAuth 로그인 실패 시 대처 가이드가 개선되어, 수동 URL 복사 및 코드 입력 절차가 더 명확해졌습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/717dabc_troubleshoot-install.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/vs-code\" target=\"_blank\">Vs Code</a>",
+        "summary": "확장된 사고(Extended thinking) 설정 방식 변경, 워크트리 대화 재개 기능 추가 및 관련 단축키 설명이 업데이트되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/717dabc_vs-code.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/worktrees\" target=\"_blank\">Worktrees</a>",
+        "summary": "Git worktree 사용 시 발생하는 주요 오류 메시지들에 대한 원인과 해결 방법이 문서에 추가되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/717dabc_worktrees.txt"
+      }
+    ]
+  },
+  {
     "date": "2026-10-28T15:08:58Z",
     "commit_hash": "f589b97",
     "entries": [
