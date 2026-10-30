@@ -1,5 +1,186 @@
 [
   {
+    "date": "2026-10-30T15:08:25Z",
+    "commit_hash": "3d6c61d",
+    "entries": [
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/agent-sdk__session-storage\" target=\"_blank\">Agent Sdk__Session Storage</a>",
+        "summary": "임시 디렉토리 사용 시 인증 오류 해결을 위한 장기 토큰, API 키, 설정 파일 복사 등 상세한 인증 방법이 추가되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/3d6c61d_agent-sdk__session-storage.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/agent-sdk__typescript\" target=\"_blank\">Agent Sdk__Typescript</a>",
+        "summary": "세션 설정 변경 시 effortLevel 적용 시점과 우선순위 규칙이 구체화되었으며, 관련 설명이 업데이트되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/3d6c61d_agent-sdk__typescript.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/changelog\" target=\"_blank\">Changelog</a>",
+        "summary": "Claude Code 2.1.312 및 2.1.311 버전 업데이트로 클라우드 세션 기능 강화, 모델 폴백 개선, 각종 버그 및 성능이 수정되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/3d6c61d_changelog.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/chrome\" target=\"_blank\">Chrome</a>",
+        "summary": "Chrome 시작 시 나타나는 확장 프로그램 감지 다이얼로그 응답 방법에 대한 안내와 /chrome 명령어 설정 변경 기능이 추가되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/3d6c61d_chrome.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/claude-code-on-the-web\" target=\"_blank\">Claude Code On The Web</a>",
+        "summary": "클라우드 세션 텔레포트 시 대화 내용 압축 처리 안내가 추가되었고, 플랫폼 제약 사항 및 자체 호스팅 환경 관련 가이드가 업데이트되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/3d6c61d_claude-code-on-the-web.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/claude-projects\" target=\"_blank\">Claude Projects</a>",
+        "summary": "Claude Projects의 일일 허용 스레드 생성 한도가 기존 200개에서 500개로 상향 조정되어 더 많은 작업을 처리할 수 있게 되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/3d6c61d_claude-projects.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/code-review-costs\" target=\"_blank\">Code Review Costs</a>",
+        "summary": "코드 리뷰 분석 문서에 'Code Review findings' 항목이 추가되어 심각도별 발견 사항을 일별로 확인할 수 있게 되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/3d6c61d_code-review-costs.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/commands\" target=\"_blank\">Commands</a>",
+        "summary": "/restart 명령어 문서가 추가되고, /model 명령어의 동작 설명이 간결하게 업데이트되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/3d6c61d_commands.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/costs\" target=\"_blank\">Costs</a>",
+        "summary": "백그라운드 토큰 사용량 문서가 간소화되었으며 세션 요약 및 유휴 압축 기능에 대한 링크가 추가되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/3d6c61d_costs.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/deep-links\" target=\"_blank\">Deep Links</a>",
+        "summary": "클로드 코드(Claude Code)의 딥링크 핸들러 등록 시점이 에이전트 뷰 실행 시 등으로 확대되어 사용자 편의성이 향상되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/3d6c61d_deep-links.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/desktop\" target=\"_blank\">Desktop</a>",
+        "summary": "관리자가 특정 조직 ID(forceLoginOrgUUID)로 데스크톱 앱 로그인을 제한할 수 있는 새로운 정책 설정 방법이 추가되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/3d6c61d_desktop.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/errors\" target=\"_blank\">Errors</a>",
+        "summary": "백그라운드 작업 및 원격 제어 중 재시작 제한과 관련된 새로운 에러 메시지와 해결 방법이 문서에 추가되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/3d6c61d_errors.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/hipaa-setup\" target=\"_blank\">Hipaa Setup</a>",
+        "summary": "HIPAA 설정 가이드에 Claude Desktop 로그인 제한 관련 내용과 정책 설정 방법이 추가되어 보안 관리가 강화되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/3d6c61d_hipaa-setup.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/hooks\" target=\"_blank\">Hooks</a>",
+        "summary": "훅 이벤트 필드 설명이 간소화되고 웹 검색(WebSearch) 툴에 `mode` 파라미터가 추가되었으며, 자동 모드에서의 `ask` 결정 동작에 대한 상세 가이드가 보강되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/3d6c61d_hooks.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/model-config\" target=\"_blank\">Model Config</a>",
+        "summary": "추론(Effort) 레벨의 해결 순서와 적용 시점, 그리고 모델 설정 관련 문서 내용이 명확하게 업데이트되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/3d6c61d_model-config.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/self-hosted-environments-configuration\" target=\"_blank\">Self Hosted Environments Configuration</a>",
+        "summary": "새로운 환경 변수(CLAUDE_RUNNER_ALIVE_EVERY_MS)가 추가되고 관련 문서 링크 및 설명이 업데이트되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/3d6c61d_self-hosted-environments-configuration.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/self-hosted-environments-deploy\" target=\"_blank\">Self Hosted Environments Deploy</a>",
+        "summary": "비-GitHub 저장소 세션 시작 방법, GitHub CLI API 접근 가이드 및 네트워크 요구사항이 추가되었으며, 관련 문서 링크가 정비되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/3d6c61d_self-hosted-environments-deploy.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/self-hosted-environments\" target=\"_blank\">Self Hosted Environments</a>",
+        "summary": "셀프 호스팅 환경 문서에 --environment 디스패치를 통한 타사 깃(Git) 호스트 지원 내용이 추가되고 네트워크 연결 설명이 명확히 수정되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/3d6c61d_self-hosted-environments.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/setup\" target=\"_blank\">Setup</a>",
+        "summary": "npm을 통한 설치 시 npm 12 버전 관련 주의사항 및 sudo 사용 지양에 대한 안내 노트가 추가되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/3d6c61d_setup.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/skills\" target=\"_blank\">Skills</a>",
+        "summary": "skills.md 문서의 effort 프론트매터 설명이 수정되어 환경 변수 우선순위 및 서브에이전트 동작 방식이 명확해졌습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/3d6c61d_skills.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/slack\" target=\"_blank\">Slack</a>",
+        "summary": "Slack 문서의 채널 세션 실패 관련 설명 중 불필요한 문구가 간소화되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/3d6c61d_slack.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/statusline\" target=\"_blank\">Statusline</a>",
+        "summary": "effort.level 필드 설명이 구체화되어 세션 내 추론 노력 수준의 적용 방식과 예외 사항을 정확히 파악할 수 있게 되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/3d6c61d_statusline.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/terminal-config\" target=\"_blank\">Terminal Config</a>",
+        "summary": "지원하는 터미널별 알림 동작 방식이 상세히 세분화되었고, 터미널 벨 설정 방법이 명확하게 업데이트되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/3d6c61d_terminal-config.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/troubleshoot-install\" target=\"_blank\">Troubleshoot Install</a>",
+        "summary": "npm 12 버전에서 postinstall 단계가 생략되는 문제에 대응하기 위한 해결 방법과 가이드가 문서에 추가되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/3d6c61d_troubleshoot-install.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/ultrareview\" target=\"_blank\">Ultrareview</a>",
+        "summary": "코드 리뷰 소요 시간이 15~25분에서 5~15분으로 단축됨에 따라 관련 문서 내용이 수정되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/3d6c61d_ultrareview.txt"
+      }
+    ]
+  },
+  {
     "date": "2026-10-29T15:09:01Z",
     "commit_hash": "717dabc",
     "entries": [
