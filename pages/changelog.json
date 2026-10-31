@@ -1,5 +1,207 @@
 [
   {
+    "date": "2026-10-31T15:07:03Z",
+    "commit_hash": "d90361b",
+    "entries": [
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/agent-sdk__quickstart\" target=\"_blank\">Agent Sdk__Quickstart</a>",
+        "summary": "설치 및 실행 가이드의 언어별 코드 섹션이 탭(tab) UI 형식으로 개편되어 문서 가독성과 사용성이 향상되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/d90361b_agent-sdk__quickstart.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/artifacts\" target=\"_blank\">Artifacts</a>",
+        "summary": "Ultra 요금제에 대한 아티팩트 및 관련 기능 지원이 추가되어 문서 전반의 이용 가능 플랜 정보가 갱신되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/d90361b_artifacts.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/auto-mode-config\" target=\"_blank\">Auto Mode Config</a>",
+        "summary": "/auto-mode-setup 명령어 지원 플랜에 Ultra 등급이 추가되어 이용 가능 범위가 확대되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/d90361b_auto-mode-config.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/changelog\" target=\"_blank\">Changelog</a>",
+        "summary": "v2.1.316 업데이트: 게이트웨이 pooled 예산 및 정책 모드 추가, 다양한 백엔드/툴 버그 수정, VSCode 및 클라우드 세션 기능 개선이 포함되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/d90361b_changelog.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/claude-projects\" target=\"_blank\">Claude Projects</a>",
+        "summary": "Ultra 플랜 지원 추가 및 관련 안내 문구가 업데이트되어 사용 가능한 구독 범위가 확장되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/d90361b_claude-projects.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/cloud-environments\" target=\"_blank\">Cloud Environments</a>",
+        "summary": "Ultra 요금제에 대한 클라우드 환경 및 네트워크 보안 기능 지원이 추가되었으며, 문서 내 도메인 목록의 형식이 아코디언 UI로 개편되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/d90361b_cloud-environments.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/commands\" target=\"_blank\">Commands</a>",
+        "summary": "새로운 'Ultra' 플랜 지원이 추가됨에 따라 /auto-mode-setup, /privacy-settings, /restart 명령어의 가용 조건이 갱신되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/d90361b_commands.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/computer-use\" target=\"_blank\">Computer Use</a>",
+        "summary": "macOS 기반 Computer use 기능의 지원 플랜에 Ultra 플랜이 추가되어 사용 범위가 확대되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/d90361b_computer-use.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/data-usage\" target=\"_blank\">Data Usage</a>",
+        "summary": "신규 'Ultra' 플랜이 데이터 학습 정책, 보관 기간, 오류 보고 조건 문서에 추가되어 적용 대상이 확대되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/d90361b_data-usage.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/desktop-ios-simulator\" target=\"_blank\">Desktop Ios Simulator</a>",
+        "summary": "Claude Code Desktop의 iOS Simulator 사용 가능 플랜에 Ultra 플랜이 추가되어 대상 사용자가 확대되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/d90361b_desktop-ios-simulator.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/desktop\" target=\"_blank\">Desktop</a>",
+        "summary": "새로운 Ultra 플랜 지원 내용이 추가되었으며, 데스크톱 문서 내 다운로드 링크 및 탭 컴포넌트 형식 등이 업데이트되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/d90361b_desktop.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/errors\" target=\"_blank\">Errors</a>",
+        "summary": "지원되는 구독 플랜에 'Ultra' 티어가 추가됨에 따라, 관련 사용량 및 크레딧 안내 문구가 업데이트되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/d90361b_errors.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/fast-mode\" target=\"_blank\">Fast Mode</a>",
+        "summary": "구독 플랜에 새로운 'Ultra' 등급이 추가됨에 따라 패스트 모드(Fast mode) 지원 대상 및 사용 크레딧 안내 문구가 업데이트되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/d90361b_fast-mode.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/github-actions\" target=\"_blank\">Github Actions</a>",
+        "summary": "GitHub Actions 인증에 사용되는 CLAUDE_CODE_OAUTH_TOKEN의 지원 플랜에 Ultra 플랜이 추가되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/d90361b_github-actions.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/glossary\" target=\"_blank\">Glossary</a>",
+        "summary": "Auto 모드 및 Dispatch 기능 설명에 Ultra 플랜 지원 내용이 추가되고 가독성이 개선되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/d90361b_glossary.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/legal-and-compliance\" target=\"_blank\">Legal And Compliance</a>",
+        "summary": "신규 요금제인 Ultra 플랜이 이용약관, 이용 제한 및 인증 대상에 추가되어 관련 규정이 갱신되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/d90361b_legal-and-compliance.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/mobile\" target=\"_blank\">Mobile</a>",
+        "summary": "Dispatch 기능 이용 가능한 요금제에 Ultra 플랜이 추가되어 문서에 반영되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/d90361b_mobile.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/model-config\" target=\"_blank\">Model Config</a>",
+        "summary": "모델 설정 문서에 새로운 'Ultra' 구독 플랜 관련 정보가 추가되어 요금제별 기본 모델 및 1M 컨텍스트 지원 범위가 업데이트되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/d90361b_model-config.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/permission-modes\" target=\"_blank\">Permission Modes</a>",
+        "summary": "Ultra 플랜 지원 추가 및 문서 내 탭 UI 도입, UI 관련 설명이 일부 개정되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/d90361b_permission-modes.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/platforms\" target=\"_blank\">Platforms</a>",
+        "summary": "지원 플랜에 'Ultra' 등급이 추가됨에 따라 플랫폼, Slack 연동 등의 기능 가용성 설명이 업데이트되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/d90361b_platforms.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/plugins__install\" target=\"_blank\">Plugins__Install</a>",
+        "summary": "플러그인 설치 문서의 터미널 가이드 부분이 탭(tab) 형식의 마크다운 구문으로 변경되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/d90361b_plugins__install.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/quickstart\" target=\"_blank\">Quickstart</a>",
+        "summary": "지원되는 구독 플랜에 Ultra가 추가되었으며, 설치 방법 및 팁 섹션의 문서 포맷과 UI 요소가 개선되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/d90361b_quickstart.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/routines\" target=\"_blank\">Routines</a>",
+        "summary": "새로운 Ultra 요금제가 구독 플랜에 추가되었음을 반영하여 관련 문서 내용이 업데이트되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/d90361b_routines.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/slack\" target=\"_blank\">Slack</a>",
+        "summary": "Slack용 Claude Code 지원 플랜에 Ultra 등급이 추가되었으며 관련 문서 내용이 갱신되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/d90361b_slack.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/tools-reference\" target=\"_blank\">Tools Reference</a>",
+        "summary": "Artifact 및 RemoteTrigger 도구의 사용 가능 플랜에 Ultra 등급이 추가되어 구독 지원 범위가 확대되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/d90361b_tools-reference.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/ultrareview\" target=\"_blank\">Ultrareview</a>",
+        "summary": "Ultra 요금제에 대한 Ultrareview 기능 지원 및 무료 이용 횟수 관련 정책이 추가되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/d90361b_ultrareview.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/vs-code\" target=\"_blank\">Vs Code</a>",
+        "summary": "구독 플랜에 'Ultra'가 추가되고, 마켓플레이스 면책 고지 추가 및 URI 핸들러 문서가 탭 형식으로 개편되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/d90361b_vs-code.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/web-quickstart\" target=\"_blank\">Web Quickstart</a>",
+        "summary": "새로운 Ultra 요금제가 추가됨에 따라 클라우드 세션 및 환경 설정 가이드의 대상 요금제 범위가 업데이트되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/d90361b_web-quickstart.txt"
+      }
+    ]
+  },
+  {
     "date": "2026-10-30T15:08:25Z",
     "commit_hash": "3d6c61d",
     "entries": [
