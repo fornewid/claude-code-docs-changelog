@@ -1,5 +1,18 @@
 [
   {
+    "date": "2026-11-02T15:08:11Z",
+    "commit_hash": "fc2b29d",
+    "entries": [
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/desktop\" target=\"_blank\">Desktop</a>",
+        "summary": "SSH 세션 제한사항, 프록시 설정 오류 안내, Code 탭에서의 설정 키 동작 차이점, 원격 머신 로그 파일 수집 범위 등이 업데이트되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/fc2b29d_desktop.txt"
+      }
+    ]
+  },
+  {
     "date": "2026-10-31T15:07:03Z",
     "commit_hash": "d90361b",
     "entries": [
