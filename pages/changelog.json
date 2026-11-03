@@ -1,5 +1,221 @@
 [
   {
+    "date": "2026-11-03T15:07:30Z",
+    "commit_hash": "bb67471",
+    "entries": [
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/admin-setup\" target=\"_blank\">Admin Setup</a>",
+        "summary": "WSL 세션 시작 시 허용된 작업 공간 폴더 설정의 홈 디렉토리 의미에 대한 설명이 추가되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/bb67471_admin-setup.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/agent-sdk__typescript\" target=\"_blank\">Agent Sdk__Typescript</a>",
+        "summary": "TypeScript SDK의 /core 엔트리 수출(export) 항목 변경 및 샌드박스 관련 시작 실패 사유(SDKStartupFailureReason)가 추가되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/bb67471_agent-sdk__typescript.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/amazon-bedrock\" target=\"_blank\">Amazon Bedrock</a>",
+        "summary": "관리형 설정의 모델 핀 고정 동작, 버전 업데이트 요구사항, 그리고 모델 접근 거부 기억 기능에 대한 설명이 개선되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/bb67471_amazon-bedrock.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/analytics\" target=\"_blank\">Analytics</a>",
+        "summary": "수락된 코드 줄 수 측정 방식이 구체화되고 콘솔 대시보드 및 팀 인사이트 항목의 설명이 최신화되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/bb67471_analytics.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/auto-mode-config\" target=\"_blank\">Auto Mode Config</a>",
+        "summary": "거부된 액션 검토 및 재시도 방법이 상세히 개편되어, 권한 관리 탭 사용법과 승인/거부 처리 절차가 명확해졌습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/bb67471_auto-mode-config.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/best-practices\" target=\"_blank\">Best Practices</a>",
+        "summary": "자동 모드 차단 시 UI 용어가 변경되고 수동 승인 후 재시도하는 방식에 대한 설명이 업데이트되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/bb67471_best-practices.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/changelog\" target=\"_blank\">Changelog</a>",
+        "summary": "Claude Code 2.1.316 버전 릴리스 노트로, 신규 환경 변수 및 게이트웨이 정책 추가, Opus 4.8 빠른 모드 지원 중단 예고, 그리고 다수의 버그 수정 및 성능 개선 사항이 포함되어 있습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/bb67471_changelog.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/claude-apps-gateway-config\" target=\"_blank\">Claude Apps Gateway Config</a>",
+        "summary": "Amazon Bedrock 가드레일 입력 태그(input_tagging) 설정 및 필터 추적(guardrail_trace) 기능이 추가되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/bb67471_claude-apps-gateway-config.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/claude-apps-gateway-deploy\" target=\"_blank\">Claude Apps Gateway Deploy</a>",
+        "summary": "가이드라인 추적 로그, 롤백 시 주의사항, 그룹 권한 관련 트러블슈팅 및 설정 설명이 추가되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/bb67471_claude-apps-gateway-deploy.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/claude-apps-gateway\" target=\"_blank\">Claude Apps Gateway</a>",
+        "summary": "IdP 그룹 매핑에 업스트림 라우팅 옵션이 추가되어 팀별로 독립적인 업스트림 지정이 가능해졌습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/bb67471_claude-apps-gateway.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/cloud-environments\" target=\"_blank\">Cloud Environments</a>",
+        "summary": "클라우드 세션 환경에 Chrome for Testing 브라우저가 추가되어 관련 테스트 및 개발 작업을 원활하게 수행할 수 있게 되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/bb67471_cloud-environments.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/commands\" target=\"_blank\">Commands</a>",
+        "summary": "명령어 문서에서 구버전 호환성 및 동작 방식과 관련된 세부 설명이 간소화되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/bb67471_commands.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/env-vars\" target=\"_blank\">Env Vars</a>",
+        "summary": "VS Code 확장 프로그램에서의 크롬 기능 동작 방식 및 Glob/Grep 도구 타임아웃, OAuth 환경 변수 관련 설명이 업데이트되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/bb67471_env-vars.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/errors\" target=\"_blank\">Errors</a>",
+        "summary": "관리자 설정 및 작업 디렉토리 권한 관련 신규 에러 메시지와 대응 가이드가 문서에 추가되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/bb67471_errors.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/fast-mode\" target=\"_blank\">Fast Mode</a>",
+        "summary": "Opus 4.8 버전의 빠른 모드(Fast mode) 지원 중단 및 마이그레이션 안내 경고가 추가되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/bb67471_fast-mode.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/hooks\" target=\"_blank\">Hooks</a>",
+        "summary": "백그라운드 기능에서 사용되는 모델 문서 링크가 비용 관련 문서에서 모델 설정 문서로 변경되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/bb67471_hooks.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/interactive-mode\" target=\"_blank\">Interactive Mode</a>",
+        "summary": "서브에이전트 트랜스포트에 대한 /btw 명령어 활용법이 추가되었고, 사용량 한도 초과 시 자동 재시도 횟수 및 동작 방식이 변경되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/bb67471_interactive-mode.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/jetbrains\" target=\"_blank\">Jetbrains</a>",
+        "summary": "JetBrains 마켓플레이스 이용과 관련된 면책 조항(NOTE)이 추가되어 사용자에게 서드파티 소프트웨어 사용에 대한 주의사항을 안내합니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/bb67471_jetbrains.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/llm-gateway-protocol\" target=\"_blank\">Llm Gateway Protocol</a>",
+        "summary": "거부된 베타 값 재시도 로직 및 유지 기간에 대한 문서가 추가되고, 관련 재시도 동작 설명이 명확하게 보완되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/bb67471_llm-gateway-protocol.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/mcp\" target=\"_blank\">Mcp</a>",
+        "summary": "OAuth 인증 토큰 갱신 실패 시 동작, 클라우드 세션에서의 MCP 유도(Elicitation) 요청 응답 방법, 그리고 게이트웨이 환경에서의 툴 검색(Tool Search) 재시도 로직이 업데이트되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/bb67471_mcp.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/memory\" target=\"_blank\">Memory</a>",
+        "summary": "경로 범위 규칙의 로딩 조건 설명이 간소화되었고, 글로브 패턴 예시와 설명이 구체화되어 파일 매칭 정확도가 향상되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/bb67471_memory.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/network-config\" target=\"_blank\">Network Config</a>",
+        "summary": "Claude Desktop 세션에서 환경 변수 및 프록시 설정 규칙이 명확해졌으며, OAuth 스코프 및 로컬 환경 설정 방법이 추가되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/bb67471_network-config.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/permission-modes\" target=\"_blank\">Permission Modes</a>",
+        "summary": "작업 디렉토리 외부 쓰기 차단 설정(`blockWritesOutsideWorkingDirectories`) 및 보호된 파일 목록에 대한 문서가 업데이트되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/bb67471_permission-modes.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/permissions\" target=\"_blank\">Permissions</a>",
+        "summary": "작업 디렉토리 외부에 대한 파일 읽기 및 쓰기 차단 설정(`blockWritesOutsideWorkingDirectories` 포함) 문서가 추가되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/bb67471_permissions.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/sandboxing\" target=\"_blank\">Sandboxing</a>",
+        "summary": "macOS 샌드박스의 Mach 및 XPC 서비스 허용 관련 보안 주의사항이 새롭게 추가되어 보안 범위와 리스크를 명확히 안내합니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/bb67471_sandboxing.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/settings-reference\" target=\"_blank\">Settings Reference</a>",
+        "summary": "작업 디렉토리 외부에 대한 쓰기 차단 기능을 설정하는 `permissions.blockWritesOutsideWorkingDirectories` 항목이 추가되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/bb67471_settings-reference.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/settings\" target=\"_blank\">Settings</a>",
+        "summary": "작업 디렉토리 외부 쓰기 차단 설정 및 세션 중 권한 변경에 대한 동작 방식이 추가되어 보안 관련 설정 관리가 명확해졌습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/bb67471_settings.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/slack\" target=\"_blank\">Slack</a>",
+        "summary": "Slack 연동 문서의 UI 버튼 명칭과 상호작용 방식이 변경됨에 따라 관련 설명과 트러블슈팅 내용이 업데이트되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/bb67471_slack.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/tools-reference\" target=\"_blank\">Tools Reference</a>",
+        "summary": "EnterWorktree 및 ExitWorktree 도구에 대한 동작 문서가 신설되고 관련 제약 사항 및 권한 설정 내용이 추가되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/bb67471_tools-reference.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/worktrees\" target=\"_blank\">Worktrees</a>",
+        "summary": "EnterWorktree 도구가 없을 때의 대처 방법과 권한 설정에 따른 워크플로우 제약 사항이 문서에 추가되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/bb67471_worktrees.txt"
+      }
+    ]
+  },
+  {
     "date": "2026-11-02T15:08:11Z",
     "commit_hash": "fc2b29d",
     "entries": [
