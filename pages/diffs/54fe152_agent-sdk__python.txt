@@ -1,0 +1,18 @@
+diff --git a/docs/agent-sdk__python.md b/docs/agent-sdk__python.md
+index 6d7389a..eb4608f 100644
+--- a/docs/agent-sdk__python.md
++++ b/docs/agent-sdk__python.md
+@@ -2161,8 +2161,13 @@ class HookMatcher:
+         None  # Timeout in seconds. When omitted, the per-event default applies:
+         # 600 for most events, 30 for UserPromptSubmit
+     )
++    on_failure: Literal["continue", "block"] | None = (
++        None  # "block" blocks the action when a callback fails
++    )
+ ```
+ 
++To decide what `on_failure` covers, see [Block the action when a callback fails](https://code.claude.com/docs/en/agent-sdk/hooks.md#block-the-action-when-a-callback-fails).
++
+ ### `HookInput`
+ 
+ Union type of all hook input types. The actual type depends on the `hook_event_name` field.
