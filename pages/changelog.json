@@ -1,5 +1,151 @@
 [
   {
+    "date": "2026-11-05T15:07:42Z",
+    "commit_hash": "f81c264",
+    "entries": [
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/agent-sdk__agent-loop\" target=\"_blank\">Agent Sdk__Agent Loop</a>",
+        "summary": "permission_mode 옵션 중 acceptEdits 및 plan 모드의 동작 방식과 설명이 업데이트되어 보안 및 파일 편집 규칙이 명확해졌습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/f81c264_agent-sdk__agent-loop.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/agent-sdk__secure-deployment\" target=\"_blank\">Agent Sdk__Secure Deployment</a>",
+        "summary": "보안 권한 시스템, 샌드박스 네트워크 설정, 프록시 및 컨테이너 격리 관련 문서 내용이 최신 가이드에 맞춰 업데이트되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/f81c264_agent-sdk__secure-deployment.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/agent-sdk__typescript\" target=\"_blank\">Agent Sdk__Typescript</a>",
+        "summary": "권한 모드 설명이 구체화되고, 설정 파일 형식 오류(config_file_invalid)에 대한 시작 실패 처리 및 관련 타입이 추가되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/f81c264_agent-sdk__typescript.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/agent-view\" target=\"_blank\">Agent View</a>",
+        "summary": "macOS에서 백그라운드 세션의 권한 관리 방식 및 업데이트 후 파일 경로 처리 방식에 대한 설명이 갱신되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/f81c264_agent-view.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/amazon-bedrock\" target=\"_blank\">Amazon Bedrock</a>",
+        "summary": "Bedrock 서비스 계층 설정 범위와 백그라운드 세션 설정 방법이 구체화되었으며, Mantle 엔드포인트 관련 안내가 수정되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/f81c264_amazon-bedrock.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/changelog\" target=\"_blank\">Changelog</a>",
+        "summary": "Claude Code 2.1.318 버전이 릴리스되었으며, AWS 비용 할당 옵션 추가, `--continue` 및 세션 중단 관련 버그 수정, 설정 파일 저장 안정성 개선, 그리고 MCP 서버 및 클라우드 세션 동작 방식이 대거 개선되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/f81c264_changelog.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/claude-apps-gateway-deploy\" target=\"_blank\">Claude Apps Gateway Deploy</a>",
+        "summary": "Google 외부 계정(external_account) 토큰 만료 관련 로그 경고와 해결 방법을 트러블슈팅 문서에 추가했습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/f81c264_claude-apps-gateway-deploy.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/claude-directory\" target=\"_blank\">Claude Directory</a>",
+        "summary": "백업 파일(backups)의 보관 및 삭제 정책에 대한 상세 설명이 추가되었으며, 복원 가능 여부 문서가 링크되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/f81c264_claude-directory.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/claude-projects\" target=\"_blank\">Claude Projects</a>",
+        "summary": "GitHub 연동 오류 해결 방법과 관련 에러 메시지 대응 절차가 최신 UI 및 문제 해결 흐름에 맞게 수정되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/f81c264_claude-projects.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/desktop-ios-simulator\" target=\"_blank\">Desktop Ios Simulator</a>",
+        "summary": "iOS 시뮬레이터에서 앱 실행 및 설치에 대한 권한 모드 규칙이 변경되어, 사용자의 세션 권한 모드를 따르도록 수정되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/f81c264_desktop-ios-simulator.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/desktop\" target=\"_blank\">Desktop</a>",
+        "summary": "데스크톱 앱의 권한 모드 설정 방식이 구체화되었고, 패널 최소화 기능 추가 및 원격 작업 시 로그인 유지 조건에 대한 설명이 업데이트되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/f81c264_desktop.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/env-vars\" target=\"_blank\">Env Vars</a>",
+        "summary": "신규 환경 변수 CLAUDE_CODE_DISABLE_BG_STABLE_PATH가 추가되었고, 기존 ANTHROPIC_BEDROCK_SERVICE_TIER 설명이 수정되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/f81c264_env-vars.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/errors\" target=\"_blank\">Errors</a>",
+        "summary": "인증, 원격 제어, 설정 오류 등 다양한 상황에서 발생하는 새로운 에러 메시지와 대응 가이드가 추가되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/f81c264_errors.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/headless\" target=\"_blank\">Headless</a>",
+        "summary": "bare 모드에서 훅(Hooks)이 실행되지 않는 제약 사항에 대한 설명이 추가되어 사용자 주의가 필요합니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/f81c264_headless.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/permission-modes\" target=\"_blank\">Permission Modes</a>",
+        "summary": "권한 모드 선택기의 동작 방식이 명확해지고, 자동 모드(Auto mode) 사용을 위한 최소 Claude Code 버전 요구사항이 환경별로 업데이트되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/f81c264_permission-modes.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/remote-control\" target=\"_blank\">Remote Control</a>",
+        "summary": "원격 제어 문서에 'working folder not found' 및 프로그램 파일 소실 관련 트러블슈팅 가이드가 추가되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/f81c264_remote-control.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/self-hosted-environments-configuration\" target=\"_blank\">Self Hosted Environments Configuration</a>",
+        "summary": "스폰 요청 원인을 파악하는 방법과 `CLAUDE_RUNNER_SPAWN_REASON` 환경 변수 활용법이 추가되어 디버깅이 용이해졌습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/f81c264_self-hosted-environments-configuration.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/server-managed-settings\" target=\"_blank\">Server Managed Settings</a>",
+        "summary": "조직 설정 강제 적용 관련 안내가 추가되었으며, API 장애 시 캐시 및 설정 페치 동작에 대한 설명이 업데이트되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/f81c264_server-managed-settings.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/settings\" target=\"_blank\">Settings</a>",
+        "summary": "설정 파일 파싱 오류 및 `-p` 실행 시 동작 방식에 대한 설명이 명확하게 업데이트되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/f81c264_settings.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/troubleshoot-install\" target=\"_blank\">Troubleshoot Install</a>",
+        "summary": "네트워크 홈 디렉토리 환경에서 인증 파일 저장 실패로 인한 로그인 오류 원인과 해결 방법이 추가되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/f81c264_troubleshoot-install.txt"
+      }
+    ]
+  },
+  {
     "date": "2026-11-04T15:08:04Z",
     "commit_hash": "54fe152",
     "entries": [
