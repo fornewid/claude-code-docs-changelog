@@ -1,5 +1,109 @@
 [
   {
+    "date": "2026-11-07T15:06:52Z",
+    "commit_hash": "068ed6b",
+    "entries": [
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/auto-mode-classifier-billing\" target=\"_blank\">Auto Mode Classifier Billing</a>",
+        "summary": "게이트웨이 연동 시 요구사항이 요청과 응답 항목으로 세분화되어, 필수 헤더 및 필드 전달 조건이 명확하게 구체화되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/068ed6b_auto-mode-classifier-billing.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/changelog\" target=\"_blank\">Changelog</a>",
+        "summary": "Claude Code v2.1.318 업데이트: 클라우드 세션 옵션 추가, 인증 상태 관리 개선 및 세션 안정성 향상 등 다양한 기능 개선과 버그가 수정되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/068ed6b_changelog.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/desktop-ios-simulator\" target=\"_blank\">Desktop Ios Simulator</a>",
+        "summary": "iOS 시뮬레이터 패널의 동작 설명이 간소화되었고, 패널 최소화 및 닫기 기능에 대한 새로운 안내가 추가되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/068ed6b_desktop-ios-simulator.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/desktop\" target=\"_blank\">Desktop</a>",
+        "summary": "원격 제어(Remote Control) 연결 조건 및 관리 설정 우선순위에 대한 설명이 구체화되었고, 관리형 설정 관련 내용이 추가되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/068ed6b_desktop.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/env-vars\" target=\"_blank\">Env Vars</a>",
+        "summary": "MCP 서버 설정 및 락 대기 시간을 제어하는 새로운 환경 변수들이 추가되어 세밀한 제어가 가능해졌습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/068ed6b_env-vars.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/errors\" target=\"_blank\">Errors</a>",
+        "summary": "MCP 서버 설정 파일 잠금 오류에 대한 대안으로 CLAUDE_CODE_CONFIG_LOCK_WAIT_MS 환경 변수 사용법이 추가되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/068ed6b_errors.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/hooks\" target=\"_blank\">Hooks</a>",
+        "summary": "도구 호출 지연(defer) 기능의 제약 사항과 사용법이 명확해졌으며, 도구가 누락되었을 때의 처리 방식 및 인터럽트 발생 시 PostToolUse 훅 동작에 대한 설명이 추가되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/068ed6b_hooks.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/mcp\" target=\"_blank\">Mcp</a>",
+        "summary": "클라우드 세션의 도구 수 제한 원인과 해결법이 추가되었으며, MCP 프로토콜 협상 및 런타임 설정 환경 변수 관련 설명이 보완되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/068ed6b_mcp.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/network-config\" target=\"_blank\">Network Config</a>",
+        "summary": "NODE_EXTRA_CA_CERTS 설정 관련 경고 메시지 2종과 그 원인 및 해결 방법에 대한 안내가 추가되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/068ed6b_network-config.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/plugins__cli-reference\" target=\"_blank\">Plugins__Cli Reference</a>",
+        "summary": "플러그인 CLI 레퍼런스에 매니페스트 파일 검증 방법과 판별 규칙에 대한 상세 설명이 추가되어 사용 편의성이 향상되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/068ed6b_plugins__cli-reference.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/plugins__marketplace-reference\" target=\"_blank\">Plugins__Marketplace Reference</a>",
+        "summary": "마켓플레이스 파일 명명 규칙(`marketplace.json`)과 관련된 검증 설명이 추가되어 정확한 유효성 검사 방법을 안내합니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/068ed6b_plugins__marketplace-reference.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/self-hosted-environments-configuration\" target=\"_blank\">Self Hosted Environments Configuration</a>",
+        "summary": "오케스트레이터 훅 환경 변수에 CLAUDE_RUNNER_SPAWN_REASON이 추가되어 세션 생성 원인 파악과 디버깅이 용이해졌습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/068ed6b_self-hosted-environments-configuration.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/server-managed-settings\" target=\"_blank\">Server Managed Settings</a>",
+        "summary": "허용되지 않은 프로바이더에 대한 서버 설정 캐시 확인 및 연결 거부 동작 규칙이 새롭게 추가되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/068ed6b_server-managed-settings.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/tools-reference\" target=\"_blank\">Tools Reference</a>",
+        "summary": "PushNotification 도구 설명에 로컬 세션 및 클라우드 세션 환경에서의 알림 동작 방식이 업데이트되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/068ed6b_tools-reference.txt"
+      }
+    ]
+  },
+  {
     "date": "2026-11-06T15:08:00Z",
     "commit_hash": "cf31605",
     "entries": [
