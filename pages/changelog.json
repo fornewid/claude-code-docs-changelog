@@ -1,5 +1,25 @@
 [
   {
+    "date": "2026-11-08T15:06:55Z",
+    "commit_hash": "928a732",
+    "entries": [
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/changelog\" target=\"_blank\">Changelog</a>",
+        "summary": "MCP 작업 백그라운드 처리, 자동 모드 및 권한 설정 강화, 게이트웨이 기능 확장 및 다양한 버그가 수정되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/928a732_changelog.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/hooks-guide\" target=\"_blank\">Hooks Guide</a>",
+        "summary": "권한 자동 승인 훅 예제에 updatedInput 필드 추가 및 jq 명령어 활용 방식으로 업데이트되어 정확한 동작을 보장합니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/928a732_hooks-guide.txt"
+      }
+    ]
+  },
+  {
     "date": "2026-11-07T15:06:52Z",
     "commit_hash": "068ed6b",
     "entries": [
