@@ -1,5 +1,32 @@
 [
   {
+    "date": "2026-11-09T15:07:50Z",
+    "commit_hash": "3c267f3",
+    "entries": [
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/agent-sdk__custom-tools\" target=\"_blank\">Agent Sdk__Custom Tools</a>",
+        "summary": "커스텀 도구 호출 방법, 권한 설정 및 도구 가용성에 대한 설명이 가독성과 명확성을 높이기 위해 구조화되고 상세히 수정되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/3c267f3_agent-sdk__custom-tools.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/desktop\" target=\"_blank\">Desktop</a>",
+        "summary": "SSH 및 WSL 세션의 HTML 파일 미리보기 기능과 조직 관리용 스크립트 비활성화 설정이 추가되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/3c267f3_desktop.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/settings-reference\" target=\"_blank\">Settings Reference</a>",
+        "summary": "disableBrowserExternalNavigation 설정에 SSH/WSL 세션의 HTML 미리보기 동작 및 관리형 설정 병합 관련 주의사항이 추가되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/3c267f3_settings-reference.txt"
+      }
+    ]
+  },
+  {
     "date": "2026-11-08T15:06:55Z",
     "commit_hash": "928a732",
     "entries": [
