@@ -1,5 +1,235 @@
 [
   {
+    "date": "2026-11-10T15:08:00Z",
+    "commit_hash": "c1c2163",
+    "entries": [
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/advisor\" target=\"_blank\">Advisor</a>",
+        "summary": "Fable 5.2 모델 지원이 추가되고 관련 버전 요구 사항이 업데이트되었으며, Fable 어드바이저 과금 관련 설명이 수정되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/c1c2163_advisor.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/agent-sdk__hooks\" target=\"_blank\">Agent Sdk__Hooks</a>",
+        "summary": "PostToolUse 훅의 updatedToolOutput 설명이 내장 및 MCP 툴 모두를 지원하도록 명확하게 업데이트되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/c1c2163_agent-sdk__hooks.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/changelog\" target=\"_blank\">Changelog</a>",
+        "summary": "터미널 MCP 작업 지원, 권한 거부 설정 추가, 자동 모드 및 게이트웨이 정책 개선 등 다양한 신기능과 개선 사항이 적용되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/c1c2163_changelog.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/claude-apps-gateway-config\" target=\"_blank\">Claude Apps Gateway Config</a>",
+        "summary": "로그인 공지 설정(login_notice)과 공유 예산 충돌 해결 규칙(pooled_conflict_rule 등)이 추가되어 관리 및 예산 제어가 유연해졌습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/c1c2163_claude-apps-gateway-config.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/claude-apps-gateway-deploy\" target=\"_blank\">Claude Apps Gateway Deploy</a>",
+        "summary": "CLAUDE_GATEWAY_LOG_FORMAT=json 환경 변수를 통한 운영 로그 JSON 포맷 출력 기능이 추가되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/c1c2163_claude-apps-gateway-deploy.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/claude-apps-gateway-spend-limits\" target=\"_blank\">Claude Apps Gateway Spend Limits</a>",
+        "summary": "클로드 앱 게이트웨이 지출 한도 초과 시 반환되는 에러 메시지 형식, 리셋 조건, 그리고 /usage 명령어의 새로운 사용량 표시 기능이 업데이트되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/c1c2163_claude-apps-gateway-spend-limits.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/cli-reference\" target=\"_blank\">Cli Reference</a>",
+        "summary": "CLI 참조 문서에 remote-control 명령어의 별칭(claude rc)이 추가되고 권한 프롬프트 도구 관련 오류 문서 링크가 보완되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/c1c2163_cli-reference.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/commands\" target=\"_blank\">Commands</a>",
+        "summary": "명령어 문서 내 `/list-agents`, `/review`, `/usage` 명령어 설명이 업데이트되어 최신 기능 및 변경 사항이 반영되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/c1c2163_commands.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/env-vars\" target=\"_blank\">Env Vars</a>",
+        "summary": "프락시 DNS 설정 및 OpenTelemetry 메트릭 속성 문서가 개선되었으며, Vertex AI용 Claude Fable 5.2 리전 설정 환경 변수가 추가되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/c1c2163_env-vars.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/errors\" target=\"_blank\">Errors</a>",
+        "summary": "새로운 에러 및 경고 메시지 항목들이 문서에 추가되었으며, 관련 모델명 등 일부 설명이 업데이트되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/c1c2163_errors.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/fast-mode\" target=\"_blank\">Fast Mode</a>",
+        "summary": "Claude Code의 빠른 모드(Fast mode)에 새로운 Fable 5.2 모델 지원이 추가되고 가격 및 동작 방식이 업데이트되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/c1c2163_fast-mode.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/github-actions\" target=\"_blank\">Github Actions</a>",
+        "summary": "앱 권한 목록에 'Repository creation' (Read and write) 권한이 추가되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/c1c2163_github-actions.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/hooks\" target=\"_blank\">Hooks</a>",
+        "summary": "MCP 툴 에러 메시지 처리 방법, 터미널 알림 설정(tmux/screen), Cowork 세션에서의 툴 출력 제한, 권한 규칙(ruleContent) 작성법 등의 상세 가이드가 추가되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/c1c2163_hooks.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/model-config\" target=\"_blank\">Model Config</a>",
+        "summary": "Fable 5.2 모델 도입 및 관련 별칭(alias)과 자동 업데이트 정책이 갱신되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/c1c2163_model-config.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/monitoring-usage\" target=\"_blank\">Monitoring Usage</a>",
+        "summary": "메트릭 환경 변수와 표준 속성이 이벤트에도 적용되도록 확장되었으며, app.entrypoint의 상세 값 설명과 활성 사용자 측정 가이드가 추가되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/c1c2163_monitoring-usage.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/permissions\" target=\"_blank\">Permissions</a>",
+        "summary": "git push 규칙 예시 정제, which 명령어 플래그 관련 수동 모드 프롬프트 조건 추가, MCP 도구 허용 규칙 작성 가이드 및 권한 우선순위 관련 설정 설명이 업데이트되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/c1c2163_permissions.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/plugins__install\" target=\"_blank\">Plugins__Install</a>",
+        "summary": "프로젝트 범위 플러그인 설치 설명이 수정되어 협업 시 각 클론마다 수동 설치가 필요함을 명확히 안내합니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/c1c2163_plugins__install.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/plugins__loading\" target=\"_blank\">Plugins__Loading</a>",
+        "summary": "프로젝트 설정에만 활성화된 플러그인의 설치 및 로드 방법, 에러 메시지 처리 안내가 업데이트되어 사용성이 향상되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/c1c2163_plugins__loading.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/plugins__mods__admin\" target=\"_blank\">Plugins__Mods__Admin</a>",
+        "summary": "managed-mcp.json 파일 관련 조건이 추가되고, 모드 설정 및 보안 가이드의 동작 방식이 명확하게 업데이트되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/c1c2163_plugins__mods__admin.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/plugins__mods__create\" target=\"_blank\">Plugins__Mods__Create</a>",
+        "summary": "auto 및 bypassPermissions 권한 모드에 따른 모드 실행 방식과 승인 절차 관련 설명이 업데이트되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/c1c2163_plugins__mods__create.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/plugins__mods__interface\" target=\"_blank\">Plugins__Mods__Interface</a>",
+        "summary": "트랜스크립트에 커스텀 행을 추가하는 기능('$.ui.place')과 대화 배경을 설정하는 새 테마 API('$.theme.set')가 추가되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/c1c2163_plugins__mods__interface.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/plugins__mods__reference\" target=\"_blank\">Plugins__Mods__Reference</a>",
+        "summary": "실행 중인 대화에서 프롬프트와 도구 설명을 동적으로 수정하기 위한 breakPromptCache 옵션과 새로운 UI 및 테마 API가 추가되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/c1c2163_plugins__mods__reference.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/plugins__troubleshooting\" target=\"_blank\">Plugins__Troubleshooting</a>",
+        "summary": "플러그인 캐시 오류(Plugin not cached) 트러블슈팅 가이드에 프로젝트 설정 기반 설치 명령어(--scope project)와 미설치 리포지토리 관련 내용이 추가되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/c1c2163_plugins__troubleshooting.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/remote-control\" target=\"_blank\">Remote Control</a>",
+        "summary": "원격 제어 명령어 별칭(`claude rc`) 추가, 자동 연결 설정 설명 보완, 그리고 제로 데이터 보존(ZDR) 정책 관련 차단 원인이 추가되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/c1c2163_remote-control.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/self-hosted-environments-configuration\" target=\"_blank\">Self Hosted Environments Configuration</a>",
+        "summary": "체크아웃 폴더 이름 규칙에 대한 설명이 추가되었고, 워크스페이스 스냅샷 및 구조화된 에러 처리를 위한 스크립트 로직이 개선되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/c1c2163_self-hosted-environments-configuration.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/self-hosted-environments-deploy\" target=\"_blank\">Self Hosted Environments Deploy</a>",
+        "summary": "Git 프록시 설정, 환경 비밀정보 유출 대응 절차, Kubernetes 헬스체크 프로브 설정 및 세션 토큰 갱신 실패 관련 트러블슈팅 가이드가 업데이트되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/c1c2163_self-hosted-environments-deploy.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/settings-reference\" target=\"_blank\">Settings Reference</a>",
+        "summary": "새로운 권한 설정인 permissions.denyInsteadOfPrompting이 추가되었으며, Fable 5.2 모델에서의 패스트 모드 지원 관련 내용이 업데이트되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/c1c2163_settings-reference.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/sub-agents\" target=\"_blank\">Sub Agents</a>",
+        "summary": "메인 대화가 bypassPermissions 모드일 때 서브에이전트의 권한 요청 처리 방식에 대한 세부 규칙이 추가되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/c1c2163_sub-agents.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/tools-reference\" target=\"_blank\">Tools Reference</a>",
+        "summary": "WebSocket 감시 기능의 보안 규칙과 주소 차단 정책이 구체화되었고, EndConversation 실행 조건이 명확해졌으며, 피드백 도구 제한 조건이 추가되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/c1c2163_tools-reference.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/workflows\" target=\"_blank\">Workflows</a>",
+        "summary": "사용량 한도 도달 시 워크플로우 동작 조건(v2.1.318+ 지원)과 데스크톱 Code 탭 관련 세부 사항이 업데이트되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/c1c2163_workflows.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/worktrees\" target=\"_blank\">Worktrees</a>",
+        "summary": "워크트리 내에서 샌드박스 활성화 시 깃 명령어 동작 조건과 index.lock 오류 관련 설명이 구체화되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/c1c2163_worktrees.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/zero-data-retention\" target=\"_blank\">Zero Data Retention</a>",
+        "summary": "ZDR 문서에 Artifacts 예외 사항 및 Claude Docs 관련 내용이 추가되었고, 지원되는 모델 목록과 별칭 동작 방식이 업데이트되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/c1c2163_zero-data-retention.txt"
+      }
+    ]
+  },
+  {
     "date": "2026-11-09T15:07:50Z",
     "commit_hash": "3c267f3",
     "entries": [
