@@ -1,5 +1,476 @@
 [
   {
+    "date": "2026-11-11T15:07:06Z",
+    "commit_hash": "5e1073c",
+    "entries": [
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/advisor\" target=\"_blank\">Advisor</a>",
+        "summary": "어드바이저 도구의 AWS Claude 플랫폼 지원 추가 및 관련 요구사항 변경 사항을 반영했습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/5e1073c_advisor.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/agent-sdk__agent-loop\" target=\"_blank\">Agent Sdk__Agent Loop</a>",
+        "summary": "effort와 extended thinking 기능 간의 독립성 관련 설명이 간소화되어 문서가 수정되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/5e1073c_agent-sdk__agent-loop.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/agent-sdk__python\" target=\"_blank\">Agent Sdk__Python</a>",
+        "summary": "Thinking 기능 비활성화 조건과 백그라운드 작업 유형(mcp_task 추가 등)에 대한 문서 설명이 구체화되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/5e1073c_agent-sdk__python.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/agent-sdk__structured-outputs\" target=\"_blank\">Agent Sdk__Structured Outputs</a>",
+        "summary": "구조화된 출력 검증 로직에 `not message.is_error` 조건을 추가하여 에러 발생 시의 오작동을 방지하고 정확한 성공 여부를 확인하도록 가이드와 예제 코드가 수정되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/5e1073c_agent-sdk__structured-outputs.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/agent-sdk__typescript\" target=\"_blank\">Agent Sdk__Typescript</a>",
+        "summary": "setMaxThinkingTokens, 패스트 모드 사유, Task 타입, RateLimitEvent 구조체 등의 타입 정의 및 설명이 업데이트되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/5e1073c_agent-sdk__typescript.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/agent-view\" target=\"_blank\">Agent View</a>",
+        "summary": "행 요약(row summaries) 비용 및 모델 동작 방식 문서가 개정되어 타사 제공업체 및 게이트웨이 환경에서의 모델 설정 안내가 구체화되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/5e1073c_agent-view.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/artifacts\" target=\"_blank\">Artifacts</a>",
+        "summary": "아티팩트 업데이트 권한 조건이 추가되고, 원스텝 업데이트 비활성화 설정 및 공유 폴더 권한 공유 옵션이 새롭게 문서화되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/5e1073c_artifacts.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/changelog\" target=\"_blank\">Changelog</a>",
+        "summary": "새로운 Claude Fable 모델 추가, Vertex 패스트 모드 지원, 원격 제어 설정 기능 도입 및 샌드박스, MCP, 파일 편집 등 다양한 버그가 대거 수정되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/5e1073c_changelog.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/claude-apps-gateway-config\" target=\"_blank\">Claude Apps Gateway Config</a>",
+        "summary": "trusted_proxies 설정 가이드가 보강되어 프록시 및 X-Forwarded-For 헤더 설정 방식이 더 명확해졌습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/5e1073c_claude-apps-gateway-config.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/claude-apps-gateway-deploy\" target=\"_blank\">Claude Apps Gateway Deploy</a>",
+        "summary": "로드밸런서 설정 관련 `listen.trusted_proxies` 구성 가이드가 보완되었고, 관련 문제 해결 내용이 명확하게 수정되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/5e1073c_claude-apps-gateway-deploy.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/claude-apps-gateway-spend-limits\" target=\"_blank\">Claude Apps Gateway Spend Limits</a>",
+        "summary": "pricing.multiplier 적용에 필요한 Claude Code 게이트웨이 서버 최소 버전 요구사항(v2.1.227 이상)이 추가되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/5e1073c_claude-apps-gateway-spend-limits.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/claude-code-on-the-web\" target=\"_blank\">Claude Code On The Web</a>",
+        "summary": "기본 환경의 네트워크 접근 수준이 Trusted에서 Limited로 변경되었으며, 조직 IP 화이트리스트 관련 제약 사항 문서가 삭제되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/5e1073c_claude-code-on-the-web.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/claude-directory\" target=\"_blank\">Claude Directory</a>",
+        "summary": "seed-admin 디렉토리 정리 규칙이 추가되고, 데이터 보존 정책 및 설정 오류 시 스윕 동작 관련 설명이 업데이트되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/5e1073c_claude-directory.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/cloud-environments\" target=\"_blank\">Cloud Environments</a>",
+        "summary": "클라우드 환경의 네트워크 접근 레벨이 개편되어 기존의 Trusted 및 Custom 방식이 Limited 중심으로 통합되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/5e1073c_cloud-environments.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/costs\" target=\"_blank\">Costs</a>",
+        "summary": "PreToolUse 훅의 예제가 에러 필터링 방식에서 테스트 출력의 마지막 100행을 유지하는 방식으로 변경되었으며 관련 설명이 수정되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/5e1073c_costs.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/desktop-ios-simulator\" target=\"_blank\">Desktop Ios Simulator</a>",
+        "summary": "서드파티 제공업체 사용 시 iOS 시뮬레이터 패널을 이용할 수 없다는 제약 사항이 문서에 추가되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/5e1073c_desktop-ios-simulator.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/desktop\" target=\"_blank\">Desktop</a>",
+        "summary": "데스크톱 앱의 패널 최소화 기능에 사이드 챗 항목이 추가되어 사용자가 화면을 더 효율적으로 관리할 수 있게 되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/5e1073c_desktop.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/env-vars\" target=\"_blank\">Env Vars</a>",
+        "summary": "새로운 환경 변수 'CLAUDE_CODE_DISABLE_FEATURE_FLAGS'가 추가되어 피처 플래그 조회를 제어할 수 있으며, 기존 'DISABLE_GROWTHBOOK' 변수가 이에 맞춰 업데이트되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/5e1073c_env-vars.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/errors\" target=\"_blank\">Errors</a>",
+        "summary": "인증 디스크 용량 초과, 플러그인 경로 오류, 검색 실패 및 세션 포크 오류 메시지가 추가되었고, 새로운 재시도 환경 변수 설명이 갱신되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/5e1073c_errors.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/fast-mode\" target=\"_blank\">Fast Mode</a>",
+        "summary": "Google Cloud Agent Platform에서의 패스트 모드(Fast mode) 지원 내용이 추가되었으며, 관련 사용 조건 및 제공자별 예외 사항이 문서에 반영되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/5e1073c_fast-mode.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/feature-availability\" target=\"_blank\">Feature Availability</a>",
+        "summary": "AWS 및 Google Cloud 플랫폼에서의 기능 가용성 문서가 업데이트되어, Fast mode 및 Advisor 기능의 지원 여부와 조건이 변경되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/5e1073c_feature-availability.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/goal\" target=\"_blank\">Goal</a>",
+        "summary": "목표를 초기화하는 오류 조건에 디스크 용량 부족 상황이 추가되어 사용자가 로그인 갱신 실패 원인을 쉽게 파악할 수 있게 되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/5e1073c_goal.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/hooks\" target=\"_blank\">Hooks</a>",
+        "summary": "백그라운드 프로세스를 실행하는 훅에 대한 가이드가 추가되었으며, 출력 리다이렉트 관련 에러 메시지가 업데이트되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/5e1073c_hooks.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/interactive-mode\" target=\"_blank\">Interactive Mode</a>",
+        "summary": "인터랙ティブ 모드 문서에 대문자 P 단축키와 Ctrl+R을 이용한 이력 검색 기능이 추가되어 사용성이 향상되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/5e1073c_interactive-mode.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/llm-gateway-connect\" target=\"_blank\">Llm Gateway Connect</a>",
+        "summary": "인증 자격 증명 우선순위 설명이 간소화되었고, 비필수 트래픽 차단 시 패스트 모드 미사용에 대한 프록시/게이트웨이 우회 가이드가 추가되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/5e1073c_llm-gateway-connect.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/llm-gateway-protocol\" target=\"_blank\">Llm Gateway Protocol</a>",
+        "summary": "claude.ai 로그인 인증 방식 추가에 따른 Authorization 헤더 및 전달 요구사항 변경 사항이 문서에 반영되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/5e1073c_llm-gateway-protocol.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/memory\" target=\"_blank\">Memory</a>",
+        "summary": "추가 디렉토리 로드 시 경로 필드가 설정된 규칙이 제외되는 조건이 명시되어 규칙 적용 방식이 더 명확해졌습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/5e1073c_memory.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/model-config\" target=\"_blank\">Model Config</a>",
+        "summary": "Ultra 플랜이 에일리어스 자동 전환 대상에 추가되고, 확장된 사고(thinking) 기능의 제어 및 비용 관련 설명이 보강되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/5e1073c_model-config.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/monitoring-usage\" target=\"_blank\">Monitoring Usage</a>",
+        "summary": "안전 이벤트(safety_event) 중단 및 툴 결정 이벤트 처리 방식 변경, 보존 정리 스위프(retention sweep)의 결과 및 설정 속성 설명이 업데이트되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/5e1073c_monitoring-usage.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/permission-modes\" target=\"_blank\">Permission Modes</a>",
+        "summary": "권한 모드별 보호된 경로 쓰기 규칙이 명확해지고, 위험 모드 프롬프트 관련 설정 소스 안내가 추가되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/5e1073c_permission-modes.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/plugins__loading\" target=\"_blank\">Plugins__Loading</a>",
+        "summary": "--add-dir 디렉토리에서 플러그인이 로드되지 않는 문제에 대한 원인과 해결 방법을 설명하는 문서가 추가되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/5e1073c_plugins__loading.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/plugins__org\" target=\"_blank\">Plugins__Org</a>",
+        "summary": "strictPluginOnlyCustomization 정책의 설명이 구체화되고 엔터프라이즈 플랜의 그룹별 설정 가이드가 추가되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/5e1073c_plugins__org.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/quickstart\" target=\"_blank\">Quickstart</a>",
+        "summary": "/clear 명령어의 설명이 대화 초기화 및 /resume을 통한 이전 대화 복원으로 명확하게 업데이트되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/5e1073c_quickstart.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/remote-control\" target=\"_blank\">Remote Control</a>",
+        "summary": "브라우저에서 세션을 포크하는 기능이 추가되었고, 관련 환경 변수(`CLAUDE_CODE_DISABLE_FEATURE_FLAGS`) 설정 및 요구 사항 안내가 업데이트되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/5e1073c_remote-control.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/routines\" target=\"_blank\">Routines</a>",
+        "summary": "클라우드 환경의 기본 네트워크 액세스 설정이 Trusted에서 Limited로 변경되고 관련 UI 용어가 업데이트됨에 따라 문서가 수정되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/5e1073c_routines.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/scheduled-tasks\" target=\"_blank\">Scheduled Tasks</a>",
+        "summary": "예약 작업 문서에서 권한 검사 관련 설명이 추가되고 /loop 명령어 사용법 관련 내용이 재구성되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/5e1073c_scheduled-tasks.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/self-hosted-environments-configuration\" target=\"_blank\">Self Hosted Environments Configuration</a>",
+        "summary": "--trust-workspace 설정에 따른 프로젝트 MCP 파일 로드 동작 조건이 추가되고 관련 문서 링크가 보완되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/5e1073c_self-hosted-environments-configuration.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/self-hosted-environments-deploy\" target=\"_blank\">Self Hosted Environments Deploy</a>",
+        "summary": "보안 침해 대응 시 토큰 우선 취소 절차가 추가되고, git proxy 및 runner 용량 산정에 관한 설명이 보완되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/5e1073c_self-hosted-environments-deploy.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/self-hosted-environments-reference\" target=\"_blank\">Self Hosted Environments Reference</a>",
+        "summary": "깃 프록시 사용 및 기능 플래그 비활성화에 필요한 최소 클라우드 코드 버전 요구사항이 문서에 추가되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/5e1073c_self-hosted-environments-reference.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/server-managed-settings\" target=\"_blank\">Server Managed Settings</a>",
+        "summary": "기업용 플랜을 위한 그룹별 설정 기능이 추가되고, 상태 확인 명령어 안내 및 설정 캐싱 관련 설명이 업데이트되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/5e1073c_server-managed-settings.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/settings-example\" target=\"_blank\">Settings Example</a>",
+        "summary": "관리형 설정 문서에서 그룹별 설정 지원 여부에 대한 안내가 업데이트되어, Enterprise 플랜에서 그룹별 구성을 설정하는 방법이 추가되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/5e1073c_settings-example.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/settings-reference\" target=\"_blank\">Settings Reference</a>",
+        "summary": "settings-reference.md 문서가 업데이트되어 fast mode, bypassPermissions, strictPluginOnlyCustomization 등의 설정 옵션 설명과 요구사항이 최신화되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/5e1073c_settings-reference.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/settings\" target=\"_blank\">Settings</a>",
+        "summary": "설정 파일 파싱 오류 시 파일이 유지된다는 문구가 삭제되어, 오류 발생 시 대처 방식에 대한 설명이 변경되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/5e1073c_settings.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/troubleshoot-install\" target=\"_blank\">Troubleshoot Install</a>",
+        "summary": "설치 트러블슈팅 문서에 사내 인증서(CA) 설정 및 프록시 환경 관련 에러 해결 방법이 구체화되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/5e1073c_troubleshoot-install.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/web-quickstart\" target=\"_blank\">Web Quickstart</a>",
+        "summary": "클라우드 환경의 기본 네트워크 접근 설정이 Trusted에서 Limited로 변경됨에 따라 관련 문서 내용이 수정되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/5e1073c_web-quickstart.txt"
+      },
+      {
+        "title": "Whats-New",
+        "summary": "문서가 삭제되었습니다.",
+        "tag_text": "DELETE",
+        "tag_class": "delete"
+      },
+      {
+        "title": "Whats-New__2026-W13",
+        "summary": "문서가 삭제되었습니다.",
+        "tag_text": "DELETE",
+        "tag_class": "delete"
+      },
+      {
+        "title": "Whats-New__2026-W14",
+        "summary": "문서가 삭제되었습니다.",
+        "tag_text": "DELETE",
+        "tag_class": "delete"
+      },
+      {
+        "title": "Whats-New__2026-W15",
+        "summary": "문서가 삭제되었습니다.",
+        "tag_text": "DELETE",
+        "tag_class": "delete"
+      },
+      {
+        "title": "Whats-New__2026-W16",
+        "summary": "문서가 삭제되었습니다.",
+        "tag_text": "DELETE",
+        "tag_class": "delete"
+      },
+      {
+        "title": "Whats-New__2026-W17",
+        "summary": "문서가 삭제되었습니다.",
+        "tag_text": "DELETE",
+        "tag_class": "delete"
+      },
+      {
+        "title": "Whats-New__2026-W18",
+        "summary": "문서가 삭제되었습니다.",
+        "tag_text": "DELETE",
+        "tag_class": "delete"
+      },
+      {
+        "title": "Whats-New__2026-W19",
+        "summary": "문서가 삭제되었습니다.",
+        "tag_text": "DELETE",
+        "tag_class": "delete"
+      },
+      {
+        "title": "Whats-New__2026-W20",
+        "summary": "문서가 삭제되었습니다.",
+        "tag_text": "DELETE",
+        "tag_class": "delete"
+      },
+      {
+        "title": "Whats-New__2026-W21",
+        "summary": "문서가 삭제되었습니다.",
+        "tag_text": "DELETE",
+        "tag_class": "delete"
+      },
+      {
+        "title": "Whats-New__2026-W22",
+        "summary": "문서가 삭제되었습니다.",
+        "tag_text": "DELETE",
+        "tag_class": "delete"
+      },
+      {
+        "title": "Whats-New__2026-W23",
+        "summary": "문서가 삭제되었습니다.",
+        "tag_text": "DELETE",
+        "tag_class": "delete"
+      },
+      {
+        "title": "Whats-New__2026-W24",
+        "summary": "문서가 삭제되었습니다.",
+        "tag_text": "DELETE",
+        "tag_class": "delete"
+      },
+      {
+        "title": "Whats-New__2026-W25",
+        "summary": "문서가 삭제되었습니다.",
+        "tag_text": "DELETE",
+        "tag_class": "delete"
+      },
+      {
+        "title": "Whats-New__2026-W26",
+        "summary": "문서가 삭제되었습니다.",
+        "tag_text": "DELETE",
+        "tag_class": "delete"
+      },
+      {
+        "title": "Whats-New__2026-W27",
+        "summary": "문서가 삭제되었습니다.",
+        "tag_text": "DELETE",
+        "tag_class": "delete"
+      },
+      {
+        "title": "Whats-New__2026-W28",
+        "summary": "문서가 삭제되었습니다.",
+        "tag_text": "DELETE",
+        "tag_class": "delete"
+      },
+      {
+        "title": "Whats-New__2026-W29",
+        "summary": "문서가 삭제되었습니다.",
+        "tag_text": "DELETE",
+        "tag_class": "delete"
+      },
+      {
+        "title": "Whats-New__2026-W30",
+        "summary": "문서가 삭제되었습니다.",
+        "tag_text": "DELETE",
+        "tag_class": "delete"
+      },
+      {
+        "title": "Whats-New__2026-W32",
+        "summary": "문서가 삭제되었습니다.",
+        "tag_text": "DELETE",
+        "tag_class": "delete"
+      },
+      {
+        "title": "Whats-New__2026-W33",
+        "summary": "문서가 삭제되었습니다.",
+        "tag_text": "DELETE",
+        "tag_class": "delete"
+      },
+      {
+        "title": "Whats-New__2026-W34",
+        "summary": "문서가 삭제되었습니다.",
+        "tag_text": "DELETE",
+        "tag_class": "delete"
+      },
+      {
+        "title": "Whats-New__2026-W35",
+        "summary": "문서가 삭제되었습니다.",
+        "tag_text": "DELETE",
+        "tag_class": "delete"
+      },
+      {
+        "title": "Whats-New__2026-W36",
+        "summary": "문서가 삭제되었습니다.",
+        "tag_text": "DELETE",
+        "tag_class": "delete"
+      },
+      {
+        "title": "Whats-New__2026-W37",
+        "summary": "문서가 삭제되었습니다.",
+        "tag_text": "DELETE",
+        "tag_class": "delete"
+      }
+    ]
+  },
+  {
     "date": "2026-11-10T15:08:00Z",
     "commit_hash": "c1c2163",
     "entries": [

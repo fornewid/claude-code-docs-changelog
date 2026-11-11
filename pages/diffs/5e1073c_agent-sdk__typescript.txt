@@ -1,0 +1,74 @@
+diff --git a/docs/agent-sdk__typescript.md b/docs/agent-sdk__typescript.md
+index 9831fe4..2a30635 100644
+--- a/docs/agent-sdk__typescript.md
++++ b/docs/agent-sdk__typescript.md
+@@ -664,7 +664,7 @@ interface Query extends AsyncGenerator<SDKMessage, void> {
+ | `rewindFiles(userMessageId, options?)` | Restores files to their state at the specified user message. Pass `{ dryRun: true }` to preview changes. Requires `enableFileCheckpointing: true`. See [File checkpointing](https://code.claude.com/docs/en/agent-sdk/file-checkpointing.md) |
+ | `setPermissionMode()` | Changes the permission mode (only available in streaming input mode) |
+ | `setModel()` | Changes the model (only available in streaming input mode). Passing `undefined` or the string `"default"` resets to [Claude Code's default model](https://code.claude.com/docs/en/model-config.md). A session in `auto` mode [changes to `default` mode](https://code.claude.com/docs/en/agent-sdk/permissions#auto-mode-auto) if the new model doesn't support auto mode |
+-| `setMaxThinkingTokens()` | *Deprecated:* Use the `thinking` option instead. Changes the maximum thinking tokens. Passing `null` resets thinking to the session default: a mid-session override is cleared, and thinking stays off for sessions that have it disabled |
++| `setMaxThinkingTokens()` | *Deprecated:* Use the `thinking` option instead. Changes the maximum thinking tokens. Pass `null` to undo earlier calls and restore the `thinking` or `maxThinkingTokens` option the session started with |
+ | `applyFlagSettings(settings)` | Merges settings into the session's flag settings layer at runtime (only available in streaming input mode). See [`applyFlagSettings()`](#applyflagsettings) |
+ | `updateSettings(source, settings)` | Writes one allowlisted key to the project's local settings file or your user settings file, so the value persists for later sessions. See [`updateSettings()`](#updatesettings). Requires TypeScript SDK v0.3.257 or later, which bundles Claude Code v2.1.257 |
+ | `initializationResult()` | Returns the full initialization result including supported commands, models, account info, and output style configuration |
+@@ -1923,9 +1923,9 @@ Use the reason code to explain why fast mode is off in your own UI instead of re
+ | `extra_usage_disabled` | Usage credits are turned off for the account |
+ | `network_error` | The [availability check](https://code.claude.com/docs/en/fast-mode.md#use-fast-mode-behind-proxies-and-llm-gateways) couldn't reach `api.anthropic.com` |
+ | `unknown` | Claude Code couldn't determine availability |
+-| `not_first_party` | The session uses a provider other than the Anthropic API |
+-| `disabled_by_env` | [`CLAUDE_CODE_DISABLE_FAST_MODE`](https://code.claude.com/docs/en/env-vars) is set |
+-| `model_not_allowed` | The fast mode Opus model isn't in the organization's [`availableModels`](https://code.claude.com/docs/en/model-config#restrict-model-selection) allowlist |
++| `not_first_party` | The session uses a provider that doesn't offer fast mode |
++| `disabled_by_env` | [`CLAUDE_CODE_DISABLE_FAST_MODE`](https://code.claude.com/docs/en/env-vars) is set, or the model's region on [Google Cloud's Agent Platform](https://code.claude.com/docs/en/fast-mode.md#use-fast-mode-on-agent-platform) doesn't offer fast mode |
++| `model_not_allowed` | The fast mode model isn't in the organization's [`availableModels`](https://code.claude.com/docs/en/model-config#restrict-model-selection) allowlist, or the provider refused fast mode for the session's model |
+ | `sdk_opt_in_required` | The session hasn't opted in to fast mode: pass `fastMode: true` in the [`settings`](#options) option or through [`applyFlagSettings()`](#applyflagsettings) |
+ | `pending` | The availability check hasn't completed yet |
+ 
+@@ -2007,7 +2007,7 @@ What `0` and an absent field tell you:
+ 
+ #### `startup_failure_reason`
+ 
+-Why Claude Code refused to start, so your application can offer the fix instead of a retry. Claude Code sets it on the `error_during_execution` result it writes before exiting on a known startup failure. That result carries zeroed totals, and its `errors` array carries the same text as stderr. The field is absent on every other result. Requires Agent SDK v0.3.274 or later.
++Why Claude Code refused to start, so your application can offer the fix instead of a retry. Claude Code sets it on the `error_during_execution` result it writes before exiting on a known startup failure. That result carries zeroed totals, and its `errors` array carries the failure message. The field is absent on every other result. Requires Agent SDK v0.3.274 or later.
+ 
+ Set `CLAUDE_CODE_STARTUP_FAILURE_RESULTS` to `1` in [`env`](#options) to receive this result for every `SDKStartupFailureReason` value. Without that variable, Claude Code writes the result only for these failures, and the rest end with stderr output, a non-zero exit, and no result message:
+ 
+@@ -5432,9 +5432,11 @@ type ThinkingDisplay = "summarized" | "omitted";
+ type ThinkingConfig =
+   | { type: "adaptive"; display?: ThinkingDisplay } // The model determines when and how much to reason (Opus 4.6+)
+   | { type: "enabled"; budgetTokens?: number; display?: ThinkingDisplay } // Fixed thinking token budget
+-  | { type: "disabled" }; // No extended thinking
++  | { type: "disabled" }; // Turn thinking off where the model and provider allow it
+ ```
+ 
++For `disabled`, see [where you can't turn thinking off](https://code.claude.com/docs/en/model-config.md#where-you-cant-turn-thinking-off).
++
+ The optional `display` field controls whether thinking text is returned `"summarized"` or `"omitted"`. On Claude Opus 4.7 and later, the API default is `"omitted"`, so set `"summarized"` to receive thinking content in `thinking` blocks. On providers such as Amazon Bedrock and Google Cloud's Agent Platform, Claude Code doesn't pass `display` for earlier models it recognizes. Those are Opus 4.6, Sonnet 4.6, Haiku 4.5, and earlier models, which use their default.
+ 
+ ### `SpawnedProcess`
+@@ -5711,7 +5713,7 @@ type SDKAuthStatusMessage = {
+ 
+ ### `SDKTaskStartedMessage`
+ 
+-Emitted when a task begins. The `task_type` field is `"local_bash"` for Bash commands and [Monitor](#monitor) watches, `"local_agent"` for subagents, or `"remote_agent"`.
++Emitted when a task begins. `task_type` names the kind of task, such as `"local_bash"` for Bash commands and [Monitor](#monitor) watches, `"local_agent"` for subagents, `"mcp_task"` for [background MCP tool calls](https://code.claude.com/docs/en/mcp.md#automatic-backgrounding-of-long-tool-calls), or `"remote_agent"`.
+ 
+ ```typescript theme={null}
+ type SDKTaskStartedMessage = {
+@@ -5920,6 +5922,7 @@ type SDKRateLimitEvent = {
+     errorCode?: "credits_required";
+     canUserPurchaseCredits?: boolean;
+     hasChargeableSavedPaymentMethod?: boolean;
++    overageEnabled?: boolean;
+   };
+   uuid: UUID;
+   session_id: string;
+@@ -5928,6 +5931,8 @@ type SDKRateLimitEvent = {
+ 
+ When `errorCode` is `"credits_required"`, the rejection is from a claude.ai subscription whose included usage is exhausted, and the session cannot continue until the user buys usage credits. `canUserPurchaseCredits` indicates whether the authenticated user can buy credits for the account, and `hasChargeableSavedPaymentMethod` indicates whether a saved payment method is on file. All three fields are absent on rate-limit events that are not credits-required rejections. Requires Claude Code v2.1.181 or later.
+ 
++On a warning about a plan usage limit, where `status` is `"allowed_warning"`, `overageEnabled` reports whether the account has [usage credits](https://code.claude.com/docs/en/costs.md#add-usage-credits-to-your-subscription) turned on. Requires Claude Code v2.1.295 or later.
++
+ ### `SDKLocalCommandOutputMessage`
+ 
+ Claude Code doesn't emit this message type. When you send a command such as `/context` or `/usage` as a prompt, its output arrives as an [`SDKAssistantMessage`](#sdkassistantmessage).
