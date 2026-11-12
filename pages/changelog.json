@@ -1,5 +1,95 @@
 [
   {
+    "date": "2026-11-12T15:07:32Z",
+    "commit_hash": "8e8a276",
+    "entries": [
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/claude-directory\" target=\"_blank\">Claude Directory</a>",
+        "summary": "Windows 환경에서 스크래치패드의 프로젝트 경로 생성 방식이 16자리 해시값으로 변경되어 관련 디렉토리 구조 설명이 업데이트되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/8e8a276_claude-directory.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/commands\" target=\"_blank\">Commands</a>",
+        "summary": "/claude-api 명령어에 'latency-optimize' 서브커맨드가 추가되어 API 지연 시간 최적화 기능을 활용할 수 있게 되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/8e8a276_commands.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/desktop\" target=\"_blank\">Desktop</a>",
+        "summary": "SSH 및 WSL 프리뷰에서 스크립트를 제어하는 새 관리형 설정인 'disableRemotePreviewScripts'가 추가되고 관련 가이드가 보완되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/8e8a276_desktop.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/glossary\" target=\"_blank\">Glossary</a>",
+        "summary": "Auto mode 및 Prompt injection 용어 설명에서 보안 관련 세부 동작 방식이 최신 사양에 맞춰 간소화 및 수정되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/8e8a276_glossary.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/model-config\" target=\"_blank\">Model Config</a>",
+        "summary": "모델 이름 오타 수정 가이드 섹션의 문서 내 위치가 이동하고 관련 설명 문장이 간결하게 다듬어졌습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/8e8a276_model-config.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/plugins__mods__test\" target=\"_blank\">Plugins__Mods__Test</a>",
+        "summary": "`expect` 단언문 문서가 대폭 확장되어 동등성, 텍스트, 숫자, 존재 여부 등 다양한 검증 메서드와 비동기 처리가 상세히 추가되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/8e8a276_plugins__mods__test.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/scheduled-tasks\" target=\"_blank\">Scheduled Tasks</a>",
+        "summary": "일정 관리 스케줄러 비활성화 시 사용 가능한 도구(CronList, CronDelete)에 대한 동작 설명이 구체화되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/8e8a276_scheduled-tasks.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/self-hosted-environments-deploy\" target=\"_blank\">Self Hosted Environments Deploy</a>",
+        "summary": "원격 저장소 브랜치 오류 관련 트러블슈팅 가이드가 개선되어 에러 메시지와 해결 방법이 더 명확하게 업데이트되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/8e8a276_self-hosted-environments-deploy.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/self-hosted-environments-reference\" target=\"_blank\">Self Hosted Environments Reference</a>",
+        "summary": "세션 갱신 거부 경고 메시지를 비활성화하는 새로운 환경 변수(CLAUDE_RUNNER_DISABLE_RENEWAL_WARNING)가 추가되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/8e8a276_self-hosted-environments-reference.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/settings-reference\" target=\"_blank\">Settings Reference</a>",
+        "summary": "원격 SSH 및 WSL 세션의 HTML 미리보기에서 스크립트 실행을 차단하는 새 설정인 disableRemotePreviewScripts가 추가되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/8e8a276_settings-reference.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/skills\" target=\"_blank\">Skills</a>",
+        "summary": "새로운 `latency-optimize` 스킬이 추가되어 API 응답 지연 시간을 분석하고 최적화 방안을 제안하는 기능이 도입되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/8e8a276_skills.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/vs-code\" target=\"_blank\">Vs Code</a>",
+        "summary": "계획 모드 중단 안내 메시지와 새로운 음성 받아쓰기 단축키(Cmd/Ctrl+D)가 추가되어 기능 활용도가 향상되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/8e8a276_vs-code.txt"
+      }
+    ]
+  },
+  {
     "date": "2026-11-11T15:07:06Z",
     "commit_hash": "5e1073c",
     "entries": [
