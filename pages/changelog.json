@@ -1,5 +1,193 @@
 [
   {
+    "date": "2026-11-13T15:07:08Z",
+    "commit_hash": "304501d",
+    "entries": [
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/agent-sdk__session-storage\" target=\"_blank\">Agent Sdk__Session Storage</a>",
+        "summary": "세션 스토리지의 미러 쓰기 실패 시 uuid가 없는 항목을 유지하도록 처리 방식이 구체화되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/304501d_agent-sdk__session-storage.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/amazon-bedrock\" target=\"_blank\">Amazon Bedrock</a>",
+        "summary": "Amazon Bedrock 모델 비활성화 시 자동 전환 동작과 에러 대응 방법이 업데이트되었으며, Mantle 관련 안내가 보완되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/304501d_amazon-bedrock.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/claude-apps-gateway-config\" target=\"_blank\">Claude Apps Gateway Config</a>",
+        "summary": "Microsoft Foundry RBAC 역할 이름이 변경되고, fable 별칭 설정 가이드 및 관리형 정책의 병합 규칙 설명이 보완되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/304501d_claude-apps-gateway-config.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/claude-apps-gateway-deploy\" target=\"_blank\">Claude Apps Gateway Deploy</a>",
+        "summary": "Musl 기반 이미지의 동적 종속성 설명이 musl 라이브러리만을 명시하도록 수정되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/304501d_claude-apps-gateway-deploy.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/claude-apps-gateway\" target=\"_blank\">Claude Apps Gateway</a>",
+        "summary": "게이트웨이 로그인 시 사설망 주소 요구사항 설명이 간소화되었고, 프록시 환경에서의 설정 가이드가 추가되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/304501d_claude-apps-gateway.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/claude-projects\" target=\"_blank\">Claude Projects</a>",
+        "summary": "원격 제어 및 권한 모드 설정과 관련된 새로운 명령어 옵션 설명이 추가되어 다양한 모드 실행이 가능해졌습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/304501d_claude-projects.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/commands\" target=\"_blank\">Commands</a>",
+        "summary": "문서에서 `/verify`와 `/deep-research` 명령어 관련 설명이 제거되어 명령어 목록 및 기능 안내가 간소화되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/304501d_commands.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/desktop-linux\" target=\"_blank\">Desktop Linux</a>",
+        "summary": "Linux 데스크톱 앱의 API 키 인증 방식에 대한 문서 링크가 서드파티 통합 문서(3P) 참조로 변경되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/304501d_desktop-linux.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/desktop-scheduled-tasks\" target=\"_blank\">Desktop Scheduled Tasks</a>",
+        "summary": "예약 작업 설정 문서가 업데이트되어 관리자 설정 모델 및 실행 모델 확인 방법이 추가되었고, SKILL.md 파일 설명에서 모델 항목이 제외되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/304501d_desktop-scheduled-tasks.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/errors\" target=\"_blank\">Errors</a>",
+        "summary": "OAuth 인증 오류 및 원격 제어 관련 설정 파일 에러 메시지가 추가되었으며, 관련 예외 처리 문서가 보완되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/304501d_errors.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/gateways\" target=\"_blank\">Gateways</a>",
+        "summary": "사내 HTTP 프록시 및 게이트웨이 연결 관련 설명과 요구사항이 더 명확하게 수정되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/304501d_gateways.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/google-vertex-ai\" target=\"_blank\">Google Vertex Ai</a>",
+        "summary": "모델이 세션 중간에 비활성화되거나 거부될 때의 동작과 폴백 메커니즘, 오류 방지 설정에 대한 설명이 업데이트되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/304501d_google-vertex-ai.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/hooks-guide\" target=\"_blank\">Hooks Guide</a>",
+        "summary": "Prettier 명령어에 --ignore-unknown 옵션을 추가하고 변수 처리 방식을 개선하여 파일 포맷팅 안정성을 높였습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/304501d_hooks-guide.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/hooks\" target=\"_blank\">Hooks</a>",
+        "summary": "관리형 설정의 제한 범위 수정, ConfigChange 훅 실행 예외 조건 문서화 및 WorktreeCreate 훅의 명령어 안정성이 개선되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/304501d_hooks.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/keybindings\" target=\"_blank\">Keybindings</a>",
+        "summary": "ctrl+x 기반의 채팅 기본 단축키 목록과 해제 설정 예시에 새로운 키 조합들이 추가되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/304501d_keybindings.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/llm-gateway-connect\" target=\"_blank\">Llm Gateway Connect</a>",
+        "summary": "게이트웨이 환경에서의 인증 충돌 설명이 수정되었고, /feedback 명령어 사용 시 로컬 파일 저장 관련 트러블슈팅 항목이 추가되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/304501d_llm-gateway-connect.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/microsoft-foundry\" target=\"_blank\">Microsoft Foundry</a>",
+        "summary": "Microsoft Foundry RBAC 설정 가이드가 최신 인증 방식과 역할 이름 변경 사항을 반영하여 업데이트되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/304501d_microsoft-foundry.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/model-config\" target=\"_blank\">Model Config</a>",
+        "summary": "관리형 플러그인 로드 실패 시 모델 전환 동작이 변경되었으며, 관련 오류 확인 및 문제 해결 방법 문서가 보완되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/304501d_model-config.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/permission-modes\" target=\"_blank\">Permission Modes</a>",
+        "summary": "플랜 모드 종료 시 승인 프롬프트 상태에 따른 정확한 키 조작 방법(Esc 키 우선 사용 등)이 상세히 안내되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/304501d_permission-modes.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/plugins__mods__overview\" target=\"_blank\">Plugins__Mods__Overview</a>",
+        "summary": "내장 모드(Built-in mods) 문서 내용이 일부 수정 및 보완되어 사용자 안내가 명확해졌습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/304501d_plugins__mods__overview.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/plugins__mods__test\" target=\"_blank\">Plugins__Mods__Test</a>",
+        "summary": "단언문(assertion) 상세 목록이 제거되고 타입 정의 파일 참조 및 비동기 단언문 사용법으로 대체되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/304501d_plugins__mods__test.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/remote-control\" target=\"_blank\">Remote Control</a>",
+        "summary": "원격 제어 서버에 JSON 설정 파일을 적용하는 --settings 옵션이 추가되었으며, 전역 플래그 전달 관련 안내가 업데이트되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/304501d_remote-control.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/sandboxing\" target=\"_blank\">Sandboxing</a>",
+        "summary": "Linux/WSL2 환경의 샌드박스 경로 설정 주의사항이 추가되고 파일 시스템 격제 해제 조건 문구가 간결하게 수정되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/304501d_sandboxing.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/settings-reference\" target=\"_blank\">Settings Reference</a>",
+        "summary": "서브에이전트 상태 표시줄 관련 설정(subagentStatusLine)이 문서에서 완전히 제거되었으며, 관련 참조 내용이 정비되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/304501d_settings-reference.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/setup\" target=\"_blank\">Setup</a>",
+        "summary": "Alpine Linux 설치 가이드가 간소화되어 ripgrep 및 환경 변수 설정 과정이 제거되고 필수 패키지가 조정되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/304501d_setup.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/troubleshoot-install\" target=\"_blank\">Troubleshoot Install</a>",
+        "summary": "Linux musl 및 glibc 바이너리 불일치 트러블슈팅 가이드의 오류 메시지와 해결 방법이 최신 환경에 맞게 수정되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/304501d_troubleshoot-install.txt"
+      }
+    ]
+  },
+  {
     "date": "2026-11-12T15:07:32Z",
     "commit_hash": "8e8a276",
     "entries": [
