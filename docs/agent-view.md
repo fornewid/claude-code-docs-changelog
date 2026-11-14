@@ -8,7 +8,7 @@
 
 Agent view, opened with `claude agents`, is one screen for all your background sessions: what's running, what needs your input, and what's done. Dispatch new sessions, watch their state at a glance instead of scrolling through transcripts, and step in only when one needs you. Each background session is a full Claude Code conversation that keeps running without a terminal attached, so you can open it, reply, and leave whenever you want.
 
-![Agent view in a terminal. A line at the top counts the sessions awaiting input, working, and completed. Four sessions are grouped under Needs input, Working, and Completed. Each row shows the session's name, its latest status or question, and a time. At the bottom are an input for describing a new task and a row of keyboard hints.](https://mintcdn.com/claude-code/HDAmBwgbrZVk0pOt/images/agent-view-light.png?fit=max\&auto=format\&n=HDAmBwgbrZVk0pOt\&q=85\&s=d6905012bee31f3e6b3920b09c05dd02)
+![Agent view in a terminal. A line at the top counts the sessions awaiting input, working, and completed. Four sessions are grouped under Needs input, Working, and Completed. Each row shows the session's name, its latest status or question, and a time. At the bottom are an input for describing a new task and a row of keyboard hints.](https://mintcdn.com/claude-code/v_J840yKc6uuKDX_/images/agent-view-light.png?fit=max\&auto=format\&n=v_J840yKc6uuKDX_\&q=85\&s=bd95fda83ea66ca8b2e0e7b68f8cb29e)
 
 Use agent view when you have several independent tasks Claude can work on without you watching every step. Dispatch a bug fix, a pull request review, and a flaky-test investigation as three rows, keep working in another window, and check back when a row shows it needs you or has a result.
 
@@ -144,7 +144,7 @@ Separately, the icon's shape has its own meaning:
 | Shape | What it means |
 | :- | :- |
 | `✻` or animated `✽` | The session process is running, or the session needs your input |
-| `∙` | The process has exited. You can still peek at the row, and when you reply or attach, Claude restarts it from its saved conversation |
+| `∙` | The process has exited. You can still peek at the row, and when you reply or press `Enter`, Claude restarts it from its saved conversation |
 | `✢` | A [`/loop`](https://code.claude.com/docs/en/scheduled-tasks) session sleeping between iterations. The row shows its run count and a countdown |
 
 The `#N` or `!N` label that can appear at the right edge of a row is a link to the session's [pull request or merge request](#pull-request-status), not part of the state icon.
@@ -316,7 +316,7 @@ Within a group:
 * Press `Enter` on a group header to collapse it, except while a [filter](#filter-sessions) is active, when every group stays expanded
 * Press `Ctrl+X` to stop a session and `Ctrl+X` again within two seconds to delete it from the list, or `Esc` to dismiss the confirmation without deleting. The second press deletes the session even when the stop attempt fails, for example because the [background service isn't responding](#agent-view-says-the-background-service-did-not-respond). In that case the confirmation stays active for another two seconds, and the delete ends the session's process itself
 
-Pressing `Ctrl+X` on a group header deletes every session in that group after confirmation. Except in the kept cases covered in [What deleting a session removes](#what-deleting-a-session-removes), deleting removes the session from the list. A worktree Claude created for it is removed, kept, or left in place depending on how you delete and what the worktree holds. The conversation transcript stays on your local machine, available through `claude --resume`.
+Press `Ctrl+X` on a group header to delete every session in that group after confirmation, except any that Claude Code [refuses to delete](#delete-a-session-after-claude-code-refuses). See [What deleting a session removes](#what-deleting-a-session-removes) for what happens to each session's worktree. The conversation transcript stays on your local machine, available through `claude --resume`.
 
 Completed sessions that don't fit on screen fold into a `… N more` row. The `Completed` group fills the vertical space left after the live groups. On a short terminal, the header compacts to a single summary line so sessions that are working or need input stay visible.
 
@@ -375,7 +375,8 @@ Press `?` in agent view to see shortcuts in context. The table below summarizes 
 | `Ctrl+J` | Insert a newline in the dispatch input |
 | `Ctrl+X` | Stop the session; press again within two seconds to delete it |
 | `Shift+↑` / `Shift+↓` | Reorder the selected session |
-| `Esc` | Close the peek panel, clear the input, or exit. When you opened agent view by backgrounding your session with `←`, the final `Esc` returns to that conversation instead of exiting. With [vim editor mode](https://code.claude.com/docs/en/interactive-mode.md#vim-editor-mode) on, pressing `Esc` in the input switches from INSERT to NORMAL mode and keeps your text, as in the main prompt |
+| `Esc` | Close the peek panel, clear the input, or exit. On Claude Code v2.1.323 or later, clearing a prompt takes two presses. When you opened agent view by backgrounding your session with `←`, the final `Esc` returns to that conversation instead of exiting. With [vim editor mode](https://code.claude.com/docs/en/interactive-mode.md#vim-editor-mode) on, pressing `Esc` in the input switches from INSERT to NORMAL mode and keeps your text, as in the main prompt |
+| `Ctrl+Y` | In the dispatch input, restore the text you last cleared, or removed with `Ctrl+K`, `Ctrl+U`, or `Ctrl+W`. When agent view exits, that text is gone |
 | `Ctrl+C` | Clear the input; press twice to exit. While text on screen is selected, the press clears the selection instead, copying it first unless [selecting already copied it](https://code.claude.com/docs/en/settings-reference.md#copyonselect) |
 | `?` | Show shortcuts |
 
@@ -481,7 +482,7 @@ Sessions started with launch flags the copy wouldn't inherit, such as a replaced
 
 When you background the session, each kind of in-flight background work either carries over to the background session, continues only when Claude relaunches it there, or stops:
 
-* **Carries over**: running background shell commands, backgrounded subagents, scheduled tasks you created with [`/loop`](https://code.claude.com/docs/en/scheduled-tasks), and Claude's [automatic replies to artifact comments](https://code.claude.com/docs/en/artifacts.md#let-claude-reply-to-comments-on-its-own) keep running in the background session. A subagent moves together with everything it started, so it carries over only when all of that work can move too.
+* **Carries over**: running background shell commands, backgrounded subagents, and scheduled tasks you created with [`/loop`](https://code.claude.com/docs/en/scheduled-tasks) keep running in the background session. A subagent moves together with everything it started, so it carries over only when all of that work can move too.
 * **Continues only when Claude relaunches it**: a running [dynamic workflow](https://code.claude.com/docs/en/workflows.md). If the workflow hasn't continued when you check on the background session, [ask Claude to relaunch it](#dynamic-workflows-when-you-background).
 * **Stops**: work that can't move to the background session, such as a running [monitor](https://code.claude.com/docs/en/tools-reference.md#monitor-tool). When any such work is running, Claude Code shows the `Background this session?` dialog so you can confirm before it stops the work. A backgrounded subagent that owns a monitor stops along with the monitor.
 
@@ -622,48 +623,37 @@ Whatever the task, Claude ends the job with a report saying what it did and wher
 
 #### What deleting a session removes
 
-Delete a session with `Ctrl+X` twice in [agent view](#organize-the-list) or with [`claude rm`](#manage-sessions-from-the-shell). Except in the kept cases below, the session leaves the list. Its transcript stays on your machine through `claude --resume`, and the removal survives supervisor restarts.
+Delete a session with `Ctrl+X` twice in [agent view](#organize-the-list) or with [`claude rm`](#manage-sessions-from-the-shell). The session disappears from the list, unless Claude Code [refuses to delete it](#delete-a-session-after-claude-code-refuses). Its transcript stays on your machine, available through `claude --resume`.
 
 What happens to a worktree Claude created for the session:
 
 * Agent view removes it, including uncommitted changes, so commit what you want to keep first.
 * `claude rm` keeps it, along with the session row, when it has uncommitted changes.
-* Neither agent view nor `claude rm` removes a worktree that another running session is using or has locked, and deleting again doesn't change that. Claude Code keeps the worktree and the session, and names the kept directory and the reason; in agent view, the session's row shows `not deleted`. Close the other session, then delete again.
-* When you delete a session whose worktree has commits that Claude Code can't confirm are saved elsewhere, Claude Code keeps the worktree and the session, and the message names the worktree's branch and how many commits are unpushed. The message also offers the two ways forward: push the commits, or delete again to discard them.
 
-  Commits on a remote don't block the delete. Neither do commits on the local copy of your `origin` remote's default branch, as long as that branch is checked out in your main checkout, the repository directory itself rather than a worktree.
+One reason Claude Code refuses to delete a session is [unpushed commits in its worktree](https://code.claude.com/docs/en/errors.md#worktree-has-commits-that-are-not-pushed-anywhere). To keep those commits, push them before you delete the session.
 
-  After that refusal, you choose:
+Some worktrees stay on disk, whether you use agent view or `claude rm`:
 
-  * To keep the commits, push them, or merge them into that default branch, then delete the session again.
-  * To discard them, delete the session again without pushing: press `Ctrl+X` twice on its row in agent view, or run the `claude rm <id> --discard-unpushed` command the refusal printed. This removes the session and the worktree along with its branch, discarding the unpushed commits and any uncommitted changes.
+* If you created a worktree yourself and started the session from inside it, the worktree stays on disk for you to keep or remove.
+* If a worktree directory Claude created inside your repository no longer has its `.git` file, the directory stays on disk for you to remove. The worktree's branch stays in the repository, so you keep the commits on that branch.
 
-  When you delete again, Claude Code discards only what the refusal showed: if the worktree has gained a commit since, Claude Code keeps it again and shows the updated state.
+##### Delete a session after Claude Code refuses
 
-  When another finished session's records also name the worktree, it stays when you delete again; push the commits, then delete again.
-* A worktree git no longer recognizes, for example after `git worktree prune`, doesn't block the delete. Claude Code deletes the session and leaves the directory on disk.
-* When git or your [`WorktreeRemove` hook](https://code.claude.com/docs/en/hooks#worktreeremove) fails to remove the worktree, Claude Code keeps the worktree and the session, and the message names the cause. For a hook, the message says how it ended, such as `exited 1`, and quotes the start of its stderr. The message also tells you which of these to do next:
+When Claude Code refuses to delete a session because of its worktree, follow the message it shows. If the message names unpushed commits, see [Worktree has commits that are not pushed anywhere](https://code.claude.com/docs/en/errors.md#worktree-has-commits-that-are-not-pushed-anywhere).
 
-  * Delete the session again to remove the directory anyway, by pressing `Ctrl+X` twice on its row in agent view or running the `claude rm <id> --force-remove-worktree <worktree-id>` command that the `claude rm` refusal printed. The worktree's branch stays in the repository.
+##### Resolve a `Worktree not removed` message
 
-    Claude Code offers this only when it can confirm all of the following:
+A `Worktree not removed` message means Claude Code or your [`WorktreeRemove` hook](https://code.claude.com/docs/en/hooks#worktreeremove) didn't finish removing the session's worktree. Push any commits and copy out any files you want to keep, then follow the message.
 
-    * The directory is one of the repository's linked worktrees under `.claude/worktrees/`
-    * Neither the worktree nor a checked-out submodule has uncommitted changes to tracked files
-    * No other session's record names it
+##### Resolve a `files that weren't checked against a repository` message
 
-    When Claude Code can't verify a submodule checkout's state, such as one replaced by a separate git repository, it doesn't offer this either.
-  * Fix what stands in the way, such as committing or stashing the uncommitted changes, moving a separate git repository out of the worktree, closing whatever is using the directory, or fixing the hook, then delete the session again.
-  * Remove the directory yourself, then delete the session again.
+This message from `claude rm` means files remain in a worktree directory that isn't inside any git repository or that a [`WorktreeCreate` hook](https://code.claude.com/docs/en/hooks#worktreecreate) manages. Copy out any files you want to keep, then take the step for your case:
 
-A worktree you created yourself and started the session inside is left in place either way.
-
-A session whose worktree directory belongs to no git repository, because the repository was deleted or a [`WorktreeCreate` hook](https://code.claude.com/docs/en/hooks#worktreecreate) created the directory elsewhere, can still be deleted. While files remain in the directory:
-
-* Agent view asks for the same `Ctrl+X` double-press before discarding them. For a hook-created directory it runs your [`WorktreeRemove` hook](https://code.claude.com/docs/en/hooks#worktreeremove) instead, and without one it refuses the delete and keeps the session.
-* `claude rm` keeps the session and worktree, and names the reason.
-
-Either path keeps a directory that another finished session's records name.
+| Your case | What to do |
+| :- | :- |
+| No `WorktreeCreate` hook manages the directory | To discard the files, press `Ctrl+X` twice on the session's row in agent view. Or remove the directory yourself, then run `claude rm <id>` again |
+| A `WorktreeCreate` hook manages the directory, and you have a [`WorktreeRemove` hook](https://code.claude.com/docs/en/hooks#worktreeremove) | To try removing the directory with your hook, press `Ctrl+X` twice on the session's row in agent view. Or remove the directory yourself, then run `claude rm <id>` again |
+| A `WorktreeCreate` hook manages the directory, and you have no `WorktreeRemove` hook | Remove the directory yourself, then run `claude rm <id>` again |
 
 ### Set the model, effort, and fast mode
 
@@ -774,7 +764,7 @@ Agent view accepts the same configuration flags as `claude` for loading settings
 | [`--add-dir <path>`](https://code.claude.com/docs/en/permissions#additional-directories-grant-file-access-not-configuration) | Grant file access to an additional directory |
 | [`--plugin-dir <path>`](https://code.claude.com/docs/en/plugins/create#load-a-directory-or-archive-for-one-session) | Load a plugin from a local directory |
 | [`--mcp-config <file-or-json>`](https://code.claude.com/docs/en/mcp) | Load MCP servers from a config file or JSON string |
-| `--strict-mcp-config` | Use only the MCP servers from `--mcp-config`, ignoring other MCP configuration. See [Exclusive control with managed-mcp.json](https://code.claude.com/docs/en/managed-mcp.md#exclusive-control-with-managed-mcp-json) for what the flag does under a managed MCP file |
+| `--strict-mcp-config` | Skip the MCP servers configured in places such as `.mcp.json`, and load the ones you pass with `--mcp-config`. See [Exclusive control with managed-mcp.json](https://code.claude.com/docs/en/managed-mcp.md#exclusive-control-with-managed-mcp-json) for what the flag does under a managed MCP file |
 
 Repeat `--add-dir`, `--plugin-dir`, or `--mcp-config` once per value. `claude agents` doesn't support the space-separated form, such as `--add-dir a b c`.
 
@@ -802,9 +792,9 @@ Every background session has a short ID you can use from the shell. The ID is pr
 | `claude stop <id>` | Stop a session. Also accepts `claude kill` |
 | `claude respawn <id>` | Restart a session, running or stopped, for example to pick up an updated Claude Code binary. A session that has a saved conversation resumes it |
 | `claude respawn --all` | Restart every running session, e.g. to move all sessions onto an updated Claude Code binary at once |
-| `claude rm <id>` | Remove a session from the list, along with a worktree Claude created for it when that's safe to delete; see [What deleting a session removes](#what-deleting-a-session-removes). The conversation transcript stays on your local machine and remains available through `claude --resume` |
-| `claude rm <id> --discard-unpushed <commit>@<worktree-id>` | Delete a session whose delete was refused over unpushed commits, discarding the worktree along with its branch and commits. Pass the exact value that refusal printed; see [What deleting a session removes](#what-deleting-a-session-removes). Requires v2.1.260 or later |
-| `claude rm <id> --force-remove-worktree <worktree-id>` | Delete a session whose delete was refused because git or the `WorktreeRemove` hook couldn't remove its worktree, deleting the worktree directory anyway and leaving its branch in the repository. Pass the exact value that refusal printed; see [What deleting a session removes](#what-deleting-a-session-removes). Requires v2.1.268 or later |
+| `claude rm <id>` | Remove a session from the list, along with a worktree Claude created for it when that's safe to delete. If Claude Code refuses to delete the session because of its worktree, see [Delete a session after Claude Code refuses](#delete-a-session-after-claude-code-refuses). The conversation transcript stays on your local machine and remains available through `claude --resume` |
+| `claude rm <id> --discard-unpushed <commit>@<worktree-id>` | Try again to delete a session and discard its worktree, after Claude Code refused because of unpushed commits. Copy the command from the `claude rm` message that offers it; see [Worktree has commits that are not pushed anywhere](https://code.claude.com/docs/en/errors.md#worktree-has-commits-that-are-not-pushed-anywhere). Requires v2.1.260 or later |
+| `claude rm <id> --force-remove-worktree <worktree-id>` | Try again to delete a session and remove its worktree directory anyway, after Claude Code refused because it couldn't remove the worktree. Copy the command from the `claude rm` message that offers it; see [Resolve a `Worktree not removed` message](#resolve-a-worktree-not-removed-message). Requires v2.1.268 or later |
 | `claude daemon status` | Print the [supervisor's](#the-supervisor-process) state, version, socket directory, and worker count |
 | `claude daemon logs` | Follow the supervisor's log file, [`~/.claude/daemon.log`](#where-state-is-stored), printing new lines as they arrive until you press `Ctrl+C` |
 | `claude daemon stop --any` | Stop the supervisor process and the background sessions it hosts. Pass `--keep-workers` to leave background sessions running for [the next supervisor](#the-supervisor-process) to reconnect to. The next `claude agents` or `claude --bg` starts a fresh supervisor |
@@ -912,11 +902,11 @@ Before you dispatch your first session, agent view shows the empty section heade
 
 ### Backgrounding shows a `Background this session?` dialog
 
-When you press `←` to background a session, a `Background this session?` dialog means the session has in-flight background work that would stop, be interrupted, or keep running unattended:
+When you press `←` to background a session, a `Background this session?` dialog means the session has in-flight background work that would stop or be interrupted:
 
 * **Work that can't move**: the session has work that can't move to the background session, such as a running [monitor](https://code.claude.com/docs/en/tools-reference.md#monitor-tool). The dialog names the background work Claude Code would stop and, separately, counts the tasks that carry over.
 * **A workflow with running subagents**: a [dynamic workflow](https://code.claude.com/docs/en/workflows.md) still has subagents running. Those subagents stop if you background anyway, and the dialog says how many. They start over from the beginning when Claude [relaunches the workflow in the background session](#dynamic-workflows-when-you-background).
-* **Automatic artifact replies**: Claude is [replying to comments on an artifact on its own](https://code.claude.com/docs/en/artifacts.md#let-claude-reply-to-comments-on-its-own). Those replies continue in the background session, and the dialog says so.
+* **Automatic artifact replies**: Claude is [replying to comments on an artifact on its own](https://code.claude.com/docs/en/artifacts.md#let-claude-reply-to-comments-on-its-own). Those replies stop if you background anyway.
 
 Run `/tasks` to see everything that's running, then confirm to background anyway or choose `Stay` to let the work finish first. See [What carries over when you background](#what-carries-over-when-you-background) for which kinds of work carry over and which Claude Code stops.
 
@@ -935,18 +925,20 @@ The dispatch input expects a task description, not a conversational opener. A pr
 Shutting down or restarting your machine stops running background sessions. A session that was waiting on your input stays under `Needs input` when you come back. For any other running session, what agent view shows depends on how long ago it last made progress:
 
 * Within 48 hours, the session shows as failed. Attach or reply to it and it restarts from its saved conversation. To pick the interrupted work back up, send it a reply asking it to continue.
-* Past 48 hours, such as after the machine was off for days, the session shows as stopped with `ended while the background service was off`. Press `Enter` on the row and the footer shows `Press enter again to resume this session (it ended while the background service was off), or ctrl+x to delete it.` Press `Enter` on the same row again to resume its saved conversation. A reply, or `claude attach <id>`, resumes it without that footer prompt.
+* Past 48 hours, such as after the machine was off for days, the session shows as stopped with `ended while the background service was off`.
 
-When [transcript cleanup](https://code.claude.com/docs/en/settings-reference.md#cleanupperioddays) has removed a stopped session's saved conversation, Claude Code refuses to open the row: the message says there is nothing to resume. `claude rm <id>` deletes the row, except in the [kept cases](#what-deleting-a-session-removes) described above, and `claude respawn <id>` runs its original prompt again. See [This session's saved conversation is no longer on disk](https://code.claude.com/docs/en/errors.md#this-sessions-saved-conversation-is-no-longer-on-disk).
+  Press `Enter` on the row and the footer shows `Press enter again to resume this session (it ended while the background service was off), or ctrl+x to remove it.` Press `Enter` on the same row again to resume its saved conversation. A reply, or `claude attach <id>`, resumes it without that footer prompt.
+
+When [transcript cleanup](https://code.claude.com/docs/en/settings-reference.md#cleanupperioddays) has removed a stopped session's saved conversation, Claude Code refuses to open the row: the message says there is nothing to resume. `claude rm <id>` deletes the row, unless [Claude Code refuses](#what-deleting-a-session-removes), and `claude respawn <id>` runs its original prompt again. See [This session's saved conversation is no longer on disk](https://code.claude.com/docs/en/errors.md#this-sessions-saved-conversation-is-no-longer-on-disk).
 
 Sleep alone doesn't stop sessions. Sessions are preserved across sleep and the supervisor reconnects to them on wake.
 
 ### Opening a session says the conversation is already open
 
-Two processes can't write to the same transcript. When a stopped session's saved conversation is already open in another live Claude Code process, Claude Code refuses to start the session's own process. What you see depends on what holds the conversation:
+These messages mean another Claude Code process on this machine has the stopped session's saved conversation open, so agent view and `claude attach` won't open the session:
 
-* A terminal where you resumed the conversation, for example with `claude --resume` or `/resume`: the row shows `Open in a terminal` with a hint to continue it there, and opening the row shows `Can't open — this session is running in another terminal`. Continue in that terminal, or exit it and open the row again.
-* Another non-interactive Claude Code process, for example a background session process for the same conversation that hasn't exited yet: opening the row shows `This conversation is already open in another running Claude session`. Use that process, or wait for it to exit and open the row again.
+* `Can't open — this session is running in another terminal`: another process has the conversation open, such as a `claude -p` run or a terminal where you resumed it. Continue in that terminal, or exit that process or let it finish, then open the session again.
+* `This conversation is already open in another running Claude session`: another background session has the conversation open. Use that session, or stop it and open this session again.
 
 Claude Code saves a reply you typed with the refused attempt, except one prefixed with `!` or `/`, and sends it the next time the session starts.
 
@@ -971,9 +963,11 @@ Claude Code never restarts a row running a [shell command](#run-a-shell-command)
 
 When a background session's process exits before it finishes starting and the host is low on memory, the row's status names the exit and adds `possibly low memory — free some up and retry`.
 
-The note is a hypothesis, not a confirmed cause. Claude Code adds it only when the process exited silently, without writing an error and without being stopped by a signal, and the host reported low memory at that moment. When the process did write an error before exiting, the row shows that error instead.
+> [!NOTE]
+>
+> The note is a hypothesis, not a confirmed cause. Claude Code adds it only when the process exited silently, without writing an error and without being stopped by a signal, and the host reported low memory at that moment. When the process did write an error before exiting, the row shows that error instead.
 
-Free up memory on the machine, then attach or reply to the row and the supervisor starts a fresh process for the session. When memory stays low, the supervisor also [stops idle sessions](#the-supervisor-process) to free resources on its own, and stops idle pinned sessions too if stopping the others freed nothing.
+Free up memory on the host, then press `Enter` on the row, and press it again if [the footer asks](#opening-a-session-says-it-has-no-saved-transcript). The [supervisor](#the-supervisor-process) starts a new process for the session. When memory stays low, the supervisor also [stops idle sessions](#the-supervisor-process) to free resources on its own, and stops idle pinned sessions too if stopping the others freed nothing.
 
 ### Agent view says the background service did not respond
 
@@ -1034,9 +1028,9 @@ While the process starts, Claude Code shows the tail of the session's transcript
 
 ### `.claude/worktrees/` is filling up
 
-Deleting a session in agent view removes the worktree Claude created for it, but [some deletes keep the worktree or leave its directory on disk](#what-deleting-a-session-removes), so leftover directories can accumulate. Directories git no longer recognizes don't appear in `git worktree list`, so remove those by hand.
+Deleting a session in agent view removes the worktree Claude created for it, but [some worktree directories stay on disk](#what-deleting-a-session-removes). Directories git no longer recognizes don't appear in `git worktree list`, so remove those yourself.
 
-List leftover entries with `git worktree list` in the project directory and remove each with `git worktree remove <path>`. See [Clean up worktrees](https://code.claude.com/docs/en/worktrees.md#clean-up-worktrees).
+List leftover entries with `git worktree list` in the project directory and remove each with `git worktree remove <path>`. If git refuses, see [Clean up subagent and background-session worktrees](https://code.claude.com/docs/en/worktrees.md#clean-up-subagent-and-background-session-worktrees).
 
 ## Limitations
 
@@ -1044,7 +1038,7 @@ Agent view is in research preview with the following limitations:
 
 * **Rate limits apply**: background sessions consume your subscription usage the same as interactive sessions, so running ten agents in parallel uses quota roughly ten times as fast as running one.
 * **Sessions are local**: background sessions run on your machine. They are preserved across sleep but stop if the machine shuts down.
-* **Claude-created worktrees are deleted with the session in agent view**: commit changes before deleting a session that edited files in its own worktree. [Some deletes keep the worktree instead](#what-deleting-a-session-removes).
+* **Claude-created worktrees are deleted with the session in agent view**: commit changes before deleting a session that edited files in its own worktree. [Some worktrees stay on disk](#what-deleting-a-session-removes).
 
 ## Related resources
 
@@ -1062,6 +1056,7 @@ Agent view has evolved quickly during research preview. If you are on an older C
 
 | Version | Change |
 | - | - |
+| v2.1.323 | In agent view's input, [`Ctrl+Y`](#keyboard-shortcuts) restores cleared text. |
 | v2.1.299 | [`/effort` and `/fast` in the dispatch input](#set-the-model-effort-and-fast-mode) set the effort level and fast mode for the sessions you dispatch next. `/model`, `/effort`, or `/fast` typed with no value opens a picker. |
 | v2.1.299 | Claude Code [reads `--bg` and `--background` as the flag](#from-your-shell) only before any bare `--` separator and outside another flag's value, and refuses an ambiguous position instead of guessing. Before this release, a prompt or reply of `--bg` or `--background` to a background session could be taken for the flag. That could start new background sessions over and over instead of delivering the text. |
 | v2.1.296 | A prompt or `!` shell command that you enter [as the session moves to the background](#switch-sessions-without-leaving-the-terminal) is stopped or left unsent, and its text is kept in prompt history. Before this release, the response or command kept running where you could no longer see it, and a prompt sent right after `←` could run a second time unseen. A prompt typed while `SessionStart` hooks were still running was lost: not sent, and not in prompt history. |
@@ -1109,7 +1104,7 @@ Agent view has evolved quickly during research preview. If you are on an older C
 | v2.1.246 | `/fork` [copies the full conversation](#copy-the-session-with-%2Ffork) from a session that itself started as a copy and hasn't recorded a new prompt since: a `/fork` copy you attached to, a session reattached after `←` or `/background` moved it to the background, or a session started with `claude --resume <id> --fork-session`. Before this release, if you ran `/fork` in such a session before sending it a new prompt, Claude Code printed the normal confirmation but started the copy with an empty conversation. Moving such a session to the background with `←` or `/background` lost the conversation the same way. |
 | v2.1.246 | When you open a session you just dispatched while its worker process is still starting, such as by pressing `Enter` on its row, Claude Code waits for the process and then attaches. Before this release, if you pressed `Enter` while the process was still starting, Claude Code could stop the session with [`Session <id> was stopped while the respawn was in flight`](https://code.claude.com/docs/en/errors#session-was-stopped-while-the-respawn-was-in-flight). |
 | v2.1.246 | When you [background](#from-inside-a-session) a named session, Claude Code lists it once, and when you background the same conversation again, it numbers the new row's name, such as `my-session (2)`, with the existing row keeping its name. Before this release, the terminal you pressed `←` in could appear in `claude agents --json` as a second session under the same name, and if you backgrounded the same conversation again, Claude Code added another row under the identical name. |
-| v2.1.239 | With [vim editor mode](https://code.claude.com/docs/en/interactive-mode.md#vim-editor-mode) on, pressing `Esc` in agent view's input switches from INSERT to NORMAL mode and keeps your text, matching the main prompt; in NORMAL mode with text still in the input, pressing `Esc` clears it, and pressing `Esc` on an empty input exits, as the [`Esc` shortcut](#keyboard-shortcuts) describes. Before this release, `Esc` cleared the input. |
+| v2.1.239 | With [vim editor mode](https://code.claude.com/docs/en/interactive-mode.md#vim-editor-mode) on, pressing `Esc` in agent view's input switches from INSERT to NORMAL mode and keeps your text, matching the main prompt. Before this release, `Esc` cleared the input. |
 | v2.1.233 | For a session linked to a GitLab merge request, Claude Code writes the row's label in GitLab's `!1234` reference syntax. You can also paste the merge request's URL into the [dispatch input](#filter-sessions) to select that session. Before this release, the label rendered as `#1234`, and a pasted merge request URL matched a session only when its first prompt contained the URL. |
 | v2.1.227 | [Deleting a session](#what-deleting-a-session-removes) keeps the session and its worktree while another live Claude Code session is running inside that worktree directory. Agent view shows `not deleted` on the row and the reason in the footer, and `claude rm` prints `kept <id>` with the reason, which names the other session's process ID. Before this release, deleting the session removed the worktree while the other session was still working in it. |
 | v2.1.225 | `claude agents` in a directory you haven't trusted shows the same [workspace trust dialog](https://code.claude.com/docs/en/permissions.md#project-allow-rules-and-workspace-trust) that `claude` shows on startup, before agent view opens. Accepting saves trust for that workspace; declining exits without opening agent view. Before this release, `claude agents` opened without asking, so sessions you dispatched from it ran in a directory you'd never been asked to trust. With the list grouped by directory, hovering the mouse over a row highlights it without changing the [dispatch target](#dispatch-to-a-specific-directory); selecting a row with the arrow keys or a click still changes the target. Before this release, moving the mouse over a session in another project silently changed the directory the next dispatched session started in. |

@@ -133,6 +133,7 @@ Select a deployment option to view setup instructions:
 * [Claude apps gateway](https://code.claude.com/docs/en/claude-apps-gateway), a self-hosted gateway that adds IdP sign-in in front of Amazon Bedrock, Claude Platform on AWS, Google Cloud's Agent Platform, Microsoft Foundry, or the Anthropic API
 * [Amazon Bedrock](https://code.claude.com/docs/en/amazon-bedrock.md)
 * [Claude Platform on AWS](https://code.claude.com/docs/en/claude-platform-on-aws.md)
+* [Claude Models on Google Cloud (Anthropic managed)](https://code.claude.com/docs/en/claude-models-on-google-cloud-anthropic-managed.md)
 * [Google Cloud's Agent Platform](https://code.claude.com/docs/en/google-vertex-ai.md)
 * [Microsoft Foundry](https://code.claude.com/docs/en/microsoft-foundry.md)
 
@@ -172,6 +173,10 @@ If you deploy through [Amazon Bedrock](https://code.claude.com/docs/en/amazon-be
 Security teams can configure managed permissions for what Claude Code is and is not allowed to do, which cannot be overwritten by local configuration. [Learn more](https://code.claude.com/docs/en/security.md).
 
 To limit which of these deployment options a managed machine may use, set [`allowedProviders`](https://code.claude.com/docs/en/settings-reference#allowedproviders) in managed settings. For example, `["bedrock"]` allows Amazon Bedrock and nothing else; a Bedrock fleet that also enables the Mantle endpoint lists `"mantle"` too. The entry says which endpoint variables also need a managed `env` pin. Requires Claude Code v2.1.285 or later.
+
+> [!NOTE]
+>
+> With Desktop signed in to claude.ai, a Cowork session on the user's machine counts as [`"anthropic"`](https://code.claude.com/docs/en/settings-reference#allowedproviders). If you leave it out of this list in an MDM policy or managed settings file, that session is refused. With it in, sessions sent to Anthropic directly also pass this list.
 
 ### Use MCP for integrations
 

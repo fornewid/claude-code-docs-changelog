@@ -81,7 +81,7 @@ Unless a background command that the main conversation started is still running,
 The run waits for background work such as background commands, subagents and workflows, Monitor watches, and pending `/loop` wakeups:
 
 * **[Background commands](https://code.claude.com/docs/en/tools-reference.md#background-commands)**: for a command that the main conversation started, for example a dev server or a watch build, the run waits until the command exits or reaches its [time limit](https://code.claude.com/docs/en/tools-reference.md#time-limit-for-background-commands). Claude then takes one more turn with the outcome. While the command runs, the 10-minute cap doesn't end the wait.
-* **Background [subagents](https://code.claude.com/docs/en/sub-agents.md) and workflows**: the run stays open until that work completes, because its result is part of the final output.
+* **Background [subagents](https://code.claude.com/docs/en/sub-agents.md) and workflows**: the run stays open until each one finishes or the 10-minute cap ends the wait.
 * **[Monitor](https://code.claude.com/docs/en/tools-reference.md#monitor-tool) watches**: the run waits until the watch times out or the 10-minute cap ends the wait, whichever comes first. While it waits, Claude keeps responding to what the watch reports. By default, a watch times out five minutes after Claude starts it.
 * **Pending wakeups**: in a run whose prompt you passed as text rather than with `--input-format stream-json`, when Claude has scheduled a [self-paced `/loop` wakeup](https://code.claude.com/docs/en/scheduled-tasks#let-claude-choose-the-interval), the run waits for each wakeup to fire and runs its iteration until the [loop ends](https://code.claude.com/docs/en/scheduled-tasks.md#stop-a-loop), even past the 10-minute cap.
 
@@ -90,6 +90,12 @@ When stderr is a terminal and the run has waited five seconds, Claude Code print
 If the run reaches its [`--max-budget-usd`](https://code.claude.com/docs/en/cli-reference#cli-flags) cap, Claude Code stops the remaining background work instead of waiting.
 
 When background work starts another turn, the run prints each turn's result with the default `text` output and the last turn's result with `json` output. Before v2.1.295, the run printed only the last turn's result with `text` output too.
+
+#### Give a long subagent command more time
+
+When a subagent's long command [moves to the background](https://code.claude.com/docs/en/tools-reference.md#foreground-commands-that-move-to-the-background) at its timeout, a `claude -p` run can exit with code 0 before the command finishes.
+
+To raise the default timeout above the command's run time, set [`BASH_DEFAULT_TIMEOUT_MS`](https://code.claude.com/docs/en/env-vars), for example `BASH_DEFAULT_TIMEOUT_MS=300000 claude -p "<prompt>"` for five minutes. For a background subagent's command over 10 minutes, also raise the [10-minute cap](#background-tasks-at-exit).
 
 #### MCP work when a non-interactive run ends
 
@@ -333,9 +339,13 @@ claude -p "Apply the lint fixes" --permission-mode acceptEdits
 
 ### Turn off permission prompts in unattended runs
 
-Pass `--permission-prompts none` when nobody is available to answer permission prompts, for example in a scheduled job. The flag matters most when your run has a permission host: an Agent SDK app with a [`canUseTool` callback](https://code.claude.com/docs/en/agent-sdk/user-input), or an MCP tool you pass with [`--permission-prompt-tool`](https://code.claude.com/docs/en/cli-reference#cli-flags). Without the flag, your run waits for that host to answer each permission request.
+Pass `--permission-prompts none` when nobody is available to answer permission prompts, for example in a scheduled job. The flag matters most when your run has a permission host: an Agent SDK app with a [`canUseTool` callback](https://code.claude.com/docs/en/agent-sdk/user-input), or an MCP tool you pass with [`--permission-prompt-tool`](https://code.claude.com/docs/en/cli-reference#cli-flags). Without the flag or the [`permissions.denyInsteadOfPrompting`](https://code.claude.com/docs/en/settings-reference#permissions-denyinsteadofprompting) setting, your run waits for that host to answer each permission request.
 
 With the flag, your run doesn't consult the host or wait on it. Anything that would prompt is denied unless a `PermissionRequest` hook allows it, Claude is told that nobody can approve the request and not to retry it, and the run continues. In a `-p` run with no host, these requests are denied either way, and the flag also tells Claude not to retry them. Permission rules, [`PermissionRequest` hooks](https://code.claude.com/docs/en/hooks#permissionrequest), and the permission mode you set still decide every call first; Claude Code denies only the requests that nothing else resolves.
+
+> [!NOTE]
+>
+> The `--permission-prompts none` flag lasts for one run. To deny calls that would wait on a permission prompt in later runs too, set [`permissions.denyInsteadOfPrompting`](https://code.claude.com/docs/en/settings-reference#permissions-denyinsteadofprompting) to `true` in your user or managed settings.
 
 This example runs an unattended task in [auto mode](https://code.claude.com/docs/en/permission-modes.md#eliminate-prompts-with-auto-mode). The classifier reviews each action as usual, and Claude Code denies anything that would have fallen back to a prompt:
 
@@ -369,7 +379,7 @@ The `--allowedTools` flag uses [permission rule syntax](https://code.claude.com/
 > * User-invoked [skills](https://code.claude.com/docs/en/skills.md) and custom commands work. Include `/skill-name` in the prompt string and Claude Code expands it before running.
 > * Built-in commands that only run in the terminal interface, such as `/login`, aren't available.
 > * `/model`, `/effort`, `/fast`, `/color`, and `/rename` accept the value as an argument, for example `/model sonnet`, and `/mcp` with no argument prints a text summary of server status. These forms follow each command's [availability notes](https://code.claude.com/docs/en/commands.md#all-commands).
-> * To change a setting, pass `key=value` to `/config`, for example `/config thinking=false`.
+> * To change a setting, pass `key=value` to `/config`, for example `/config verbose=true`.
 > * `/output-style <style>` switches [output styles](https://code.claude.com/docs/en/output-styles.md) and `/output-style` alone lists them. Requires Claude Code v2.1.269 or later.
 
 ### Customize the system prompt
