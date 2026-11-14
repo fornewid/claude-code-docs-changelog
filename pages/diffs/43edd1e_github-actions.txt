@@ -1,0 +1,12 @@
+diff --git a/docs/github-actions.md b/docs/github-actions.md
+index b33b10d..aad019a 100644
+--- a/docs/github-actions.md
++++ b/docs/github-actions.md
+@@ -130,6 +130,7 @@ When you install the app, you grant the following permissions:
+ | Administration | Read |
+ | Checks | Read and write |
+ | Contents | Read and write |
++| Dependabot alerts | Read |
+ | Discussions | Read and write |
+ | Issues | Read and write |
+ | Members | Read |
