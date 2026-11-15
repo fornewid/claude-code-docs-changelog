@@ -18,7 +18,7 @@ How you authenticate determines which features Claude Code can reach. For a sing
 * **Anthropic Console**: you authenticate with an Anthropic API key or by [signing in to a Console account without one](https://code.claude.com/docs/en/authentication.md#sign-in-without-an-api-key)
 * **Amazon Bedrock**: you use Claude models from the Amazon Bedrock model catalog and set `CLAUDE_CODE_USE_BEDROCK`. The [Mantle endpoint](https://code.claude.com/docs/en/amazon-bedrock.md#use-the-mantle-endpoint) (`CLAUDE_CODE_USE_MANTLE`) is covered by this column
 * **Claude Platform on AWS**: you bought Claude through AWS Marketplace but call the Anthropic API, and set `CLAUDE_CODE_USE_ANTHROPIC_AWS`
-* **Google Cloud (Anthropic managed)**: you use Claude Models on Google Cloud (Anthropic managed). You reach the Anthropic-operated Claude API through your Google Cloud project. To tell the two Google Cloud offerings apart, see [Which offering are you using?](https://platform.claude.com/docs/en/build-with-claude/claude-models-on-google-cloud/overview#which-offering-are-you-using)
+* **Google Cloud (Anthropic managed)**: you use [Claude Models on Google Cloud (Anthropic managed)](https://code.claude.com/docs/en/claude-models-on-google-cloud-anthropic-managed.md) and set `CLAUDE_CODE_USE_ANTHROPIC_GOOGLE_CLOUD`. You reach the Anthropic-operated Claude API through your Google Cloud project. To tell the two Google Cloud offerings apart, see [Which offering are you using?](https://platform.claude.com/docs/en/build-with-claude/claude-models-on-google-cloud/overview#which-offering-are-you-using)
 * **Google Cloud (Google managed)**: Google-operated as part of Google Cloud's Agent Platform, formerly Vertex AI; you set `CLAUDE_CODE_USE_VERTEX` and use Claude Models on Google Cloud (Google managed)
 * **Microsoft Foundry**: Anthropic-operated; you set `CLAUDE_CODE_USE_FOUNDRY`
 
@@ -375,5 +375,5 @@ For which Claude models and context-window sizes are available per provider and 
 ## Related resources
 
 * [Enterprise deployment overview](https://code.claude.com/docs/en/third-party-integrations.md): compare authentication, billing, and regions across providers
-* Provider setup guides: [Amazon Bedrock](https://code.claude.com/docs/en/amazon-bedrock.md), [Claude Platform on AWS](https://code.claude.com/docs/en/claude-platform-on-aws.md), [Google Cloud's Agent Platform](https://code.claude.com/docs/en/google-vertex-ai.md), [Microsoft Foundry](https://code.claude.com/docs/en/microsoft-foundry.md)
+* Provider setup guides: [Amazon Bedrock](https://code.claude.com/docs/en/amazon-bedrock.md), [Claude Platform on AWS](https://code.claude.com/docs/en/claude-platform-on-aws.md), [Claude Models on Google Cloud (Anthropic managed)](https://code.claude.com/docs/en/claude-models-on-google-cloud-anthropic-managed.md), [Google Cloud's Agent Platform](https://code.claude.com/docs/en/google-vertex-ai.md), [Microsoft Foundry](https://code.claude.com/docs/en/microsoft-foundry.md)
 * [Platforms and integrations](https://code.claude.com/docs/en/platforms.md): where Claude Code runs, including the CLI, Desktop, IDE extensions, web, mobile, and CI/CD

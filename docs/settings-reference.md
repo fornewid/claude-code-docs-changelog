@@ -289,7 +289,7 @@ If your account requires the [usage-credits consent](https://code.claude.com/doc
 }
 ```
 
-The key has no effect on providers where the advisor [isn't available](https://code.claude.com/docs/en/advisor.md#requirements), such as Amazon Bedrock. On Claude Platform on AWS or [Claude Models on Google Cloud (Anthropic managed)](https://code.claude.com/docs/en/feature-availability.md#availability-by-model-provider), the key requires Claude Code v2.1.300 or later. `"fable"` requires [Fable access](https://code.claude.com/docs/en/advisor.md#choose-an-advisor-model).
+The key has no effect on providers where the advisor [isn't available](https://code.claude.com/docs/en/advisor.md#requirements), such as Amazon Bedrock. On Claude Platform on AWS or [Claude Models on Google Cloud (Anthropic managed)](https://code.claude.com/docs/en/claude-models-on-google-cloud-anthropic-managed.md), the key requires Claude Code v2.1.300 or later. `"fable"` requires [Fable access](https://code.claude.com/docs/en/advisor.md#choose-an-advisor-model).
 
 ### `alwaysThinkingEnabled`
 

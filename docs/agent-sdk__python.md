@@ -2429,7 +2429,7 @@ Synchronous hook output with control and decision fields.
 class SyncHookJSONOutput(TypedDict):
     # Control fields
     continue_: NotRequired[bool]  # Whether to proceed (default: True)
-    suppressOutput: NotRequired[bool]  # Hide stdout from transcript
+    suppressOutput: NotRequired[bool]  # Has no effect
     stopReason: NotRequired[str]  # Message when continue is False
 
     # Decision fields

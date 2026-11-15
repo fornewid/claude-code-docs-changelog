@@ -450,6 +450,10 @@ NotebookEdit refuses a notebook file that doesn't decode as UTF-8, under the [sa
 
 Permission rules use the `Edit(...)` path format. A rule like `Edit(notebooks/**)` covers NotebookEdit calls on files in that directory.
 
+### Replacing a cell clears its saved outputs in the file
+
+When NotebookEdit replaces a code cell, its execution count and saved outputs are cleared. To get the output back, re-run the cell and any cells that use the functions or variables it defines. See [Work with Jupyter notebooks](https://code.claude.com/docs/en/vs-code.md#work-with-jupyter-notebooks) for the VS Code workflow.
+
 ## PowerShell tool
 
 The PowerShell tool lets Claude run PowerShell commands natively. On Windows, this means commands run in PowerShell instead of routing through Git Bash. How the tool becomes available depends on your platform:
@@ -696,7 +700,7 @@ The search backend is not configurable. To search with a different provider, add
 
 > [!NOTE]
 >
-> WebSearch is available on the Claude API, [Claude Platform on AWS](https://code.claude.com/docs/en/claude-platform-on-aws.md), [Claude Models on Google Cloud (Anthropic managed)](https://code.claude.com/docs/en/feature-availability.md#availability-by-model-provider), and Microsoft Foundry. On Google Cloud's Agent Platform it works with Opus 4, Sonnet 4, Haiku 4.5, and later models. Amazon Bedrock doesn't expose the server-side web search tool.
+> WebSearch is available on the Claude API, [Claude Platform on AWS](https://code.claude.com/docs/en/claude-platform-on-aws.md), [Claude Models on Google Cloud (Anthropic managed)](https://code.claude.com/docs/en/claude-models-on-google-cloud-anthropic-managed.md), and Microsoft Foundry. On Google Cloud's Agent Platform it works with Opus 4, Sonnet 4, Haiku 4.5, and later models. Amazon Bedrock doesn't expose the server-side web search tool.
 
 ### Session search limit
 

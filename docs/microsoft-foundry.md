@@ -109,7 +109,9 @@ Set `ANTHROPIC_FOUNDRY_RESOURCE` to the resource name alone, such as `my-resourc
 
 > [!WARNING]
 >
-> Pin specific model versions for every deployment. Without pinning, model aliases such as `sonnet` and `opus` resolve to Claude Code's built-in default for Microsoft Foundry, which can lag the newest release and may not yet be available in your account. Microsoft Foundry has no startup model check, so requests fail when the default is unavailable. When you create Azure deployments, select a specific model version rather than "auto-update to latest."
+> Pin specific model versions for every deployment. Without pinning, model aliases such as `sonnet` and `opus` resolve to Claude Code's built-in default for Microsoft Foundry. That default can lag the newest release and may not yet be available in your account.
+>
+> When your resource has no deployment for the default, Claude Code switches to an older model or the request fails. A switch shows a message that starts with `Switched to <fallback> because <model> is not available`. When you create Azure deployments, select a specific model version rather than "auto-update to latest."
 
 Set the model variables to match the deployment names you created in step 1.
 

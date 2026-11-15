@@ -99,12 +99,16 @@ Use the Claude API model IDs that you want from [Models overview](https://platfo
 
 ## Claude Code features that aren't available
 
+With Claude Models on Google Cloud (Anthropic managed), the features you can't use include:
+
 * [Fast mode](https://code.claude.com/docs/en/fast-mode.md): you can't turn it on with `/fast` or the `fastMode` setting
 * [Remote Control](https://code.claude.com/docs/en/remote-control.md) and [cloud sessions](https://code.claude.com/docs/en/claude-code-on-the-web.md)
 * [MCP connectors from claude.ai](https://code.claude.com/docs/en/mcp.md#use-mcp-servers-from-claude-ai)
 * [Channels](https://code.claude.com/docs/en/channels.md)
 * The [`/design-sync` and `/import` commands](https://code.claude.com/docs/en/commands#all-commands)
 * [Server-managed settings](https://code.claude.com/docs/en/server-managed-settings.md). To enforce settings for your team, use [managed settings](https://code.claude.com/docs/en/managed-settings.md) on each machine instead
+
+To see other features that are unavailable or partially supported, select the **Google Cloud (Anthropic managed)** tab in the [feature availability summary](https://code.claude.com/docs/en/feature-availability.md#summary-by-provider).
 
 ## Troubleshooting
 
