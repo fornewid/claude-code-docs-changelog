@@ -1,5 +1,116 @@
 [
   {
+    "date": "2026-11-15T15:06:35Z",
+    "commit_hash": "3799b49",
+    "entries": [
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/changelog\" target=\"_blank\">Changelog</a>",
+        "summary": "Claude Code 보안 취약점 수정, MCP 서버 및 권한 관리 개선, 다양한 세션 및 UI 버그 수정 등 전반적인 안정성이 향상되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/3799b49_changelog.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/claude-models-on-google-cloud-anthropic-managed\" target=\"_blank\">Claude Models On Google Cloud Anthropic Managed</a>",
+        "summary": "Google Cloud 관리형 Claude 모델에서 사용할 수 없는 Claude Code 기능 목록에 대한 설명이 보완되고 추가 문서 링크가 제공되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/3799b49_claude-models-on-google-cloud-anthropic-managed.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/debug-your-config\" target=\"_blank\">Debug Your Config</a>",
+        "summary": "거부된 MCP 서버 승인 프롬프트를 다시 띄우는 명령어(claude mcp reset-project-choices)가 추가되어 디버깅 방법이 개선되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/3799b49_debug-your-config.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/env-vars\" target=\"_blank\">Env Vars</a>",
+        "summary": "CLAUDE_CODE_DISABLE_NONSTREAMING_FALLBACK 환경 변수 설명에서 스트리밍 요청 실패 시 재시도 계층 전파에 대한 내용이 간소화되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/3799b49_env-vars.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/errors\" target=\"_blank\">Errors</a>",
+        "summary": "오류 문서에 원격 제어, 네트워크 설정, 커스텀 CA 인증서, 플러그인 및 도구 관련 새로운 에러 메시지 케이스가 추가되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/3799b49_errors.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/feature-availability\" target=\"_blank\">Feature Availability</a>",
+        "summary": "Google Cloud(Anthropic managed) 인증 방식에 대한 설정 환경 변수(`CLAUDE_CODE_USE_ANTHROPIC_GOOGLE_CLOUD`)와 관련 가이드 문서 링크가 추가되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/3799b49_feature-availability.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/hooks\" target=\"_blank\">Hooks</a>",
+        "summary": "훅(Hook) 문서 내 명령어 예시, 에러 처리 설명, 설정 필드 동작 방식 등이 최신 명세에 맞게 전반적으로 수정 및 보완되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/3799b49_hooks.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/interactive-mode\" target=\"_blank\">Interactive Mode</a>",
+        "summary": "보이지 않는 유니코드 문자 제거 시 안내 메시지와 전송 동작 방식이 구체화되어 사용자 혼란을 줄이고 검토 과정을 명확히 했습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/3799b49_interactive-mode.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/mcp-quickstart\" target=\"_blank\">Mcp Quickstart</a>",
+        "summary": "프로젝트 범위 서버 승인 프롬프트 초기화 명령어가 변경되어, 거부 후 재설정 방법이 더 명확해졌습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/3799b49_mcp-quickstart.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/microsoft-foundry\" target=\"_blank\">Microsoft Foundry</a>",
+        "summary": "모델 버전 고정 관련 경고 문구가 업데이트되어, 기본값 미배포 시 대체 모델로 전환되거나 요청이 실패하는 동작 방식이 명시되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/3799b49_microsoft-foundry.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/model-config\" target=\"_blank\">Model Config</a>",
+        "summary": "플랫폼별 모델 고정(pinning) 누락 시의 동작 설명이 구체화되었으며, Microsoft Foundry 및 Bedrock 등에서의 오류 처리 및 대체 동작 방식이 명확히 정리되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/3799b49_model-config.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/monitoring-usage\" target=\"_blank\">Monitoring Usage</a>",
+        "summary": "공식 마켓플레이스 외외부 모드가 모델을 호출할 때 marketplace.name 로깅 및 프라이버시 처리 방식이 추가되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/3799b49_monitoring-usage.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/sessions\" target=\"_blank\">Sessions</a>",
+        "summary": "세션 재개 옵션(ID 지정, 플래그 동작) 및 권한 모드 관련 설명이 업데이트되었으며, 환경 변수를 통한 터미널 제목 비활성화 설정이 추가되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/3799b49_sessions.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/tools-reference\" target=\"_blank\">Tools Reference</a>",
+        "summary": "NotebookEdit 셀 교체 시 출력 초기화 동작이 추가되었고, WebSearch 문서 링크가 올바르게 수정되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/3799b49_tools-reference.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/vs-code\" target=\"_blank\">Vs Code</a>",
+        "summary": "Jupyter 노트북 편집 기능, 권한 설정 조건 추가 및 autosave 설정 설명이 업데이트되어 사용 편의성이 향상되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/3799b49_vs-code.txt"
+      }
+    ]
+  },
+  {
     "date": "2026-11-14T15:06:47Z",
     "commit_hash": "43edd1e",
     "entries": [
