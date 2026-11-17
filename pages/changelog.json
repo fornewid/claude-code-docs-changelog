@@ -1,5 +1,235 @@
 [
   {
+    "date": "2026-11-17T15:07:51Z",
+    "commit_hash": "9f727e5",
+    "entries": [
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/agent-sdk__agent-loop\" target=\"_blank\">Agent Sdk__Agent Loop</a>",
+        "summary": "TypeScript 환경에서 스트리밍 입력 세션 중 query() 루프가 에러 결과로 종료될 때 예외가 발생하는 동작 방식이 추가되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/9f727e5_agent-sdk__agent-loop.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/agent-sdk__configuration\" target=\"_blank\">Agent Sdk__Configuration</a>",
+        "summary": "턴 및 예산 제한 초과 시 발생하는 에러 서브타입 설명이 명확해지고, 타입스크립트 스트리밍 입력에서의 에러 처리 방식이 추가되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/9f727e5_agent-sdk__configuration.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/agent-sdk__modifying-system-prompts\" target=\"_blank\">Agent Sdk__Modifying System Prompts</a>",
+        "summary": "시스템 리마인더 설명 중 파일 변경 감지 조건이 '읽은 파일'에서 '편집한 파일'로 수정되어 정확도가 향상되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/9f727e5_agent-sdk__modifying-system-prompts.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/agent-sdk__python\" target=\"_blank\">Agent Sdk__Python</a>",
+        "summary": "Python Agent SDK의 origin 필드 문서가 업데이트되어, 스트리밍 입력 모드에서 백그라운드 태스크 알림 및 프롬프트 결과 확인 방법을 명확히 안내합니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/9f727e5_agent-sdk__python.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/agent-sdk__streaming-vs-single-mode\" target=\"_blank\">Agent Sdk__Streaming Vs Single Mode</a>",
+        "summary": "스트리밍 입력 모드 문서가 세션 메시지 전송, 이미지 첨부, 응답 인터럽트 등의 최신 사용법과 예제 코드로 전면 개정되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/9f727e5_agent-sdk__streaming-vs-single-mode.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/agent-sdk__typescript\" target=\"_blank\">Agent Sdk__Typescript</a>",
+        "summary": "'overloaded' 에러 상태에 대한 설명이 API 재시도 이벤트 및 HTTP 529 에러 발생 시의 동작과 연동되도록 구체화되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/9f727e5_agent-sdk__typescript.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/analytics\" target=\"_blank\">Analytics</a>",
+        "summary": "애널리틱스 대시보드의 지표 및 차트 설명이 개편되어, PR 및 코드 기여도 측정 기준이 더 명확하게 수정되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/9f727e5_analytics.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/changelog\" target=\"_blank\">Changelog</a>",
+        "summary": "Claude Code 2.1.325 릴리스: VS Code 및 원격 제어 기능 개선, 샌드박스 및 권한 흐름 강화, 플러그인 관리 보안 및 다양한 버그가 수정되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/9f727e5_changelog.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/claude-apps-gateway-config\" target=\"_blank\">Claude Apps Gateway Config</a>",
+        "summary": "Google Cloud 기반 Claude 모델(Anthropic 관리) 업스트림 설정 방법이 추가되어 연동 옵션이 확장되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/9f727e5_claude-apps-gateway-config.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/claude-apps-gateway\" target=\"_blank\">Claude Apps Gateway</a>",
+        "summary": "Google Cloud의 Claude 모델(Anthropic 관리형) 추론 포워딩 지원이 추가되고 관련 버전 요구사항이 명시되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/9f727e5_claude-apps-gateway.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/claude-directory\" target=\"_blank\">Claude Directory</a>",
+        "summary": "claude-directory.md 문서에 프로젝트 및 전역 설정 파일들의 역할과 로딩 시점을 상세히 설명하는 내용이 대거 추가되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/9f727e5_claude-directory.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/claude-projects\" target=\"_blank\">Claude Projects</a>",
+        "summary": "로컬 작업 기능의 UI 메뉴 옵션이 추가되고 신뢰할 수 있는 기기 설정 관련 안내가 보완되어 사용자 가이드가 개선되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/9f727e5_claude-projects.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/cli-reference\" target=\"_blank\">Cli Reference</a>",
+        "summary": "CLI 참조 문서에서 --ref 옵션 사용 시 필요한 최소 버전 요구사항(v2.1.224 이상)이 추가되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/9f727e5_cli-reference.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/code-mode\" target=\"_blank\">Code Mode</a>",
+        "summary": "Code Mode 문서에 에이전트 팀 지원 버전(v2.1.326+), Google Cloud 관련 계정 제약, PreToolUse 훅 보안 주의사항 및 트러블슈팅 항목이 추가 및 갱신되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/9f727e5_code-mode.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/costs\" target=\"_blank\">Costs</a>",
+        "summary": "Claude Code의 `/usage` 명령어 사용법 안내가 더 명확한 프롬프트 실행 기준으로 수정되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/9f727e5_costs.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/desktop-ios-simulator\" target=\"_blank\">Desktop Ios Simulator</a>",
+        "summary": "iPhone Duo 시뮬레이터 지원 및 폴더블 기기 테스트 방법이 추가되어 다양한 폼팩터에서의 앱 테스트가 가능해졌습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/9f727e5_desktop-ios-simulator.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/desktop\" target=\"_blank\">Desktop</a>",
+        "summary": "데스크톱 앱의 UI 변경사항(Plugins 메뉴 추가 등)을 반영하여 커넥터 및 플러그인 관리 방법과 메뉴 탐색 설명이 업데이트되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/9f727e5_desktop.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/env-vars\" target=\"_blank\">Env Vars</a>",
+        "summary": "CLAUDE_CODE_MAX_OUTPUT_TOKENS 및 CLAUDE_CODE_OAUTH_REFRESH_TOKEN 환경 변수 설명이 업데이트되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/9f727e5_env-vars.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/errors\" target=\"_blank\">Errors</a>",
+        "summary": "새로운 WebFetch 에러 메시지와 설정 관련 에러 항목이 추가되어 문서가 업데이트되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/9f727e5_errors.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/fullscreen\" target=\"_blank\">Fullscreen</a>",
+        "summary": "자동 스크롤 설정 및 tmux 마우스 모드 관련 문서가 명확하게 개정되어 사용자 가이드라인이 개선되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/9f727e5_fullscreen.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/hooks\" target=\"_blank\">Hooks</a>",
+        "summary": "훅(Hook) 시스템의 에러 처리, 종료 코드(Exit code 2) 동작, 그리고 JSON 출력 규격 관련 문서가 업데이트되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/9f727e5_hooks.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/mcp\" target=\"_blank\">Mcp</a>",
+        "summary": "MCP 서버의 anyOf 및 oneOf 스키마 처리 방식 중 required 목록 적용 설명이 명확하게 수정되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/9f727e5_mcp.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/microsoft-foundry\" target=\"_blank\">Microsoft Foundry</a>",
+        "summary": "Claude Code의 버전별 기본 컨텍스트 윈도우 동작 방식 및 1M 윈도우 활성화를 위한 접미사 사용법 설명이 추가되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/9f727e5_microsoft-foundry.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/model-config\" target=\"_blank\">Model Config</a>",
+        "summary": "세션 복원 시 사용되는 모델의 우선순위와 규칙에 대한 문서가 재구성되었으며, 관련 예외 사항과 동작 방식이 명확히 정리되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/9f727e5_model-config.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/plugin-evals\" target=\"_blank\">Plugin Evals</a>",
+        "summary": "쉘 권한 부여 시 샌드박스 필수 요구 사항 및 관리형 장치에서의 거부 오류 확인 방법에 대한 문서가 추가되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/9f727e5_plugin-evals.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/plugins__mods__admin\" target=\"_blank\">Plugins__Mods__Admin</a>",
+        "summary": "v2.1.326 이상에서 전체 플러그인 차단 대신 훅 모듈만 제외하고 로드하는 기능 및 에러 처리 방식이 업데이트되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/9f727e5_plugins__mods__admin.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/plugins__mods__events\" target=\"_blank\">Plugins__Mods__Events</a>",
+        "summary": "v2.1.326 이후 버전에서 plugin.register 거부 시 전체 플러그인 차단 동작이 명시되고 관련 문서 링크가 업데이트되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/9f727e5_plugins__mods__events.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/plugins__org\" target=\"_blank\">Plugins__Org</a>",
+        "summary": "관리자 콘솔 내 플러그인 설정 경로 및 UI 용어가 변경되어 조직 설정 접근 방식이 업데이트되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/9f727e5_plugins__org.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/self-hosted-environments-deploy\" target=\"_blank\">Self Hosted Environments Deploy</a>",
+        "summary": "특정 버전 설치 방법 문서로 이동하는 링크가 추가되어 버전 고정 설정 시 가이드 접근성이 향상되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/9f727e5_self-hosted-environments-deploy.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/terminal-config\" target=\"_blank\">Terminal Config</a>",
+        "summary": "Windows Terminal 버전 요구사항이 1.25 이상으로 구체화되고 tmux 환경에서의 Shift+Enter 설정 안내가 보완되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/9f727e5_terminal-config.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/vs-code\" target=\"_blank\">Vs Code</a>",
+        "summary": "Claude 패널의 폰트 및 크기를 VS Code 설정에 맞춰 커스텀하는 방법이 새롭게 추가되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/9f727e5_vs-code.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/worktrees\" target=\"_blank\">Worktrees</a>",
+        "summary": "v2.1.233 이전 버전 관련 구형 호환성 설명이 삭제되어 문서가 간소화되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/9f727e5_worktrees.txt"
+      }
+    ]
+  },
+  {
     "date": "2026-11-15T15:06:35Z",
     "commit_hash": "3799b49",
     "entries": [
