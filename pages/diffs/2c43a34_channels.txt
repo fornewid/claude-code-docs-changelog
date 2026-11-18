@@ -1,0 +1,12 @@
+diff --git a/docs/channels.md b/docs/channels.md
+index 5539648..e4e5310 100644
+--- a/docs/channels.md
++++ b/docs/channels.md
+@@ -104,6 +104,7 @@ Each supported channel is a plugin that requires [Bun](https://bun.sh). For a ha
+ > * View Channels
+ > * Send Messages
+ > * Send Messages in Threads
++> * Create Public Threads
+ > * Read Message History
+ > * Attach Files
+ > * Add Reactions

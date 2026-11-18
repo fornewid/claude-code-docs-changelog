@@ -1,5 +1,165 @@
 [
   {
+    "date": "2026-11-18T15:07:41Z",
+    "commit_hash": "2c43a34",
+    "entries": [
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/agent-sdk__python\" target=\"_blank\">Agent Sdk__Python</a>",
+        "summary": "Grep 결과에 타임아웃 여부를 나타내는 'timedOut' 필드가 추가되어 검색 결과의 완전성을 확인할 수 있게 되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/2c43a34_agent-sdk__python.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/agent-sdk__typescript\" target=\"_blank\">Agent Sdk__Typescript</a>",
+        "summary": "TypeScript SDK 문서에 GrepOutput 타입의 timedOut 필드 추가 및 client_composed 설명 수정 등 주요 변경 사항이 반영되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/2c43a34_agent-sdk__typescript.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/authentication\" target=\"_blank\">Authentication</a>",
+        "summary": "인증 만료 시 대체 자격 증명 사용 동작 및 백그라운드 세션 영향에 대한 설명이 명확하게 업데이트되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/2c43a34_authentication.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/changelog\" target=\"_blank\">Changelog</a>",
+        "summary": "v2.1.327 버전이 릴리즈되었습니다. 리포지토리 변경 확인 기능 추가, MCP 설정 명령 및 TUI 렌더러 개선, 그리고 원격 제어, 세션 복구, 백그라운드 에이전트 동작과 관련된 다수의 버그가 수정되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/2c43a34_changelog.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/channels\" target=\"_blank\">Channels</a>",
+        "summary": "지원되는 채널 기능 목록에 '공개 스레드 생성(Create Public Threads)' 항목이 추가되어 기능 범위가 확장되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/2c43a34_channels.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/data-usage\" target=\"_blank\">Data Usage</a>",
+        "summary": "Microsoft Foundry의 호스팅 옵션에 따른 데이터 처리 및 저장 설명이 외부 문서 링크 참조 형태로 간소화되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/2c43a34_data-usage.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/desktop-scheduled-tasks\" target=\"_blank\">Desktop Scheduled Tasks</a>",
+        "summary": "완료된 로컬 일회성 작업을 목록에서 찾는 방법이 추가되어 사용자 편의성이 향상되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/2c43a34_desktop-scheduled-tasks.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/errors\" target=\"_blank\">Errors</a>",
+        "summary": "로그인 만료, 크레딧 부족, 권한 규칙 오류 등 새로운 에러 메시지 및 대응 가이드가 문서에 추가되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/2c43a34_errors.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/hooks\" target=\"_blank\">Hooks</a>",
+        "summary": "HTTP 훅 허용 목록 설정 가이드가 보완되었으며, PermissionDenied의 reason 필드 설명이 가독성 좋게 목록 형태로 개정되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/2c43a34_hooks.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/mcp\" target=\"_blank\">Mcp</a>",
+        "summary": "MCP 도구 출력 제한에 대한 설명이 간소화되고, 트랜스크립트 뷰어 경고 기준이 명시되었으며, `claude -p` 사용 시 리소스 멘션 동작이 추가되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/2c43a34_mcp.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/memory\" target=\"_blank\">Memory</a>",
+        "summary": "Glob 구문에서 대괄호 문자 처리 및 이스케이프 방법 설명이 문서 내 다른 위치로 이동하고 내용이 보완되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/2c43a34_memory.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/permission-modes\" target=\"_blank\">Permission Modes</a>",
+        "summary": "HIPAA 설정 환경에서의 권한 모드 기본값 변경 및 버전별 동작 방식이 업데이트되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/2c43a34_permission-modes.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/permissions\" target=\"_blank\">Permissions</a>",
+        "summary": "읽기 전용 명령어의 glob 패턴 동작 방식과 gitignore 패턴 규칙에 대한 설명이 명확하게 보완되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/2c43a34_permissions.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/plugins__cli-reference\" target=\"_blank\">Plugins__Cli Reference</a>",
+        "summary": "플러그인 삭제 시 MCP 번들로 추출된 파일의 자동 삭제 및 정리 메커니즘에 대한 설명이 추가되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/2c43a34_plugins__cli-reference.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/plugins__manifest-reference\" target=\"_blank\">Plugins__Manifest Reference</a>",
+        "summary": "플러그인 매니페스트에 호환되는 Claude Code 버전을 지정할 수 있는 새로운 'engines' 필드가 추가되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/2c43a34_plugins__manifest-reference.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/plugins__marketplace-reference\" target=\"_blank\">Plugins__Marketplace Reference</a>",
+        "summary": "플러그인 마켓플레이스 참조 문서에 'engines' 필드가 추가되어 Claude Code 버전 호환성 지정 및 관련 오류 메시지가 안내됩니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/2c43a34_plugins__marketplace-reference.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/plugins__mods__api\" target=\"_blank\">Plugins__Mods__Api</a>",
+        "summary": "클로드에게 명령 텍스트를 숨기는 `isTextDisplayOnly` 옵션이 추가되었고, 모니터 이벤트 처리 관련 동작 설명이 업데이트되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/2c43a34_plugins__mods__api.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/plugins__org\" target=\"_blank\">Plugins__Org</a>",
+        "summary": "시드 마켓플레이스 빌드 소스 규칙이 변경되고 사용자 플러그인 비활성화 방법이 명시되어 플러그인 관리 동작이 개선되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/2c43a34_plugins__org.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/plugins__troubleshooting\" target=\"_blank\">Plugins__Troubleshooting</a>",
+        "summary": "플러그인 매니페스트의 engines 필드 버전 범위 오류에 대한 새로운 트러블슈팅 가이드라인이 추가되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/2c43a34_plugins__troubleshooting.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/settings-reference\" target=\"_blank\">Settings Reference</a>",
+        "summary": "autoMode, allowedHttpHookUrls, httpHookAllowedEnvVars, maximumVersion 설정에 대한 동작 방식과 관리형 설정 적용 범위 설명이 업데이트되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/2c43a34_settings-reference.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/terminal-config\" target=\"_blank\">Terminal Config</a>",
+        "summary": "preferredNotifChannel 설정 및 버전별 알림 전달 요구사항이 업데이트되어 SSH 환경에서의 데스크톱 알림 구성 방법이 변경되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/2c43a34_terminal-config.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/tools-reference\" target=\"_blank\">Tools Reference</a>",
+        "summary": "툴 권한 참조 문서에 파일 접근 예외 사항(Claude Code가 자체적으로 필요로 하는 파일) 관련 설명이 추가되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/2c43a34_tools-reference.txt"
+      }
+    ]
+  },
+  {
     "date": "2026-11-17T15:07:51Z",
     "commit_hash": "9f727e5",
     "entries": [

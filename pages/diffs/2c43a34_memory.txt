@@ -1,0 +1,22 @@
+diff --git a/docs/memory.md b/docs/memory.md
+index 5a0eda4..50f36c9 100644
+--- a/docs/memory.md
++++ b/docs/memory.md
+@@ -227,6 +227,8 @@ Use glob patterns in the `paths` field to match files by extension, directory, o
+ | `/*.md` | `.md` files directly in the base directory, not in subfolders |
+ | `src/components/*.tsx` | `.tsx` files directly in the base directory's `src/components/`, not in subfolders |
+ 
++Glob syntax treats `[` as the start of a bracket expression such as `[abc]`. A pattern with a `[` that can't be read as a bracket expression, such as `photos [2024/**`, is invalid: it matches nothing, and the rule's other patterns keep working. To match a literal `[` in a file name, escape it inside single quotes, as in `'photos \[2024/**'`.
++
+ You can specify multiple patterns and use brace expansion to match multiple extensions in one pattern:
+ 
+ ```markdown theme={null}
+@@ -242,8 +244,6 @@ Each brace group multiplies the number of expanded patterns: `src/*.{ts,tsx}` ex
+ 
+ Claude Code uses any pattern that would exceed the budget unexpanded, and its literal braces match no files.
+ 
+-Glob syntax treats `[` as the start of a bracket expression such as `[abc]`. A pattern with a `[` that can't be read as a bracket expression, such as `photos [2024/**`, is invalid: it matches nothing, and the rule's other patterns keep working. To match a literal `[` in a file name, escape it as `photos \[2024/**`.
+-
+ #### Rule frontmatter reference
+ 
+ Configure a rule with YAML [frontmatter](https://code.claude.com/docs/en/glossary.md#frontmatter) between `---` markers at the top of the file. `paths` is the only field Claude Code reads from a rule; any other field is ignored without an error. Claude Code removes the frontmatter before loading the rule into context.
