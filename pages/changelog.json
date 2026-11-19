@@ -1,5 +1,144 @@
 [
   {
+    "date": "2026-11-19T15:07:37Z",
+    "commit_hash": "3d1ddfa",
+    "entries": [
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/agent-sdk__hooks\" target=\"_blank\">Agent Sdk__Hooks</a>",
+        "summary": "입력값 수정 실패 및 거부 오류에 대한 훅 디버깅 가이드라인이 추가되어 문제 해결 능력이 향상되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/3d1ddfa_agent-sdk__hooks.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/agent-sdk__typescript\" target=\"_blank\">Agent Sdk__Typescript</a>",
+        "summary": "autoCompactWindow 설정의 토큰 카운트 조건 설명이 수정되어 서브에이전트 구성 가이드가 명확해졌습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/3d1ddfa_agent-sdk__typescript.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/authentication\" target=\"_blank\">Authentication</a>",
+        "summary": "클라우드 게이트웨이의 VS Code 로그인 지원이 추가되고 인증 소스 우선순위 및 API 키 사용 조건 문서가 구체화되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/3d1ddfa_authentication.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/auto-mode-config\" target=\"_blank\">Auto Mode Config</a>",
+        "summary": "자동 모드 분류기 설정 문서가 업데이트되어, 권한 거부 설정 가이드가 수정되고 소프트 거부 규칙에 프로덕션 배포 항목이 추가되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/3d1ddfa_auto-mode-config.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/changelog\" target=\"_blank\">Changelog</a>",
+        "summary": "Claude Code 2.1.328 버전 업데이트: Bedrock 및 클라우드 게이트웨이의 자동 모드 추가, 셀프 호스팅 러너 개선, MCP 도구 및 Code Mode 관련 수십 가지 버그가 수정되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/3d1ddfa_changelog.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/cli-reference\" target=\"_blank\">Cli Reference</a>",
+        "summary": "claude auth login 명령어에 관리형 설정 및 게이트웨이 로그인을 위한 새로운 인증 지침이 추가되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/3d1ddfa_cli-reference.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/commands\" target=\"_blank\">Commands</a>",
+        "summary": "/tui 명령어의 옵션이 default에서 classic/fullscreen으로 변경되었으며, 이에 대한 설명이 업데이트되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/3d1ddfa_commands.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/errors\" target=\"_blank\">Errors</a>",
+        "summary": "오류 문서에 인증, 제한 모드, MCP 설정, 샌드박스 관련 신규 에러 메시지와 대응 가이드가 추가되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/3d1ddfa_errors.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/github-actions\" target=\"_blank\">Github Actions</a>",
+        "summary": "GitHub Actions 설정 가이드가 단계별(1~7단계)로 상세히 재구성되어 사용자의 설치 및 연동 과정이 더 명확해졌습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/3d1ddfa_github-actions.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/hooks\" target=\"_blank\">Hooks</a>",
+        "summary": "PreToolUse 훅의 권한 동작 설명이 수정되고 remote-control 정리 관련 문구가 명확하게 변경되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/3d1ddfa_hooks.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/monitoring-usage\" target=\"_blank\">Monitoring Usage</a>",
+        "summary": "세션이 실행된 호스트 기기 정보를 수집하는 OTEL_RESOURCE_INCLUDE_HOST 환경 변수와 관련 문제해결 가이드가 추가되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/3d1ddfa_monitoring-usage.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/network-config\" target=\"_blank\">Network Config</a>",
+        "summary": "Claude Code v2.1.327 이상에서 비대화형 환경의 HTTPS_PROXY 설정 예외 처리가 추가되어 올바른 URL 형식 작성이 권장됩니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/3d1ddfa_network-config.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/permission-modes\" target=\"_blank\">Permission Modes</a>",
+        "summary": "서버 측 분류기 동작 방식 변경, 제한된 모드에서의 bypassPermissions 거부 정책, 인라인 쉘 스크립트 검사 관련 안내가 추가되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/3d1ddfa_permission-modes.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/permissions\" target=\"_blank\">Permissions</a>",
+        "summary": "권한 모드(dontAsk), 규칙 구문, 커넥터 도구 처리 및 모드(Mod)와 훅(Hook) 간의 우선순위 관련 문서 설명이 업데이트되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/3d1ddfa_permissions.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/plugins__mods__reference\" target=\"_blank\">Plugins__Mods__Reference</a>",
+        "summary": "$.agent API에 call 및 limits 메서드가 추가되었으며, $.tool API의 승인 관련 상세 설명이 제거되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/3d1ddfa_plugins__mods__reference.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/settings-reference\" target=\"_blank\">Settings Reference</a>",
+        "summary": "autoCompactWindow 토큰 제한 변경 및 권한 설정, 텔레메트리 환경변수, 깃허브 플러그인 마켓플레이스 경로 설정 등 세부 설정 가이드가 업데이트되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/3d1ddfa_settings-reference.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/sub-agents\" target=\"_blank\">Sub Agents</a>",
+        "summary": "서브에이전트의 autoCompactWindow 토큰 제한 범위 및 동작 방식이 변경되어 설정 유연성이 향상되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/3d1ddfa_sub-agents.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/tools-reference\" target=\"_blank\">Tools Reference</a>",
+        "summary": "Bash 도구의 셸 초기화 방식이 비인터랙티브 셸 실행 및 특정 설정 파일 소싱 방식으로 구체화되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/3d1ddfa_tools-reference.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/vs-code\" target=\"_blank\">Vs Code</a>",
+        "summary": "Claude apps gateway 로그인 방법이 추가되고 탐색기에서 파일을 쉽게 추가하는 기능 등 VS Code 확장 프로그램 사용성이 개선되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/3d1ddfa_vs-code.txt"
+      }
+    ]
+  },
+  {
     "date": "2026-11-18T15:07:41Z",
     "commit_hash": "2c43a34",
     "entries": [
