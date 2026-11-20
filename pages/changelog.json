@@ -1,5 +1,284 @@
 [
   {
+    "date": "2026-11-20T15:07:22Z",
+    "commit_hash": "3286c4d",
+    "entries": [
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/agent-sdk__claude-code-features\" target=\"_blank\">Agent Sdk__Claude Code Features</a>",
+        "summary": "skills 및 훅(hook) 콜백의 동작 방식이 명확해졌습니다. 빈 딕셔너리 반환이 '허용'에서 '결정 없음(기본 권한 적용)'으로 변경되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/3286c4d_agent-sdk__claude-code-features.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/agent-sdk__subagents\" target=\"_blank\">Agent Sdk__Subagents</a>",
+        "summary": "서브에이전트 도구 권한 설정 방식, 세션 재개 가이드 및 예제 코드가 업데이트되어 기능 명세가 명확해졌습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/3286c4d_agent-sdk__subagents.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/agent-sdk__typescript\" target=\"_blank\">Agent Sdk__Typescript</a>",
+        "summary": "TypeScript SDK 문서에서 `skills` 옵션 설명이 변경되고, `SDKResultMessage`에 `credential_expires_at` 필드가 추가되는 등 기능 및 설정 관련 설명이 업데이트되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/3286c4d_agent-sdk__typescript.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/authentication\" target=\"_blank\">Authentication</a>",
+        "summary": "로그인 만료 시점 확인 방법(`claude auth status --text`)과 경고 시점이 업데이트되어 세션 관리가 용이해졌습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/3286c4d_authentication.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/changelog\" target=\"_blank\">Changelog</a>",
+        "summary": "Claude Code 2.1.329 버전 업데이트: 세션 관리, MCP 서버 연동, 메모리 누수 방지 및 다수의 UI/기능적 버그가 대거 수정되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/3286c4d_changelog.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/claude-code-on-the-web\" target=\"_blank\">Claude Code On The Web</a>",
+        "summary": "클라우드 세션의 정의 및 보안 격리 설명이 간소화되었으며, UI 패널 조작 방법과 오류 메시지가 업데이트되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/3286c4d_claude-code-on-the-web.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/cli-reference\" target=\"_blank\">Cli Reference</a>",
+        "summary": "CLI 참조 문서에 새로운 `--correlation-id` 플래그가 추가되고, `auth status` 및 `--allow-dangerously-skip-permissions` 설명이 업데이트되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/3286c4d_cli-reference.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/code-mode\" target=\"_blank\">Code Mode</a>",
+        "summary": "코드 모드 문서의 권한 확인, 샌드박스, 장기 실행 코드 및 중지 방법에 대한 상세한 가이드와 예시가 추가되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/3286c4d_code-mode.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/computer-use\" target=\"_blank\">Computer Use</a>",
+        "summary": "컴퓨터 사용 권한 경고 문구가 구체화되고 Claude의 앱 카테고리별 제어 수준 설명이 업데이트되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/3286c4d_computer-use.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/desktop\" target=\"_blank\">Desktop</a>",
+        "summary": "Claude 데스크톱 문서가 업데이트되어 브라우저 창의 스크립트 비활성화, 외부 사이트 탐색 안전 및 권한 부여 규칙, 작업 공간 패널 및 레이아웃 조작 방법이 명확해졌습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/3286c4d_desktop.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/env-vars\" target=\"_blank\">Env Vars</a>",
+        "summary": "새로운 환경 변수(CLAUDE_CODE_DISABLE_DEFERRED_TOOL_RESUME, CLAUDE_CODE_LOOP_KEEPALIVE)가 추가되고 기존 설명이 업데이트되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/3286c4d_env-vars.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/errors\" target=\"_blank\">Errors</a>",
+        "summary": "에러 문서에 사용량 크레딧, 인증, 원격 제어, 요청 에러 및 플러그인 관련 새로운 에러 메시지와 대응 가이드가 추가되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/3286c4d_errors.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/goal\" target=\"_blank\">Goal</a>",
+        "summary": "/loop 명령어의 종료 조건에 대한 문서 링크가 추가되어 사용자가 세부적인 종료 방식을 더 쉽게 파악할 수 있게 되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/3286c4d_goal.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/hooks\" target=\"_blank\">Hooks</a>",
+        "summary": "MCP 툴 훅에 onFailure 설정이 추가되어 훅 실패 시 액션을 차단할 수 있게 되었으며, 관련 실패 조건과 동작이 문서화되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/3286c4d_hooks.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/interactive-mode\" target=\"_blank\">Interactive Mode</a>",
+        "summary": "Esc+Esc 단축키 동작에 vim 모드 관련 예외 사항이 추가되어 사용자 편의성이 향상되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/3286c4d_interactive-mode.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/managed-settings\" target=\"_blank\">Managed Settings</a>",
+        "summary": "원격 설정 가져오기 조건이 가독성 좋게 목록형으로 정리되었고, 보안을 위한 허용 규칙(allowlist) 관련 주의사항이 추가되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/3286c4d_managed-settings.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/model-config\" target=\"_blank\">Model Config</a>",
+        "summary": "서드파티 제공자 설정 가이드, 조직 모델 제한 사항, 추론 레벨(effort level) 관련 오류 대처 방법 및 1M 컨텍스트 윈도우 문서가 업데이트되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/3286c4d_model-config.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/network-config\" target=\"_blank\">Network Config</a>",
+        "summary": "네트워크 설정 문서의 스트리밍 타임아웃 및 바디 유휴 타임아웃 관련 설명과 환경 변수 동작 조건이 구체화되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/3286c4d_network-config.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/permission-modes\" target=\"_blank\">Permission Modes</a>",
+        "summary": "권한 모드 문서가 업데이트되어 default 모드의 동작 범위, 비대화형 세션에서의 파일 읽기 프롬프트 동작, 분류기 평가 규칙 등이 명확하게 수정되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/3286c4d_permission-modes.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/permissions\" target=\"_blank\">Permissions</a>",
+        "summary": "권한 문서가 업데이트되어 파일 수정 예외 사항, 매개변수 확인 방법, 샌드박스 관련 규칙 및 작업 디렉터리 신뢰 절차 등이 추가 및 보완되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/3286c4d_permissions.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/plugins__cli-reference\" target=\"_blank\">Plugins__Cli Reference</a>",
+        "summary": "플러그인 CLI 레퍼런스 문서가 업데이트되어 터미널 출력 형식 변경, JSON 검증 항목 추가, 의존성 설치 및 리로드 동작 설명이 보완되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/3286c4d_plugins__cli-reference.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/plugins__loading\" target=\"_blank\">Plugins__Loading</a>",
+        "summary": "디렉토리 신뢰(Trust) 관련 플러그인 로딩 동작 변경 및 /reload-plugins 사용 가이드가 업데이트되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/3286c4d_plugins__loading.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/plugins__manifest-reference\" target=\"_blank\">Plugins__Manifest Reference</a>",
+        "summary": "플러그인 매니페스트에 네트워크 호스트 설정을 위한 'network' 필드가 추가되어 플러그인이 접근하는 외부 도메인을 명시할 수 있게 되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/3286c4d_plugins__manifest-reference.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/plugins__mods__admin\" target=\"_blank\">Plugins__Mods__Admin</a>",
+        "summary": "관리형 설정 파일의 우선순위 동작이 명확해지고, 텔레메트리 로그 훅 항목 및 claude.ai 플러그인 동기화 설정 등 관리자 가이드가 최신화되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/3286c4d_plugins__mods__admin.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/plugins__mods__interface\" target=\"_blank\">Plugins__Mods__Interface</a>",
+        "summary": "Box에 overflowX 속성, Text에 maxLines 및 clip 속성이 추가되었으며 버전 요구사항이 명시되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/3286c4d_plugins__mods__interface.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/remote-control\" target=\"_blank\">Remote Control</a>",
+        "summary": "원격 제어(Remote Control) 설정 값 변경(true/false에서 on/off로 수정), 인증 실패 및 정책 오류 메시지 안내 수정 등 관련 문서 내용이 업데이트되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/3286c4d_remote-control.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/sandboxing\" target=\"_blank\">Sandboxing</a>",
+        "summary": "코드 모드에서의 샌드박스 재시도 동작 안내가 추가되었고, 자격 증명 마스킹 및 AWS 요청 재서명 관련 설명이 명확하게 보완되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/3286c4d_sandboxing.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/scheduled-tasks\" target=\"_blank\">Scheduled Tasks</a>",
+        "summary": "자기 주도형 루프의 종료 동작 및 세션 재개 시 예약된 작업 복원 조건에 대한 설명이 업데이트되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/3286c4d_scheduled-tasks.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/self-hosted-environments-configuration\" target=\"_blank\">Self Hosted Environments Configuration</a>",
+        "summary": "세션 환경 설정 문서에 CLAUDE_RUNNER_META 환경 변수 추가 및 --trust-workspace 설정에 따른 플러그인 로드 동작 변경 사항이 반영되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/3286c4d_self-hosted-environments-configuration.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/self-hosted-environments-deploy\" target=\"_blank\">Self Hosted Environments Deploy</a>",
+        "summary": "외부 저장소 폴더 사용법과 새로운 에러 메시지에 대한 트러블슈팅 가이드가 추가되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/3286c4d_self-hosted-environments-deploy.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/self-hosted-environments-reference\" target=\"_blank\">Self Hosted Environments Reference</a>",
+        "summary": "셀프 호스팅 러너 및 오케스트레이터에 새로운 플래그(--repository-folder, --hook-label)와 모니터링 메트릭이 추가되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/3286c4d_self-hosted-environments-reference.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/self-hosted-environments-testing\" target=\"_blank\">Self Hosted Environments Testing</a>",
+        "summary": "토큰 갱신 관련 설명이 수정되어 30일 주기 로그인 갱신 시점 확인 방법 문서 링크가 추가되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/3286c4d_self-hosted-environments-testing.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/server-managed-settings\" target=\"_blank\">Server Managed Settings</a>",
+        "summary": "서버 관리 설정과 사용자 허용 규칙의 병합 방식에 대한 설명과 잠금 관련 문서 링크가 추가되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/3286c4d_server-managed-settings.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/sessions\" target=\"_blank\">Sessions</a>",
+        "summary": "세션 재개 시 도구 접근 권한 플래그가 추가되고 세션 선택기의 단축키 및 그룹화 기능 설명이 간소화되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/3286c4d_sessions.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/settings\" target=\"_blank\">Settings</a>",
+        "summary": "설정 파일 자동 생성 조건과 로컬 설정(settings.local.json)의 저장 항목이 일부 변경되어 사용자의 환경 설정 관리에 영향을 줍니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/3286c4d_settings.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/sub-agents\" target=\"_blank\">Sub Agents</a>",
+        "summary": "서브에이전트의 에포트 레벨 결정 규칙, 백그라운드 도구 목록 및 태스크 기록 유지 방식이 업데이트되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/3286c4d_sub-agents.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/tools-reference\" target=\"_blank\">Tools Reference</a>",
+        "summary": "도구 참조 문서에 ListPlugins, ListSkills, SearchPlugins, SearchSkills, propose_skills 등 플러그인 및 스킬 관련 새로운 도구가 추가되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/3286c4d_tools-reference.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/troubleshoot-install\" target=\"_blank\">Troubleshoot Install</a>",
+        "summary": "인증 문제 해결 섹션에 'That doesn't look like the full code' 오류 가이드가 추가되고 관련 문제 해결 표가 업데이트되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/3286c4d_troubleshoot-install.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/web-quickstart\" target=\"_blank\">Web Quickstart</a>",
+        "summary": "웹 퀵스타트에 레포지토리 없이 시작하는 옵션 및 UI 변경 사항 등 클라우드 세션 사용법이 업데이트되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/3286c4d_web-quickstart.txt"
+      }
+    ]
+  },
+  {
     "date": "2026-11-19T15:07:37Z",
     "commit_hash": "3d1ddfa",
     "entries": [
