@@ -1,0 +1,54 @@
+diff --git a/docs/desktop.md b/docs/desktop.md
+index dcd91b2..719d328 100644
+--- a/docs/desktop.md
++++ b/docs/desktop.md
+@@ -372,9 +372,9 @@ Computer use lets Claude open your apps, control your screen, and work directly
+ 
+ > [!NOTE]
+ >
+-> Computer use is a research preview on macOS and Windows that requires a Pro, Max, or Ultra plan. It is not available on Team or Enterprise plans. The Claude Desktop app must be running. On macOS, computer use requires macOS 14 or later.
++> Computer use in the Code tab is available on macOS and Windows and requires a Pro, Max, or Ultra plan. It is not available on Team or Enterprise plans. The Claude Desktop app must be running. On macOS, computer use requires macOS 14 or later.
+ 
+-Computer use is off by default. [Enable it in Settings](#enable-computer-use) before Claude can control your screen. On macOS, you also need to grant Accessibility and Screen Recording permissions.
++Check that computer use is [on in Settings](#enable-computer-use) before you ask Claude to control your screen. On macOS, you also need to grant Accessibility and Screen Recording permissions.
+ 
+ On macOS, computer use can also run in the background: Claude works in the apps you've approved while you keep working.
+ 
+@@ -396,8 +396,6 @@ The [per-app access tiers](#app-permissions) reinforce this: browsers are capped
+ 
+ ### Enable computer use
+ 
+-Computer use is off by default.
+-
+ **1. Update the desktop app**
+ 
+ Make sure you have the latest version of Claude Desktop. On macOS and Windows, download or update at [claude.com/download](https://claude.com/download); on Linux, update through your package manager ([instructions](https://code.claude.com/docs/en/desktop-linux.md)). Then restart the app.
+@@ -439,7 +437,7 @@ The prompt also shows what level of control Claude gets for that app. These tier
+ 
+ Apps with broad reach, like terminals, Finder or File Explorer, and System Settings or Settings, show an extra warning in the prompt so you know what approving them grants.
+ 
+-In Settings, the **Computer use** section where you [turned computer use on](#enable-computer-use) includes these options:
++In Settings, the **Computer use** section where you [turn computer use on](#enable-computer-use) includes these options:
+ 
+ * **Denied apps**: add apps here to reject them without prompting. Claude may still affect a denied app indirectly through actions in an allowed app, but it can't interact with the denied app directly.
+ * **Unhide apps when Claude finishes**: when computer use isn't running in the background, Claude hides your other windows while it works so it interacts with only the approved app. When Claude finishes, hidden windows are restored unless you turn this setting off.
+@@ -605,6 +603,10 @@ To hide a session that already appears on your other devices, archive it in Desk
+ 
+ ### Sessions from Dispatch
+ 
++> [!NOTE]
++>
++> Dispatch isn't available to new users. If it doesn't appear in your Claude app, see [other ways to work away from your terminal](https://code.claude.com/docs/en/platforms.md#work-when-you-are-away-from-your-terminal).
++
+ [Dispatch](https://support.claude.com/en/articles/13947068) is a persistent conversation with Claude that lives in [Cowork](https://claude.com/product/cowork). You message Dispatch a task, and it decides how to handle it.
+ 
+ A task can end up as a Code session in two ways: you ask for one directly, such as "open a Claude Code session and fix the login bug", or Dispatch decides the task is development work and spawns one on its own. Tasks that typically route to Code include fixing bugs, updating dependencies, running tests, or opening pull requests. Research, document editing, and spreadsheet work stay in Cowork.
+@@ -2329,6 +2331,8 @@ To see which version of the desktop app you're running:
+ 
+ Click the version number to copy it to your clipboard.
+ 
++To get new versions sooner on Claude Desktop v4.29.0 or later, set **Release channel** to **Latest**. Go to **Settings > This computer > System**, or to **Settings > Desktop app** if the menu doesn't list **This computer**. For where the setting is available and what to expect when you switch back to **Stable**, see [Choose a release channel](https://support.claude.com/en/articles/10065433-install-claude-desktop#h_ac219b3bde).
++
+ #### Claude Code version in the Code tab
+ 
+ To see which version of Claude Code a session runs, type `/status` in a local session in the **Code** tab and read the **Claude Code** row, which shows a version such as `2.1.286`.
