@@ -27,7 +27,7 @@ Run `claude plugin <subcommand>` from your shell or a script, outside a Claude C
 Every subcommand shares these exit codes, plugin arguments, and scope values:
 
 * **Exit codes**: `0` on success and `1` on failure. `validate` adds exit `2` for an unexpected error, and `eval` adds the codes listed in [its section](#plugin-eval).
-* **Plugin arguments**: a `<plugin>` argument is a plugin `name` or `name@marketplace`. When two marketplaces offer the same name, use the qualified form. `configure` takes only the qualified form.
+* **Plugin arguments**: a `<plugin>` argument is a plugin `name` or `name@marketplace`. When two marketplaces offer the same name, use the qualified form. `configure` and `restore-set-aside` take only the qualified form.
 * **Scopes**: `--scope` takes `user`, `project`, or `local`, and names the settings file the command writes to. `update` also takes `managed`.
 
 In a terminal, success lines leave out `Successfully`, as in `Installed plugin:`. When stdout or stderr isn't a terminal, `Successfully` stays.
@@ -119,6 +119,11 @@ Three fields are always present:
 * `message`: a human-readable description of the result
 
 Other fields, such as `pluginId`, `scope`, and `failureCode`, appear only when they apply.
+
+Two fields report how a [`command` source](https://code.claude.com/docs/en/plugins/marketplace-reference#command-plugin-source) ran. Both require Claude Code v2.1.330 or later:
+
+* `commandPrinted`: `true` when the install succeeded and the source's command wrote to stderr
+* `commandFailed`: `true` when the source's command exited with an error, was killed by a signal, or timed out
 
 The `--json` option on `plugin uninstall`, `plugin update`, `plugin enable`, and `plugin disable` prints the same object with that subcommand's own fields.
 
@@ -419,6 +424,22 @@ Pass the plugin's full `name@marketplace` id, as `claude plugin list` shows it. 
 
 For the settings of a bundled MCP server, see [`plugin install --config`](#plugin-install) or the **Configure** item in `/plugin`.
 
+### plugin restore-set-aside
+
+Restore or delete the [options and secrets](https://code.claude.com/docs/en/plugins/manifest-reference.md#user-configuration) that Claude Code set aside when your organization replaced a plugin marketplace with one of the same name. Requires Claude Code v2.1.321 or later.
+
+Restore them to let any plugin installed under that `name@marketplace` id read them, including one from the replacement marketplace. Otherwise, leave them set aside, or pass `--discard` to delete them. If the id already holds a value for an option, restoring can keep that value and drop the set-aside one.
+
+```bash theme={null}
+claude plugin restore-set-aside <plugin>@<marketplace> [options]
+```
+
+| Flag | Description |
+| :- | :- |
+| `--discard` | Delete the set-aside options and secrets instead of restoring them |
+
+Pass the plugin's full `name@marketplace` id, copied from the note that `claude plugin list` prints without `--json`. If `restore-set-aside` prints `No options or secrets are set aside for <plugin>.`, check that you passed the full id, because a bare `name` matches nothing.
+
 ### plugin prune
 
 Remove auto-installed [dependencies](https://code.claude.com/docs/en/plugins/dependencies.md) that no installed plugin needs anymore. The command never removes a plugin you installed yourself. `autoremove` is an alias for `prune`.
@@ -633,7 +654,7 @@ A few files are not read by a validation run:
 
 * **A `SKILL.md` at the plugin root**: when you run `claude plugin validate` against a plugin directory, Claude Code doesn't check a `SKILL.md` at the plugin root
 * **A `CLAUDE.md` at the plugin root**: in a plugin run, Claude Code also warns about a `CLAUDE.md` at the plugin root
-* **Plugin files in a marketplace run**: from a marketplace directory, Claude Code doesn't open the skill, agent, command, or hook files of plugins the marketplace lists in other directories, or the MCP server files they bundle. To find errors in those files, validate each plugin directory
+* **Plugin files in a marketplace run**: from a marketplace directory, Claude Code doesn't open the skill, agent, or command files of plugins the marketplace lists in other directories, or the MCP server files they bundle. To find errors in those files, validate each plugin directory
 
 #### Validate a manifest file
 
@@ -663,6 +684,9 @@ With `--json`, Claude Code writes the report to stdout as one JSON object with t
 * `manifest`: the manifest's own result, or `null` for a run without a manifest
 * `contents`: per-file results, each naming its `file` and carrying `errors`, `warnings`, and `notes` arrays. Files with no error, warning, or note get no entry, so `contents` is empty when there's nothing to report. For a [directory with `marketplace.json` and `plugin.json`](#validate-a-directory), `manifest` is the `marketplace.json` result and `plugin.json` results go in `contents`
   * `gatingHooks`: whether each [mod](https://code.claude.com/docs/en/plugins/mods/overview.md) hook that can refuse an action, such as a `tool.call` hook, has a [`.catch` handler](https://code.claude.com/docs/en/plugins/mods/events#handle-a-hook-that-fails). Each item gives `module`, `pattern`, `hook`, and `hasCatch`. Requires Claude Code v2.1.290 or later
+  * `modules`: one item per hooks module, with fields such as `hooks` and `uses`, or `null` when it's unknown which code loads. Requires Claude Code v2.1.326 or later
+  * `wasm`: the WebAssembly each hooks module compiles. Requires Claude Code v2.1.326 or later
+* `provides`: the plugin's components by kind, or `null` when the run can't list them. Requires Claude Code v2.1.326 or later
 * `advice`: the [advice](#advice-on-the-readme) of the run, each entry naming the README as `file` and carrying a `message` and the `installLine` to paste. Empty when there is none. Requires Claude Code v2.1.295 or later
 * `hosts`: `named` hosts, plus `unread` plugin parts that could reach others. `null` when the run can't list them. A plugin can reach unlisted hosts. Requires Claude Code v2.1.328 or later
 
@@ -852,7 +876,7 @@ For which surfaces have `/plugin`, how to install without it, and what each pane
 
 A `<plugin>` is a plugin `name` or `name@marketplace`.
 
-The table below lists the session forms. The shell subcommands `init`, `update`, `details`, `prune`, `eval`, `eval init`, and `test` have no session form.
+The table below lists the session forms. The shell subcommands `init`, `update`, `details`, `restore-set-aside`, `prune`, `eval`, `eval init`, and `test` have no session form.
 
 | Command | Aliases | What it does |
 | :- | :- | :- |
