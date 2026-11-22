@@ -1,5 +1,46 @@
 [
   {
+    "date": "2026-11-22T15:06:38Z",
+    "commit_hash": "376ef8a",
+    "entries": [
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/agent-sdk__python\" target=\"_blank\">Agent Sdk__Python</a>",
+        "summary": "Grep 결과 딕셔너리의 'result' 키 설명이 프롬프트 처리 결과에서 프롬프트에 대한 답변 또는 페이지 텍스트로 수정되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/376ef8a_agent-sdk__python.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/changelog\" target=\"_blank\">Changelog</a>",
+        "summary": "엔터프라이즈 관리 콘솔 로그인 지원, 자동 차트 생성 도구(easel) 추가 및 대화 압축·WebFetch·Git 워크트리 등 다양한 버그가 수정되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/376ef8a_changelog.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/hooks\" target=\"_blank\">Hooks</a>",
+        "summary": "web-fetch 서브에이전트의 SubagentStart/Stop 훅 사용 제한 및 관련 설명이 업데이트되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/376ef8a_hooks.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/permission-modes\" target=\"_blank\">Permission Modes</a>",
+        "summary": "서브에이전트 권한 모드 검사 규칙이 구체화되었으며, 에이전트 팀 및 web-fetch 서브에이전트 관련 예외 처리 로직이 추가되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/376ef8a_permission-modes.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/sub-agents\" target=\"_blank\">Sub Agents</a>",
+        "summary": "새로운 web-fetch 내장 서브에이전트가 추가되고 관련 동작 및 모델 제한 규칙이 업데이트되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/376ef8a_sub-agents.txt"
+      }
+    ]
+  },
+  {
     "date": "2026-11-21T15:06:40Z",
     "commit_hash": "78c1a08",
     "entries": [
