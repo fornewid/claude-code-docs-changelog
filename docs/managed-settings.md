@@ -123,7 +123,7 @@ When two files set the same key, Claude Code combines them by these rules:
 
 ## How Claude Code combines managed sources
 
-If you set your provider or gateway at claude.ai under **Organization settings > Desktop 3P**, first read [which settings take priority](https://claude.com/docs/third-party/claude-desktop/admin-console-claude-code#which-settings-take-priority) in the Enterprise Admin Console guide.
+If you set your provider or gateway at claude.ai under [**Organization settings > Desktop 3P**](https://claude.ai/admin-settings/desktop-deployment), first read [which settings take priority](https://claude.com/docs/third-party/claude-desktop/admin-console-claude-code#which-settings-take-priority) in the Enterprise Admin Console guide.
 
 When your organization delivers more than one managed source to the same machine, the [`managedSourcesBehavior`](https://code.claude.com/docs/en/settings-reference#managedsourcesbehavior) key decides what Claude Code does with the others:
 
@@ -177,6 +177,7 @@ The cross-source keys include:
 
   Without the lock, Claude Code reads `allowedMcpServers` from the managed source it applies, so under `"first-wins"` an unselected admin source's list is ignored. Requires Claude Code v2.1.273 or later
 * `deniedMcpServers` and [`disableClaudeAiConnectors`](https://code.claude.com/docs/en/settings-reference#disableclaudeaiconnectors): an entry or a `true` in any admin source applies. Requires Claude Code v2.1.273 or later
+* [`disableDirectMcpSkills`](https://code.claude.com/docs/en/settings-reference#disabledirectmcpskills): a `true` in any admin source turns off skills from MCP servers other than claude.ai connectors. To turn them on, set `false` in the highest-ranked admin source you use. Claude Code ignores a `false` in the HKCU registry. Skills from MCP servers require Claude Code v2.1.331 or later
 * The sandbox binary paths `sandbox.bwrapPath` and `sandbox.socatPath`
 * The sandbox `ripgrep` binary, [`sandbox.ripgrep`](https://code.claude.com/docs/en/settings-reference#sandbox-ripgrep)
 * `sandbox.filesystem.disabled` and `sandbox.network.strictAllowlist`
@@ -332,7 +333,7 @@ Three source states don't cause this refusal:
 * An empty managed settings file counts as `{}`.
 * A malformed value in the user-writable HKCU registry key never blocks launch. Claude Code reports it as a notice in `/status` and `claude doctor` instead.
 
-When a managed settings file, drop-in file, `managed-settings.d/` directory, MDM profile, or HKLM registry value exists but can't be read, and no admin source supplies a policy, what happens depends on why the read failed:
+If a managed settings file, drop-in file, `managed-settings.d/` directory, or MDM profile exists but can't be read and no admin source supplies a policy, sessions exit unless access was denied:
 
 * If the operating system denied the read, for example on a root-only file, every session starts without that source's policies. `/status` and `claude doctor` record the failure, and a run with `-p` also prints it to stderr.
 * For any other read failure, such as an I/O error, every session exits at startup with [a message to contact an administrator](https://code.claude.com/docs/en/errors.md#unable-to-read-managed-policy-settings).
@@ -424,6 +425,7 @@ The table covers the permission, plugin, and delivery controls. For any key not 
 | [`blockedMarketplaces`](https://code.claude.com/docs/en/settings-reference#blockedmarketplaces) | Blocklist of marketplace sources. Blocked sources are checked before downloading, so they never touch the filesystem. See [managed marketplace restrictions](https://code.claude.com/docs/en/plugins/org.md#restrict-what-users-can-install) |
 | [`channelsEnabled`](https://code.claude.com/docs/en/settings-reference#channelsenabled) | Allow [channels](https://code.claude.com/docs/en/channels.md) for the organization. See [enterprise controls](https://code.claude.com/docs/en/channels.md#enterprise-controls) for the default on each plan |
 | [`disableCommandPluginSources`](https://code.claude.com/docs/en/settings-reference#disablecommandpluginsources) | When `true`, blocks [`command` plugin sources](https://code.claude.com/docs/en/plugins/marketplace-reference#command-plugin-source) entirely, so the marketplace-declared command never runs. Also blocks marketplace [`headersHelper` commands](https://code.claude.com/docs/en/plugins/host-marketplace#authenticate-archive-downloads), except for a marketplace that managed settings themselves declare. When unset, follows `allowManagedHooksOnly`. Requires Claude Code v2.1.229 or later, and the `headersHelper` block requires v2.1.238 or later |
+| [`disableDirectMcpSkills`](https://code.claude.com/docs/en/settings-reference#disabledirectmcpskills) | Controls [skills from MCP servers other than claude.ai connectors](https://code.claude.com/docs/en/mcp.md#turn-on-skills-for-an-organization). Set to `false` to turn them on for Team and Enterprise plans, or to `true` to turn them off. Skills from MCP servers require Claude Code v2.1.331 or later |
 | [`disableSideloadFlags`](https://code.claude.com/docs/en/settings-reference#disablesideloadflags) | Reject the `--plugin-dir`, `--plugin-url`, `--agents`, and `--mcp-config` flags at startup. In cloud sessions, Claude Code instead starts the session and drops the server-delivered `--mcp-config` servers, apart from the exceptions its [reference entry](https://code.claude.com/docs/en/settings-reference.md#disablesideloadflags) lists. Requires Claude Code v2.1.193 or later |
 | [`forceRemoteSettingsRefresh`](https://code.claude.com/docs/en/settings-reference#forceremotesettingsrefresh) | When `true`, blocks CLI startup until remote managed settings are freshly fetched and exits if the fetch fails. See [fail-closed enforcement](https://code.claude.com/docs/en/server-managed-settings.md#enforce-fail-closed-startup) |
 | [`managedMcpServers`](https://code.claude.com/docs/en/settings-reference#managedmcpservers) | Remote MCP servers provided to every user alongside their own. It provides servers rather than locking anything down. See [Provide servers through managed settings](https://code.claude.com/docs/en/managed-mcp.md#provide-servers-through-managed-settings). Requires Claude Code v2.1.259 or later |

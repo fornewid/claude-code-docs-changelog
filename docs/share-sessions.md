@@ -59,10 +59,7 @@ On Max, Ultra, and Pro plans, anyone who has the link and is signed in to claude
 * **Visibility options**: **Private** and **Public**
 * **Repository access**: **Require repository access** is off by default. Turn it on to limit the cloud sessions you share to recipients with access to each session's private repositories. People without repository access may be able to open a Remote Control session's link.
 
-To turn on **Require repository access** or turn off **Show your name**, open Settings on claude.ai, then:
-
-* **If the Settings menu shows Code instead of Claude Code**: go to [**Privacy**](https://claude.ai/settings/data-privacy-controls)
-* **Otherwise**: go to [**Claude Code > Sharing settings**](https://claude.ai/settings/claude-code)
+To turn on **Require repository access** or turn off **Show your name**, go to [**Settings > Privacy**](https://claude.ai/settings/data-privacy-controls) on claude.ai and click **Manage** next to **Shared Code sessions**.
 
 ## Stop sharing a session
 
@@ -95,12 +92,12 @@ For example, on Enterprise and Team plans, you can't share a cloud session that 
 If recipients can't open a link, check for these causes:
 
 * **Visibility**: the session is **Private**, or the recipient isn't signed in to claude.ai or is outside your organization on a **Team** link. Check [who can open the link](#share-a-session).
-* **Free plan**: the recipient is signed in on a Free account and lands on the upgrade page. Ask them to sign in with an account that has [cloud sessions](https://code.claude.com/docs/en/claude-code-on-the-web.md).
 * **Repository access**: the link [requires repository access](#share-a-session), and the recipient's GitHub account can't read the repository. Ask them to [connect an account](https://code.claude.com/docs/en/web-quickstart.md#connect-github) that can.
 * **Uploaded or non-GitHub code**: the link requires repository access, and the code was [uploaded](https://code.claude.com/docs/en/claude-code-on-the-web.md#send-local-repositories-without-github) or is on a Git host such as GitLab or Bitbucket. Share from a session whose repository is on github.com and wasn't uploaded.
 * **Invalid link**: the share link may not match the address in your browser, and a **Public** link changes when you stop sharing and share again. Copy the current link from **Share** and send it.
 * **Organization setting**: [**Share cloud sessions** is off](#sharing-is-turned-off-for-your-organization) for the organization. Ask an Owner to turn it back on.
 * **Upgraded plan**: you shared a **Public** link, then upgraded your plan to Team or Enterprise. The link follows the rules for [Enterprise and Team accounts](#share-from-an-enterprise-or-team-account).
+* **Downgraded plan**: you shared a **Public** link, then moved to the Free plan. [Upgrade](https://claude.ai/upgrade) to a Max, Ultra, or Pro plan, and the same link opens with no further step.
 
 You can't restore the link in these cases:
 

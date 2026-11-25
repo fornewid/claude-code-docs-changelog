@@ -631,7 +631,7 @@ const result = query({
 * [`API_TIMEOUT_MS`](https://code.claude.com/docs/en/env-vars): how long each request attempt can wait for response headers, in milliseconds. It doesn't limit how long a streaming response runs after the headers arrive. Default `600000`. Applies to the main loop and all subagents.
 * `CLAUDE_CODE_MAX_RETRIES`: maximum API retries. Default `10`, capped at `15`. Each retry gets its own `API_TIMEOUT_MS` window.
 
-  For unattended runs that need to wait through longer outages, set [`CLAUDE_CODE_RETRY_WATCHDOG=1`](https://code.claude.com/docs/en/errors#tune-retry-behavior): it retries transient capacity errors indefinitely and, on Claude Code v2.1.199 or later, raises the default for other transient errors to `300` and removes the cap on this variable.
+  For unattended runs that need to wait through longer outages, set [`CLAUDE_CODE_RETRY_WATCHDOG=1`](https://code.claude.com/docs/en/errors#tune-retry-behavior) to keep retrying transient capacity errors. With `CLAUDE_CODE_RETRY_WATCHDOG` set on v2.1.199 or later, the cap doesn't apply, and the default for other transient errors is `300`.
 * `CLAUDE_ASYNC_AGENT_STALL_TIMEOUT_MS`: stall watchdog for subagents. While the stream watchdog is on, the default is `CLAUDE_STREAM_IDLE_TIMEOUT_MS` plus 5 minutes, which comes to `600000` unless you raise that variable. With the stream watchdog off, the default is `600000`. Before v2.1.257, the default was always `600000`.
 
   The timer resets on each stream event. On a stall, Claude Code aborts the subagent and reports the stall to the parent. For a background subagent, it also marks the task failed and attaches any partial result.
@@ -2088,7 +2088,8 @@ type SDKStartupFailureReason =
   | "org_config_required_unavailable"
   | "org_config_refused"
   | "sandbox_required_unavailable"
-  | "config_file_invalid";
+  | "config_file_invalid"
+  | "sideload_flags_disabled";
 ```
 
 Each value names one refusal:
@@ -2116,6 +2117,7 @@ Each value names one refusal:
 | `org_config_refused` | Anthropic refused to provide the organization's policies and managed settings for this sign-in, for example because the sign-in expired or was revoked, or the organization doesn't allow Claude Code for this account. Requires Agent SDK v0.3.293 or later |
 | `sandbox_required_unavailable` | [`failIfUnavailable`](#sandboxsettings) is on and the sandbox can't start. The text in `errors` ends with `Set sandbox.failIfUnavailable=false to allow unsandboxed execution.` Requires Agent SDK v0.3.314 or later |
 | `config_file_invalid` | `~/.claude.json` isn't valid JSON. Claude Code leaves the file unchanged, so a retry fails the same way until someone repairs it. `errors` names the file and says how to restore or repair it. See [Configuration error in \~/.claude.json](https://code.claude.com/docs/en/errors.md#configuration-error-in-claude-json). Requires TypeScript Agent SDK v0.3.318 or later and Claude Code v2.1.318 or later |
+| `sideload_flags_disabled` | A flag or launch option violates managed [`disableSideloadFlags`](https://code.claude.com/docs/en/settings-reference#disablesideloadflags). Requires TypeScript Agent SDK v0.3.331 or later and Claude Code v2.1.331 or later |
 
 ### `SDKSystemMessage`
 

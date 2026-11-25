@@ -34,7 +34,6 @@ Find the words of Claude's comment, then take the step beside them:
 | :- | :- |
 | Approvals "did not run on this change" | Do what the comment says. One cause is a pull request that moves a file into or out of the paths that the policy's rules cover. Make that move in two pull requests, one that adds the file under its new name and one that removes the old one |
 | "More than one Claude organization is connected to this GitHub account" | Ask an Owner of the Claude organization that should run Approvals to click **Connect** next to the repository's GitHub organization on [**Organization settings > Claude Ship**](https://claude.ai/admin-settings/claude-ship). Then push a commit |
-| "Claude Approvals can't start in this repository yet" | Tell an Owner that the organization has no usage credits available |
 
 ### Ask an Owner to check your Claude organization
 
@@ -45,6 +44,12 @@ Ask an Owner to check each of these for your Claude organization:
 | Whether the organization qualifies | [Availability](https://code.claude.com/docs/en/approvals.md#availability) |
 | Whether the [Claude GitHub App](https://github.com/apps/claude) can access the repository and is linked | [**Organization settings > Git providers**](https://claude.ai/admin-settings/source-control) |
 | Whether Approvals is turned off here | The **Approvals** column and the **Approve** row on [**Organization settings > Claude Ship**](https://claude.ai/admin-settings/claude-ship) |
+
+### Check for a GitHub IP allow list
+
+GitHub refuses Approvals' requests from an address that isn't on an organization's IP allow list, which can leave no check or comment.
+
+Ask an owner of the repository's GitHub organization or enterprise whether it restricts access by IP address. If it does, ask the owner to allow all of Anthropic's outbound addresses, as [GitHub allow lists and firewalls](https://code.claude.com/docs/en/network-config.md#github-allow-lists-and-firewalls) describes. Once the addresses are allowed, push a commit to your pull request.
 
 ## Approvals doesn't pass after you resolve a review thread
 
@@ -79,12 +84,16 @@ Find the beginning of your message here:
 | "no key of this name is read at this place" | Check the key's spelling and its level against [Top-level keys](https://code.claude.com/docs/en/approvals-policy.md#top-level-keys) and [Rule keys](https://code.claude.com/docs/en/approvals-policy.md#rule-keys) |
 | "this names no fact and no usable classifier" | Check the name against the [facts](https://code.claude.com/docs/en/approvals-policy.md#if). For `repo/<name>`, check that `.claude/classifiers/<name>/def.yml` loads, beside the policy file or in a directory above it |
 | "a condition has no NOT" | Write the opposite operator |
+| "a login goes in single quotes inside a condition" | If the word is a login, put it in single quotes, as in `"pr/opened_by = 'ana-acme'"`. For a bot, write `bot:` and its name with no quotes, as in `"pr/opened_by = bot:dependabot"` |
 | "no local has this name" | Define the local in this file or a policy file above it. Write a login or a team with no `@` |
 | "this is not YAML" | Look near the line that the message names for a quote or bracket that doesn't close, or a tab. Indent with spaces |
 
 ## A classifier gave no answer or its definition is refused
 
-To see each [classifier](https://code.claude.com/docs/en/approvals-classifiers.md) run's state and the reason for a missing answer, open **Classifier results** in Claude's comment on the pull request. If a run reached its budget, split the pull request, or raise a `time` or `cost` that is under its [maximum](https://code.claude.com/docs/en/approvals-classifiers.md#budget).
+To see each [classifier](https://code.claude.com/docs/en/approvals-classifiers.md) run's state and the reason for a missing answer, open **Classifier results** in Claude's comment on the pull request:
+
+* **A run reached its budget**: split the pull request, or raise a `time` or `cost` that is under its [maximum](https://code.claude.com/docs/en/approvals-classifiers.md#budget)
+* **A run had more to read than one run can handle**, for example a large diff: try a smaller pull request
 
 Then find the **Claude Approvals** check's title here:
 
