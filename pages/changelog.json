@@ -1,5 +1,340 @@
 [
   {
+    "date": "2026-11-25T15:08:05Z",
+    "commit_hash": "f3c9a90",
+    "entries": [
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/agent-sdk__observability\" target=\"_blank\">Agent Sdk__Observability</a>",
+        "summary": "OTEL_LOG_RAW_API_BODIES 환경 변수 설명 문서가 링크 추가 및 문구 정리를 통해 업데이트되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/f3c9a90_agent-sdk__observability.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/agent-sdk__typescript\" target=\"_blank\">Agent Sdk__Typescript</a>",
+        "summary": "장기 실행 재시도 환경변수 설명이 개선되었고, SDK 시작 실패 원인에 'sideload_flags_disabled'가 추가되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/f3c9a90_agent-sdk__typescript.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/agent-view\" target=\"_blank\">Agent View</a>",
+        "summary": "v2.1.331 업데이트로 백그라운드 세션에서 `/ship`이나 `/steward` 워치가 실행되지 않도록 제한되었으며 관련 동작이 수정되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/f3c9a90_agent-view.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/amazon-bedrock\" target=\"_blank\">Amazon Bedrock</a>",
+        "summary": "Amazon Bedrock 문서에 Claude Code CLI, IDE 확장 프로그램 및 Claude Desktop 앱 설정 안내가 추가되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/f3c9a90_amazon-bedrock.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/approvals-policy\" target=\"_blank\">Approvals Policy</a>",
+        "summary": "approvals-policy.md 문서의 규칙 정의, YAML 작성법, 경로 패턴, 조건문 및 승인자 리스트 관련 설명이 구체화 및 업데이트되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/f3c9a90_approvals-policy.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/approvals-troubleshooting\" target=\"_blank\">Approvals Troubleshooting</a>",
+        "summary": "GitHub IP 허용 목록 안내 및 조건문 로그인 형식 추가 등 승인 기능 트러블슈팅 문서가 업데이트되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/f3c9a90_approvals-troubleshooting.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/approvals\" target=\"_blank\">Approvals</a>",
+        "summary": "Claude Approvals의 승인 리뷰 주체가 저장소 및 PR 생성 주체에 따라(claude[bot] 또는 claude-approvals[bot]) 어떻게 달라지는지 상세히 설명함.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/f3c9a90_approvals.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/changelog\" target=\"_blank\">Changelog</a>",
+        "summary": "MCP 서버 스킬 추가, 훅 이벤트 및 여러 프리징/행 현상 수정 등 안정성 개선과 버그가 대거 패치되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/f3c9a90_changelog.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/claude-apps-gateway-deploy\" target=\"_blank\">Claude Apps Gateway Deploy</a>",
+        "summary": "게이트웨이 모델 접근 거부 및 정책 위반으로 발생하는 새로운 400 에러 원인과 해결 방법이 트러블슈팅 문서에 추가되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/f3c9a90_claude-apps-gateway-deploy.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/claude-code-on-the-web\" target=\"_blank\">Claude Code On The Web</a>",
+        "summary": "조직 단위 claude.ai 로그인 안내, /config 명령어 경로 변경, VM 재개 시 MCP 태스크 복원 여부 등 클라우드 세션 관련 문서가 업데이트되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/f3c9a90_claude-code-on-the-web.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/claude-security\" target=\"_blank\">Claude Security</a>",
+        "summary": "Claude Security 플러그인 문서에 셸 및 GitHub Actions 지원 추가, 사용법 및 설치 가이드가 상세히 업데이트되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/f3c9a90_claude-security.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/code-mode\" target=\"_blank\">Code Mode</a>",
+        "summary": "Amazon Bedrock 등 클라우드 제공업체 환경에서의 Code Mode 지원 및 서브에이전트 설정 방법이 추가되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/f3c9a90_code-mode.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/debug-your-config\" target=\"_blank\">Debug Your Config</a>",
+        "summary": "훅 설정 오류 원인에 `PreSkillShellCommand` 항목이 추가되어 설정 디버깅 가이드가 정확해졌습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/f3c9a90_debug-your-config.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/desktop-quickstart\" target=\"_blank\">Desktop Quickstart</a>",
+        "summary": "데스크톱 앱 다운로드 링크 URL이 새로운 경로 체계로 일괄 변경되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/f3c9a90_desktop-quickstart.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/desktop\" target=\"_blank\">Desktop</a>",
+        "summary": "데스크톱 앱 다운로드 URL 구조 변경, 전사적 스킬 배포 가이드 추가, 그리고 코드 모드 및 인증 오류 관련 안내가 업데이트되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/f3c9a90_desktop.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/errors\" target=\"_blank\">Errors</a>",
+        "summary": "인증, 셸 명령, 워크트리, 플러그인 등 다양한 에러 상황과 대응 가이드라인이 오류 문서에 추가되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/f3c9a90_errors.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/feature-availability\" target=\"_blank\">Feature Availability</a>",
+        "summary": "Code Mode 기능이 각 제공업체에서 사용 가능하도록 변경되었고, MCP 서버의 Skills 기능이 추가되는 등 기능 가용성 문서가 업데이트되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/f3c9a90_feature-availability.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/hooks-guide\" target=\"_blank\">Hooks Guide</a>",
+        "summary": "새로운 PreSkillShellCommand 훅 이벤트가 추가되어 스킬의 셸 명령 실행 전 제어 및 차단이 가능해졌습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/f3c9a90_hooks-guide.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/hooks\" target=\"_blank\">Hooks</a>",
+        "summary": "새로운 PreSkillShellCommand 훅 이벤트가 추가되어 스킬 쉘 명령 실행 전 차단 및 모니터링이 가능해졌습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/f3c9a90_hooks.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/managed-settings\" target=\"_blank\">Managed Settings</a>",
+        "summary": "관리형 설정 문서에 새 설정 항목인 `disableDirectMcpSkills`가 추가되고 읽기 오류 처리 동작에 대한 설명이 업데이트되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/f3c9a90_managed-settings.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/mcp\" target=\"_blank\">Mcp</a>",
+        "summary": "VS Code, 데스크톱 앱, 서브에이전트 환경에서의 MCP 작업 지원 범위가 확대되고 관련 요구사항이 업데이트되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/f3c9a90_mcp.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/overview\" target=\"_blank\">Overview</a>",
+        "summary": "Slack을 통한 작업 라우팅 기능이 Team 및 Enterprise 플랜으로 제한되고 관련 링크와 설명이 업데이트되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/f3c9a90_overview.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/permissions\" target=\"_blank\">Permissions</a>",
+        "summary": "작업 디렉토리 외부에 파일 도구를 허용하는 규칙 설정 방법이 추가되고, 권한 모드 및 WebFetch 규칙과 관련된 설명이 명확하게 수정되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/f3c9a90_permissions.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/platforms\" target=\"_blank\">Platforms</a>",
+        "summary": "문서에서 Slack 통합 관련 내용이 제거되었습니다. 플랫폼 및 원격 액세스 옵션 목록이 최신 상태로 정비되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/f3c9a90_platforms.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/plugin-evals\" target=\"_blank\">Plugin Evals</a>",
+        "summary": "플러그인 평가(plugin eval)에서 내장 도구를 제거할 수 있는 `--disallow-tools` 옵션과 `disallowed_tools` 필드가 추가되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/f3c9a90_plugin-evals.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/plugins__mods__admin\" target=\"_blank\">Plugins__Mods__Admin</a>",
+        "summary": "관리자 문서의 훅(hooks) 설명 부분이 표 형태로 개선되었으며, 새로운 MCP 서버 관련 내용과 skill.prompt 훅이 추가되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/f3c9a90_plugins__mods__admin.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/plugins__mods__create\" target=\"_blank\">Plugins__Mods__Create</a>",
+        "summary": "모드 개발 문서에 정적 분석 규칙이 업데이트되고 다른 파일에서 함수 임포트 시 `$` 전달 방법이 추가되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/f3c9a90_plugins__mods__create.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/plugins__mods__interface\" target=\"_blank\">Plugins__Mods__Interface</a>",
+        "summary": "데스크톱 앱 코드 탭에서 셰이더를 사용하여 배경(Backdrop)에 애니메이션을 적용하는 방법과 관련 API 가이드가 추가되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/f3c9a90_plugins__mods__interface.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/plugins__mods__reference\" target=\"_blank\">Plugins__Mods__Reference</a>",
+        "summary": "tool.offer 이벤트, ui.pointer 이벤트, 툴 목록 변경 방법 등이 추가되었으며 mods API 관련 설명이 업데이트되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/f3c9a90_plugins__mods__reference.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/plugins__mods__test\" target=\"_blank\">Plugins__Mods__Test</a>",
+        "summary": "테스트 킷 문서의 스텁 관련 설명과 UI 마운트 핸들러 메서드(`drawn()`)가 추가되어 테스트 작성 방법이 개선되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/f3c9a90_plugins__mods__test.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/plugins__mods__troubleshoot\" target=\"_blank\">Plugins__Mods__Troubleshoot</a>",
+        "summary": "플러그인 및 모드 트러블슈팅 문서에 'call refused' 등 새로운 오류 사례와 상세한 해결 방법이 추가되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/f3c9a90_plugins__mods__troubleshoot.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/plugins__troubleshooting\" target=\"_blank\">Plugins__Troubleshooting</a>",
+        "summary": "플러그인 트러블슈팅 문서에 새로운 에러 메시지 및 진단 명령어(claude plugin list) 안내가 추가되어 문제 해결 가이드가 개선되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/f3c9a90_plugins__troubleshooting.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/pr-steward-setup\" target=\"_blank\">Pr Steward Setup</a>",
+        "summary": "PR Steward 문서가 업데이트되어 비용 추정 표현이 정교해지고, 셀프 호스팅 환경 실행 시 요구사항(v2.1.317 이상)과 기본 환경 설정 안내가 추가되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/f3c9a90_pr-steward-setup.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/pr-steward-troubleshooting\" target=\"_blank\">Pr Steward Troubleshooting</a>",
+        "summary": "PR Steward 실행 실패 원인에 대한 새로운 트러블슈팅 가이드 항목들이 추가되어 환경 설정 및 러너 버전 관련 문제를 해결할 수 있게 되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/f3c9a90_pr-steward-troubleshooting.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/prompt-caching\" target=\"_blank\">Prompt Caching</a>",
+        "summary": "스킬과 커맨드에서 모델 설정 변경 시 캐시 동작 및 서브에이전트 관련 설명이 구체화되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/f3c9a90_prompt-caching.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/self-hosted-environments-configuration\" target=\"_blank\">Self Hosted Environments Configuration</a>",
+        "summary": "Stop 훅 스크립트에서 보안 및 신뢰성 향상을 위해 브랜치 이름을 메시지에서 제외하고 관련 안내 문구를 업데이트했습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/f3c9a90_self-hosted-environments-configuration.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/settings-reference\" target=\"_blank\">Settings Reference</a>",
+        "summary": "MCP 서버의 스킬 제어를 위한 새로운 'disableDirectMcpSkills' 설정이 추가되고 관련 동작 및 파일 체크포인팅 예외 조건이 구체화되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/f3c9a90_settings-reference.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/settings\" target=\"_blank\">Settings</a>",
+        "summary": "헤드리스(-p) 실행 시 발생하는 오류 설정에 대한 상세한 출력 예시가 추가되고, 일부 설명 문구가 정제되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/f3c9a90_settings.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/share-sessions\" target=\"_blank\">Share Sessions</a>",
+        "summary": "클라우드 세션 공유 설정 경로가 간소화되었고, 무료 플랜 관련 문제 해결 가이드가 업데이트되어 사용 편의성이 향상되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/f3c9a90_share-sessions.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/ship-command-troubleshooting\" target=\"_blank\">Ship Command Troubleshooting</a>",
+        "summary": "/ship 명령어 트러블슈팅 문서가 업데이트되어 새로운 오류 메시지, 환경 변수(CLAUDE_CODE_DISABLE_SHIP), 그리고 열린 풀 리퀘스트 관련 안내가 추가되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/f3c9a90_ship-command-troubleshooting.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/ship-command\" target=\"_blank\">Ship Command</a>",
+        "summary": "GitHub 외 다른 호스트(GitLab, Bitbucket 등)에서의 브랜치 모니터링 지원 추가 및 /ship 명령어 동작 조건이 구체화되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/f3c9a90_ship-command.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/skills\" target=\"_blank\">Skills</a>",
+        "summary": "MCP 서버를 통한 스킬 지원 기능 및 제약 사항이 추가되었으며, 모델 프런트매터 필드와 인자 플레이스홀더 동작 방식이 구체화되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/f3c9a90_skills.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/tools-reference\" target=\"_blank\">Tools Reference</a>",
+        "summary": "REPL 도구 추가 및 Bash/PowerShell 세션의 작업 디렉토리 지속성 및 배경 작업 동작 방식이 업데이트되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/f3c9a90_tools-reference.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/troubleshoot-install\" target=\"_blank\">Troubleshoot Install</a>",
+        "summary": "설치 문제 해결 문서에 새로운 인증 오류 처리 방법이 추가되고, macOS 키체인 진단 단계가 더 구체화되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/f3c9a90_troubleshoot-install.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/voice-dictation\" target=\"_blank\">Voice Dictation</a>",
+        "summary": "음성 받아쓰기(Voice Dictation) 문서가 대폭 업데이트되어 탭 모드의 녹음 중단 조건, 자동 중단된 녹음 이어서 하기, 오류 메시지 및 문제 해결 방법 등이 상세히 추가되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/f3c9a90_voice-dictation.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/vs-code\" target=\"_blank\">Vs Code</a>",
+        "summary": "노트북 셀 추가 및 병합 충돌 해결 단축키, `showFixActions` 설정, JSON 설정 오류 트러블슈팅 등이 새롭게 추가되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/f3c9a90_vs-code.txt"
+      },
+      {
+        "title": "<a href=\"https://code.claude.com/docs/en/worktrees\" target=\"_blank\">Worktrees</a>",
+        "summary": "워크트리 세션 재개 방법, 트랜스크립트 위치, 서브에이전트 정리 규칙 및 PR/MR URL 처리 방식에 대한 문서가 업데이트되었습니다.",
+        "tag_text": "UPDATE",
+        "tag_class": "update",
+        "diff_file": "pages/diffs/f3c9a90_worktrees.txt"
+      }
+    ]
+  },
+  {
     "date": "2026-11-24T15:07:50Z",
     "commit_hash": "ccf7e36",
     "entries": [
